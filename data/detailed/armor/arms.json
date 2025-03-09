@@ -1,0 +1,5308 @@
+[
+  {
+    "name": "Ajarakan Vambraces",
+    "rarity": 3,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 24,
+    "fireResistance": 3,
+    "waterResistance": -3,
+    "thunderResistance": 1,
+    "iceResistance": -2,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Bombardier",
+        "level": 1
+      },
+      {
+        "name": "Cliffhanger",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Ajarakan Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Scale"
+      },
+      {
+        "name": "Ajarakan Shell",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Shell"
+      },
+      {
+        "name": "Ajarakan Ridge",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_ridge_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Ridge"
+      }
+    ],
+    "url": "/Ajarakan+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Ajarakan Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 3,
+    "waterResistance": -3,
+    "thunderResistance": 1,
+    "iceResistance": -2,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Bombardier",
+        "level": 2
+      },
+      {
+        "name": "Partbreaker",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Ajarakan Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Certificate+S"
+      },
+      {
+        "name": "Ajarakan Jewel+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_jewel+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Jewel++"
+      },
+      {
+        "name": "Ajarakan Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Scale++"
+      },
+      {
+        "name": "Ajarakan Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Medulla"
+      }
+    ],
+    "url": "/Ajarakan+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Ajarakan Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 3,
+    "waterResistance": -3,
+    "thunderResistance": 1,
+    "iceResistance": -2,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Partbreaker",
+        "level": 1
+      },
+      {
+        "name": "Bombardier",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Alluring Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Ajarakan Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Certificate+S"
+      },
+      {
+        "name": "Ajarakan Jewel+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_jewel+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Jewel++"
+      },
+      {
+        "name": "Ajarakan Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Scale++"
+      },
+      {
+        "name": "Ajarakan Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Medulla"
+      }
+    ],
+    "url": "/Ajarakan+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Alloy Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 6,
+    "fireResistance": -2,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Tremor Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      },
+      {
+        "name": "Iron Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/iron_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Iron+Ore"
+      }
+    ],
+    "url": "/Alloy+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/alloy_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Alloy Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 32,
+    "fireResistance": -2,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Tremor Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Carbalite+Ore"
+      },
+      {
+        "name": "Dragonite Ore",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonite+Ore"
+      }
+    ],
+    "url": "/Alloy+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/alloy_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Arkvulcan Vambraces Alpha",
+    "rarity": 8,
+    "rank": "high",
+    "slots": [
+      2,
+      2
+    ],
+    "type": "arms",
+    "defense": 66,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -1,
+    "iceResistance": 0,
+    "dragonResistance": -3,
+    "skills": [
+      {
+        "name": "Convert Element",
+        "level": 1
+      },
+      {
+        "name": "Recovery Speed",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Arkveld Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Certificate+S"
+      },
+      {
+        "name": "Arkveld Calloushell",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_calloushell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Calloushell"
+      },
+      {
+        "name": "Arkveld Horn+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_horn+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Horn++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Arkvulcan+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkvulcan_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Arkvulcan Vambraces Beta",
+    "rarity": 8,
+    "rank": "high",
+    "slots": [
+      2,
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 66,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -1,
+    "iceResistance": 0,
+    "dragonResistance": -3,
+    "skills": [
+      {
+        "name": "Convert Element",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Alluring Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Arkveld Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Certificate+S"
+      },
+      {
+        "name": "Arkveld Calloushell",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_calloushell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Calloushell"
+      },
+      {
+        "name": "Arkveld Horn+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_horn+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Horn++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Arkvulcan+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkvulcan_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Artian Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": 1,
+    "waterResistance": -2,
+    "thunderResistance": -2,
+    "iceResistance": 2,
+    "dragonResistance": 3,
+    "skills": [
+      {
+        "name": "Blight Resistance",
+        "level": 2
+      },
+      {
+        "name": "Flayer",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Protection",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gracium",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      },
+      {
+        "name": "Frenzy Crystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Crystal"
+      }
+    ],
+    "url": "/Artian+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/artian_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Balahara Vambraces",
+    "rarity": 2,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 12,
+    "fireResistance": -1,
+    "waterResistance": 2,
+    "thunderResistance": -3,
+    "iceResistance": 1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Evade Extender",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 400,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Balahara Skull",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_skull_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Skull"
+      },
+      {
+        "name": "Balahara Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Tail"
+      },
+      {
+        "name": "Aqua Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/aqua_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Aqua+Sac"
+      }
+    ],
+    "url": "/Balahara+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Balahara Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": -1,
+    "waterResistance": 2,
+    "thunderResistance": -3,
+    "iceResistance": 1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Stamina Surge",
+        "level": 1
+      },
+      {
+        "name": "Evade Extender",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Balahara Scale+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Scale++"
+      },
+      {
+        "name": "Balahara Carapace",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Carapace"
+      },
+      {
+        "name": "Balahara Skull+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_skull+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Skull++"
+      },
+      {
+        "name": "Balahara Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Tail"
+      }
+    ],
+    "url": "/Balahara+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Balahara Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": -1,
+    "waterResistance": 2,
+    "thunderResistance": -3,
+    "iceResistance": 1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Evade Extender",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Balahara Scale+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Scale++"
+      },
+      {
+        "name": "Balahara Carapace",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Carapace"
+      },
+      {
+        "name": "Balahara Skull+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_skull+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Skull++"
+      },
+      {
+        "name": "Balahara Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Tail"
+      }
+    ],
+    "url": "/Balahara+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Barina Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 8,
+    "fireResistance": -3,
+    "waterResistance": 3,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 3,
+    "skills": [
+      {
+        "name": "Recovery Up",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Alert",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lala Barina Shell",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Shell"
+      },
+      {
+        "name": "Lala Barina Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Claw"
+      }
+    ],
+    "url": "/Barina+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Barina Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": -3,
+    "waterResistance": 3,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 3,
+    "skills": [
+      {
+        "name": "Foray",
+        "level": 1
+      },
+      {
+        "name": "Recovery Up",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Alert",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lala Barina Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Certificate+S"
+      },
+      {
+        "name": "Lala Barina Claw+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Claw++"
+      },
+      {
+        "name": "Lala Barina Stinger+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_stinger+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Stinger++"
+      },
+      {
+        "name": "Monster Broth",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_broth_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Broth"
+      }
+    ],
+    "url": "/Barina+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Barina Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": -3,
+    "waterResistance": 3,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 3,
+    "skills": [
+      {
+        "name": "Recovery Up",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Camouflage",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lala Barina Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Certificate+S"
+      },
+      {
+        "name": "Lala Barina Claw+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Claw++"
+      },
+      {
+        "name": "Lala Barina Stinger+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_stinger+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Stinger++"
+      },
+      {
+        "name": "Monster Broth",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_broth_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Broth"
+      }
+    ],
+    "url": "/Barina+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Battle Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": 2,
+    "waterResistance": -1,
+    "thunderResistance": -1,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Free Meal",
+        "level": 3
+      }
+    ],
+    "groupSkill": "Imparted Wisdom",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Scarred Scale",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/scarred_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Scarred+Scale"
+      },
+      {
+        "name": "Colossal Bone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/colossal_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Colossal+Bone"
+      },
+      {
+        "name": "Frozen Icebone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frozen_icebone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frozen+Icebone"
+      }
+    ],
+    "url": "/Battle+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/battle_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Blango Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -4,
+    "waterResistance": 1,
+    "thunderResistance": 0,
+    "iceResistance": 4,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Palico Rally",
+        "level": 2
+      },
+      {
+        "name": "Counterstrike",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Blangonga Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Certificate+S"
+      },
+      {
+        "name": "Blangonga Pelt+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Pelt++"
+      },
+      {
+        "name": "Blangonga Tail",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Tail"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Blango+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blango_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Blango Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      2
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -4,
+    "waterResistance": 1,
+    "thunderResistance": 0,
+    "iceResistance": 4,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Alluring Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Blangonga Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Certificate+S"
+      },
+      {
+        "name": "Blangonga Pelt+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Pelt++"
+      },
+      {
+        "name": "Blangonga Tail",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Tail"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Blango+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blango_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Bone Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 4,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": 2,
+    "iceResistance": 0,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Mystery Bone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/mystery_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Mystery+Bone"
+      }
+    ],
+    "url": "/Bone+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bone_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Bone Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 32,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": 2,
+    "iceResistance": 0,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Marathon Runner",
+        "level": 1
+      },
+      {
+        "name": "Speed Eating",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Quality Bone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quality_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quality+Bone"
+      },
+      {
+        "name": "Frozen Icebone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frozen_icebone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frozen+Icebone"
+      }
+    ],
+    "url": "/Bone+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bone_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Butterfly Brachia Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": -1,
+    "waterResistance": -1,
+    "thunderResistance": 2,
+    "iceResistance": 0,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "level": 2
+      },
+      {
+        "name": "Constitution",
+        "level": 1
+      },
+      {
+        "name": "Evade Window",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Imparted Wisdom",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Great Hornfly",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_hornfly_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Hornfly"
+      },
+      {
+        "name": "Vespoid Innerwing",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_innerwing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Innerwing"
+      },
+      {
+        "name": "Monster Broth",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_broth_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Broth"
+      }
+    ],
+    "url": "/Butterfly+Brachia+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/butterfly_brachia_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Arkveld Vambraces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 30,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -1,
+    "iceResistance": 0,
+    "dragonResistance": -4,
+    "skills": [
+      {
+        "name": "Flayer",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Blood",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood"
+      },
+      {
+        "name": "Guardian Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale"
+      },
+      {
+        "name": "Guardian Seikret Feather",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_seikret_feather_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Seikret+Feather"
+      }
+    ],
+    "url": "/G+Arkveld+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_arkveld_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Arkveld Vambraces Alpha",
+    "rarity": 8,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 66,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -1,
+    "iceResistance": 0,
+    "dragonResistance": -4,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "level": 2
+      },
+      {
+        "name": "Blight Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter symbol III",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+symbol+III"
+      },
+      {
+        "name": "Arkveld Armorplate",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_armorplate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Armorplate"
+      },
+      {
+        "name": "White Arkveld Pelt",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/white_arkveld_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/White+Arkveld+Pelt"
+      },
+      {
+        "name": "Jin Dahaad Icegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_icegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Icegem"
+      }
+    ],
+    "url": "/G+Arkveld+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_arkveld_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Arkveld Vambraces Beta",
+    "rarity": 8,
+    "rank": "high",
+    "slots": [
+      1,
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 66,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -1,
+    "iceResistance": 0,
+    "dragonResistance": -4,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "level": 2
+      }
+    ],
+    "groupSkill": "Guardian's Protection",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter symbol III",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+symbol+III"
+      },
+      {
+        "name": "Arkveld Armorplate",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_armorplate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Armorplate"
+      },
+      {
+        "name": "White Arkveld Pelt",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/white_arkveld_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/White+Arkveld+Pelt"
+      },
+      {
+        "name": "Jin Dahaad Icegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_icegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Icegem"
+      }
+    ],
+    "url": "/G+Arkveld+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_arkveld_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Doshaguma Braces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": -2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Marathon Runner",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Doshaguma Hide",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Hide"
+      },
+      {
+        "name": "Guardian Doshaguma Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fang"
+      }
+    ],
+    "url": "/G+Doshaguma+Braces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_braces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Doshaguma Braces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      1,
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": -2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Iron Skin",
+        "level": 2
+      },
+      {
+        "name": "Heroics",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G Doshaguma Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Doshaguma+Certificate+S"
+      },
+      {
+        "name": "Guardian Doshaguma Fur+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fur+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fur++"
+      },
+      {
+        "name": "Guardian Doshaguma Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/G+Doshaguma+Braces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_braces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Doshaguma Braces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": -2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Heroics",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Protection",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G Doshaguma Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Doshaguma+Certificate+S"
+      },
+      {
+        "name": "Guardian Doshaguma Fur+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fur+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fur++"
+      },
+      {
+        "name": "Guardian Doshaguma Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/G+Doshaguma+Braces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_braces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Ebony Braces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": -2,
+    "waterResistance": -3,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Ebony Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Scale"
+      },
+      {
+        "name": "Guardian Ebony Sinew",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_sinew_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Sinew"
+      },
+      {
+        "name": "Guardian Ebony Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Fang"
+      }
+    ],
+    "url": "/G+Ebony+Braces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_braces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Ebony Braces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -2,
+    "waterResistance": -3,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 2
+      },
+      {
+        "name": "Divine Blessing",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G Ebony Odogaron Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_odogaron_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Ebony+Odogaron+Certificate+S"
+      },
+      {
+        "name": "Guardian Ebony Claw+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Claw++"
+      },
+      {
+        "name": "Guardian Ebony Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Scale++"
+      },
+      {
+        "name": "Guardian Ebony Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Gem"
+      }
+    ],
+    "url": "/G+Ebony+Braces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_braces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Ebony Braces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -2,
+    "waterResistance": -3,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "name": "Divine Blessing",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Protection",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G Ebony Odogaron Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_odogaron_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Ebony+Odogaron+Certificate+S"
+      },
+      {
+        "name": "Guardian Ebony Claw+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Claw++"
+      },
+      {
+        "name": "Guardian Ebony Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Scale++"
+      },
+      {
+        "name": "Guardian Ebony Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Gem"
+      }
+    ],
+    "url": "/G+Ebony+Braces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_braces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Fulgur Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -1,
+    "waterResistance": -1,
+    "thunderResistance": 2,
+    "iceResistance": -3,
+    "dragonResistance": -2,
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 1
+      },
+      {
+        "name": "Maximum Might",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Fulgur Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Scale++"
+      },
+      {
+        "name": "Guardian Fulgur Fang+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Fang++"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      }
+    ],
+    "url": "/G+Fulgur+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_fulgur_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Fulgur Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      2
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -1,
+    "waterResistance": -1,
+    "thunderResistance": 2,
+    "iceResistance": -3,
+    "dragonResistance": -2,
+    "skills": [
+      {
+        "name": "Maximum Might",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Protection",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Fulgur Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Scale++"
+      },
+      {
+        "name": "Guardian Fulgur Fang+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Fang++"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      }
+    ],
+    "url": "/G+Fulgur+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_fulgur_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Rathalos Vambraces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 3,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": -5,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Rathalos Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Scale"
+      },
+      {
+        "name": "Guardian Rathalos Shell",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Shell"
+      },
+      {
+        "name": "Guardian Rathalos Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Tail"
+      }
+    ],
+    "url": "/G+Rathalos+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Rathalos Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 3,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": -5,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "level": 1
+      },
+      {
+        "name": "Survival Expert",
+        "level": 1
+      },
+      {
+        "name": "Intimidator",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Pulse",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G Rathalos Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Rathalos+Certificate+S"
+      },
+      {
+        "name": "Guardian Rathalos Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Scale++"
+      },
+      {
+        "name": "Guardian Rathalos Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Carapace"
+      },
+      {
+        "name": "Guardian Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Ruby"
+      }
+    ],
+    "url": "/G+Rathalos+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "G Rathalos Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 3,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": -5,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Guardian's Protection",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G Rathalos Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Rathalos+Certificate+S"
+      },
+      {
+        "name": "Guardian Rathalos Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Scale++"
+      },
+      {
+        "name": "Guardian Rathalos Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Carapace"
+      },
+      {
+        "name": "Guardian Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Ruby"
+      }
+    ],
+    "url": "/G+Rathalos+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Gore Vambraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": -2,
+    "waterResistance": 3,
+    "thunderResistance": -1,
+    "iceResistance": 2,
+    "dragonResistance": -1,
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 2
+      },
+      {
+        "name": "Evade Window",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gore Magala Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Certificate+S"
+      },
+      {
+        "name": "Gore Magala Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Carapace"
+      },
+      {
+        "name": "Gore Magala Feeler+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_feeler+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Feeler++"
+      },
+      {
+        "name": "Frenzy Crystal",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Crystal"
+      }
+    ],
+    "url": "/Gore+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Gore Vambraces Beta",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      2,
+      2
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": -2,
+    "waterResistance": 3,
+    "thunderResistance": -1,
+    "iceResistance": 2,
+    "dragonResistance": -1,
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 1
+      },
+      {
+        "name": "Evade Window",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gore Magala Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Certificate+S"
+      },
+      {
+        "name": "Gore Magala Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Carapace"
+      },
+      {
+        "name": "Gore Magala Feeler+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_feeler+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Feeler++"
+      },
+      {
+        "name": "Frenzy Crystal",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Crystal"
+      }
+    ],
+    "url": "/Gore+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Gravios Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 52,
+    "fireResistance": 4,
+    "waterResistance": -3,
+    "thunderResistance": 1,
+    "iceResistance": 0,
+    "dragonResistance": -2,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "level": 2
+      },
+      {
+        "name": "Flinch Free",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gravios Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Certificate+S"
+      },
+      {
+        "name": "Gravios Carapace",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Carapace"
+      },
+      {
+        "name": "Gravios Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Medulla"
+      },
+      {
+        "name": "Firecell Stone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/firecell_stone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Firecell+Stone"
+      }
+    ],
+    "url": "/Gravios+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Gravios Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 52,
+    "fireResistance": 4,
+    "waterResistance": -3,
+    "thunderResistance": 1,
+    "iceResistance": 0,
+    "dragonResistance": -2,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "level": 2
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gravios Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Certificate+S"
+      },
+      {
+        "name": "Gravios Carapace",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Carapace"
+      },
+      {
+        "name": "Gravios Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Medulla"
+      },
+      {
+        "name": "Firecell Stone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/firecell_stone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Firecell+Stone"
+      }
+    ],
+    "url": "/Gravios+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Guild Ace Vambraces Alpha",
+    "rarity": 8,
+    "rank": "high",
+    "slots": [
+      3
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": 2,
+    "waterResistance": 2,
+    "thunderResistance": 2,
+    "iceResistance": 2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "level": 1
+      },
+      {
+        "name": "Constitution",
+        "level": 1
+      },
+      {
+        "name": "Foray",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 8000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter symbol III",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+symbol+III"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Carbalite+Ore"
+      }
+    ],
+    "url": "/Guild+Ace+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guild_ace_vambraces_a_arm_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Gypceros Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": -4,
+    "waterResistance": 3,
+    "thunderResistance": 4,
+    "iceResistance": -1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Resentment",
+        "level": 2
+      },
+      {
+        "name": "Poison Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rubbery Hide+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rubbery_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rubbery+Hide++"
+      },
+      {
+        "name": "Gypceros Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gypceros_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gypceros+Tail"
+      },
+      {
+        "name": "Monster Keenbone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_keenbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Keenbone"
+      }
+    ],
+    "url": "/Gypceros+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gypceros_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Gypceros Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": -4,
+    "waterResistance": 3,
+    "thunderResistance": 4,
+    "iceResistance": -1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Resentment",
+        "level": 2
+      }
+    ],
+    "groupSkill": "Buttery Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rubbery Hide+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rubbery_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rubbery+Hide++"
+      },
+      {
+        "name": "Gypceros Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gypceros_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gypceros+Tail"
+      },
+      {
+        "name": "Monster Keenbone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_keenbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Keenbone"
+      }
+    ],
+    "url": "/Gypceros+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gypceros_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "High Metal Braces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": 0,
+    "waterResistance": -1,
+    "thunderResistance": -2,
+    "iceResistance": 3,
+    "dragonResistance": 0,
+    "skills": [],
+    "groupSkill": "Imparted Wisdom",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Drearisite Scraps",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/drearisite_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Drearisite+Scraps"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Carbalite+Ore"
+      },
+      {
+        "name": "Charred Oilbone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/charred_oilbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Charred+Oilbone"
+      }
+    ],
+    "url": "/High+Metal+Braces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/high_metal_braces_a_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Hirabami Vambraces",
+    "rarity": 3,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 22,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 3,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Evade Window",
+        "level": 1
+      },
+      {
+        "name": "Ice Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Scale"
+      },
+      {
+        "name": "Hirabami Webbing",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_webbing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Webbing"
+      }
+    ],
+    "url": "/Hirabami+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Hirabami Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 3,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "level": 1
+      },
+      {
+        "name": "Evade Window",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Certificate+S"
+      },
+      {
+        "name": "Hirabami Scale+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Scale++"
+      },
+      {
+        "name": "Hirabami Webbing+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_webbing+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Webbing++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Hirabami+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Hirabami Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 3,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Evade Window",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Certificate+S"
+      },
+      {
+        "name": "Hirabami Scale+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Scale++"
+      },
+      {
+        "name": "Hirabami Webbing+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_webbing+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Webbing++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Hirabami+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Hope Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 2,
+    "fireResistance": 1,
+    "waterResistance": 0,
+    "thunderResistance": 1,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Divine Blessing",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Hope+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Hope Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 1,
+    "waterResistance": 0,
+    "thunderResistance": 1,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Sleep Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Sturdy Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/sturdy_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Sturdy+Bone"
+      },
+      {
+        "name": "Earth Crystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/earth_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Earth+Crystal"
+      }
+    ],
+    "url": "/Hope+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Ingot Vambraces",
+    "rarity": 3,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 16,
+    "fireResistance": -2,
+    "waterResistance": 0,
+    "thunderResistance": 3,
+    "iceResistance": -1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 400,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Dragonite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonite+Ore"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      }
+    ],
+    "url": "/Ingot+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ingot_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Ingot Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": -2,
+    "waterResistance": 0,
+    "thunderResistance": 3,
+    "iceResistance": -1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "level": 2
+      },
+      {
+        "name": "Resentment",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Carbalite+Ore"
+      },
+      {
+        "name": "Lightcrystal",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lightcrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lightcrystal"
+      }
+    ],
+    "url": "/Ingot+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ingot_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "King Beetle Brachia Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": -1,
+    "waterResistance": -1,
+    "thunderResistance": 2,
+    "iceResistance": 0,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Heroics",
+        "level": 1
+      },
+      {
+        "name": "Foray",
+        "level": 1
+      },
+      {
+        "name": "Poison Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Imparted Wisdom",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Great Hornfly",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_hornfly_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Hornfly"
+      },
+      {
+        "name": "Vespoid Carapace",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Carapace"
+      },
+      {
+        "name": "Monster Broth",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_broth_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Broth"
+      }
+    ],
+    "url": "/King+Beetle+Brachia+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/king_beetle_brachia_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Kut-Ku Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 3,
+    "waterResistance": 0,
+    "thunderResistance": -2,
+    "iceResistance": -4,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 1
+      },
+      {
+        "name": "Agitator",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Yian Kut-Ku Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/yian_kut-ku_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Yian+Kut-Ku+Certificate+S"
+      },
+      {
+        "name": "Kut-Ku Carapace",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kut-Ku+Carapace"
+      }
+    ],
+    "url": "/Kut-Ku+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Kut-Ku Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2,
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 3,
+    "waterResistance": 0,
+    "thunderResistance": -2,
+    "iceResistance": -4,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Yian Kut-Ku Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/yian_kut-ku_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Yian+Kut-Ku+Certificate+S"
+      },
+      {
+        "name": "Kut-Ku Carapace",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kut-Ku+Carapace"
+      }
+    ],
+    "url": "/Kut-Ku+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Chainmail Gloves",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 2,
+    "fireResistance": 0,
+    "waterResistance": 2,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Geologist",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Chainmail+Gloves",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chainmail_gloves_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Chainmail Gloves Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 0,
+    "waterResistance": 2,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "level": 1
+      },
+      {
+        "name": "Geologist",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Scale",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale"
+      },
+      {
+        "name": "Icium",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/icium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Icium"
+      }
+    ],
+    "url": "/Chainmail+Gloves+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chainmail_gloves_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Chatacabra Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 6,
+    "fireResistance": 1,
+    "waterResistance": 2,
+    "thunderResistance": -3,
+    "iceResistance": -1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Item Prolonger",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Chatacabra Hide",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Hide"
+      },
+      {
+        "name": "Chatacabra Shell",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Shell"
+      }
+    ],
+    "url": "/Chatacabra+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Chatacabra Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 1,
+    "waterResistance": 2,
+    "thunderResistance": -3,
+    "iceResistance": -1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "level": 1
+      },
+      {
+        "name": "Item Prolonger",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Chatacabra Scale+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Scale++"
+      },
+      {
+        "name": "Chatacabra Hide+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Hide++"
+      },
+      {
+        "name": "Chatacabra Jaw+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_jaw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Jaw++"
+      },
+      {
+        "name": "Chatacabra Carapace",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Carapace"
+      }
+    ],
+    "url": "/Chatacabra+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Chatacabra Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 1,
+    "waterResistance": 2,
+    "thunderResistance": -3,
+    "iceResistance": -1,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Item Prolonger",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Buttery Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Chatacabra Scale+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Scale++"
+      },
+      {
+        "name": "Chatacabra Hide+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Hide++"
+      },
+      {
+        "name": "Chatacabra Jaw+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_jaw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Jaw++"
+      },
+      {
+        "name": "Chatacabra Carapace",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Chatacabra+Carapace"
+      }
+    ],
+    "url": "/Chatacabra+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chatacabra_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Commission Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": 2,
+    "waterResistance": 2,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 1
+      },
+      {
+        "name": "Quick Sheathe",
+        "level": 2
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Commission+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/commission_vambraces_female-mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Conga Vambraces",
+    "rarity": 2,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 8,
+    "fireResistance": -3,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": -1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Stench Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 400,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Congalala Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Fang"
+      },
+      {
+        "name": "Vibrant Pelt",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vibrant_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vibrant+Pelt"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      }
+    ],
+    "url": "/Conga+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/conga_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Conga Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": -3,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": -1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "level": 1
+      },
+      {
+        "name": "Mushroomancer",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Congalala Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Certificate+S"
+      },
+      {
+        "name": "Vibrant Pelt+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vibrant_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vibrant+Pelt++"
+      },
+      {
+        "name": "Conga Pelt+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/conga_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Conga+Pelt++"
+      }
+    ],
+    "url": "/Conga+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/conga_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Conga Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": -3,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": -1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Mushroomancer",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Alluring Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Congalala Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Certificate+S"
+      },
+      {
+        "name": "Vibrant Pelt+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vibrant_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vibrant+Pelt++"
+      },
+      {
+        "name": "Conga Pelt+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/conga_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Conga+Pelt++"
+      }
+    ],
+    "url": "/Conga+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/conga_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Dahaad Shardbraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": 2,
+    "dragonResistance": -1,
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 2
+      },
+      {
+        "name": "Adaptability",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Jin Dahaad Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Certificate+S"
+      },
+      {
+        "name": "Jin Dahaad Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Carapace"
+      },
+      {
+        "name": "Jin Dahaad Claw+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Claw++"
+      },
+      {
+        "name": "Gracium",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      }
+    ],
+    "url": "/Dahaad+Shardbraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dahaad_shardbraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Dahaad Shardbraces Beta",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      3
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": 2,
+    "dragonResistance": -1,
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 1
+      },
+      {
+        "name": "Adaptability",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Fury",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Jin Dahaad Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Certificate+S"
+      },
+      {
+        "name": "Jin Dahaad Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Carapace"
+      },
+      {
+        "name": "Jin Dahaad Claw+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Claw++"
+      },
+      {
+        "name": "Gracium",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      }
+    ],
+    "url": "/Dahaad+Shardbraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dahaad_shardbraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Damascus Vambraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      3,
+      1
+    ],
+    "type": "arms",
+    "defense": 56,
+    "fireResistance": 4,
+    "waterResistance": -2,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "level": 1
+      },
+      {
+        "name": "Divine Blessing",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 6000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      },
+      {
+        "name": "Gracium",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Damascus+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/damascus_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Death Stench Grip Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": 3,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 3,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Resentment",
+        "level": 1
+      },
+      {
+        "name": "Ambush",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Imparted Wisdom",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Sinister Cloth",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/sinister_cloth_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Sinister+Cloth"
+      },
+      {
+        "name": "Wingdrake Hide+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wingdrake_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wingdrake+Hide++"
+      },
+      {
+        "name": "Quality Bone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quality_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quality+Bone"
+      }
+    ],
+    "url": "/Death+Stench+Grip+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/death_stench_grip_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Dober Vambraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      3
+    ],
+    "type": "arms",
+    "defense": 56,
+    "fireResistance": -2,
+    "waterResistance": 0,
+    "thunderResistance": -1,
+    "iceResistance": -1,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Stamina Surge",
+        "level": 2
+      },
+      {
+        "name": "Constitution",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 6000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      },
+      {
+        "name": "Stoutbone",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/stoutbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Stoutbone"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      },
+      {
+        "name": "Rath Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rath_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rath+Medulla"
+      }
+    ],
+    "url": "/Dober+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dober_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Doshaguma Braces",
+    "rarity": 2,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 16,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": -1,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 400,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Hide",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Hide"
+      },
+      {
+        "name": "Doshaguma Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang"
+      }
+    ],
+    "url": "/Doshaguma+Braces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_braces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Doshaguma Braces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": -1,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "level": 2
+      },
+      {
+        "name": "Stamina Surge",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Fortifying Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Fur+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fur+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fur++"
+      },
+      {
+        "name": "Doshaguma Claw+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Claw++"
+      },
+      {
+        "name": "Doshaguma Fang+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang++"
+      },
+      {
+        "name": "Great Stoutbone",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_stoutbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Stoutbone"
+      }
+    ],
+    "url": "/Doshaguma+Braces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_braces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Doshaguma Braces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": -3,
+    "waterResistance": 2,
+    "thunderResistance": -1,
+    "iceResistance": -1,
+    "dragonResistance": 4,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "level": 1
+      },
+      {
+        "name": "Stamina Surge",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Alluring Pelt",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Fur+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fur+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fur++"
+      },
+      {
+        "name": "Doshaguma Claw+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Claw++"
+      },
+      {
+        "name": "Doshaguma Fang+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang++"
+      },
+      {
+        "name": "Great Stoutbone",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_stoutbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Stoutbone"
+      }
+    ],
+    "url": "/Doshaguma+Braces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_braces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Duna Vambraces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": -1,
+    "waterResistance": 4,
+    "thunderResistance": -3,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Uth Duna Hide",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Hide"
+      },
+      {
+        "name": "Uth Duna Tentacle",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_tentacle_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Tentacle"
+      },
+      {
+        "name": "Guardian Pelt",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt_item_equipment_material_mhwilds_wiki_guide_85px.png",
+        "url": "/Guardian+Pelt"
+      }
+    ],
+    "url": "/Duna+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/duna_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Duna Wildbraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": -1,
+    "waterResistance": 4,
+    "thunderResistance": -3,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "level": 2
+      },
+      {
+        "name": "Quick Sheathe",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Uth Duna Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Scale++"
+      },
+      {
+        "name": "Uth Duna Cilia+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_cilia+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Cilia++"
+      },
+      {
+        "name": "Uth Duna Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Claw++"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      }
+    ],
+    "url": "/Duna+Wildbraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/duna_wildbraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Duna Wildbraces Beta",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      3,
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": -1,
+    "waterResistance": 4,
+    "thunderResistance": -3,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "level": 1
+      },
+      {
+        "name": "Quick Sheathe",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Fury",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Uth Duna Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Scale++"
+      },
+      {
+        "name": "Uth Duna Cilia+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_cilia+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Cilia++"
+      },
+      {
+        "name": "Uth Duna Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Claw++"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      }
+    ],
+    "url": "/Duna+Wildbraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/duna_wildbraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Leather Gloves",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 2,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Hunger Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Leather+Gloves",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/leather_gloves_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Leather Gloves Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Botanist",
+        "level": 1
+      },
+      {
+        "name": "Hunger Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Pelt",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      }
+    ],
+    "url": "/Leather+Gloves+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/leather_gloves_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Melahoa Branch Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 44,
+    "fireResistance": 0,
+    "waterResistance": 1,
+    "thunderResistance": 3,
+    "iceResistance": 0,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "level": 3
+      },
+      {
+        "name": "Paralysis Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Imparted Wisdom",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Great Hibiscus",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_hibiscus_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Hibiscus"
+      },
+      {
+        "name": "Guardian Seikret Feather+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_seikret_feather+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Seikret+Feather++"
+      },
+      {
+        "name": "Lightcrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lightcrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lightcrystal"
+      }
+    ],
+    "url": "/Melahoa+Branch+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/melahoa_branch_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Nerscylla Vambraces",
+    "rarity": 3,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 20,
+    "fireResistance": -2,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Ambush",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Alert",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nerscylla Shell",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Shell"
+      },
+      {
+        "name": "Nerscylla Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Claw"
+      },
+      {
+        "name": "Nerscylla Spike",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_spike_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Spike"
+      }
+    ],
+    "url": "/Nerscylla+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Nerscylla Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": -2,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Poison Resistance",
+        "level": 1
+      },
+      {
+        "name": "Ambush",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Alert",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nerscylla Carapace",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Carapace"
+      },
+      {
+        "name": "Nerscylla Claw+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Claw++"
+      },
+      {
+        "name": "Nerscylla Spike+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Spike++"
+      }
+    ],
+    "url": "/Nerscylla+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Nerscylla Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": -2,
+    "waterResistance": 2,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Ambush",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Camouflage",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nerscylla Carapace",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Carapace"
+      },
+      {
+        "name": "Nerscylla Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Claw++"
+      },
+      {
+        "name": "Nerscylla Shear",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_shear_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Shear"
+      },
+      {
+        "name": "Nerscylla Spike+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Spike++"
+      }
+    ],
+    "url": "/Nerscylla+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Quematrice Braces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 6,
+    "fireResistance": 2,
+    "waterResistance": -3,
+    "thunderResistance": 0,
+    "iceResistance": -1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Quematrice Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Scale"
+      },
+      {
+        "name": "Quematrice Igniter",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_igniter_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Igniter"
+      }
+    ],
+    "url": "/Quematrice+Braces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_braces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Quematrice Braces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 2,
+    "waterResistance": -3,
+    "thunderResistance": 0,
+    "iceResistance": -1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Fire Resistance",
+        "level": 1
+      },
+      {
+        "name": "Flinch Free",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Quematrice Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Scale++"
+      },
+      {
+        "name": "Quematrice Hide+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Hide++"
+      },
+      {
+        "name": "Quematrice Igniter+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_igniter+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Igniter++"
+      },
+      {
+        "name": "Quematrice Crest+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_crest+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Crest++"
+      }
+    ],
+    "url": "/Quematrice+Braces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_braces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Quematrice Braces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 2,
+    "waterResistance": -3,
+    "thunderResistance": 0,
+    "iceResistance": -1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Quematrice Scale",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Scale"
+      },
+      {
+        "name": "Quematrice Igniter",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_igniter_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Igniter"
+      }
+    ],
+    "url": "/Quematrice+Braces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_braces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rathalos Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 3,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": -3,
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 2
+      },
+      {
+        "name": "Evade Window",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathalos Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Certificate+S"
+      },
+      {
+        "name": "Rathalos Scale+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Scale++"
+      },
+      {
+        "name": "Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Ruby"
+      },
+      {
+        "name": "Inferno Sac",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/inferno_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Inferno+Sac"
+      }
+    ],
+    "url": "/Rathalos+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rathalos Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      1,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 3,
+    "waterResistance": 1,
+    "thunderResistance": -2,
+    "iceResistance": 1,
+    "dragonResistance": -3,
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 2
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathalos Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Certificate+S"
+      },
+      {
+        "name": "Rathalos Scale+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Scale++"
+      },
+      {
+        "name": "Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Ruby"
+      },
+      {
+        "name": "Inferno Sac",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/inferno_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Inferno+Sac"
+      }
+    ],
+    "url": "/Rathalos+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rathian Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -2,
+    "iceResistance": 0,
+    "dragonResistance": -3,
+    "skills": [
+      {
+        "name": "Divine Blessing",
+        "level": 2
+      },
+      {
+        "name": "Foray",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scaling Prowess",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathian Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Scale++"
+      },
+      {
+        "name": "Rathian Carapace",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Carapace"
+      },
+      {
+        "name": "Rathian Spike+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Spike++"
+      },
+      {
+        "name": "Toxin Sac",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/toxin_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Toxin+Sac"
+      }
+    ],
+    "url": "/Rathian+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rathian Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 38,
+    "fireResistance": 2,
+    "waterResistance": 0,
+    "thunderResistance": -2,
+    "iceResistance": 0,
+    "dragonResistance": -3,
+    "skills": [
+      {
+        "name": "Foray",
+        "level": 1
+      },
+      {
+        "name": "Divine Blessing",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Scale Layering",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathian Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Scale++"
+      },
+      {
+        "name": "Rathian Carapace",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Carapace"
+      },
+      {
+        "name": "Rathian Spike+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Spike++"
+      },
+      {
+        "name": "Toxin Sac",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/toxin_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Toxin+Sac"
+      }
+    ],
+    "url": "/Rathian+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rey Sandbraces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 0,
+    "waterResistance": -2,
+    "thunderResistance": 4,
+    "iceResistance": -3,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Latent Power",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Wingtalon",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_wingtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Wingtalon"
+      },
+      {
+        "name": "Rey Dau Thunderhorn",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_thunderhorn_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Thunderhorn"
+      },
+      {
+        "name": "Rey Dau Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Tail"
+      },
+      {
+        "name": "Guardian Scale",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale"
+      }
+    ],
+    "url": "/Rey+Sandbraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_sandbraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rey Sandbraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": 0,
+    "waterResistance": -2,
+    "thunderResistance": 4,
+    "iceResistance": -3,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Latent Power",
+        "level": 2
+      },
+      {
+        "name": "Stun Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Certificate+S"
+      },
+      {
+        "name": "Rey Dau Fulgurtalon",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_fulgurtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Fulgurtalon"
+      },
+      {
+        "name": "Rey Dau Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Scale++"
+      },
+      {
+        "name": "Rey Dau Boltgem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_boltgem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Boltgem"
+      }
+    ],
+    "url": "/Rey+Sandbraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_sandbraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rey Sandbraces Beta",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      3
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": 0,
+    "waterResistance": -2,
+    "thunderResistance": 4,
+    "iceResistance": -3,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Latent Power",
+        "level": 2
+      }
+    ],
+    "groupSkill": "Lord's Fury",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Certificate+S"
+      },
+      {
+        "name": "Rey Dau Fulgurtalon",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_fulgurtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Fulgurtalon"
+      },
+      {
+        "name": "Rey Dau Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Scale++"
+      },
+      {
+        "name": "Rey Dau Boltgem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_boltgem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Boltgem"
+      }
+    ],
+    "url": "/Rey+Sandbraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_sandbraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rompopolo Vambraces",
+    "rarity": 3,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 18,
+    "fireResistance": 0,
+    "waterResistance": -3,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "level": 1
+      },
+      {
+        "name": "Poison Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Spotted Poison Hide",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/spotted_poison_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Spotted+Poison+Hide"
+      },
+      {
+        "name": "Rompopolo Beak",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_beak_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Beak"
+      }
+    ],
+    "url": "/Rompopolo+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rompopolo Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 0,
+    "waterResistance": -3,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Poison Resistance",
+        "level": 1
+      },
+      {
+        "name": "Earplugs",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rompopolo Hide+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Hide++"
+      },
+      {
+        "name": "Rompopolo Claw+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Claw++"
+      },
+      {
+        "name": "Spotted Poison Hide+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/spotted_poison_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Spotted+Poison+Hide++"
+      },
+      {
+        "name": "Rompopolo Beak+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_beak+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Beak++"
+      }
+    ],
+    "url": "/Rompopolo+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Rompopolo Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 36,
+    "fireResistance": 0,
+    "waterResistance": -3,
+    "thunderResistance": 0,
+    "iceResistance": 0,
+    "dragonResistance": 1,
+    "skills": [
+      {
+        "name": "Earplugs",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Buttery Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 3000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rompopolo Hide+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Hide++"
+      },
+      {
+        "name": "Rompopolo Claw+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Claw++"
+      },
+      {
+        "name": "Spotted Poison Hide+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/spotted_poison_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Spotted+Poison+Hide++"
+      },
+      {
+        "name": "Rompopolo Beak+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_beak+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Beak++"
+      }
+    ],
+    "url": "/Rompopolo+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Talioth Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 4,
+    "fireResistance": 4,
+    "waterResistance": -2,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Leap of Faith",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Talioth Scale",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/talioth_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Talioth+Scale"
+      },
+      {
+        "name": "Sharp Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/sharp_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Sharp+Fang"
+      }
+    ],
+    "url": "/Talioth+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/talioth_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Talioth Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 32,
+    "fireResistance": 4,
+    "waterResistance": -2,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "name": "Leap of Faith",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Talioth Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/talioth_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Talioth+Scale++"
+      },
+      {
+        "name": "Acute Fang",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/acute_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Acute+Fang"
+      }
+    ],
+    "url": "/Talioth+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/talioth_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Talioth Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 32,
+    "fireResistance": 4,
+    "waterResistance": -2,
+    "thunderResistance": -2,
+    "iceResistance": -2,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Leap of Faith",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Buttery Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Talioth Scale+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/talioth_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Talioth+Scale++"
+      },
+      {
+        "name": "Acute Fang",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/acute_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Acute+Fang"
+      }
+    ],
+    "url": "/Talioth+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/talioth_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Udra Mirebraces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 5,
+    "waterResistance": -4,
+    "thunderResistance": 0,
+    "iceResistance": 1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Hide",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Hide"
+      },
+      {
+        "name": "Nu Udra Oilmucus",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_oilmucus_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Oilmucus"
+      }
+    ],
+    "url": "/Udra+Mirebraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/udra_mirebraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Udra Mirebraces Alpha",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": 5,
+    "waterResistance": -4,
+    "thunderResistance": 0,
+    "iceResistance": 1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "level": 2
+      },
+      {
+        "name": "Speed Eating",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Favor",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Nu Udra Spike+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Spike++"
+      },
+      {
+        "name": "Nu Udra Tentacle+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_tentacle+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Tentacle++"
+      },
+      {
+        "name": "Kranodath Skull+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kranodath_skull+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kranodath+Skull++"
+      }
+    ],
+    "url": "/Udra+Mirebraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/udra_mirebraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Udra Mirebraces Beta",
+    "rarity": 7,
+    "rank": "high",
+    "slots": [
+      3,
+      1
+    ],
+    "type": "arms",
+    "defense": 60,
+    "fireResistance": 5,
+    "waterResistance": -4,
+    "thunderResistance": 0,
+    "iceResistance": 1,
+    "dragonResistance": 0,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "level": 2
+      },
+      {
+        "name": "Counterstrike",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Lord's Fury",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 7000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Nu Udra Spike+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Spike++"
+      },
+      {
+        "name": "Nu Udra Tentacle+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_tentacle+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Tentacle++"
+      },
+      {
+        "name": "Kranodath Skull+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kranodath_skull+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kranodath+Skull++"
+      }
+    ],
+    "url": "/Udra+Mirebraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/udra_mirebraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Vespoid Vambraces",
+    "rarity": 1,
+    "rank": "low",
+    "slots": [],
+    "type": "arms",
+    "defense": 4,
+    "fireResistance": -2,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": 1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Alert",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Vespoid Shell",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Shell"
+      },
+      {
+        "name": "Vespoid Wing",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Wing"
+      }
+    ],
+    "url": "/Vespoid+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Vespoid Vambraces Alpha",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [],
+    "type": "arms",
+    "defense": 32,
+    "fireResistance": -2,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": 1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "level": 1
+      },
+      {
+        "name": "Ambush",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Alert",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Vespoid Carapace",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Carapace"
+      },
+      {
+        "name": "Vespoid Innerwing",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_innerwing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Innerwing"
+      }
+    ],
+    "url": "/Vespoid+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Vespoid Vambraces Beta",
+    "rarity": 5,
+    "rank": "high",
+    "slots": [
+      2
+    ],
+    "type": "arms",
+    "defense": 32,
+    "fireResistance": -2,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": 1,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Neopteron Camouflage",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Vespoid Carapace",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Carapace"
+      },
+      {
+        "name": "Vespoid Innerwing",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_innerwing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vespoid+Innerwing"
+      }
+    ],
+    "url": "/Vespoid+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Xu Wu Vambraces",
+    "rarity": 4,
+    "rank": "low",
+    "slots": [
+      1
+    ],
+    "type": "arms",
+    "defense": 26,
+    "fireResistance": 1,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": -3,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Maximum Might",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Xu Wu Hide",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Hide"
+      },
+      {
+        "name": "Xu Wu Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Claw"
+      }
+    ],
+    "url": "/Xu+Wu+Vambraces",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_vambraces_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Xu Wu Vambraces Alpha",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 1,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": -3,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Earplugs",
+        "level": 2
+      }
+    ],
+    "groupSkill": "Flexible Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Xu Wu Hide+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Hide++"
+      },
+      {
+        "name": "Golden Corneum+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/golden_corneum+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Golden+Corneum++"
+      },
+      {
+        "name": "Xu Wu Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Claw++"
+      },
+      {
+        "name": "Xu Wu Fang+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Fang++"
+      }
+    ],
+    "url": "/Xu+Wu+Vambraces+Alpha",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_vambraces_a_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Xu Wu Vambraces Beta",
+    "rarity": 6,
+    "rank": "high",
+    "slots": [
+      2,
+      2,
+      1
+    ],
+    "type": "arms",
+    "defense": 48,
+    "fireResistance": 1,
+    "waterResistance": 1,
+    "thunderResistance": 1,
+    "iceResistance": -3,
+    "dragonResistance": 2,
+    "skills": [
+      {
+        "name": "Earplugs",
+        "level": 1
+      }
+    ],
+    "groupSkill": "Buttery Leathercraft",
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Xu Wu Hide+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Hide++"
+      },
+      {
+        "name": "Golden Corneum+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/golden_corneum+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Golden+Corneum++"
+      },
+      {
+        "name": "Xu Wu Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Claw++"
+      },
+      {
+        "name": "Xu Wu Fang+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Xu+Wu+Fang++"
+      }
+    ],
+    "url": "/Xu+Wu+Vambraces+Beta",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  }
+]

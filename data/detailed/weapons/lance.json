@@ -1,0 +1,4284 @@
+[
+  {
+    "sharpness": [
+      12,
+      15,
+      10,
+      12,
+      0,
+      0
+    ],
+    "name": "Hope Lance I",
+    "rarity": 1,
+    "attack": 207,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Hope+Lance+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_lance_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      12,
+      12,
+      15,
+      0,
+      0
+    ],
+    "name": "Hope Lance II",
+    "rarity": 1,
+    "attack": 230,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Iron Ore",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/iron_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Iron+Ore"
+      }
+    ],
+    "url": "/Hope+Lance+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_lance_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      15,
+      20,
+      0,
+      0
+    ],
+    "name": "Hope Lance III",
+    "rarity": 3,
+    "attack": 299,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Critical Eye",
+        "level": 1
+      },
+      {
+        "name": "Speed Sharpening",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Dragonite Ore",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonite+Ore"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      }
+    ],
+    "url": "/Hope+Lance+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_lance_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      18,
+      18,
+      12,
+      0
+    ],
+    "name": "Hope Lance IV",
+    "rarity": 5,
+    "attack": 368,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "level": 2
+      },
+      {
+        "name": "Critical Eye",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Carbalite+Ore"
+      }
+    ],
+    "url": "/Hope+Lance+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_lance_iv_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      15,
+      20,
+      12,
+      12
+    ],
+    "name": "Hope Lance V",
+    "rarity": 7,
+    "attack": 437,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "level": 2
+      },
+      {
+        "name": "Critical Eye",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      }
+    ],
+    "url": "/Hope+Lance+V",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_lance_v_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      20,
+      18,
+      0,
+      0,
+      0
+    ],
+    "name": "Bone Lance I",
+    "rarity": 1,
+    "attack": 253,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Mystery Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/mystery_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Mystery+Bone"
+      }
+    ],
+    "url": "/Bone+Lance+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bone_lance_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      25,
+      0,
+      0,
+      0
+    ],
+    "name": "Bone Lance II",
+    "rarity": 2,
+    "attack": 299,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Attack Boost",
+        "level": 1
+      },
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Sturdy Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/sturdy_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Sturdy+Bone"
+      },
+      {
+        "name": "Monster Fluid",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_fluid_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Fluid"
+      }
+    ],
+    "url": "/Bone+Lance+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bone_lance_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      18,
+      25,
+      8,
+      0,
+      0
+    ],
+    "name": "Bone Lance III",
+    "rarity": 4,
+    "attack": 391,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      },
+      {
+        "name": "Attack Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      }
+    ],
+    "url": "/Bone+Lance+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bone_lance_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      18,
+      20,
+      25,
+      0,
+      0
+    ],
+    "name": "Bone Lance IV",
+    "rarity": 6,
+    "attack": 460,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      },
+      {
+        "name": "Attack Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Great Stoutbone",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_stoutbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Stoutbone"
+      },
+      {
+        "name": "Colossal Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/colossal_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Colossal+Bone"
+      }
+    ],
+    "url": "/Bone+Lance+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bone_lance_iv_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      18,
+      18,
+      25,
+      0
+    ],
+    "name": "Hard Bone Lance",
+    "rarity": 8,
+    "attack": 529,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      },
+      {
+        "name": "Attack Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      },
+      {
+        "name": "Dragonbone Relic",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonbone_relic_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonbone+Relic"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Hard+Bone+Lance",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hard_bone_lance_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      10,
+      22,
+      10,
+      0,
+      0
+    ],
+    "name": "Chrome Drill I",
+    "rarity": 2,
+    "attack": 276,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      },
+      {
+        "name": "Earth Crystal",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/earth_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Earth+Crystal"
+      }
+    ],
+    "url": "/Chrome+Drill+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chrome_drill_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      15,
+      22,
+      18,
+      0,
+      0
+    ],
+    "name": "Chrome Drill II",
+    "rarity": 4,
+    "attack": 368,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lightcrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lightcrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lightcrystal"
+      },
+      {
+        "name": "Icium",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/icium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Icium"
+      }
+    ],
+    "url": "/Chrome+Drill+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chrome_drill_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      18,
+      22,
+      15,
+      12,
+      0
+    ],
+    "name": "Chrome Drill III",
+    "rarity": 6,
+    "attack": 437,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      },
+      {
+        "name": "Gracium",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      },
+      {
+        "name": "Monster Keenbone",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_keenbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Keenbone"
+      }
+    ],
+    "url": "/Chrome+Drill+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chrome_drill_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      15,
+      22,
+      18,
+      12,
+      12
+    ],
+    "name": "Chrome Lance",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Novacrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/novacrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Novacrystal"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Chrome+Lance",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chrome_lance_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      18,
+      12,
+      8,
+      0,
+      0
+    ],
+    "name": "Quematrice Lanza I",
+    "rarity": 1,
+    "attack": 230,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 100
+      }
+    ],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Quematrice Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Scale"
+      },
+      {
+        "name": "Quematrice Igniter",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_igniter_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Igniter"
+      },
+      {
+        "name": "Quematrice Crest",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_crest_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Crest"
+      }
+    ],
+    "url": "/Quematrice+Lanza+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_lanza_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      20,
+      15,
+      15,
+      0,
+      0
+    ],
+    "name": "Quematrice Lanza II",
+    "rarity": 3,
+    "attack": 322,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 120
+      }
+    ],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Firestone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/firestone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Firestone"
+      },
+      {
+        "name": "Quematrice Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Tail"
+      },
+      {
+        "name": "Dragonite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonite+Ore"
+      }
+    ],
+    "url": "/Quematrice+Lanza+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_lanza_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      18,
+      20,
+      20,
+      12,
+      5,
+      0
+    ],
+    "name": "Quematrice Lanza III",
+    "rarity": 5,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 150
+      }
+    ],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Quematrice Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Certificate+S"
+      },
+      {
+        "name": "Quematrice Igniter+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_igniter+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Igniter++"
+      },
+      {
+        "name": "Quematrice Crest+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_crest+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Crest++"
+      }
+    ],
+    "url": "/Quematrice+Lanza+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_lanza_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      18,
+      20,
+      20,
+      20,
+      10,
+      0
+    ],
+    "name": "Quematrice Lanza IV",
+    "rarity": 7,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 170
+      }
+    ],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Quematrice Hide+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Hide++"
+      },
+      {
+        "name": "Inferno Sac",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/inferno_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Inferno+Sac"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Quematrice+Lanza+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_lanza_iv_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      15,
+      18,
+      20,
+      20,
+      15,
+      0
+    ],
+    "name": "Firetrail Kaminet",
+    "rarity": 8,
+    "attack": 552,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 200
+      }
+    ],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Quematrice Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/quematrice_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Quematrice+Scale++"
+      },
+      {
+        "name": "Nu Udra Flamegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_flamegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Flamegem"
+      }
+    ],
+    "url": "/Firetrail+Kaminet",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/firetrail_kaminet_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      10,
+      15,
+      0,
+      0
+    ],
+    "name": "Barina Sarissa I",
+    "rarity": 1,
+    "attack": 230,
+    "elemental": [
+      {
+        "name": "paralysis",
+        "amount": 100
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lala Barina Shell",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Shell"
+      },
+      {
+        "name": "Lala Barina Mucus",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_mucus_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Mucus"
+      },
+      {
+        "name": "Lala Barina Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Claw"
+      }
+    ],
+    "url": "/Barina+Sarissa+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_sarissa_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      18,
+      12,
+      8,
+      25,
+      0,
+      0
+    ],
+    "name": "Barina Sarissa II",
+    "rarity": 3,
+    "attack": 276,
+    "elemental": [
+      {
+        "name": "paralysis",
+        "amount": 130
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 1
+      },
+      {
+        "name": "Critical Status",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nerscylla Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nerscylla_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nerscylla+Claw"
+      },
+      {
+        "name": "Lala Barina Floret",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_floret_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Floret"
+      },
+      {
+        "name": "Lala Barina Stinger",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_stinger_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Stinger"
+      }
+    ],
+    "url": "/Barina+Sarissa+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_sarissa_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      18,
+      12,
+      8,
+      25,
+      12,
+      0
+    ],
+    "name": "Barina Sarissa III",
+    "rarity": 5,
+    "attack": 345,
+    "elemental": [
+      {
+        "name": "paralysis",
+        "amount": 180
+      }
+    ],
+    "affinity": 15,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 1
+      },
+      {
+        "name": "Critical Status",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lala Barina Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Certificate+S"
+      },
+      {
+        "name": "Lala Barina Mucus+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_mucus+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Mucus++"
+      },
+      {
+        "name": "Lala Barina Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Claw++"
+      }
+    ],
+    "url": "/Barina+Sarissa+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_sarissa_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      18,
+      12,
+      8,
+      22,
+      15,
+      12
+    ],
+    "name": "Barina Sarissa IV",
+    "rarity": 7,
+    "attack": 414,
+    "elemental": [
+      {
+        "name": "paralysis",
+        "amount": 210
+      }
+    ],
+    "affinity": 15,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 2
+      },
+      {
+        "name": "Critical Status",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      },
+      {
+        "name": "Lala Barina Floret+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_floret+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Floret++"
+      },
+      {
+        "name": "Lala Barina Stinger+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_stinger+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Stinger++"
+      }
+    ],
+    "url": "/Barina+Sarissa+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/barina_sarissa_iv_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      18,
+      12,
+      8,
+      15,
+      10,
+      25
+    ],
+    "name": "Lala Aviculari",
+    "rarity": 8,
+    "attack": 460,
+    "elemental": [
+      {
+        "name": "paralysis",
+        "amount": 250
+      }
+    ],
+    "affinity": 15,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 2
+      },
+      {
+        "name": "Critical Status",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Lala Barina Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_barina_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lala+Barina+Carapace"
+      },
+      {
+        "name": "Monster Broth",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_broth_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Broth"
+      },
+      {
+        "name": "Bird Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bird_wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Bird+Wyvern+Gem"
+      }
+    ],
+    "url": "/Lala+Aviculari",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lala_aviculari_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      8,
+      22,
+      10,
+      0,
+      0
+    ],
+    "name": "Balahara Lance I",
+    "rarity": 2,
+    "attack": 253,
+    "elemental": [
+      {
+        "name": "water",
+        "amount": 140
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Balahara Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Scale"
+      },
+      {
+        "name": "Balahara Skull",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_skull_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Skull"
+      },
+      {
+        "name": "Aqua Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/aqua_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Aqua+Sac"
+      }
+    ],
+    "url": "/Balahara+Lance+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_lance_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      8,
+      25,
+      18,
+      0,
+      0
+    ],
+    "name": "Balahara Lance II",
+    "rarity": 4,
+    "attack": 345,
+    "elemental": [
+      {
+        "name": "water",
+        "amount": 160
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Doshaguma Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw"
+      },
+      {
+        "name": "Balahara Shell",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_shell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Shell"
+      },
+      {
+        "name": "Balahara Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Tail"
+      }
+    ],
+    "url": "/Balahara+Lance+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_lance_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      8,
+      28,
+      22,
+      8,
+      0
+    ],
+    "name": "Balahara Lance III",
+    "rarity": 5,
+    "attack": 368,
+    "elemental": [
+      {
+        "name": "water",
+        "amount": 200
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Balahara Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Certificate+S"
+      },
+      {
+        "name": "Balahara Skull+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_skull+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Skull++"
+      },
+      {
+        "name": "Torrent Sac",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/torrent_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Torrent+Sac"
+      },
+      {
+        "name": "Balahara Black Pearl",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_black_pearl_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Black+Pearl"
+      }
+    ],
+    "url": "/Balahara+Lance+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_lance_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      8,
+      28,
+      22,
+      18,
+      2
+    ],
+    "name": "Balahara Lance IV",
+    "rarity": 7,
+    "attack": 437,
+    "elemental": [
+      {
+        "name": "water",
+        "amount": 220
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Uth Duna Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Certificate+S"
+      },
+      {
+        "name": "Balahara Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Carapace"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Balahara+Lance+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_lance_iv_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      8,
+      25,
+      20,
+      18,
+      8
+    ],
+    "name": "Sandsea Prallaya",
+    "rarity": 8,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "water",
+        "amount": 250
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Balahara Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/balahara_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Balahara+Scale++"
+      },
+      {
+        "name": "Uth Duna Watergem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/uth_duna_watergem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Uth+Duna+Watergem"
+      }
+    ],
+    "url": "/Sandsea+Prallaya",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/sandsea_prallaya_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      22,
+      20,
+      0,
+      0,
+      0
+    ],
+    "name": "Dosha Fierceborer I",
+    "rarity": 2,
+    "attack": 322,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Fur",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fur_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fur"
+      },
+      {
+        "name": "Doshaguma Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Claw"
+      },
+      {
+        "name": "Doshaguma Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang"
+      }
+    ],
+    "url": "/Dosha+Fierceborer+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_fierceborer_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      22,
+      22,
+      8,
+      0,
+      0
+    ],
+    "name": "Dosha Fierceborer II",
+    "rarity": 4,
+    "attack": 414,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "slots": [
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Doshaguma Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw"
+      },
+      {
+        "name": "Doshaguma Hide",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Hide"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      }
+    ],
+    "url": "/Dosha+Fierceborer+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_fierceborer_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      20,
+      22,
+      15,
+      5,
+      0
+    ],
+    "name": "Dosha Fierceborer III",
+    "rarity": 6,
+    "attack": 483,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Certificate+S"
+      },
+      {
+        "name": "Doshaguma Claw+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Claw++"
+      },
+      {
+        "name": "Doshaguma Fang+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang++"
+      }
+    ],
+    "url": "/Dosha+Fierceborer+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_fierceborer_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      25,
+      10,
+      0,
+      0
+    ],
+    "name": "Rompo Piercer I",
+    "rarity": 3,
+    "attack": 322,
+    "elemental": [
+      {
+        "name": "poison",
+        "amount": 150
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rompopolo Hide",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Hide"
+      },
+      {
+        "name": "Rompopolo Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Claw"
+      },
+      {
+        "name": "Poison Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/poison_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Poison+Sac"
+      }
+    ],
+    "url": "/Rompo+Piercer+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompo_piercer_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      25,
+      22,
+      2,
+      0
+    ],
+    "name": "Rompo Piercer II",
+    "rarity": 5,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "poison",
+        "amount": 190
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rompopolo Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Certificate+S"
+      },
+      {
+        "name": "Rompopolo Claw+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Claw++"
+      },
+      {
+        "name": "Toxin Sac",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/toxin_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Toxin+Sac"
+      }
+    ],
+    "url": "/Rompo+Piercer+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompo_piercer_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      15,
+      12,
+      25,
+      8,
+      25,
+      2
+    ],
+    "name": "Rompo Piercer III",
+    "rarity": 7,
+    "attack": 460,
+    "elemental": [
+      {
+        "name": "poison",
+        "amount": 220
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Spotted Poison Hide+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/spotted_poison_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Spotted+Poison+Hide++"
+      },
+      {
+        "name": "Rathian Spike+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Spike++"
+      }
+    ],
+    "url": "/Rompo+Piercer+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompo_piercer_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      10,
+      12,
+      25,
+      8,
+      25,
+      8
+    ],
+    "name": "Rompo Tetrotox",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [
+      {
+        "name": "poison",
+        "amount": 250
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Rompopolo Beak+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompopolo_beak+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rompopolo+Beak++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Rompo+Tetrotox",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rompo_tetrotox_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      2,
+      2,
+      38,
+      20,
+      0,
+      0
+    ],
+    "name": "Rey Indra I",
+    "rarity": 3,
+    "attack": 322,
+    "elemental": [
+      {
+        "name": "thunder",
+        "amount": 150
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 1
+      },
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Scale"
+      },
+      {
+        "name": "Rey Dau Wingtalon",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_wingtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Wingtalon"
+      },
+      {
+        "name": "Rey Dau Thunderhorn",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_thunderhorn_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Thunderhorn"
+      }
+    ],
+    "url": "/Rey+Indra+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_indra_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      2,
+      2,
+      32,
+      25,
+      12,
+      0
+    ],
+    "name": "Rey Indra II",
+    "rarity": 5,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "thunder",
+        "amount": 190
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 1
+      },
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathian Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Certificate+S"
+      },
+      {
+        "name": "Rathian Webbing",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_webbing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Webbing"
+      },
+      {
+        "name": "Novacrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/novacrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Novacrystal"
+      }
+    ],
+    "url": "/Rey+Indra+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_indra_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      2,
+      2,
+      30,
+      20,
+      20,
+      12
+    ],
+    "name": "Rey Indra III",
+    "rarity": 7,
+    "attack": 460,
+    "elemental": [
+      {
+        "name": "thunder",
+        "amount": 220
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      },
+      {
+        "name": "Offensive Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Certificate+S"
+      },
+      {
+        "name": "Rey Dau Fulgurtalon",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_fulgurtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Fulgurtalon"
+      },
+      {
+        "name": "Rey Dau Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Tail"
+      },
+      {
+        "name": "Rey Dau Plate",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_plate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Plate"
+      }
+    ],
+    "url": "/Rey+Indra+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_indra_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      2,
+      2,
+      28,
+      18,
+      18,
+      20
+    ],
+    "name": "Indra Clairlance",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [
+      {
+        "name": "thunder",
+        "amount": 250
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      },
+      {
+        "name": "Offensive Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Rey Dau Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Carapace"
+      },
+      {
+        "name": "Rey Dau Bolthorn",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_bolthorn_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Bolthorn"
+      },
+      {
+        "name": "Rey Dau Boltgem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_boltgem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Boltgem"
+      }
+    ],
+    "url": "/Indra+Clairlance",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/indra_clairlance_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      20,
+      15,
+      0,
+      0
+    ],
+    "name": "Windpierce Lance I",
+    "rarity": 3,
+    "attack": 322,
+    "elemental": [
+      {
+        "name": "ice",
+        "amount": 150
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Scale"
+      },
+      {
+        "name": "Hirabami Tail Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_tail_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Tail+Claw"
+      },
+      {
+        "name": "Frost Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frost_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frost+Sac"
+      }
+    ],
+    "url": "/Windpierce+Lance+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windpierce_lance_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      18,
+      25,
+      8,
+      0
+    ],
+    "name": "Windpierce Lance II",
+    "rarity": 5,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "ice",
+        "amount": 190
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Certificate+S"
+      },
+      {
+        "name": "Hirabami Tail Claw+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_tail_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Tail+Claw++"
+      },
+      {
+        "name": "Freezer Sac",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/freezer_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Freezer+Sac"
+      }
+    ],
+    "url": "/Windpierce+Lance+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windpierce_lance_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      12,
+      8,
+      35,
+      8
+    ],
+    "name": "Windpierce Lance III",
+    "rarity": 7,
+    "attack": 460,
+    "elemental": [
+      {
+        "name": "ice",
+        "amount": 220
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Jin Dahaad Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Certificate+S"
+      },
+      {
+        "name": "Hirabami Hide+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Hide++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Windpierce+Lance+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windpierce_lance_iii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      12,
+      8,
+      30,
+      12
+    ],
+    "name": "Windpierce Tsukibami",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [
+      {
+        "name": "ice",
+        "amount": 250
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Hirabami Webbing+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_webbing+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Webbing++"
+      },
+      {
+        "name": "Jin Dahaad Icegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_icegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Icegem"
+      }
+    ],
+    "url": "/Windpierce+Tsukibami",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windpierce_tsukibami_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      5,
+      20,
+      12,
+      0,
+      0
+    ],
+    "name": "Nu Osminog I",
+    "rarity": 4,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 150
+      }
+    ],
+    "affinity": -15,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Hide",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Hide"
+      },
+      {
+        "name": "Nu Udra Spike",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_spike_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Spike"
+      },
+      {
+        "name": "Nu Udra Oilmucus",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_oilmucus_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Oilmucus"
+      }
+    ],
+    "url": "/Nu+Osminog+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_osminog_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      5,
+      25,
+      18,
+      15,
+      0
+    ],
+    "name": "Nu Osminog II",
+    "rarity": 7,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 220
+      }
+    ],
+    "affinity": -15,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Nu Udra Spike+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Spike++"
+      },
+      {
+        "name": "Nu Udra Oilmucus+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_oilmucus+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Oilmucus++"
+      },
+      {
+        "name": "Nu Udra Cerebrospinal Fluid",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_cerebrospinal_fluid_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Cerebrospinal+Fluid"
+      }
+    ],
+    "url": "/Nu+Osminog+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_osminog_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      5,
+      25,
+      12,
+      12,
+      8
+    ],
+    "name": "Abaddonian Osminog",
+    "rarity": 8,
+    "attack": 529,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 250
+      }
+    ],
+    "affinity": -15,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Nu Udra Tentacle+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_tentacle+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Tentacle++"
+      },
+      {
+        "name": "Nu Udra Horn+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_horn+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Horn++"
+      },
+      {
+        "name": "Nu Udra Flamegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_flamegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Flamegem"
+      }
+    ],
+    "url": "/Abaddonian+Osminog",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/abaddonian_osminog_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      18,
+      30,
+      8,
+      0,
+      0
+    ],
+    "name": "Dosha Gloomborer I",
+    "rarity": 4,
+    "attack": 414,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Doshaguma Fur",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fur_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fur"
+      },
+      {
+        "name": "Guardian Doshaguma Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw"
+      },
+      {
+        "name": "Guardian Doshaguma Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fang"
+      }
+    ],
+    "url": "/Dosha+Gloomborer+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_gloomborer_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      25,
+      25,
+      12,
+      0,
+      0
+    ],
+    "name": "Dosha Gloomborer II",
+    "rarity": 6,
+    "attack": 506,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G. Doshaguma Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Doshaguma+Certificate+S"
+      },
+      {
+        "name": "Guardian Doshaguma Claw+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw++"
+      },
+      {
+        "name": "Guardian Doshaguma Fang+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fang++"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      }
+    ],
+    "url": "/Dosha+Gloomborer+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_gloomborer_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      18,
+      22,
+      22,
+      12,
+      0
+    ],
+    "name": "Gloomborer Urshanith",
+    "rarity": 8,
+    "attack": 575,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Doshaguma Fur+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fur+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fur++"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Gloomborer+Urshanith",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gloomborer_urshanith_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      25,
+      15,
+      10,
+      0,
+      0
+    ],
+    "name": "Albirath Tail I",
+    "rarity": 4,
+    "attack": 368,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 160
+      }
+    ],
+    "affinity": 15,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 1
+      },
+      {
+        "name": "Master's Touch",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Rathalos Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Scale"
+      },
+      {
+        "name": "Guardian Rathalos Webbing",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_webbing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Webbing"
+      },
+      {
+        "name": "Flame Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/flame_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Flame+Sac"
+      }
+    ],
+    "url": "/Albirath+Tail+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/albirath_tail_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      30,
+      12,
+      10,
+      10,
+      0
+    ],
+    "name": "Albirath Tail II",
+    "rarity": 6,
+    "attack": 414,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 210
+      }
+    ],
+    "affinity": 15,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 1
+      },
+      {
+        "name": "Master's Touch",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G. Rathalos Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Rathalos+Certificate+S"
+      },
+      {
+        "name": "Guardian Rathalos Wing",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Wing"
+      },
+      {
+        "name": "Guardian Rathalos Plate",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_plate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Plate"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      }
+    ],
+    "url": "/Albirath+Tail+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/albirath_tail_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      38,
+      12,
+      10,
+      10,
+      5
+    ],
+    "name": "Shining Pillar",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 250
+      }
+    ],
+    "affinity": 15,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 1
+      },
+      {
+        "name": "Master's Touch",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Rathalos Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Carapace"
+      },
+      {
+        "name": "Guardian Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Ruby"
+      },
+      {
+        "name": "Guardian Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale++"
+      }
+    ],
+    "url": "/Shining+Pillar",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/shining_pillar_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      20,
+      18,
+      0,
+      0
+    ],
+    "name": "Chthonian Firewheel I",
+    "rarity": 4,
+    "attack": 322,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 260
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Ebony Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Scale"
+      },
+      {
+        "name": "Guardian Ebony Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Claw"
+      },
+      {
+        "name": "Guardian Ebony Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Fang"
+      }
+    ],
+    "url": "/Chthonian+Firewheel+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chthonian_firewheel_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      18,
+      20,
+      12,
+      0
+    ],
+    "name": "Chthonian Firewheel II",
+    "rarity": 6,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 310
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G. Ebony Odogaron Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_odogaron_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Ebony+Odogaron+Certificate+S"
+      },
+      {
+        "name": "Guardian Ebony Claw+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Claw++"
+      },
+      {
+        "name": "Guardian Ebony Plate",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_plate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Plate"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      }
+    ],
+    "url": "/Chthonian+Firewheel+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chthonian_firewheel_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      20,
+      20,
+      25,
+      10
+    ],
+    "name": "Bequeathed Regret",
+    "rarity": 8,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 350
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Ebony Fang+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Fang++"
+      },
+      {
+        "name": "Guardian Ebony Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Gem"
+      },
+      {
+        "name": "Guardian Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale++"
+      }
+    ],
+    "url": "/Bequeathed+Regret",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bequeathed_regret_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      8,
+      22,
+      8,
+      0,
+      0
+    ],
+    "name": "G Veldian Lancea I",
+    "rarity": 4,
+    "attack": 391,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 140
+      }
+    ],
+    "affinity": -10,
+    "defense": 0,
+    "slots": [
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale"
+      },
+      {
+        "name": "Guardian Pelt",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt"
+      },
+      {
+        "name": "Guardian Blood",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      }
+    ],
+    "url": "/G+Veldian+Lancea+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_veldian_lancea_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      15,
+      22,
+      12,
+      0,
+      0
+    ],
+    "name": "G Veldian Lancea II",
+    "rarity": 6,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 170
+      }
+    ],
+    "affinity": -10,
+    "defense": 0,
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale++"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      },
+      {
+        "name": "Dragonbone Relic",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonbone_relic_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonbone+Relic"
+      }
+    ],
+    "url": "/G+Veldian+Lancea+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_veldian_lancea_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      18,
+      12,
+      20,
+      12,
+      0
+    ],
+    "name": "G Purifying Beaumains",
+    "rarity": 8,
+    "attack": 552,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 200
+      }
+    ],
+    "affinity": -10,
+    "defense": 0,
+    "slots": [
+      3,
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Arkveld Calloushell",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_calloushell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Calloushell"
+      },
+      {
+        "name": "Arkveld Tail",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Tail"
+      },
+      {
+        "name": "Arkveld Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Gem"
+      }
+    ],
+    "url": "/G+Purifying+Beaumains",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_purifying_beaumains_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      18,
+      20,
+      12,
+      0,
+      0
+    ],
+    "name": "Gravios Spear I",
+    "rarity": 6,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "blast",
+        "amount": 290
+      }
+    ],
+    "affinity": -15,
+    "defense": 30,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gravios Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Certificate+S"
+      },
+      {
+        "name": "Gravios Wing",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Wing"
+      },
+      {
+        "name": "Gravios Skull",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_skull_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Skull"
+      },
+      {
+        "name": "Gravios Pleura+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_pleura+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Pleura++"
+      }
+    ],
+    "url": "/Gravios+Spear+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_spear_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      22,
+      18,
+      18,
+      18,
+      12,
+      0
+    ],
+    "name": "Gravios Lance",
+    "rarity": 8,
+    "attack": 575,
+    "elemental": [
+      {
+        "name": "blast",
+        "amount": 350
+      }
+    ],
+    "affinity": -15,
+    "defense": 30,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard Up",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Gravios Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Carapace"
+      },
+      {
+        "name": "Gravios Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Medulla"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Gravios+Lance",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_lance_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      18,
+      12,
+      8,
+      12,
+      0
+    ],
+    "name": "Red Tail I",
+    "rarity": 6,
+    "attack": 437,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 290
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathalos Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Certificate+S"
+      },
+      {
+        "name": "Rathalos Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Carapace"
+      },
+      {
+        "name": "Rathalos Wing",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Wing"
+      },
+      {
+        "name": "Rath Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rath_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rath+Medulla"
+      }
+    ],
+    "url": "/Red+Tail+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/red_tail_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      25,
+      18,
+      12,
+      10,
+      12,
+      10
+    ],
+    "name": "Spear of Prominence",
+    "rarity": 8,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "fire",
+        "amount": 350
+      }
+    ],
+    "affinity": 10,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Rathalos Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Scale++"
+      },
+      {
+        "name": "Rathalos Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Tail"
+      },
+      {
+        "name": "Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Ruby"
+      }
+    ],
+    "url": "/Spear+of+Prominence",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/spear_of_prominence_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      18,
+      20,
+      18,
+      10,
+      10
+    ],
+    "name": "Eiferschild I",
+    "rarity": 7,
+    "attack": 414,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 220
+      }
+    ],
+    "affinity": 20,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gore Magala Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Certificate+S"
+      },
+      {
+        "name": "Gore Magala Ripclaw+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_ripclaw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Ripclaw++"
+      },
+      {
+        "name": "Gore Magala Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Tail"
+      },
+      {
+        "name": "Frenzy Shard",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_shard_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Shard"
+      }
+    ],
+    "url": "/Eiferschild+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/eiferschild_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      20,
+      15,
+      10,
+      18
+    ],
+    "name": "Fieberschild",
+    "rarity": 8,
+    "attack": 483,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 250
+      }
+    ],
+    "affinity": 20,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Gore Magala Feeler+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_feeler+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Feeler++"
+      },
+      {
+        "name": "Gore Magala Nyctgem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_nyctgem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Nyctgem"
+      },
+      {
+        "name": "Frenzy Crystal",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Crystal"
+      }
+    ],
+    "url": "/Fieberschild",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fieberschild_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      12,
+      20,
+      22,
+      8
+    ],
+    "name": "Veldian Lancea I",
+    "rarity": 7,
+    "attack": 460,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 320
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Arkveld Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Certificate+S"
+      },
+      {
+        "name": "Arkveld Scale+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Scale++"
+      },
+      {
+        "name": "White Arkveld Pelt",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/white_arkveld_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/White+Arkveld+Pelt"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Veldian+Lancea+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/veldian_lancea_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      20,
+      10,
+      15,
+      20,
+      10,
+      0
+    ],
+    "name": "Artian Lance I",
+    "rarity": 6,
+    "attack": 391,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [
+      2,
+      2,
+      2
+    ],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 40,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Artian+Lance+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/artian_lance_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      20,
+      10,
+      15,
+      20,
+      18,
+      5
+    ],
+    "name": "Artian Lance II",
+    "rarity": 7,
+    "attack": 414,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [
+      2,
+      2,
+      2
+    ],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Artian+Lance+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/artian_lance_ii_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      20,
+      10,
+      15,
+      20,
+      18,
+      5
+    ],
+    "name": "Skyscraper",
+    "rarity": 8,
+    "attack": 437,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "slots": [
+      3,
+      3,
+      3
+    ],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Skyscraper",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/skyscraper_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      15,
+      15,
+      15,
+      10,
+      20
+    ],
+    "name": "Esperanza Lance",
+    "rarity": 8,
+    "attack": 483,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Eye",
+        "level": 2
+      },
+      {
+        "name": "Speed Sharpening",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Bird Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bird_wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Bird+Wyvern+Gem"
+      }
+    ],
+    "url": "/Esperanza+Lance",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/esperanza_lance_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      25,
+      28,
+      12,
+      10,
+      0
+    ],
+    "name": "Fierceborer Dubhanith",
+    "rarity": 8,
+    "attack": 552,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "slots": [
+      3,
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Doshaguma Hide+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Hide++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Fierceborer+Dubhanith",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fierceborer_dubhanith_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      12,
+      12,
+      12,
+      18,
+      20,
+      12
+    ],
+    "name": "Purifying Beaumains",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [
+      {
+        "name": "dragon",
+        "amount": 350
+      }
+    ],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Guard",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Arkveld Armorplate",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_armorplate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Armorplate"
+      },
+      {
+        "name": "Arkveld Horn+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_horn+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Horn++"
+      },
+      {
+        "name": "Arkveld Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Gem"
+      }
+    ],
+    "url": "/Purifying+Beaumains",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/purifying_beaumains_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      8,
+      18,
+      18,
+      15,
+      18,
+      0
+    ],
+    "name": "Paladin Lance I",
+    "rarity": 6,
+    "attack": 437,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 3
+      },
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Commission Ticket",
+        "amount": 1,
+        "icon": "",
+        "url": "/Commission+Ticket"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_85px.png",
+        "url": "/Carbalite+Ore"
+      },
+      {
+        "name": "Gracium",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      },
+      {
+        "name": "Firecell Stone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/firecell_stone_item_equipment_material_mhwilds_wiki_guide_85px.png",
+        "url": "/Firecell+Stone"
+      }
+    ],
+    "url": "/Paladin+Lance+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/paladin_lance_i_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  },
+  {
+    "sharpness": [
+      5,
+      15,
+      15,
+      12,
+      32,
+      8
+    ],
+    "name": "Babel Spear",
+    "rarity": 8,
+    "attack": 506,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "level": 3
+      },
+      {
+        "name": "Guard",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      },
+      {
+        "name": "Novacrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/novacrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Novacrystal"
+      },
+      {
+        "name": "Commission Ticket",
+        "amount": 2,
+        "icon": "",
+        "url": "/Commission+Ticket"
+      }
+    ],
+    "url": "/Babel+Spear",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/babel_spear_mhwilds_wiki_guide_200px.png",
+    "type": "lance"
+  }
+]

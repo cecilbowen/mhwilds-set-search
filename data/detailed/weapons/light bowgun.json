@@ -1,0 +1,3958 @@
+[
+  {
+    "name": "Hope Rifle I",
+    "rarity": 1,
+    "attack": 117,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Normal Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Hope+Rifle+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_rifle_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hope Rifle II",
+    "rarity": 1,
+    "attack": 130,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Normal Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Iron Ore",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/iron_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Iron+Ore"
+      }
+    ],
+    "url": "/Hope+Rifle+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_rifle_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hope Rifle III",
+    "rarity": 3,
+    "attack": 169,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Normal Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Critical Eye",
+        "level": 1
+      },
+      {
+        "name": "Ballistics",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Dragonite Ore",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonite+Ore"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      }
+    ],
+    "url": "/Hope+Rifle+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_rifle_iii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hope Rifle IV",
+    "rarity": 5,
+    "attack": 208,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Normal Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 2
+      },
+      {
+        "name": "Critical Eye",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Carbalite Ore",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/carbalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Carbalite+Ore"
+      }
+    ],
+    "url": "/Hope+Rifle+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_rifle_iv_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hope Rifle V",
+    "rarity": 7,
+    "attack": 247,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Normal Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 3
+      },
+      {
+        "name": "Critical Eye",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      }
+    ],
+    "url": "/Hope+Rifle+V",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hope_rifle_v_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Kut-Ku Anger I",
+    "rarity": 5,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Elemental Boost Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Yian Kut-Ku Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/yian_kut-ku_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Yian+Kut-Ku+Certificate+S"
+      },
+      {
+        "name": "Kut-Ku Wing",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kut-Ku+Wing"
+      },
+      {
+        "name": "Kut-Ku Ear",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_ear_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kut-Ku+Ear"
+      },
+      {
+        "name": "Kut-Ku Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kut-Ku+Scale++"
+      }
+    ],
+    "url": "/Kut-Ku+Anger+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_anger_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Kut-Ku Anger II",
+    "rarity": 7,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Elemental Boost Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Giant Beak",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/giant_beak_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Giant+Beak"
+      },
+      {
+        "name": "Inferno Sac",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/inferno_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Inferno+Sac"
+      },
+      {
+        "name": "Bird Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bird_wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Bird+Wyvern+Gem"
+      }
+    ],
+    "url": "/Kut-Ku+Anger+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_anger_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Kut-Ku Counterattack",
+    "rarity": 8,
+    "attack": 286,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Elemental Boost Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Kut-Ku Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Kut-Ku+Carapace"
+      },
+      {
+        "name": "Nu Udra Flamegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_flamegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Flamegem"
+      }
+    ],
+    "url": "/Kut-Ku+Counterattack",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/kut-ku_counterattack_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Faulnisschleuder I",
+    "rarity": 7,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 20,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv3",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gore Magala Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Certificate+S"
+      },
+      {
+        "name": "Gore Magala Ripclaw+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_ripclaw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Ripclaw++"
+      },
+      {
+        "name": "Gore Magala Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Tail"
+      },
+      {
+        "name": "Frenzy Shard",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_shard_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Shard"
+      }
+    ],
+    "url": "/Faulnisschleuder+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/faulnisschleuder_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Wahnschleuder",
+    "rarity": 8,
+    "attack": 260,
+    "elemental": [],
+    "affinity": 20,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv3",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Gore Magala Feeler+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_feeler+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Feeler++"
+      },
+      {
+        "name": "Gore Magala Nyctgem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gore_magala_nyctgem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gore+Magala+Nyctgem"
+      },
+      {
+        "name": "Frenzy Crystal",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frenzy_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frenzy+Crystal"
+      }
+    ],
+    "url": "/Wahnschleuder",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wahnschleuder_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Rey Szelatya I",
+    "rarity": 3,
+    "attack": 182,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 1
+      },
+      {
+        "name": "Slugger",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Scale"
+      },
+      {
+        "name": "Rey Dau Wingtalon",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_wingtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Wingtalon"
+      },
+      {
+        "name": "Rey Dau Thunderhorn",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_thunderhorn_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Thunderhorn"
+      }
+    ],
+    "url": "/Rey+Szelatya+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_szelatya_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Rey Szelatya II",
+    "rarity": 5,
+    "attack": 221,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 1
+      },
+      {
+        "name": "Slugger",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathian Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Certificate+S"
+      },
+      {
+        "name": "Rathian Webbing",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_webbing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Webbing"
+      },
+      {
+        "name": "Novacrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/novacrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Novacrystal"
+      }
+    ],
+    "url": "/Rey+Szelatya+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_szelatya_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Rey Szelatya III",
+    "rarity": 7,
+    "attack": 260,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      },
+      {
+        "name": "Slugger",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Certificate+S"
+      },
+      {
+        "name": "Rey Dau Fulgurtalon",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_fulgurtalon_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Fulgurtalon"
+      },
+      {
+        "name": "Rey Dau Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Tail"
+      },
+      {
+        "name": "Rey Dau Plate",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_plate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Plate"
+      }
+    ],
+    "url": "/Rey+Szelatya+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_szelatya_iii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Szelatya Clairgun",
+    "rarity": 8,
+    "attack": 286,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      },
+      {
+        "name": "Slugger",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Rey Dau Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Carapace"
+      },
+      {
+        "name": "Rey Dau Bolthorn",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_bolthorn_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Bolthorn"
+      },
+      {
+        "name": "Rey Dau Boltgem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_boltgem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Boltgem"
+      }
+    ],
+    "url": "/Szelatya+Clairgun",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/szelatya_clairgun_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Dosha Faithbreaker I",
+    "rarity": 2,
+    "attack": 182,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Fur",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fur_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fur"
+      },
+      {
+        "name": "Doshaguma Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Claw"
+      },
+      {
+        "name": "Doshaguma Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang"
+      }
+    ],
+    "url": "/Dosha+Faithbreaker+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_faithbreaker_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Dosha Faithbreaker II",
+    "rarity": 4,
+    "attack": 234,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Doshaguma Claw",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw"
+      },
+      {
+        "name": "Doshaguma Hide",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Hide"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      }
+    ],
+    "url": "/Dosha+Faithbreaker+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_faithbreaker_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Dosha Faithbreaker III",
+    "rarity": 6,
+    "attack": 273,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "ammo": [
+      "Normal Ammo Lv3",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Doshaguma Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Certificate+S"
+      },
+      {
+        "name": "Doshaguma Claw+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Claw++"
+      },
+      {
+        "name": "Doshaguma Fang+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Fang++"
+      }
+    ],
+    "url": "/Dosha+Faithbreaker+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_faithbreaker_iii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Dosha Gigasbreaker I",
+    "rarity": 4,
+    "attack": 247,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Slugger",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Doshaguma Fur",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fur_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fur"
+      },
+      {
+        "name": "Guardian Doshaguma Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw"
+      },
+      {
+        "name": "Guardian Doshaguma Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fang"
+      }
+    ],
+    "url": "/Dosha+Gigasbreaker+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_gigasbreaker_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Dosha Gigasbreaker II",
+    "rarity": 6,
+    "attack": 286,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Slugger",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G. Doshaguma Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_doshaguma_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Doshaguma+Certificate+S"
+      },
+      {
+        "name": "Guardian Doshaguma Claw+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Claw++"
+      },
+      {
+        "name": "Guardian Doshaguma Fang+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fang++"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      }
+    ],
+    "url": "/Dosha+Gigasbreaker+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dosha_gigasbreaker_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Gigasbreaker Urbolkule",
+    "rarity": 8,
+    "attack": 325,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Slugger",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Doshaguma Fur+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_doshaguma_fur+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Doshaguma+Fur++"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Gigasbreaker+Urbolkule",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gigasbreaker_urbolkule_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Chain Blitz I",
+    "rarity": 2,
+    "attack": 156,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Magazine",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Machalite Ore",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/machalite_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Machalite+Ore"
+      },
+      {
+        "name": "Earth Crystal",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/earth_crystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Earth+Crystal"
+      }
+    ],
+    "url": "/Chain+Blitz+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chain_blitz_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Chain Blitz II",
+    "rarity": 4,
+    "attack": 208,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Magazine",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Lightcrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/lightcrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Lightcrystal"
+      },
+      {
+        "name": "Icium",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/icium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Icium"
+      }
+    ],
+    "url": "/Chain+Blitz+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chain_blitz_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Chain Blitz III",
+    "rarity": 6,
+    "attack": 247,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Magazine",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Fucium Ore",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fucium_ore_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Fucium+Ore"
+      },
+      {
+        "name": "Gracium",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gracium_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gracium"
+      },
+      {
+        "name": "Monster Keenbone",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_keenbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Keenbone"
+      }
+    ],
+    "url": "/Chain+Blitz+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chain_blitz_iii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "High Chain Blitz",
+    "rarity": 8,
+    "attack": 286,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Magazine",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Novacrystal",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/novacrystal_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Novacrystal"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/High+Chain+Blitz",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/high_chain_blitz_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Titan Launcher I",
+    "rarity": 6,
+    "attack": 273,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 30,
+    "ammo": [
+      "Normal Ammo Lv3",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Special Ammo Boost",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Gravios Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Certificate+S"
+      },
+      {
+        "name": "Gravios Wing",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Wing"
+      },
+      {
+        "name": "Gravios Skull",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_skull_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Skull"
+      },
+      {
+        "name": "Gravios Pleura+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_pleura+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Pleura++"
+      }
+    ],
+    "url": "/Titan+Launcher+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/titan_launcher_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Titan Panzer",
+    "rarity": 8,
+    "attack": 312,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 30,
+    "ammo": [
+      "Normal Ammo Lv3",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Special Ammo Boost",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Gravios Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Carapace"
+      },
+      {
+        "name": "Gravios Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/gravios_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Gravios+Medulla"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Titan+Panzer",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/titan_panzer_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "G Rathling Gun I",
+    "rarity": 4,
+    "attack": 208,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Aammo Powder",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 1
+      },
+      {
+        "name": "Ballistics",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Rathalos Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Scale"
+      },
+      {
+        "name": "Guardian Rathalos Webbing",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_webbing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Webbing"
+      },
+      {
+        "name": "Flame Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/flame_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Flame+Sac"
+      }
+    ],
+    "url": "/G+Rathling+Gun+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathling_gun_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "G Rathling Gun II",
+    "rarity": 6,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Aammo Powder",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 2
+      },
+      {
+        "name": "Ballistics",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G. Rathalos Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Rathalos+Certificate+S"
+      },
+      {
+        "name": "Guardian Rathalos Wing",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Wing"
+      },
+      {
+        "name": "Guardian Rathalos Plate",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_plate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Plate"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      }
+    ],
+    "url": "/G+Rathling+Gun+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_rathling_gun_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "White Rathling Phoenix",
+    "rarity": 8,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Aammo Powder",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 2
+      },
+      {
+        "name": "Ballistics",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Rathalos Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Carapace"
+      },
+      {
+        "name": "Guardian Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Rathalos+Ruby"
+      },
+      {
+        "name": "Guardian Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale++"
+      }
+    ],
+    "url": "/White+Rathling+Phoenix",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/white_rathling_phoenix_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Rathling Gun I",
+    "rarity": 6,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathalos Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Certificate+S"
+      },
+      {
+        "name": "Rathalos Carapace",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Carapace"
+      },
+      {
+        "name": "Rathalos Wing",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_wing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Wing"
+      },
+      {
+        "name": "Rath Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rath_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rath+Medulla"
+      }
+    ],
+    "url": "/Rathling+Gun+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathling_gun_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Rathling Phoenix",
+    "rarity": 8,
+    "attack": 260,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Rathalos Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Scale++"
+      },
+      {
+        "name": "Rathalos Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Tail"
+      },
+      {
+        "name": "Rathalos Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathalos_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathalos+Ruby"
+      }
+    ],
+    "url": "/Rathling+Phoenix",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathling_phoenix_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Assault Conga I",
+    "rarity": 2,
+    "attack": 156,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Special Ammo Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Special Ammo Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Congalala Pelt",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Pelt"
+      },
+      {
+        "name": "Congalala Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Claw"
+      },
+      {
+        "name": "Congalala Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Fang"
+      }
+    ],
+    "url": "/Assault+Conga+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/assault_conga_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Assault Conga II",
+    "rarity": 5,
+    "attack": 221,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Special Ammo Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 1
+      },
+      {
+        "name": "Special Ammo Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 4000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Congalala Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Certificate+S"
+      },
+      {
+        "name": "Congalala Claw+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Claw++"
+      },
+      {
+        "name": "Congalala Fang+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/congalala_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Congalala+Fang++"
+      },
+      {
+        "name": "Conga Pelt+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/conga_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Conga+Pelt++"
+      }
+    ],
+    "url": "/Assault+Conga+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/assault_conga_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Combat Conga",
+    "rarity": 8,
+    "attack": 286,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Special Ammo Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Special Ammo Boost",
+        "level": 2
+      },
+      {
+        "name": "Opening Shot",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Vibrant Pelt+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vibrant_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Vibrant+Pelt++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Combat+Conga",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/combat_conga_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Tail String I",
+    "rarity": 6,
+    "attack": 260,
+    "elemental": [],
+    "affinity": -10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Special Ammo Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Blangonga Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Certificate+S"
+      },
+      {
+        "name": "Blangonga Fang+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Fang++"
+      },
+      {
+        "name": "Blangonga Whisker",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_whisker_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Whisker"
+      },
+      {
+        "name": "Blango Pelt+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blango_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blango+Pelt++"
+      }
+    ],
+    "url": "/Tail+String+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tail_string_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Tail Catapult",
+    "rarity": 8,
+    "attack": 299,
+    "elemental": [],
+    "affinity": -10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Special Ammo Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Blangonga Pelt+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Pelt++"
+      },
+      {
+        "name": "Blangonga Tail",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/blangonga_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Blangonga+Tail"
+      },
+      {
+        "name": "Jin Dahaad Icegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_icegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Icegem"
+      }
+    ],
+    "url": "/Tail+Catapult",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tail_catapult_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Valkyrie Fire I",
+    "rarity": 5,
+    "attack": 208,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 2
+      },
+      {
+        "name": "Poison Duration Up",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rathian Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Certificate+S"
+      },
+      {
+        "name": "Rathian Webbing",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_webbing_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Webbing"
+      },
+      {
+        "name": "Rathian Spike+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Spike++"
+      },
+      {
+        "name": "Rathian Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Scale++"
+      }
+    ],
+    "url": "/Valkyrie+Fire+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/valkyrie_fire_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Valkyrie Fire II",
+    "rarity": 7,
+    "attack": 247,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      },
+      {
+        "name": "Poison Duration Up",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Rey Dau Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rey_dau_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rey+Dau+Certificate+S"
+      },
+      {
+        "name": "Rathian Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Carapace"
+      },
+      {
+        "name": "Rath Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rath_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rath+Medulla"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Valkyrie+Fire+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/valkyrie_fire_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Valkyrie Flame",
+    "rarity": 8,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Pierce Ammo Powder",
+      "Pierce Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      },
+      {
+        "name": "Poison Duration Up",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Rathian Scale+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Scale++"
+      },
+      {
+        "name": "Rathian Ruby",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/rathian_ruby_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Rathian+Ruby"
+      }
+    ],
+    "url": "/Valkyrie+Flame",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/valkyrie_flame_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hunter's Rifle I",
+    "rarity": 1,
+    "attack": 143,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Mystery Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/mystery_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Mystery+Bone"
+      }
+    ],
+    "url": "/Hunter's+Rifle+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunters_rifle_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hunter's Rifle II",
+    "rarity": 2,
+    "attack": 169,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Attack Boost",
+        "level": 1
+      },
+      {
+        "name": "Opening Shot",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 800,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Sturdy Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/sturdy_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Sturdy+Bone"
+      },
+      {
+        "name": "Monster Fluid",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_fluid_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Fluid"
+      }
+    ],
+    "url": "/Hunter's+Rifle+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunters_rifle_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hunter's Rifle III",
+    "rarity": 4,
+    "attack": 221,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      },
+      {
+        "name": "Attack Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      }
+    ],
+    "url": "/Hunter's+Rifle+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunters_rifle_iii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Hunter's Rifle IV",
+    "rarity": 6,
+    "attack": 260,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      },
+      {
+        "name": "Attack Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Great Stoutbone",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/great_stoutbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Great+Stoutbone"
+      },
+      {
+        "name": "Colossal Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/colossal_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Colossal+Bone"
+      }
+    ],
+    "url": "/Hunter's+Rifle+IV",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunters_rifle_iv_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Power Rifle",
+    "rarity": 8,
+    "attack": 299,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      },
+      {
+        "name": "Attack Boost",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Monster Hardbone",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/monster_hardbone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Monster+Hardbone"
+      },
+      {
+        "name": "Dragonbone Relic",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonbone_relic_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonbone+Relic"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Power+Rifle",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/power_rifle_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Felling Fulgur I",
+    "rarity": 6,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Fulgur Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Certificate+S"
+      },
+      {
+        "name": "Guardian Fulgur Fang+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Fang++"
+      },
+      {
+        "name": "Guardian Fulgur Tail",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Tail"
+      },
+      {
+        "name": "Thunder Sac",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/thunder_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Thunder+Sac"
+      }
+    ],
+    "url": "/Felling+Fulgur+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/felling_fulgur_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Fulgursnipe Guardiana",
+    "rarity": 8,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Critical Element",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Fulgur Nosebone+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_nosebone+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Nosebone++"
+      },
+      {
+        "name": "Guardian Fulgur Pelt+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Pelt++"
+      },
+      {
+        "name": "Guardian Fulgur Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_fulgur_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Fulgur+Gem"
+      }
+    ],
+    "url": "/Fulgursnipe+Guardiana",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/fulgursnipe_guardiana_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Chthonian Gunfire I",
+    "rarity": 4,
+    "attack": 182,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Ebony Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Scale"
+      },
+      {
+        "name": "Guardian Ebony Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Claw"
+      },
+      {
+        "name": "Guardian Ebony Fang",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_fang_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Fang"
+      }
+    ],
+    "url": "/Chthonian+Gunfire+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chthonian_gunfire_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Chthonian Gunfire II",
+    "rarity": 6,
+    "attack": 221,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "G. Ebony Odogaron Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_ebony_odogaron_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/G+Ebony+Odogaron+Certificate+S"
+      },
+      {
+        "name": "Guardian Ebony Claw+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Claw++"
+      },
+      {
+        "name": "Guardian Ebony Plate",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_plate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Plate"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      }
+    ],
+    "url": "/Chthonian+Gunfire+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/chthonian_gunfire_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Bequeathed Animus",
+    "rarity": 8,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Guardian Ebony Fang+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_fang+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Fang++"
+      },
+      {
+        "name": "Guardian Ebony Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_ebony_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Ebony+Gem"
+      },
+      {
+        "name": "Guardian Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale++"
+      }
+    ],
+    "url": "/Bequeathed+Animus",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bequeathed_animus_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Ajara Shellgun I",
+    "rarity": 3,
+    "attack": 169,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Artillery",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Ajarakan Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Scale"
+      },
+      {
+        "name": "Ajarakan Ridge",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_ridge_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Ridge"
+      },
+      {
+        "name": "Ajarakan Jewel",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_jewel_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Jewel"
+      }
+    ],
+    "url": "/Ajara+Shellgun+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajara_shellgun_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Ajara Shellgun II",
+    "rarity": 6,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Artillery",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Ajarakan Certificate S",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Certificate+S"
+      },
+      {
+        "name": "Ajarakan Ridge+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_ridge+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Ridge++"
+      },
+      {
+        "name": "Ajarakan Jewel+",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_jewel+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Jewel++"
+      },
+      {
+        "name": "Ajarakan Marrow",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_marrow_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Marrow"
+      }
+    ],
+    "url": "/Ajara+Shellgun+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajara_shellgun_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Ajara-Angaja",
+    "rarity": 8,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Artillery",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Ajarakan Carapace",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_carapace_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Carapace"
+      },
+      {
+        "name": "Ajarakan Medulla",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajarakan_medulla_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Ajarakan+Medulla"
+      }
+    ],
+    "url": "/Ajara-Angaja",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/ajara-angaja_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Nu Chobotnice I",
+    "rarity": 4,
+    "attack": 221,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Spread Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Hide",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_hide_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Hide"
+      },
+      {
+        "name": "Nu Udra Spike",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_spike_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Spike"
+      },
+      {
+        "name": "Nu Udra Oilmucus",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_oilmucus_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Oilmucus"
+      }
+    ],
+    "url": "/Nu+Chobotnice+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_chobotnice_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Nu Chobotnice II",
+    "rarity": 7,
+    "attack": 273,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Spread Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Nu Udra Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Certificate+S"
+      },
+      {
+        "name": "Nu Udra Spike+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_spike+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Spike++"
+      },
+      {
+        "name": "Nu Udra Oilmucus+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_oilmucus+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Oilmucus++"
+      },
+      {
+        "name": "Nu Udra Cerebrospinal Fluid",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_cerebrospinal_fluid_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Cerebrospinal+Fluid"
+      }
+    ],
+    "url": "/Nu+Chobotnice+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_chobotnice_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Abaddonian Chobotnice",
+    "rarity": 8,
+    "attack": 299,
+    "elemental": [],
+    "affinity": -15,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv3"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Spread Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Nu Udra Tentacle+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_tentacle+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Tentacle++"
+      },
+      {
+        "name": "Nu Udra Horn+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_horn+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Horn++"
+      },
+      {
+        "name": "Nu Udra Flamegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/nu_udra_flamegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Nu+Udra+Flamegem"
+      }
+    ],
+    "url": "/Abaddonian+Chobotnice",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/abaddonian_chobotnice_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Windshear Light I",
+    "rarity": 3,
+    "attack": 182,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 2
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 1500,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Scale"
+      },
+      {
+        "name": "Hirabami Tail Claw",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_tail_claw_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Tail+Claw"
+      },
+      {
+        "name": "Frost Sac",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/frost_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Frost+Sac"
+      }
+    ],
+    "url": "/Windshear+Light+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windshear_light_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Windshear Light II",
+    "rarity": 5,
+    "attack": 221,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 2
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 5000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hirabami Certificate S",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Certificate+S"
+      },
+      {
+        "name": "Hirabami Tail Claw+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_tail_claw+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Tail+Claw++"
+      },
+      {
+        "name": "Freezer Sac",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/freezer_sac_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Freezer+Sac"
+      }
+    ],
+    "url": "/Windshear+Light+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windshear_light_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Windshear Light III",
+    "rarity": 7,
+    "attack": 260,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Jin Dahaad Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Certificate+S"
+      },
+      {
+        "name": "Hirabami Hide+",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Hide++"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Windshear+Light+III",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windshear_light_iii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Windshear Uchibami",
+    "rarity": 8,
+    "attack": 286,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Elemental Ammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "level": 3
+      },
+      {
+        "name": "Airborne",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Hirabami Webbing+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hirabami_webbing+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hirabami+Webbing++"
+      },
+      {
+        "name": "Jin Dahaad Icegem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/jin_dahaad_icegem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Jin+Dahaad+Icegem"
+      }
+    ],
+    "url": "/Windshear+Uchibami",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windshear_uchibami_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "G Veldian Impetum I",
+    "rarity": 4,
+    "attack": 208,
+    "elemental": [],
+    "affinity": -10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 2600,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Scale",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale"
+      },
+      {
+        "name": "Guardian Pelt",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt"
+      },
+      {
+        "name": "Guardian Blood",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood"
+      },
+      {
+        "name": "Tough Guardian Bone",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/tough_guardian_bone_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Tough+Guardian+Bone"
+      }
+    ],
+    "url": "/G+Veldian+Impetum+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_veldian_impetum_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "G Veldian Impetum II",
+    "rarity": 6,
+    "attack": 260,
+    "elemental": [],
+    "affinity": -10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 10000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Guardian Scale+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_scale+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Scale++"
+      },
+      {
+        "name": "Guardian Pelt+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_pelt+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Pelt++"
+      },
+      {
+        "name": "Guardian Blood+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/guardian_blood+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Guardian+Blood++"
+      },
+      {
+        "name": "Dragonbone Relic",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/dragonbone_relic_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Dragonbone+Relic"
+      }
+    ],
+    "url": "/G+Veldian+Impetum+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_veldian_impetum_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "G Expiating Caius",
+    "rarity": 8,
+    "attack": 299,
+    "elemental": [],
+    "affinity": -10,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Spread Ammo Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Arkveld Calloushell",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_calloushell_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Calloushell"
+      },
+      {
+        "name": "Arkveld Tail",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_tail_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Tail"
+      },
+      {
+        "name": "Arkveld Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Gem"
+      }
+    ],
+    "url": "/G+Expiating+Caius",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/g_expiating_caius_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Veldian Impetum I",
+    "rarity": 7,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 14000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Arkveld Certificate S",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_certificate_s_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Certificate+S"
+      },
+      {
+        "name": "Arkveld Scale+",
+        "amount": 4,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_scale_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Scale++"
+      },
+      {
+        "name": "White Arkveld Pelt",
+        "amount": 2,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/white_arkveld_pelt_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/White+Arkveld+Pelt"
+      },
+      {
+        "name": "Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Wyvern+Gem"
+      }
+    ],
+    "url": "/Veldian+Impetum+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/veldian_impetum_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Artian Blaster I",
+    "rarity": 6,
+    "attack": 221,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Aammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      2,
+      2
+    ],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 40,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Artian+Blaster+I",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/artian_blaster_i_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Artian Blaster II",
+    "rarity": 7,
+    "attack": 234,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Aammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      2,
+      2,
+      2
+    ],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 100,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Artian+Blaster+II",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/artian_blaster_ii_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Animilater",
+    "rarity": 8,
+    "attack": 247,
+    "elemental": [],
+    "affinity": 5,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv2",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Aammo Powder",
+      "Rapid Fire Magazine"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      3,
+      3
+    ],
+    "skills": [],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 200,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      }
+    ],
+    "url": "/Animilater",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/animilater_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Esperanza Rifle",
+    "rarity": 8,
+    "attack": 273,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv2",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Normal Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Ballistics",
+        "level": 3
+      },
+      {
+        "name": "Critical Eye",
+        "level": 1
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol I",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_i_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+I"
+      },
+      {
+        "name": "Bird Wyvern Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/bird_wyvern_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Bird+Wyvern+Gem"
+      }
+    ],
+    "url": "/Esperanza+Rifle",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/esperanza_rifle_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Faithbreaker Leibolkule",
+    "rarity": 8,
+    "attack": 312,
+    "elemental": [],
+    "affinity": -5,
+    "defense": 20,
+    "ammo": [
+      "Normal Ammo Lv3",
+      "Pierce Ammo Lv1",
+      "Spread Ammo Lv1"
+    ],
+    "mods": [
+      "Normal Ammo Magazine",
+      "Special Ammo Magazine"
+    ],
+    "specialAmmo": "Wyvernblast",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol II",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_ii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+II"
+      },
+      {
+        "name": "Doshaguma Hide+",
+        "amount": 6,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/doshaguma_hide+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Doshaguma+Hide++"
+      },
+      {
+        "name": "Beast Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/beast_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Beast+Gem"
+      }
+    ],
+    "url": "/Faithbreaker+Leibolkule",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/faithbreaker_leibolkule_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  },
+  {
+    "name": "Expiating Caius",
+    "rarity": 8,
+    "attack": 260,
+    "elemental": [],
+    "affinity": 0,
+    "defense": 0,
+    "ammo": [
+      "Normal Ammo Lv1",
+      "Pierce Ammo Lv3",
+      "Spread Ammo Lv2"
+    ],
+    "mods": [
+      "Elemental Boost Magazine",
+      "Rapid Fire Mod"
+    ],
+    "specialAmmo": "Adhesive Ammo",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "level": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "Zenni",
+        "amount": 20000,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/zenny_icons_mhw_wiki_guide.png"
+      },
+      {
+        "name": "Hunter Symbol III",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/hunter_symbol_iii_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Hunter+Symbol+III"
+      },
+      {
+        "name": "Arkveld Armorplate",
+        "amount": 5,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_armorplate_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Armorplate"
+      },
+      {
+        "name": "Arkveld Horn+",
+        "amount": 3,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_horn+_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Horn++"
+      },
+      {
+        "name": "Arkveld Gem",
+        "amount": 1,
+        "icon": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/arkveld_gem_item_equipment_material_mhwilds_wiki_guide_25px.png",
+        "url": "/Arkveld+Gem"
+      }
+    ],
+    "url": "/Expiating+Caius",
+    "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/expiating_caius_mhwilds_wiki_guide_200px.png",
+    "type": "light bowgun"
+  }
+]
