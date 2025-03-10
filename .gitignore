@@ -26,4 +26,4 @@ yarn-error.log*
 
 misc/*
 !/misc/stats.py
-
+!/misc/tests.py

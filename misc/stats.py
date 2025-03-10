@@ -1,42 +1,20 @@
-from functools import reduce
 from collections import defaultdict
-from itertools import combinations, product
+from itertools import product
 from functools import cmp_to_key
 import json
+import time
+from typing import Callable, Any
+import tests
 
 skill_db = set_skill_db = group_skill_db = {}
+weapon_db = {}
+deco_inventory = {}
 head = chest = arms = waist = legs = talisman = decoration = {}
 total_possible_combinations = 0
+DEBUG = True
 
-# all: 2,184,395,703,840
-# low-rank: 2,037,251,736
-# high-rank: 2,037,251,736
-def calculate_armor_combinations(slots):
-    return reduce(lambda total, choices: total * choices, slots, 1)
-
-def get_armor_combo_amounts():
-    head_lr = {k: v for k, v in head.items() if v[6] == "low"}
-    chest_lr = {k: v for k, v in chest.items() if v[6] == "low"}
-    arms_lr = {k: v for k, v in arms.items() if v[6] == "low"}
-    waist_lr = {k: v for k, v in waist.items() if v[6] == "low"}
-    legs_lr = {k: v for k, v in legs.items() if v[6] == "low"}
-
-    head_hr = {k: v for k, v in head.items() if v[6] == "high"}
-    chest_hr = {k: v for k, v in chest.items() if v[6] == "high"}
-    arms_hr = {k: v for k, v in arms.items() if v[6] == "high"}
-    waist_hr = {k: v for k, v in waist.items() if v[6] == "high"}
-    legs_hr = {k: v for k, v in legs.items() if v[6] == "high"}
-
-    combos_count = calculate_armor_combinations([len(head), len(chest), len(arms), len(waist), len(legs), len(talisman)])
-    combos_count_lr = calculate_armor_combinations([len(head_lr), len(chest_lr), len(arms_lr), len(waist_lr), len(legs_lr), len(talisman)])
-    combos_count_hr = calculate_armor_combinations([len(head_hr), len(chest_hr), len(arms_hr), len(waist_hr), len(legs_hr), len(talisman)])
-
-    print(f"number of armor set combos (low rank only): {combos_count_lr:,}")
-    print(f"number of armor set combos (high rank only): {combos_count_lr:,}")
-    print(f"number of armor set combos total: {combos_count:,}")
-
-def load_jsons():
-    global head, chest, arms, waist, legs, talisman, decoration, skill_db, set_skill_db, group_skill_db
+def load_jsons(deco_mods = {}):
+    global head, chest, arms, waist, legs, talisman, decoration, skill_db, set_skill_db, group_skill_db, deco_inventory
     with open('./data/compact/head.json', 'r') as file:
         head = json.load(file)
     with open('./data/compact/chest.json', 'r') as file:
@@ -57,6 +35,13 @@ def load_jsons():
         set_skill_db = json.load(file)
     with open('./data/compact/group-skills.json', 'r') as file:
         group_skill_db = json.load(file)
+    with open('./data/user/deco-inventory.json', 'r') as file: # probably be localStorage when js
+        deco_inventory = json.load(file)
+
+    # modify deco inventory
+    if deco_mods:
+        for name, amount in deco_mods:
+            deco_inventory[name] = amount
 
 def get_json_from_type(type:str):
     global head, chest, arms, waist, legs, talisman, decoration
@@ -143,13 +128,16 @@ def has_longer_slottage(armors: dict, challenger_slots: list) -> bool:
 
     return slottage_length_compare_raw(challenger_slots, next(iter(sorted_data.items()))[1][3])
 
-def get_gear_pool(skills: dict, set_skills: dict, group_skills: dict) -> dict:
-    best_head = get_best_armor("head", skills, set_skills, group_skills)
-    best_chest = get_best_armor("chest", skills, set_skills, group_skills)
-    best_arms = get_best_armor("arms", skills, set_skills, group_skills)
-    best_waist = get_best_armor("waist", skills, set_skills, group_skills)
-    best_legs = get_best_armor("legs", skills, set_skills, group_skills)
-    best_talisman = get_best_armor("talisman", skills, set_skills, group_skills)
+def get_gear_pool(
+        skills: dict, set_skills: dict, group_skills: dict,
+        must_use_armor: tuple[str, ...], blacklisted_armor: tuple[str, ...]
+    ) -> dict:
+    best_head = get_best_armor("head", skills, set_skills, group_skills, must_use_armor[0], blacklisted_armor)
+    best_chest = get_best_armor("chest", skills, set_skills, group_skills, must_use_armor[1], blacklisted_armor)
+    best_arms = get_best_armor("arms", skills, set_skills, group_skills, must_use_armor[2], blacklisted_armor)
+    best_waist = get_best_armor("waist", skills, set_skills, group_skills, must_use_armor[3], blacklisted_armor)
+    best_legs = get_best_armor("legs", skills, set_skills, group_skills, must_use_armor[4], blacklisted_armor)
+    best_talisman = get_best_armor("talisman", skills, set_skills, group_skills, must_use_armor[5], blacklisted_armor)
     best_decos = get_best_armor("decoration", skills, set_skills, group_skills)
 
     return {
@@ -188,8 +176,67 @@ def group_armor_into_sets(armor_pieces: dict, set_skills: dict, group_skills: di
 
     return [groups, groups_empty]
 
-def get_best_armor(type:str, skills: dict, set_skills: dict = {}, group_skills: dict = {}, rank: str = "high"):
+def is_better_armor(existing_armors, new_slots):
+    return has_better_slottage(existing_armors, new_slots) or has_longer_slottage(existing_armors, new_slots)
+
+def get_best_weapon(desired_skills: dict):
+    global weapon_db, decoration
+
+    # only use rarity 8 weapons
+    best_rarity_weapons = {
+        k: v for k, v in weapon_db.items()
+        if v[len(v) - 1] == 8
+    }
+
+    decos_for_skills = {
+        k: v for k, v in sorted(
+            ((k, v) for k, v in decoration.items() if v[0] == "weapon" and has_needed_skill(v[1], desired_skills)),
+            key=lambda x: list(x[1][1].values())[0],  # Sort by level
+            reverse=True
+        )
+    }
+
+    deco_combos = {}
+    for weapon_name, weapon_data in best_rarity_weapons.items():
+        # todo: for weapons, try multiple deco combos per weapon (if not all combos)
+        combo = get_decos_to_fulfill_skills(decos_for_skills, desired_skills, weapon_data[2], weapon_data[1])
+        if combo:
+            deco_combos[weapon_name] = combo
+
+    sorted_deco_combos = {
+        k: v for k, v in sorted(
+            ((k, v) for k, v in deco_combos.items()),
+            key=lambda x: x[1]["free_slots"],  # Sort by free slots
+            reverse=True
+        )
+    }
+
+    top_key = next(iter(sorted_deco_combos.keys()))
+    top_value = next(iter(sorted_deco_combos.values()))
+    
+    return {
+        "name": top_key,
+        "deco_names": top_value["deco_names"],
+        "free_slots": top_value["free_slots"],
+        # "skills": get skill from deco names and combine with weapon skills sums
+    }
+
+def get_best_armor(
+        type: str, skills: dict, set_skills: dict = {}, group_skills: dict = {},
+        mandatory_piece_name: str = None,
+        blacklisted_armor: tuple[str, ...] = (),
+        rank: str = "high"
+    ):
     full_data_file = get_json_from_type(type)
+
+    if mandatory_piece_name:
+        found_data = full_data_file.get(mandatory_piece_name)
+        if found_data:
+            return {
+                mandatory_piece_name: found_data
+            }
+        else:
+            print(f"WARNING: Could not find mandatory {type} armor {mandatory_piece_name}!")
 
     # high/low rank and don't check rank on talisman/decos
     data_file = {
@@ -200,7 +247,7 @@ def get_best_armor(type:str, skills: dict, set_skills: dict = {}, group_skills: 
     if type == "talisman":
         talismans = {
             k: v for k, v in sorted(
-                ((k, v) for k, v in data_file.items() if has_needed_skill(v[1], skills)),
+                ((k, v) for k, v in data_file.items() if has_needed_skill(v[1], skills) and k not in blacklisted_armor),
                 key=lambda x: list(x[1][1].values())[0],  # Sort by level
                 reverse=True
             )
@@ -228,122 +275,92 @@ def get_best_armor(type:str, skills: dict, set_skills: dict = {}, group_skills: 
             )
         }
 
-    threes = dict(
-        sorted(
-            ((k, v) for k, v in data_file.items() if len(v[3]) == 3),
-            key=lambda x: (x[1][3], x[1][4]), # Sort by slot number, then defense
-            reverse=True # descending
+    # Group armors by slot count
+    armors_by_slots = {i: {} for i in range(4)}  # 0, 1, 2, 3 slot armors
+    for k, v in data_file.items():
+        armors_by_slots[len(v[3])][k] = v
+
+    # Sort armor groups by slot count and defense
+    for slot_count in armors_by_slots:
+        sl = dict(
+            sorted(
+                ((k, v) for k, v in armors_by_slots[slot_count].items() if k not in blacklisted_armor),
+                key=lambda x: (x[1][3], x[1][4]),
+                reverse=True
+            )
         )
-    )
-
-    threes_exclusive = dict((k, v) for k, v in threes.items() if k == list(threes.keys())[0] or has_needed_skill(v[1], skills))
-    # threes_sorted = merge_safe_update(
-    #     threes_exclusive,
-    #     threes
-    # )
-
-    twos = dict(
-        sorted(
-            ((k, v) for k, v in data_file.items() if len(v[3]) == 2),
-            key=lambda x: (x[1][3], x[1][4]),
-            reverse=True
+        armors_by_slots[slot_count] = dict(
+            (k, v) for k, v in sl.items() if (slot_count > 0 and k == list(sl.keys())[0]) or has_needed_skill(v[1], skills)
         )
-    )
 
-    twos_exclusive = dict((k, v) for k, v in twos.items() if k == list(twos.keys())[0] or has_needed_skill(v[1], skills))
-    # twos_sorted = merge_safe_update(
-    #     twos_exclusive,
-    #     twos
-    # )
-
-    ones = dict(
-        sorted(
-            ((k, v) for k, v in data_file.items() if len(v[3]) == 1),
-            key=lambda x: (x[1][3], x[1][4]),
-            reverse=True
-        )
-    )
-
-    ones_exclusive = dict((k, v) for k, v in ones.items() if k == list(ones.keys())[0] or has_needed_skill(v[1], skills))
-    # ones_sorted = merge_safe_update(
-    #     ones_exclusive,
-    #     ones
-    # )
-
-    zeros = dict(
-        sorted(
-            ((k, v) for k, v in data_file.items() if len(v[3]) == 0),
-            key=lambda x: (x[1][4]), # sort by defense
-            reverse=True
-        )
-    )
-    zeros_exclusive = dict((k, v) for k, v in zeros.items() if has_needed_skill(v[1], skills))
-
-    # zeros = dict(
-    #     sorted(
-    #         ((k, v) for k, v in data_file.items() 
-    #             if not (k in threes_sorted or k in twos_sorted or k in ones_sorted) 
-    #             and has_needed_skill(v[1], skills)),
-    #         key=lambda x: (x[1][3], x[1][4]),  # Sort by slot number, then defense 
-    #         reverse=True  # Sort in descending order
-    #     )
-    # )
-
-    exclusive_only = { **threes_exclusive, **twos_exclusive, **ones_exclusive, **zeros_exclusive }
+    # Filter exclusive armors
+    exclusive_only = {
+        **armors_by_slots[3], 
+        **armors_by_slots[2], 
+        **armors_by_slots[1], 
+        **armors_by_slots[0]
+    }
 
     # trim unecessary pieces
-    # best_slottage = [0, 0, 0]
     best_skillage = {key: 0 for key in skills}
     exclusives_to_keep = {}
-    # checking_slottage = True
+
     for armor_name, armor_data in exclusive_only.items():
         a_slots = _x(armor_data, "slots")
         a_skills = _x(armor_data, "skills")
         update = None
-        if has_better_slottage(exclusives_to_keep, a_slots) or has_longer_slottage(exclusives_to_keep, a_slots):
-            update = [armor_name, armor_data]
-            # best_slottage = a_slots
+
+        if is_better_armor(exclusives_to_keep, a_slots):
+            update = (armor_name, armor_data)
 
         for skill_name, skill_level in a_skills.items():
             if skill_name in skills and skill_level > best_skillage.get(skill_name, 0):
-                update = [armor_name, armor_data]
+                update = (armor_name, armor_data)
                 best_skillage[skill_name] = skill_level
 
         if update:
             exclusives_to_keep[update[0]] = update[1]
 
-    groupies = dict(
-        sorted(
+    groupies = {
+        k: v for k, v in sorted(
             ((k, v) for k, v in data_file.items() if k not in exclusives_to_keep and (is_in_sets(v, set_skills) or is_in_groups(v, group_skills))),
             key=lambda x: (x[1][3], x[1][4]),
             reverse=True
         )
-    )
+    }
 
     groupies_grouped, groupies_tracker = group_armor_into_sets(groupies, set_skills, group_skills)
     groupies_to_keep = {}
 
     for group_name, group_armor in groupies_grouped.items():
+        # add the best of the existing pool armor into set/group categories
+        for armor_name, armor_data in exclusives_to_keep.items():
+            if armor_data[2] == group_name or armor_data[7] == group_name:
+                if has_better_slottage(groupies_tracker[group_name], a_slots) or has_longer_slottage(groupies_tracker[group_name], a_slots):
+                    groupies_tracker[group_name][armor_name] = armor_data              
+
+        # add new armor into set/group categories if it's better than existing
         for armor_name, armor_data in group_armor.items():
             a_slots = _x(armor_data, "slots")
             if has_better_slottage(groupies_tracker[group_name], a_slots) or has_longer_slottage(groupies_tracker[group_name], a_slots):
                 groupies_tracker[group_name][armor_name] = armor_data
+        
 
     for group_name, group_armor in groupies_tracker.items():
         for armor_name, armor_data in group_armor.items():
             if armor_name not in groupies_to_keep:
                 groupies_to_keep[armor_name] = armor_data
 
-    print(f"#{type}: {len(exclusive_only)}")
+    exclusives_to_keep = { **exclusives_to_keep, **groupies_to_keep }
 
-    # with open('./misc/exclusives-to-keep.txt', 'w' if type == "head" else 'a') as file:
-    #     for a_name, a_data in exclusives_to_keep.items():
-    #         file.write(f"{a_name}: ({_x(a_data, 'type')} - {_x(a_data, 'slots')})\n")
-    #     file.write('\n')
+    print(f"# of {type}: {len(exclusives_to_keep)}")
 
-    # return [
-    #     threes_sorted, twos_sorted, ones_sorted, zeros, exclusives_to_keep
-    # ]
+    if DEBUG:
+        with open('./misc/exclusives-to-keep.txt', 'w' if type == "head" else 'a') as file:
+            for a_name, a_data in exclusives_to_keep.items():
+                file.write(f"{a_name}: ({_x(a_data, 'type')} - {_x(a_data, 'slots')})\n")
+            file.write('\n')
+
     return exclusives_to_keep
 
 def armor_combo(head, chest, arms, waist, legs, talisman):
@@ -467,6 +484,7 @@ def can_decos_fulfill_skills(decos, skills, slots_available):
     return False  # Not enough skills met
 
 def get_decos_to_fulfill_skills(decos, skills, slots_available, starting_skills) -> dict:
+    global deco_inventory
     # Adjust required skills based on what we already have
     skills_needed = skills.copy()
     for skill, level in starting_skills.items():
@@ -494,13 +512,14 @@ def get_decos_to_fulfill_skills(decos, skills, slots_available, starting_skills)
 
     # Track used decorations
     used_decos = []
+    used_decos_count = {}
     free_slots = list(slots_available)
     used_slots = []
 
     # Iterate over available slots and try to fill them with the best decorations
     for slot_size in slots_available:
         for deco_name, (deco_type, deco_skills, deco_slot) in deco_list:
-            if deco_slot > slot_size:
+            if deco_slot > slot_size or used_decos_count.get(deco_name, 0) > deco_inventory[deco_name]:
                 continue  # Skip if decoration doesn't fit in the slot
             
             # Check if this decoration helps fulfill any remaining skills
@@ -515,6 +534,7 @@ def get_decos_to_fulfill_skills(decos, skills, slots_available, starting_skills)
             
             # Use this decoration
             used_decos.append(deco_name)
+            used_decos_count[deco_name] = used_decos_count.get(deco_name, 0) + 1
 
             used_slots.append(slot_size)
             free_slots.remove(slot_size)
@@ -666,9 +686,13 @@ def print_results(results, limit):
             armor_names = res["armor_names"]
             deco_names = res["deco_names"]
             slots = res["slots"]
+            free_slots = res["free_slots"]
             skills = dict(res["skills"])
             set_skills = res["set_skills"]
             group_skills = res["group_skills"]
+
+            slots.sort(reverse=True)
+            free_slots.sort(reverse=True)
 
             # visually limit skill levels to stay within max
             global skill_db
@@ -679,12 +703,9 @@ def print_results(results, limit):
             skills = dict(
                 sorted(
                     ((k, v) for k, v in skills.items()),
-                    key=lambda x: x[1], # sort by level 
-                    reverse=True
+                    key=lambda x: (-x[1], x[0]), # sort by level, then name
                 )                
             )
-
-            free_slots = res["free_slots"]
 
             file.write(f"Match #{counter} (id-{res['id']}):\n")
             file.write(f"Armor = {armor_names}\n")
@@ -699,84 +720,99 @@ def print_results(results, limit):
                 file.write(f"Group Skills = {str(group_skills)}\n")
 
             file.write(f"Decorations = {deco_names}\n")
-            file.write(f"Free Slots - {free_slots}\n\n")
+            file.write(f"Free Slots - {free_slots}\n")
+            file.write(f"Total Slots - {slots}\n\n")
             counter += 1
             
-def roll_combos(head1, chest1, arms1, waist1, legs1, talisman1, decos, skills, set_skills, group_skills, limit):
-    counter = 0
-    inc = 0
+def roll_combos(
+        head1: dict, chest1: dict, arms1: dict, waist1: dict, legs1: dict, talisman1: dict, decos: dict,
+        skills: dict, set_skills: dict, group_skills: dict, limit: int
+    ):
+    counter, inc = 0, 0
     ret = []
 
-    global total_possible_combinations
-    total_possible_combinations = calculate_armor_combinations([len(head1), len(chest1), len(arms1), len(waist1), len(legs1), len(talisman1)])
-    print(f"possible: {total_possible_combinations:,}")
-    
-    # Generate all possible combinations of gear
-    for combo in product(head1.items(), chest1.items(), arms1.items(), waist1.items(), legs1.items(), talisman1.items()):
-        if counter >= limit:
-            break  # Stop once we hit the limit
+    # Convert dictionaries to lists for faster iteration
+    head_list = list(head1.items())
+    chest_list = list(chest1.items())
+    arms_list = list(arms1.items())
+    waist_list = list(waist1.items())
+    legs_list = list(legs1.items())
+    talisman_list = list(talisman1.items())
 
-        # skip combo if doesn't require an existing set or group skill
+    # Calculate total possible combinations
+    global total_possible_combinations
+    total_possible_combinations = (
+        len(head_list) * len(chest_list) * len(arms_list) * len(waist_list) * len(legs_list) * len(talisman_list)
+    )
+    print(f"possible: {total_possible_combinations:,}")
+
+    # Generate all combinations
+    limit_reached = False
+    for combo in product(head_list, chest_list, arms_list, waist_list, legs_list, talisman_list):
+        if counter >= limit:
+            limit_reached = True
+            break
+
+        # Pre-check for required set or group skills (early exit)
         if set_skills or group_skills:
-            do_cont = True
+            do_skip = False
+
             if set_skills:
                 for set_name, set_level in set_skills.items():
-                    pieces_from_set = sum(1 for piece in combo[:-1] if piece[1][7] == set_name)
-                    if pieces_from_set >= set_level * 2:
-                        do_cont = False
-                if do_cont:
-                    continue
-
-            if group_skills:
+                    pieces_from_set = sum(piece[1][7] == set_name for piece in combo[:-1])
+                    if pieces_from_set < set_level * 2:
+                        do_skip = True
+                        break
+            
+            if not do_skip and group_skills:
                 for group_name, group_level in group_skills.items():
-                    pieces_from_set = sum(1 for piece in combo[:-1] if piece[1][2] == group_name)
-                    if pieces_from_set >= 3:
-                        do_cont = False
-            if do_cont:
+                    pieces_from_group = sum(piece[1][2] == group_name for piece in combo[:-1])
+                    if pieces_from_group < 3:
+                        do_skip = True
+                        break
+
+            if do_skip:
                 continue
         
-        test_set = armor_combo(
-            format_armor_c(combo[0]),
-            format_armor_c(combo[1]),
-            format_armor_c(combo[2]),
-            format_armor_c(combo[3]),
-            format_armor_c(combo[4]),
-            format_armor_c(combo[5])
-        )
+        test_set = armor_combo(*(format_armor_c(piece) for piece in combo))
 
-        # Call the test function (you'll implement this)
-        result = test(test_set, decos, skills)  # Replace with actual function
-
+        result = test(test_set, decos, skills)
         if result is not None:
             result["id"] = counter + 1
             result["_id"] = inc + 1
             inc += 1
             ret.append(result)
 
-        counter += 1  # Increment counter    
+        counter += 1
     
     return ret
 
-def search(skills:dict, set_skills = {}, group_skills = {}, limit = 500000):
-    load_jsons()
+# todo: finish this
+def weapon_search(type: str, skills: dict):
+    global weapon_db, decoration
+    with open(f'./data/compact/{type}.json', 'r') as file:
+        weapon_db = json.load(file)
+    if not decoration:
+        with open(f'./data/compact/decoration.json', 'r') as file:
+            decoration = json.load(file)
 
-    gear = get_gear_pool(skills, set_skills, group_skills)
+    best = get_best_weapon(skills)
+    # print_weapon_results(best)
 
-    # testy = armor_combo(
-    #     find_armor("G Fulgur Helm Beta"),
-    #     find_armor("Arkvulcan Mail Beta"),
-    #     find_armor("G Arkveld Vambraces Beta"),
-    #     find_armor("Arkvulcan Coil Beta"),
-    #     find_armor("Dahaad Shardgreaves Beta"),
-    #     find_armor("Leaping Charm III")
-    #     # {
-    #     #     "name": "None",
-    #     #     "data": [None, {}]
-    #     # }
-    # )
-    # testy_result = test(testy, best_decos, skills)
+    return best
 
-    rolls = roll_combos(
+def search(
+        skills: dict, set_skills = {}, group_skills = {},
+        deco_mods = {}, must_use_armor: tuple[str, ...] = (None, None, None, None, None, None),
+        blacklisted_armor: tuple[str, ...] = (),
+        limit = 500000
+    ):
+    speed(load_jsons)
+
+    gear = speed(get_gear_pool, skills, set_skills, group_skills, must_use_armor, blacklisted_armor)
+
+    rolls = speed(
+        roll_combos,
         gear["head"],
         gear["chest"],
         gear["arms"],
@@ -793,23 +829,23 @@ def search(skills:dict, set_skills = {}, group_skills = {}, limit = 500000):
 
     print(f"found {len(rolls):,} matches out of {total_possible_combinations:,} combinations checked (limit: {limit})")
 
+def speed(func: Callable[..., Any], *args, **kwargs) -> Any:
+    start_time = time.perf_counter()
+    result = func(*args, **kwargs)
+    end_time = time.perf_counter()
+    elapsed_time = end_time - start_time
+    print(f">> {func.__name__}() = {elapsed_time:.6f} seconds")
+    return result
 
-wanted_skills = {
-    "Speed Eating": 3,
-    "Evade Extender": 3,
-    "Weakness Exploit": 5,
-    "Partbreaker": 3,
-    "Agitator": 5,
-    # "Evade Window": 1
-}
+# speed(search, *tests.test_multi)
+# speed(search, *tests.test_wiki_impossible)
+# speed(search, *tests.test_many)
+# speed(search, *tests.test_single)
+# speed(search, *tests.test_without_deco)
+# speed(search, *tests.test_mandatory)
+speed(search, *tests.test_blacklist)
 
-wanted_set_skills = {
-    # "Arkveld's Hunger": 1, # Hasten Recovery
-}
 
-wanted_group_skills = {
-    # "Fortifying Pelt": 1, # Fortify
-}
-
-search(wanted_skills, wanted_set_skills, wanted_group_skills)
-
+# speed(weapon_search, "great sword", {
+#     "Critical Eye": 3
+# })
