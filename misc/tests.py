@@ -52,7 +52,7 @@ test_group = (
         "Evade Extender": 3,
         "Weakness Exploit": 5,
         "Partbreaker": 3,
-        "Agitator": 5,
+        "Agitator": 2,
     },
     {},
     {
@@ -76,23 +76,7 @@ test_set_and_group = (
     }
 )
 
-test_set_and_group = (
-    {
-        "Speed Eating": 3,
-        "Evade Extender": 3,
-        "Weakness Exploit": 5,
-        "Partbreaker": 3,
-        "Agitator": 2,
-    },
-    {
-        "Arkveld's Hunger": 1, # Hasten Recovery
-    },
-    {
-        "Fortifying Pelt": 1, # Fortify
-    }
-)
-
-test_wiki_impossible = (
+test_impossible = (
     {
         "Speed Eating": 3,
         "Evade Extender": 3,
@@ -105,7 +89,6 @@ test_wiki_impossible = (
     {}
 )
 
-# wiki (version 20250309T155958) returns a result with a 2 slot available.  that is an error
 test_many = (
     {
         "Evade Extender": 3,

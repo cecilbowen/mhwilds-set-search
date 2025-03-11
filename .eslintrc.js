@@ -118,7 +118,7 @@ module.exports = {
         'no-useless-concat': ERROR,
         'no-void': WARN,
         // Produce warnings when something is commented as TODO or FIXME
-        'no-warning-comments': [WARN, {
+        'no-warning-comments': [OFF, {
             terms: ['TODO', 'FIXME'],
             location: 'start'
         }],
@@ -212,7 +212,7 @@ module.exports = {
         'max-depth': [WARN, 8],
         'max-len': [WARN, 132],
         'max-nested-callbacks': [WARN, 8],
-        'max-params': [WARN, 8],
+        'max-params': [OFF, 8],
         'new-cap': WARN,
         'new-parens': WARN,
         'no-array-constructor': WARN,

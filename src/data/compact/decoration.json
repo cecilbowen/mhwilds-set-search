@@ -222,7 +222,7 @@
   "Ironwall Jewel 1": ["weapon",{"Guard":1},1],
   "Ironwall Jewel II 2": ["weapon",{"Guard":2},2],
   "Ironwall Jewel III 3": ["weapon",{"Guard":3},3],
-  "Jumping Jewel 2": ["armor",{"Evade Extender":2},2],
+  "Jumping Jewel 2": ["armor",{"Evade Extender":1},2],
   "KO Jewel 1": ["weapon",{"Slugger":1},1],
   "KO Jewel II 2": ["weapon",{"Slugger":2},2],
   "KO Jewel III 3": ["weapon",{"Slugger":3},3],
