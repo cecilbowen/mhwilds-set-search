@@ -1,28 +1,31 @@
 from collections import defaultdict
 from itertools import product
 from functools import cmp_to_key
+from dataclasses import dataclass, asdict
 import json
 import time
 from typing import Callable, Any
 import tests
+import constants
 
 skill_db = set_skill_db = group_skill_db = {}
 weapon_db = {}
 deco_inventory = {}
-head = chest = arms = waist = legs = talisman = decoration = {}
-total_possible_combinations = 0
-reorder_amount = (2, 2, 5) # how many of best 3 slotters, 2/3 slotters, longest slotters to put at top of list
+all_armor = head = chest = arms = waist = legs = talisman = decoration = {}
+total_possible_combinations, total_prunes = 0, 0
+reorder_amount = (3, 2, 1, 2, 5)
 
 already_loaded_jsons = False
 file_write = True
 
-DEBUG = True
+search_results = []
+wiki_string = ""
 
 def load_jsons(deco_mods = {}):
     global already_loaded_jsons
     if already_loaded_jsons:
         return
-    global head, chest, arms, waist, legs, talisman, decoration, skill_db, set_skill_db, group_skill_db, deco_inventory
+    global head, chest, arms, waist, legs, talisman, decoration, skill_db, set_skill_db, group_skill_db, deco_inventory, all_armor
     with open('./src/data/compact/head.json', 'r') as file:
         head = json.load(file)
     with open('./src/data/compact/chest.json', 'r') as file:
@@ -46,21 +49,24 @@ def load_jsons(deco_mods = {}):
     with open('./src/data/user/deco-inventory.json', 'r') as file: # probably be localStorage when js
         deco_inventory = json.load(file)
 
+    all_armor = { **head, **chest, **arms, **waist, **legs }
+
     # modify deco inventory
     if deco_mods:
         for name, amount in deco_mods.items():
             deco_inventory[name] = amount
     already_loaded_jsons = True
 
-def get_json_from_type(type:str):
-    global head, chest, arms, waist, legs, talisman, decoration
+def get_json_from_type(type: str):
+    global head, chest, arms, waist, legs, talisman, decoration, all_armor
+
     type_map = {
         "head": head,
         "chest": chest,
         "arms": arms,
         "waist": waist,
         "legs": legs,
-        "armor": { **head, **chest, **arms, **waist, **legs },
+        "armor": all_armor,
         "talisman": talisman,
         "decoration": decoration
     }
@@ -97,54 +103,67 @@ def slottage_length_compare(a, b):
         while len(b_slots) < len(a_slots):
             b_slots.append(0)
 
-    for i in range(len(a_slots) - 1, 0, -1):
-        if a_slots[i] > b_slots[i]:
-            return True
+    for i in range(len(a_slots) - 1, -1, -1):
+        eq = a_slots[i] == b_slots[i]
+        if not eq:
+            return a_slots[i] > b_slots[i]
     
     return False
 
-def slottage_length_compare_raw(best_slots, challenger_slots):
-    test_slots = list(challenger_slots)
-    while len(test_slots) < len(best_slots):
-        test_slots.append(0)
+def slottage_length_compare_sort(slots):
+    """Returns a tuple of slot values, right-aligned with zeros."""
+    return tuple(reversed(slots + [0] * (3 - len(slots))))  # Ensure consistent length
 
-    for i in range(len(best_slots) - 1, 0, -1):
+def slottage_length_compare_raw(top_slots, try_slots):
+    best_slots = list(top_slots)
+    test_slots = list(try_slots)
+    standard_length = max(len(test_slots), len(best_slots))
+    while len(test_slots) < standard_length:
+        test_slots.append(0)
+    while len(best_slots) < standard_length:
+        best_slots.append(0)
+
+    for i in range(len(best_slots) - 1, -1, -1):
         if test_slots[i] > best_slots[i]:
             return True
     
     return False
 
-def has_better_slottage(armors: dict, challenger_slots: list) -> bool:
+def has_better_slottage(armors: dict, challenger_slots: list, skill_name: str = None) -> bool:
     if not armors:
         return True
     copied_armors = armors.copy()
     sorted_by_slottage = dict(
         sorted(
-            ((k, v) for k, v in copied_armors.items()),
+            ((k, v) for k, v in copied_armors.items() if not skill_name or skill_name in v[1]),
             key=lambda x: (_x(x[1], "slots")),
             reverse=True # descending
         )
     )
 
+    if not sorted_by_slottage:
+        return True
+
     top = next(iter(sorted_by_slottage.items()))
     return challenger_slots > top[1][3]
 
-def has_longer_slottage(armors: dict, challenger_slots: list) -> bool:
+def has_longer_slottage(armors: dict, challenger_slots: list, skill_name: str = None) -> bool:
+    if not armors:
+        return True
+
     data = armors.copy()
     # Sort dictionary keys using the comparison function
-    sorted_keys = dict(sorted(data.items(), key=cmp_to_key(slottage_length_compare)))
+    sorted_keys = dict(
+        sorted(
+            ((k, v) for k, v in data.items() if not skill_name or skill_name in v[1]),
+            key=cmp_to_key(slottage_length_compare)
+        )
+    )
 
     # Convert back to a sorted dictionary if needed
     sorted_data = {key: data[key] for key in sorted_keys}
 
-    return slottage_length_compare_raw(challenger_slots, next(iter(sorted_data.items()))[1][3])
-
-def get_gear_pool(
-        skills: dict, set_skills: dict, group_skills: dict,
-        must_use_armor: tuple[str, ...], blacklisted_armor: tuple[str, ...]
-    ) -> dict:
-    best_armor = get_best_armor(skills, set_skills, group_skills, must_use_armor, blacklisted_armor)
-    return best_armor
+    return slottage_length_compare_raw(next(iter(sorted_data.items()))[1][3], challenger_slots)
 
 def get_set_name(armor_data: dict) -> str:
     return armor_data[7]
@@ -172,8 +191,8 @@ def group_armor_into_sets(armor_pieces: dict, set_skills: dict, group_skills: di
 
     return [groups, groups_empty]
 
-def is_better_armor(existing_armors, new_slots):
-    return has_better_slottage(existing_armors, new_slots) or has_longer_slottage(existing_armors, new_slots)
+def is_better_armor(existing_armors, new_slots, skill_name = None):
+    return has_better_slottage(existing_armors, new_slots, skill_name) or has_longer_slottage(existing_armors, new_slots, skill_name)
 
 def get_best_weapon(desired_skills: dict):
     global weapon_db, decoration
@@ -227,10 +246,72 @@ def get_best_decos(skills: dict) -> dict:
         )
     }
 
+def generate_wiki_string(skills: dict, set_skills: dict, group_skills: dict):
+    global wiki_string
+    skills_wiki_format = []
+    for key, value in skills.items():
+        skills_wiki_format.append(f"{key} Lv{value}")
+    for key, value in set_skills.items():
+        skills_wiki_format.append(f"{set_skill_db[key][0]} {'I' * value}")
+    for key, value in group_skills.items():
+        skills_wiki_format.append(f"{group_skill_db[key][0]}")
+    skills_wiki_format = "%2C".join(skills_wiki_format)
+    wiki_string = skills_wiki_format
+
+def empty_gear_set(lists: bool = False) -> dict:
+    if lists:
+        return {
+            "head": [],
+            "chest": [],
+            "arms": [],
+            "waist": [],
+            "legs": []
+        } 
+
+    return {
+        "head": {},
+        "chest": {},
+        "arms": {},
+        "waist": {},
+        "legs": {}
+    }
+
+def get_skill_potential(armor_data: dict, skill_name: str, decos: dict, all_skills: dict) -> tuple[int]:
+    """returns (max skill level, leftover slots, length of slots)"""
+    filtered_decos = dict(
+        sorted(
+            ((k, (v[1][skill_name], v[2])) for k, v in decos.items() if skill_name in v[1]),
+            key=lambda x: (x[1]), # sort by skill level
+            reverse=True
+        )
+    )
+    other_deco_slot_sizes = list(v[2] for _, v in decos.items() if skill_name not in v[1])
+    extra_points = sum(0 + (5 if skill in all_skills else 1) 
+        for skill, level in armor_data[1].items() if skill != skill_name)
+
+
+    max_points = 0
+    leftover_slots = armor_data[3].copy()
+    for _, stats in filtered_decos.items():
+        level = stats[0]
+        slot_size = stats[1]
+        summation = 0
+        for slot in armor_data[3]:
+            if slot_size <= slot:
+                leftover_slots.remove(slot)
+                summation += level
+        max_points = max(summation, max_points)
+    points = max_points + armor_data[1].get(skill_name, 0)
+    mod_points = points + len(list(slot for slot in leftover_slots if slot in other_deco_slot_sizes))
+
+    return (points, leftover_slots, extra_points, mod_points)
+
 def get_best_armor(
         skills: dict, set_skills: dict = {}, group_skills: dict = {},
         mandatory_piece_names: tuple = (),
         blacklisted_armor: tuple[str, ...] = (),
+        blacklisted_armor_types: tuple[str, ...] = (),
+        dont_use_decos: bool = False,
         rank: str = "high"
     ):
     global file_write, talisman
@@ -241,124 +322,16 @@ def get_best_armor(
         if name:
             found_data = full_data_file.get(name)
             if found_data:
-                mandatory[found_data[0]] = found_data
+                mandatory[found_data[0]] = name
             else:
                 print(f"WARNING: Could not find mandatory {type} armor {name}!")
 
     # high/low rank
     data_file = {
-        k: v for k, v in full_data_file.items() 
-        if v[6] == rank
+        k: v for k, v in full_data_file.items()
+        if v[6] == rank and (not mandatory.get(v[0]) or k == mandatory.get(v[0]))
+            and (v[0] not in blacklisted_armor_types) and (k not in blacklisted_armor)
     }
-
-    # Group armors by slot count
-    armors_by_slots = {i: {} for i in range(3, -1, -1)}  # 0, 1, 2, 3 slot armors
-    for k, v in data_file.items():
-        armors_by_slots[len(v[3])][k] = v
-
-    best = {
-        "head": {},
-        "chest": {},
-        "arms": {},
-        "waist": {},
-        "legs": {}
-    }
-
-    # Sort armor groups by slot count and defense
-    for slot_count in armors_by_slots:
-        sl = dict(
-            sorted(
-                ((k, v) for k, v in armors_by_slots[slot_count].items() if k not in blacklisted_armor),
-                key=lambda x: (x[1][3], x[1][4]),
-                reverse=True
-            )
-        )
-
-        for armor_name, armor_data in sl.items():
-            category = armor_data[0]
-            group = best[category]
-            if not group:
-                best[category][armor_name] = armor_data 
-            elif has_needed_skill(armor_data[1], skills):
-                best[category][armor_name] = armor_data 
-
-    # trim unecessary pieces
-    exclusives_to_keep = {
-        "head": {},
-        "chest": {},
-        "arms": {},
-        "waist": {},
-        "legs": {}
-    }
-    for category, data in best.items():
-        best_skillage = {key: 0 for key in skills}
-
-        for armor_name, armor_data in data.items():
-            a_slots = _x(armor_data, "slots")
-            a_skills = _x(armor_data, "skills")
-            name_data = None
-
-            if is_better_armor(exclusives_to_keep[category], a_slots):
-                name_data = (armor_name, armor_data)
-
-            for skill_name, skill_level in a_skills.items():
-                if skill_name in skills and skill_level > best_skillage.get(skill_name, 0):
-                    name_data = (armor_name, armor_data)
-                    best_skillage[skill_name] = skill_level
-
-            if name_data:
-                exclusives_to_keep[category][name_data[0]] = name_data[1]
-
-    groupies = {
-        k: v for k, v in sorted(
-            ((k, v) for k, v in data_file.items() if k not in exclusives_to_keep and (is_in_sets(v, set_skills) or is_in_groups(v, group_skills))),
-            key=lambda x: (x[1][3], x[1][4]),
-            reverse=True
-        )
-    }
-
-    best_groupies = {
-        "head": {},
-        "chest": {},
-        "arms": {},
-        "waist": {},
-        "legs": {}
-    }
-    for armor_name, armor_data in groupies.items():
-        category = armor_data[0]
-        best_groupies[category][armor_name] = armor_data 
-
-    for category, data in best_groupies.items():
-        groupies_grouped, groupies_tracker = group_armor_into_sets(data, set_skills, group_skills)
-        groupies_to_keep = {}
-        best_skillage = {key: 0 for key in skills}
-
-        for group_name, group_armor in groupies_grouped.items():
-            # add the best of the existing pool armor into set/group categories
-            for armor_name, armor_data in exclusives_to_keep[category].items():
-                if armor_data[2] == group_name or armor_data[7] == group_name:
-                    a_slots = _x(armor_data, "slots")
-                    if is_better_armor(groupies_tracker[group_name], a_slots):
-                        groupies_tracker[group_name][armor_name] = armor_data              
-
-            # add new armor into set/group categories if it's better than existing
-            for armor_name, armor_data in group_armor.items():
-                a_slots = _x(armor_data, "slots")
-                a_skills = _x(armor_data, "skills")
-                if is_better_armor(groupies_tracker[group_name], a_slots):
-                    groupies_tracker[group_name][armor_name] = armor_data
-
-                for skill_name, skill_level in a_skills.items():
-                    if skill_name in skills and skill_level > best_skillage.get(skill_name, 0):
-                        groupies_tracker[group_name][armor_name] = armor_data
-                        best_skillage[skill_name] = skill_level
-            
-        for group_name, group_armor in groupies_tracker.items():
-            for armor_name, armor_data in group_armor.items():
-                if armor_name not in groupies_to_keep:
-                    groupies_to_keep[armor_name] = armor_data
-
-        exclusives_to_keep[category] = { **exclusives_to_keep[category], **groupies_to_keep }
 
     # now talisman
     best_talismans = {
@@ -368,38 +341,246 @@ def get_best_armor(
             reverse=True
         )
     }
-
-    sk_opt = {}
-    talis_opt = {}
-
-    for talis_name, talis_data in best_talismans.items():
-        sks = talis_data[1]
-        if len(sks) == 1:
-            for sk_name, sk_level in sks.items():
-                if sk_level > sk_opt.get(sk_name, 0):
-                    talis_opt[talis_name] = talis_data
-                    sk_opt[sk_name] = sk_level 
-
-    exclusives_to_keep["talisman"] = talis_opt
+    top_talis = {}
+    if "talisman" not in blacklisted_armor_types:
+        top_talis_levels = {}
+        for talis_name, talis_data in best_talismans.items():
+            sks = talis_data[1]
+            if len(sks) == 1:
+                for sk_name, sk_level in sks.items():
+                    if sk_level > top_talis_levels.get(sk_name, 0):
+                        top_talis[talis_name] = talis_data
+                        top_talis_levels[sk_name] = sk_level 
     
-    # finally decos
-    best_decos = get_best_decos(skills)
+    firsts = empty_gear_set()
+    best = empty_gear_set()
+    best_decos = {} if dont_use_decos else get_best_decos(skills)
 
-    exclusives_to_keep["decos"] = best_decos
+    # store best slotters and skill armors
+    for sort_type in ("length", "size"):
+        checker = empty_gear_set()
+        all_sort = dict(
+            sorted(
+                (data_file.items()),
+                key=lambda x: (x[1][3] if sort_type == "size" else (slottage_length_compare_sort(x[1][3])), x[1][4]),
+                reverse=True
+            )
+        )
 
-    # print(f"# of {type}: {len(exclusives_to_keep)}")
+        for armor_name, armor_data in all_sort.items():
+            category = armor_data[0]
+            group = checker[category]
+            if not group: # if first in category
+                thiccer = sort_type == "size" and has_better_slottage(firsts[category], armor_data[3])
+                longer = sort_type == "length" and has_longer_slottage(firsts[category], armor_data[3])
 
-    if DEBUG and file_write:
-        with open('./misc/exclusives-to-keep.txt', 'w') as file:
-            for category, data in exclusives_to_keep.items():
+                if thiccer or longer:
+                    checker[category] = True
+                    firsts[category][armor_name] = armor_data
+
+            if has_needed_skill(armor_data[1], skills):
+                best[category][armor_name] = armor_data 
+
+    total_max_skill_potential = {}
+    def update_skill_potential(skill_potential, mod_point_map, category, skill_name, armor_name, armor_data, group_name = None):
+        nonlocal total_max_skill_potential, skills
+        points, leftover_slots, extra_points, mod_points = get_skill_potential(armor_data, skill_name, best_decos, skills)
+        alias = {}
+        mod_point_map[armor_name] = mod_points
+        if group_name:
+            alias = skill_potential[category].setdefault(group_name, {}).setdefault(skill_name, {})
+        else:
+            alias = skill_potential[category].setdefault(skill_name, {})
+
+        def slot_compare(top_slots, try_slots):
+            best_slots = list(top_slots)
+            test_slots = list(try_slots)
+            longer = False
+            same_length = True
+            bigger = test_slots > best_slots
+            standard_length = max(len(test_slots), len(best_slots))
+            while len(test_slots) < standard_length:
+                test_slots.append(0)
+            while len(best_slots) < standard_length:
+                best_slots.append(0)
+
+            for i in range(len(best_slots) - 1, -1, -1):
+                if test_slots[i] != best_slots[i]:
+                    same_length = False
+                if test_slots[i] > best_slots[i]:
+                    longer = True
+                    break
+            if same_length and not bigger:
+                return "equal"
+            return longer or bigger
+        
+        def apply_for_more(new_applicant):
+            more_pool = alias.get("more", [])
+            accepted = True
+            for piece in more_pool:
+                if mod_point_map[new_applicant] < mod_point_map[piece]:
+                    accepted = False
+                    break
+            if accepted:
+                more_pool.append(new_applicant)
+                alias["more"] = more_pool
+
+        def alias_update(keys: tuple = ()):
+            old_best = alias.get("best")
+
+            alias.update({
+                "best": armor_name, 
+                "points": points,
+                "slots": armor_data[3],
+                "extra_points": extra_points if "extra_points" in keys else alias.get("extra_points", 0),
+                "leftover_slots": leftover_slots if "leftover_slots" in keys else alias.get("leftover_slots", []),
+                "defense": armor_data[4]
+            })
+
+            if old_best and mod_point_map[old_best] >= mod_points:
+                apply_for_more(old_best)
+
+            # todo look at this later
+            total_max_skill_potential[skill_name] = total_max_skill_potential.get(skill_name, 0) + points
+            
+        if group_name:
+            dog = 323 # debug purposes    
+        current_points = alias.get("points", 0)
+        current_mod_points = mod_point_map.get(armor_name, 0)
+        compare = slot_compare(alias.get("leftover_slots", []), leftover_slots)
+        if points > current_points: # if highest skill potential, add it
+            alias_update(("leftover_slots", "extra_points"))
+        elif points == current_points and compare: # otherwise, check "leftover slots" (slots leftover after slotting in decos)
+            if compare == "equal": # if exactly equal
+                best_extra_points = alias.get("extra_points", 0)
+                if armor_data[3] > alias.get("slots", []):
+                    alias_update()
+                elif extra_points > best_extra_points: # check "extra" skills (skills other than current, bonus for other needed skills)
+                    alias_update(("extra_points",))
+                elif extra_points == best_extra_points: # if even THAT'S equal
+                    if armor_data[4] > alias.get("defense", 0): # check defense 
+                        alias_update()
+            else: # leftover slots are better
+                alias_update(("leftover_slots",))
+        elif points < current_points and mod_points > current_mod_points:
+            apply_for_more(armor_name)
+        
+        # got_the_skill = skill_name in armor_data[1]
+        # ss = "_skill" if got_the_skill else ""
+        # if armor_data[3] > alias.get("slots", []):
+        #     alias.update({f"slots{ss}": armor_data[3], f"biggest{ss}": armor_name})
+        # if not alias.get(f"longest{ss}") or has_longer_slottage({alias[f"longest{ss}"]: data_file[alias[f"longest{ss}"]]}, armor_data[3]):
+        #     alias.update({f"slot_length{ss}": slot_length, f"longest{ss}": armor_name})
+
+    # now we check max skill point potential
+    max_possible_skill_potential = empty_gear_set()
+    mod_point_map = {}
+    for skill_name in skills:
+        for category, data in best.items():
+            for armor_name, armor_data in data.items():
+                update_skill_potential(max_possible_skill_potential, mod_point_map, category, skill_name, armor_name, armor_data)
+
+    for skill_name, target_level in skills.items():
+        relevant_talisman = list((k, v[1]) for k, v in top_talis.items() if skill_name in v[1])
+        relevant_talisman_level = 0
+        if relevant_talisman:
+            relevant_talisman_level = relevant_talisman[0][1][skill_name]
+        if total_max_skill_potential.get(skill_name, 0) + relevant_talisman_level < target_level:
+            # we will never fulfill this search, stop here
+            return None
+    
+    bare_minimum = firsts
+    for category, data in max_possible_skill_potential.items():
+        for skill_name, stat_data in data.items():
+            for key in ("best", "more"):
+                if key in stat_data:
+                    if key == "more" and stat_data[key]:
+                        for ex in stat_data[key]:
+                            bare_minimum[category][ex] = data_file[ex]
+                    else:
+                        bare_minimum[category][stat_data[key]] = data_file[stat_data[key]]
+
+    # group/set effects alt =======================================================
+    groupies_alt = {
+        k: v for k, v in sorted(
+            ((k, v) for k, v in data_file.items() if (is_in_sets(v, set_skills) or is_in_groups(v, group_skills))),
+            key=lambda x: (x[1][3], x[1][4]),
+            reverse=True
+        )
+    }
+
+    total_max_skill_potential = {}
+    max_possible_skill_potential_set = empty_gear_set()
+
+    best_groupies_alt = defaultdict(dict)
+    for name, a_data in groupies_alt.items():
+        best_groupies_alt[a_data[0]][name] = a_data  # Append `name: a_data` under the right key
+
+    # Convert to a normal dict if needed
+    best_groupies_alt = dict(best_groupies_alt)
+    mod_point_map = {}
+    for skill_name in skills:
+        for category, data in best_groupies_alt.items():
+            groupies_grouped, _ = group_armor_into_sets(data, set_skills, group_skills)
+
+            for group_name, group_armors in groupies_grouped.items():
+                # add the best of the existing pool armor into set/group categories
+                for armor_name, armor_data in group_armors.items():
+                    update_skill_potential(max_possible_skill_potential_set, mod_point_map, category, skill_name, armor_name, armor_data, group_name)
+    
+    for category, data in max_possible_skill_potential_set.items():
+        for group_name, group_data in data.items():
+            for skill_name, stat_data in group_data.items():
+                for key in ("best", "more"):
+                    if key in stat_data:
+                        if key == "more" and stat_data[key]:
+                            for ex in stat_data[key]:
+                                bare_minimum[category][ex] = data_file[ex]
+                        else:
+                            bare_minimum[category][stat_data[key]] = data_file[stat_data[key]]
+    # ============================================================================= 
+    bare_minimum["decos"] = best_decos
+    bare_minimum["talisman"] = top_talis
+
+    # add in a dummy piece (no skills/slots) for any blacklisted armor types
+    for tipo in blacklisted_armor_types:
+        bare_minimum[tipo]["None"] = [tipo,{},"",[],0,[0,0,0,0,0],rank,""]
+
+    # sort final return armor by slottage
+    for cat, armor in bare_minimum.items():
+        if cat in ("talisman", "decos"):
+            continue
+        slottage = dict(
+            sorted(
+                (armor.items()),
+                key=lambda x: (slottage_length_compare_sort(x[1][3]), x[1][3]),
+                reverse=True
+            )
+        )
+        bare_minimum[cat] = slottage
+
+    ret = bare_minimum
+
+    if constants.DEBUG and file_write:
+        with open('./misc/chosen-armor.txt', 'w') as file:
+            file.write(f"{skills}\n")
+            if set_skills:
+                file.write(f"Set Skills: {set_skills}\n")
+            if group_skills:
+                file.write(f"Group Skills: {group_skills}\n")
+            file.write("\n")
+            for category, data in ret.items():
                 if category in {"talisman", "decos"}:
                     continue
                 file.write(f"{category}\n")
                 for a_name, a_data in data.items():
-                    file.write(f"\t{a_name}: ({_x(a_data, 'type')} - {_x(a_data, 'slots')})\n")
+                    relevant_skills = {k: v for k, v in a_data[1].items() if k in skills}
+                    relevant_set_skill = f" / {a_data[-1]}" if a_data[-1] in set_skills else ""
+                    relevant_group_skill = f" / {a_data[2]}" if a_data[2] in group_skills else ""
+                    file.write(f"\t{a_name}: ({_x(a_data, 'type')} - {_x(a_data, 'slots')}) {relevant_skills}{relevant_set_skill}{relevant_group_skill}\n")
                 file.write('\n')
 
-    return exclusives_to_keep
+    return ret
 
 def armor_combo(head, chest, arms, waist, legs, talisman):
     """
@@ -461,6 +642,8 @@ def format_armor_c(obj):
     }
 
 def get_decos_to_fulfill_skills(decos, desired_skills, slots_available, starting_skills) -> dict:
+    if not decos:
+        return None 
     global deco_inventory
 
     # Adjust required skills based on what we already have
@@ -616,47 +799,43 @@ def reorder(data_list: list) -> list:
     priority is longest slots with most 3s, longest slots with most 2/3s, then longest slots
     """
 
-    finality = []
-    ids_to_cut_line = []
+    damn_sort = sorted(
+        data_list.copy(),
+        key=lambda x: (x['free_slots']),
+        reverse=True
+    )
 
-    no_threes = True
-    no_twos = True 
-    for res in data_list:
-        if 3 in res["free_slots"]:
-            no_threes = False
-        if 2 in res["free_slots"]:
-            no_twos = False
-        if not (no_threes or no_twos):
-            break
-    
-    if not no_threes:
-        most_threes = sorted(
-            filter(lambda x: 3 in x['free_slots'], data_list.copy()),
-            key=lambda x: len(x['free_slots']),
-            reverse=True
-        )
-        ids_to_cut_line.extend(off_the_top(most_threes, reorder_amount[0], "id"))
-    
-    if not no_twos:
-        most_twos_or_threes = sorted(
-            filter(lambda x: any(val in x['free_slots'] for val in {2, 3}) and x['id'] not in ids_to_cut_line, data_list.copy()),
-            key=lambda x: len(x['free_slots']),
-            reverse=True
-        )
-        ids_to_cut_line.extend(off_the_top(most_twos_or_threes, reorder_amount[1], "id"))
-    
-    longest_slots = sorted(data_list.copy(), key=lambda x: (len(x["free_slots"]), len(x['free_slots']) if any(val in x['free_slots'] for val in {2, 3}) else 0), reverse=True)
-    ids_to_cut_line.extend(off_the_top(longest_slots, reorder_amount[2], "id"))
+    for d in damn_sort:
+        d["slots"].sort(reverse=True)
 
-    id_set = list(dict.fromkeys(ids_to_cut_line))
+    pre, post = [], []
+    best_per_three = {}  # Tracks the best (longest) list per num_threes
 
-    # Create a lookup dictionary for id positions (default to a high number for non-priority IDs)
-    id_order_map = {id_val: index for index, id_val in enumerate(id_set)}
+    for res in sorted(damn_sort, key=lambda x: (
+            -sum(1 for y in x['free_slots'] if y == 3),  # Sort by most 3s
+            -sum(1 for y in x['free_slots'] if y == 2),  # Then most 2s
+            -len(x['free_slots'])  # Then by overall length
+        )):
+        num_threes = sum(1 for y in res['free_slots'] if y == 3)
+        num_twos = sum(1 for y in res['free_slots'] if y == 2)
 
-    # Sort the list: prioritize by order in id_order, then keep the original order for others
-    finality = sorted(data_list, key=lambda d: (id_order_map.get(d["id"], float('inf')), data_list.index(d)))
+        # Keep only the best (longest) version of this (num_threes, num_twos) pair
+        if (num_threes, num_twos) not in best_per_three:
+            pre.append(res)
+            best_per_three[(num_threes, num_twos)] = len(res['free_slots'])  # Store the length
+        else:
+            post.append(res)
 
-    return finality
+    pre.extend(post)
+    exclude_ids = {obj['id'] for obj in pre}
+    longest_slots = sorted(
+        (v for v in data_list.copy() if v["id"] not in exclude_ids), 
+        key=lambda x: (len(x["free_slots"]), len(x['free_slots']) if any(val in x['free_slots'] for val in {2, 3}) else 0),
+        reverse=True
+    )
+    pre.extend(longest_slots)
+
+    return pre
 
 def merge_sum_dicts(dict_list: list[dict]):
     result = defaultdict(int)
@@ -665,15 +844,16 @@ def merge_sum_dicts(dict_list: list[dict]):
             result[k] += v
     return result
 
-def print_results(results, limit, wiki = ""):
-    global file_write
-    if not (results and file_write):
+def print_results(results, wiki = ""):
+    global file_write, total_possible_combinations, total_prunes
+    print(f"{len(results):,} matches.  possible combinations: {total_possible_combinations:,}.  filtered sets: {total_prunes:,} (display limit: {constants.LIMIT:,})")
+
+    if not file_write:
         return
     
     with open('./misc/rolls.txt', 'w') as file:
         counter = 1
-        global total_possible_combinations
-        file.write(f"Found {len(results):,} matches out of {total_possible_combinations:,} possible combinations (display limit: {limit:,}).\n\n")
+        file.write(f"Found {len(results):,} matches out of {total_possible_combinations:,} possible combinations (display limit: {constants.LIMIT:,}).\n\n")
         for res in results:
             armor_names = res["armor_names"]
             deco_names = res["deco_names"]
@@ -703,11 +883,11 @@ def print_results(results, limit, wiki = ""):
             file.write(f"Armor = {armor_names}\n")
             file.write(f"Skills = {str(skills)}\n")
 
-            set_skills = {k: int((v / 2) // 1) for k, v in set_skills.items() if int((v / 2) // 1) > 0}
+            set_skills = {k: int((v / 2) // 1) for k, v in set_skills.items() if k and int((v / 2) // 1) > 0}
             if set_skills:
                 file.write(f"Set Skills = {str(set_skills)}\n")
 
-            group_skills = {k: int((v / 3) // 1) for k, v in set_skills.items() if int((v / 3) // 1) > 0}
+            group_skills = {k: int((v / 3) // 1) for k, v in group_skills.items() if k and int((v / 3) // 1) > 0}
             if group_skills:
                 file.write(f"Group Skills = {str(group_skills)}\n")
 
@@ -718,7 +898,151 @@ def print_results(results, limit, wiki = ""):
 
         if wiki:
             file.write(f"https://mhwilds.wiki-db.com/sim/#skills={wiki}&fee=1\n")
+
+def get_min_required_slots(skills: dict, decos: dict) -> dict:
+    ret_skills = {}
+
+    for name in skills:
+        for _, deco_data in decos.items():
+            if name in deco_data[1]:
+                ret_skills[name] = deco_data[2]
+    return ret_skills
             
+def _d(armor_name: str) -> dict:
+    """Fetch armor data by name"""
+    armor = get_json_from_type("armor")
+    return armor[armor_name]
+
+def roll_combos_dfs(
+    gear: dict,
+    skills: dict, set_skills: dict, group_skills: dict,
+    limit: int, find_one: bool = False
+):
+    global total_possible_combinations
+    ret = []
+    counter, inc, prunes = 0, 0, 0
+    limit_reached = False
+
+    # Precomputed gear priority lists (best first)
+    priority_gear = {
+        "head": list(gear["head"].items()),
+        "chest": list(gear["chest"].items()),
+        "arms": list(gear["arms"].items()),
+        "waist": list(gear["waist"].items()),
+        "legs": list(gear["legs"].items()),
+        "talisman": list(gear["talisman"].items())
+    }
+
+    # Skill lookups
+    set_skills_check = set(set_skills.keys()) if set_skills else set()
+    group_skills_check = set(group_skills.keys()) if group_skills else set()
+
+    # DFS Search Function
+    def dfs_search(current_set, slot_index, current_skills, pieces_from_set, pieces_from_group, available_slots):
+        nonlocal counter, inc, limit_reached, prunes
+
+        # Base Case: Full armor set is formed
+        if slot_index == 5:  # Last slot before talisman
+            for talisman_name, talisman_data in priority_gear["talisman"]:
+                new_skills = current_skills.copy()
+                new_available_slots = available_slots[:]
+
+                # Add talisman skills
+                for skill, level in talisman_data[1].items():
+                    new_skills[skill] = new_skills.get(skill, 0) + level
+
+                # Add talisman slots (there are no talisman slots)
+                # new_available_slots.extend(talisman_data[2])
+
+                # Identify missing skills
+                missing_skills = {skill: max(0, level - new_skills.get(skill, 0)) for skill, level in skills.items()}
+                missing_skills = {skill: level for skill, level in missing_skills.items() if level > 0}
+
+                # Check if the final set meets requirements
+                cat = list((k, v) for k, v in current_set.items())
+                test_set = armor_combo(*(format_armor_c(piece) for piece in cat), format_armor_c([talisman_name, gear["talisman"][talisman_name]]))
+                result = test(test_set, gear["decos"], skills)
+                if result:
+                    result["id"] = counter + 1
+                    result["_id"] = inc + 1
+                    inc += 1
+                    ret.append(result)
+                    if find_one:
+                        return True  # Stop early if find_one=True
+
+            counter += 1
+            return False  # Continue exploring other paths
+
+        # Pruning: If limit is reached, stop
+        if counter >= limit:
+            limit_reached = True
+            print("LIMIT REACHED")
+            return True  # Stop early
+
+        # Select armor category (head, chest, etc.)
+        slot_name = list(priority_gear.keys())[slot_index]
+
+        # Try all armor pieces in the current category
+        for piece_name, armor_data in priority_gear[slot_name]:
+            new_skills = current_skills.copy()
+            new_pieces_from_set = pieces_from_set.copy()
+            new_pieces_from_group = pieces_from_group.copy()
+            new_available_slots = available_slots[:]
+
+            # Track set/group skills
+            set_name = armor_data[7]
+            group_name = armor_data[2]
+
+            if set_name in set_skills_check:
+                new_pieces_from_set[set_name] = new_pieces_from_set.get(set_name, 0) + 1
+
+            if group_name in group_skills_check:
+                new_pieces_from_group[group_name] = new_pieces_from_group.get(group_name, 0) + 1
+
+            # Prune: If set/group skills not met, skip
+            if any(new_pieces_from_set.get(skill, 0) < set_skills[skill] * 2 for skill in set_skills_check):
+                continue
+            if any(new_pieces_from_group.get(skill, 0) < 3 for skill in group_skills_check):
+                continue
+
+            # Add armor skills
+            for skill, level in armor_data[1].items():
+                new_skills[skill] = new_skills.get(skill, 0) + level
+
+            # Add available slots from armor
+            if armor_data[0] != "talisman":
+                new_available_slots.extend(armor_data[3])
+
+            # **Check If Slots Are Actually Useful**
+            missing_skills = {skill: max(0, level - new_skills.get(skill, 0)) for skill, level in skills.items()}
+            missing_skills = {skill: level for skill, level in missing_skills.items() if level > 0}
+
+            if missing_skills:
+                # Determine minimum slot requirements for needed skills
+                min_required_slots = get_min_required_slots(missing_skills, gear["decos"])
+
+                # Check if this armor contributes enough slots for at least one of the needed skills
+                can_fulfill_any = any(
+                    any(slot >= min_required_slots[skill] for slot in new_available_slots)
+                    for skill in missing_skills if skill in min_required_slots
+                )
+
+                if not can_fulfill_any:
+                    print(f"@@@@@@@@@ {piece_name}")
+                    continue  # Skip this armor if its slots can't contribute meaningfully
+
+            # Recursive DFS
+            if dfs_search({ **current_set, **{piece_name: armor_data} }, slot_index + 1, new_skills, new_pieces_from_set, new_pieces_from_group, new_available_slots):
+                return True  # Stop early if find_one=True
+
+        return False  # No valid set found at this depth
+
+    # Start DFS with an empty slot list
+    dfs_search({}, 0, {}, {}, {}, [])
+    total_possible_combinations = counter
+    return ret
+
+
 def roll_combos(
         gear: dict,
         skills: dict, set_skills: dict, group_skills: dict, limit: int, find_one: bool = False
@@ -807,20 +1131,91 @@ def weapon_search(type: str, skills: dict):
 
     return best
 
+from collections import Counter
+
+def count_slots(slot_list, targets):
+    """Counts occurrences of numbers in `targets` within `slot_list`."""
+    return sum(1 for slot in slot_list if slot in targets)
+
+def verify(results: list, verify_slots: list) -> bool:
+    # Initialize tracking variables
+    object_A, object_B, object_C = None, None, None
+    max_A, max_B, max_C = -1, -1, -1
+    max_B_3s = -1  # Track count of 3s for breaking 2/3 ties
+    max_B_length = -1  # Track length for breaking further ties in B
+
+    for result in results:
+        slot_list = result['free_slots']
+
+        # Count criteria
+        count_3s = count_slots(slot_list, {3})
+        count_2s_3s = count_slots(slot_list, {2, 3})
+        count_1s = count_slots(slot_list, {1, 2, 3})
+        slot_length = len(slot_list)
+
+        # Find object A (most 3s)
+        if count_3s > max_A:
+            object_A, max_A = result, count_3s
+
+        # Find object B with priority order:
+        # 1. Highest count of 2s + 3s
+        # 2. If tied, pick the one with more 3s
+        # 3. If still tied, pick the longer slot array
+        if (
+            count_2s_3s > max_B or
+            (count_2s_3s == max_B and count_3s > max_B_3s) or
+            (count_2s_3s == max_B and count_3s == max_B_3s and slot_length > max_B_length)
+        ) and count_2s_3s > max_A:
+            object_B, max_B, max_B_3s, max_B_length = result, count_2s_3s, count_3s, slot_length
+
+        # Find object C (most 1s)
+        if count_1s > max_C:
+            object_C, max_C = result, count_1s
+
+    # Results
+    three, two, one = [], [], []
+    a_count, b_count, c_count = 0, 0, 0
+    if object_A:
+        three = object_A['free_slots']
+        a_count = count_slots(three, {3})
+    if object_B:
+        two = object_B['free_slots']
+        b_count = count_slots(two, {2, 3})
+    if object_C:
+        one = object_C['free_slots']
+        c_count = count_slots(one, {1, 2, 3})
+
+    print(f"Most Free 3 Slots: {three} = {a_count}")
+    print(f"Most Free 2/3 Slots: {two} = {b_count}")
+    print(f"Most Free Slots: {one} = {c_count}")
+
+    return [a_count, b_count, c_count] == verify_slots
+
 def search(
         skills: dict, set_skills = {}, group_skills = {},
-        deco_mods = {}, mandatory_armor: tuple[str, ...] = (None, None, None, None, None, None),
-        blacklisted_armor: tuple[str, ...] = (),
-        limit = 500000, find_one = False
+        deco_mods = {}, # specify if you have limited number of a deco
+        mandatory_armor: tuple[str, ...] = (None, None, None, None, None, None), # must-use these armor pieces
+        blacklisted_armor: tuple[str, ...] = (), # don't use these armor pieces
+        blacklisted_armor_types: tuple[str, ...] = (), # don't use these armor types (head, chest, etc)
+        dont_use_decos: bool = False, # don't use decorations at all
+        limit = constants.LIMIT, find_one: bool = False,
+        verify_slots: list = []
     ):
-    global file_write
+    global file_write, search_results
 
     if find_one:
         file_write = False
 
     speed(load_jsons, deco_mods)
 
-    gear = speed(get_gear_pool, skills, set_skills, group_skills, mandatory_armor, blacklisted_armor)
+    gear = speed(
+        get_best_armor, skills, set_skills, group_skills, mandatory_armor, blacklisted_armor,
+        blacklisted_armor_types, dont_use_decos
+    )
+
+    if not gear:
+        print(f"no results possible")
+        return []
 
     rolls = speed(
         roll_combos,
@@ -830,19 +1225,12 @@ def search(
     )
 
     rolls = reorder(rolls)
-
-    skills_wiki_format = []
-    for key, value in skills.items():
-        skills_wiki_format.append(f"{key} Lv{value}")
-    for key, value in set_skills.items():
-        skills_wiki_format.append(f"{set_skill_db[key][0]} {'I' * value}")
-    for key, value in group_skills.items():
-        skills_wiki_format.append(f"{group_skill_db[key][0]}")
-    skills_wiki_format = "%2C".join(skills_wiki_format)
-
-    print_results(rolls, limit, wiki=skills_wiki_format)
-    print(f"found {len(rolls):,} matches out of {total_possible_combinations:,} combinations checked (limit: {limit})")
-
+    search_results = rolls
+    if verify_slots and not find_one:
+        passed_test = verify(rolls, verify_slots)
+        flashy = ".........."
+        print(f"{flashy}[TEST {'PASSED' if passed_test else 'FAILED'}]{flashy}")
+    generate_wiki_string(skills, set_skills, group_skills)
     return rolls
 
 def speed(func: Callable[..., Any], *args, **kwargs) -> Any:
@@ -869,13 +1257,15 @@ def check_prior_results(results: tuple, skill_name: str, level: int):
             break
     return False
 
-
+# todo: add set/group skills to this
 def get_addable_skills(
         skills: dict, set_skills = {}, group_skills = {},
         deco_mods = {}, mandatory_armor: tuple[str, ...] = (None, None, None, None, None, None),
         blacklisted_armor: tuple[str, ...] = (),
-        limit = 500000, prior_results: list = [],
-        exhaustive = False
+        blacklisted_armor_types: tuple[str, ...] = (),
+        dont_use_decos: bool = False,
+        limit = constants.LIMIT, prior_results: list = [],
+        exhaustive = True
 ) -> dict:
     global skill_db
     skills_can_add = {}
@@ -887,7 +1277,7 @@ def get_addable_skills(
         print("fetching prior_results...")
         prior_results = search(
             skills, set_skills, group_skills, deco_mods, mandatory_armor,
-            blacklisted_armor, limit
+            blacklisted_armor, blacklisted_armor_types, dont_use_decos, limit
         )
 
     with open('./src/data/compact/armor-skills.json', 'r') as file:
@@ -931,7 +1321,8 @@ def get_addable_skills(
             # if we can't just slot in decos, then we have to do a full combo check
             rolls = search(
                 { **skills, **{ skill_name: level }}, set_skills, group_skills, deco_mods,
-                mandatory_armor, blacklisted_armor, limit, find_one=True
+                mandatory_armor, blacklisted_armor, blacklisted_armor_types,
+                dont_use_decos, limit, find_one=True
             )
 
             # if a roll exists, add the skill name with it's level
@@ -948,7 +1339,7 @@ def get_addable_skills(
                 break
 
     global file_write
-    if DEBUG and file_write:        
+    if constants.DEBUG and file_write:        
         def seq(n):
             return ", ".join(map(str, range(1, n + 1)))
 
@@ -958,23 +1349,36 @@ def get_addable_skills(
                 file.write(f"{skill_name}: {seq(skill_level)}\n")
     return skills_can_add
 
+
 # ==============SEARCH==============
-# speed(search, *tests.test_multi)
-# speed(search, *tests.test_impossible)
-# speed(search, *tests.test_many)
-# speed(search, *tests.test_single)
-# speed(search, *tests.test_without_deco)
-# speed(search, *tests.test_mandatory)
-# speed(search, *tests.test_blacklist)
-# speed(search, *tests.test_set)
-# speed(search, *tests.test_group)
-# speed(search, *tests.test_set_and_group)
+speed(search, **asdict(tests.test_multi))
+# speed(search, **asdict(tests.test_impossible))
+# speed(search, **asdict(tests.test_many))
+# speed(search, **asdict(tests.test_single))
+# speed(search, **asdict(tests.test_without_burst_deco))
+# speed(search, **asdict(tests.test_mandatory))
+# speed(search, **asdict(tests.test_blacklist))
+# speed(search, **asdict(tests.test_set))
+# speed(search, **asdict(tests.test_group))
+# speed(search, **asdict(tests.test_set_and_group))
+# speed(search, **asdict(tests.test_more))
+# speed(search, **asdict(tests.test_one_slotter))
+# speed(search, **asdict(tests.test_decos_not_needed))
+# speed(search, **asdict(tests.test_blacklist_armor_type))
+# speed(search, **asdict(tests.test_too_high))
 
 # ==============MORE SKILLS==============
 # speed(get_addable_skills, *tests.test_multi)
-speed(get_addable_skills, *tests.test_many)
+# speed(get_addable_skills, *tests.test_many)
+# speed(get_addable_skills, *tests.test_one_slotter)
 
 # ==============WEAPONS==============
 # speed(weapon_search, "great sword", {
 #     "Critical Eye": 3
 # })
+
+# ==============FAST TRY==============
+# speed(search_fast, *tests.test_multi)
+
+# ==============PRINT==============
+print_results(search_results, wiki_string)
