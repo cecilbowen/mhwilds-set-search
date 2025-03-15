@@ -1,313 +1,264 @@
-// JavaScript equivalent of mhws-ss.py
+import TALISMANS from "../data/compact/talisman.json";
+import DECO_INVENTORY from "../data/user/deco-inventory.json";
+import SKILL_DB from "../data/compact/skills.json";
+import {
+    _x,
+    emptyGearSet, formatArmorC, getBestDecos, getDecoSkillsFromNames, getJsonFromType, getSearchParameters, groupArmorIntoSets,
+    hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
+    isInSets, mergeSumMaps, offTheTop, slottageLengthCompare, slottageLengthCompareSort, slottageSizeCompare, speed, updateSkillPotential
+} from "./tools";
+import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
+import { allTests } from "../test/tests";
 
-// Import JSON files
-import head from "../data/compact/head.json";
-import chest from "../data/compact/chest.json";
-import arms from "../data/compact/arms.json";
-import waist from "../data/compact/waist.json";
-import legs from "../data/compact/legs.json";
-import talisman from "../data/compact/talisman.json";
-import decoration from "../data/compact/decoration.json";
-import skillDb from "../data/compact/skills.json";
-import setSkillDb from "../data/compact/set-skills.json";
-import groupSkillDb from "../data/compact/group-skills.json";
-import decoInventory from "../data/user/deco-inventory.json";
-
-const weapon_db = {};
 let totalPossibleCombinations = 0;
-const DEBUG = true;
-
-const hasNeededSkill = (gearSkills, neededSkills) => {
-    return Object.keys(neededSkills).every(skillName => skillName in gearSkills);
-};
-
-const isInSets = (armorData, setSkills) => {
-    // return setSkills.hasOwnProperty(armorData[7]);
-    return armorData[7] in setSkills;
-};
-
-const isInGroups = (armorData, groupSkills) => {
-    // return groupSkills.hasOwnProperty(armorData[2]);
-    return armorData[2] in groupSkills;
-};
-
-const formatArmorC = obj => {
-    return {
-        name: obj[0],
-        data: obj[1]
-    };
-};
-
-const listFind = (list, prop, value) => {
-    return list.find(item => item[prop] === value) || null;
-};
-
-const mergeSafeUpdate = (dict1, dict2) => {
-    return { ...dict2, ...dict1 };
-};
-
-const mergeSumMaps = mapList => {
-    const result = {};
-    mapList.forEach(tMap => {
-        Object.entries(tMap).forEach(([key, value]) => {
-            result[key] = (result[key] || 0) + value;
-        });
-    });
-    return result;
-};
-
-const getGearPool = (skills, setSkills, groupSkills, mustUseArmor, blacklistedArmor) => {
-    return {
-        head: getBestArmor("head", skills, setSkills, groupSkills, mustUseArmor[0], blacklistedArmor),
-        chest: getBestArmor("chest", skills, setSkills, groupSkills, mustUseArmor[1], blacklistedArmor),
-        arms: getBestArmor("arms", skills, setSkills, groupSkills, mustUseArmor[2], blacklistedArmor),
-        waist: getBestArmor("waist", skills, setSkills, groupSkills, mustUseArmor[3], blacklistedArmor),
-        legs: getBestArmor("legs", skills, setSkills, groupSkills, mustUseArmor[4], blacklistedArmor),
-        talisman: getBestArmor("talisman", skills, setSkills, groupSkills, mustUseArmor[5], blacklistedArmor),
-        decos: getBestArmor("decoration", skills, setSkills, groupSkills)
-    };
-};
-
-const getSetName = armorData => {
-    return armorData[7];
-};
-
-const getGroupName = armorData => {
-    return armorData[2];
-};
-
-const getDecoSkillsFromNames = names => {
-    return mergeSumMaps(names.map(name => _x(decoration[name], "skills")));
-};
-
-// eslint-disable-next-line no-underscore-dangle
-const _x = (piece, field) => {
-    // Extracts a field from an armor piece or decoration
-
-    const fieldMap = {
-        type: 0,
-        skills: 1,
-        slot: 2, // for decos
-        group_skill: 2,
-        slots: 3,
-        defense: 4,
-        resistances: 5,
-        rank: 6
-    };
-
-    return piece[fieldMap[field]];
-};
-
-const groupArmorIntoSets = (armorPieces, setSkills, groupSkills) => {
-    const groups = {};
-    const groupsEmpty = {};
-
-    Object.entries(armorPieces).forEach(([armorName, armorData]) => {
-        const setName = getSetName(armorData);
-        const groupName = getGroupName(armorData);
-
-        if (setName && setSkills[setName]) {
-            groups[setName] = groups[setName] || {};
-            groupsEmpty[setName] = groupsEmpty[setName] || {};
-            groups[setName][armorName] = armorData;
-        }
-
-        if (groupName && groupSkills[groupName]) {
-            groups[groupName] = groups[groupName] || {};
-            groupsEmpty[groupName] = groupsEmpty[groupName] || {};
-            groups[groupName][armorName] = armorData;
-        }
-    });
-
-    return [groups, groupsEmpty];
-};
-
-const slottageLengthCompare = (a, b) => {
-    const aSlots = [...a[1][3]];
-    const bSlots = [...b[1][3]];
-
-    while (aSlots.length < bSlots.length) { aSlots.push(0); }
-    while (bSlots.length < aSlots.length) { bSlots.push(0); }
-
-    for (let i = aSlots.length - 1; i >= 0; i--) {
-        if (aSlots[i] > bSlots[i]) { return true; }
-    }
-    return false;
-};
-
-const slottageLengthCompareRaw = (bestSlots, challengerSlots) => {
-    const testSlots = [...challengerSlots];
-    while (testSlots.length < bestSlots.length) { testSlots.push(0); }
-
-    for (let i = bestSlots.length - 1; i > 0; i--) {
-        if (testSlots[i] > bestSlots[i]) { return true; }
-    }
-    return false;
-};
-
-const hasBetterSlottage = (armors, challengerSlots) => {
-    if (!armors || Object.keys(armors).length === 0) { return true; }
-
-    const sortedBySlottage = Object.fromEntries(
-        Object.entries({ ...armors }).sort((a, b) => _x(b[1], "slots") - _x(a[1], "slots"))
-    );
-
-    const top = Object.values(sortedBySlottage)[0];
-    return challengerSlots > top[3];
-};
-
-const hasLongerSlottage = (armors, challengerSlots) => {
-    const sortedData = Object.fromEntries(
-        Object.entries({ ...armors }).sort((a, b) => {
-            return slottageLengthCompare(a, b) ? -1 : 1;
-        })
-    );
-
-    return slottageLengthCompareRaw(challengerSlots, Object.values(sortedData)[0][3]);
-};
-
-const isBetterArmor = (existingArmors, newSlots) => {
-    return hasBetterSlottage(existingArmors, newSlots) || hasLongerSlottage(existingArmors, newSlots);
-};
 
 const getBestArmor = (
-    type, skills, setSkills = {}, groupSkills = {},
-    mandatoryPieceName = null,
+    skills, setSkills = {}, groupSkills = {},
+    mandatoryPieceNames = [],
     blacklistedArmor = [],
+    blacklistedArmorTypes = [],
+    dontUseDecos = false,
     rank = "high"
 ) => {
-    const fullDataFile = getJsonFromType(type);
+    const fullDataFile = getJsonFromType("armor");
 
-    if (mandatoryPieceName) {
-        const foundData = fullDataFile[mandatoryPieceName];
-        if (foundData) {
-            return { [mandatoryPieceName]: foundData };
+    const mandatory = {};
+    mandatoryPieceNames.forEach(name => {
+        if (name) {
+            const foundData = fullDataFile[name];
+            if (foundData) {
+                mandatory[foundData[0]] = name;
+            } else {
+                console.warn(`WARNING: Could not find mandatory armor ${name}!`);
+            }
         }
+    });
 
-        console.warn(`WARNING: Could not find mandatory ${type} armor ${mandatoryPieceName}!`);
-    }
-
-    // Filter data based on rank unless it's talisman or decoration
-    const dataFile = Object.fromEntries(
-        Object.entries(fullDataFile).filter(([_, v]) =>
-            ["talisman", "decoration"].includes(type) || v[6] === rank
-        )
+    const dataFile = Object.fromEntries(Object.entries(fullDataFile)
+        .filter(([k, v]) => v[6] === rank && (!mandatory[v[0]] || k === mandatory[v[0]]) &&
+            !blacklistedArmorTypes.includes(v[0]) && !blacklistedArmor.includes(k))
     );
 
-    if (type === "talisman") {
-        const talismans = Object.fromEntries(
-            Object.entries(dataFile)
-                .filter(([k, v]) => hasNeededSkill(v[1], skills) && !blacklistedArmor.includes(k))
-                .sort((a, b) => Object.values(b[1][1])[0] - Object.values(a[1][1])[0])
-        );
+    const bestTalismans = Object.fromEntries(Object.entries(TALISMANS)
+        .filter(([k, v]) => hasNeededSkill(v[1], skills) && !blacklistedArmor.includes(k))
+        .sort((a, b) => Object.values(b[1][1])[0] - Object.values(a[1][1])[0])
+    );
 
-        const skOpt = {}, talisOpt = {};
-
-        for (const [talisName, talisData] of Object.entries(talismans)) {
+    const topTalis = {};
+    if (!blacklistedArmorTypes.includes("talisman")) {
+        const topTalisLevels = {};
+        for (const [talisName, talisData] of Object.entries(bestTalismans)) {
             const sks = talisData[1];
             if (Object.keys(sks).length === 1) {
                 for (const [skName, skLevel] of Object.entries(sks)) {
-                    if (skLevel > (skOpt[skName] || 0)) {
-                        talisOpt[talisName] = talisData;
-                        skOpt[skName] = skLevel;
+                    if (skLevel > (topTalisLevels[skName] || 0)) {
+                        topTalis[talisName] = talisData;
+                        topTalisLevels[skName] = skLevel;
                     }
                 }
             }
         }
-        return talisOpt;
     }
 
-    if (type === "decoration") {
-        return Object.fromEntries(
-            Object.entries(dataFile)
-                .filter(([_, v]) => v[0] === "armor" && hasNeededSkill(v[1], skills))
-                .sort((a, b) => Object.values(b[1][1])[0] - Object.values(a[1][1])[0])
+    const firsts = emptyGearSet();
+    const best = emptyGearSet();
+    const bestDecos = dontUseDecos ? {} : getBestDecos(skills);
+
+    ["length", "size"].forEach(sortType => {
+        const checker = emptyGearSet();
+        const allSort = Object.fromEntries(Object.entries(dataFile)
+            .sort((a, b) => {
+                if (sortType === "size") {
+                    return slottageSizeCompare(a, b, b[1][4] - a[1][4]);
+                }
+                return slottageLengthCompare(a, b, b[1][4] - a[1][4]); // default to defense at end
+                // return slottageLengthCompareSort(bV[3]) - slottageLengthCompareSort(aV[3]) || bV[4] - aV[4];
+            })
         );
-    }
 
-    // Group armors by slot count
-    const armorsBySlots = { 0: {}, 1: {}, 2: {}, 3: {} };
-    for (const [k, v] of Object.entries(dataFile)) {
-        armorsBySlots[v[3].length][k] = v;
-    }
-
-    // Sort armor groups by slot count and defense
-    for (const slotCount of Object.keys(armorsBySlots)) {
-        const sorted = Object.fromEntries(
-            Object.entries(armorsBySlots[slotCount])
-                .filter(([k, _]) => !blacklistedArmor.includes(k))
-                .sort((a, b) => b[1][3] - a[1][3] || b[1][4] - a[1][4])
-        );
-        armorsBySlots[slotCount] = Object.fromEntries(
-            Object.entries(sorted).filter(([k, v]) => slotCount > 0 && k === Object.keys(sorted)[0] || hasNeededSkill(v[1], skills))
-        );
-    }
-
-    const exclusiveOnly = { ...armorsBySlots[3], ...armorsBySlots[2], ...armorsBySlots[1], ...armorsBySlots[0] };
-
-    const bestSkillage = Object.fromEntries(Object.keys(skills).map(key => [key, 0]));
-    let exclusivesToKeep = {};
-
-    for (const [armorName, armorData] of Object.entries(exclusiveOnly)) {
-        const aSlots = _x(armorData, "slots");
-        const aSkills = _x(armorData, "skills");
-        let update = null;
-
-        if (isBetterArmor(exclusivesToKeep, aSlots)) {
-            update = [armorName, armorData];
-        }
-
-        for (const [skillName, skillLevel] of Object.entries(aSkills)) {
-            if (skills[skillName] && skillLevel > bestSkillage[skillName]) {
-                update = [armorName, armorData];
-                bestSkillage[skillName] = skillLevel;
+        for (const [armorName, armorData] of Object.entries(allSort)) {
+            const category = armorData[0];
+            if (isEmpty(checker[category])) {
+                if (sortType === "size" && hasBetterSlottage(firsts[category], armorData[3]) ||
+                    sortType === "length" && hasLongerSlottage(firsts[category], armorData[3])) {
+                    checker[category] = { checked: true };
+                    firsts[category][armorName] = armorData;
+                }
+            }
+            if (hasNeededSkill(armorData[1], skills)) {
+                best[category][armorName] = armorData;
             }
         }
+    });
 
-        if (update) {
-            exclusivesToKeep[update[0]] = update[1];
+    let totalMaxSkillPotential = {};
+    let maxPossibleSkillPotential = emptyGearSet();
+    let modPointMap = {};
+
+    // console.log("best", Object.keys(best.head));
+
+    for (const skillName of Object.keys(skills)) {
+        for (const [category, data] of Object.entries(best)) {
+            for (const [armorName, armorData] of Object.entries(data)) {
+                const { pot, totalPot, modMap } = updateSkillPotential(
+                    maxPossibleSkillPotential, totalMaxSkillPotential,
+                    modPointMap, category, skillName, armorName, armorData,
+                    bestDecos, skills
+                );
+                maxPossibleSkillPotential = pot;
+                totalMaxSkillPotential = totalPot;
+                modPointMap = modMap;
+            }
         }
     }
 
-    const groupies = Object.fromEntries(
-        Object.entries(dataFile)
-            .filter(([k, v]) => !exclusivesToKeep[k] && (isInSets(v, setSkills) || isInGroups(v, groupSkills)))
-            .sort((a, b) => b[1][3] - a[1][3] || b[1][4] - a[1][4])
-    );
+    for (const [skillName, targetLevel] of Object.entries(skills)) {
+        const relevantTalisman = Object.entries(topTalis).filter(([k, v]) => skillName in v[1]);
+        const relevantTalismanLevel = relevantTalisman.length ? relevantTalisman[0][1][skillName] : 0;
+        if ((totalMaxSkillPotential[skillName] || 0) + relevantTalismanLevel < targetLevel) {
+            return null;
+        }
+    }
 
-    const [groupiesGrouped, groupiesTracker] = groupArmorIntoSets(groupies, setSkills, groupSkills);
-    const groupiesToKeep = {};
-
-    for (const [groupName, groupArmor] of Object.entries(groupiesGrouped)) {
-        for (const [armorName, armorData] of Object.entries(exclusivesToKeep)) {
-            if (armorData[2] === groupName || armorData[7] === groupName) {
-                if (hasBetterSlottage(groupiesTracker[groupName], _x(armorData, "slots")) ||
-                    hasLongerSlottage(groupiesTracker[groupName], _x(armorData, "slots"))) {
-                    groupiesTracker[groupName][armorName] = armorData;
+    const bareMinimum = firsts;
+    for (const [category, data] of Object.entries(maxPossibleSkillPotential)) {
+        for (const [skillName, statData] of Object.entries(data)) {
+            for (const key of ["best", "more"]) {
+                if (statData[key]) {
+                    if (key === "more" && statData[key].length) {
+                        for (const ex of statData[key]) {
+                            bareMinimum[category][ex] = dataFile[ex];
+                        }
+                    } else {
+                        bareMinimum[category][statData[key]] = dataFile[statData[key]];
+                    }
                 }
             }
         }
+    }
 
-        for (const [armorName, armorData] of Object.entries(groupArmor)) {
-            if (hasBetterSlottage(groupiesTracker[groupName], _x(armorData, "slots")) ||
-                hasLongerSlottage(groupiesTracker[groupName], _x(armorData, "slots"))) {
-                groupiesTracker[groupName][armorName] = armorData;
+    // now handle set/group skills
+    const groupiesAlt = Object.fromEntries(Object.entries(dataFile)
+        .filter(([k, v]) => isInSets(v, setSkills) || isInGroups(v, groupSkills))
+        .sort((a, b) => {
+            return slottageSizeCompare(a, b, b[1][4] - a[1][4]);
+        })
+    );
+
+    totalMaxSkillPotential = {};
+    const maxPossibleSkillPotentialSet = emptyGearSet();
+
+    const bestGroupiesAlt = {};
+    for (const [name, aData] of Object.entries(groupiesAlt)) {
+        if (!bestGroupiesAlt[aData[0]]) { bestGroupiesAlt[aData[0]] = {}; }
+        bestGroupiesAlt[aData[0]][name] = aData;
+    }
+
+    modPointMap = {};
+    for (const skillName of Object.keys(skills)) {
+        for (const [category, data] of Object.entries(bestGroupiesAlt)) {
+            const [groupiesGrouped, _] = groupArmorIntoSets(data, setSkills, groupSkills);
+
+            for (const [groupName, groupArmors] of Object.entries(groupiesGrouped)) {
+                for (const [armorName, armorData] of Object.entries(groupArmors)) {
+                    const { pot, totalPot, modMap } = updateSkillPotential(
+                        maxPossibleSkillPotentialSet, totalMaxSkillPotential, modPointMap,
+                        category, skillName, armorName, armorData,
+                        bestDecos, skills, groupName
+                    );
+                    maxPossibleSkillPotential = pot;
+                    totalMaxSkillPotential = totalPot;
+                    modPointMap = modMap;
+                }
             }
         }
     }
 
-    for (const [groupName, groupArmor] of Object.entries(groupiesTracker)) {
-        for (const [armorName, armorData] of Object.entries(groupArmor)) {
-            if (!groupiesToKeep[armorName]) {
-                groupiesToKeep[armorName] = armorData;
+    for (const [category, data] of Object.entries(maxPossibleSkillPotentialSet)) {
+        for (const [groupName, groupData] of Object.entries(data)) {
+            for (const [skillName, statData] of Object.entries(groupData)) {
+                for (const key of ["best", "more"]) {
+                    if (key in statData) {
+                        if (key === "more" && statData[key].length) {
+                            for (const ex of statData[key]) {
+                                bareMinimum[category][ex] = dataFile[ex];
+                            }
+                        } else {
+                            bareMinimum[category][statData[key]] = dataFile[statData[key]];
+                        }
+                    }
+                }
             }
         }
     }
 
-    exclusivesToKeep = { ...exclusivesToKeep, ...groupiesToKeep };
+    bareMinimum.decos = bestDecos;
+    bareMinimum.talisman = topTalis;
 
-    console.log(`# of ${type}: ${Object.keys(exclusivesToKeep).length}`);
-    return exclusivesToKeep;
+    // add in a dummy piece (no skills/slots) for any blacklisted armor types
+    blacklistedArmorTypes.forEach(tipo => {
+        bareMinimum[tipo] = { None: [tipo, {}, "", [], 0, [0, 0, 0, 0, 0], rank, ""] };
+    });
+
+    // sort final return armor by slottage
+    for (const [cat, armor] of Object.entries(bareMinimum)) {
+        if (["decos", "talisman"].includes(cat)) {
+            continue;
+        }
+        const sorted = Object.fromEntries(Object.entries(armor)
+            .sort(([aK, aV], [bK, bV]) => {
+                const aSort = slottageLengthCompareSort(aV[3]);
+                const bSort = slottageLengthCompareSort(bV[3]);
+
+                if (bSort > aSort) {
+                    return 1;
+                } else if (bSort < aSort) {
+                    return -1;
+                }
+                return slottageLengthCompare([aK, aV], [bK, bV]);
+            })
+        );
+        bareMinimum[cat] = sorted;
+    }
+
+    if (DEBUG && CHOSEN_ARMOR_DEBUG) {
+        console.log('getBestArmor() return: ', bareMinimum);
+        console.log("========================================");
+        console.log("Chosen Armor Details:");
+        console.log("========================================");
+
+        console.log("Skills:", skills);
+        if (setSkills && Object.keys(setSkills).length) {
+            console.log("Set Skills:", setSkills);
+        }
+        if (groupSkills && Object.keys(groupSkills).length) {
+            console.log("Group Skills:", groupSkills);
+        }
+        console.log("\n");
+
+        for (const [category, data] of Object.entries(bareMinimum)) {
+            if (category === "talisman" || category === "decos") { continue; }
+
+            console.log(category.toUpperCase()); // Print category name
+
+            for (const [aName, aData] of Object.entries(data)) {
+                const relevantSkills = Object.fromEntries(
+                    Object.entries(aData[1]).filter(([k]) => k in skills)
+                );
+                const relevantSetSkill = setSkills && aData[aData.length - 1] in setSkills ? ` / ${aData[aData.length - 1]}` : "";
+                const relevantGroupSkill = groupSkills && aData[2] in groupSkills ? ` / ${aData[2]}` : "";
+
+                console.log(
+                    // eslint-disable-next-line max-len
+                    `\t${aName}: (${_x(aData, "type")} - ${_x(aData, "slots")})`, relevantSkills, relevantSetSkill, relevantGroupSkill
+                );
+            }
+            console.log("\n"); // Extra space after each category
+        }
+        console.log("========================================");
+    }
+
+    return bareMinimum;
 };
 
 const armorCombo = (head, chest, arms, waist, legs, talisman) => {
@@ -351,8 +302,8 @@ const armorCombo = (head, chest, arms, waist, legs, talisman) => {
         names: [head.name, chest.name, arms.name, waist.name, legs.name, talisman.name],
         skills: skillTotals,
         slots: slots,
-        set_skills: setSkills,
-        group_skills: groupSkills
+        setSkills: setSkills,
+        groupSkills: groupSkills
     };
 };
 
@@ -371,8 +322,8 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
     // If we already have all required skills, no decorations are needed
     if (Object.keys(skillsNeeded).length === 0) {
         return {
-            deco_names: [],
-            free_slots: slotsAvailable
+            decoNames: [],
+            freeSlots: slotsAvailable
         };
     }
 
@@ -394,7 +345,7 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
     // Iterate over available slots and try to fill them with the best decorations
     for (const slotSize of slotsAvailable) {
         for (const [decoName, [decoType, decoSkills, decoSlot]] of decoList) {
-            if (decoSlot > slotSize || (usedDecosCount[decoName] || 0) >= decoInventory[decoName]) {
+            if (decoSlot > slotSize || (usedDecosCount[decoName] || 0) >= DECO_INVENTORY[decoName]) {
                 continue; // Skip if decoration doesn't fit in the slot
             }
 
@@ -421,8 +372,8 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
             // If all skills are fulfilled, return the list of used decorations
             if (Object.keys(skillsNeeded).length === 0) {
                 return {
-                    deco_names: usedDecos,
-                    free_slots: freeSlots
+                    decoNames: usedDecos,
+                    freeSlots: freeSlots
                 };
             }
             break;
@@ -432,146 +383,183 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
     return null; // Return null if the required skills cannot be fulfilled
 };
 
-const getJsonFromType = type => {
-    const typeMap = { head, chest, arms, waist, legs, talisman, decoration };
-    return typeMap[type] || {};
-};
-
-// Takes x amount of elements from the top of an array of objects and returns a specific field from each
-const offTheTop = (arr, amount, field) => {
-    return arr.slice(0, Math.min(amount, arr.length - 1)).map(x => x[field]);
-};
-
 // Re-orders display results to put some more desirable elements up front
 const reorder = dataList => {
-    let finality = [];
-    const idsToCutLine = [];
+    // Attach original index to ensure stable sorting
+    const indexedData = dataList.map((item, index) => ({ ...item, _originalIndex: index }));
 
-    let noThrees = true;
-    let noTwos = true;
+    for (const data of indexedData) {
+        // visually limit skills to stay within level bounds
+        for (const [skName, skLevel] of Object.entries(data.skills)) {
+            if (skLevel > SKILL_DB[skName]) {
+                data.skills[skName] = SKILL_DB[skName];
+            }
+        }
 
-    for (const res of dataList) {
-        if (res.free_slots.includes(3)) { noThrees = false; }
-        if (res.free_slots.includes(2)) { noTwos = false; }
-        if (!noThrees && !noTwos) { break; }
-    }
-
-    if (!noThrees) {
-        const mostThrees = [...dataList].sort((a, b) =>
-            b.free_slots.filter(num => num === 3).length - a.free_slots.filter(num => num === 3).length
+        // sort skills by level then name
+        const skills = Object.fromEntries(
+            Object.entries(data.skills)
+                .sort(([k1, v1], [k2, v2]) => v2 - v1 || k1.localeCompare(k2)) // Sort by level descending, then name ascending
         );
-        idsToCutLine.push(...offTheTop(mostThrees, 2, "id"));
-    }
+        data.skills = skills;
 
-    if (!noTwos) {
-        const mostTwosOrThrees = [...dataList].sort((a, b) =>
-            b.free_slots.filter(num => num === 3 || num === 2).length -
-            a.free_slots.filter(num => num === 3 || num === 2).length
+        // correct set skill levels
+        const setSkills = Object.fromEntries(
+            Object.entries(data.setSkills)
+                .filter(([k, v]) => k && Math.floor(v / 2) > 0)
+                .map(([k, v]) => [k, Math.floor(v / 2)])
         );
-        idsToCutLine.push(...offTheTop(mostTwosOrThrees, 2, "id"));
+        data.setSkills = setSkills;
+
+        // correct group skill levels
+        const groupSkills = Object.fromEntries(
+            Object.entries(data.groupSkills)
+                .filter(([k, v]) => k && Math.floor(v / 3) > 0)
+                .map(([k, v]) => [k, Math.floor(v / 3)])
+        );
+        data.groupSkills = groupSkills;
     }
 
-    const longestSlots = [...dataList].sort((a, b) =>
-        b.free_slots.length - a.free_slots.length ||
-        b.free_slots.filter(num => num === 3 || num === 2).length -
-         a.free_slots.filter(num => num === 3 || num === 2).length
-    );
-    idsToCutLine.push(...offTheTop(longestSlots, 5, "id"));
-
-    const idSet = Array.from(new Set(idsToCutLine));
-
-    // Create a lookup dictionary for id positions (default to a high number for non-priority IDs)
-    const idOrderMap = Object.fromEntries(idSet.map((idVal, index) => [idVal, index]));
-
-    // Sort the list: prioritize by order in idOrderMap, then keep the original order for others
-    finality = [...dataList].sort((a, b) =>
-        (idOrderMap[a.id] ?? Infinity) - (idOrderMap[b.id] ?? Infinity) ||
-        dataList.indexOf(a) - dataList.indexOf(b)
+    // i'll figure out this sorting bs to make it match python's sort later
+    // TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    const damnSort = [...indexedData].sort((a, b) =>
+        slottageSizeCompare([0, [0, 0, 0, a.freeSlots]], [0, [0, 0, 0, b.freeSlots]], b.id - a.id) // Sort by highest slot value
     );
 
-    return finality;
+    damnSort.forEach(d => d.slots.sort((a, b) => b - a));
+
+    let pre = [], post = [];
+    const bestPerThree = {}; // Tracks the best (longest) list per (numThrees, numTwos)
+
+    const sortedDamnSort = damnSort.sort((a, b) => {
+        const aThrees = a.freeSlots.filter(y => y === 3).length;
+        const bThrees = b.freeSlots.filter(y => y === 3).length;
+
+        const aTwos = a.freeSlots.filter(y => y === 2).length;
+        const bTwos = b.freeSlots.filter(y => y === 2).length;
+
+        return (
+            bThrees - aThrees || // Most 3s
+            bTwos - aTwos || // Most 2s
+            b.freeSlots.length - a.freeSlots.length || // Longest slots
+            Object.keys(b.skills).length - Object.keys(a.skills).length ||
+            b.id - a.id
+            // a.armorNames.join().localeCompare(b.armorNames.join()) ||
+            // eslint-disable-next-line no-underscore-dangle
+            // a._originalIndex - b._originalIndex // Ensures stable sorting by original order
+        );
+    });
+
+    sortedDamnSort.forEach(res => {
+        const numThrees = res.freeSlots.filter(y => y === 3).length;
+        const numTwos = res.freeSlots.filter(y => y === 2).length;
+        const key = `${numThrees},${numTwos}`;
+
+        if (!(key in bestPerThree)) {
+            pre.push(res);
+            bestPerThree[key] = res.freeSlots.length;
+        } else {
+            post.push(res);
+        }
+    });
+
+    pre = [...pre, ...post];
+    const excludeIds = new Set(pre.map(obj => obj.id));
+
+    const longestSlots = [...indexedData]
+        .filter(v => !excludeIds.has(v.id))
+        .sort((a, b) => {
+            const aHasPriority = a.freeSlots.some(val => val === 2 || val === 3) ? a.freeSlots.length : 0;
+            const bHasPriority = b.freeSlots.some(val => val === 2 || val === 3) ? b.freeSlots.length : 0;
+
+            return (
+                b.freeSlots.length - a.freeSlots.length ||
+                bHasPriority - aHasPriority ||
+                // eslint-disable-next-line no-underscore-dangle
+                a._originalIndex - b._originalIndex // Preserve stability
+            );
+        });
+
+    return [...pre, ...longestSlots];
 };
 
-const rollCombos = (
-    head1, chest1, arms1, waist1, legs1, talisman1,
-    decos, skills, setSkills, groupSkills, limit
-) => {
+const cartesianProduct = (...arrays) => {
+    return arrays.reduce((acc, arr) => {
+        return acc.flatMap(c => arr.map(x => [...c, x]));
+    }, [[]]);
+};
+
+const rollCombos = (gear, skills, setSkills, groupSkills, limit, findOne = false) => {
+    if (!gear) {
+        console.warn("rollCombos(): gear is null, something went wrong");
+        return [];
+    }
+
     let counter = 0, inc = 0;
     const ret = [];
 
-    // Convert objects to arrays for iteration
-    const headList = Object.entries(head1);
-    const chestList = Object.entries(chest1);
-    const armsList = Object.entries(arms1);
-    const waistList = Object.entries(waist1);
-    const legsList = Object.entries(legs1);
-    const talismanList = Object.entries(talisman1);
+    // Convert gear categories into arrays for efficient iteration
+    const headList = Object.entries(gear.head);
+    const chestList = Object.entries(gear.chest);
+    const armsList = Object.entries(gear.arms);
+    const waistList = Object.entries(gear.waist);
+    const legsList = Object.entries(gear.legs);
+    const talismanList = Object.entries(gear.talisman);
 
     // Calculate total possible combinations
     totalPossibleCombinations =
-        headList.length * chestList.length * armsList.length * waistList.length * legsList.length * talismanList.length;
-
-    console.log(`possible: ${totalPossibleCombinations}`);
-
-    // Generator for Cartesian product
-    // eslint-disable-next-line func-style
-    function *cartesianProduct(arrays, prefix = []) {
-        if (!arrays.length) {
-            yield prefix;
-            return;
-        }
-        for (const item of arrays[0]) {
-            yield* cartesianProduct(arrays.slice(1), [...prefix, item]);
-        }
+        headList.length * chestList.length * armsList.length *
+        waistList.length * legsList.length * talismanList.length;
+    if (CHOSEN_ARMOR_DEBUG) {
+        console.log(`possible: ${totalPossibleCombinations.toLocaleString()}`);
     }
 
-    // Process combinations
-    let limitReached = false;
-    for (const combo of cartesianProduct([headList, chestList, armsList, waistList, legsList, talismanList])) {
-        if (counter >= limit) {
-            limitReached = true;
-            break;
-        }
+    const setSkillsCheck = setSkills ? new Set(Object.keys(setSkills)) : new Set();
+    const groupSkillsCheck = groupSkills ? new Set(Object.keys(groupSkills)) : new Set();
 
-        // Early exit for set/group skills
-        if (setSkills || groupSkills) {
-            let doSkip = false;
+    // Use cartesianProduct to generate all combinations in the same order as Python's itertools.product
+    const allCombos = cartesianProduct(headList, chestList, armsList, waistList, legsList, talismanList);
 
-            if (setSkills) {
-                for (const [setName, setLevel] of Object.entries(setSkills)) {
-                    const piecesFromSet = combo.slice(0, -1).reduce((acc, piece) => acc + (piece[1][7] === setName ? 1 : 0), 0);
-                    if (piecesFromSet < setLevel * 2) {
-                        doSkip = true;
-                        break;
-                    }
-                }
+    for (const combo of allCombos) {
+        if (counter >= limit) { return ret; }
+
+        const piecesFromSet = {};
+        const piecesFromGroup = {};
+
+        for (const piece of combo.slice(0, -1)) { // Ignore talisman for set/group skills
+            const armorData = piece[1];
+            const setName = armorData[7];
+            const groupName = armorData[2];
+
+            if (setSkillsCheck.has(setName)) {
+                piecesFromSet[setName] = (piecesFromSet[setName] || 0) + 1;
             }
 
-            if (!doSkip && groupSkills) {
-                for (const [groupName, groupLevel] of Object.entries(groupSkills)) {
-                    const piecesFromGroup = combo.slice(0, -1).reduce((acc, piece) => acc + (piece[1][2] === groupName ? 1 : 0), 0);
-                    if (piecesFromGroup < 3) {
-                        doSkip = true;
-                        break;
-                    }
-                }
+            if (groupSkillsCheck.has(groupName)) {
+                piecesFromGroup[groupName] = (piecesFromGroup[groupName] || 0) + 1;
             }
-
-            if (doSkip) { continue; }
         }
 
-        // Transform and test combo
-        const testSet = armorCombo(...combo.map(formatArmorC));
-        const result = test(testSet, decos, skills);
+        if ([...setSkillsCheck].some(skill => (piecesFromSet[skill] || 0) < setSkills[skill] * 2)) {
+            continue;
+        }
 
-        if (result !== null) {
+        if ([...groupSkillsCheck].some(skill => (piecesFromGroup[skill] || 0) < 3)) {
+            continue;
+        }
+
+        const testSet = armorCombo(...combo.map(piece => formatArmorC(piece)));
+
+        const result = test(testSet, gear.decos, skills);
+        if (result) {
             result.id = counter + 1;
             result._id = inc + 1;
-            inc++;
+            inc += 1;
             ret.push(result);
+            if (findOne) { return ret; }
         }
 
-        counter++;
+        counter += 1;
     }
 
     return ret;
@@ -602,57 +590,53 @@ const test = (armorSet, decos, desiredSkills) => {
     const decosUsed = getDecosToFulfillSkills(decos, desiredSkills, armorSet.slots, armorSet.skills);
 
     if (decosUsed) {
-        const decosSkillsMap = getDecoSkillsFromNames(decosUsed.deco_names);
+        const decosSkillsMap = getDecoSkillsFromNames(decosUsed.decoNames);
         const combinedSkills = mergeSumMaps([armorSet.skills, decosSkillsMap]);
 
         return {
-            armor_names: armorSet.names,
+            armorNames: armorSet.names,
             slots: armorSet.slots,
-            deco_names: decosUsed.deco_names,
+            decoNames: decosUsed.decoNames,
             skills: combinedSkills,
-            set_skills: armorSet.set_skills,
-            group_skills: armorSet.group_skills,
-            free_slots: decosUsed.free_slots
+            setSkills: armorSet.setSkills,
+            groupSkills: armorSet.groupSkills,
+            freeSlots: decosUsed.freeSlots
         };
     }
 
     return null;
 };
 
-const search = (
-    skills, setSkills = {}, groupSkills = {},
-    decoMods = {}, mandatoryArmor = [null, null, null, null, null, null],
-    blacklistedArmor = [],
-    limit = 500000
-) => {
-    const gear = speed(getGearPool, skills, setSkills, groupSkills, mandatoryArmor, blacklistedArmor);
+export const search = parameters => {
+    const params = getSearchParameters(parameters);
+    const gear = speed(
+        getBestArmor, params.skills, params.setSkills, params.groupSkills,
+        params.mandatoryArmor, params.blacklistedArmor, params.blacklistedArmorTypes,
+        params.dontUseDecos
+    );
 
     // todo:
     // modifyDecoInventory(decoMods);
 
     let rolls = speed(
         rollCombos,
-        gear.head,
-        gear.chest,
-        gear.arms,
-        gear.waist,
-        gear.legs,
-        gear.talisman,
-        gear.decos,
-        skills, setSkills, groupSkills, limit
+        gear, params.skills, params.setSkills, params.groupSkills, params.limit,
+        params.findOne
     );
 
     rolls = reorder(rolls);
+    // searchResults = rolls;
+    if (params.verifySlots && !params.findOne) {
+        // const passedTest = verify(rolls, params.verifySlots);
+    }
+    // generateWikiString(params.skills, params.setSkills, params.groupSkills);
 
-    // printResults(rolls, limit);
-
-    console.log(`found ${rolls.length} matches out of ${totalPossibleCombinations} combinations checked (limit: ${limit})`);
+    return rolls;
 };
 
-const speed = (func, ...args) => {
-    const startTime = performance.now();
-    const result = func(...args);
-    const endTime = performance.now();
-    console.log(`>> ${func.name}() = ${(endTime - startTime).toFixed(6)} seconds`);
-    return result;
+export const runAllTests = () => {
+    for (const [testName, theTest] of Object.entries(allTests)) {
+        const results = search(theTest);
+        console.log(`${testName}: ${results.length}`);
+    }
 };

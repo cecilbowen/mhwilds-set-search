@@ -14,6 +14,8 @@ deco_inventory = {}
 all_armor = head = chest = arms = waist = legs = talisman = decoration = {}
 total_possible_combinations, total_prunes = 0, 0
 reorder_amount = (3, 2, 1, 2, 5)
+show_result_num = False
+show_speeds = True
 
 already_loaded_jsons = False
 file_write = True
@@ -396,7 +398,7 @@ def get_best_armor(
             best_slots = list(top_slots)
             test_slots = list(try_slots)
             longer = False
-            same_length = True
+            identical = True
             bigger = test_slots > best_slots
             standard_length = max(len(test_slots), len(best_slots))
             while len(test_slots) < standard_length:
@@ -406,11 +408,11 @@ def get_best_armor(
 
             for i in range(len(best_slots) - 1, -1, -1):
                 if test_slots[i] != best_slots[i]:
-                    same_length = False
+                    identical = False
                 if test_slots[i] > best_slots[i]:
                     longer = True
                     break
-            if same_length and not bigger:
+            if identical:
                 return "equal"
             return longer or bigger
         
@@ -436,15 +438,14 @@ def get_best_armor(
                 "leftover_slots": leftover_slots if "leftover_slots" in keys else alias.get("leftover_slots", []),
                 "defense": armor_data[4]
             })
+            # print(f"best: {armor_name}, points: {points}")
 
             if old_best and mod_point_map[old_best] >= mod_points:
                 apply_for_more(old_best)
 
             # todo look at this later
             total_max_skill_potential[skill_name] = total_max_skill_potential.get(skill_name, 0) + points
-            
-        if group_name:
-            dog = 323 # debug purposes    
+              
         current_points = alias.get("points", 0)
         current_mod_points = mod_point_map.get(armor_name, 0)
         compare = slot_compare(alias.get("leftover_slots", []), leftover_slots)
@@ -801,7 +802,7 @@ def reorder(data_list: list) -> list:
 
     damn_sort = sorted(
         data_list.copy(),
-        key=lambda x: (x['free_slots']),
+        key=lambda x: (x['free_slots'], x['id']),
         reverse=True
     )
 
@@ -814,7 +815,10 @@ def reorder(data_list: list) -> list:
     for res in sorted(damn_sort, key=lambda x: (
             -sum(1 for y in x['free_slots'] if y == 3),  # Sort by most 3s
             -sum(1 for y in x['free_slots'] if y == 2),  # Then most 2s
-            -len(x['free_slots'])  # Then by overall length
+            -len(x['free_slots']),  # Then by overall length
+            len(x['skills']),
+            x['id']
+            # x['armor_names']
         )):
         num_threes = sum(1 for y in res['free_slots'] if y == 3)
         num_twos = sum(1 for y in res['free_slots'] if y == 2)
@@ -846,6 +850,10 @@ def merge_sum_dicts(dict_list: list[dict]):
 
 def print_results(results, wiki = ""):
     global file_write, total_possible_combinations, total_prunes
+
+    if show_result_num:
+        return
+
     print(f"{len(results):,} matches.  possible combinations: {total_possible_combinations:,}.  filtered sets: {total_prunes:,} (display limit: {constants.LIMIT:,})")
 
     if not file_write:
@@ -1064,7 +1072,9 @@ def roll_combos(
     total_possible_combinations = (
         len(head_list) * len(chest_list) * len(arms_list) * len(waist_list) * len(legs_list) * len(talisman_list)
     )
-    print(f"possible: {total_possible_combinations:,}")
+
+    if not show_result_num:
+        print(f"possible: {total_possible_combinations:,}")
 
     # Convert skill lookups into sets for quick membership testing
     set_skills_check = set_skills.keys() if set_skills else set()
@@ -1226,7 +1236,8 @@ def search(
 
     rolls = reorder(rolls)
     search_results = rolls
-    if verify_slots and not find_one:
+
+    if verify_slots and not find_one and not show_result_num:
         passed_test = verify(rolls, verify_slots)
         flashy = ".........."
         print(f"{flashy}[TEST {'PASSED' if passed_test else 'FAILED'}]{flashy}")
@@ -1234,10 +1245,13 @@ def search(
     return rolls
 
 def speed(func: Callable[..., Any], *args, **kwargs) -> Any:
+    global show_speeds
     start_time = time.perf_counter()
     result = func(*args, **kwargs)
     end_time = time.perf_counter()
     elapsed_time = end_time - start_time
+    if not show_speeds:
+        return result
     print(f">> {func.__name__}() = {elapsed_time:.6f} seconds")
     return result
 
@@ -1350,11 +1364,20 @@ def get_addable_skills(
     return skills_can_add
 
 
+def run_all_tests():
+    global show_result_num, file_write, show_speeds
+    show_result_num = True
+    file_write = False
+    show_speeds = False
+    for test_name, test in tests.all_tests.items():
+        results = search(**asdict(test))
+        print(f"{test_name}: {len(results)}")
+
 # ==============SEARCH==============
-speed(search, **asdict(tests.test_multi))
+# speed(search, **asdict(tests.test_multi))
 # speed(search, **asdict(tests.test_impossible))
 # speed(search, **asdict(tests.test_many))
-# speed(search, **asdict(tests.test_single))
+speed(search, **asdict(tests.test_single))
 # speed(search, **asdict(tests.test_without_burst_deco))
 # speed(search, **asdict(tests.test_mandatory))
 # speed(search, **asdict(tests.test_blacklist))
@@ -1368,17 +1391,16 @@ speed(search, **asdict(tests.test_multi))
 # speed(search, **asdict(tests.test_too_high))
 
 # ==============MORE SKILLS==============
-# speed(get_addable_skills, *tests.test_multi)
-# speed(get_addable_skills, *tests.test_many)
-# speed(get_addable_skills, *tests.test_one_slotter)
+# speed(get_addable_skills, **asdict(tests.test_multi))
+# speed(get_addable_skills, **asdict(tests.test_many))
+# speed(get_addable_skills, **asdict(tests.test_one_slotter))
 
 # ==============WEAPONS==============
 # speed(weapon_search, "great sword", {
 #     "Critical Eye": 3
 # })
 
-# ==============FAST TRY==============
-# speed(search_fast, *tests.test_multi)
+# run_all_tests()
 
 # ==============PRINT==============
 print_results(search_results, wiki_string)

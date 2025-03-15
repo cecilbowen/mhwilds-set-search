@@ -187,3 +187,21 @@ test_blacklist_armor_type = TestParams(
     blacklisted_armor_types=("head", "talisman"), # blacklisted armor types
     verify_slots=[2, 0, 5]
 )
+
+all_tests = {
+    "test_single": test_single,
+    "test_without_burst_deco": test_without_burst_deco,
+    "test_more": test_more,
+    "test_multi": test_multi,
+    "test_decos_not_needed": test_decos_not_needed,
+    "test_one_slotter": test_one_slotter,
+    "test_set": test_set,
+    "test_group": test_group,
+    "test_set_and_group": test_set_and_group,
+    "test_impossible": test_impossible,
+    "test_many": test_many,
+    "test_too_high": test_too_high,
+    "test_mandatory": test_mandatory,
+    "test_blacklist": test_blacklist,
+    "test_blacklist_armor_type": test_blacklist_armor_type,
+}
