@@ -101,7 +101,7 @@ export const testMany = {
         "Evade Extender": 3,
         "Weakness Exploit": 2,
         "Partbreaker": 3,
-        "export constitution": 3,
+        "Constitution": 3,
         "Antivirus": 3,
         "Burst": 5
     },
@@ -117,7 +117,7 @@ export const testTooHigh = {
         "Evade Extender": 3,
         "Weakness Exploit": 5,
         "Partbreaker": 3,
-        "export constitution": 3,
+        "Constitution": 3,
         "Antivirus": 3,
         "Burst": 5
     },
@@ -146,20 +146,95 @@ export const testBlacklistArmorType = {
     verifySlots: [2, 0, 5]
 };
 
+export const testHammer = {
+    skills: {
+        "Evade Extender": 3,
+        "Partbreaker": 3,
+        "Antivirus": 3,
+        "Coalescence": 3,
+        "Agitator": 3
+    },
+    setSkills: {
+        "Gore Magala's Tyranny": 1 // Black Eclipse
+    },
+    groupSkills: {
+        "Lord's Fury": 1 // Resucitate
+    },
+    verifySlots: [1, 0, 2]
+};
+
+export const testLance = {
+    skills: {
+        "Evade Extender": 3,
+        "Partbreaker": 3,
+        "Constitution": 5,
+        "Agitator": 3,
+        "Weakness Exploit": 5
+    },
+    setSkills: {
+        "Fulgur Anjanath's Will": 1
+    },
+    verifySlots: [0, 0, 1]
+};
+
+export const testDalton = {
+    skills: {
+        "Agitator": 4,
+        "Adrenaline Rush": 2,
+        "Quick Sheathe": 3,
+        "Maximum Might": 3,
+        "Weakness Exploit": 5,
+        "Burst": 1
+    },
+    setSkills: {},
+    verifySlots: [0, 1, 3]
+};
+
+export const testGather = {
+    skills: {
+        "Botanist": 4,
+        "Geologist": 3,
+        "Evade Extender": 3,
+        "Marathon Runner": 3,
+        "Outdoorsman": 1,
+        "Adaptability": 1, // could do 2, but not necessary
+        "Intimidator": 3,
+        "Entomologist": 1,
+        "Shock Absorber": 1,
+        "Aquatic/Oilsilt Mobility": 1,
+        "Cliffhanger": 1,
+        "Hunger Resistance": 3
+    },
+    setSkills: {},
+    groupSkills: {
+        "Imparted Wisdom": 1
+    },
+    verifySlots: [1, 0, 1]
+};
+
+export const testGatherHoney = {
+    skills: {
+        "Botanist": 4,
+        "Geologist": 3,
+        "Evade Extender": 3,
+        "Outdoorsman": 1,
+        "Adaptability": 1,
+        "Intimidator": 3,
+        "Entomologist": 1,
+        "Aquatic/Oilsilt Mobility": 1,
+        "Hunger Resistance": 1
+    },
+    setSkills: {},
+    groupSkills: {
+        "Neopteron Alert": 1 // Honey Hunter
+    },
+    verifySlots: [0, 0, 0]
+};
+
 export const allTests = {
-    testSingle: testSingle,
-    testWithoutBurstDeco: testWithoutBurstDeco,
-    testMore: testMore,
-    testMulti: testMulti,
-    testDecosNotNeeded: testDecosNotNeeded,
-    testOneSlotter: testOneSlotter,
-    testSet: testSet,
-    testGroup: testGroup,
-    testSetAndGroup: testSetAndGroup,
-    testImpossible: testImpossible,
-    testMany: testMany,
-    testTooHigh: testTooHigh,
-    testMandatory: testMandatory,
-    testBlacklist: testBlacklist,
-    testBlacklistArmorType: testBlacklistArmorType,
+    testSingle, testWithoutBurstDeco, testMore, testMulti,
+    testDecosNotNeeded, testOneSlotter, testSet, testGroup,
+    testSetAndGroup, testImpossible, testMany, testTooHigh,
+    testMandatory, testBlacklist, testBlacklistArmorType, testHammer,
+    testLance, testDalton, testGather, testGatherHoney
 };

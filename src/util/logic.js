@@ -5,7 +5,8 @@ import {
     _x,
     emptyGearSet, formatArmorC, getBestDecos, getDecoSkillsFromNames, getJsonFromType, getSearchParameters, groupArmorIntoSets,
     hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
-    isInSets, mergeSumMaps, offTheTop, slottageLengthCompare, slottageLengthCompareSort, slottageSizeCompare, speed, updateSkillPotential
+    isInSets, mergeSumMaps, offTheTop, slottageLengthCompare, slottageLengthCompareSort, slottageSizeCompare,
+    speed, updateSkillPotential
 } from "./tools";
 import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
 import { allTests } from "../test/tests";
@@ -308,6 +309,10 @@ const armorCombo = (head, chest, arms, waist, legs, talisman) => {
 };
 
 const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) => {
+    if (isEmpty(decos)) {
+        return null;
+    }
+
     // Adjust required skills based on what we already have
     const skillsNeeded = { ...skills };
     for (const [skill, level] of Object.entries(startingSkills)) {
@@ -332,7 +337,8 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
 
     // Sort decorations by highest skill contribution, then by smallest slot size
     const decoList = Object.entries(decos).sort((a, b) =>
-        b[1][2] - a[1][2] || Object.values(a[1][1]).reduce((sum, val) => sum + val, 0) -
+        b[1][2] - a[1][2] ||
+        Object.values(a[1][1]).reduce((sum, val) => sum + val, 0) -
         Object.values(b[1][1]).reduce((sum, val) => sum + val, 0)
     );
 
@@ -347,6 +353,10 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
         for (const [decoName, [decoType, decoSkills, decoSlot]] of decoList) {
             if (decoSlot > slotSize || (usedDecosCount[decoName] || 0) >= DECO_INVENTORY[decoName]) {
                 continue; // Skip if decoration doesn't fit in the slot
+            }
+
+            if (decoSlot < slotSize && freeSlots.includes(decoSlot)) {
+                continue; // fits, but more efficient to slot into smaller slot we'll reach later
             }
 
             // Check if this decoration helps fulfill any remaining skills
@@ -483,6 +493,18 @@ const reorder = dataList => {
     return [...pre, ...longestSlots];
 };
 
+const product = (...arrays) => {
+    return arrays.reduce((prevAccumulator, currentArray) => {
+        const newAccumulator = [];
+        prevAccumulator.forEach(prevAccumulatorArray => {
+            currentArray.forEach(currentValue => {
+                newAccumulator.push(prevAccumulatorArray.concat(currentValue));
+            });
+        });
+        return newAccumulator;
+    }, [[]]);
+};
+
 const cartesianProduct = (...arrays) => {
     return arrays.reduce((acc, arr) => {
         return acc.flatMap(c => arr.map(x => [...c, x]));
@@ -523,29 +545,31 @@ const rollCombos = (gear, skills, setSkills, groupSkills, limit, findOne = false
     for (const combo of allCombos) {
         if (counter >= limit) { return ret; }
 
-        const piecesFromSet = {};
-        const piecesFromGroup = {};
+        if (setSkillsCheck.size > 0 || groupSkillsCheck.size > 0) {
+            const piecesFromSet = {};
+            const piecesFromGroup = {};
 
-        for (const piece of combo.slice(0, -1)) { // Ignore talisman for set/group skills
-            const armorData = piece[1];
-            const setName = armorData[7];
-            const groupName = armorData[2];
+            for (const piece of combo.slice(0, -1)) { // Ignore talisman for set/group skills
+                const armorData = piece[1];
+                const setName = armorData[7];
+                const groupName = armorData[2];
 
-            if (setSkillsCheck.has(setName)) {
-                piecesFromSet[setName] = (piecesFromSet[setName] || 0) + 1;
+                if (setSkillsCheck.has(setName)) {
+                    piecesFromSet[setName] = (piecesFromSet[setName] || 0) + 1;
+                }
+
+                if (groupSkillsCheck.has(groupName)) {
+                    piecesFromGroup[groupName] = (piecesFromGroup[groupName] || 0) + 1;
+                }
             }
 
-            if (groupSkillsCheck.has(groupName)) {
-                piecesFromGroup[groupName] = (piecesFromGroup[groupName] || 0) + 1;
+            if ([...setSkillsCheck].some(skill => (piecesFromSet[skill] || 0) < setSkills[skill] * 2)) {
+                continue;
             }
-        }
 
-        if ([...setSkillsCheck].some(skill => (piecesFromSet[skill] || 0) < setSkills[skill] * 2)) {
-            continue;
-        }
-
-        if ([...groupSkillsCheck].some(skill => (piecesFromGroup[skill] || 0) < 3)) {
-            continue;
+            if ([...groupSkillsCheck].some(skill => (piecesFromGroup[skill] || 0) < 3)) {
+                continue;
+            }
         }
 
         const testSet = armorCombo(...combo.map(piece => formatArmorC(piece)));
@@ -566,13 +590,12 @@ const rollCombos = (gear, skills, setSkills, groupSkills, limit, findOne = false
 };
 
 const test = (armorSet, decos, desiredSkills) => {
-    const skillsNeeded = { ...desiredSkills };
     const have = {};
     const need = {};
     let done = true;
-    for (const skillName of Object.keys(skillsNeeded)) {
+    for (const [skillName, level] of Object.entries(desiredSkills)) {
         have[skillName] = armorSet.skills[skillName] || 0;
-        need[skillName] = skillsNeeded[skillName] - have[skillName];
+        need[skillName] = level - have[skillName];
         if (need[skillName] > 0) { done = false; }
     }
     if (done) {
@@ -637,6 +660,6 @@ export const search = parameters => {
 export const runAllTests = () => {
     for (const [testName, theTest] of Object.entries(allTests)) {
         const results = search(theTest);
-        console.log(`${testName}: ${results.length}`);
+        console.log(`%c${testName}: ${results.length}`, "color: aqua");
     }
 };

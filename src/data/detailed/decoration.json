@@ -4346,7 +4346,7 @@
     "slot": 1,
     "skills": [
       {
-        "name": "Aquatic-Oilsilt Mobility",
+        "name": "Aquatic/Oilsilt Mobility",
         "level": 1
       }
     ],
@@ -5922,7 +5922,7 @@
     "slot": 3,
     "skills": [
       {
-        "name": "Spread-Power Shots",
+        "name": "Spread/Power Shots",
         "level": 1
       }
     ],

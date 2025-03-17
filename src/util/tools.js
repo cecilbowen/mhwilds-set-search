@@ -1,4 +1,4 @@
-import { LIMIT } from "./constants";
+import { CHOSEN_ARMOR_DEBUG, DEBUG, LIMIT } from "./constants";
 import HEAD from "../data/compact/head.json";
 import CHEST from "../data/compact/chest.json";
 import ARMS from "../data/compact/arms.json";
@@ -17,7 +17,7 @@ export const getSearchParameters = parameters => {
         setSkills: parameters.setSkills || {},
         groupSkills: parameters.groupSkills || {},
         decoMods: parameters.decoMods || {}, // specify if you have limited number of a deco
-        mandatoryArmor: parameters.mandatorArmor || ['', '', '', '', '', ''], // must use these named armor pieces (per slot)
+        mandatoryArmor: parameters.mandatoryArmor || ['', '', '', '', '', ''], // must use these named armor pieces (per slot)
         blacklistedArmor: parameters.blacklistedArmor || [], // don't use these named armor pieces
         blacklistedArmorTypes: parameters.blacklistedArmorTypes || [], // don't use thes armor types (head, chest, etc)
         dontUseDecos: parameters.dontUseDecos || false, // if true, excludes decorations from results
@@ -50,7 +50,9 @@ export const speed = (func, ...args) => {
     const startTime = performance.now();
     const result = func(...args);
     const endTime = performance.now();
-    console.log(`>> ${func.name}() = ${((endTime - startTime) / 1000).toFixed(2)} seconds`);
+    if (DEBUG) {
+        console.log(`>> ${func.name}() = ${((endTime - startTime) / 1000).toFixed(2)} seconds`);
+    }
     return result;
 };
 

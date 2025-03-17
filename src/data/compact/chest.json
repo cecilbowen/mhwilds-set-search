@@ -74,7 +74,7 @@
   "Doshaguma Mail Alpha": ["chest",{"Latent Power":1,"Stamina Surge":1},"Fortifying Pelt",[1],48,[-3,2,-1,-1,4],"high","Doshaguma's Might"],
   "Doshaguma Mail Beta": ["chest",{"Latent Power":1},"Alluring Pelt",[1,1,1],48,[-3,2,-1,-1,4],"high","Doshaguma's Might"],
   "Duna Mail": ["chest",{"Peak Performance":1},"Lord's Favor",[1],26,[-1,4,-3,0,0],"low","Uth Duna's Cover"],
-  "Duna Wildmail Alpha": ["chest",{"Tool Specialist":2,"Aquatic-Oilsilt Mobility":1},"Lord's Favor",[3],60,[-1,4,-3,0,0],"high","Uth Duna's Cover"],
+  "Duna Wildmail Alpha": ["chest",{"Tool Specialist":2,"Aquatic/Oilsilt Mobility":1},"Lord's Favor",[3],60,[-1,4,-3,0,0],"high","Uth Duna's Cover"],
   "Duna Wildmail Beta": ["chest",{"Tool Specialist":2},"Lord's Fury",[3,1],60,[-1,4,-3,0,0],"high","Uth Duna's Cover"],
   "Leather Mail Alpha": ["chest",{"Botanist":1,"Item Prolonger":1},"",[1],26,[2,0,0,0,0],"high",""],
   "Leather Vest": ["chest",{"Botanist":1},"",[],2,[2,0,0,0,0],"low",""],

@@ -17,6 +17,9 @@ reorder_amount = (3, 2, 1, 2, 5)
 show_result_num = False
 show_speeds = True
 
+decos_have_skill_names = True # if true, shows deco skills and levels instead of their names
+show_set_skills = False # if true, shows set/group skill names instead of the set names
+
 already_loaded_jsons = False
 file_write = True
 
@@ -849,7 +852,8 @@ def merge_sum_dicts(dict_list: list[dict]):
     return result
 
 def print_results(results, wiki = ""):
-    global file_write, total_possible_combinations, total_prunes
+    global file_write, total_possible_combinations, total_prunes, decoration
+    global decos_have_skill_names, show_set_skills, set_skill_db, group_skill_db
 
     if show_result_num:
         return
@@ -887,19 +891,30 @@ def print_results(results, wiki = ""):
                 )                
             )
 
+            deco_skills = deco_names.copy()
+            if decos_have_skill_names:
+                deco_skills = ["/".join(f"{skill} Lv {level}" for skill, level in decoration[name][1].items()) for name in deco_names]
+
             file.write(f"Match #{counter} (id-{res['id']}):\n")
             file.write(f"Armor = {armor_names}\n")
             file.write(f"Skills = {str(skills)}\n")
 
             set_skills = {k: int((v / 2) // 1) for k, v in set_skills.items() if k and int((v / 2) // 1) > 0}
-            if set_skills:
-                file.write(f"Set Skills = {str(set_skills)}\n")
-
             group_skills = {k: int((v / 3) // 1) for k, v in group_skills.items() if k and int((v / 3) // 1) > 0}
-            if group_skills:
-                file.write(f"Group Skills = {str(group_skills)}\n")
 
-            file.write(f"Decorations = {deco_names}\n")
+            set_skills_f = set_skills.copy()
+            group_skills_f = group_skills.copy()
+            if show_set_skills:
+                set_skills_f = {set_skill_db[name][0]: level for name, level in set_skills.items()}
+                group_skills_f = {group_skill_db[name][0]: level for name, level in group_skills.items()}
+
+            if set_skills_f:
+                file.write(f"Set Skills = {str(set_skills_f)}\n")
+
+            if group_skills_f:
+                file.write(f"Group Skills = {str(group_skills_f)}\n")
+
+            file.write(f"Decorations = {deco_skills}\n")
             file.write(f"Free Slots - {free_slots}\n")
             file.write(f"Total Slots - {slots}\n\n")
             counter += 1
@@ -1377,7 +1392,12 @@ def run_all_tests():
 # speed(search, **asdict(tests.test_multi))
 # speed(search, **asdict(tests.test_impossible))
 # speed(search, **asdict(tests.test_many))
-speed(search, **asdict(tests.test_single))
+# speed(search, **asdict(tests.test_hammer))
+# speed(search, **asdict(tests.test_gather))
+# speed(search, **asdict(tests.test_gather_honey))
+# speed(search, **asdict(tests.test_lance))
+# speed(search, **asdict(tests.test_dalton))
+# speed(search, **asdict(tests.test_single))
 # speed(search, **asdict(tests.test_without_burst_deco))
 # speed(search, **asdict(tests.test_mandatory))
 # speed(search, **asdict(tests.test_blacklist))
@@ -1400,7 +1420,7 @@ speed(search, **asdict(tests.test_single))
 #     "Critical Eye": 3
 # })
 
-# run_all_tests()
+run_all_tests()
 
 # ==============PRINT==============
 print_results(search_results, wiki_string)

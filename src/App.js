@@ -4,7 +4,7 @@ import { runAllTests, search } from "./util/logic";
 
 const App = () => {
   const generate = () => {
-    const results = search(TEST.testSingle);
+    const results = search(TEST.testMandatory);
     console.log('results', results, results.length);
   };
 

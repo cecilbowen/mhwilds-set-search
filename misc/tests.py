@@ -150,6 +150,93 @@ test_many = TestParams(
     verify_slots=[0, 1, 2]
 )
 
+test_hammer = TestParams(
+    skills={
+        "Evade Extender": 3,
+        "Partbreaker": 3,
+        "Antivirus": 3,
+        "Coalescence": 3,
+        "Agitator": 3,
+    },
+    set_skills={
+        "Gore Magala's Tyranny": 1 # Black Eclipse
+    },
+    group_skills={
+        "Lord's Fury": 1 # Resucitate
+    },
+    verify_slots=[1, 0, 2]
+)
+
+test_lance = TestParams(
+    skills={
+        "Evade Extender": 3,
+        "Partbreaker": 3,
+        "Constitution": 5,
+        "Agitator": 3,
+        "Weakness Exploit": 5,
+
+    },
+    set_skills={
+        "Fulgur Anjanath's Will": 1
+    },
+    verify_slots=[0, 0, 1]
+)
+
+test_dalton = TestParams(
+    skills={
+        "Agitator": 4,
+        "Adrenaline Rush": 2,
+        "Quick Sheathe": 3,
+        "Maximum Might": 3,
+        "Weakness Exploit": 5,
+        "Burst": 1
+        
+    },
+    set_skills={},
+    verify_slots=[0, 1, 3]
+)
+
+test_gather = TestParams(
+    skills={
+        "Botanist": 4,
+        "Geologist": 3,
+        "Evade Extender": 3,
+        "Marathon Runner": 3,
+        "Outdoorsman": 1,
+        "Adaptability": 1, # could do 2, but not necessary
+        "Intimidator": 3,
+        "Entomologist": 1,
+        "Shock Absorber": 1,
+        "Aquatic/Oilsilt Mobility": 1,
+        "Cliffhanger": 1,
+        "Hunger Resistance": 3
+    },
+    set_skills={},
+    group_skills={
+        "Imparted Wisdom": 1
+    },
+    verify_slots=[1, 0, 1]
+)
+
+test_gather_honey = TestParams(
+    skills={
+        "Botanist": 4,
+        "Geologist": 3,
+        "Evade Extender": 3,
+        "Outdoorsman": 1,
+        "Adaptability": 1,
+        "Intimidator": 3,
+        "Entomologist": 1,
+        "Aquatic/Oilsilt Mobility": 1,
+        "Hunger Resistance": 1
+    },
+    set_skills={},
+    group_skills={
+        "Neopteron Alert": 1 # Honey Hunter
+    },
+    verify_slots=[0, 0, 0]
+)
+
 test_too_high = TestParams(
     skills={
         "Evade Extender": 3,
@@ -204,4 +291,9 @@ all_tests = {
     "test_mandatory": test_mandatory,
     "test_blacklist": test_blacklist,
     "test_blacklist_armor_type": test_blacklist_armor_type,
+    "test_hammer": test_hammer,
+    "test_lance": test_lance,
+    "test_dalton": test_dalton,
+    "test_gather": test_gather,
+    "test_gather_honey": test_gather_honey
 }

@@ -4345,7 +4345,7 @@
         "level": 2
       },
       {
-        "name": "Aquatic-Oilsilt Mobility",
+        "name": "Aquatic/Oilsilt Mobility",
         "level": 1
       }
     ],
@@ -4388,7 +4388,7 @@
     "dragonResistance": 1,
     "skills": [
       {
-        "name": "Aquatic-Oilsilt Mobility",
+        "name": "Aquatic/Oilsilt Mobility",
         "level": 1
       }
     ],
