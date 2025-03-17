@@ -1,17 +1,78 @@
+import { useState, useEffect } from "react";
 import "./App.css";
+import SkillsPicker from "./components/SkillsPicker";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 import * as TEST from "./test/tests";
 import { runAllTests, search } from "./util/logic";
+import SKILLS from './data/compact/skills.json';
+import Search from "./components/Search";
+import CustomTabPanel from "./components/CustomTabPanel";
+
+const DEFAULT_DISPLAY_LIMIT = 500;
 
 const App = () => {
+  const [skills, setSkills] = useState({});
+  const [setEffects, setSetEffects] = useState({});
+  const [groupSkills, setGroupSkills] = useState({});
+  const [decoInventory, setDecoInventory] = useState({});
+  const [blacklistedArmor, setBlacklistedArmor] = useState(['', '', '', '', '', '']);
+  const [blacklistedArmorTypes, setBlacklistedArmorTypes] = useState([]);
+
+  const [dontUseDecos, setDontUseDecos] = useState(false);
+  const [displayLimit, setDisplayLimit] = useState(DEFAULT_DISPLAY_LIMIT);
+  const [showDecoSkillNames, setShowDecoSkillNames] = useState(false);
+  const [showGroupSkillNames, setShowGroupSkillNames] = useState(false);
+
+  const [tab, setTab] = useState(0);
+
   const generate = () => {
     const results = search(TEST.testMandatory);
     console.log('results', results, results.length);
   };
 
+  const addSkill = (skillName, level) => {
+    const tempSkills = { ...skills };
+    tempSkills[skillName] = level || SKILLS[skillName];
+    setSkills(tempSkills);
+  };
+
+  const tabProps = index => {
+    return {
+      "id": `simple-tab-${index}`,
+      'aria-controls': `simple-tabpanel-${index}`,
+    };
+  };
+
+  const handleTabChange = (event, newValue) => {
+    setTab(newValue);
+  };
+
+  const tabs = {
+    "Search": 0,
+    "Decorations": 1,
+    "Settings": 2,
+    "Saved Sets": 3
+  };
+
+  const renderTab = (name, index) => {
+    return <Tab key={name} label={name} {...tabProps(index)} />;
+  };
+
   return (
     <div className="App">
-      <button onClick={generate}>test</button>
-      <button onClick={runAllTests}>run all tests</button>
+      <Tabs value={tab} onChange={handleTabChange} aria-label="basic tabs example">
+        {Object.entries(tabs).map(([name, index]) => renderTab(name, index))}
+      </Tabs>
+      <CustomTabPanel value={tab} index={0}><Search /></CustomTabPanel>
+      <CustomTabPanel value={tab} index={1}>Tab Two Content</CustomTabPanel>
+      <CustomTabPanel value={tab} index={2}>Tab Three Content</CustomTabPanel>
+      <CustomTabPanel value={tab} index={3}>Tab Four Content</CustomTabPanel>
+
+      <small style={{ display: "flex", justifyContent: "center", marginBottom: "1em" }}>
+        <a target="_blank"
+          rel="noopener noreferrer" href="https://github.com/cecilbowen/mhwilds-set-search">Source Code</a>
+      </small>
     </div>
   );
 };

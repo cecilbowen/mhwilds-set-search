@@ -3,10 +3,11 @@ import DECO_INVENTORY from "../data/user/deco-inventory.json";
 import SKILL_DB from "../data/compact/skills.json";
 import {
     _x,
-    emptyGearSet, formatArmorC, getBestDecos, getDecoSkillsFromNames, getJsonFromType, getSearchParameters, groupArmorIntoSets,
+    emptyGearSet, formatArmorC, getBestDecos, getDecoSkillsFromNames,
+    getJsonFromType, getSearchParameters, groupArmorIntoSets,
     hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
-    isInSets, mergeSumMaps, offTheTop, slottageLengthCompare, slottageLengthCompareSort, slottageSizeCompare,
-    speed, updateSkillPotential
+    isInSets, mergeSumMaps, slottageLengthCompare, slottageLengthCompareSort,
+    slottageSizeCompare, speed, updateSkillPotential
 } from "./tools";
 import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
 import { allTests } from "../test/tests";
@@ -304,7 +305,9 @@ const armorCombo = (head, chest, arms, waist, legs, talisman) => {
         skills: skillTotals,
         slots: slots,
         setSkills: setSkills,
-        groupSkills: groupSkills
+        groupSkills: groupSkills,
+        // todo: add upgraded defense value (also in python too)
+        defense: [head.data[4], chest.data[4], arms.data[4], waist.data[4], legs.data[4]].reduce((sum, value) => sum + value)
     };
 };
 
@@ -606,7 +609,8 @@ const test = (armorSet, decos, desiredSkills) => {
             skills: armorSet.skills,
             setSkills: armorSet.setSkills,
             groupSkills: armorSet.groupSkills,
-            freeSlots: armorSet.slots
+            freeSlots: armorSet.slots,
+            defense: armorSet.defense
         };
     }
 
@@ -623,7 +627,8 @@ const test = (armorSet, decos, desiredSkills) => {
             skills: combinedSkills,
             setSkills: armorSet.setSkills,
             groupSkills: armorSet.groupSkills,
-            freeSlots: decosUsed.freeSlots
+            freeSlots: decosUsed.freeSlots,
+            defense: armorSet.defense
         };
     }
 
@@ -655,6 +660,18 @@ export const search = parameters => {
     // generateWikiString(params.skills, params.setSkills, params.groupSkills);
 
     return rolls;
+};
+
+export const searchAndSpeed = async parameters => {
+    const startTime = performance.now();
+    const results = search(parameters);
+    const endTime = performance.now();
+    const seconds = (endTime - startTime) / 1000;
+
+    return {
+        results,
+        seconds,
+    };
 };
 
 export const runAllTests = () => {

@@ -1389,7 +1389,7 @@ def run_all_tests():
         print(f"{test_name}: {len(results)}")
 
 # ==============SEARCH==============
-# speed(search, **asdict(tests.test_multi))
+speed(search, **asdict(tests.test_multi))
 # speed(search, **asdict(tests.test_impossible))
 # speed(search, **asdict(tests.test_many))
 # speed(search, **asdict(tests.test_hammer))
@@ -1420,7 +1420,7 @@ def run_all_tests():
 #     "Critical Eye": 3
 # })
 
-run_all_tests()
+# run_all_tests()
 
 # ==============PRINT==============
 print_results(search_results, wiki_string)

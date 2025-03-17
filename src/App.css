@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chosen-skills {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  gap: 2px 4px;
+}
+
+.skill-level-edit {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.skills-picker {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills-search-textfield {
+  width: 100%;
+}
+
+.skills-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 4px;
+  margin-top: 0.5em;
+  overflow: auto;
+  max-height: 10em;
+}
+
+.skills-search-bubble {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: monospace;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding-right: 8px;
+}
+.skills-search-bubble-text {
+  font-family: monospace;
+}
+.skills-search-bubble-icon {
+  width: 20px;
+  height: 20px;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+.highlighted {
+  background-color: #fff6d2;
+}
+.highlighted-text {
+  font-weight: bold;
+}
+.blurred {
+  border-style: dashed;
+}
+.blurred-gone {
+  display: none;
+}
+
+.button-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1em;
+}
+
+.results {
+  margin-top: 1em;
+}
+
+.armor-list {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-family: monospace;
+}
+.armor-img {
+  width: 20px;
+}
+.armor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-family: monospace;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px;
 }

@@ -6,10 +6,6 @@ import WAIST from "../data/compact/waist.json";
 import LEGS from "../data/compact/legs.json";
 import TALISMANS from "../data/compact/talisman.json";
 import DECORATIONS from "../data/compact/decoration.json";
-import SKILL_DB from "../data/compact/skills.json";
-import SET_SKILL_DB from "../data/compact/set-skills.json";
-import GROUP_SKILL_DB from "../data/compact/group-skills.json";
-import DECO_INVENTORY from "../data/user/deco-inventory.json";
 
 export const getSearchParameters = parameters => {
     return {
