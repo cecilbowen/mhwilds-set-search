@@ -5,6 +5,29 @@ import SET_SKILLS from '../data/skills/set-skills.json';
 import GROUP_SKILLS from '../data/skills/group-skills.json';
 import TextField from '@mui/material/TextField';
 import { isGroupSkill, isSetSkill } from '../util/util';
+import Image from '@mui/icons-material/Image';
+import HideImage from '@mui/icons-material/HideImage';
+import Expand from '@mui/icons-material/Expand';
+import Minimize from '@mui/icons-material/CloseFullscreen';
+import styled from 'styled-components';
+import { IconButton } from '@mui/material';
+
+const ImageIcon = styled(Image)`
+    width: 24px;
+    color: blueviolet;
+`;
+const AntiImageIcon = styled(HideImage)`
+    width: 24px;
+    color: sienna;
+`;
+const ExpandIcon = styled(Expand)`
+    width: 24px;
+    color: black;
+`;
+const MinimizeIcon = styled(Minimize)`
+    width: 24px;
+    color: black;
+`;
 
 const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
     const [searchText, setSearchText] = useState('');
@@ -12,6 +35,7 @@ const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
     const [allSkills, setAllSkills] = useState([]);
     const [showIcons, setShowIcons] = useState(true);
     const [hideBlur, setHideBlur] = useState(false);
+    const [expanded, setExpanded] = useState(true);
 
     const combinedSkills = () => {
         return [...SKILLS, ...SET_SKILLS, ...GROUP_SKILLS].filter(x => !x.type || x.type === "armor").map(x => {
@@ -94,10 +118,18 @@ const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
     };
 
     return <div className="skills-picker">
-        <TextField id="skill-name-search" label="Search Skills" variant="outlined" size="small"
-            className="skills-search-textfield"
-            onChange={ev => setSearchText(ev.target.value)} value={searchText} />
-        <div id="skills-search" className="skills-search">
+        <div style={{ display: "flex", gap: '8px' }}>
+            <TextField id="skill-name-search" label="Search Skills" variant="outlined" size="small"
+                className="skills-search-textfield"
+                onChange={ev => setSearchText(ev.target.value)} value={searchText} />
+            {showIcons && <IconButton title="Hide Icons" onClick={() => setShowIcons(!showIcons)}><AntiImageIcon /></IconButton>}
+            {!showIcons && <IconButton title="Show Icons" onClick={() => setShowIcons(!showIcons)}><ImageIcon /></IconButton>}
+            {!expanded && <IconButton title="Expand Skills Box" onClick={() => setExpanded(!expanded)}><ExpandIcon /></IconButton>}
+            {expanded && <IconButton title="Minimize Skills Box"
+                onClick={() => setExpanded(!expanded)}><MinimizeIcon /></IconButton>}
+        </div>
+
+        <div id="skills-search" className={expanded ? "skills-search" : "skills-search-mini"}>
             {renderSkills(allSkills)}
         </div>
     </div>;

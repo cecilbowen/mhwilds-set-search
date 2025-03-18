@@ -7,7 +7,7 @@ import SET_SKILLS from '../data/compact/set-skills.json';
 import SKILLS_DB from '../data/skills/skills.json';
 import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
-import { getMaxLevel, isGroupSkill, isSetSkill } from "../util/util";
+import { generateStyle, getMaxLevel, isGroupSkill, isSetSkill } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
 import ArrowRight from '@mui/icons-material/ArrowForwardIos';
 import ArrowLeft from '@mui/icons-material/ArrowBackIos';
@@ -20,10 +20,10 @@ import Results from "./Results";
 const DEFAULT_DISPLAY_LIMIT = 500;
 
 const ArrowL = styled(ArrowLeft)`
-    width: 12px;
+    width: 16px !important;
 `;
 const ArrowR = styled(ArrowRight)`
-    width: 12px;
+    width: 16px !important;
 `;
 const DeleteIcon = styled(Delete)`
     color: crimson;
@@ -36,6 +36,8 @@ const LoadingBar = styled(LinearProgress)`
 
 const Search = () => {
     const [skills, setSkills] = useState({});
+    const [searchedSkills, setSearchedSkills] = useState({});
+    const [lastParams, setLastParams] = useState(); // parameters used to get the most recent search results
     const [setEffects, setSetEffects] = useState({});
     const [groupSkills, setGroupSkills] = useState({});
     const [decoInventory, setDecoInventory] = useState({});
@@ -57,7 +59,7 @@ const Search = () => {
     }, []);
 
     useEffect(() => {
-        if (isGenerating && results) {
+        if (results) {
             setIsGenerating(false);
             console.log("results", results);
         }
@@ -87,6 +89,8 @@ const Search = () => {
             groupSkills: justGroupSkills,
         });
         console.log("PARAMS", params);
+        setSearchedSkills(skills);
+        setLastParams(params);
         const cache = searchAndSpeed(params);
         cache.then(ret => {
             setElapsedSeconds(ret.seconds);
@@ -149,12 +153,13 @@ const Search = () => {
         const bubbleDiv = <div className="skill-level-edit">
             {nameDiv}
             <ArrowL onClick={() => levelMod(skillName, -1, maxLevel)} style={ getArrowStyle(level > 1) } />
-            {<div style={{ fontSize: '14px', marginLeft: '-3px' }}>{level}</div>}
+            {<div style={{ fontSize: '16px', marginLeft: '-3px' }}>{level}</div>}
             <ArrowR onClick={() => levelMod(skillName, 1, maxLevel)} style={ getArrowStyle(level < maxLevel) } />
-            <DeleteIcon title="Remove skill" onClick={() => removeSkill(skillName)} />
+            <DeleteIcon className="delete-icon" title="Remove skill" onClick={() => removeSkill(skillName)} />
         </div>;
 
-        return <div className={`skills-search-bubble`} key={skillName}
+        const gradientStyle = generateStyle("#6ba6fd");
+        return <div className={`skills-search-bubble`} style={gradientStyle} key={skillName}
             title={description}>
             {iconImg}
             {bubbleDiv}
@@ -162,8 +167,14 @@ const Search = () => {
     };
 
     const renderChosenSkills = () => {
+        const gradientStyle = generateStyle("#d14848");
         return <div className="chosen-skills">
             {Object.entries(skills).map(x => renderChosenSkill(x[0], x[1]))}
+            {!isEmpty(skills) && <div className="skills-search-bubble clear-all" onClick={() => setSkills({})}
+                style={gradientStyle}
+                title="Clear all chosen skills">
+                Clear All
+            </div>}
         </div>;
     };
 
@@ -178,7 +189,8 @@ const Search = () => {
                 <Button variant="outlined">More Skills</Button>
             </div>
             {isGenerating && <LoadingBar />}
-            <Results results={results} skills={skills} elapsedSeconds={elapsedSeconds} />
+            <Results results={results} showDecoSkills={showDecoSkillNames}
+                skills={searchedSkills} elapsedSeconds={elapsedSeconds} />
         </div>
     );
 };

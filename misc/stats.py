@@ -1389,7 +1389,7 @@ def run_all_tests():
         print(f"{test_name}: {len(results)}")
 
 # ==============SEARCH==============
-speed(search, **asdict(tests.test_multi))
+# speed(search, **asdict(tests.test_multi))
 # speed(search, **asdict(tests.test_impossible))
 # speed(search, **asdict(tests.test_many))
 # speed(search, **asdict(tests.test_hammer))
@@ -1404,7 +1404,7 @@ speed(search, **asdict(tests.test_multi))
 # speed(search, **asdict(tests.test_set))
 # speed(search, **asdict(tests.test_group))
 # speed(search, **asdict(tests.test_set_and_group))
-# speed(search, **asdict(tests.test_more))
+speed(search, **asdict(tests.test_more))
 # speed(search, **asdict(tests.test_one_slotter))
 # speed(search, **asdict(tests.test_decos_not_needed))
 # speed(search, **asdict(tests.test_blacklist_armor_type))

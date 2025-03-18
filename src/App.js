@@ -45,6 +45,11 @@ const App = () => {
   };
 
   const handleTabChange = (event, newValue) => {
+    if (newValue === "external") {
+      window.open(source, '_blank');
+      return;
+    }
+
     setTab(newValue);
   };
 
@@ -59,20 +64,17 @@ const App = () => {
     return <Tab key={name} label={name} {...tabProps(index)} />;
   };
 
+  const source = "https://github.com/cecilbowen/mhwilds-set-search";
   return (
     <div className="App">
-      <Tabs value={tab} onChange={handleTabChange} aria-label="basic tabs example">
+      <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable">
         {Object.entries(tabs).map(([name, index]) => renderTab(name, index))}
+        <Tab label={"Source Code"} value="external" onClick={e => e.preventDefault()} />
       </Tabs>
       <CustomTabPanel value={tab} index={0}><Search /></CustomTabPanel>
       <CustomTabPanel value={tab} index={1}>Tab Two Content</CustomTabPanel>
       <CustomTabPanel value={tab} index={2}>Tab Three Content</CustomTabPanel>
       <CustomTabPanel value={tab} index={3}>Tab Four Content</CustomTabPanel>
-
-      <small style={{ display: "flex", justifyContent: "center", marginBottom: "1em" }}>
-        <a target="_blank"
-          rel="noopener noreferrer" href="https://github.com/cecilbowen/mhwilds-set-search">Source Code</a>
-      </small>
     </div>
   );
 };
