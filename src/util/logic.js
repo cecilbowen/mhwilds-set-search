@@ -3,6 +3,7 @@ import DECO_INVENTORY from "../data/user/deco-inventory.json";
 import SKILL_DB from "../data/compact/skills.json";
 import {
     _x,
+    emptyGearPiece,
     emptyGearSet, formatArmorC, getBestDecos, getDecoSkillsFromNames,
     getJsonFromType, getSearchParameters, groupArmorIntoSets,
     hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
@@ -13,6 +14,7 @@ import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
 import { allTests } from "../test/tests";
 
 let totalPossibleCombinations = 0;
+const decoInventory = { ...DECO_INVENTORY };
 
 const getBestArmor = (
     skills, setSkills = {}, groupSkills = {},
@@ -28,8 +30,9 @@ const getBestArmor = (
     mandatoryPieceNames.forEach(name => {
         if (name) {
             const foundData = fullDataFile[name];
-            if (foundData) {
-                mandatory[foundData[0]] = name;
+            const foundTalisman = TALISMANS[name];
+            if (foundData || foundTalisman) {
+                mandatory[foundData?.[0] || foundTalisman?.[0]] = name;
             } else {
                 console.warn(`WARNING: Could not find mandatory armor ${name}!`);
             }
@@ -42,7 +45,8 @@ const getBestArmor = (
     );
 
     const bestTalismans = Object.fromEntries(Object.entries(TALISMANS)
-        .filter(([k, v]) => hasNeededSkill(v[1], skills) && !blacklistedArmor.includes(k))
+        .filter(([k, v]) => !blacklistedArmor.includes(k) &&
+        (!mandatory[v[0]] && hasNeededSkill(v[1], skills) || k === mandatory[v[0]]))
         .sort((a, b) => Object.values(b[1][1])[0] - Object.values(a[1][1])[0])
     );
 
@@ -156,41 +160,47 @@ const getBestArmor = (
         bestGroupiesAlt[aData[0]][name] = aData;
     }
 
-    modPointMap = {};
-    for (const skillName of Object.keys(skills)) {
-        for (const [category, data] of Object.entries(bestGroupiesAlt)) {
-            const [groupiesGrouped, _] = groupArmorIntoSets(data, setSkills, groupSkills);
+    if (!isEmpty(skills)) {
+        modPointMap = {};
+        for (const skillName of Object.keys(skills)) {
+            for (const [category, data] of Object.entries(bestGroupiesAlt)) {
+                const [groupiesGrouped, _] = groupArmorIntoSets(data, setSkills, groupSkills);
 
-            for (const [groupName, groupArmors] of Object.entries(groupiesGrouped)) {
-                for (const [armorName, armorData] of Object.entries(groupArmors)) {
-                    const { pot, totalPot, modMap } = updateSkillPotential(
-                        maxPossibleSkillPotentialSet, totalMaxSkillPotential, modPointMap,
-                        category, skillName, armorName, armorData,
-                        bestDecos, skills, groupName
-                    );
-                    maxPossibleSkillPotential = pot;
-                    totalMaxSkillPotential = totalPot;
-                    modPointMap = modMap;
+                for (const [groupName, groupArmors] of Object.entries(groupiesGrouped)) {
+                    for (const [armorName, armorData] of Object.entries(groupArmors)) {
+                        const { pot, totalPot, modMap } = updateSkillPotential(
+                            maxPossibleSkillPotentialSet, totalMaxSkillPotential, modPointMap,
+                            category, skillName, armorName, armorData,
+                            bestDecos, skills, groupName
+                        );
+                        maxPossibleSkillPotential = pot;
+                        totalMaxSkillPotential = totalPot;
+                        modPointMap = modMap;
+                    }
                 }
             }
         }
-    }
 
-    for (const [category, data] of Object.entries(maxPossibleSkillPotentialSet)) {
-        for (const [groupName, groupData] of Object.entries(data)) {
-            for (const [skillName, statData] of Object.entries(groupData)) {
-                for (const key of ["best", "more"]) {
-                    if (key in statData) {
-                        if (key === "more" && statData[key].length) {
-                            for (const ex of statData[key]) {
-                                bareMinimum[category][ex] = dataFile[ex];
+        for (const [category, data] of Object.entries(maxPossibleSkillPotentialSet)) {
+            for (const [groupName, groupData] of Object.entries(data)) {
+                for (const [skillName, statData] of Object.entries(groupData)) {
+                    for (const key of ["best", "more"]) {
+                        if (key in statData) {
+                            if (key === "more" && statData[key].length) {
+                                for (const ex of statData[key]) {
+                                    bareMinimum[category][ex] = dataFile[ex];
+                                }
+                            } else {
+                                bareMinimum[category][statData[key]] = dataFile[statData[key]];
                             }
-                        } else {
-                            bareMinimum[category][statData[key]] = dataFile[statData[key]];
                         }
                     }
                 }
             }
+        }
+    } else { // if no skills exist, only set/group skills, just copy over all set/group pieces
+        for (const [category, data] of Object.entries(bestGroupiesAlt)) {
+            bareMinimum[category] = { ...bareMinimum[category], ...data };
         }
     }
 
@@ -199,8 +209,18 @@ const getBestArmor = (
 
     // add in a dummy piece (no skills/slots) for any blacklisted armor types
     blacklistedArmorTypes.forEach(tipo => {
-        bareMinimum[tipo] = { None: [tipo, {}, "", [], 0, [0, 0, 0, 0, 0], rank, ""] };
+        bareMinimum[tipo] = emptyGearPiece(tipo, rank);
     });
+
+    // add empty data for each armor type that doesn't have any
+    // only possible way this could happen is with the talisman if there are only set/group skills
+    // or any other armor type if someone does something crazy like blacklist every piece for that type
+    const armorTypes = ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
+    for (const type of armorTypes) {
+        if (!bareMinimum[type] || isEmpty(bareMinimum[type])) {
+            bareMinimum[type] = emptyGearPiece(type, rank);
+        }
+    }
 
     // sort final return armor by slottage
     for (const [cat, armor] of Object.entries(bareMinimum)) {
@@ -307,7 +327,8 @@ const armorCombo = (head, chest, arms, waist, legs, talisman) => {
         setSkills: setSkills,
         groupSkills: groupSkills,
         // todo: add upgraded defense value (also in python too)
-        defense: [head.data[4], chest.data[4], arms.data[4], waist.data[4], legs.data[4]].reduce((sum, value) => sum + value)
+        // defenseTotal: [head.data[4], chest.data[4], arms.data[4], waist.data[4], legs.data[4]].reduce((sum, value) => sum + value),
+        defense: [head.data[4], chest.data[4], arms.data[4], waist.data[4], legs.data[4]]
     };
 };
 
@@ -354,7 +375,7 @@ const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) 
     // Iterate over available slots and try to fill them with the best decorations
     for (const slotSize of slotsAvailable) {
         for (const [decoName, [decoType, decoSkills, decoSlot]] of decoList) {
-            if (decoSlot > slotSize || (usedDecosCount[decoName] || 0) >= DECO_INVENTORY[decoName]) {
+            if (decoSlot > slotSize || (usedDecosCount[decoName] || 0) >= decoInventory[decoName]) {
                 continue; // Skip if decoration doesn't fit in the slot
             }
 
@@ -610,7 +631,7 @@ const test = (armorSet, decos, desiredSkills) => {
             setSkills: armorSet.setSkills,
             groupSkills: armorSet.groupSkills,
             freeSlots: armorSet.slots,
-            defense: armorSet.defense
+            // defense: armorSet.defense
         };
     }
 
@@ -628,7 +649,7 @@ const test = (armorSet, decos, desiredSkills) => {
             setSkills: armorSet.setSkills,
             groupSkills: armorSet.groupSkills,
             freeSlots: decosUsed.freeSlots,
-            defense: armorSet.defense
+            // defense: armorSet.defense
         };
     }
 
@@ -643,8 +664,12 @@ export const search = parameters => {
         params.dontUseDecos
     );
 
-    // todo:
-    // modifyDecoInventory(decoMods);
+    // limit decos to what user has specified they have
+    for (const [decoName, decoAmount] of Object.entries(params.decoMods)) {
+        if (Object.keys(decoInventory).includes(decoName)) {
+            decoInventory[decoName] = decoAmount;
+        }
+    }
 
     let rolls = speed(
         rollCombos,

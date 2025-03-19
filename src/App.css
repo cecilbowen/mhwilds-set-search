@@ -280,3 +280,39 @@ tbody > tr {
   margin-left: 1em !important;
   margin-bottom: 1em !important;
 }
+
+.def-total-holder {
+  display: flex;
+  margin-left: 1em;
+  margin-top: 4px;
+}
+.def-holder {
+  display: flex;
+}
+.armor-def-img {
+  width: 18px;
+  margin-left: 8px;
+  height: 18px;
+  transform: translateY(1px);
+}
+.def-value {
+  transform: translateY(-2px) !important;
+  margin-left: 6px;
+}
+.base {
+  color: #565454;
+}
+
+.edit-name {
+  font-weight: bold !important;
+  margin-right: 1em !important;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  font-family: cursive !important;
+}
+
+.edit-name:hover {
+  background-color: lightgray;
+  border-radius: 8px;
+}

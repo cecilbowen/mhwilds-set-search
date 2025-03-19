@@ -33,6 +33,14 @@ export const emptyGearSet = () => {
     };
 };
 
+export const emptyGearPiece = (type, rank = "high") => {
+    if (type === "talisman") {
+        return { None: ["talisman", {}] };
+    }
+
+    return { None: [type, {}, "", [], 0, [0, 0, 0, 0, 0], rank, ""] };
+};
+
 export const getJsonFromType = type => {
     const typeMap = {
         head: HEAD, chest: CHEST, arms: ARMS, waist: WAIST,

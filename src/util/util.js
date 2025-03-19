@@ -8,7 +8,15 @@ import WAIST from "../data/detailed/armor/waist.json";
 import LEGS from "../data/detailed/armor/legs.json";
 import TALISMANS from "../data/detailed/talisman.json";
 import DECORATIONS from '../data/compact/decoration.json';
+import DEFENSE_LEVELS from '../data/compact/defense-levels.json';
 
+import HEAD_MAP from '../data/compact/head.json';
+import CHEST_MAP from '../data/compact/chest.json';
+import ARMS_MAP from '../data/compact/arms.json';
+import WAIST_MAP from '../data/compact/waist.json';
+import LEGS_MAP from '../data/compact/legs.json';
+
+export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
 export const isSetSkill = skill => Boolean(skill.piecesPerLevel);
 export const getMaxLevel = skillName => {
@@ -27,6 +35,150 @@ export const armorNameFormat = name => {
     const beta = "β";
 
     return name.replaceAll("Alpha", alpha).replaceAll("Beta", beta);
+};
+
+export const allArmorMaps = () => {
+    return { ...HEAD_MAP, ...CHEST_MAP, ...ARMS_MAP, ...WAIST_MAP, ...LEGS_MAP };
+};
+export const allArmor = () => {
+    return [...HEAD, ...CHEST, ...ARMS, ...WAIST, ...LEGS];
+};
+
+export const getArmorDefenseFromName = name => {
+    const data = allArmor().filter(x => x.name === name)[0];
+    if (!data) {
+        // console.warn('getArmorDefenseFromName(): unable to find armor piece - ', name);
+        return undefined;
+    }
+
+    const base = data.defense;
+    const rarity = data.rarity;
+    const levels = DEFENSE_LEVELS[rarity] - 1;
+    return {
+        base,
+        upgraded: base + levels * 2
+    };
+};
+
+export const getArmorDefenseFromNames = theNames => {
+    const names = theNames.length > 5 ? theNames.slice(0, 5) : theNames;
+    const baseArr = [];
+    let base = 0;
+    let upgraded = 0;
+    for (const name of names) {
+        const data = allArmor().filter(x => x.name === name)[0];
+        if (!data) {
+            console.warn('getArmorDefenseFromNames(): unable to find armor piece - ', name);
+            return 0;
+        }
+        baseArr.push(data.defense);
+        const levels = DEFENSE_LEVELS[data.rarity] - 1;
+        base += data.defense;
+        upgraded += data.defense + levels * 2;
+    }
+
+    return {
+        base,
+        upgraded,
+    };
+};
+
+export const saveToLocalStorage = (key, data) => {
+    const updatedData = JSON.stringify(data);
+    localStorage.setItem(key, updatedData);
+};
+export const getFromLocalStorage = key => {
+    const data = localStorage.getItem(key);
+
+    if (data === null) {
+        return null; // Explicitly return null for missing keys
+    }
+
+    try {
+        const parsedData = JSON.parse(data);
+        return parsedData;
+    } catch (e) {
+        console.error(`Error parsing JSON from localStorage key "${key}":`, e);
+        return undefined; // Explicitly return undefined for invalid JSON
+    }
+};
+
+export const pinArmor = (name, type) => {
+    const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
+    const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
+    const pulledBlackType = getFromLocalStorage('blacklistedArmorTypes') || [];
+
+    let notifyStr = ["Pinned", "(required in every result)"];
+
+    const tempMandatory = [...pulledMandatory];
+    let tempBlacklist = [...pulledBlack];
+    let tempTypeBlacklist = [...pulledBlackType];
+    const alreaddyPinnedIndex = tempMandatory.indexOf(name);
+    if (alreaddyPinnedIndex !== -1) {
+        tempMandatory[alreaddyPinnedIndex] = '';
+        notifyStr = ["Unpinned", ''];
+    } else {
+        const typeIndex = getArmorTypeList().indexOf(type);
+        tempMandatory[typeIndex] = name;
+
+        // if a newly-mandated armor piece is in the blacklist, remove it
+        if (tempBlacklist.includes(name)) {
+            tempBlacklist = tempBlacklist.filter(x => x !== name);
+            saveToLocalStorage('blacklistedArmor', tempBlacklist);
+        }
+
+        // likewise, if a newly-mandated armor piece is type blacklisted, remove that restriction
+        if (tempTypeBlacklist.includes(type)) {
+            tempTypeBlacklist = tempTypeBlacklist.filter(x => x !== type);
+            saveToLocalStorage('blacklistedArmorTypes', tempTypeBlacklist);
+        }
+    }
+
+    saveToLocalStorage('mandatoryArmor', tempMandatory);
+
+    window.snackbar.createSnackbar(`${notifyStr[0]} ${name} ${notifyStr[1]}`, {
+        timeout: 3000
+    });
+
+    return {
+        mandatoryArmor: tempMandatory,
+        blacklistedArmor: tempBlacklist,
+        blacklistedArmorTypes: tempTypeBlacklist
+    };
+};
+
+export const excludeArmor = name => {
+    const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
+    const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
+
+    let notifyStr = ["Added", "to"];
+
+    let tempBlacklist = [...pulledBlack];
+    let tempMandatory = [...pulledMandatory];
+    if (tempBlacklist.includes(name)) {
+        tempBlacklist = tempBlacklist.filter(x => x !== name);
+        notifyStr = ["Removed", 'from'];
+    } else {
+        tempBlacklist.push(name);
+
+        // if a newly-blacklisted armor piece is in the mandatory list, remove it
+        if (tempMandatory.includes(name)) {
+            // eslint-disable-next-line no-confusing-arrow
+            tempMandatory = tempMandatory.map(x => x === name ? '' : x);
+            saveToLocalStorage('mandatoryArmor', tempMandatory);
+        }
+    }
+
+    saveToLocalStorage('blacklistedArmor', tempBlacklist);
+
+    window.snackbar.createSnackbar(`${notifyStr[0]} ${name} ${notifyStr[1]} the blacklist.`, {
+        timeout: 3000
+    });
+
+    return {
+        mandatoryArmor: tempMandatory,
+        blacklistedArmor: tempBlacklist,
+    };
 };
 
 export const getDecosFromNames = (names, showSkillNames = false) => {
@@ -63,6 +215,41 @@ export const areArmorSetsEqual = (a, b) => {
         if (a[i] !== b[i]) { return false; }
     }
     return true;
+};
+
+export const saveArmorSet = result => {
+    if (!result) { return undefined; }
+    let currentSets = getFromLocalStorage('savedSets') || [];
+    const alreadyHas = currentSets.filter(x => areArmorSetsEqual(result.armorNames, x.armorNames));
+
+    if (alreadyHas.length > 0) {
+        currentSets = currentSets.filter(x => !areArmorSetsEqual(result.armorNames, x.armorNames));
+    } else {
+        const nextId = (currentSets[currentSets.length - 1]?.id || 1) + 1;
+        currentSets.push({ ...result, id: nextId });
+    }
+
+    saveToLocalStorage('savedSets', currentSets);
+
+    return currentSets;
+};
+
+export const generateWikiString = (skills, setSkills, groupSkills) => {
+    const skillsWikiFormat = [];
+
+    for (const [key, value] of Object.entries(skills)) {
+        skillsWikiFormat.push(`${key} Lv${value}`);
+    }
+
+    for (const [key, value] of Object.entries(setSkills)) {
+        skillsWikiFormat.push(`${SET_SKILLS[key][0]} ${'I'.repeat(value)}`);
+    }
+
+    for (const key of Object.keys(groupSkills)) {
+        skillsWikiFormat.push(`${GROUP_SKILLS[key][0]}`);
+    }
+
+    return skillsWikiFormat.join("%2C");
 };
 
 export const getArmorFromNames = names => {
