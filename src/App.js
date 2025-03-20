@@ -1,48 +1,26 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import SkillsPicker from "./components/SkillsPicker";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import * as TEST from "./test/tests";
-import { runAllTests, search } from "./util/logic";
-import SKILLS from './data/compact/skills.json';
 import Search from "./components/Search";
 import CustomTabPanel from "./components/CustomTabPanel";
-import Results from "./components/Results";
-import { excludeArmor, pinArmor } from "./util/util";
 import SavedSets from "./components/SavedSets";
-
-const DEFAULT_DISPLAY_LIMIT = 500;
+import DecoInventory from "./components/DecoInventory";
+import Settings from "./components/Settings";
+import { getFromLocalStorage } from "./util/util";
 
 const App = () => {
-  const [skills, setSkills] = useState({});
-  const [setEffects, setSetEffects] = useState({});
-  const [groupSkills, setGroupSkills] = useState({});
-  const [decoInventory, setDecoInventory] = useState({});
-  const [mandatoryArmor, setMandatoryArmor] = useState(['', '', '', '', '', '']);
-  const [blacklistedArmor, setBlacklistedArmor] = useState([]);
-  const [blacklistedArmorTypes, setBlacklistedArmorTypes] = useState([]);
-
-  const [dontUseDecos, setDontUseDecos] = useState(false);
-  const [displayLimit, setDisplayLimit] = useState(DEFAULT_DISPLAY_LIMIT);
-  const [showDecoSkillNames, setShowDecoSkillNames] = useState(false);
-  const [showGroupSkillNames, setShowGroupSkillNames] = useState(false);
   const [tab, setTab] = useState(0);
+  const [hideSource, setHideSource] = useState(false);
+
+  const reSource = () => {
+    const loadedSource = getFromLocalStorage('hideSource') ?? hideSource;
+    setHideSource(loadedSource);
+  };
 
   useEffect(() => {
-
-  }, []);
-
-  const generate = () => {
-    const results = search(TEST.testMandatory);
-    console.log('results', results, results.length);
-  };
-
-  const addSkill = (skillName, level) => {
-    const tempSkills = { ...skills };
-    tempSkills[skillName] = level || SKILLS[skillName];
-    setSkills(tempSkills);
-  };
+    reSource();
+  }, [hideSource]);
 
   const tabProps = index => {
     return {
@@ -71,36 +49,22 @@ const App = () => {
     return <Tab key={name} label={name} {...tabProps(index)} />;
   };
 
-    // pins/unpins armor
-    const pin = (name, type) => {
-        const mm = pinArmor(name, type);
-        if (!mm) { return; }
-
-        setMandatoryArmor(mm.mandatoryArmor);
-        setBlacklistedArmor(mm.blacklistedArmor);
-        setBlacklistedArmorTypes(mm.blacklistedArmorTypes);
-    };
-
-    const exclude = name => {
-        const mm = excludeArmor(name);
-        if (!mm) { return; }
-        setBlacklistedArmor(mm.blacklistedArmor);
-        setMandatoryArmor(mm.mandatoryArmor);
-    };
-
   const source = "https://github.com/cecilbowen/mhwilds-set-search";
+  const github = <img src={`images/github.png`} style={{ width: '14px', height: '14px' }} />;
   return (
     <div className="App">
-      <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable">
+      <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable" allowScrollButtonsMobile>
         {Object.entries(tabs).map(([name, index]) => renderTab(name, index))}
-        <Tab label={"Source Code"} value="external" onClick={e => e.preventDefault()} />
+        {!hideSource && <Tab label={"Source Code"} icon={github} iconPosition="start"
+          sx={{ color: '#873777', minHeight: 'unset' }}
+          value="external" onClick={e => e.preventDefault()} />}
       </Tabs>
       <CustomTabPanel value={tab} index={0}><Search /></CustomTabPanel>
       <CustomTabPanel value={tab} index={1}>
         <SavedSets />
       </CustomTabPanel>
-      <CustomTabPanel value={tab} index={2}>Tab Three Content</CustomTabPanel>
-      <CustomTabPanel value={tab} index={3}>Tab Four Content</CustomTabPanel>
+      <CustomTabPanel value={tab} index={2}><DecoInventory /></CustomTabPanel>
+      <CustomTabPanel value={tab} index={3}><Settings onSourceChanged={reSource} /></CustomTabPanel>
     </div>
   );
 };

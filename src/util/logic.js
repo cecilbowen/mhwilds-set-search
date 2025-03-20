@@ -14,7 +14,7 @@ import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
 import { allTests } from "../test/tests";
 
 let totalPossibleCombinations = 0;
-const decoInventory = { ...DECO_INVENTORY };
+let decoInventory = { ...DECO_INVENTORY };
 
 const getBestArmor = (
     skills, setSkills = {}, groupSkills = {},
@@ -664,6 +664,8 @@ export const search = parameters => {
         params.dontUseDecos
     );
 
+    decoInventory = { ...DECO_INVENTORY };
+
     // limit decos to what user has specified they have
     for (const [decoName, decoAmount] of Object.entries(params.decoMods)) {
         if (Object.keys(decoInventory).includes(decoName)) {
@@ -689,7 +691,11 @@ export const search = parameters => {
 
 export const searchAndSpeed = async parameters => {
     const startTime = performance.now();
-    const results = search(parameters);
+    const results = await new Promise(resolve => {
+        setTimeout(() => {
+            resolve(search(parameters));
+        }, 0);
+    });
     const endTime = performance.now();
     const seconds = (endTime - startTime) / 1000;
 

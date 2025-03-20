@@ -1,24 +1,16 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import HEAD from "../data/detailed/armor/head.json";
-import CHEST from "../data/detailed/armor/chest.json";
-import ARMS from "../data/detailed/armor/arms.json";
-import WAIST from "../data/detailed/armor/waist.json";
-import LEGS from "../data/detailed/armor/legs.json";
-import TALISMANS from "../data/detailed/talisman.json";
-import DECORATIONS from "../data/compact/decoration.json";
 import {
     areArmorSetsEqual, armorNameFormat, formatGroupSkills, formatSetSkills,
     generateWikiString,
+    getArmorColorHue,
     getArmorDefenseFromName, getArmorDefenseFromNames, getArmorFromNames, getDecosFromNames,
     getFromLocalStorage, paginate, saveArmorSet, saveToLocalStorage
 } from '../util/util';
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -31,7 +23,7 @@ import { styled } from '@mui/material/styles';
 import TablePagination from '@mui/material/TablePagination';
 import TablePaginationActions from './TablePaginationActions';
 import Swap from '@mui/icons-material/Sync';
-import { Button, IconButton, TextField } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 import SKILLS from '../data/skills/skills.json';
 import { isEmpty } from '../util/tools';
 import Pin from '@mui/icons-material/PushPin';
@@ -40,6 +32,7 @@ import Exclude from '@mui/icons-material/Block';
 import Undo from '@mui/icons-material/Undo';
 import Edit from '@mui/icons-material/DriveFileRenameOutline';
 import Close from '@mui/icons-material/DisabledByDefault';
+import ArmorSvgWrapper from './ArmorSvgWrapper';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -76,7 +69,7 @@ const SwapIcon = styled(Swap)`
     transform: translateY(-2px) scale(1.2);
 `;
 
-const iconCommon = `
+export const iconCommon = `
     width: 24px;
     height: 24px;
     transform: translateY(-2px);
@@ -123,7 +116,7 @@ const CloseIcon = styled(Close)`
 const Results = ({
     results, skills, elapsedSeconds, showDecoSkills, mandatoryArmor,
     blacklistedArmor, blacklistedArmorTypes, pin, exclude,
-    onSaveSet, save
+    onSaveSet, save, showGroupSkills
 }) => {
     const [selectedResult, setSelectedResult] = useState();
     const [allArmor, setAllArmor] = useState([]);
@@ -143,10 +136,12 @@ const Results = ({
 
         const handleKeyDown = event => {
             if (event.ctrlKey) { setIsCtrlPressed(true); }
+            if (event.shiftKey) { setIsShiftPressed(true); }
         };
 
         const handleKeyUp = event => {
             if (!event.ctrlKey) { setIsCtrlPressed(false); }
+            if (!event.shiftKey) { setIsShiftPressed(false); }
         };
 
         window.addEventListener("keydown", handleKeyDown);
@@ -158,6 +153,7 @@ const Results = ({
         };
     }, []);
 
+    const [isShiftPressed, setIsShiftPressed] = useState(false);
     const [isCtrlPressed, setIsCtrlPressed] = useState(false);
     const [isMouseInside, setIsMouseInside] = useState(false);
 
@@ -217,11 +213,11 @@ const Results = ({
         setEditingName(false);
     };
 
-  const handleEditKeyDown = event => {
-    if (event.key === "Enter") {
-        event.target.blur();
-    }
-  };
+    const handleEditKeyDown = event => {
+        if (event.key === "Enter") {
+            event.target.blur();
+        }
+    };
 
     const renderDefense = result => {
         const defense = getArmorDefenseFromNames(result.armorNames);
@@ -257,7 +253,7 @@ const Results = ({
     const renderResult = result => {
         const highlighted = result.id === selectedResult?.id;
         const armorNames = result.armorNames;
-        const theName = savedSets.filter(x => x.id === result?.id)[0]?.name || "Unnamed Set";
+        const theName = savedSets?.filter(x => x.id === result?.id)[0]?.name || "Unnamed Set";
 
         return <StyledTableRow key={result.id}
             onClick={() => {
@@ -339,17 +335,21 @@ const Results = ({
                 const isMandatory = mandatoryArmor.includes(armor.name);
                 const isTypeBlacklisted = blacklistedArmorTypes.includes(armorTypeMap[i]);
                 const pinFunc = () => pin(armor.name, type);
+                const disabled = armor.name.toLowerCase() === "none";
                 const excludeFunc = () => exclude(armor.name);
+                const armorHue = getArmorColorHue(armor.rarity);
+                const style = disabled ? { color: 'gray', cursor: 'default', backgroundColor: 'transparent !important' } : {};
 
                 return <div className="armor-piece" key={type}>
-                    {isMandatory ? <UnpinIcon title="Un-pin" onClick={pinFunc} /> : <PinIcon title="Pin" onClick={pinFunc} />}
-                    {isBlacklisted ? <UndoExcludeIcon title="Undo Exclude"
-                        onClick={excludeFunc} /> : <ExcludeIcon title="Exclude" onClick={excludeFunc} />}
-                    <img className="armor-img2" src={`images/armor/${type}-${armor.rarity}.png`} />
+                    {isMandatory ? <UnpinIcon sx={style} title="Un-pin" onClick={pinFunc} /> :
+                        <PinIcon sx={style} title="Pin" onClick={pinFunc} />}
+                    {isBlacklisted ? <UndoExcludeIcon sx={style} title="Undo Exclude"
+                        onClick={excludeFunc} /> : <ExcludeIcon sx={style} title="Exclude" onClick={excludeFunc} />}
+                    <ArmorSvgWrapper type={type} rarity={armor.rarity} />
                     <span className="armor-name">{armor.name}</span>
                     {type !== "talisman" && <div className="def-holder">
                         <img className="armor-def-img" src={`images/defense-up.png`} />
-                        <div className="def-value">{defense.upgraded}</div>
+                        <div className="def-value">{defense?.upgraded || 0}</div>
                     </div>}
                     {renderArmorSlots(armor.slots)}
                     <span className="armor-skills">{armor.skills}</span>
@@ -363,9 +363,9 @@ const Results = ({
         const pageStr = save ? "Your saved sets will appear below." : "Add skills above and tap 'Search' to get armor sets.";
         const theName = (savedSets || []).filter(x => x.id === selectedResult?.id)[0]?.name;
 
-        // todo: edit accordion button class to cursor: default
         const mySetName = theName || "Unnamed Set";
-        const nameEl = save ? <Typography className="edit-name" onClick={() => setEditingName(true)}
+        const nameEl = save ? <Typography className="edit-name" sx={{ cursor: "pointer !important" }}
+            onClick={() => setEditingName(true)}
             title="Click to rename set">
             <EditIcon />{mySetName}</Typography> : null;
         const editNameEl = <TextField id="edit-name" label="Rename Set"
@@ -400,14 +400,14 @@ const Results = ({
             </div>;
 
             if (setExist) {
-                const setMagic = formatSetSkills(selectedResult.setSkills);
+                const setMagic = formatSetSkills(selectedResult.setSkills, showGroupSkills);
                 setEffects = <div className="set-skills">
                     <span className="set-label">Set Skills:</span>
                     <span className="set-names set-color">{setMagic}</span>
                 </div>;
             }
             if (groupExist) {
-                const groupMagic = formatGroupSkills(selectedResult.groupSkills);
+                const groupMagic = formatGroupSkills(selectedResult.groupSkills, showGroupSkills);
                 groupSkills = <div className="group-skills">
                     <span className="set-label">Group Skills:</span>
                     <span className="set-names group-color">{groupMagic}</span>
@@ -425,13 +425,21 @@ const Results = ({
         const queueUpSkills = () => {
             if (!selectedResult && !selectedResult.searchedSkills) { return; }
 
-            if (!isEmpty(selectedResult.searchedSkills)) {
-                saveToLocalStorage('skills', selectedResult.searchedSkills);
+            const mySkills = isShiftPressed ? selectedResult.searchedSkills : {
+                ...selectedResult.skills, ...selectedResult.setSkills, ...selectedResult.groupSkills
+            };
+
+            if (!isEmpty(mySkills)) {
+                // saveToLocalStorage('skills', selectedResult.searchedSkills);
+                saveToLocalStorage('skills', mySkills);
                 window.snackbar.createSnackbar(`Added skills to search tab`, {
                     timeout: 3000
                 });
             }
         };
+
+        const searchTargetTitle = isShiftPressed ? "Set only skills used to find this set as the search target" :
+            "Set all skills from this set as the search target";
 
         return <div style={{ marginBottom: '1em' }}
             onMouseEnter={() => setIsMouseInside(true)}
@@ -443,7 +451,7 @@ const Results = ({
                     expandIcon={null}
                     aria-controls="panel1-content"
                     id="panel1-header"
-                    sx={{ cursor: 'default', marginBottom: '1em' }}
+                    sx={{ cursor: 'default !important', marginBottom: '1em' }}
                 >
                     {editingName && editNameEl}
                     {!editingName && hasSelectedResult && nameEl}
@@ -462,10 +470,13 @@ const Results = ({
                     {isSaved ? "Remove From Saved Sets" : "Save Armor Set"}
                 </Button>
                 {save && <Button className="save-set-button" onClick={queueUpSkills}
+                    title={searchTargetTitle}
                     variant="outlined" color="info">
-                    Set as Search Target
+                    {isShiftPressed ? "Set as Search Target 🔍" : "Set as Search Target"}
                 </Button>}
-                {isCtrlPressed && isMouseInside && <Button className="save-set-button" onClick={wikiSearch}
+                {isCtrlPressed && isMouseInside && <Button className="save-set-button"
+                    title="Search for these skills on the wiki armor set search instead"
+                    onClick={wikiSearch}
                     variant="outlined" color="warning">
                     Search Wiki
                 </Button>}
@@ -482,13 +493,15 @@ const Results = ({
             { label: 'All', value: -1 }
         ];
 
+        const svgStyle = { width: '20px', height: '20px', transform: 'translateY(2px)', marginRight: '2px' };
+
         const armorImages = [
-            <img key="head" className="armor-img" src={`images/armor/head-1.png`} />,
-            <img key="chest" className="armor-img" src={`images/armor/chest-1.png`} />,
-            <img key="arms" className="armor-img" src={`images/armor/arms-1.png`} />,
-            <img key="legs" className="armor-img" src={`images/armor/legs-1.png`} />,
-            <img key="waist" className="armor-img" src={`images/armor/waist-1.png`} />,
-            <img key="talisman" className="armor-img" src={`images/armor/talisman-1.png`} />,
+            <ArmorSvgWrapper key="head" type="head" style={svgStyle} />,
+            <ArmorSvgWrapper key="chest" type="chest" style={svgStyle} />,
+            <ArmorSvgWrapper key="arms" type="arms" style={svgStyle} />,
+            <ArmorSvgWrapper key="waist" type="waist" style={svgStyle} />,
+            <ArmorSvgWrapper key="legs" type="legs" style={svgStyle} />,
+            <ArmorSvgWrapper key="talisman" type="talisman" style={svgStyle} />,
         ];
         const slotImg = <img className="armor-img" src={`images/slot4.png`} />;
         const defImg = <img className="def-icon" src={`images/defense.png`} />;
@@ -506,12 +519,12 @@ const Results = ({
                                 <div style={{ display: 'inline', marginLeft: '4px' }}>{customSlot}</div>
                                 {/* {<SwapIcon onClick={swapCustomSlot} />} */}
                             </StyledTableCell>
-                            <StyledTableCell align="left">{armorImages[0]} Head</StyledTableCell>
-                            <StyledTableCell align="left">{armorImages[1]} Chest</StyledTableCell>
-                            <StyledTableCell align="left">{armorImages[2]} Arms</StyledTableCell>
-                            <StyledTableCell align="left">{armorImages[3]} Legs</StyledTableCell>
-                            <StyledTableCell align="left">{armorImages[4]} Waist</StyledTableCell>
-                            <StyledTableCell align="left">{armorImages[5]} Talisman</StyledTableCell>
+                            <StyledTableCell align="left"><span className="fspan">{armorImages[0]} Head</span></StyledTableCell>
+                            <StyledTableCell align="left"><span className="fspan">{armorImages[1]} Chest</span></StyledTableCell>
+                            <StyledTableCell align="left"><span className="fspan">{armorImages[2]} Arms</span></StyledTableCell>
+                            <StyledTableCell align="left"><span className="fspan">{armorImages[3]} Waist</span></StyledTableCell>
+                            <StyledTableCell align="left"><span className="fspan">{armorImages[4]} Legs</span></StyledTableCell>
+                            <StyledTableCell align="left"><span className="fspan">{armorImages[5]} Talisman</span></StyledTableCell>
                         </StyledTableRow>
                     </TableHead>
                     <TableBody>
@@ -563,6 +576,7 @@ Results.propTypes = {
     skills: PropTypes.object.isRequired,
     elapsedSeconds: PropTypes.number,
     showDecoSkills: PropTypes.bool,
+    showGroupSkills: PropTypes.bool,
     mandatoryArmor: PropTypes.array,
     blacklistedArmor: PropTypes.array,
     blacklistedArmorTypes: PropTypes.array,

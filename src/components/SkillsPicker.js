@@ -4,7 +4,7 @@ import SKILLS from '../data/skills/skills.json';
 import SET_SKILLS from '../data/skills/set-skills.json';
 import GROUP_SKILLS from '../data/skills/group-skills.json';
 import TextField from '@mui/material/TextField';
-import { isGroupSkill, isSetSkill } from '../util/util';
+import { getFromLocalStorage, isGroupSkill, isSetSkill } from '../util/util';
 import Image from '@mui/icons-material/Image';
 import HideImage from '@mui/icons-material/HideImage';
 import Expand from '@mui/icons-material/Expand';
@@ -60,27 +60,27 @@ const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
                 maxLevel: x.levels?.length || 1,
                 icon: iconName
             };
-        }).sort((a, b) => a.name - b.name);
+        }).sort((a, b) => a.displayName - b.displayName);
     };
 
     useEffect(() => {
         const all = combinedSkills;
         setAllSkills(all);
-    }, []);
+    }, [showGroupSkillNames]);
 
     useEffect(() => {
         const all = combinedSkills();
 
         if (searchText) {
-            const foundSkills = all.filter(x => x.name.toLowerCase().includes(searchText.toLowerCase()));
-            const foundNames = new Set(foundSkills.map(x => x.name.toLowerCase()).sort());
+            const foundSkills = all.filter(x => x.displayName.toLowerCase().includes(searchText.toLowerCase()));
+            const foundNames = new Set(foundSkills.map(x => x.displayName.toLowerCase()).sort());
             setFoundSkillNames(Array.from(foundNames));
 
             all.sort((a, b) => {
-                const aFound = foundNames.has(a.name.toLowerCase()) ? -1 : 1;
-                const bFound = foundNames.has(b.name.toLowerCase()) ? -1 : 1;
+                const aFound = foundNames.has(a.displayName.toLowerCase()) ? -1 : 1;
+                const bFound = foundNames.has(b.displayName.toLowerCase()) ? -1 : 1;
 
-                return aFound - bFound || a.name.localeCompare(b.name);
+                return aFound - bFound || a.displayName.localeCompare(b.displayName);
             });
         }
 
@@ -97,8 +97,8 @@ const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
     };
 
     const renderSkill = skill => {
-        const highlighted = searchText ? foundSkillNames.includes(skill.name.toLowerCase()) : false;
-        const blurred = searchText ? !foundSkillNames.includes(skill.name.toLowerCase()) : false;
+        const highlighted = searchText ? foundSkillNames.includes(skill.displayName.toLowerCase()) : false;
+        const blurred = searchText ? !foundSkillNames.includes(skill.displayName.toLowerCase()) : false;
         const highlightClass = highlighted ? "highlighted" : "";
         const whichBlur = hideBlur ? "blurred-gone" : "blurred";
         const blurredClass = blurred ? whichBlur : "";
@@ -120,7 +120,7 @@ const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
     return <div className="skills-picker">
         <div style={{ display: "flex", gap: '8px' }}>
             <TextField id="skill-name-search" label="Search Skills" variant="outlined" size="small"
-                className="skills-search-textfield"
+                className="skills-search-textfield" autoFocus
                 onChange={ev => setSearchText(ev.target.value)} value={searchText} />
             {showIcons && <IconButton title="Hide Icons" onClick={() => setShowIcons(!showIcons)}><AntiImageIcon /></IconButton>}
             {!showIcons && <IconButton title="Show Icons" onClick={() => setShowIcons(!showIcons)}><ImageIcon /></IconButton>}

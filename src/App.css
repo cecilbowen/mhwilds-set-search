@@ -1,3 +1,17 @@
+:root {
+  --armor-color-1: #cec7ce;
+  --armor-color-2: #bdb7bd;
+  --armor-color-3: #8cae5a;
+  --armor-color-4: #5a9a6b;
+  --armor-color-5: #9cdef8;
+  --armor-color-6: #6764d7;
+  --armor-color-7: #6b006b;
+  --armor-color-8: #c6794a;
+  --armor-color-9: #bd414a;
+  --armor-color-10: #4fd1f5;
+  --armor-color-11: #ceaa52;
+  --armor-color-12: #d5edfa;
+}
 
 .chosen-skills {
   display: flex;
@@ -20,7 +34,8 @@
 }
 
 .skills-search-textfield {
-  width: 85%;
+  width: auto;
+  flex-grow: 1;
 }
 
 .skills-search {
@@ -315,4 +330,149 @@ tbody > tr {
 .edit-name:hover {
   background-color: lightgray;
   border-radius: 8px;
+}
+
+.fspan {
+  display: flex;
+}
+
+.svg-armor {
+  width: 28px;
+  height: 28px;
+  transform: translateY(-5px);
+}
+[class^="svg-armor-"] path {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.svg-armor-1 path { fill: var(--armor-color-1); }
+.svg-armor-2 path { fill: var(--armor-color-2); }
+.svg-armor-3 path { fill: var(--armor-color-3); }
+.svg-armor-4 path { fill: var(--armor-color-4); }
+.svg-armor-5 path { fill: var(--armor-color-5); }
+.svg-armor-6 path { fill: var(--armor-color-6); }
+.svg-armor-7 path { fill: var(--armor-color-7); }
+.svg-armor-8 path { fill: var(--armor-color-8); }
+.svg-armor-9 path { fill: var(--armor-color-9); }
+.svg-armor-10 path { fill: var(--armor-color-10); }
+.svg-armor-11 path { fill: var(--armor-color-11); }
+.svg-armor-12 path { fill: var(--armor-color-12); }
+
+.deco-inventory {
+
+}
+.deco-search {
+  width: auto;
+  flex-grow: 1;
+}
+.dbuttons {
+  min-height: 40px;
+}
+.filters-div {
+  display: flex;
+  margin-bottom: 1em;
+}
+.deco-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.deco-item {
+  display: flex;
+  align-items: center;
+}
+.deco-item-name {
+  font-weight: bold;
+}
+.deco-item-amount {
+  width: 15em;
+}
+.dhigh {
+  border-radius: 12px;
+}
+.dpad {
+  padding: 4px;
+}
+
+.dinput {
+  width: 30px;
+}
+.dmodded {
+  /* outline: 1px auto crimson; */
+  background-color: #e6adad;
+}
+.name-mod {
+  color: crimson;
+  text-decoration: underline;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.snackbar--container {
+  display: flex;
+  background-color: rgb(42, 42, 42);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.5);
+  color: #eee;
+  cursor: default;
+  margin-bottom: 10px;
+}
+.snackbar--text {
+  flex: 1 1 auto;
+  padding: 16px;
+  font-size: 100%;
+}
+
+.general-settings {
+  display: flex;
+}
+.armor-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.blacklist-rows {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 1em;
+  background-color: #e2e2e2 !important;
+}
+.pinlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pinned {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 5px 10px 4px 7px;
+  font-weight: bold;
+}
+.blacklist {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.blacklist-couple {
+  display: flex;
+}
+.blacklist-name {
+  font-weight: bold;
+}
+
+.loading-bar {
+  height: 14px !important;
+  border-radius: 4px;
 }

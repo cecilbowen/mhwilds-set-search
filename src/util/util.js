@@ -9,12 +9,17 @@ import LEGS from "../data/detailed/armor/legs.json";
 import TALISMANS from "../data/detailed/talisman.json";
 import DECORATIONS from '../data/compact/decoration.json';
 import DEFENSE_LEVELS from '../data/compact/defense-levels.json';
+import SKILLS_DB from '../data/skills/skills.json';
+import DECO_DB from '../data/detailed/decoration.json';
 
 import HEAD_MAP from '../data/compact/head.json';
 import CHEST_MAP from '../data/compact/chest.json';
 import ARMS_MAP from '../data/compact/arms.json';
 import WAIST_MAP from '../data/compact/waist.json';
 import LEGS_MAP from '../data/compact/legs.json';
+import TALIS_MAP from '../data/compact/talisman.json';
+
+import { renderToStaticMarkup } from 'react-dom/server';
 
 export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
@@ -43,10 +48,22 @@ export const allArmorMaps = () => {
 export const allArmor = () => {
     return [...HEAD, ...CHEST, ...ARMS, ...WAIST, ...LEGS];
 };
+const armorByType = type => {
+    const typeMap = {
+        head: HEAD_MAP,
+        chest: CHEST_MAP,
+        arms: ARMS_MAP,
+        waist: WAIST_MAP,
+        legs: LEGS_MAP,
+        talisman: TALIS_MAP
+    };
+
+    return typeMap[type];
+};
 
 export const getArmorDefenseFromName = name => {
     const data = allArmor().filter(x => x.name === name)[0];
-    if (!data) {
+    if (!data) { // happens if 'None' piece (excluded)
         // console.warn('getArmorDefenseFromName(): unable to find armor piece - ', name);
         return undefined;
     }
@@ -68,8 +85,8 @@ export const getArmorDefenseFromNames = theNames => {
     for (const name of names) {
         const data = allArmor().filter(x => x.name === name)[0];
         if (!data) {
-            console.warn('getArmorDefenseFromNames(): unable to find armor piece - ', name);
-            return 0;
+            // console.warn('getArmorDefenseFromNames(): unable to find armor piece - ', name);
+            continue;
         }
         baseArr.push(data.defense);
         const levels = DEFENSE_LEVELS[data.rarity] - 1;
@@ -103,12 +120,23 @@ export const getFromLocalStorage = key => {
     }
 };
 
+export const isArmorOfType = (type, name) => {
+    return armorByType(type)[name] !== undefined;
+};
+
+export const notImplented = text => {
+    window.snackbar.createSnackbar(
+        `${`'${text}'` || 'Feature'} not implemented yet`, { timeout: 3000 }
+    );
+};
+
 export const pinArmor = (name, type) => {
+    if (name.toLowerCase() === "none") { return undefined; }
     const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
     const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
     const pulledBlackType = getFromLocalStorage('blacklistedArmorTypes') || [];
 
-    let notifyStr = ["Pinned", "(required in every result)"];
+    let notifyStr = ["Pinned ", ""];
 
     const tempMandatory = [...pulledMandatory];
     let tempBlacklist = [...pulledBlack];
@@ -116,7 +144,7 @@ export const pinArmor = (name, type) => {
     const alreaddyPinnedIndex = tempMandatory.indexOf(name);
     if (alreaddyPinnedIndex !== -1) {
         tempMandatory[alreaddyPinnedIndex] = '';
-        notifyStr = ["Unpinned", ''];
+        notifyStr = ["Unpinned ", ''];
     } else {
         const typeIndex = getArmorTypeList().indexOf(type);
         tempMandatory[typeIndex] = name;
@@ -136,9 +164,13 @@ export const pinArmor = (name, type) => {
 
     saveToLocalStorage('mandatoryArmor', tempMandatory);
 
-    window.snackbar.createSnackbar(`${notifyStr[0]} ${name} ${notifyStr[1]}`, {
-        timeout: 3000
-    });
+    const bite = <span>{notifyStr[0]}<span style={{ color: 'skyblue' }}>{name}</span>{notifyStr[1]}</span>;
+    const message = document.createElement('div');
+    message.innerHTML = renderToStaticMarkup(bite);
+
+    window.snackbar.createSnackbar(
+        message, { timeout: 3000 }
+    );
 
     return {
         mandatoryArmor: tempMandatory,
@@ -148,16 +180,17 @@ export const pinArmor = (name, type) => {
 };
 
 export const excludeArmor = name => {
+    if (name.toLowerCase() === "none") { return undefined; }
     const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
     const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
 
-    let notifyStr = ["Added", "to"];
+    let notifyStr = ["Added ", " to "];
 
     let tempBlacklist = [...pulledBlack];
     let tempMandatory = [...pulledMandatory];
     if (tempBlacklist.includes(name)) {
         tempBlacklist = tempBlacklist.filter(x => x !== name);
-        notifyStr = ["Removed", 'from'];
+        notifyStr = ["Removed ", ' from '];
     } else {
         tempBlacklist.push(name);
 
@@ -171,13 +204,29 @@ export const excludeArmor = name => {
 
     saveToLocalStorage('blacklistedArmor', tempBlacklist);
 
-    window.snackbar.createSnackbar(`${notifyStr[0]} ${name} ${notifyStr[1]} the blacklist.`, {
-        timeout: 3000
-    });
+    const bite = <span>{notifyStr[0]}<span style={{ color: 'crimson' }}>{name}</span>{`${notifyStr[1]} the blacklist`}</span>;
+    const message = document.createElement('div');
+    message.innerHTML = renderToStaticMarkup(bite);
+
+    window.snackbar.createSnackbar(message, { timeout: 3000 });
 
     return {
         mandatoryArmor: tempMandatory,
         blacklistedArmor: tempBlacklist,
+    };
+};
+
+export const getDecoFromName = (name, showSkillNames = false) => {
+    const data = DECORATIONS[name];
+    const detailed = DECO_DB.filter(x => x.name === name)[0];
+    const decoSkillNames = `${Object.entries(data[1]).map(x => [`${x[0]} Lv. ${x[1]}`]).join("/")} Jewel`;
+    return {
+        skillNames: Object.entries(data[1]).map(x => x[0]),
+        skills: Object.entries(data[1]).map(x => [`${x[0]} Lv. ${x[1]}`]).join(", "),
+        name: showSkillNames ? decoSkillNames : name,
+        slotSize: data[2],
+        altText: showSkillNames ? name : decoSkillNames,
+        max: getMaxDecoCount(detailed)
     };
 };
 
@@ -206,6 +255,34 @@ export const getDecosFromNames = (names, showSkillNames = false) => {
     return objDecos;
 };
 
+export const getMaxDecoCount = deco => {
+    const maxWeaponSlots = deco.type === "weapon" ? 3 : 99;
+    const skill1 = deco.skills[0];
+    const skill2 = deco.skills[1];
+
+    const s1 = SKILLS_DB.filter(x => x.name.toLowerCase() === skill1.name.toLowerCase())[0];
+
+    if (!s1) {
+        console.warn("Failed to getMaxDecoCount()", deco);
+        return 99;
+    }
+
+    const max1 = Math.ceil(s1.levels.length / skill1.level);
+    let max2 = 3;
+
+    if (skill2) {
+        const s2 = SKILLS_DB.filter(x => x.name.toLowerCase() === skill2.name.toLowerCase())[0];
+        max2 = Math.ceil(s2.levels.length / skill2.level);
+    }
+
+    return Math.min(max1, maxWeaponSlots);
+};
+
+export const getDecoDisplayName = (decoName, showSkills = false) => {
+    if (!showSkills) { return decoName; }
+    return `${Object.entries(DECORATIONS[decoName][1]).map(x => [`${x[0]} Lv. ${x[1]}`]).join("/")} Jewel`;
+};
+
 export const areArmorSetsEqual = (a, b) => {
     if (a === b) { return true; }
     if (a === null || b === null) { return false; }
@@ -232,6 +309,40 @@ export const saveArmorSet = result => {
     saveToLocalStorage('savedSets', currentSets);
 
     return currentSets;
+};
+
+export const getArmorColorHue = rarity => {
+    const rarityToColor = {
+        1: "White",
+        2: "White",
+        3: "Light Green",
+        4: "Green",
+        5: "Light Blue",
+        6: "Indigo",
+        7: "Dark Purple",
+        8: "Orange",
+        9: "Red",
+        10: "Sky Blue",
+        11: "Yellow",
+        12: "Light Grey"
+    };
+
+    const colorToDeg = {
+        "White": 30,
+        "Dark Grey": 160,
+        "Light Green": 260,
+        "Green": 245,
+        "Light Blue": 30,
+        "Indigo": 330,
+        "Dark Purple": 330,
+        "Orange": 200,
+        "Red": 160,
+        "Sky Blue": 30,
+        "Yellow": 200,
+        "Light Grey": 30
+    };
+
+    return `hue-rotate(${colorToDeg[rarityToColor[rarity]]}deg)`;
 };
 
 export const generateWikiString = (skills, setSkills, groupSkills) => {
@@ -280,11 +391,11 @@ export const getArmorFromNames = names => {
 };
 
 export const formatSetSkills = (setSkills, showSkillNames = false) => {
-    return Object.entries(setSkills).map(x => `${showSkillNames ? SET_SKILLS[x[0]] : x[0]} Lv. ${x[1]}`).join(", ");
+    return Object.entries(setSkills).map(x => `${showSkillNames ? SET_SKILLS[x[0]][0] : x[0]} Lv. ${x[1]}`).join(", ");
 };
 
 export const formatGroupSkills = (groupSkills, showSkillNames = false) => {
-    return Object.entries(groupSkills).map(x => `${showSkillNames ? GROUP_SKILLS[x[0]] : x[0]} Lv. ${x[1]}`).join(", ");
+    return Object.entries(groupSkills).map(x => `${showSkillNames ? GROUP_SKILLS[x[0]][0] : x[0]} Lv. ${x[1]}`).join(", ");
 };
 
 export const hexToRgba = hex => {

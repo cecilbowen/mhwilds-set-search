@@ -1,32 +1,32 @@
 import { useState, useEffect } from "react";
 import Results from "./Results";
-import { getFromLocalStorage, excludeArmor, pinArmor, saveArmorSet } from "../util/util";
-
-const DEFAULT_DISPLAY_LIMIT = 500;
+import { getFromLocalStorage, excludeArmor, pinArmor } from "../util/util";
 
 const SavedSets = () => {
-    const [skills, setSkills] = useState({});
-    const [setEffects, setSetEffects] = useState({});
-    const [groupSkills, setGroupSkills] = useState({});
-    const [decoInventory, setDecoInventory] = useState({});
     const [mandatoryArmor, setMandatoryArmor] = useState(['', '', '', '', '', '']);
     const [blacklistedArmor, setBlacklistedArmor] = useState([]);
     const [blacklistedArmorTypes, setBlacklistedArmorTypes] = useState([]);
-
-    const [dontUseDecos, setDontUseDecos] = useState(false);
-    const [displayLimit, setDisplayLimit] = useState(DEFAULT_DISPLAY_LIMIT);
     const [showDecoSkillNames, setShowDecoSkillNames] = useState(false);
     const [showGroupSkillNames, setShowGroupSkillNames] = useState(false);
-    const [tab, setTab] = useState(0);
-
     const [savedSets, setSavedSets] = useState([]);
 
     useEffect(() => {
-        // chicken
         const tempSets = getFromLocalStorage('savedSets');
         if (tempSets) {
             setSavedSets(tempSets);
         }
+
+        const loadedMandatory = getFromLocalStorage('mandatoryArmor') || mandatoryArmor;
+        const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showDecoSkillNames;
+        const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') ?? showGroupSkillNames;
+        const loadedBlacklist = getFromLocalStorage('blacklistedArmor') || blacklistedArmor;
+        const loadedBlacklistTypes = getFromLocalStorage('blacklistedArmorTypes') || blacklistedArmorTypes;
+
+        setMandatoryArmor(loadedMandatory);
+        setBlacklistedArmor(loadedBlacklist);
+        setBlacklistedArmorTypes(loadedBlacklistTypes);
+        setShowDecoSkillNames(loadedShowDeco);
+        setShowGroupSkillNames(loadedShowGroup);
     }, []);
 
     // pins/unpins armor
@@ -56,7 +56,7 @@ const SavedSets = () => {
 
     return (
         <div className="saved-sets">
-            <Results results={savedSets} showDecoSkills={showDecoSkillNames}
+            <Results results={savedSets} showDecoSkills={showDecoSkillNames} showGroupSkills={showGroupSkillNames}
                 pin={pin} exclude={exclude} save
                 mandatoryArmor={mandatoryArmor} blacklistedArmor={blacklistedArmor}
                 savedSets={savedSets}

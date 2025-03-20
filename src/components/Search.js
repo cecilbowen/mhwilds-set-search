@@ -8,7 +8,7 @@ import SKILLS_DB from '../data/skills/skills.json';
 import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 import { excludeArmor, generateStyle, getArmorTypeList,
-    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage } from "../util/util";
+    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, notImplented, pinArmor, saveToLocalStorage } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
 import ArrowRight from '@mui/icons-material/ArrowForwardIos';
 import ArrowLeft from '@mui/icons-material/ArrowBackIos';
@@ -17,8 +17,6 @@ import styled from "styled-components";
 import { getSearchParameters, isEmpty } from "../util/tools";
 import { Button } from "@mui/material";
 import Results from "./Results";
-
-const DEFAULT_DISPLAY_LIMIT = 500;
 
 const ArrowL = styled(ArrowLeft)`
     width: 16px !important;
@@ -39,15 +37,12 @@ const Search = () => {
     const [skills, setSkills] = useState({});
     const [searchedSkills, setSearchedSkills] = useState({});
     const [lastParams, setLastParams] = useState(); // parameters used to get the most recent search results
-    const [setEffects, setSetEffects] = useState({});
-    const [groupSkills, setGroupSkills] = useState({});
     const [decoInventory, setDecoInventory] = useState({});
     const [mandatoryArmor, setMandatoryArmor] = useState(['', '', '', '', '', '']);
     const [blacklistedArmor, setBlacklistedArmor] = useState([]);
     const [blacklistedArmorTypes, setBlacklistedArmorTypes] = useState([]);
 
     const [dontUseDecos, setDontUseDecos] = useState(false);
-    const [displayLimit, setDisplayLimit] = useState(DEFAULT_DISPLAY_LIMIT);
     const [showDecoSkillNames, setShowDecoSkillNames] = useState(false);
     const [showGroupSkillNames, setShowGroupSkillNames] = useState(false);
 
@@ -65,8 +60,8 @@ const Search = () => {
         const loadedBlacklist = getFromLocalStorage('blacklistedArmor') || blacklistedArmor;
         const loadedBlacklistTypes = getFromLocalStorage('blacklistedArmorTypes') || blacklistedArmorTypes;
         const loadedDontUseDecos = getFromLocalStorage('dontUseDecos') || dontUseDecos;
-        const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') || showDecoSkillNames;
-        const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') || showGroupSkillNames;
+        const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showDecoSkillNames;
+        const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') ?? showGroupSkillNames;
 
         setLastParams(loadedParams);
         setSkills(loadedSkills);
@@ -83,7 +78,6 @@ const Search = () => {
     useEffect(() => {
         if (results) {
             setIsGenerating(false);
-            console.log("results", results);
         }
     }, [results]);
 
@@ -127,13 +121,14 @@ const Search = () => {
             groupSkills: justGroupSkills,
             blacklistedArmor,
             blacklistedArmorTypes,
-            mandatoryArmor
+            mandatoryArmor,
+            decoMods: decoInventory
         });
-        console.log("PARAMS", params);
         setSearchedSkills(skills);
         setLastParams(params);
         local('lastParams', params);
         local('searchedSkills', skills);
+        // console.log('params', params);
         const cache = searchAndSpeed(params);
         cache.then(ret => {
             setElapsedSeconds(ret.seconds);
@@ -252,10 +247,10 @@ const Search = () => {
                 chosenSkillNames={Object.keys(skills)} />
             <div className="button-holder">
                 <Button variant="contained" onClick={() => getResults()}>Search</Button>
-                <Button variant="outlined">More Skills</Button>
+                <Button variant="outlined" onClick={() => notImplented("More Skills")}>More Skills</Button>
             </div>
-            {isGenerating && <LoadingBar />}
-            <Results results={results} showDecoSkills={showDecoSkillNames}
+            {isGenerating && <LoadingBar className="loading-bar" />}
+            <Results results={results} showDecoSkills={showDecoSkillNames} showGroupSkills={showGroupSkillNames}
                 pin={pin} exclude={exclude}
                 mandatoryArmor={mandatoryArmor} blacklistedArmor={blacklistedArmor}
                 blacklistedArmorTypes={blacklistedArmorTypes}
