@@ -4,7 +4,6 @@ more skills feature beyond just finding decos and that isn't slow as molasses
 make 100% certain results are sorted so that best slots are at top 
 see whats up with test_more not including the [3, 2, 1] result
     probably just a case of broadening the limits of my mod_point_map bs in get_best_armor
-add free slot search options (sets with 3 level 2 slots, 10 level 1 slots, etc)
 languages translation system, similar to what i have in pokemon sandwich simulator 
 share url
 dark mode
@@ -12,7 +11,7 @@ get python back on parity with js (low priority)
 on deco inventory page, make red "you've got less of this deco than normal" highlight dynamic as you
     edit the input fields, not only on blur 
 persist hide icons and minimize skill box options
-
+add color option to settings for stuff like skill and slot gradients on search page
 
 
 maybes: 

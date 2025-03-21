@@ -345,7 +345,7 @@ export const getArmorColorHue = rarity => {
     return `hue-rotate(${colorToDeg[rarityToColor[rarity]]}deg)`;
 };
 
-export const generateWikiString = (skills, setSkills, groupSkills) => {
+export const generateWikiString = (skills, setSkills, groupSkills, slotFilters = {}) => {
     const skillsWikiFormat = [];
 
     for (const [key, value] of Object.entries(skills)) {
@@ -358,6 +358,11 @@ export const generateWikiString = (skills, setSkills, groupSkills) => {
 
     for (const key of Object.keys(groupSkills)) {
         skillsWikiFormat.push(`${GROUP_SKILLS[key][0]}`);
+    }
+
+    for (const [slotSize, amount] of Object.entries(slotFilters)) {
+        const truncatedAmount = Math.min(amount, 7); // wiki tool only allows up to 7
+        skillsWikiFormat.push(`LV${slotSize} Slot Skill Lv${truncatedAmount}`);
     }
 
     return skillsWikiFormat.join("%2C");

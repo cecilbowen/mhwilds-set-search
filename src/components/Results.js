@@ -114,7 +114,7 @@ const CloseIcon = styled(Close)`
 `;
 
 const Results = ({
-    results, skills, elapsedSeconds, showDecoSkills, mandatoryArmor,
+    results, skills, slotFilters, elapsedSeconds, showDecoSkills, mandatoryArmor,
     blacklistedArmor, blacklistedArmorTypes, pin, exclude,
     onSaveSet, save, showGroupSkills
 }) => {
@@ -288,7 +288,10 @@ const Results = ({
 
     const wikiSearch = () => {
         if (!selectedResult) { return; }
-        const wiki = generateWikiString(selectedResult.skills, selectedResult.setSkills, selectedResult.groupSkills);
+        const wiki = generateWikiString(
+            selectedResult.skills, selectedResult.setSkills, selectedResult.groupSkills,
+            slotFilters
+        );
 
         // god the wiki site is so shit without an adblock
         window.open(`https://mhwilds.wiki-db.com/sim/#skills=${wiki}&fee=1`, "_blank");
@@ -561,11 +564,20 @@ const Results = ({
     const skillsList = Object.entries(skills || {}).map(([k, v]) => [`${k} Lv. ${v}`]).join(", ");
     const displayStr = `Results for ${skillsList} (${results.length.toLocaleString('en', { useGrouping: true })}` +
         ` hits in ${elapsedSeconds.toFixed(2)} seconds):`;
+    const displayStrEmpty = `No skills specified.  ` +
+        `Showing best slotted armor combos (${results.length.toLocaleString('en', { useGrouping: true })}` +
+        ` hits in ${elapsedSeconds.toFixed(2)} seconds):`;
+    const someArmorBlacklisted = blacklistedArmor.length > 0;
+    const someArmorMandatory = mandatoryArmor.filter(x => x).length > 0;
+    const someTypesBlacklisted = blacklistedArmorTypes.length > 0;
+    const shouldNotify = someArmorBlacklisted || someArmorMandatory || someTypesBlacklisted;
 
     return <div className="results">
         {renderSelectedResult()}
         {elapsedSeconds > 0 && <div style={{ marginBottom: '0.5em' }}>
-            {skillsList && displayStr}
+            {shouldNotify && <span className="warn">Some armor is pinned/blacklisted - </span>}
+            {!isEmpty(slotFilters) && <span className="notice">Deco filters active - </span>}
+            {skillsList ? displayStr : displayStrEmpty}
         </div>}
         {renderTable()}
     </div>;
@@ -574,6 +586,7 @@ const Results = ({
 Results.propTypes = {
     results: PropTypes.array.isRequired,
     skills: PropTypes.object.isRequired,
+    slotFilters: PropTypes.object, // really only used for wikiSearch here
     elapsedSeconds: PropTypes.number,
     showDecoSkills: PropTypes.bool,
     showGroupSkills: PropTypes.bool,

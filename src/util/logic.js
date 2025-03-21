@@ -679,6 +679,30 @@ export const search = parameters => {
         params.findOne
     );
 
+    // lazily handle slotFilters filtering here
+    if (!isEmpty(params.slotFilters)) {
+        const desiredSlots = Object.entries(params.slotFilters)
+          .flatMap(([num, count]) => Array(count).fill(Number(num)))
+          .sort((a, b) => b - a);
+        const filteredRolls = [];
+        for (const roll of rolls) {
+            const rollFree = roll.freeSlots.sort((a, b) => b - a);
+            if (rollFree.length < desiredSlots.length) { continue; } // not enough slots
+            let pass = false;
+            for (let i = 0; i < desiredSlots.length; i++) {
+                const wantSlot = desiredSlots[i];
+                const haveSlot = rollFree[i];
+                if (wantSlot > haveSlot) {
+                    pass = true;
+                    break;
+                }
+            }
+            if (pass) { continue; }
+            filteredRolls.push(roll);
+        }
+        rolls = filteredRolls;
+    }
+
     rolls = reorder(rolls);
     // searchResults = rolls;
     if (params.verifySlots && !params.findOne) {

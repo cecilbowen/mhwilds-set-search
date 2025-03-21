@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5em;
-  gap: 2px 4px;
+  gap: 3px 4px;
 }
 
 .skill-level-edit {
@@ -289,6 +289,7 @@ tbody > tr {
   font-weight: bold;
   padding-left: 1em;
   padding-right: 1em;
+  min-height: 22px;
 }
 
 .save-set-button {
@@ -475,4 +476,28 @@ input[type=number] {
 .loading-bar {
   height: 14px !important;
   border-radius: 4px;
+}
+
+.chosen-slot-filters {
+  display: flex;
+  gap: 4px;
+}
+.slots-filter {
+  display: flex;
+  gap: 4px;
+}
+.slot-filter {
+  border-radius: 6px;
+}
+
+.notice {
+  color: #0b5bab;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.warn {
+  font-weight: bold;
+  color: #a772a7;
+  font-style: italic;
 }

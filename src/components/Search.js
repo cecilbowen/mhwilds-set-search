@@ -7,8 +7,10 @@ import SET_SKILLS from '../data/compact/set-skills.json';
 import SKILLS_DB from '../data/skills/skills.json';
 import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
-import { excludeArmor, generateStyle, getArmorTypeList,
-    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, notImplented, pinArmor, saveToLocalStorage } from "../util/util";
+import {
+    excludeArmor, generateStyle,
+    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, notImplented, pinArmor, saveToLocalStorage
+} from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
 import ArrowRight from '@mui/icons-material/ArrowForwardIos';
 import ArrowLeft from '@mui/icons-material/ArrowBackIos';
@@ -49,11 +51,14 @@ const Search = () => {
     const [results, setResults] = useState([]);
     const [elapsedSeconds, setElapsedSeconds] = useState(-1);
 
+    const [slotFilters, setSlotFilters] = useState({});
+
     const [isGenerating, setIsGenerating] = useState(false);
 
     useEffect(() => {
         const loadedParams = getFromLocalStorage('lastParams') || lastParams;
         const loadedSkills = getFromLocalStorage('skills') || skills;
+        const loadedSlotFilters = getFromLocalStorage('slotFilters') || slotFilters;
         const loadedSearchedSkills = getFromLocalStorage('searchedSkills') || searchedSkills;
         const loadedDecoInventory = getFromLocalStorage('decoInventory') || decoInventory;
         const loadedMandatory = getFromLocalStorage('mandatoryArmor') || mandatoryArmor;
@@ -65,6 +70,7 @@ const Search = () => {
 
         setLastParams(loadedParams);
         setSkills(loadedSkills);
+        setSlotFilters(loadedSlotFilters);
         setSearchedSkills(loadedSearchedSkills);
         setDecoInventory(loadedDecoInventory);
         setMandatoryArmor(loadedMandatory);
@@ -108,17 +114,12 @@ const Search = () => {
             Object.entries(skills).filter(x => GROUP_SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
 
-        const cancel = isEmpty(justSkills) && isEmpty(justSetSkills) && isEmpty(justGroupSkills);
-        if (cancel) {
-            console.warn("Tried to get results with no skills");
-            return;
-        }
-
         setIsGenerating(true);
         const params = getSearchParameters({
             skills: justSkills,
             setSkills: justSetSkills,
             groupSkills: justGroupSkills,
+            slotFilters: slotFilters,
             blacklistedArmor,
             blacklistedArmorTypes,
             mandatoryArmor,
@@ -143,11 +144,25 @@ const Search = () => {
         local('skills', tempSkills);
     };
 
+    const addSlotFilter = slot => {
+        const tempSlotFilters = { ...slotFilters };
+        tempSlotFilters[slot] = 1;
+        setSlotFilters(tempSlotFilters);
+        local('slotFilters', tempSlotFilters);
+    };
+
     const removeSkill = skillName => {
         const tempSkills = { ...skills };
         delete tempSkills[skillName];
         setSkills(tempSkills);
         local('skills', tempSkills);
+    };
+
+    const removeSlot = slotSize => {
+        const tempSlots = { ...slotFilters };
+        delete tempSlots[slotSize];
+        setSlotFilters(tempSlots);
+        local('slotFilters', tempSlots);
     };
 
     const levelMod = (name, amount, maxLevel) => {
@@ -160,6 +175,19 @@ const Search = () => {
 
         setSkills(tSkills);
         local('skills', tSkills);
+    };
+
+    const slotLevelMod = (size, amount) => {
+        const maxAmountOfSlots = 18; // 3 per armor piece (not that we currently have armor that can reach this)
+        const tSlots = { ...slotFilters };
+        const currentLevel = tSlots[size] || 0;
+        tSlots[size] = currentLevel + amount;
+        if (tSlots[size] > maxAmountOfSlots || tSlots[size] === 0) {
+            return;
+        }
+
+        setSlotFilters(tSlots);
+        local('slotFilters', tSlots);
     };
 
     // pins/unpins armor
@@ -210,9 +238,9 @@ const Search = () => {
 
         const bubbleDiv = <div className="skill-level-edit">
             {nameDiv}
-            <ArrowL onClick={() => levelMod(skillName, -1, maxLevel)} style={ getArrowStyle(level > 1) } />
+            <ArrowL onClick={() => levelMod(skillName, -1, maxLevel)} style={getArrowStyle(level > 1)} />
             {<div style={{ fontSize: '16px', marginLeft: '-3px' }}>{level}</div>}
-            <ArrowR onClick={() => levelMod(skillName, 1, maxLevel)} style={ getArrowStyle(level < maxLevel) } />
+            <ArrowR onClick={() => levelMod(skillName, 1, maxLevel)} style={getArrowStyle(level < maxLevel)} />
             <DeleteIcon className="delete-icon" title="Remove skill" onClick={() => removeSkill(skillName)} />
         </div>;
 
@@ -224,13 +252,41 @@ const Search = () => {
         </div>;
     };
 
+    const renderSlotFilters = () => {
+        const gradientStyle = generateStyle("#c5abc5");
+
+        return <div className="chosen-slot-filters">
+            {Object.entries(slotFilters).map(x => {
+                const slotSize = x[0];
+                const amount = x[1];
+
+                return <div className={`skills-search-bubble slot-filter`} style={gradientStyle} key={slotSize}
+                    title={`Specify how many ${slotSize} slot decos you want to be able to fit into the free slots`}>
+                    <img className="skills-search-bubble-icon" src={`images/slot${slotSize}.png`} alt={slotSize} />
+                    <div className="skill-level-edit">
+                        <div className={`skills-search-bubble-text`}>
+                            {`${slotSize} Slot Deco Filter`}
+                        </div>
+                        <ArrowL onClick={() => slotLevelMod(slotSize, -1)} style={getArrowStyle(amount > 1)} />
+                        {<div style={{ fontSize: '16px', marginLeft: '-3px' }}>{amount}</div>}
+                        <ArrowR onClick={() => slotLevelMod(slotSize, 1)} style={getArrowStyle(amount < 18)} />
+                        <DeleteIcon className="delete-icon" title="Remove skill" onClick={() => removeSlot(slotSize)} />
+                    </div>
+                </div>;
+            })}
+        </div>;
+    };
+
     const renderChosenSkills = () => {
         const gradientStyle = generateStyle("#d14848");
         return <div className="chosen-skills">
+            {!isEmpty(slotFilters) && renderSlotFilters()}
             {Object.entries(skills).map(x => renderChosenSkill(x[0], x[1]))}
-            {!isEmpty(skills) && <div className="skills-search-bubble clear-all" onClick={() => {
+            {(!isEmpty(skills) || !isEmpty(slotFilters)) && <div className="skills-search-bubble clear-all" onClick={() => {
                 setSkills({});
+                setSlotFilters({});
                 local('skills', {});
+                local('slotFilters', {});
             }}
                 style={gradientStyle}
                 title="Clear all chosen skills">
@@ -242,7 +298,7 @@ const Search = () => {
     return (
         <div className="search">
             {renderChosenSkills()}
-            <SkillsPicker addSkill={addSkill}
+            <SkillsPicker addSkill={addSkill} addSlotFilter={addSlotFilter}
                 showGroupSkillNames={showGroupSkillNames}
                 chosenSkillNames={Object.keys(skills)} />
             <div className="button-holder">
@@ -251,7 +307,7 @@ const Search = () => {
             </div>
             {isGenerating && <LoadingBar className="loading-bar" />}
             <Results results={results} showDecoSkills={showDecoSkillNames} showGroupSkills={showGroupSkillNames}
-                pin={pin} exclude={exclude}
+                pin={pin} exclude={exclude} slotFilters={slotFilters}
                 mandatoryArmor={mandatoryArmor} blacklistedArmor={blacklistedArmor}
                 blacklistedArmorTypes={blacklistedArmorTypes}
                 skills={searchedSkills} elapsedSeconds={elapsedSeconds} />

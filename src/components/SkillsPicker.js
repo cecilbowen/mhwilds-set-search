@@ -29,7 +29,7 @@ const MinimizeIcon = styled(Minimize)`
     color: black;
 `;
 
-const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
+const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkillNames }) => {
     const [searchText, setSearchText] = useState('');
     const [foundSkillNames, setFoundSkillNames] = useState([]);
     const [allSkills, setAllSkills] = useState([]);
@@ -131,11 +131,32 @@ const SkillsPicker = ({ addSkill, showGroupSkillNames, chosenSkillNames }) => {
 
         <div id="skills-search" className={expanded ? "skills-search" : "skills-search-mini"}>
             {renderSkills(allSkills)}
+            <div className="slots-filter">
+                {[1, 2, 3].map(x => {
+                    const highlighted = searchText && `${x} slot deco filter`.includes(searchText.toLowerCase());
+                    const highlightClass = highlighted ? "highlighted" : "";
+                    const blurred = searchText && !highlighted;
+                    const whichBlur = hideBlur ? "blurred-gone" : "blurred";
+                    const blurredClass = blurred ? whichBlur : "";
+
+                    return <div key={`slot-filter-${x}`}
+                        className={`skills-search-bubble underline ${highlightClass} ${blurredClass} slot-filter`}
+                        title={`Specify how many ${x} slot decos you want to be able to fit into the free slots`}
+                        onClick={() => addSlotFilter(x)}>
+                        {showIcons && <img
+                            className="skills-search-bubble-icon" src={`images/slot${x}.png`} alt={x} />}
+                        <div className={`skills-search-bubble-text`}>
+                            {`${x} Slot Deco Filter`}
+                        </div>
+                    </div>;
+                })}
+            </div>
         </div>
     </div>;
 };
 SkillsPicker.propTypes = {
     addSkill: PropTypes.func.isRequired,
+    addSlotFilter: PropTypes.func.isRequired,
     showGroupSkillNames: PropTypes.bool,
     chosenSkillNames: PropTypes.array,
 };

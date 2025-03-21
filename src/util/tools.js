@@ -12,6 +12,7 @@ export const getSearchParameters = parameters => {
         skills: parameters.skills || {},
         setSkills: parameters.setSkills || {},
         groupSkills: parameters.groupSkills || {},
+        slotFilters: parameters.slotFilters || {}, // specify only armor that has x amount of y size free slots
         decoMods: parameters.decoMods || {}, // specify if you have limited number of a deco
         mandatoryArmor: parameters.mandatoryArmor || ['', '', '', '', '', ''], // must use these named armor pieces (per slot)
         blacklistedArmor: parameters.blacklistedArmor || [], // don't use these named armor pieces
