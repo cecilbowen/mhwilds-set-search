@@ -116,7 +116,7 @@ const CloseIcon = styled(Close)`
 const Results = ({
     results, skills, slotFilters, elapsedSeconds, showDecoSkills, mandatoryArmor,
     blacklistedArmor, blacklistedArmorTypes, pin, exclude,
-    onSaveSet, save, showGroupSkills
+    onSaveSet, save, showGroupSkills, setShowDecos
 }) => {
     const [selectedResult, setSelectedResult] = useState();
     const [allArmor, setAllArmor] = useState([]);
@@ -306,8 +306,10 @@ const Results = ({
             {decos.map(deco => {
                 const skillIcons = deco.skillNames.map(x => SKILLS.filter(y => y.name === x)[0].icon);
                 const singleIcon = skillIcons[0]; // todo: change this should armor decos ever have more than 1 skill each
+                const canFlip = setShowDecos !== undefined;
 
-                return <div key={deco.key} className="deco" title={deco.altText}>
+                return <div key={deco.key} className="deco" style={canFlip ? { cursor: 'help' } : {}}
+                    title={deco.altText} onClick={canFlip ? () => setShowDecos(!showDecoSkills) : {}}>
                     <img className="deco-img" src={`images/slot${deco.slotSize}.png`} />
                     <div>
                         <span className="deco-name">{deco.name}</span>
@@ -433,7 +435,6 @@ const Results = ({
             };
 
             if (!isEmpty(mySkills)) {
-                // saveToLocalStorage('skills', selectedResult.searchedSkills);
                 saveToLocalStorage('skills', mySkills);
                 window.snackbar.createSnackbar(`Added skills to search tab`, {
                     timeout: 3000
@@ -593,6 +594,7 @@ Results.propTypes = {
     mandatoryArmor: PropTypes.array,
     blacklistedArmor: PropTypes.array,
     blacklistedArmorTypes: PropTypes.array,
+    setShowDecos: PropTypes.func,
     pin: PropTypes.func,
     exclude: PropTypes.func,
     onSaveSet: PropTypes.func,

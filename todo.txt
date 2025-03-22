@@ -1,12 +1,12 @@
 todo:
 --------------
-more skills feature beyond just finding decos and that isn't slow as molasses
+use different algorithm for more skills that isn't slow as molasses (probably depth-first search)
 make 100% certain results are sorted so that best slots are at top 
 see whats up with test_more not including the [3, 2, 1] result
     probably just a case of broadening the limits of my mod_point_map bs in get_best_armor
+dark mode
 languages translation system, similar to what i have in pokemon sandwich simulator 
 share url
-dark mode
 make slot filters jump to front when text searching them in the skill picker
 on deco inventory page, make red "you've got less of this deco than normal" highlight dynamic as you
     edit the input fields, not only on blur 

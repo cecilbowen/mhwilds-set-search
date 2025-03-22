@@ -59,7 +59,7 @@ const SavedSets = () => {
             <Results results={savedSets} showDecoSkills={showDecoSkillNames} showGroupSkills={showGroupSkillNames}
                 pin={pin} exclude={exclude} save
                 mandatoryArmor={mandatoryArmor} blacklistedArmor={blacklistedArmor}
-                savedSets={savedSets}
+                savedSets={savedSets} setShowDecos={x => setShowDecoSkillNames(x)}
                 onSaveSet={refreshSavedSets}
                 blacklistedArmorTypes={blacklistedArmorTypes} />
         </div>

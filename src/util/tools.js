@@ -1,4 +1,4 @@
-import { CHOSEN_ARMOR_DEBUG, DEBUG, LIMIT } from "./constants";
+import { DEBUG, LIMIT } from "./constants";
 import HEAD from "../data/compact/head.json";
 import CHEST from "../data/compact/chest.json";
 import ARMS from "../data/compact/arms.json";
@@ -6,6 +6,7 @@ import WAIST from "../data/compact/waist.json";
 import LEGS from "../data/compact/legs.json";
 import TALISMANS from "../data/compact/talisman.json";
 import DECORATIONS from "../data/compact/decoration.json";
+import SKILLS from '../data/skills/skills.json';
 
 export const getSearchParameters = parameters => {
     return {
@@ -21,6 +22,10 @@ export const getSearchParameters = parameters => {
         limit: parameters.limit || LIMIT, // amount of results to process
         findOne: parameters.findOne || false, // if true, stops at the first result
         verifySlots: parameters.verifySlots || [], // runs a results test to see if x amount of 3, 2/3 and total slots are present
+        updateProgressFunc: parameters.updateProgressFunc, // callback function to pass progress value to
+        exhaustive: parameters.exhaustive || false,
+        cancelToken: parameters.cancelToken,
+        addMoreFunc: parameters.addMoreFunc
     };
 };
 
@@ -51,9 +56,27 @@ export const getJsonFromType = type => {
     return typeMap[type] || {};
 };
 
+export const getArmorSkillNames = () => {
+    return SKILLS.filter(x => x.type === "armor").map(x => x.name);
+};
+
 export const speed = (func, ...args) => {
     const startTime = performance.now();
     const result = func(...args);
+    const endTime = performance.now();
+    if (DEBUG) {
+        console.log(`>> ${func.name}() = ${((endTime - startTime) / 1000).toFixed(2)} seconds`);
+    }
+    return result;
+};
+
+export const speedAsync = async(func, ...args) => {
+    const startTime = performance.now();
+    const result = await new Promise(resolve => {
+        setTimeout(() => {
+            resolve(func(...args));
+        }, 0);
+    });
     const endTime = performance.now();
     if (DEBUG) {
         console.log(`>> ${func.name}() = ${((endTime - startTime) / 1000).toFixed(2)} seconds`);
@@ -406,3 +429,59 @@ export const updateSkillPotential = (
 
     return { pot: skillPotential, totalPot: totalSkillPotential, modMap: modPointMap };
 };
+
+const countSlots = slots => {
+    const counts = { 1: 0, 2: 0, 3: 0 };
+    for (const size of slots) {
+        if (counts[size] !== undefined) {
+            counts[size]++;
+        }
+    }
+    return counts;
+};
+
+export const getInclusiveRemainingSlots = (freeSlots, usedFilter) => {
+    // Start with a count of available slots
+    const available = countSlots(freeSlots);
+
+    // Copy so we don’t mutate original
+    const remaining = { ...available };
+
+    // Try to fulfill size-3 request using size-3 only
+    const use3 = Math.min(usedFilter[3] || 0, remaining[3]);
+    remaining[3] -= use3;
+    const unmet3 = (usedFilter[3] || 0) - use3;
+    if (unmet3 > 0) { return null; } // Cannot fulfill size-3 requirement
+
+    // Try to fulfill size-2 request using 2s, then 3s
+    let remaining2Need = usedFilter[2] || 0;
+    const use2 = Math.min(remaining2Need, remaining[2]);
+    remaining[2] -= use2;
+    remaining2Need -= use2;
+
+    const use3for2 = Math.min(remaining2Need, remaining[3]);
+    remaining[3] -= use3for2;
+    remaining2Need -= use3for2;
+
+    if (remaining2Need > 0) { return null; } // Not enough slots for 2s
+
+    // Try to fulfill size-1 request using 1s → 2s → 3s
+    let remaining1Need = usedFilter[1] || 0;
+
+    const use1 = Math.min(remaining1Need, remaining[1]);
+    remaining[1] -= use1;
+    remaining1Need -= use1;
+
+    const use2for1 = Math.min(remaining1Need, remaining[2]);
+    remaining[2] -= use2for1;
+    remaining1Need -= use2for1;
+
+    const use3for1 = Math.min(remaining1Need, remaining[3]);
+    remaining[3] -= use3for1;
+    remaining1Need -= use3for1;
+
+    if (remaining1Need > 0) { return null; } // Not enough slots for 1s
+
+    return remaining;
+};
+

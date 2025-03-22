@@ -53,7 +53,8 @@ const App = () => {
   const github = <img src={`images/github.png`} style={{ width: '14px', height: '14px' }} />;
   return (
     <div className="App">
-      <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable" allowScrollButtonsMobile>
+      <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable"
+        allowScrollButtonsMobile className="tab-root">
         {Object.entries(tabs).map(([name, index]) => renderTab(name, index))}
         {!hideSource && <Tab label={"Source Code"} icon={github} iconPosition="start"
           sx={{ color: '#873777', minHeight: 'unset' }}

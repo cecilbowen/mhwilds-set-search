@@ -1294,7 +1294,7 @@ def get_addable_skills(
         blacklisted_armor_types: tuple[str, ...] = (),
         dont_use_decos: bool = False,
         limit = constants.LIMIT, prior_results: list = [],
-        exhaustive = True
+        exhaustive = False
 ) -> dict:
     global skill_db
     skills_can_add = {}
@@ -1312,8 +1312,8 @@ def get_addable_skills(
     with open('./src/data/compact/armor-skills.json', 'r') as file:
         armor_skills_list = json.load(file)
 
-    def number_tuple(n):
-        return (1,) + tuple(range(n, 1, -1))
+    def number_tuple(n, stop = 1):
+        return (1,) + tuple(range(n, stop, -1))
 
     print("beginning skill iterations...")
     counter = -1
@@ -1404,14 +1404,14 @@ def run_all_tests():
 # speed(search, **asdict(tests.test_set))
 # speed(search, **asdict(tests.test_group))
 # speed(search, **asdict(tests.test_set_and_group))
-speed(search, **asdict(tests.test_more))
+# speed(search, **asdict(tests.test_more))
 # speed(search, **asdict(tests.test_one_slotter))
 # speed(search, **asdict(tests.test_decos_not_needed))
 # speed(search, **asdict(tests.test_blacklist_armor_type))
 # speed(search, **asdict(tests.test_too_high))
 
 # ==============MORE SKILLS==============
-# speed(get_addable_skills, **asdict(tests.test_multi))
+speed(get_addable_skills, **asdict(tests.test_multi))
 # speed(get_addable_skills, **asdict(tests.test_many))
 # speed(get_addable_skills, **asdict(tests.test_one_slotter))
 

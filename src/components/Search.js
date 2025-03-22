@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import SkillsPicker from "../components/SkillsPicker";
-import { searchAndSpeed } from "../util/logic";
+import { freeOne, freeThree, freeTwo, moreAndSpeed, searchAndSpeed } from "../util/logic";
 import SKILLS from '../data/compact/skills.json';
 import GROUP_SKILLS from '../data/compact/group-skills.json';
 import SET_SKILLS from '../data/compact/set-skills.json';
@@ -9,7 +9,7 @@ import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 import {
     excludeArmor, generateStyle,
-    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, notImplented, pinArmor, saveToLocalStorage
+    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage
 } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
 import ArrowRight from '@mui/icons-material/ArrowForwardIos';
@@ -49,7 +49,11 @@ const Search = () => {
     const [showGroupSkillNames, setShowGroupSkillNames] = useState(false);
 
     const [results, setResults] = useState([]);
+    const [moreResults, setMoreResults] = useState({}); // skill name: level
+    const [showMore, setShowMore] = useState(false);
+    const cancelledRef = useRef(false);
     const [elapsedSeconds, setElapsedSeconds] = useState(-1);
+    const [loadProgress, setLoadProgress] = useState(0);
 
     const [slotFilters, setSlotFilters] = useState({});
 
@@ -82,10 +86,17 @@ const Search = () => {
     }, []);
 
     useEffect(() => {
-        if (results) {
-            setIsGenerating(false);
+        if (!isEmpty(moreResults)) {
+            setShowMore(true);
+            setResults([]);
         }
-    }, [results]);
+    }, [moreResults]);
+
+    useEffect(() => {
+        if (!isGenerating) {
+            setLoadProgress(0);
+        }
+    }, [isGenerating]);
 
     const local = (name, data) => {
         const storageMap = {
@@ -103,7 +114,20 @@ const Search = () => {
         saveToLocalStorage(name, data || storageMap[name]);
     };
 
-    const getResults = () => {
+    const addMoreSkill = (name, level) => {
+        setMoreResults(prev => {
+            const tMore = { ...prev };
+            tMore[name] = level;
+            return tMore;
+        });
+    };
+
+    const prepareSearch = () => {
+        setElapsedSeconds(-1);
+        setMoreResults({});
+        setIsGenerating(true);
+
+        cancelledRef.current = false;
         const justSkills = Object.fromEntries(
             Object.entries(skills).filter(x => SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
@@ -114,8 +138,7 @@ const Search = () => {
             Object.entries(skills).filter(x => GROUP_SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
 
-        setIsGenerating(true);
-        const params = getSearchParameters({
+        return getSearchParameters({
             skills: justSkills,
             setSkills: justSetSkills,
             groupSkills: justGroupSkills,
@@ -123,8 +146,15 @@ const Search = () => {
             blacklistedArmor,
             blacklistedArmorTypes,
             mandatoryArmor,
-            decoMods: decoInventory
+            decoMods: decoInventory,
+            cancelToken: cancelledRef
         });
+    };
+
+    const getResults = () => {
+        const params = prepareSearch();
+
+        setShowMore(false);
         setSearchedSkills(skills);
         setLastParams(params);
         local('lastParams', params);
@@ -134,6 +164,24 @@ const Search = () => {
         cache.then(ret => {
             setElapsedSeconds(ret.seconds);
             setResults(ret.results);
+            setIsGenerating(false);
+        }).catch(err => {
+            console.error("Error during searchAndSpeed:", err);
+        });
+    };
+
+    const getMoreSkills = () => {
+        const params = prepareSearch();
+        params.priorResults = results;
+        params.exhaustive = true;
+        params.updateProgressFunc = setLoadProgress;
+        params.addMoreFunc = addMoreSkill;
+
+        const cache = moreAndSpeed(params);
+        cache.then(ret => {
+            setElapsedSeconds(ret.seconds);
+            setMoreResults(ret.results);
+            setIsGenerating(false);
         });
     };
 
@@ -144,9 +192,9 @@ const Search = () => {
         local('skills', tempSkills);
     };
 
-    const addSlotFilter = slot => {
+    const addSlotFilter = (slot, level = 1) => {
         const tempSlotFilters = { ...slotFilters };
-        tempSlotFilters[slot] = 1;
+        tempSlotFilters[slot] = level;
         setSlotFilters(tempSlotFilters);
         local('slotFilters', tempSlotFilters);
     };
@@ -295,6 +343,85 @@ const Search = () => {
         </div>;
     };
 
+    const renderMoreResults = () => {
+        const time = elapsedSeconds > -1 ? `(${elapsedSeconds.toFixed(2)} seconds)` : '';
+
+        const displayStr = isEmpty(moreResults) ? `No more skills can be added to your search ${time}.` :
+            `Showing skills with the max levels of each that can be added to your search ` +
+            `parameters and still return results ${time}:`;
+
+        const freeSlots = {};
+        if (freeThree) { freeSlots[3] = freeThree; }
+        if (freeTwo) { freeSlots[2] = freeTwo; }
+        if (freeOne) { freeSlots[1] = freeOne; }
+
+        return <div className="more-results">
+            <div style={{ marginTop: '1em', marginBottom: '0.5em' }}>{displayStr}</div>
+            <div className="more-skills">
+                {!isEmpty(freeSlots) && <div className="chosen-slot-filters">
+                    {Object.entries(freeSlots).map(x => {
+                        const gradientStyle = generateStyle("#c5abc5");
+                        const slotSize = x[0];
+                        const amount = x[1];
+
+                        return <div className={`skills-search-bubble slot-filter more`}
+                            style={gradientStyle} key={slotSize} onClick={() => addSlotFilter(slotSize, amount)}
+                            title={`Specify how many ${slotSize} slot decos you want to be able to fit into the free slots`}>
+                            <img className="skills-search-bubble-icon" src={`images/slot${slotSize}.png`} alt={slotSize} />
+                            <div className="skill-level-edit">
+                                <div className={`skills-search-bubble-text`}>
+                                    {`${slotSize} Slot Deco Filter`}
+                                </div>
+                                {<div style={{ fontSize: '16px', marginLeft: '0px', fontWeight: 'bold' }}>{amount}</div>}
+                            </div>
+                        </div>;
+                    })}
+                </div>}
+                {Object.entries(moreResults).map(sk => {
+                    const skillName = sk[0];
+                    const maxLevel = sk[1];
+
+                    const skill = SKILLS_DB.filter(x => x.name === skillName)[0] ||
+                        SET_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0] ||
+                        GROUP_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0];
+                    let skillIcon = skill.icon;
+                    const isASetSkill = isSetSkill(skill);
+                    const isAGroupSkill = isGroupSkill(skill);
+                    if (!skillIcon) {
+                        skillIcon = isASetSkill ? 'set' : 'group';
+                    }
+
+                    let displayName = skillName;
+                    if (showGroupSkillNames && (isAGroupSkill || isASetSkill)) {
+                        displayName = skill.skill;
+                    }
+
+                    const description = skill.description;
+                    const nameDiv = <div className={`skills-search-bubble-text`} style={{ marginRight: '4px' }}>
+                        {displayName}
+                    </div>;
+                    const iconImg = skillIcon ?
+                        <img className="skills-search-bubble-icon" src={`images/icons/${skillIcon}.png`} alt={skillIcon} /> :
+                        null;
+
+                    const bubbleDiv = <div className="skill-level-edit">
+                        {nameDiv}
+                        {<div style={{ fontSize: '16px', marginLeft: '-3px', fontWeight: 'bold' }}>{maxLevel}</div>}
+                    </div>;
+
+                    const gradientStyle = generateStyle("#b4dff1");
+                    return <div className={`skills-search-bubble more`}
+                        onClick={() => addSkill(skillName, maxLevel)}
+                        style={gradientStyle} key={skillName}
+                        title={description}>
+                        {iconImg}
+                        {bubbleDiv}
+                    </div>;
+                })}
+            </div>
+        </div>;
+    };
+
     return (
         <div className="search">
             {renderChosenSkills()}
@@ -302,15 +429,21 @@ const Search = () => {
                 showGroupSkillNames={showGroupSkillNames}
                 chosenSkillNames={Object.keys(skills)} />
             <div className="button-holder">
-                <Button variant="contained" onClick={() => getResults()}>Search</Button>
-                <Button variant="outlined" onClick={() => notImplented("More Skills")}>More Skills</Button>
+                <Button variant="contained" disabled={isGenerating} onClick={() => getResults()}>Search</Button>
+                <Button variant="outlined" disabled={isGenerating} onClick={() => getMoreSkills()}>More Skills</Button>
+                {isGenerating && <Button sx={{ cursor: 'pointer' }} variant="outlined" color="error" onClick={() => {
+                    cancelledRef.current = true;
+                }}>Cancel</Button>}
             </div>
-            {isGenerating && <LoadingBar className="loading-bar" />}
-            <Results results={results} showDecoSkills={showDecoSkillNames} showGroupSkills={showGroupSkillNames}
+            {isGenerating && <LoadingBar className="loading-bar" value={loadProgress}
+                variant={loadProgress ? 'determinate' : 'indeterminate'} />}
+            {!showMore && <Results results={results} showDecoSkills={showDecoSkillNames}
+                showGroupSkills={showGroupSkillNames} setShowDecos={x => setShowDecoSkillNames(x)}
                 pin={pin} exclude={exclude} slotFilters={slotFilters}
                 mandatoryArmor={mandatoryArmor} blacklistedArmor={blacklistedArmor}
                 blacklistedArmorTypes={blacklistedArmorTypes}
-                skills={searchedSkills} elapsedSeconds={elapsedSeconds} />
+                skills={searchedSkills} elapsedSeconds={elapsedSeconds} />}
+            {showMore && renderMoreResults()}
         </div>
     );
 };

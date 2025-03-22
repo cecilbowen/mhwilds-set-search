@@ -1,20 +1,30 @@
 import TALISMANS from "../data/compact/talisman.json";
 import DECO_INVENTORY from "../data/user/deco-inventory.json";
 import SKILL_DB from "../data/compact/skills.json";
+import SET_SKILL_DB from '../data/compact/set-skills.json';
+import GROUP_SKILL_DB from '../data/compact/group-skills.json';
 import {
     _x,
     emptyGearPiece,
-    emptyGearSet, formatArmorC, getBestDecos, getDecoSkillsFromNames,
+    emptyGearSet, formatArmorC, getArmorSkillNames, getBestDecos, getDecoSkillsFromNames,
+    getInclusiveRemainingSlots,
     getJsonFromType, getSearchParameters, groupArmorIntoSets,
     hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
     isInSets, mergeSumMaps, slottageLengthCompare, slottageLengthCompareSort,
-    slottageSizeCompare, speed, updateSkillPotential
+    slottageSizeCompare, speed, speedAsync, updateSkillPotential
 } from "./tools";
 import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
 import { allTests } from "../test/tests";
+import { isGroupSkillName, isSetSkillName } from "./util";
 
 let totalPossibleCombinations = 0;
 let decoInventory = { ...DECO_INVENTORY };
+
+// getting lazier..
+let currentSlotFilters = {};
+export let freeThree = [];
+export let freeTwo = [];
+export let freeOne = [];
 
 const getBestArmor = (
     skills, setSkills = {}, groupSkills = {},
@@ -46,7 +56,7 @@ const getBestArmor = (
 
     const bestTalismans = Object.fromEntries(Object.entries(TALISMANS)
         .filter(([k, v]) => !blacklistedArmor.includes(k) &&
-        (!mandatory[v[0]] && hasNeededSkill(v[1], skills) || k === mandatory[v[0]]))
+            (!mandatory[v[0]] && hasNeededSkill(v[1], skills) || k === mandatory[v[0]]))
         .sort((a, b) => Object.values(b[1][1])[0] - Object.values(a[1][1])[0])
     );
 
@@ -535,13 +545,13 @@ const cartesianProduct = (...arrays) => {
     }, [[]]);
 };
 
-const rollCombos = (gear, skills, setSkills, groupSkills, limit, findOne = false) => {
+const rollCombos = async(gear, skills, setSkills, groupSkills, limit, findOne = false, cancelToken = undefined) => {
     if (!gear) {
         console.warn("rollCombos(): gear is null, something went wrong");
         return [];
     }
 
-    let counter = 0, inc = 0;
+    let counter = 0, inc = 0, allCounter = 0;
     const ret = [];
 
     // Convert gear categories into arrays for efficient iteration
@@ -567,7 +577,16 @@ const rollCombos = (gear, skills, setSkills, groupSkills, limit, findOne = false
     const allCombos = cartesianProduct(headList, chestList, armsList, waistList, legsList, talismanList);
 
     for (const combo of allCombos) {
+        allCounter++;
         if (counter >= limit) { return ret; }
+
+        if (allCounter % 1000 === 0) {
+            await new Promise(resolve => setTimeout(resolve, 0));
+        }
+        if (cancelToken && cancelToken.current) {
+            console.log('rollCombos() returning early');
+            return ret;
+        }
 
         if (setSkillsCheck.size > 0 || groupSkillsCheck.size > 0) {
             const piecesFromSet = {};
@@ -656,7 +675,142 @@ const test = (armorSet, decos, desiredSkills) => {
     return null;
 };
 
-export const search = parameters => {
+export const isSkillInResults = (results, skillName, level) => {
+    for (const res of results) {
+        if (res.skills?.[skillName] >= level ||
+            res.setSkills?.[skillName] >= level ||
+            res.groupSkills?.[skillName] >= level
+        ) {
+            return true;
+        }
+
+        if (isSetSkillName(skillName) || isGroupSkillName(skillName)) {
+            return false;
+        }
+
+        const decos = getBestDecos({ [skillName]: level });
+        const fits = getDecosToFulfillSkills(decos, { [skillName]: level }, res.freeSlots, res.skills);
+
+        if (fits) { return true; }
+    }
+
+    return false;
+};
+
+export const getAddableSkills = async parameters => {
+    const params = getSearchParameters(parameters);
+    const exhaustive = params.exhaustive;
+
+    currentSlotFilters = { ...params.slotFilters };
+    params.slotFilters = {};
+    const priorResults = await search(parameters);
+
+    const skillsCanAdd = {};
+    const baseSkills = { ...params.skills, ...params.setSkills, ...params.groupSkills };
+
+    const numberTuple = (n, stop = 1) => {
+        const result = [1];
+        for (let i = n; i > stop; i--) {
+            result.push(i);
+        }
+        return result;
+    };
+    const armorSkillsList = getArmorSkillNames();
+
+    if (DEBUG) { console.log("beginning skill iterations..."); }
+    const trimmedSkills = Object.fromEntries(
+        Object.entries(SKILL_DB).filter(([name]) => armorSkillsList.includes(name))
+    );
+    const trimmedSetSkills = Object.fromEntries(
+        Object.entries(SET_SKILL_DB).map(x => [x[0], 2])
+    );
+    const trimmedGroupSkills = Object.fromEntries(
+        Object.entries(GROUP_SKILL_DB).map(x => [x[0], 1])
+    );
+    const combinedSkills = { ...trimmedSkills, ...trimmedSetSkills, ...trimmedGroupSkills };
+
+    const totalSkills = Object.keys(combinedSkills).length;
+    let counter = 0, lastProgress = 0;
+
+    for (const [skillName, maxSkillLevel] of Object.entries(combinedSkills)) {
+        // visual progress updating
+        const percentDone = counter++ / totalSkills * 100;
+        if (params.updateProgressFunc) {
+            const rounded = Math.round(percentDone);
+            if (rounded > lastProgress) {
+                lastProgress = rounded;
+                params.updateProgressFunc(rounded);
+            }
+        }
+        if (counter % 10 === 0) {
+            await new Promise(resolve => setTimeout(resolve, 0));
+        }
+        if (DEBUG) {
+            console.log(`getMoreSkills Progress: ${percentDone.toFixed(2)}%...`);
+        }
+
+        // early exit check (if user presses "cancel")
+        if (params.cancelToken?.current) {
+            console.log("getMoreSkills() cancelled, exiting early");
+            return skillsCanAdd;
+        }
+
+        const existingSkillLevel = baseSkills[skillName] ?? 0;
+        if (existingSkillLevel >= maxSkillLevel) { continue; }
+
+        const levelsToTry = numberTuple(maxSkillLevel, Math.max(1, existingSkillLevel));
+
+        for (const level of levelsToTry) {
+            if (level <= existingSkillLevel) { continue; }
+            const good = isSkillInResults(priorResults, skillName, level);
+            if (good) {
+                if (DEBUG) { console.log(`-+ ${skillName} ${level}: yes`); }
+                skillsCanAdd[skillName] = level;
+                if (params.addMoreFunc) { params.addMoreFunc(skillName, level); }
+                if (level > 1) { break; }
+                continue;
+            } else if (level === 1) {
+                if (DEBUG) { console.log(`-+ ${skillName} ${level}: no`); }
+            }
+
+            if (!exhaustive) { continue; }
+
+            let skills = { ...params.skills };
+            let setSkills = { ...params.setSkills };
+            let groupSkills = { ...params.groupSkills };
+            if (isSetSkillName(skillName)) {
+                setSkills = { ...setSkills, [skillName]: level };
+            } else if (isGroupSkillName(skillName)) {
+                groupSkills = { ...groupSkills, [skillName]: level };
+            } else {
+                skills = { ...skills, [skillName]: level };
+            }
+
+            const rolls = await search({
+                ...params,
+                skills,
+                setSkills,
+                groupSkills,
+                findOne: true
+            });
+
+            const found = rolls.length > 0;
+            if (found) {
+                if (DEBUG) { console.log(`-- ${skillName} ${level}: yes`); }
+                skillsCanAdd[skillName] = level;
+                if (params.addMoreFunc) { params.addMoreFunc(skillName, level); }
+                if (level > 1) { break; }
+            } else if (level === 1) {
+                if (DEBUG) { console.log(`-- ${skillName} ${level}: no`); }
+                break;
+            }
+        }
+    }
+
+    return skillsCanAdd;
+};
+
+export const search = async parameters => {
     const params = getSearchParameters(parameters);
     const gear = speed(
         getBestArmor, params.skills, params.setSkills, params.groupSkills,
@@ -673,17 +827,16 @@ export const search = parameters => {
         }
     }
 
-    let rolls = speed(
-        rollCombos,
+    let rolls = await rollCombos(
         gear, params.skills, params.setSkills, params.groupSkills, params.limit,
-        params.findOne
+        params.findOne, params.cancelToken
     );
 
     // lazily handle slotFilters filtering here
     if (!isEmpty(params.slotFilters)) {
         const desiredSlots = Object.entries(params.slotFilters)
-          .flatMap(([num, count]) => Array(count).fill(Number(num)))
-          .sort((a, b) => b - a);
+            .flatMap(([num, count]) => Array(count).fill(Number(num)))
+            .sort((a, b) => b - a);
         const filteredRolls = [];
         for (const roll of rolls) {
             const rollFree = roll.freeSlots.sort((a, b) => b - a);
@@ -703,21 +856,44 @@ export const search = parameters => {
         rolls = filteredRolls;
     }
 
-    rolls = reorder(rolls);
-    // searchResults = rolls;
-    if (params.verifySlots && !params.findOne) {
-        // const passedTest = verify(rolls, params.verifySlots);
+    if (!params.findOne) {
+        freeThree = [];
+        freeTwo = [];
+        freeOne = [];
+        for (const roll of rolls) {
+            const remaining = getInclusiveRemainingSlots(roll.freeSlots, currentSlotFilters);
+            if (remaining) {
+                freeThree = Math.max(freeThree, remaining[3]);
+                freeTwo = Math.max(freeTwo, remaining[2]);
+                freeOne = Math.max(freeOne, remaining[1]);
+            }
+        }
     }
-    // generateWikiString(params.skills, params.setSkills, params.groupSkills);
+
+    rolls = reorder(rolls);
 
     return rolls;
 };
 
 export const searchAndSpeed = async parameters => {
     const startTime = performance.now();
+
+    await new Promise(resolve => setTimeout(resolve, 0)); // allow UI update before blocking
+    const results = await search(parameters);
+    const endTime = performance.now();
+    const seconds = (endTime - startTime) / 1000;
+
+    return {
+        results,
+        seconds,
+    };
+};
+
+export const moreAndSpeed = async parameters => {
+    const startTime = performance.now();
     const results = await new Promise(resolve => {
         setTimeout(() => {
-            resolve(search(parameters));
+            resolve(getAddableSkills(parameters));
         }, 0);
     });
     const endTime = performance.now();

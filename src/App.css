@@ -480,6 +480,7 @@ input[type=number] {
 
 .chosen-slot-filters {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 .slots-filter {
@@ -500,4 +501,28 @@ input[type=number] {
   font-weight: bold;
   color: #a772a7;
   font-style: italic;
+}
+
+.more-results {
+
+}
+.more-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 4px;
+}
+.more:hover {
+  filter: hue-rotate(90deg);
+  cursor: pointer;
+}
+
+.tab-root {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 5;
+}
+.tab-panel {
+  margin-top: 2em;
 }

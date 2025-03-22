@@ -8,6 +8,7 @@ const CustomTabPanel = props => {
   return (
     <div
       role="tabpanel"
+      className="tab-panel"
       hidden={value !== index}
       id={`custom-tabpanel-${index}`}
       aria-labelledby={`custom-tab-${index}`}

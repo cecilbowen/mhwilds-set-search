@@ -24,6 +24,8 @@ import { renderToStaticMarkup } from 'react-dom/server';
 export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
 export const isSetSkill = skill => Boolean(skill.piecesPerLevel);
+export const isGroupSkillName = name => GROUP_SKILLS[name];
+export const isSetSkillName = name => SET_SKILLS[name];
 export const getMaxLevel = skillName => {
     const isSet = SET_SKILLS[skillName];
     const isGroup = GROUP_SKILLS[skillName];
