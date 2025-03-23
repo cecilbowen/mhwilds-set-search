@@ -9,6 +9,7 @@ import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 import {
     excludeArmor, generateStyle,
+    generateWikiString,
     getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage
 } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
@@ -19,6 +20,7 @@ import styled from "styled-components";
 import { getSearchParameters, isEmpty } from "../util/tools";
 import { Button } from "@mui/material";
 import Results from "./Results";
+import { DEBUG } from "../util/constants";
 
 const ArrowL = styled(ArrowLeft)`
     width: 16px !important;
@@ -137,6 +139,15 @@ const Search = () => {
         const justGroupSkills = Object.fromEntries(
             Object.entries(skills).filter(x => GROUP_SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
+
+        if (DEBUG) {
+            const wiki = generateWikiString(
+                justSkills, justSetSkills, justGroupSkills,
+                slotFilters
+            );
+
+            console.log(`https://mhwilds.wiki-db.com/sim/#skills=${wiki}&fee=1`);
+        }
 
         return getSearchParameters({
             skills: justSkills,

@@ -650,79 +650,68 @@ def get_decos_to_fulfill_skills(decos, desired_skills, slots_available, starting
         return None 
     global deco_inventory
 
-    # Adjust required skills based on what we already have
+    # Adjust required skills based on starting skills
     skills_needed = desired_skills.copy()
     for skill, level in starting_skills.items():
         if skill in skills_needed:
             skills_needed[skill] -= level
             if skills_needed[skill] <= 0:
-                del skills_needed[skill]  # Remove fully fulfilled skills
+                del skills_needed[skill]
 
-    # If we already have all required skills, no decorations are needed
     if not skills_needed:
         return {
             "deco_names": [],
             "free_slots": slots_available
         }
 
-    # Sort slots in descending order for optimal placement
-    slots_available.sort(reverse=True)
+    # Build a sorted pool of slot sizes (descending)
+    slot_pool = sorted(slots_available, reverse=False)
 
-    # Sort decorations by highest skill contribution, then by smallest slot size
-    deco_list = sorted(
+    # Sort decorations:
+    # - by skill impact (total skill points it contributes)
+    # - then by smallest slot size (prefer smaller ones first for tighter fit)
+    sorted_decos = sorted(
         decos.items(), 
-        key=lambda x: (x[1][2], -sum(x[1][1].values())),  # Sort by slot size, then total skill contribution
-        reverse=True
+        key=lambda x: (-sum(x[1][1].values()), x[1][2])
     )
 
-    # Track used decorations
     used_decos = []
     used_decos_count = {}
-    free_slots = list(slots_available)
     used_slots = []
 
-    # Iterate over available slots and try to fill them with the best decorations
-    for slot_size in slots_available:
-        for deco_name, (deco_type, deco_skills, deco_slot) in deco_list:
-            if deco_slot > slot_size or used_decos_count.get(deco_name, 0) > deco_inventory[deco_name]:
-                continue  # Skip if decoration doesn't fit in the slot
+    # Try to fulfill each skill by picking the best matching decorations
+    for skill, needed_points in skills_needed.items():
+        while needed_points > 0:
+            found_match = False
+            for deco_name, (deco_type, deco_skills, deco_slot) in sorted_decos:
+                if skill not in deco_skills:
+                    continue
+                if used_decos_count.get(deco_name, 0) >= deco_inventory.get(deco_name, 0):
+                    continue
 
-            if deco_slot < slot_size and deco_slot in free_slots:
-                continue # fits, but more efficient to slot into smaller slot we'll reach later
-            
-            # Check if this decoration helps fulfill any remaining skills
-            useful = False
-            for skill_name, skill_level in deco_skills.items():
-                if skill_name in skills_needed and skills_needed[skill_name] > 0:
-                    useful = True
-                    break  # Stop searching if this decoration contributes
-            
-            if not useful:
-                continue  # Skip decorations that don't contribute
-            
-            # Use this decoration
-            used_decos.append(deco_name)
-            used_decos_count[deco_name] = used_decos_count.get(deco_name, 0) + 1
+                # Try to find a slot that fits this decoration
+                for i, slot_size in enumerate(slot_pool):
+                    if slot_size >= deco_slot:
+                        # Use this decoration
+                        used_decos.append(deco_name)
+                        used_decos_count[deco_name] = used_decos_count.get(deco_name, 0) + 1
+                        used_slots.append(slot_size)
+                        del slot_pool[i]
+                        
+                        gained = deco_skills[skill]
+                        needed_points -= gained
+                        found_match = True
+                        break
+                if found_match:
+                    break
+            if not found_match:
+                return None  # Could not fulfill this skill
 
-            used_slots.append(slot_size)
-            free_slots.remove(slot_size)
+    return {
+        "deco_names": used_decos,
+        "free_slots": slot_pool
+    }
 
-            # Reduce skill requirements
-            for skill_name, skill_level in deco_skills.items():
-                if skill_name in skills_needed:
-                    skills_needed[skill_name] -= skill_level
-                    if skills_needed[skill_name] <= 0:
-                        del skills_needed[skill_name]  # Remove fully fulfilled skills
-
-            # If all skills are fulfilled, return the list of used decorations
-            if not skills_needed:
-                return {
-                    "deco_names": used_decos,
-                    "free_slots": free_slots
-                }
-            break
-
-    return None
 
 def _x(piece: dict, field: str):
     """
@@ -1101,6 +1090,16 @@ def roll_combos(
             limit_reached = True
             break  # Stop processing once the limit is reached
 
+        # Gypceros Helm α	Conga Mail β	Xu Wu Vambraces α	Dober Coil α	Gajau Boots α	Impact Charm III
+        tester = ["Gypceros Helm Alpha", "Conga Mail Beta", "Xu Wu Vambraces Alpha", "Dober Coil Alpha", "Gajau Boots Alpha", "Impact Charm III"]
+        passer = True
+        for i in range(len(tester)):
+            if combo[i][0] != tester[i]:
+                passer = False
+                break
+        if passer:
+            dog = 33
+
         # Pre-check for required set or group skills
         if set_skills_check or group_skills_check:
             pieces_from_set = {}
@@ -1398,7 +1397,7 @@ def run_all_tests():
 # speed(search, **asdict(tests.test_lance))
 # speed(search, **asdict(tests.test_dalton))
 # speed(search, **asdict(tests.test_single))
-# speed(search, **asdict(tests.test_without_burst_deco))
+speed(search, **asdict(tests.test_without_burst_deco))
 # speed(search, **asdict(tests.test_mandatory))
 # speed(search, **asdict(tests.test_blacklist))
 # speed(search, **asdict(tests.test_set))
@@ -1409,9 +1408,10 @@ def run_all_tests():
 # speed(search, **asdict(tests.test_decos_not_needed))
 # speed(search, **asdict(tests.test_blacklist_armor_type))
 # speed(search, **asdict(tests.test_too_high))
+# speed(search, **asdict(tests.test_deco_bug))
 
 # ==============MORE SKILLS==============
-speed(get_addable_skills, **asdict(tests.test_multi))
+#speed(get_addable_skills, **asdict(tests.test_multi))
 # speed(get_addable_skills, **asdict(tests.test_many))
 # speed(get_addable_skills, **asdict(tests.test_one_slotter))
 

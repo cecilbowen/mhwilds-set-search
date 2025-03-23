@@ -231,10 +231,31 @@ export const testGatherHoney = {
     verifySlots: [0, 0, 0]
 };
 
+export const testDecoBug = {
+    skills: {
+        "Stamina Surge": 3,
+        "Marathon Runner": 3,
+        "Intimidator": 3,
+        "Outdoorsman": 1,
+        "Cliffhanger": 1,
+        "Flinch Free": 3,
+        "Windproof": 1,
+        "Earplugs": 2,
+        "Adaptability": 1,
+        "Aquatic/Oilsilt Mobility": 2,
+        "Tremor Resistance": 2,
+        "Blindsider": 1
+    },
+    groupSkills: {
+        "Flexible Leathercraft": 1
+    },
+    verifySlots: [0, 0, 0]
+};
+
 export const allTests = {
     testSingle, testWithoutBurstDeco, testMore, testMulti,
     testDecosNotNeeded, testOneSlotter, testSet, testGroup,
     testSetAndGroup, testImpossible, testMany, testTooHigh,
     testMandatory, testBlacklist, testBlacklistArmorType, testHammer,
-    testLance, testDalton, testGather, testGatherHoney
+    testLance, testDalton, testGather, testGatherHoney, testDecoBug
 };

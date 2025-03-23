@@ -34,6 +34,27 @@ test_without_burst_deco = TestParams(
     verify_slots=[4, 8, 12]
 )
 
+test_deco_bug = TestParams(
+    skills={
+        "Stamina Surge": 3,
+        "Marathon Runner": 3,
+        "Intimidator": 3,
+        "Outdoorsman": 1,
+        "Cliffhanger": 1,
+        "Flinch Free": 3,
+        "Windproof": 1,
+        "Earplugs": 2,
+        "Adaptability": 1,
+        "Aquatic/Oilsilt Mobility": 2,
+        "Tremor Resistance": 2,
+        "Blindsider": 1
+    },
+    group_skills={
+        "Flexible Leathercraft": 1
+    },
+    verify_slots=[0, 0, 0]
+)
+
 # faster! but im missing a [3, 2, 1] (not a big deal I guess..)
 test_more = TestParams(
     skills={
@@ -295,5 +316,6 @@ all_tests = {
     "test_lance": test_lance,
     "test_dalton": test_dalton,
     "test_gather": test_gather,
-    "test_gather_honey": test_gather_honey
+    "test_gather_honey": test_gather_honey,
+    "test_deco_bug": test_deco_bug,
 }

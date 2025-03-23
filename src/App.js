@@ -8,6 +8,8 @@ import SavedSets from "./components/SavedSets";
 import DecoInventory from "./components/DecoInventory";
 import Settings from "./components/Settings";
 import { getFromLocalStorage } from "./util/util";
+import { DEBUG } from "./util/constants";
+import { runAllTests } from "./util/logic";
 
 const App = () => {
   const [tab, setTab] = useState(0);
@@ -17,6 +19,12 @@ const App = () => {
     const loadedSource = getFromLocalStorage('hideSource') ?? hideSource;
     setHideSource(loadedSource);
   };
+
+  useEffect(() => {
+    if (DEBUG) {
+      window.runAllTests = runAllTests;
+    }
+  }, []);
 
   useEffect(() => {
     reSource();

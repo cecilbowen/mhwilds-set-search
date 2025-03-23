@@ -269,11 +269,14 @@ const getBestArmor = (
         console.log("\n");
 
         for (const [category, data] of Object.entries(bareMinimum)) {
-            if (category === "talisman" || category === "decos") { continue; }
-
             console.log(category.toUpperCase()); // Print category name
 
             for (const [aName, aData] of Object.entries(data)) {
+                if (category === "talisman" || category === "decos") {
+                    console.log(`\t${aName}, ${JSON.stringify(aData[1])}`);
+                    continue;
+                }
+
                 const relevantSkills = Object.fromEntries(
                     Object.entries(aData[1]).filter(([k]) => k in skills)
                 );
@@ -342,89 +345,80 @@ const armorCombo = (head, chest, arms, waist, legs, talisman) => {
     };
 };
 
-const getDecosToFulfillSkills = (decos, skills, slotsAvailable, startingSkills) => {
-    if (isEmpty(decos)) {
-        return null;
+const getDecosToFulfillSkills = (decos, desiredSkills, slotsAvailable, startingSkills) => {
+  if (!decos || Object.keys(decos).length === 0) { return null; }
+
+  // Clone and adjust required skills
+  const skillsNeeded = { ...desiredSkills };
+  for (const skill in startingSkills) {
+    if (skillsNeeded[skill] !== undefined) {
+      skillsNeeded[skill] -= startingSkills[skill];
+      if (skillsNeeded[skill] <= 0) {
+        delete skillsNeeded[skill];
+      }
     }
+  }
 
-    // Adjust required skills based on what we already have
-    const skillsNeeded = { ...skills };
-    for (const [skill, level] of Object.entries(startingSkills)) {
-        if (skillsNeeded[skill]) {
-            skillsNeeded[skill] -= level;
-            if (skillsNeeded[skill] <= 0) {
-                delete skillsNeeded[skill]; // Remove fully fulfilled skills
-            }
-        }
-    }
+  if (Object.keys(skillsNeeded).length === 0) {
+    return {
+      decoNames: [],
+      freeSlots: slotsAvailable
+    };
+  }
 
-    // If we already have all required skills, no decorations are needed
-    if (Object.keys(skillsNeeded).length === 0) {
-        return {
-            decoNames: [],
-            freeSlots: slotsAvailable
-        };
-    }
+  // Sort slots in ascending order to fill smallest first
+  const slotPool = [...slotsAvailable].sort((a, b) => a - b);
 
-    // Sort slots in descending order for optimal placement
-    slotsAvailable.sort((a, b) => b - a);
+  // Sort decorations: prioritize highest total skill points, then smaller slot size
+  const sortedDecos = Object.entries(decos).sort((a, b) => {
+    const [_, __, slotA] = a[1];
+    const [___, ____, slotB] = b[1];
+    const totalSkillA = Object.values(a[1][1]).reduce((sum, val) => sum + val, 0);
+    const totalSkillB = Object.values(b[1][1]).reduce((sum, val) => sum + val, 0);
+    if (totalSkillB !== totalSkillA) { return totalSkillB - totalSkillA; }
+    return slotA - slotB;
+  });
 
-    // Sort decorations by highest skill contribution, then by smallest slot size
-    const decoList = Object.entries(decos).sort((a, b) =>
-        b[1][2] - a[1][2] ||
-        Object.values(a[1][1]).reduce((sum, val) => sum + val, 0) -
-        Object.values(b[1][1]).reduce((sum, val) => sum + val, 0)
-    );
+  const usedDecos = [];
+  const usedDecosCount = {};
+  const usedSlots = [];
 
-    // Track used decorations
-    const usedDecos = [];
-    const usedDecosCount = {};
-    const freeSlots = [...slotsAvailable];
-    const usedSlots = [];
+  for (const [skill, neededPoints] of Object.entries(skillsNeeded)) {
+    let remaining = neededPoints;
+    while (remaining > 0) {
+      let foundMatch = false;
 
-    // Iterate over available slots and try to fill them with the best decorations
-    for (const slotSize of slotsAvailable) {
-        for (const [decoName, [decoType, decoSkills, decoSlot]] of decoList) {
-            if (decoSlot > slotSize || (usedDecosCount[decoName] || 0) >= decoInventory[decoName]) {
-                continue; // Skip if decoration doesn't fit in the slot
-            }
+      for (const [decoName, [decoType, decoSkills, decoSlot]] of sortedDecos) {
+        if (!(skill in decoSkills)) { continue; }
+        if ((usedDecosCount[decoName] || 0) >= (decoInventory[decoName] || 0)) { continue; }
 
-            if (decoSlot < slotSize && freeSlots.includes(decoSlot)) {
-                continue; // fits, but more efficient to slot into smaller slot we'll reach later
-            }
-
-            // Check if this decoration helps fulfill any remaining skills
-            const useful = Object.keys(decoSkills).some(skill => skillsNeeded[skill] > 0);
-            if (!useful) { continue; } // Skip decorations that don't contribute
-
+        // Try to find the smallest slot that fits
+        for (let i = 0; i < slotPool.length; i++) {
+          const slotSize = slotPool[i];
+          if (slotSize >= decoSlot) {
             // Use this decoration
             usedDecos.push(decoName);
             usedDecosCount[decoName] = (usedDecosCount[decoName] || 0) + 1;
             usedSlots.push(slotSize);
-            freeSlots.splice(freeSlots.indexOf(slotSize), 1);
+            slotPool.splice(i, 1);
 
-            // Reduce skill requirements
-            for (const [skillName, skillLevel] of Object.entries(decoSkills)) {
-                if (skillsNeeded[skillName]) {
-                    skillsNeeded[skillName] -= skillLevel;
-                    if (skillsNeeded[skillName] <= 0) {
-                        delete skillsNeeded[skillName]; // Remove fully fulfilled skills
-                    }
-                }
-            }
-
-            // If all skills are fulfilled, return the list of used decorations
-            if (Object.keys(skillsNeeded).length === 0) {
-                return {
-                    decoNames: usedDecos,
-                    freeSlots: freeSlots
-                };
-            }
+            remaining -= decoSkills[skill];
+            foundMatch = true;
             break;
+          }
         }
-    }
 
-    return null; // Return null if the required skills cannot be fulfilled
+        if (foundMatch) { break; }
+      }
+
+      if (!foundMatch) { return null; } // Cannot fulfill the skill
+    }
+  }
+
+  return {
+    decoNames: usedDecos,
+    freeSlots: slotPool
+  };
 };
 
 // Re-orders display results to put some more desirable elements up front
@@ -570,21 +564,24 @@ const rollCombos = async(gear, skills, setSkills, groupSkills, limit, findOne = 
         console.log(`possible: ${totalPossibleCombinations.toLocaleString()}`);
     }
 
-    const setSkillsCheck = setSkills ? new Set(Object.keys(setSkills)) : new Set();
-    const groupSkillsCheck = groupSkills ? new Set(Object.keys(groupSkills)) : new Set();
+    const setSkillsCheck = new Set(Object.keys(setSkills));
+    const groupSkillsCheck = new Set(Object.keys(groupSkills));
 
     // Use cartesianProduct to generate all combinations in the same order as Python's itertools.product
     const allCombos = cartesianProduct(headList, chestList, armsList, waistList, legsList, talismanList);
 
     for (const combo of allCombos) {
         allCounter++;
-        if (counter >= limit) { return ret; }
+        if (counter >= limit) {
+            console.warn("rollCombos() - limit reached, exiting");
+            return ret;
+        }
 
         if (allCounter % 1000 === 0) {
             await new Promise(resolve => setTimeout(resolve, 0));
         }
         if (cancelToken && cancelToken.current) {
-            console.log('rollCombos() returning early');
+            console.warn('rollCombos() cancel pressed, returning early');
             return ret;
         }
 
@@ -907,7 +904,8 @@ export const moreAndSpeed = async parameters => {
 
 export const runAllTests = () => {
     for (const [testName, theTest] of Object.entries(allTests)) {
-        const results = search(theTest);
-        console.log(`%c${testName}: ${results.length}`, "color: aqua");
+        search(theTest).then(results => {
+            console.log(`%c${testName}: ${results.length}`, "color: aqua");
+        });
     }
 };
