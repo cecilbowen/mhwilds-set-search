@@ -2293,7 +2293,16 @@
     "thunderResistance": -2,
     "iceResistance": 3,
     "dragonResistance": 0,
-    "skills": [],
+    "skills": [
+	  {
+		"name": "Stun Resistance",
+		"level": 3
+	  },
+	  {
+		"name": "Partbreaker",
+		"level": 1
+	  }
+	],
     "groupSkill": "Imparted Wisdom",
     "materials": [
       {
@@ -2766,7 +2775,7 @@
       },
       {
         "name": "Fire Resistance",
-        "level": 1
+        "level": 2
       }
     ],
     "groupSkill": "Scaling Prowess",
