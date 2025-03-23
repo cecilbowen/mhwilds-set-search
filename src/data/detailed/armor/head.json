@@ -4209,7 +4209,7 @@
       },
       {
         "name": "Poison Resistance",
-        "level": 1
+        "level": 2
       }
     ],
     "groupSkill": "Imparted Wisdom",
@@ -4880,11 +4880,11 @@
     "dragonResistance": 0,
     "skills": [
       {
-        "name": "Maximum Might",
+        "name": "Latent Power",
         "level": 2
       },
       {
-        "name": "Stamina Surge",
+        "name": "Evade Extender",
         "level": 1
       }
     ],
