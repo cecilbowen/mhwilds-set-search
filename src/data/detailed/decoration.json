@@ -2551,7 +2551,7 @@
     "skills": [
       {
         "name": "Evade Window",
-        "level": 2
+        "level": 1
       }
     ],
     "description": "Extends the invulnerability period when evading.",
@@ -2647,7 +2647,7 @@
     "skills": [
       {
         "name": "Peak Performance",
-        "level": 2
+        "level": 1
       }
     ],
     "description": "Increases attack when your health is full.",
