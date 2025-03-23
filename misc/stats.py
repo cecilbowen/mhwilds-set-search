@@ -1090,15 +1090,15 @@ def roll_combos(
             limit_reached = True
             break  # Stop processing once the limit is reached
 
-        # Gypceros Helm α	Conga Mail β	Xu Wu Vambraces α	Dober Coil α	Gajau Boots α	Impact Charm III
-        tester = ["Gypceros Helm Alpha", "Conga Mail Beta", "Xu Wu Vambraces Alpha", "Dober Coil Alpha", "Gajau Boots Alpha", "Impact Charm III"]
-        passer = True
-        for i in range(len(tester)):
-            if combo[i][0] != tester[i]:
-                passer = False
-                break
-        if passer:
-            dog = 33
+        # # Gypceros Helm α	Conga Mail β	Xu Wu Vambraces α	Dober Coil α	Gajau Boots α	Impact Charm III
+        # tester = ["Gypceros Helm Alpha", "Conga Mail Beta", "Xu Wu Vambraces Alpha", "Dober Coil Alpha", "Gajau Boots Alpha", "Impact Charm III"]
+        # passer = True
+        # for i in range(len(tester)):
+        #     if combo[i][0] != tester[i]:
+        #         passer = False
+        #         break
+        # if passer:
+        #     dog = 33
 
         # Pre-check for required set or group skills
         if set_skills_check or group_skills_check:

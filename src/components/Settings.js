@@ -1,23 +1,23 @@
 import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import {
+    armorNameFormat,
     excludeArmor,
-    getArmorTypeList, getDecoDisplayName, getDecoFromName, getFromLocalStorage,
+    getArmorTypeList, getFromLocalStorage,
     isArmorOfType,
     pinArmor,
     saveToLocalStorage
 } from '../util/util';
-import { Button, FormControlLabel, Paper, Switch, Typography } from '@mui/material';
+import { Autocomplete, Button, FormControlLabel, Paper, Switch, Typography } from '@mui/material';
 import ArmorSvgWrapper from './ArmorSvgWrapper';
-import Pin from '@mui/icons-material/PushPin';
 import Unpin from '@mui/icons-material/PushPinOutlined';
-import Exclude from '@mui/icons-material/Block';
 import Undo from '@mui/icons-material/Undo';
 import Remove from '@mui/icons-material/Remove';
 import { iconCommon } from './Results';
 import styled from 'styled-components';
 import Divider from '@mui/material/Divider';
 import PropTypes from 'prop-types';
+import { getJsonFromType } from '../util/tools';
 
 const UnpinIcon = styled(Unpin)`
     ${iconCommon}
@@ -83,11 +83,16 @@ const Settings = ({ onSourceChanged }) => {
 
     const toggleBlacklistType = type => {
         let tempTypeBlacklist = [...typeBlacklist];
+        const armorTypeList = getArmorTypeList();
 
         if (typeBlacklist.includes(type)) {
             tempTypeBlacklist = typeBlacklist.filter(x => x !== type);
         } else if (tempTypeBlacklist.length < 5) {
             tempTypeBlacklist = [...typeBlacklist, type];
+            const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
+            pulledMandatory[armorTypeList.indexOf(type)] = '';
+            saveToLocalStorage('mandatoryArmor', pulledMandatory);
+            setMandatory(pulledMandatory);
         } else {
             window.snackbar.createSnackbar(`You can't exclude all armor types!`, {
                 timeout: 3000
@@ -125,6 +130,18 @@ const Settings = ({ onSourceChanged }) => {
         onSourceChanged();
     };
 
+    const changePin = (type, armor, armorList) => {
+        const armorName = armor?.value || "none";
+        const isValid = !armorName ||
+            armorList.filter(x => x.value.toLowerCase() === armorName.toLowerCase())[0];
+
+        if (isValid) {
+            pin(armorName, type);
+        }
+
+        document.getElementById(`pinned-${type}`)?.blur();
+    };
+
     const renderBlacklist = armorName => {
         return <div key={armorName} className="blacklist-couple">
             <RemoveIcon onClick={() => exclude(armorName)} />
@@ -133,18 +150,51 @@ const Settings = ({ onSourceChanged }) => {
     };
 
     const renderList = (type, index) => {
-        const svgStyle = { width: '35px', height: '35px', transform: 'translateY(0px)', marginRight: '2px' };
+        const svgStyle = { width: '35px', height: '35px', transform: 'translateY(7px)', marginRight: '2px' };
         const noPin = <span style={{ fontStyle: 'italic', fontWeight: 'normal' }}>No {type} pinned</span>;
         const hasPin = Boolean(mandatory[index]);
         const myBlacklist = blacklist.filter(x => isArmorOfType(type, x));
         const hasBlacklist = myBlacklist.length > 0;
 
+        const datalist = [{
+            label: `No ${type} pinned`,
+            value: "none"
+        }, ...Object.entries(getJsonFromType(type)).filter(x => x[1][0] === "talisman" ||
+            x[1][x[1].length - 2] === "high"
+        )
+            .map(armor => {
+                return {
+                    label: armorNameFormat(armor[0]),
+                    value: armor[0]
+                };
+            }).sort()];
+
+        const stilo = {
+            '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                    borderColor: 'blue',
+                }
+            },
+        };
+
+        const value = hasPin ? { label: armorNameFormat(mandatory[index]), value: mandatory[index] } : datalist[0];
+
         return <Paper key={type} className="blacklist-rows" elevation={2}>
             <div className="pinlist">
                 <ArmorSvgWrapper type={type} style={svgStyle} />
                 <div className="pinned">
-                    {hasPin && <UnpinIcon onClick={() => pin(mandatory[index], type)} />}
-                    {hasPin ? mandatory[index] : noPin}
+                    <Autocomplete
+                        id={`pinned-${type}`}
+                        onChange={(ev, option) => changePin(type, option, datalist)}
+                        disablePortal
+                        options={datalist}
+                        sx={{ width: '250px' }}
+                        size="small"
+                        disableClearable={!hasPin}
+                        isOptionEqualToValue={option => option.value === value.value}
+                        value={value}
+                        renderInput={params => <TextField {...params} sx={hasPin ? stilo : {}} label={`Pinned ${type} Armor`} />}
+                    />
                 </div>
                 <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={typeBlacklist.includes(type)} />}
                     onChange={() => toggleBlacklistType(type)}

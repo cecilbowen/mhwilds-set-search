@@ -169,7 +169,7 @@ module.exports = {
         }],
         'constructor-super': ERROR,
         'generator-star-spacing': [ERROR, 'before'],
-        'no-confusing-arrow': ERROR,
+        'no-confusing-arrow': OFF,
         'no-constant-condition': OFF,
         'no-class-assign': ERROR,
         'no-const-assign': ERROR,

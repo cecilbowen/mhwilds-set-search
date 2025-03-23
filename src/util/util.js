@@ -133,10 +133,20 @@ export const notImplented = text => {
 };
 
 export const pinArmor = (name, type) => {
-    if (name.toLowerCase() === "none") { return undefined; }
     const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
     const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
     const pulledBlackType = getFromLocalStorage('blacklistedArmorTypes') || [];
+
+    if (name.toLowerCase() === "none") {
+        const typeIndex = getArmorTypeList().indexOf(type);
+        pulledMandatory[typeIndex] = '';
+        saveToLocalStorage('mandatoryArmor', pulledMandatory);
+        return {
+            mandatoryArmor: pulledMandatory,
+            blacklistedArmor: pulledBlack,
+            blacklistedArmorTypes: pulledBlackType
+        };
+    }
 
     let notifyStr = ["Pinned ", ""];
 
