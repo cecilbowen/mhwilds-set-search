@@ -31,7 +31,7 @@ import Unpin from '@mui/icons-material/PushPinOutlined';
 import Exclude from '@mui/icons-material/Block';
 import Undo from '@mui/icons-material/Undo';
 import Edit from '@mui/icons-material/DriveFileRenameOutline';
-import Close from '@mui/icons-material/DisabledByDefault';
+import Close from '@mui/icons-material/DisabledByDefaultRounded';
 import ArmorSvgWrapper from './ArmorSvgWrapper';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -42,6 +42,17 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.body}`]: {
         fontSize: 14,
     },
+    '@media (prefers-color-scheme: dark)': {
+        [`&.${tableCellClasses.head}`]: {
+            backgroundColor: '#141414',
+            color: '#e8ebed',
+        },
+        [`&.${tableCellClasses.body}`]: {
+            fontSize: 14,
+            borderColor: '#1b1919',
+            color: '#d5d6cd'
+        }
+    }
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
@@ -54,7 +65,18 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
     '&:hover': {
         backgroundColor: 'lightblue',
-    }
+    },
+
+    // Dark mode overrides
+    '@media (prefers-color-scheme: dark)': {
+        "backgroundColor": '#333',
+        '&:nth-of-type(odd)': {
+            backgroundColor: '#2c2b2b',
+        },
+        '&:hover': {
+            backgroundColor: '#1a3943', // or whatever dark hover color you like
+        }
+    },
 }));
 
 const PaginationBox = styled(Box)`
@@ -109,8 +131,9 @@ const CloseIcon = styled(Close)`
     ${iconCommon}
     color: crimson;
     position: absolute;
-    top: 5px;
-    right: 2px;
+    top: 9px;
+    right: 6px;
+    scale: 1.5;
 `;
 
 const Results = ({
@@ -255,7 +278,7 @@ const Results = ({
         const armorNames = result.armorNames;
         const theName = savedSets?.filter(x => x.id === result?.id)[0]?.name || "Unnamed Set";
 
-        return <StyledTableRow key={result.id}
+        return <StyledTableRow key={result.id} className={highlighted ? "row-shine" : ""}
             onClick={() => {
                 if (selectedResult?.id === result.id) {
                     setSelectedResult(undefined);
@@ -263,13 +286,13 @@ const Results = ({
                     setSelectedResult(result);
                 }
             }}
-            sx={{ '&:last-child td, &:last-child th': { border: 0 }, "backgroundColor": highlighted ? '#f8e7be !important' : '' }}>
+            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
             {save && <StyledTableCell align="left">{theName}</StyledTableCell>}
             <StyledTableCell align="left">
                 {customSlot === "slots" && renderSlots(result)}
                 {customSlot === "defense" && renderDefense(result)}
             </StyledTableCell>
-            <StyledTableCell align="left" component="th" scope="row">{armorNameFormat(armorNames[0])}</StyledTableCell>
+            <StyledTableCell align="left" scope="row">{armorNameFormat(armorNames[0])}</StyledTableCell>
             <StyledTableCell align="left">{armorNameFormat(armorNames[1])}</StyledTableCell>
             <StyledTableCell align="left">{armorNameFormat(armorNames[2])}</StyledTableCell>
             <StyledTableCell align="left">{armorNameFormat(armorNames[3])}</StyledTableCell>
@@ -346,10 +369,11 @@ const Results = ({
                 const style = disabled ? { color: 'gray', cursor: 'default', backgroundColor: 'transparent !important' } : {};
 
                 return <div className="armor-piece" key={type}>
-                    {isMandatory ? <UnpinIcon sx={style} title="Un-pin" onClick={pinFunc} /> :
-                        <PinIcon sx={style} title="Pin" onClick={pinFunc} />}
-                    {isBlacklisted ? <UndoExcludeIcon sx={style} title="Undo Exclude"
-                        onClick={excludeFunc} /> : <ExcludeIcon sx={style} title="Exclude" onClick={excludeFunc} />}
+                    {isMandatory ? <UnpinIcon className="pin-icon" sx={style} title="Un-pin" onClick={pinFunc} /> :
+                        <PinIcon className="pin-icon" sx={style} title="Pin" onClick={pinFunc} />}
+                    {isBlacklisted ? <UndoExcludeIcon className="blacklist-icon" sx={style} title="Undo Exclude"
+                        onClick={excludeFunc} /> : <ExcludeIcon className="blacklist-icon" sx={style}
+                            title="Exclude" onClick={excludeFunc} />}
                     <ArmorSvgWrapper type={type} rarity={armor.rarity} />
                     <span className="armor-name">{armor.name}</span>
                     {type !== "talisman" && <div className="def-holder">
@@ -444,13 +468,14 @@ const Results = ({
 
         const searchTargetTitle = isShiftPressed ? "Set only skills used to find this set as the search target" :
             "Set all skills from this set as the search target";
+        const paperStyle = hasSelectedResult ? "full" : "empty";
 
         return <div style={{ marginBottom: '1em' }}
             onMouseEnter={() => setIsMouseInside(true)}
             onMouseLeave={() => setIsMouseInside(false)}
         >
             <Accordion expanded={hasSelectedResult} elevation={hasSelectedResult ? 2 : 0}
-                sx={{ width: 'auto', backgroundColor: hasSelectedResult ? "#f0f1ff" : "transparent" }}>
+                className={`result-paper ${paperStyle}`}>
                 <AccordionSummary
                     expandIcon={null}
                     aria-controls="panel1-content"
@@ -484,7 +509,7 @@ const Results = ({
                     variant="outlined" color="warning">
                     Search Wiki
                 </Button>}
-                <CloseIcon onClick={() => setSelectedResult(undefined)} />
+                <CloseIcon className="close-icon" onClick={() => setSelectedResult(undefined)} />
             </Accordion>
         </div>;
     };
@@ -515,20 +540,26 @@ const Results = ({
             <TableContainer sx={{ maxHeight: "69vh", overflowY: "auto", width: '100%' }}>
                 <Table size="small" stickyHeader>
                     <TableHead>
-                        <StyledTableRow>
-                            {save && <StyledTableCell align="left">Name</StyledTableCell>}
-                            <StyledTableCell align="left" style={{ textTransform: "capitalize" }}>
+                        <StyledTableRow className="table-row">
+                            {save && <StyledTableCell component="th" align="left">Name</StyledTableCell>}
+                            <StyledTableCell align="left" component="th" style={{ textTransform: "capitalize" }}>
                                 {customSlot === "slots" && slotImg}
                                 {customSlot === "defense" && defImg}
                                 <div style={{ display: 'inline', marginLeft: '4px' }}>{customSlot}</div>
                                 {/* {<SwapIcon onClick={swapCustomSlot} />} */}
                             </StyledTableCell>
-                            <StyledTableCell align="left"><span className="fspan">{armorImages[0]} Head</span></StyledTableCell>
-                            <StyledTableCell align="left"><span className="fspan">{armorImages[1]} Chest</span></StyledTableCell>
-                            <StyledTableCell align="left"><span className="fspan">{armorImages[2]} Arms</span></StyledTableCell>
-                            <StyledTableCell align="left"><span className="fspan">{armorImages[3]} Waist</span></StyledTableCell>
-                            <StyledTableCell align="left"><span className="fspan">{armorImages[4]} Legs</span></StyledTableCell>
-                            <StyledTableCell align="left"><span className="fspan">{armorImages[5]} Talisman</span></StyledTableCell>
+                            <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[0]} Head</span></StyledTableCell>
+                            <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[1]} Chest</span></StyledTableCell>
+                            <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[2]} Arms</span></StyledTableCell>
+                            <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[3]} Waist</span></StyledTableCell>
+                            <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[4]} Legs</span></StyledTableCell>
+                            <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[5]} Talisman</span></StyledTableCell>
                         </StyledTableRow>
                     </TableHead>
                     <TableBody>
@@ -537,6 +568,7 @@ const Results = ({
                 </Table>
             </TableContainer>
             <TablePagination
+                className="pagination-row"
                 component={PaginationBox}
                 rowsPerPageOptions={pageOptions}
                 colSpan={3}
@@ -549,11 +581,12 @@ const Results = ({
                         inputProps: {
                             'aria-label': 'rows per page',
                         },
-                        native: true,
+                        native: false,
                         sx: { marginRight: '1em', marginLeft: '0em' },
-                        title: "Rows Per Page"
-                    },
+                        title: "Rows Per Page",
+                    }
                 }}
+
                 onPageChange={handleChangePage}
                 onRowsPerPageChange={handleChangeRowsPerPage}
                 ActionsComponent={TablePaginationActions}

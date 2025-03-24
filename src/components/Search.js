@@ -304,7 +304,7 @@ const Search = () => {
         </div>;
 
         const gradientStyle = generateStyle("#6ba6fd");
-        return <div className={`skills-search-bubble`} style={gradientStyle} key={skillName}
+        return <div className={`skills-search-bubble skill-gradient`} style={gradientStyle} key={skillName}
             title={description}>
             {iconImg}
             {bubbleDiv}
@@ -319,9 +319,9 @@ const Search = () => {
                 const slotSize = x[0];
                 const amount = x[1];
 
-                return <div className={`skills-search-bubble slot-filter`} style={gradientStyle} key={slotSize}
+                return <div className={`skills-search-bubble slot-filter slot-gradient`} style={gradientStyle} key={slotSize}
                     title={`Specify how many ${slotSize} slot decos you want to be able to fit into the free slots`}>
-                    <img className="skills-search-bubble-icon" src={`images/slot${slotSize}.png`} alt={slotSize} />
+                    <img className="skills-search-bubble-icon darken" src={`images/slot${slotSize}.png`} alt={slotSize} />
                     <div className="skill-level-edit">
                         <div className={`skills-search-bubble-text`}>
                             {`${slotSize} Slot Deco Filter`}
@@ -341,7 +341,8 @@ const Search = () => {
         return <div className="chosen-skills">
             {!isEmpty(slotFilters) && renderSlotFilters()}
             {Object.entries(skills).map(x => renderChosenSkill(x[0], x[1]))}
-            {(!isEmpty(skills) || !isEmpty(slotFilters)) && <div className="skills-search-bubble clear-all" onClick={() => {
+            {(!isEmpty(skills) || !isEmpty(slotFilters)) &&
+            <div className="skills-search-bubble clear-all clear-gradient" onClick={() => {
                 setSkills({});
                 setSlotFilters({});
                 local('skills', {});
@@ -375,7 +376,7 @@ const Search = () => {
                         const slotSize = x[0];
                         const amount = x[1];
 
-                        return <div className={`skills-search-bubble slot-filter more`}
+                        return <div className={`skills-search-bubble slot-filter more slot-gradient`}
                             style={gradientStyle} key={slotSize} onClick={() => addSlotFilter(slotSize, amount)}
                             title={`Specify how many ${slotSize} slot decos you want to be able to fit into the free slots`}>
                             <img className="skills-search-bubble-icon" src={`images/slot${slotSize}.png`} alt={slotSize} />
@@ -421,7 +422,7 @@ const Search = () => {
                     </div>;
 
                     const gradientStyle = generateStyle("#b4dff1");
-                    return <div className={`skills-search-bubble more`}
+                    return <div className={`skills-search-bubble more skill-gradient`}
                         onClick={() => addSkill(skillName, maxLevel)}
                         style={gradientStyle} key={skillName}
                         title={description}>

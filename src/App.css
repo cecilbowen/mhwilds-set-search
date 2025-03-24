@@ -11,6 +11,10 @@
   --armor-color-10: #4fd1f5;
   --armor-color-11: #ceaa52;
   --armor-color-12: #d5edfa;
+
+  --dark-mode-bkg-color: #333;
+  --dark-mode-white-color: #d1e1ef; /*#f0f0f0; */
+  --dark-mode-onblue-color: #8196a9;
 }
 
 .chosen-skills {
@@ -529,4 +533,241 @@ input[type=number] {
 }
 .tab-panel {
   margin-top: 2em;
+}
+
+.result-paper {
+  background-color: #f0f1ff;
+  width: auto;
+}
+
+.row-shine {
+  background-color: #f8e7be !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-mode-bkg-color);
+    color: var(--dark-mode-white-color);
+  }
+
+  .row-shine {
+    background-color: #504221 !important;
+  }
+  .pagination-row {
+    background-color: var(--dark-mode-bkg-color);
+  }
+  .MuiTablePagination-toolbar {
+    color: var(--dark-mode-white-color) !important;
+  }
+  .MuiTablePagination-toolbar button {
+    color: var(--dark-mode-white-color) !important;
+  }
+  .MuiTablePagination-toolbar svg {
+    color: var(--dark-mode-white-color) !important;
+  }
+  .MuiTablePagination-toolbar select * {
+    color: var(--dark-mode-white-color) !important;
+    background-color: var(--dark-mode-bkg-color) !important;
+  }
+  .MuiMenu-root .MuiPaper-root {
+    background-image: linear-gradient(rgb(55, 55, 60), rgb(54, 54, 74));
+    color: var(--dark-mode-white-color);
+  }
+  .MuiMenu-root .MuiPaper-root .Mui-selected {
+    background-color: #2d2d49;
+  }
+  .MuiMenu-root .MuiPaper-root li:hover {
+    background-color: rgba(172, 201, 231, 0.12);
+  }
+
+  .MuiTabs-list {
+    background-color: var(--dark-mode-bkg-color);
+  }
+
+  .MuiTabs-list .MuiButtonBase-root {
+    color: var(--dark-mode-white-color);
+  }
+
+  .github {
+    filter: brightness(100);
+  }
+
+  .def-value {
+    color: var(--dark-mode-onblue-color);
+  }
+
+  .armor-name {
+    color: var(--dark-mode-onblue-color);
+  }
+  .armor-skills {
+    color: var(--dark-mode-onblue-color);
+  }
+  .set-color {
+    color: #c07058;
+  }
+  .set-label {
+    color: var(--dark-mode-onblue-color);
+  }
+  .deco {
+    color: var(--dark-mode-onblue-color);
+  }
+
+  .pin-icon {
+    color: #1fc1d1 !important;
+  }
+  .blacklist-icon {
+    color: #be4242 !important;
+  }
+  .blacklist-icon:hover {
+    background-color: #46576b !important;
+  }
+  .pin-icon:hover {
+    background-color: #46576b !important;
+  }
+
+  .result-paper {
+    background-color: #2f3d4e !important
+  }
+
+  .MuiTypography-root {
+    color: var(--dark-mode-onblue-color);
+  }
+
+  .slot-filter .skills-search-bubble-icon {
+    filter: brightness(80%);
+  }
+  .slot-img {
+    filter: brightness(60%);
+  }
+  .armor-slot {
+    filter: brightness(60%) sepia(40%) hue-rotate(150deg);
+  }
+  .deco-img {
+    filter: brightness(60%) sepia(40%) hue-rotate(150deg);
+  }
+
+  .close-icon {
+    color: #cd4747 !important;
+  }
+  .close-icon:hover {
+    background-color: #46576b !important;
+    border-radius: 6px !important;
+  }
+
+  .notice {
+    color: #55cfff;
+  }
+  .warn {
+    color: #adb176;
+  }
+
+  .highlighted {
+    background-color: #52400a54;
+  }
+
+  .MuiInputBase-root input {
+    color: var(--dark-mode-white-color);
+  }
+
+  .skills-search .skills-search-bubble {
+    border-color: #676563;
+  }
+
+  .results .empty {
+    background-color: transparent !important;
+  }
+  .results .full {
+    background-color: #2e2c2c !important;
+  }
+
+  #skill-name-search-label, #deco-search-label, .pinned .MuiInputLabel-root,
+  .pinned .MuiButtonBase-root svg {
+    color: #b4a0a0;
+  }
+  .MuiOutlinedInput-root fieldset {
+    border-color: #705f5f;
+  }
+
+  .MuiSwitch-switchBase {
+    color: #9c8989 !important;
+  }
+  .MuiSwitch-switchBase.Mui-checked {
+    color: #4c84bc !important;
+  }
+
+  .MuiTab-root.Mui-selected {
+    color: #8db9ff !important;
+  }
+
+  .MuiButton-contained.MuiButton-colorPrimary, .MuiButton-contained.MuiButton-colorInfo {
+    background-color: #a8a8f1;
+    color: black;
+  }
+  .MuiButton-outlined.MuiButton-colorPrimary, .MuiButton-outlined.MuiButton-colorInfo {
+    color: #a8a8f1;
+    border-color: #a8a8f1;
+  }
+  .MuiButton-outlined.MuiButton-colorError {
+    color: #d36d6d;
+    border-color: #d36d6d;
+  }
+
+  .dinput {
+    background-color: #0000;
+    border-radius: 4px;
+    border-color: #696767;
+    color: var(--dark-mode-white-color);
+  }
+
+  .edit-name:hover {
+    background-color: #3d3c3c;
+  }
+
+  .skill-gradient {
+    background-color: rgba(17, 37, 67, 0) !important;
+    border-color: rgb(44, 94, 167) !important;
+    background-image: linear-gradient(150deg, rgb(36, 52, 61) 30%, rgba(12, 21, 33, 0.43) 50%) !important;
+    /* background-color: rgb(25, 57, 103) !important;
+    border-color: rgb(44, 94, 167) !important;
+    background-image: linear-gradient(150deg, rgb(14, 77, 114) 30%, rgb(25, 57, 103) 50%) !important; */
+  }
+  .slot-gradient {
+    background-color: rgb(69, 32, 69) !important;
+    border-color: rgb(101, 84, 101) !important;
+    background-image: linear-gradient(160deg, rgb(73, 46, 73) 30%, rgb(69, 32, 69) 50%) !important;
+  }
+  .clear-gradient {
+    background-color: rgb(131, 51, 51) !important;
+    border-color: rgb(126, 90, 90) !important;
+    background-image: linear-gradient(160deg, rgb(120, 55, 55) 30%, rgb(92, 32, 32) 50%) !important;
+  }
+  .skills-search-bubble .delete-icon {
+    color: #cf6969;
+  }
+
+  .armor-settings .MuiPaper-root {
+    background-color: #2e2c2c !important;
+  }
+
+  .image-icon {
+    color: #8f598f !important;
+  }
+
+  .pinned .MuiPopper-root div {
+    color: var(--dark-mode-white-color);
+  }
+
+  .snackbar--container {
+    background-color: #4b4646;
+  }
+
+  .MuiLinearProgress-root {
+    background-color: rgb(26, 37, 48) !important;
+  }
+  .MuiLinearProgress-bar1 {
+    background-color: #0b583b !important;
+  }
+  .MuiLinearProgress-bar2 {
+    background-color: #103743 !important;
+  }
 }

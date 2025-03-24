@@ -10,6 +10,7 @@ import Settings from "./components/Settings";
 import { getFromLocalStorage } from "./util/util";
 import { DEBUG } from "./util/constants";
 import { runAllTests } from "./util/logic";
+// import { compareArmor } from "./util/kiranico";
 
 const App = () => {
   const [tab, setTab] = useState(0);
@@ -23,6 +24,7 @@ const App = () => {
   useEffect(() => {
     if (DEBUG) {
       window.runAllTests = runAllTests;
+      // compareArmor();
     }
   }, []);
 
@@ -58,7 +60,7 @@ const App = () => {
   };
 
   const source = "https://github.com/cecilbowen/mhwilds-set-search";
-  const github = <img src={`images/github.png`} style={{ width: '14px', height: '14px' }} />;
+  const github = <img className="github" src={`images/github.png`} style={{ width: '14px', height: '14px' }} />;
   return (
     <div className="App">
       <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable"

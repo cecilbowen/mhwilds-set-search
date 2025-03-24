@@ -123,7 +123,8 @@ const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkil
                 className="skills-search-textfield" autoFocus
                 onChange={ev => setSearchText(ev.target.value)} value={searchText} />
             {showIcons && <IconButton title="Hide Icons" onClick={() => setShowIcons(!showIcons)}><AntiImageIcon /></IconButton>}
-            {!showIcons && <IconButton title="Show Icons" onClick={() => setShowIcons(!showIcons)}><ImageIcon /></IconButton>}
+            {!showIcons && <IconButton title="Show Icons" onClick={() => setShowIcons(!showIcons)}>
+                <ImageIcon className="image-icon" /></IconButton>}
             {!expanded && <IconButton title="Expand Skills Box" onClick={() => setExpanded(!expanded)}><ExpandIcon /></IconButton>}
             {expanded && <IconButton title="Minimize Skills Box"
                 onClick={() => setExpanded(!expanded)}><MinimizeIcon /></IconButton>}

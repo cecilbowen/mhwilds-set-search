@@ -21,11 +21,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 This license applies to the following modified svg content: 
-    ../svg/HeadSvg.js
-    ../svg/ChestSvg.js
-    ../svg/ArmsSvg.js
-    ../svg/WaistSvg.js
-    ../svg/LegsSvg.js
-    ../svg/TalismanSvg.js
+    src/svg/HeadSvg.js
+    src/svg/ChestSvg.js
+    src/svg/ArmsSvg.js
+    src/svg/WaistSvg.js
+    src/svg/LegsSvg.js
+    src/svg/TalismanSvg.js
 
 Sourced from https://github.com/OthelloRhin/MHW_Icons_SVG
