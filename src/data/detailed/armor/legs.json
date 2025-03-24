@@ -815,7 +815,7 @@
       },
       {
         "name": "Constitution",
-        "level": 1
+        "level": 2
       }
     ],
     "groupSkill": "Imparted Wisdom",
@@ -2271,7 +2271,16 @@
     "thunderResistance": -2,
     "iceResistance": 3,
     "dragonResistance": 0,
-    "skills": [],
+    "skills": [
+      {
+        "name": "Bleeding Resistance",
+        "level": 3
+      },
+      {
+        "name": "Flinch Free",
+        "level": 3
+      }
+    ],
     "groupSkill": "Imparted Wisdom",
     "materials": [
       {

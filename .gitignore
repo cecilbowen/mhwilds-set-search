@@ -25,5 +25,9 @@ yarn-error.log*
 .venv
 
 misc/*
+/src/data/kiranico
+
+!/misc/kiranico-ripper.js
 !/misc/stats.py
 !/misc/tests.py
+

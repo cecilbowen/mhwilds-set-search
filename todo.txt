@@ -1,6 +1,8 @@
 todo:
 --------------
 use different algorithm for more skills that isn't slow as molasses (probably depth-first search)
+cache more skills results until figure out faster implementation so we don't have to re-search
+allow tabbing after text searching skills and then enter to quickly select one
 make 100% certain results are sorted so that best slots are at top 
 see whats up with test_more not including the [3, 2, 1] result
     probably just a case of broadening the limits of my mod_point_map bs in get_best_armor
