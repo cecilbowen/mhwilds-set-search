@@ -2137,15 +2137,15 @@
     "iceResistance": 3,
     "dragonResistance": 0,
     "skills": [
-	  {
-		"name": "Iron Skin",
-		"level": 3
-	  },
-	  {
-		"name": "Partbreaker",
-		"level": 1
-	  }
-	],
+      {
+        "name": "Iron Skin",
+        "level": 3
+      },
+      {
+        "name": "Partbreaker",
+        "level": 1
+      }
+    ],
     "groupSkill": "Imparted Wisdom",
     "materials": [
       {
