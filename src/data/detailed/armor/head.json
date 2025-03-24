@@ -2294,15 +2294,15 @@
     "iceResistance": 3,
     "dragonResistance": 0,
     "skills": [
-	  {
-		"name": "Stun Resistance",
-		"level": 3
-	  },
-	  {
-		"name": "Partbreaker",
-		"level": 1
-	  }
-	],
+      {
+        "name": "Stun Resist",
+        "level": 3
+      },
+      {
+        "name": "Partbreaker",
+        "level": 1
+      }
+    ],
     "groupSkill": "Imparted Wisdom",
     "materials": [
       {
