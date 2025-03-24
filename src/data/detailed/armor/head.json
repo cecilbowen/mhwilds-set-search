@@ -2293,7 +2293,16 @@
     "thunderResistance": -2,
     "iceResistance": 3,
     "dragonResistance": 0,
-    "skills": [],
+    "skills": [
+      {
+        "name": "Stun Resist",
+        "level": 3
+      },
+      {
+        "name": "Partbreaker",
+        "level": 1
+      }
+    ],
     "groupSkill": "Imparted Wisdom",
     "materials": [
       {
@@ -2766,7 +2775,7 @@
       },
       {
         "name": "Fire Resistance",
-        "level": 1
+        "level": 2
       }
     ],
     "groupSkill": "Scaling Prowess",
@@ -4200,7 +4209,7 @@
       },
       {
         "name": "Poison Resistance",
-        "level": 1
+        "level": 2
       }
     ],
     "groupSkill": "Imparted Wisdom",
@@ -4871,11 +4880,11 @@
     "dragonResistance": 0,
     "skills": [
       {
-        "name": "Maximum Might",
+        "name": "Latent Power",
         "level": 2
       },
       {
-        "name": "Stamina Surge",
+        "name": "Evade Extender",
         "level": 1
       }
     ],
