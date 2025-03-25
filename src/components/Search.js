@@ -176,7 +176,10 @@ const Search = () => {
             [...params.mandatoryArmor].sort().join("."),
             Object.entries(params.decoMods).map(x => `${x[0]}-${x[1]}`).sort().join(".")
         ].join(",");
-        const fromTheSto = JSON.parse(localStorage.getItem('paramStr') || '');
+        let fromTheSto = localStorage.getItem('paramStr');
+        if (fromTheSto) {
+            fromTheSto = JSON.parse(fromTheSto);
+        }
         const same = paramStr === fromTheSto || false;
         local('paramStr', paramStr);
 
