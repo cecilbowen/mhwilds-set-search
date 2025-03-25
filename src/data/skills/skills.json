@@ -369,15 +369,15 @@
     "name": "Defense Boost",
     "icon": "defense",
     "type": "armor",
-    "description": "Increases defense. Also improves resistances at higher levels.\nBonus: +10\nBonus: +20\nAll elemental resistances +3\nBonus: +20\nAll elemental resistances +3\nBonus: +35\nAll elemental resistances +5\nBonus: +35\nAll elemental resistances +5",
+    "description": "Increases defense. Also improves resistances at higher levels.",
     "levels": [
       "Defense +5",
       "Defense +10",
-      "Defense +5%",
-      "Defense +5%",
-      "Defense +8%",
-      "Defense +8%",
-      "Defense +10%"
+      "Defense +5%, Bonus: +10",
+      "Defense +5%, Bonus: +20, All elemental resistances +3",
+      "Defense +8%, Bonus: +20, All elemental resistances +3",
+      "Defense +8%, Bonus: +35, All elemental resistances +5",
+      "Defense +10%, Bonus: +35, All elemental resistances +5"
     ]
   },
   {

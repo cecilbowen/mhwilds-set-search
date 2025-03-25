@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
     areArmorSetsEqual, armorNameFormat, formatGroupSkills, formatSetSkills,
+    formatSkillsDiff,
     generateWikiString,
     getArmorColorHue,
     getArmorDefenseFromName, getArmorDefenseFromNames, getArmorFromNames, getDecosFromNames,
-    getFromLocalStorage, paginate, saveArmorSet, saveToLocalStorage
+    getFromLocalStorage, getSkillDiff, getSkillPopup, isGroupSkillName, isSetSkillName, paginate, saveArmorSet, saveToLocalStorage
 } from '../util/util';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -150,12 +151,16 @@ const Results = ({
     const [customSlot, setCustomSlot] = useState("slots"); // or defense
     const [savedSets, setSavedSets] = useState([]);
     const [editingName, setEditingName] = useState(false);
+    const [showExtra, setShowExtra] = useState(false);
+    const [showAll, setShowAll] = useState(true);
 
     useEffect(() => {
-        // if (!save) {
         const tempSets = getFromLocalStorage('savedSets');
+        const tempAll = getFromLocalStorage('showAll') ?? showAll;
+        const tempExtra = getFromLocalStorage('showExtra') ?? showExtra;
         setSavedSets(tempSets);
-        // }
+        setShowAll(tempAll);
+        setShowExtra(tempExtra);
 
         const handleKeyDown = event => {
             if (event.ctrlKey) { setIsCtrlPressed(true); }
@@ -352,8 +357,29 @@ const Results = ({
         </div>;
     };
 
-    const renderArmor = armorSet => {
+    const renderSkill = (sk, j, arr, searchedSkills) => {
+        const comma = j < arr.length - 1;
+        const want = searchedSkills?.[sk.name];
+        const isWantedSkill = Boolean(want);
+        let wantedCls = !isWantedSkill ? 'wanted' : '';
+        if (searchedSkills === undefined) {
+            wantedCls = '';
+        }
+        const title = getSkillPopup(sk.name);
+        const setTag = isGroupSkillName(sk.name) ? 'set-names set-color' : '';
+        const groupTag = isSetSkillName(sk.name) ? 'set-names group-color' : '';
+        const tag = setTag || groupTag || '';
+
+        return <div key={sk.name} className={`result-skill ${tag}`} title={title}>
+            <span className={`${wantedCls} sk-name`}>{`${sk.name} `}</span>
+            <span className={`${wantedCls}`}>{`Lv. ${sk.level}`}</span>
+            {comma && ', '}
+        </div>;
+    };
+
+    const renderArmor = (armorSet, result) => {
         const armorTypeMap = ["head", "chest", "arms", "waist", "legs", "talisman"];
+        const searchedSkills = skills || result.searchedSkills || {};
 
         return <div className="armor-holder">
             {armorSet.map((armor, i) => {
@@ -361,18 +387,18 @@ const Results = ({
                 const type = armorTypeMap[i];
                 const isBlacklisted = blacklistedArmor.includes(armor.name);
                 const isMandatory = mandatoryArmor.includes(armor.name);
-                const isTypeBlacklisted = blacklistedArmorTypes.includes(armorTypeMap[i]);
+                // const isTypeBlacklisted = blacklistedArmorTypes.includes(armorTypeMap[i]);
                 const pinFunc = () => pin(armor.name, type);
                 const disabled = armor.name.toLowerCase() === "none";
                 const excludeFunc = () => exclude(armor.name);
-                const armorHue = getArmorColorHue(armor.rarity);
-                const style = disabled ? { color: 'gray', cursor: 'default', backgroundColor: 'transparent !important' } : {};
+                // const armorHue = getArmorColorHue(armor.rarity);
+                const cls = disabled ? 'disabled' : '';
 
                 return <div className="armor-piece" key={type}>
-                    {isMandatory ? <UnpinIcon className="pin-icon" sx={style} title="Un-pin" onClick={pinFunc} /> :
-                        <PinIcon className="pin-icon" sx={style} title="Pin" onClick={pinFunc} />}
-                    {isBlacklisted ? <UndoExcludeIcon className="blacklist-icon" sx={style} title="Undo Exclude"
-                        onClick={excludeFunc} /> : <ExcludeIcon className="blacklist-icon" sx={style}
+                    {isMandatory ? <UnpinIcon className={cls || 'pin-icon'} title="Un-pin" onClick={pinFunc} /> :
+                        <PinIcon className={cls || 'pin-icon'} title="Pin" onClick={pinFunc} />}
+                    {isBlacklisted ? <UndoExcludeIcon className={cls || 'blacklist-icon'} title="Undo Exclude"
+                        onClick={excludeFunc} /> : <ExcludeIcon className={cls || 'blacklist-icon'}
                             title="Exclude" onClick={excludeFunc} />}
                     <ArmorSvgWrapper type={type} rarity={armor.rarity} />
                     <span className="armor-name">{armor.name}</span>
@@ -381,7 +407,9 @@ const Results = ({
                         <div className="def-value">{defense?.upgraded || 0}</div>
                     </div>}
                     {renderArmorSlots(armor.slots)}
-                    <span className="armor-skills">{armor.skills}</span>
+                    <span className="armor-skills">
+                        {armor.skills.map((sk, j, arr) => renderSkill(sk, j, arr, searchedSkills))}
+                    </span>
                 </div>;
             })}
         </div>;
@@ -396,7 +424,7 @@ const Results = ({
         const nameEl = save ? <Typography className="edit-name" sx={{ cursor: "pointer !important" }}
             onClick={() => setEditingName(true)}
             title="Click to rename set">
-            <EditIcon />{mySetName}</Typography> : null;
+            <EditIcon className="edit-icon" />{mySetName}</Typography> : null;
         const editNameEl = <TextField id="edit-name" label="Rename Set"
             onKeyDown={handleEditKeyDown}
             onFocus={e => e.target.select()}
@@ -406,8 +434,10 @@ const Results = ({
         let summary = <Typography sx={{ marginLeft: '-1em', fontSize: '20px', fontWeight: 'bold', cursor: 'default' }}>
             {results.length > 0 ? "Click on a set below to see details." : pageStr}
         </Typography>;
+        let all = null;
         let setEffects = null;
         let groupSkills = null;
+        let extraSkillsDiv = null;
         let freeSlots = null;
         let defenseTotal = null;
         if (selectedResult) {
@@ -416,9 +446,16 @@ const Results = ({
             const defense = getArmorDefenseFromNames(selectedResult.armorNames);
 
             summary = renderDecos(decos);
-            details = renderArmor(armor);
+            details = renderArmor(armor, selectedResult);
+            const extras = skills || selectedResult.searchedSkills;
+            const extraSkills = extras ? getSkillDiff(extras, {
+                ...selectedResult.skills,
+                ...selectedResult.setSkills,
+                ...selectedResult.groupSkills
+            }) : {};
             const setExist = !isEmpty(selectedResult.setSkills);
             const groupExist = !isEmpty(selectedResult.groupSkills);
+            const extraExist = !isEmpty(extraSkills);
             // setSpacer = setExist || groupExist ? <div style={{ marginTop: '1em' }}></div> : setSpacer;
 
             defenseTotal = <div className="def-total-holder">
@@ -428,18 +465,37 @@ const Results = ({
                 <div className="def-value base">({defense.base} base)</div>
             </div>;
 
+            const allMagic = formatSkillsDiff(selectedResult.skills, showGroupSkills);
+            all = <div className="all-skills">
+                {Object.entries(selectedResult.skills).map(x => {
+                    return { name: x[0], level: x[1] };
+                }).map(renderSkill)}
+            </div>;
+
             if (setExist) {
                 const setMagic = formatSetSkills(selectedResult.setSkills, showGroupSkills);
                 setEffects = <div className="set-skills">
                     <span className="set-label">Set Skills:</span>
-                    <span className="set-names set-color">{setMagic}</span>
+                    {Object.entries(selectedResult.setSkills).map(x => {
+                        return { name: x[0], level: x[1] };
+                    }).map(renderSkill)}
                 </div>;
             }
             if (groupExist) {
                 const groupMagic = formatGroupSkills(selectedResult.groupSkills, showGroupSkills);
-                groupSkills = <div className="group-skills">
+                groupSkills = <div className="set-skills">
                     <span className="set-label">Group Skills:</span>
-                    <span className="set-names group-color">{groupMagic}</span>
+                    {Object.entries(selectedResult.groupSkills).map(x => {
+                        return { name: x[0], level: x[1] };
+                    }).map(renderSkill)}
+                </div>;
+            }
+            if (extraExist) {
+                const extraMagic = formatSkillsDiff(extraSkills, showGroupSkills, '+');
+                extraSkillsDiv = <div className="group-skills">
+                    <span className="set-label"
+                        title="Bonus skill levels you didn't search for">Extra Skills:</span>
+                    <span className="set-names wanted">{extraMagic}</span>
                 </div>;
             }
 
@@ -486,10 +542,12 @@ const Results = ({
                     {!editingName && hasSelectedResult && nameEl}
                     {summary}
                 </AccordionSummary>
+                {showAll && all}
                 {details}
                 {defenseTotal}
                 {setEffects}
                 {groupSkills}
+                {showExtra && extraSkillsDiv}
                 <div className="free-slots-holder">
                     <span className="set-label">Free Slots:</span>
                     <div className="free-holder">{freeSlots}</div>

@@ -4,7 +4,7 @@ import SKILLS from '../data/skills/skills.json';
 import SET_SKILLS from '../data/skills/set-skills.json';
 import GROUP_SKILLS from '../data/skills/group-skills.json';
 import TextField from '@mui/material/TextField';
-import { getFromLocalStorage, isGroupSkill, isSetSkill } from '../util/util';
+import { getFromLocalStorage, getSkillPopup, isGroupSkill, isSetSkill } from '../util/util';
 import Image from '@mui/icons-material/Image';
 import HideImage from '@mui/icons-material/HideImage';
 import Expand from '@mui/icons-material/Expand';
@@ -57,6 +57,7 @@ const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkil
                 displayName,
                 groupSkill: x.skill,
                 description: x.description,
+                levels: x.levels,
                 maxLevel: x.levels?.length || 1,
                 icon: iconName
             };
@@ -102,7 +103,7 @@ const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkil
         const highlightClass = highlighted ? "highlighted" : "";
         const whichBlur = hideBlur ? "blurred-gone" : "blurred";
         const blurredClass = blurred ? whichBlur : "";
-        const description = allSkills.filter(x => x.name === skill.name)?.[0]?.description;
+        const description = getSkillPopup(skill.name);
         const nameDiv = <div className={`skills-search-bubble-text ${highlightClass}-text`}>
             {skill.displayName}
         </div>;

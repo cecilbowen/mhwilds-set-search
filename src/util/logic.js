@@ -25,6 +25,7 @@ let currentSlotFilters = {};
 export let freeThree = [];
 export let freeTwo = [];
 export let freeOne = [];
+export let cached;
 
 const getBestArmor = (
     skills, setSkills = {}, groupSkills = {},
@@ -872,7 +873,11 @@ export const search = async parameters => {
     return rolls;
 };
 
-export const searchAndSpeed = async parameters => {
+export const searchAndSpeed = async(parameters, useCached = false) => {
+    if (useCached && cached) {
+        return cached;
+    }
+
     const startTime = performance.now();
 
     await new Promise(resolve => setTimeout(resolve, 0)); // allow UI update before blocking
@@ -880,10 +885,9 @@ export const searchAndSpeed = async parameters => {
     const endTime = performance.now();
     const seconds = (endTime - startTime) / 1000;
 
-    return {
-        results,
-        seconds,
-    };
+    cached = { results, seconds };
+
+    return cached;
 };
 
 export const moreAndSpeed = async parameters => {

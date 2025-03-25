@@ -243,9 +243,12 @@ tbody > tr {
   margin-left: 4px;
 }
 .armor-skills {
+  display: flex;
+  flex-wrap: wrap;
   font-family: monospace;
   font-size: 16px;
   margin-left: 8px;
+  white-space: break-spaces;
 }
 .armor-slots {
   display: flex;
@@ -257,8 +260,28 @@ tbody > tr {
   height: 22px;
 }
 
+.all-skills {
+  display: flex;
+  border: 1px solid;
+  padding: 0.5em;
+  border-radius: 6px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  font-family: monospace;
+  font-size: 16px;
+  background-color: rgba(17, 37, 67, 0) !important;
+  border-color: rgb(176, 185, 199) !important;
+  background-image: linear-gradient(185deg, rgba(56, 86, 177, 0.22) 30%, rgba(233, 236, 254, 0.35) 50%) !important;
+  color: black;
+  flex-wrap: wrap;
+  white-space: break-spaces;
+}
 .set-skills {
   margin-left: 1em;
+  display: flex;
+  white-space: break-spaces;
+  align-items: baseline;
 }
 .group-skills {
   margin-left: 1em;
@@ -276,6 +299,9 @@ tbody > tr {
 }
 .group-color {
   color: #3d8f92;
+}
+.extra-color {
+  color: goldenrod;
 }
 
 .free-slots-holder {
@@ -440,6 +466,7 @@ input[type=number] {
 
 .general-settings {
   display: flex;
+  flex-wrap: wrap;
 }
 .armor-settings {
   display: flex;
@@ -544,10 +571,37 @@ input[type=number] {
   background-color: #f8e7be !important;
 }
 
+.disabled {
+  color: gray !important;
+  cursor: default !important;
+  background-color: transparent !important;
+}
+
+.edit-icon {
+  transform: translateY(0px);
+}
+.edit-icon:hover {
+  background-color: transparent !important;
+}
+
+.wanted {
+  color: #0183d1;
+}
+.result-skill {
+  display: flex;
+}
+/* .result-skill .sk-name:hover {
+  text-decoration: underline;
+} */
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--dark-mode-bkg-color);
     color: var(--dark-mode-white-color);
+  }
+
+  .wanted {
+    color: #89c789;
   }
 
   .row-shine {
@@ -625,6 +679,7 @@ input[type=number] {
     background-color: #46576b !important;
   }
 
+
   .result-paper {
     background-color: #2f3d4e !important
   }
@@ -699,6 +754,10 @@ input[type=number] {
     color: #8db9ff !important;
   }
 
+  .tab-root {
+    background-color: transparent !important;
+  }
+
   .MuiButton-contained.MuiButton-colorPrimary, .MuiButton-contained.MuiButton-colorInfo {
     background-color: #a8a8f1;
     color: black;
@@ -743,6 +802,13 @@ input[type=number] {
   }
   .skills-search-bubble .delete-icon {
     color: #cf6969;
+  }
+
+  .all-skills {
+    color: #7db1e0;
+    background-color: rgba(17, 37, 67, 0) !important;
+    border-color: rgb(44, 94, 167) !important;
+    background-image: linear-gradient(185deg, rgb(54, 48, 48) 30%, rgba(38, 39, 41, 0.63) 50%) !important;
   }
 
   .armor-settings .MuiPaper-root {

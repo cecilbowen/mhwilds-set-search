@@ -47,6 +47,8 @@ const Settings = ({ onSourceChanged }) => {
     const [showDecoSkills, setShowDecoSkills] = useState(false);
     const [showGroupSkills, setShowGroupSkills] = useState(false);
     const [hideSource, setHideSource] = useState(false);
+    const [showAll, setShowAll] = useState(true);
+    const [showExtra, setShowExtra] = useState(false);
 
     useEffect(() => {
         const loadedMandatory = getFromLocalStorage('mandatoryArmor') || mandatory;
@@ -55,12 +57,16 @@ const Settings = ({ onSourceChanged }) => {
         const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showDecoSkills;
         const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') ?? showGroupSkills;
         const loadedSource = getFromLocalStorage('hideSource') ?? hideSource;
+        const loadedShowAll = getFromLocalStorage('showAll') ?? showAll;
+        const loadedShowExtra = getFromLocalStorage('showExtra') ?? showExtra;
         setMandatory(loadedMandatory);
         setBlacklist(loadedBlacklist);
         setTypeBlacklist(loadedBlacklistTypes);
         setShowDecoSkills(loadedShowDeco);
         setShowGroupSkills(loadedShowGroup);
         setHideSource(loadedSource);
+        setShowAll(loadedShowAll);
+        setShowExtra(loadedShowExtra);
     }, []);
 
     const types = getArmorTypeList();
@@ -122,6 +128,16 @@ const Settings = ({ onSourceChanged }) => {
     const toggleShowGroup = () => {
         saveToLocalStorage('showGroupSkillNames', !showGroupSkills);
         setShowGroupSkills(!showGroupSkills);
+    };
+
+    const toggleShowAll = () => {
+        saveToLocalStorage('showAll', !showAll);
+        setShowAll(!showAll);
+    };
+
+    const toggleShowExtra = () => {
+        saveToLocalStorage('showExtra', !showExtra);
+        setShowExtra(!showExtra);
     };
 
     const toggleHideSource = () => {
@@ -224,6 +240,20 @@ const Settings = ({ onSourceChanged }) => {
                     onChange={() => toggleHideSource()}
                     label={`Hide source code tab`} />
             </div>
+            <Divider component="div" />
+
+            <Typography sx={{ fontSize: '20px', fontWeight: 'bold' }}>
+                Armor Result Settings
+            </Typography>
+            <div className="general-settings">
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={showAll} />}
+                    onChange={() => toggleShowAll()}
+                    label={`Show all skills box`} />
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={showExtra} />}
+                    onChange={() => toggleShowExtra()}
+                    label={`Show 'Extra Skills' line`} />
+            </div>
+
             <Divider component="div" />
             <Typography sx={{ fontSize: '20px', fontWeight: 'bold' }}>
                 Pinned & Blacklisted Armor

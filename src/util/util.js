@@ -9,7 +9,6 @@ import LEGS from "../data/detailed/armor/legs.json";
 import TALISMANS from "../data/detailed/talisman.json";
 import DECORATIONS from '../data/compact/decoration.json';
 import DEFENSE_LEVELS from '../data/compact/defense-levels.json';
-import SKILLS_DB from '../data/skills/skills.json';
 import DECO_DB from '../data/detailed/decoration.json';
 
 import HEAD_MAP from '../data/compact/head.json';
@@ -19,13 +18,17 @@ import WAIST_MAP from '../data/compact/waist.json';
 import LEGS_MAP from '../data/compact/legs.json';
 import TALIS_MAP from '../data/compact/talisman.json';
 
+import SKILLS_DB from '../data/skills/skills.json';
+import SET_SKILLS_DB from '../data/skills/set-skills.json';
+import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
+
 import { renderToStaticMarkup } from 'react-dom/server';
 
 export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
 export const isSetSkill = skill => Boolean(skill.piecesPerLevel);
-export const isGroupSkillName = name => GROUP_SKILLS[name];
-export const isSetSkillName = name => SET_SKILLS[name];
+export const isGroupSkillName = name => GROUP_SKILLS[name] || GROUP_SKILLS_DB.filter(x => x.skill === name).length > 0;
+export const isSetSkillName = name => SET_SKILLS[name] || SET_SKILLS_DB.filter(x => x.skill === name).length > 0;
 export const getMaxLevel = skillName => {
     const isSet = SET_SKILLS[skillName];
     const isGroup = GROUP_SKILLS[skillName];
@@ -380,6 +383,34 @@ export const generateWikiString = (skills, setSkills, groupSkills, slotFilters =
     return skillsWikiFormat.join("%2C");
 };
 
+export const getSkillDiff = (skillsA, skillsB) => {
+    const result = {};
+    const keys = new Set([...Object.keys(skillsA), ...Object.keys(skillsB)]);
+
+    for (const key of keys) {
+        const val1 = skillsA[key] ?? 0;
+        const val2 = skillsB[key] ?? 0;
+        result[key] = Math.abs(val1 - val2);
+    }
+
+    return result;
+};
+
+export const getSkillPopup = skillName => {
+    let skill = skillName;
+
+    if (!skill.description) {
+        skill = SKILLS_DB.filter(x => x.name === skillName)[0] ||
+            SET_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0] ||
+            GROUP_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0];
+    }
+
+    if (!skill) { return ""; }
+
+    const levelsDesc = skill?.levels?.map((desc, i) => `Level ${i + 1}: ${desc}`).join('\n') || '';
+    return `${skill.description}\n${levelsDesc}`;
+};
+
 export const getArmorFromNames = names => {
     const all = [...HEAD, ...CHEST, ...ARMS, ...WAIST, ...LEGS, ...TALISMANS];
     const ret = [];
@@ -390,7 +421,7 @@ export const getArmorFromNames = names => {
             ret.push({
                 name, // should be None
                 rarity: 1,
-                skills: "",
+                skills: [], // "",
                 slots: []
             });
             continue;
@@ -399,7 +430,7 @@ export const getArmorFromNames = names => {
         ret.push({
             name,
             rarity: found.rarity,
-            skills: found.skills.map(x => `${x.name} Lv. ${x.level}`).join(", "),
+            skills: found.skills, // .map(x => `${x.name} Lv. ${x.level}`).join(", "),
             slots: found.slots || [],
         });
     }
@@ -407,12 +438,38 @@ export const getArmorFromNames = names => {
     return ret;
 };
 
-export const formatSetSkills = (setSkills, showSkillNames = false) => {
-    return Object.entries(setSkills).map(x => `${showSkillNames ? SET_SKILLS[x[0]][0] : x[0]} Lv. ${x[1]}`).join(", ");
+export const formatSkillsDiff = (skillDiff, showSkillNames = false, levelPre = '') => {
+    const skills = {};
+    const setSkills = {};
+    const groupSkills = {};
+
+    for (const [name, level] of Object.entries(skillDiff)) {
+        if (!level) { continue; }
+        if (isSetSkillName(name)) {
+            setSkills[name] = level;
+        } else if (isGroupSkillName(name)) {
+            groupSkills[name] = level;
+        } else {
+            skills[name] = level;
+        }
+    }
+
+    const str = Object.entries(skills)
+        .map(x => `${x[0]} Lv. ${levelPre}${x[1]}`).join(", ");
+    const setStr = formatSetSkills(setSkills, showSkillNames, levelPre);
+    const groupStr = formatGroupSkills(groupSkills, showSkillNames, levelPre);
+
+    return [str, setStr, groupStr].filter(x => x).join(", ");
 };
 
-export const formatGroupSkills = (groupSkills, showSkillNames = false) => {
-    return Object.entries(groupSkills).map(x => `${showSkillNames ? GROUP_SKILLS[x[0]][0] : x[0]} Lv. ${x[1]}`).join(", ");
+export const formatSetSkills = (setSkills, showSkillNames = false, levelPre = '') => {
+    return Object.entries(setSkills)
+        .map(x => `${showSkillNames ? SET_SKILLS[x[0]][0] : x[0]} Lv. ${levelPre}${x[1]}`).join(", ");
+};
+
+export const formatGroupSkills = (groupSkills, showSkillNames = false, levelPre = '') => {
+    return Object.entries(groupSkills)
+        .map(x => `${showSkillNames ? GROUP_SKILLS[x[0]][0] : x[0]} Lv. ${levelPre}${x[1]}`).join(", ");
 };
 
 export const hexToRgba = hex => {

@@ -10,7 +10,7 @@ import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 import {
     excludeArmor, generateStyle,
     generateWikiString,
-    getFromLocalStorage, getMaxLevel, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage
+    getFromLocalStorage, getMaxLevel, getSkillPopup, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage
 } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
 import ArrowRight from '@mui/icons-material/ArrowForwardIos';
@@ -149,7 +149,7 @@ const Search = () => {
             console.log(`https://mhwilds.wiki-db.com/sim/#skills=${wiki}&fee=1`);
         }
 
-        return getSearchParameters({
+        const params = getSearchParameters({
             skills: justSkills,
             setSkills: justSetSkills,
             groupSkills: justGroupSkills,
@@ -160,10 +160,25 @@ const Search = () => {
             decoMods: decoInventory,
             cancelToken: cancelledRef
         });
+
+        return params;
     };
 
     const getResults = () => {
         const params = prepareSearch();
+
+        // check if we search is a repeat from last search
+        const paramStr = [
+            Object.entries(skills).map(x => `${x[0]}-${x[1]}`).sort().join("."),
+            Object.entries(params.slotFilters).map(x => `${x[0]}-${x[1]}`).sort().join("."),
+            [...params.blacklistedArmor].sort().join("."),
+            [...params.blacklistedArmorTypes].sort().join("."),
+            [...params.mandatoryArmor].sort().join("."),
+            Object.entries(params.decoMods).map(x => `${x[0]}-${x[1]}`).sort().join(".")
+        ].join(",");
+        const fromTheSto = JSON.parse(localStorage.getItem('paramStr') || '');
+        const same = paramStr === fromTheSto || false;
+        local('paramStr', paramStr);
 
         setShowMore(false);
         setSearchedSkills(skills);
@@ -171,7 +186,7 @@ const Search = () => {
         local('lastParams', params);
         local('searchedSkills', skills);
         // console.log('params', params);
-        const cache = searchAndSpeed(params);
+        const cache = searchAndSpeed(params, same);
         cache.then(ret => {
             setElapsedSeconds(ret.seconds);
             setResults(ret.results);
@@ -287,7 +302,7 @@ const Search = () => {
             displayName = skill.skill;
         }
 
-        const description = skill.description;
+        const description = getSkillPopup(skill);
         const nameDiv = <div className={`skills-search-bubble-text`} style={{ marginRight: '4px' }}>
             {displayName}
         </div>;
@@ -408,7 +423,7 @@ const Search = () => {
                         displayName = skill.skill;
                     }
 
-                    const description = skill.description;
+                    const description = getSkillPopup(skill);
                     const nameDiv = <div className={`skills-search-bubble-text`} style={{ marginRight: '4px' }}>
                         {displayName}
                     </div>;
