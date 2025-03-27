@@ -8,9 +8,11 @@ import SKILLS_DB from '../data/skills/skills.json';
 import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 import {
+    getSearchUrl,
     excludeArmor, generateStyle,
     generateWikiString,
-    getFromLocalStorage, getMaxLevel, getSkillPopup, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage
+    getFromLocalStorage, getMaxLevel, getSkillPopup, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage,
+    copyTextToClipboard
 } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
 import ArrowRight from '@mui/icons-material/ArrowForwardIos';
@@ -20,7 +22,8 @@ import styled from "styled-components";
 import { getSearchParameters, isEmpty } from "../util/tools";
 import { Button } from "@mui/material";
 import Results from "./Results";
-import { DEBUG } from "../util/constants";
+import { DEBUG, SYNC } from "../util/constants";
+import SKILL_ID_MAP from '../data/ids/skill-ids.json';
 
 const ArrowL = styled(ArrowLeft)`
     width: 16px !important;
@@ -63,8 +66,8 @@ const Search = () => {
 
     useEffect(() => {
         const loadedParams = getFromLocalStorage('lastParams') || lastParams;
-        const loadedSkills = getFromLocalStorage('skills') || skills;
-        const loadedSlotFilters = getFromLocalStorage('slotFilters') || slotFilters;
+        let loadedSkills = getFromLocalStorage('skills') || skills;
+        let loadedSlotFilters = getFromLocalStorage('slotFilters') || slotFilters;
         const loadedSearchedSkills = getFromLocalStorage('searchedSkills') || searchedSkills;
         const loadedDecoInventory = getFromLocalStorage('decoInventory') || decoInventory;
         const loadedMandatory = getFromLocalStorage('mandatoryArmor') || mandatoryArmor;
@@ -73,6 +76,45 @@ const Search = () => {
         const loadedDontUseDecos = getFromLocalStorage('dontUseDecos') || dontUseDecos;
         const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showDecoSkillNames;
         const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') ?? showGroupSkillNames;
+
+        // handle getting skills from url
+        const urlParams = new URLSearchParams(window.location.search);
+        const skillsStr = urlParams.get('skills');
+        let moddedSearch = false;
+        if (skillsStr) {
+            const skillsStrArr = skillsStr.split('_');
+            loadedSkills = Object.fromEntries(skillsStrArr.map(x => {
+                const split = x.split("-");
+                const id = parseInt(split[0], 10);
+                const level = parseInt(split[1], 10);
+                const name = Object.entries(SKILL_ID_MAP).filter(sk => sk[1] === id)[0]?.[0];
+
+                return [name, level];
+            }).filter(x => x[0]));
+            urlParams.delete('skills');
+            moddedSearch = true;
+            saveToLocalStorage('skills', loadedSkills);
+        }
+
+        // handle getting slot filters from url
+        const sfStr = urlParams.get('sf');
+        if (sfStr) {
+            const slotFilterArr = sfStr.split('_');
+            loadedSlotFilters = Object.fromEntries(slotFilterArr.map(x => {
+                const split = x.split("-");
+                const slotSize = split[0];
+                const amount = parseInt(split[1], 10);
+
+                return [slotSize, amount];
+            }).filter(x => x[0]));
+            urlParams.delete('sf');
+            moddedSearch = true;
+            saveToLocalStorage('slotFilters', loadedSlotFilters);
+        }
+
+        if (moddedSearch) {
+            window.history.replaceState({}, document.title, window.location.pathname + urlParams);
+        }
 
         setLastParams(loadedParams);
         setSkills(loadedSkills);
@@ -117,6 +159,10 @@ const Search = () => {
     };
 
     const addMoreSkill = (name, level) => {
+        if (level <= 0 || (skills[name] || 0) >= level) {
+            return;
+        }
+
         setMoreResults(prev => {
             const tMore = { ...prev };
             tMore[name] = level;
@@ -164,7 +210,17 @@ const Search = () => {
         return params;
     };
 
-    const getResults = () => {
+    const getResults = event => {
+        if (event.ctrlKey) {
+            const url = getSearchUrl(skills, slotFilters);
+            copyTextToClipboard(url, () => {
+                window.snackbar.createSnackbar(`Copied search url to the clipboard`, {
+                    timeout: 3000
+                });
+            });
+            return;
+        }
+
         const params = prepareSearch();
 
         // check if we search is a repeat from last search
@@ -209,7 +265,7 @@ const Search = () => {
         const cache = moreAndSpeed(params);
         cache.then(ret => {
             setElapsedSeconds(ret.seconds);
-            setMoreResults(ret.results);
+            // setMoreResults(ret.results);
             setIsGenerating(false);
         });
     };
@@ -360,16 +416,16 @@ const Search = () => {
             {!isEmpty(slotFilters) && renderSlotFilters()}
             {Object.entries(skills).map(x => renderChosenSkill(x[0], x[1]))}
             {(!isEmpty(skills) || !isEmpty(slotFilters)) &&
-            <div className="skills-search-bubble clear-all clear-gradient" onClick={() => {
-                setSkills({});
-                setSlotFilters({});
-                local('skills', {});
-                local('slotFilters', {});
-            }}
-                style={gradientStyle}
-                title="Clear all chosen skills">
-                Clear All
-            </div>}
+                <div className="skills-search-bubble clear-all clear-gradient" onClick={() => {
+                    setSkills({});
+                    setSlotFilters({});
+                    local('skills', {});
+                    local('slotFilters', {});
+                }}
+                    style={gradientStyle}
+                    title="Clear all chosen skills">
+                    Clear All
+                </div>}
         </div>;
     };
 
@@ -459,7 +515,7 @@ const Search = () => {
                 showGroupSkillNames={showGroupSkillNames}
                 chosenSkillNames={Object.keys(skills)} />
             <div className="button-holder">
-                <Button variant="contained" disabled={isGenerating} onClick={() => getResults()}>Search</Button>
+                <Button variant="contained" disabled={isGenerating} onClick={getResults}>Search</Button>
                 <Button variant="outlined" disabled={isGenerating} onClick={() => getMoreSkills()}>More Skills</Button>
                 {isGenerating && <Button sx={{ cursor: 'pointer' }} variant="outlined" color="error" onClick={() => {
                     cancelledRef.current = true;

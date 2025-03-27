@@ -401,7 +401,7 @@ const Results = ({
                         onClick={excludeFunc} /> : <ExcludeIcon className={cls || 'blacklist-icon'}
                             title="Exclude" onClick={excludeFunc} />}
                     <ArmorSvgWrapper type={type} rarity={armor.rarity} />
-                    <span className="armor-name">{armor.name}</span>
+                    <span className="armor-name">{armorNameFormat(armor.name)}</span>
                     {type !== "talisman" && <div className="def-holder">
                         <img className="armor-def-img" src={`images/defense-up.png`} />
                         <div className="def-value">{defense?.upgraded || 0}</div>

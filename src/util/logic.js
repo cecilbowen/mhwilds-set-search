@@ -5,17 +5,19 @@ import SET_SKILL_DB from '../data/compact/set-skills.json';
 import GROUP_SKILL_DB from '../data/compact/group-skills.json';
 import {
     _x,
+    canArmorFulfillSkill,
+    cartesianProduct,
     emptyGearPiece,
     emptyGearSet, formatArmorC, getArmorSkillNames, getBestDecos, getDecoSkillsFromNames,
     getInclusiveRemainingSlots,
-    getJsonFromType, getSearchParameters, groupArmorIntoSets,
+    getJsonFromType, getSearchParameters, getSkillTestOrderBinary, groupArmorIntoSets,
     hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
     isInSets, mergeSumMaps, slottageLengthCompare, slottageLengthCompareSort,
-    slottageSizeCompare, speed, speedAsync, updateSkillPotential
+    slottageSizeCompare, speed, updateSkillPotential
 } from "./tools";
-import { CHOSEN_ARMOR_DEBUG, DEBUG } from "./constants";
+import { CHOSEN_ARMOR_DEBUG, DEBUG, DFS, DFS_DEBUG } from "./constants";
 import { allTests } from "../test/tests";
-import { isGroupSkillName, isSetSkillName } from "./util";
+import { getArmorTypeList, isGroupSkillName, isSetSkillName } from "./util";
 
 let totalPossibleCombinations = 0;
 let decoInventory = { ...DECO_INVENTORY };
@@ -27,7 +29,7 @@ export let freeTwo = [];
 export let freeOne = [];
 export let cached;
 
-const getBestArmor = (
+export const getBestArmor = (
     skills, setSkills = {}, groupSkills = {},
     mandatoryPieceNames = [],
     blacklistedArmor = [],
@@ -89,7 +91,6 @@ const getBestArmor = (
                     return slottageSizeCompare(a, b, b[1][4] - a[1][4]);
                 }
                 return slottageLengthCompare(a, b, b[1][4] - a[1][4]); // default to defense at end
-                // return slottageLengthCompareSort(bV[3]) - slottageLengthCompareSort(aV[3]) || bV[4] - aV[4];
             })
         );
 
@@ -111,8 +112,6 @@ const getBestArmor = (
     let totalMaxSkillPotential = {};
     let maxPossibleSkillPotential = emptyGearSet();
     let modPointMap = {};
-
-    // console.log("best", Object.keys(best.head));
 
     for (const skillName of Object.keys(skills)) {
         for (const [category, data] of Object.entries(best)) {
@@ -255,26 +254,28 @@ const getBestArmor = (
     }
 
     if (DEBUG && CHOSEN_ARMOR_DEBUG) {
+        const debugOutput = [];
         console.log('getBestArmor() return: ', bareMinimum);
-        console.log("========================================");
-        console.log("Chosen Armor Details:");
-        console.log("========================================");
+        debugOutput.push("========================================");
+        debugOutput.push("Chosen Armor Details:");
+        debugOutput.push("========================================");
 
-        console.log("Skills:", skills);
-        if (setSkills && Object.keys(setSkills).length) {
-            console.log("Set Skills:", setSkills);
+        if (!isEmpty(skills)) {
+            debugOutput.push(`Skills: ${JSON.stringify(skills)}\n`);
         }
-        if (groupSkills && Object.keys(groupSkills).length) {
-            console.log("Group Skills:", groupSkills);
+        if (!isEmpty(setSkills)) {
+            debugOutput.push(`Set Skills: ${JSON.stringify(setSkills)}`);
         }
-        console.log("\n");
+        if (!isEmpty(groupSkills)) {
+            debugOutput.push(`Group Skills: ${JSON.stringify(groupSkills)}\n`);
+        }
 
         for (const [category, data] of Object.entries(bareMinimum)) {
-            console.log(category.toUpperCase()); // Print category name
+            debugOutput.push(category.toUpperCase()); // Print category name
 
             for (const [aName, aData] of Object.entries(data)) {
                 if (category === "talisman" || category === "decos") {
-                    console.log(`\t${aName}, ${JSON.stringify(aData[1])}`);
+                    debugOutput.push(`\t${aName}, ${JSON.stringify(aData[1])}`);
                     continue;
                 }
 
@@ -284,20 +285,22 @@ const getBestArmor = (
                 const relevantSetSkill = setSkills && aData[aData.length - 1] in setSkills ? ` / ${aData[aData.length - 1]}` : "";
                 const relevantGroupSkill = groupSkills && aData[2] in groupSkills ? ` / ${aData[2]}` : "";
 
-                console.log(
+                const skStr = isEmpty(relevantSkills) ? '' : JSON.stringify(relevantSkills);
+                debugOutput.push(
                     // eslint-disable-next-line max-len
-                    `\t${aName}: (${_x(aData, "type")} - ${_x(aData, "slots")})`, relevantSkills, relevantSetSkill, relevantGroupSkill
+                    `\t${aName}: (${_x(aData, "type")} - ${_x(aData, "slots")}) ${skStr}${relevantSetSkill}${relevantGroupSkill}`,
                 );
             }
-            console.log("\n"); // Extra space after each category
+            debugOutput.push("\n"); // Extra space after each category
         }
+        console.log(debugOutput.join("\n"));
         console.log("========================================");
     }
 
     return bareMinimum;
 };
 
-const armorCombo = (head, chest, arms, waist, legs, talisman) => {
+export const armorCombo = (head, chest, arms, waist, legs, talisman) => {
     const armorSkills = [head.data[1], chest.data[1], arms.data[1], waist.data[1], legs.data[1], talisman.data[1]];
     const armorSlots = [head.data[3], chest.data[3], arms.data[3], waist.data[3], legs.data[3]];
 
@@ -347,83 +350,83 @@ const armorCombo = (head, chest, arms, waist, legs, talisman) => {
 };
 
 const getDecosToFulfillSkills = (decos, desiredSkills, slotsAvailable, startingSkills) => {
-  if (!decos || Object.keys(decos).length === 0) { return null; }
+    if (!decos || Object.keys(decos).length === 0) { return null; }
 
-  // Clone and adjust required skills
-  const skillsNeeded = { ...desiredSkills };
-  for (const skill in startingSkills) {
-    if (skillsNeeded[skill] !== undefined) {
-      skillsNeeded[skill] -= startingSkills[skill];
-      if (skillsNeeded[skill] <= 0) {
-        delete skillsNeeded[skill];
-      }
-    }
-  }
-
-  if (Object.keys(skillsNeeded).length === 0) {
-    return {
-      decoNames: [],
-      freeSlots: slotsAvailable
-    };
-  }
-
-  // Sort slots in ascending order to fill smallest first
-  const slotPool = [...slotsAvailable].sort((a, b) => a - b);
-
-  // Sort decorations: prioritize highest total skill points, then smaller slot size
-  const sortedDecos = Object.entries(decos).sort((a, b) => {
-    const [_, __, slotA] = a[1];
-    const [___, ____, slotB] = b[1];
-    const totalSkillA = Object.values(a[1][1]).reduce((sum, val) => sum + val, 0);
-    const totalSkillB = Object.values(b[1][1]).reduce((sum, val) => sum + val, 0);
-    if (totalSkillB !== totalSkillA) { return totalSkillB - totalSkillA; }
-    return slotA - slotB;
-  });
-
-  const usedDecos = [];
-  const usedDecosCount = {};
-  const usedSlots = [];
-
-  for (const [skill, neededPoints] of Object.entries(skillsNeeded)) {
-    let remaining = neededPoints;
-    while (remaining > 0) {
-      let foundMatch = false;
-
-      for (const [decoName, [decoType, decoSkills, decoSlot]] of sortedDecos) {
-        if (!(skill in decoSkills)) { continue; }
-        if ((usedDecosCount[decoName] || 0) >= (decoInventory[decoName] || 0)) { continue; }
-
-        // Try to find the smallest slot that fits
-        for (let i = 0; i < slotPool.length; i++) {
-          const slotSize = slotPool[i];
-          if (slotSize >= decoSlot) {
-            // Use this decoration
-            usedDecos.push(decoName);
-            usedDecosCount[decoName] = (usedDecosCount[decoName] || 0) + 1;
-            usedSlots.push(slotSize);
-            slotPool.splice(i, 1);
-
-            remaining -= decoSkills[skill];
-            foundMatch = true;
-            break;
-          }
+    // Clone and adjust required skills
+    const skillsNeeded = { ...desiredSkills };
+    for (const skill in startingSkills) {
+        if (skillsNeeded[skill] !== undefined) {
+            skillsNeeded[skill] -= startingSkills[skill];
+            if (skillsNeeded[skill] <= 0) {
+                delete skillsNeeded[skill];
+            }
         }
-
-        if (foundMatch) { break; }
-      }
-
-      if (!foundMatch) { return null; } // Cannot fulfill the skill
     }
-  }
 
-  return {
-    decoNames: usedDecos,
-    freeSlots: slotPool
-  };
+    if (Object.keys(skillsNeeded).length === 0) {
+        return {
+            decoNames: [],
+            freeSlots: slotsAvailable
+        };
+    }
+
+    // Sort slots in ascending order to fill smallest first
+    const slotPool = [...slotsAvailable].sort((a, b) => a - b);
+
+    // Sort decorations: prioritize highest total skill points, then smaller slot size
+    const sortedDecos = Object.entries(decos).sort((a, b) => {
+        const [_, __, slotA] = a[1];
+        const [___, ____, slotB] = b[1];
+        const totalSkillA = Object.values(a[1][1]).reduce((sum, val) => sum + val, 0);
+        const totalSkillB = Object.values(b[1][1]).reduce((sum, val) => sum + val, 0);
+        if (totalSkillB !== totalSkillA) { return totalSkillB - totalSkillA; }
+        return slotA - slotB;
+    });
+
+    const usedDecos = [];
+    const usedDecosCount = {};
+    const usedSlots = [];
+
+    for (const [skill, neededPoints] of Object.entries(skillsNeeded)) {
+        let remaining = neededPoints;
+        while (remaining > 0) {
+            let foundMatch = false;
+
+            for (const [decoName, [decoType, decoSkills, decoSlot]] of sortedDecos) {
+                if (!(skill in decoSkills)) { continue; }
+                if ((usedDecosCount[decoName] || 0) >= (decoInventory[decoName] || 0)) { continue; }
+
+                // Try to find the smallest slot that fits
+                for (let i = 0; i < slotPool.length; i++) {
+                    const slotSize = slotPool[i];
+                    if (slotSize >= decoSlot) {
+                        // Use this decoration
+                        usedDecos.push(decoName);
+                        usedDecosCount[decoName] = (usedDecosCount[decoName] || 0) + 1;
+                        usedSlots.push(slotSize);
+                        slotPool.splice(i, 1);
+
+                        remaining -= decoSkills[skill];
+                        foundMatch = true;
+                        break;
+                    }
+                }
+
+                if (foundMatch) { break; }
+            }
+
+            if (!foundMatch) { return null; } // Cannot fulfill the skill
+        }
+    }
+
+    return {
+        decoNames: usedDecos,
+        freeSlots: slotPool
+    };
 };
 
 // Re-orders display results to put some more desirable elements up front
-const reorder = dataList => {
+export const reorder = dataList => {
     // Attach original index to ensure stable sorting
     const indexedData = dataList.map((item, index) => ({ ...item, _originalIndex: index }));
 
@@ -522,22 +525,156 @@ const reorder = dataList => {
     return [...pre, ...longestSlots];
 };
 
-const product = (...arrays) => {
-    return arrays.reduce((prevAccumulator, currentArray) => {
-        const newAccumulator = [];
-        prevAccumulator.forEach(prevAccumulatorArray => {
-            currentArray.forEach(currentValue => {
-                newAccumulator.push(prevAccumulatorArray.concat(currentValue));
-            });
-        });
-        return newAccumulator;
-    }, [[]]);
-};
+const rollCombosDfs = async(
+    gear, desiredSkills, setSkills, groupSkills, limit, findOne = false, cancelToken = undefined
+) => {
+    const results = [];
+    const armorSlots = getArmorTypeList();
 
-const cartesianProduct = (...arrays) => {
-    return arrays.reduce((acc, arr) => {
-        return acc.flatMap(c => arr.map(x => [...c, x]));
-    }, [[]]);
+    const headList = Object.entries(gear.head);
+    const chestList = Object.entries(gear.chest);
+    const armsList = Object.entries(gear.arms);
+    const waistList = Object.entries(gear.waist);
+    const legsList = Object.entries(gear.legs);
+    const talismanList = Object.entries(gear.talisman);
+
+    // Calculate total possible combinations
+    totalPossibleCombinations =
+        headList.length * chestList.length * armsList.length *
+        waistList.length * legsList.length * talismanList.length;
+    if (CHOSEN_ARMOR_DEBUG) {
+        console.log(`possible: ${totalPossibleCombinations.toLocaleString()}`);
+    }
+
+    const requiredSetPoints = {};
+    const requiredGroupPoints = {};
+    for (const [name, level] of Object.entries(setSkills)) {
+        requiredSetPoints[name] = level * 2;
+    }
+    for (const name of Object.keys(groupSkills)) {
+        requiredGroupPoints[name] = 3;
+    }
+
+    let counter = 1, inc = 1, allCounter = 0;
+
+    // Precompute best-case future values for skill projection
+    const dfs = async(index, currentArmor, usedNames, setCounts, groupCounts) => {
+        allCounter++;
+        if (index === armorSlots.length) {
+            const fullSet = armorCombo(
+                formatArmorC(currentArmor.head),
+                formatArmorC(currentArmor.chest),
+                formatArmorC(currentArmor.arms),
+                formatArmorC(currentArmor.waist),
+                formatArmorC(currentArmor.legs),
+                formatArmorC(currentArmor.talisman)
+            );
+
+            const result = test(fullSet, gear.decos, desiredSkills);
+            if (result) {
+                result.id = counter;
+                result._id = inc;
+                inc++;
+                results.push(result);
+                if (findOne) { return true; }
+            }
+
+            counter++;
+            return false;
+        }
+
+        if (allCounter % 500 === 0) {
+            await new Promise(resolve => setTimeout(resolve, 0));
+            // console.log('delay', allCounter);
+        }
+        if (cancelToken && cancelToken.current) {
+            console.warn('rollCombosDfs() cancel pressed, returning early');
+            return true;
+        }
+
+        const slot = armorSlots[index];
+        const pieces = gear[slot];
+
+        for (const name of Object.keys(pieces)) {
+            if (usedNames.has(name) && name !== "None") { continue; } // None exception since None name is not unique
+            const piece = pieces[name];
+            currentArmor[slot] = [name, piece];
+            usedNames.add(name);
+
+            // Track set/group skill counts
+            const addedSetCounts = {};
+            const addedGroupCounts = {};
+
+            const mySetSkillName = piece[7];
+            const myGroupSkillName = piece[2];
+            if (mySetSkillName && setSkills[mySetSkillName]) { // if piece has set skill
+                setCounts[mySetSkillName] = (setCounts[mySetSkillName] || 0) + 1;
+                addedSetCounts[mySetSkillName] = (addedSetCounts[mySetSkillName] || 0) + 1;
+            }
+            if (myGroupSkillName && groupSkills[myGroupSkillName]) {
+                groupCounts[myGroupSkillName] = (groupCounts[myGroupSkillName] || 0) + 1;
+                addedGroupCounts[myGroupSkillName] = (addedGroupCounts[myGroupSkillName] || 0) + 1;
+            }
+
+            let shouldContinue = true;
+
+            // Prune early based on set/group skill future feasibility
+            const remainingSlots = armorSlots.length - (index + 1);
+            for (const skill of Object.keys(setSkills)) {
+                const needed = setSkills[skill] * 2 - (setCounts[skill] || 0);
+                if (needed > remainingSlots) {
+                    shouldContinue = false;
+                    break;
+                }
+            }
+            for (const skill of Object.keys(groupSkills)) {
+                const needed = 3 - (groupCounts[skill] || 0);
+                if (needed > remainingSlots) {
+                    shouldContinue = false;
+                    break;
+                }
+            }
+
+            if (DFS_DEBUG) {
+                const armorStrForDebug = Object.entries(currentArmor).map(x => { // debug only, remove later
+                    const type = x[0];
+                    const armorName = x[1][0];
+                    const armorData = x[1][1];
+                    return `${type.toUpperCase()} ${armorName}: ${JSON.stringify(armorData[1])} ${JSON.stringify(armorData[3])}`;
+                }).join('\n');
+                console.log(`${armorStrForDebug}`);
+            }
+
+            // Check projected skill feasibility
+            for (const [skillName, level] of Object.entries(desiredSkills)) {
+                if (!canArmorFulfillSkill(currentArmor, gear, gear.decos, skillName, level)) {
+                    shouldContinue = false;
+
+                    if (DFS_DEBUG) {
+                        console.log(`\tFAIL - ${skillName} Lv. ${level}, backtracking..`); // debug only, remove later
+                    }
+                    break;
+                } else if (DFS_DEBUG) { // debug only, remove later
+                    console.log(`\tPASS - ${skillName} Lv. ${level}, continuing..`);
+                }
+            }
+
+            if (shouldContinue) {
+                const done = await dfs(index + 1, currentArmor, usedNames, setCounts, groupCounts);
+                if (done) { return true; }
+            }
+
+            usedNames.delete(name);
+            delete currentArmor[slot];
+            for (const skill of Object.keys(addedSetCounts)) { setCounts[skill] -= addedSetCounts[skill]; }
+            for (const skill of Object.keys(addedGroupCounts)) { groupCounts[skill] -= addedGroupCounts[skill]; }
+        }
+
+        return false;
+    };
+
+    await dfs(0, {}, new Set(), {}, {});
+    return results;
 };
 
 const rollCombos = async(gear, skills, setSkills, groupSkills, limit, findOne = false, cancelToken = undefined) => {
@@ -630,7 +767,7 @@ const rollCombos = async(gear, skills, setSkills, groupSkills, limit, findOne = 
     return ret;
 };
 
-const test = (armorSet, decos, desiredSkills) => {
+export const test = (armorSet, decos, desiredSkills) => {
     const have = {};
     const need = {};
     let done = true;
@@ -673,26 +810,40 @@ const test = (armorSet, decos, desiredSkills) => {
     return null;
 };
 
-export const isSkillInResults = (results, skillName, level) => {
+const getMaxSkillLevelsFromResults = (results, allSkills) => {
+    const soFar = {};
     for (const res of results) {
-        if (res.skills?.[skillName] >= level ||
-            res.setSkills?.[skillName] >= level ||
-            res.groupSkills?.[skillName] >= level
-        ) {
-            return true;
+        for (const [name, level] of Object.entries(res.skills)) {
+            soFar[name] = Math.max(soFar[name] || 0, level);
+        }
+        for (const [name, level] of Object.entries(res.setSkills)) {
+            soFar[name] = Math.max(soFar[name] || 0, level);
+        }
+        for (const [name, level] of Object.entries(res.groupSkills)) {
+            soFar[name] = Math.max(soFar[name] || 0, level);
         }
 
-        if (isSetSkillName(skillName) || isGroupSkillName(skillName)) {
-            return false;
+        // if result has free slots, add skill levels from decos
+        if (res.freeSlots.length > 0) {
+            for (const [name, level] of Object.entries(allSkills)) {
+                if (isSetSkillName(name) || isGroupSkillName(name)) {
+                    continue;
+                }
+                const neededLevel = level - (soFar[name] || 0);
+                if (neededLevel === 0) { continue; }
+                const bestDecos = getBestDecos({ [name]: level });
+                if (isEmpty(bestDecos)) { continue; }
+                const bestDeco = Object.values(bestDecos)?.[0];
+                const slotSize = bestDeco[2];
+                const skillLevel = bestDeco[1][name];
+                const slotsWeUsing = res.freeSlots.filter(x => x >= slotSize);
+                const newLevel = slotsWeUsing.length * skillLevel;
+                soFar[name] = Math.max(newLevel, soFar[name] || 0);
+            }
         }
-
-        const decos = getBestDecos({ [skillName]: level });
-        const fits = getDecosToFulfillSkills(decos, { [skillName]: level }, res.freeSlots, res.skills);
-
-        if (fits) { return true; }
     }
 
-    return false;
+    return soFar;
 };
 
 export const getAddableSkills = async parameters => {
@@ -702,17 +853,6 @@ export const getAddableSkills = async parameters => {
     currentSlotFilters = { ...params.slotFilters };
     params.slotFilters = {};
     const priorResults = await search(parameters);
-
-    const skillsCanAdd = {};
-    const baseSkills = { ...params.skills, ...params.setSkills, ...params.groupSkills };
-
-    const numberTuple = (n, stop = 1) => {
-        const result = [1];
-        for (let i = n; i > stop; i--) {
-            result.push(i);
-        }
-        return result;
-    };
     const armorSkillsList = getArmorSkillNames();
 
     if (DEBUG) { console.log("beginning skill iterations..."); }
@@ -726,9 +866,20 @@ export const getAddableSkills = async parameters => {
         Object.entries(GROUP_SKILL_DB).map(x => [x[0], 1])
     );
     const combinedSkills = { ...trimmedSkills, ...trimmedSetSkills, ...trimmedGroupSkills };
-
     const totalSkills = Object.keys(combinedSkills).length;
-    let counter = 0, lastProgress = 0;
+
+    const skillsCanAdd = getMaxSkillLevelsFromResults(priorResults, combinedSkills);
+    console.log(`skillsCanAdd:\n${Object.entries(skillsCanAdd).filter(x => x[1]).map(x => `\t${x[0]}: ${x[1]}`).join("\n")}`);
+
+    for (const [name, level] of Object.entries(combinedSkills)) {
+        const myLevel = skillsCanAdd[name];
+        if (myLevel) {
+            combinedSkills[name] = level - myLevel;
+            if (params.addMoreFunc) { params.addMoreFunc(name, myLevel); }
+        }
+    }
+
+    let counter = totalSkills - Object.values(combinedSkills).filter(x => x).length, lastProgress = 0;
 
     for (const [skillName, maxSkillLevel] of Object.entries(combinedSkills)) {
         // visual progress updating
@@ -743,7 +894,7 @@ export const getAddableSkills = async parameters => {
         if (counter % 10 === 0) {
             await new Promise(resolve => setTimeout(resolve, 0));
         }
-        if (DEBUG) {
+        if (DEBUG && DFS_DEBUG) {
             console.log(`getMoreSkills Progress: ${percentDone.toFixed(2)}%...`);
         }
 
@@ -753,23 +904,25 @@ export const getAddableSkills = async parameters => {
             return skillsCanAdd;
         }
 
-        const existingSkillLevel = baseSkills[skillName] ?? 0;
+        const existingSkillLevel = skillsCanAdd[skillName] ?? 0;
         if (existingSkillLevel >= maxSkillLevel) { continue; }
 
-        const levelsToTry = numberTuple(maxSkillLevel, Math.max(1, existingSkillLevel));
+        // const levelsToTry = numberTuple(maxSkillLevel, Math.max(1, existingSkillLevel));
+        const levelsToTry = getSkillTestOrderBinary(maxSkillLevel, existingSkillLevel);
+        console.log(`${skillName}: ${levelsToTry.join(', ')}`);
 
         for (const level of levelsToTry) {
-            if (level <= existingSkillLevel) { continue; }
-            const good = isSkillInResults(priorResults, skillName, level);
-            if (good) {
-                if (DEBUG) { console.log(`-+ ${skillName} ${level}: yes`); }
-                skillsCanAdd[skillName] = level;
-                if (params.addMoreFunc) { params.addMoreFunc(skillName, level); }
-                if (level > 1) { break; }
-                continue;
-            } else if (level === 1) {
-                if (DEBUG) { console.log(`-+ ${skillName} ${level}: no`); }
-            }
+            if (level <= skillsCanAdd[skillName] ?? 0) { continue; }
+            // const good = isSkillInResults(priorResults, skillName, level);
+            // if (good) {
+            //     if (DEBUG) { console.log(`-+ ${skillName} ${level}: yes`); }
+            //     skillsCanAdd[skillName] = level;
+            //     if (params.addMoreFunc) { params.addMoreFunc(skillName, level); }
+            //     if (level > 1) { break; }
+            //     continue;
+            // } else if (level === 1) {
+            //     if (DEBUG) { console.log(`-+ ${skillName} ${level}: no`); }
+            // }
 
             if (!exhaustive) { continue; }
 
@@ -797,10 +950,6 @@ export const getAddableSkills = async parameters => {
                 if (DEBUG) { console.log(`-- ${skillName} ${level}: yes`); }
                 skillsCanAdd[skillName] = level;
                 if (params.addMoreFunc) { params.addMoreFunc(skillName, level); }
-                if (level > 1) { break; }
-            } else if (level === 1) {
-                if (DEBUG) { console.log(`-- ${skillName} ${level}: no`); }
-                break;
             }
         }
     }
@@ -825,7 +974,12 @@ export const search = async parameters => {
         }
     }
 
-    let rolls = await rollCombos(
+    let comboFunc = rollCombosDfs;
+    if (!DFS) {
+        comboFunc = rollCombos;
+    }
+
+    let rolls = await comboFunc(
         gear, params.skills, params.setSkills, params.groupSkills, params.limit,
         params.findOne, params.cancelToken
     );

@@ -7,6 +7,7 @@ import LEGS from "../data/compact/legs.json";
 import TALISMANS from "../data/compact/talisman.json";
 import DECORATIONS from "../data/compact/decoration.json";
 import SKILLS from '../data/skills/skills.json';
+import { getArmorTypeList } from "./util";
 
 export const getSearchParameters = parameters => {
     return {
@@ -440,6 +441,12 @@ const countSlots = slots => {
     return counts;
 };
 
+export const cartesianProduct = (...arrays) => {
+    return arrays.reduce((acc, arr) => {
+        return acc.flatMap(c => arr.map(x => [...c, x]));
+    }, [[]]);
+};
+
 export const getInclusiveRemainingSlots = (freeSlots, usedFilter) => {
     // Start with a count of available slots
     const available = countSlots(freeSlots);
@@ -485,3 +492,68 @@ export const getInclusiveRemainingSlots = (freeSlots, usedFilter) => {
     return remaining;
 };
 
+export const getSkillTestOrderBinary = (maxLevel, currentLevel = 0) => {
+    const result = [];
+    const visited = new Set();
+
+    const helper = (low, high) => {
+        if (low > high) { return; }
+        const mid = Math.floor((low + high) / 2);
+        if (!visited.has(mid)) {
+            result.push(mid);
+            visited.add(mid);
+        }
+        helper(mid + 1, high);
+        helper(low, mid - 1);
+    };
+
+    const start = currentLevel + 1;
+    helper(start, maxLevel);
+    return result;
+};
+
+export const canArmorFulfillSkill = (armor, armorPool, decos, skillName, skillLevel) => {
+    const poolTypeList = getArmorTypeList().filter(type => !armor[type]);
+
+    // add up points for types we don't have
+    let totalPoints = 0;
+    for (const type of poolTypeList) {
+        let bestPointsOfType = 0;
+        for (const armorData of Object.values(armorPool[type])) { // loop through each piece of type
+            let points = armorData[1][skillName] || 0;
+            if (type !== "talisman") {
+                const armorSlots = armorData[3];
+                for (const deco of Object.values(decos)) {
+                    const decoSkillLevel = deco[1][skillName];
+                    if (decoSkillLevel) {
+                        points += decoSkillLevel * armorSlots.filter(slotSize => slotSize >= deco[2]).length;
+                        break;
+                    }
+                }
+            }
+
+            bestPointsOfType = Math.max(points, bestPointsOfType);
+        }
+        totalPoints += bestPointsOfType;
+        if (totalPoints >= skillLevel) { return true; }
+    }
+
+    // add up points for types we do have
+    for (const [armorType, armorPieces] of Object.entries(armor)) {
+        // const armorName = armorPieces[0];
+        const armorData = armorPieces[1];
+        totalPoints += armorData[1]?.[skillName] || 0;
+        if (armorType === "talisman") { continue; }
+        const armorSlots = armorData[3];
+
+        for (const deco of Object.values(decos)) {
+            const decoSkillLevel = deco[1][skillName];
+            if (decoSkillLevel) {
+                totalPoints += decoSkillLevel * armorSlots.filter(slotSize => slotSize >= deco[2]).length;
+                break;
+            }
+        }
+    }
+
+    return totalPoints >= skillLevel;
+};

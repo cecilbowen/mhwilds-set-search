@@ -1397,7 +1397,7 @@ def run_all_tests():
 # speed(search, **asdict(tests.test_lance))
 # speed(search, **asdict(tests.test_dalton))
 # speed(search, **asdict(tests.test_single))
-speed(search, **asdict(tests.test_without_burst_deco))
+# speed(search, **asdict(tests.test_without_burst_deco))
 # speed(search, **asdict(tests.test_mandatory))
 # speed(search, **asdict(tests.test_blacklist))
 # speed(search, **asdict(tests.test_set))
@@ -1420,7 +1420,7 @@ speed(search, **asdict(tests.test_without_burst_deco))
 #     "Critical Eye": 3
 # })
 
-# run_all_tests()
+run_all_tests()
 
 # ==============PRINT==============
 print_results(search_results, wiki_string)

@@ -22,7 +22,10 @@ import SKILLS_DB from '../data/skills/skills.json';
 import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 
+import SKILL_ID_MAP from '../data/ids/skill-ids.json';
+
 import { renderToStaticMarkup } from 'react-dom/server';
+import { isEmpty } from './tools';
 
 export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
@@ -80,6 +83,78 @@ export const getArmorDefenseFromName = name => {
         base,
         upgraded: base + levels * 2
     };
+};
+
+export const copyTextToClipboard = (text, postFunc) => {
+    if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+    }
+    navigator.clipboard.writeText(text).then(() => {
+        console.log('Async: Copying to clipboard was successful!');
+        if (postFunc) {
+            postFunc();
+        }
+    }, err => {
+        console.error('Async: Could not copy text: ', err);
+    });
+};
+
+const fallbackCopyTextToClipboard = text => {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'successful' : 'unsuccessful';
+        console.log(`Fallback: Copying text command was ${msg}`);
+    } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+    }
+
+    document.body.removeChild(textArea);
+};
+
+export const getSearchUrl = (skills, slotFilters) => {
+    const urlParams = new URLSearchParams();
+    if (!isEmpty(skills)) {
+        urlParams.set('skills', Object.entries(skills).map(x => `${SKILL_ID_MAP[x[0]]}-${x[1]}`).join("_"));
+    }
+    if (!isEmpty(slotFilters)) {
+        urlParams.set('sf', Object.entries(slotFilters).map(x => `${x[0]}-${x[1]}`).join("_"));
+    }
+    return `${window.location.href}?${urlParams}`;
+};
+
+export const addUrlParam = (key, value) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set(key, value);
+    window.location.search = urlParams;
+};
+
+export const removeUrlParam = key => {
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.delete(key);
+    window.location.search = urlParams;
+};
+
+// string to unique id
+export const stringToId = str => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash |= 0; // Convert to 32bit integer
+    }
+    return Math.abs(hash).toString(36); // Base36 for shorter, alphanumeric ID
 };
 
 export const getArmorDefenseFromNames = theNames => {

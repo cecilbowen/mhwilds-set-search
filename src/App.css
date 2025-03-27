@@ -613,10 +613,10 @@ input[type=number] {
   .MuiTablePagination-toolbar {
     color: var(--dark-mode-white-color) !important;
   }
-  .MuiTablePagination-toolbar button {
+  .MuiTablePagination-toolbar button:not(.Mui-disabled) svg {
     color: var(--dark-mode-white-color) !important;
   }
-  .MuiTablePagination-toolbar svg {
+  .MuiTablePagination-selectIcon {
     color: var(--dark-mode-white-color) !important;
   }
   .MuiTablePagination-toolbar select * {
