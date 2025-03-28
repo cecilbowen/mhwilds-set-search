@@ -46,8 +46,9 @@ export const paginate = (array, page, pageSize) => {
 export const armorNameFormat = name => {
     const alpha = "α";
     const beta = "β";
+    const gamma = "γ";
 
-    return name.replaceAll("Alpha", alpha).replaceAll("Beta", beta);
+    return name.replaceAll("Alpha", alpha).replaceAll("Beta", beta).replaceAll("Gamma", gamma);
 };
 
 export const allArmorMaps = () => {
@@ -184,19 +185,19 @@ export const saveToLocalStorage = (key, data) => {
     const updatedData = JSON.stringify(data);
     localStorage.setItem(key, updatedData);
 };
-export const getFromLocalStorage = key => {
+export const getFromLocalStorage = (key, defaultValue = null) => {
     const data = localStorage.getItem(key);
 
     if (data === null) {
-        return null; // Explicitly return null for missing keys
+        return defaultValue;
     }
 
     try {
         const parsedData = JSON.parse(data);
         return parsedData;
     } catch (e) {
-        console.error(`Error parsing JSON from localStorage key "${key}":`, e);
-        return undefined; // Explicitly return undefined for invalid JSON
+        console.error(`Error parsing JSON from localStorage key: "${key}":`, e);
+        return defaultValue;
     }
 };
 
@@ -204,106 +205,10 @@ export const isArmorOfType = (type, name) => {
     return armorByType(type)[name] !== undefined;
 };
 
-export const notImplented = text => {
+export const notImplemented = text => {
     window.snackbar.createSnackbar(
         `${`'${text}'` || 'Feature'} not implemented yet`, { timeout: 3000 }
     );
-};
-
-export const pinArmor = (name, type) => {
-    const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
-    const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
-    const pulledBlackType = getFromLocalStorage('blacklistedArmorTypes') || [];
-
-    if (name.toLowerCase() === "none") {
-        const typeIndex = getArmorTypeList().indexOf(type);
-        pulledMandatory[typeIndex] = '';
-        saveToLocalStorage('mandatoryArmor', pulledMandatory);
-        return {
-            mandatoryArmor: pulledMandatory,
-            blacklistedArmor: pulledBlack,
-            blacklistedArmorTypes: pulledBlackType
-        };
-    }
-
-    let notifyStr = ["Pinned ", ""];
-
-    const tempMandatory = [...pulledMandatory];
-    let tempBlacklist = [...pulledBlack];
-    let tempTypeBlacklist = [...pulledBlackType];
-    const alreaddyPinnedIndex = tempMandatory.indexOf(name);
-    if (alreaddyPinnedIndex !== -1) {
-        tempMandatory[alreaddyPinnedIndex] = '';
-        notifyStr = ["Unpinned ", ''];
-    } else {
-        const typeIndex = getArmorTypeList().indexOf(type);
-        tempMandatory[typeIndex] = name;
-
-        // if a newly-mandated armor piece is in the blacklist, remove it
-        if (tempBlacklist.includes(name)) {
-            tempBlacklist = tempBlacklist.filter(x => x !== name);
-            saveToLocalStorage('blacklistedArmor', tempBlacklist);
-        }
-
-        // likewise, if a newly-mandated armor piece is type blacklisted, remove that restriction
-        if (tempTypeBlacklist.includes(type)) {
-            tempTypeBlacklist = tempTypeBlacklist.filter(x => x !== type);
-            saveToLocalStorage('blacklistedArmorTypes', tempTypeBlacklist);
-        }
-    }
-
-    saveToLocalStorage('mandatoryArmor', tempMandatory);
-
-    const bite = <span>{notifyStr[0]}<span style={{ color: 'skyblue' }}>{name}</span>{notifyStr[1]}</span>;
-    const message = document.createElement('div');
-    message.innerHTML = renderToStaticMarkup(bite);
-
-    window.snackbar.createSnackbar(
-        message, { timeout: 3000 }
-    );
-
-    return {
-        mandatoryArmor: tempMandatory,
-        blacklistedArmor: tempBlacklist,
-        blacklistedArmorTypes: tempTypeBlacklist
-    };
-};
-
-export const excludeArmor = name => {
-    if (name.toLowerCase() === "none") { return undefined; }
-    const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
-    const pulledBlack = getFromLocalStorage('blacklistedArmor') || [];
-
-    let notifyStr = ["Added ", " to "];
-
-    let tempBlacklist = [...pulledBlack];
-    let tempMandatory = [...pulledMandatory];
-    if (tempBlacklist.includes(name)) {
-        tempBlacklist = tempBlacklist.filter(x => x !== name);
-        notifyStr = ["Removed ", ' from '];
-    } else {
-        tempBlacklist.push(name);
-
-        // if a newly-blacklisted armor piece is in the mandatory list, remove it
-        if (tempMandatory.includes(name)) {
-            // eslint-disable-next-line no-confusing-arrow
-            tempMandatory = tempMandatory.map(x => x === name ? '' : x);
-            saveToLocalStorage('mandatoryArmor', tempMandatory);
-        }
-    }
-
-    saveToLocalStorage('blacklistedArmor', tempBlacklist);
-
-    const bite = <span>{notifyStr[0]}<span style={{ color: 'crimson' }}>{name}</span>{`${notifyStr[1]} the blacklist`}</span>;
-    const message = document.createElement('div');
-    message.innerHTML = renderToStaticMarkup(bite);
-
-    window.snackbar.createSnackbar(message, { timeout: 3000 });
-
-    return {
-        mandatoryArmor: tempMandatory,
-        blacklistedArmor: tempBlacklist,
-    };
 };
 
 export const getDecoFromName = (name, showSkillNames = false) => {
@@ -382,23 +287,6 @@ export const areArmorSetsEqual = (a, b) => {
         if (a[i] !== b[i]) { return false; }
     }
     return true;
-};
-
-export const saveArmorSet = result => {
-    if (!result) { return undefined; }
-    let currentSets = getFromLocalStorage('savedSets') || [];
-    const alreadyHas = currentSets.filter(x => areArmorSetsEqual(result.armorNames, x.armorNames));
-
-    if (alreadyHas.length > 0) {
-        currentSets = currentSets.filter(x => !areArmorSetsEqual(result.armorNames, x.armorNames));
-    } else {
-        const nextId = (currentSets[currentSets.length - 1]?.id || 1) + 1;
-        currentSets.push({ ...result, id: nextId });
-    }
-
-    saveToLocalStorage('savedSets', currentSets);
-
-    return currentSets;
 };
 
 export const getArmorColorHue = rarity => {

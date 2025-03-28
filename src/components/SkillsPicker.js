@@ -4,7 +4,7 @@ import SKILLS from '../data/skills/skills.json';
 import SET_SKILLS from '../data/skills/set-skills.json';
 import GROUP_SKILLS from '../data/skills/group-skills.json';
 import TextField from '@mui/material/TextField';
-import { getFromLocalStorage, getSkillPopup, isGroupSkill, isSetSkill } from '../util/util';
+import { getSkillPopup, isGroupSkill, isSetSkill } from '../util/util';
 import Image from '@mui/icons-material/Image';
 import HideImage from '@mui/icons-material/HideImage';
 import Expand from '@mui/icons-material/Expand';

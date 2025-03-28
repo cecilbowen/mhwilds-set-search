@@ -584,15 +584,35 @@ input[type=number] {
   background-color: transparent !important;
 }
 
+.left-space {
+  margin-left: 4px;
+}
+
 .wanted {
   color: #0183d1;
 }
 .result-skill {
   display: flex;
 }
-/* .result-skill .sk-name:hover {
-  text-decoration: underline;
-} */
+
+.striped {
+  background-image: repeating-linear-gradient( 145deg, #5561690f, #7194fe0f, 10px, #2f318b14 10px, #fff 20px );
+}
+
+.result-cyclers {
+  position: absolute;
+  right: 2px;
+  top: 0px;
+  scale: 0.8;
+  transform: translate(12px, -5px);
+}
+.cycle {
+  transform: translate(-6px, -5px);
+}
+.close-icon {
+  scale: 1.5;
+  transform: translateY(2px) !important;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -679,7 +699,6 @@ input[type=number] {
     background-color: #46576b !important;
   }
 
-
   .result-paper {
     background-color: #2f3d4e !important
   }
@@ -741,6 +760,10 @@ input[type=number] {
   }
   .MuiOutlinedInput-root fieldset {
     border-color: #705f5f;
+  }
+
+  .blacklist-name {
+    color: var(--dark-mode-onblue-color);
   }
 
   .MuiSwitch-switchBase {
@@ -835,5 +858,16 @@ input[type=number] {
   }
   .MuiLinearProgress-bar2 {
     background-color: #103743 !important;
+  }
+
+  .striped {
+    background-image: repeating-linear-gradient( 145deg, #2f3234, #29292999, 10px, #30303d00 10px, #2c2b2b 20px );
+  }
+
+  .result-cyclers svg {
+    color: var(--dark-mode-onblue-color)
+  }
+  .result-cyclers button.Mui-disabled svg {
+    color: #454545;
   }
 }

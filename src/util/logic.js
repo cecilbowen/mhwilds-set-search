@@ -17,7 +17,7 @@ import {
 } from "./tools";
 import { CHOSEN_ARMOR_DEBUG, DEBUG, DFS, DFS_DEBUG } from "./constants";
 import { allTests } from "../test/tests";
-import { getArmorTypeList, isGroupSkillName, isSetSkillName } from "./util";
+import { getArmorTypeList, isGroupSkillName, isSetSkillName, stringToId } from "./util";
 
 let totalPossibleCombinations = 0;
 let decoInventory = { ...DECO_INVENTORY };
@@ -572,7 +572,8 @@ const rollCombosDfs = async(
 
             const result = test(fullSet, gear.decos, desiredSkills);
             if (result) {
-                result.id = counter;
+                // dangerous assumption that decoNames are sorted
+                result.id = stringToId(`${result.armorNames.join(",")}_${result.decoNames.join(",")}`);
                 result._id = inc;
                 inc++;
                 results.push(result);

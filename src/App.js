@@ -7,19 +7,14 @@ import CustomTabPanel from "./components/CustomTabPanel";
 import SavedSets from "./components/SavedSets";
 import DecoInventory from "./components/DecoInventory";
 import Settings from "./components/Settings";
-import { getFromLocalStorage } from "./util/util";
 import { DEBUG } from "./util/constants";
 import { runAllTests } from "./util/logic";
+import { useStorage } from "./hooks/StorageContext";
 // import { compareArmor } from "./util/kiranico";
 
 const App = () => {
+  const { fields } = useStorage();
   const [tab, setTab] = useState(0);
-  const [hideSource, setHideSource] = useState(false);
-
-  const reSource = () => {
-    const loadedSource = getFromLocalStorage('hideSource') ?? hideSource;
-    setHideSource(loadedSource);
-  };
 
   useEffect(() => {
     if (DEBUG) {
@@ -27,10 +22,6 @@ const App = () => {
       // compareArmor();
     }
   }, []);
-
-  useEffect(() => {
-    reSource();
-  }, [hideSource]);
 
   const tabProps = index => {
     return {
@@ -66,7 +57,7 @@ const App = () => {
       <Tabs value={tab} onChange={handleTabChange} aria-label="tabs" variant="scrollable"
         allowScrollButtonsMobile className="tab-root">
         {Object.entries(tabs).map(([name, index]) => renderTab(name, index))}
-        {!hideSource && <Tab label={"Source Code"} icon={github} iconPosition="start"
+        {!fields.hideSource && <Tab label={"Source Code"} icon={github} iconPosition="start"
           sx={{ color: '#873777', minHeight: 'unset' }}
           value="external" onClick={e => e.preventDefault()} />}
       </Tabs>
@@ -75,7 +66,7 @@ const App = () => {
         <SavedSets />
       </CustomTabPanel>
       <CustomTabPanel value={tab} index={2}><DecoInventory /></CustomTabPanel>
-      <CustomTabPanel value={tab} index={3}><Settings onSourceChanged={reSource} /></CustomTabPanel>
+      <CustomTabPanel value={tab} index={3}><Settings /></CustomTabPanel>
     </div>
   );
 };

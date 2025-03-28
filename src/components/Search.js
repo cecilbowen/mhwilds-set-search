@@ -8,10 +8,9 @@ import SKILLS_DB from '../data/skills/skills.json';
 import SET_SKILLS_DB from '../data/skills/set-skills.json';
 import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
 import {
-    getSearchUrl,
-    excludeArmor, generateStyle,
-    generateWikiString,
-    getFromLocalStorage, getMaxLevel, getSkillPopup, isGroupSkill, isSetSkill, pinArmor, saveToLocalStorage,
+    getSearchUrl, generateStyle,
+    generateWikiString, getMaxLevel, getSkillPopup,
+    isGroupSkill, isSetSkill,
     copyTextToClipboard
 } from "../util/util";
 import LinearProgress from '@mui/material/LinearProgress';
@@ -22,8 +21,8 @@ import styled from "styled-components";
 import { getSearchParameters, isEmpty } from "../util/tools";
 import { Button } from "@mui/material";
 import Results from "./Results";
-import { DEBUG, SYNC } from "../util/constants";
-import SKILL_ID_MAP from '../data/ids/skill-ids.json';
+import { DEBUG } from "../util/constants";
+import { useStorage } from "../hooks/StorageContext";
 
 const ArrowL = styled(ArrowLeft)`
     width: 16px !important;
@@ -41,18 +40,7 @@ const LoadingBar = styled(LinearProgress)`
 `;
 
 const Search = () => {
-    const [skills, setSkills] = useState({});
-    const [searchedSkills, setSearchedSkills] = useState({});
-    const [lastParams, setLastParams] = useState(); // parameters used to get the most recent search results
-    const [decoInventory, setDecoInventory] = useState({});
-    const [mandatoryArmor, setMandatoryArmor] = useState(['', '', '', '', '', '']);
-    const [blacklistedArmor, setBlacklistedArmor] = useState([]);
-    const [blacklistedArmorTypes, setBlacklistedArmorTypes] = useState([]);
-
-    const [dontUseDecos, setDontUseDecos] = useState(false);
-    const [showDecoSkillNames, setShowDecoSkillNames] = useState(false);
-    const [showGroupSkillNames, setShowGroupSkillNames] = useState(false);
-
+    const { fields, updateField, updateMultipleFields } = useStorage();
     const [results, setResults] = useState([]);
     const [moreResults, setMoreResults] = useState({}); // skill name: level
     const [showMore, setShowMore] = useState(false);
@@ -60,74 +48,7 @@ const Search = () => {
     const [elapsedSeconds, setElapsedSeconds] = useState(-1);
     const [loadProgress, setLoadProgress] = useState(0);
 
-    const [slotFilters, setSlotFilters] = useState({});
-
     const [isGenerating, setIsGenerating] = useState(false);
-
-    useEffect(() => {
-        const loadedParams = getFromLocalStorage('lastParams') || lastParams;
-        let loadedSkills = getFromLocalStorage('skills') || skills;
-        let loadedSlotFilters = getFromLocalStorage('slotFilters') || slotFilters;
-        const loadedSearchedSkills = getFromLocalStorage('searchedSkills') || searchedSkills;
-        const loadedDecoInventory = getFromLocalStorage('decoInventory') || decoInventory;
-        const loadedMandatory = getFromLocalStorage('mandatoryArmor') || mandatoryArmor;
-        const loadedBlacklist = getFromLocalStorage('blacklistedArmor') || blacklistedArmor;
-        const loadedBlacklistTypes = getFromLocalStorage('blacklistedArmorTypes') || blacklistedArmorTypes;
-        const loadedDontUseDecos = getFromLocalStorage('dontUseDecos') || dontUseDecos;
-        const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showDecoSkillNames;
-        const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') ?? showGroupSkillNames;
-
-        // handle getting skills from url
-        const urlParams = new URLSearchParams(window.location.search);
-        const skillsStr = urlParams.get('skills');
-        let moddedSearch = false;
-        if (skillsStr) {
-            const skillsStrArr = skillsStr.split('_');
-            loadedSkills = Object.fromEntries(skillsStrArr.map(x => {
-                const split = x.split("-");
-                const id = parseInt(split[0], 10);
-                const level = parseInt(split[1], 10);
-                const name = Object.entries(SKILL_ID_MAP).filter(sk => sk[1] === id)[0]?.[0];
-
-                return [name, level];
-            }).filter(x => x[0]));
-            urlParams.delete('skills');
-            moddedSearch = true;
-            saveToLocalStorage('skills', loadedSkills);
-        }
-
-        // handle getting slot filters from url
-        const sfStr = urlParams.get('sf');
-        if (sfStr) {
-            const slotFilterArr = sfStr.split('_');
-            loadedSlotFilters = Object.fromEntries(slotFilterArr.map(x => {
-                const split = x.split("-");
-                const slotSize = split[0];
-                const amount = parseInt(split[1], 10);
-
-                return [slotSize, amount];
-            }).filter(x => x[0]));
-            urlParams.delete('sf');
-            moddedSearch = true;
-            saveToLocalStorage('slotFilters', loadedSlotFilters);
-        }
-
-        if (moddedSearch) {
-            window.history.replaceState({}, document.title, window.location.pathname + urlParams);
-        }
-
-        setLastParams(loadedParams);
-        setSkills(loadedSkills);
-        setSlotFilters(loadedSlotFilters);
-        setSearchedSkills(loadedSearchedSkills);
-        setDecoInventory(loadedDecoInventory);
-        setMandatoryArmor(loadedMandatory);
-        setBlacklistedArmor(loadedBlacklist);
-        setBlacklistedArmorTypes(loadedBlacklistTypes);
-        setDontUseDecos(loadedDontUseDecos);
-        setShowDecoSkillNames(loadedShowDeco);
-        setShowGroupSkillNames(loadedShowGroup);
-    }, []);
 
     useEffect(() => {
         if (!isEmpty(moreResults)) {
@@ -142,24 +63,8 @@ const Search = () => {
         }
     }, [isGenerating]);
 
-    const local = (name, data) => {
-        const storageMap = {
-            lastParams: lastParams,
-            loadedSkills: skills,
-            searchedSkills: searchedSkills,
-            decoInventory: decoInventory,
-            mandatoryArmor: mandatoryArmor,
-            blacklistedArmor: blacklistedArmor,
-            blacklistedArmorTypes: blacklistedArmorTypes,
-            dontUseDecos: dontUseDecos,
-            showDecoSkillNames: showDecoSkillNames,
-            showGroupSkillNames: showGroupSkillNames
-        };
-        saveToLocalStorage(name, data || storageMap[name]);
-    };
-
     const addMoreSkill = (name, level) => {
-        if (level <= 0 || (skills[name] || 0) >= level) {
+        if (level <= 0 || (fields.skills[name] || 0) >= level) {
             return;
         }
 
@@ -177,19 +82,19 @@ const Search = () => {
 
         cancelledRef.current = false;
         const justSkills = Object.fromEntries(
-            Object.entries(skills).filter(x => SKILLS[x[0]]).map(x => [x[0], x[1]])
+            Object.entries(fields.skills).filter(x => SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
         const justSetSkills = Object.fromEntries(
-            Object.entries(skills).filter(x => SET_SKILLS[x[0]]).map(x => [x[0], x[1]])
+            Object.entries(fields.skills).filter(x => SET_SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
         const justGroupSkills = Object.fromEntries(
-            Object.entries(skills).filter(x => GROUP_SKILLS[x[0]]).map(x => [x[0], x[1]])
+            Object.entries(fields.skills).filter(x => GROUP_SKILLS[x[0]]).map(x => [x[0], x[1]])
         );
 
         if (DEBUG) {
             const wiki = generateWikiString(
                 justSkills, justSetSkills, justGroupSkills,
-                slotFilters
+                fields.slotFilters
             );
 
             console.log(`https://mhwilds.wiki-db.com/sim/#skills=${wiki}&fee=1`);
@@ -199,11 +104,11 @@ const Search = () => {
             skills: justSkills,
             setSkills: justSetSkills,
             groupSkills: justGroupSkills,
-            slotFilters: slotFilters,
-            blacklistedArmor,
-            blacklistedArmorTypes,
-            mandatoryArmor,
-            decoMods: decoInventory,
+            slotFilters: fields.slotFilters,
+            mandatoryArmor: fields.mandatoryArmor,
+            blacklistedArmor: fields.blacklistedArmor,
+            blacklistedArmorTypes: fields.blacklistedArmorTypes,
+            decoMods: fields.decoInventory,
             cancelToken: cancelledRef
         });
 
@@ -212,7 +117,7 @@ const Search = () => {
 
     const getResults = event => {
         if (event.ctrlKey) {
-            const url = getSearchUrl(skills, slotFilters);
+            const url = getSearchUrl(fields.skills, fields.slotFilters);
             copyTextToClipboard(url, () => {
                 window.snackbar.createSnackbar(`Copied search url to the clipboard`, {
                     timeout: 3000
@@ -225,7 +130,7 @@ const Search = () => {
 
         // check if we search is a repeat from last search
         const paramStr = [
-            Object.entries(skills).map(x => `${x[0]}-${x[1]}`).sort().join("."),
+            Object.entries(fields.skills).map(x => `${x[0]}-${x[1]}`).sort().join("."),
             Object.entries(params.slotFilters).map(x => `${x[0]}-${x[1]}`).sort().join("."),
             [...params.blacklistedArmor].sort().join("."),
             [...params.blacklistedArmorTypes].sort().join("."),
@@ -237,13 +142,11 @@ const Search = () => {
             fromTheSto = JSON.parse(fromTheSto);
         }
         const same = paramStr === fromTheSto || false;
-        local('paramStr', paramStr);
+        updateField('paramStr', paramStr);
 
         setShowMore(false);
-        setSearchedSkills(skills);
-        setLastParams(params);
-        local('lastParams', params);
-        local('searchedSkills', skills);
+        updateField('searchedSkills', fields.skills);
+        updateField('lastParams', params);
         // console.log('params', params);
         const cache = searchAndSpeed(params, same);
         cache.then(ret => {
@@ -271,73 +174,50 @@ const Search = () => {
     };
 
     const addSkill = (skillName, level) => {
-        const tempSkills = { ...skills };
+        const tempSkills = { ...fields.skills };
         tempSkills[skillName] = level || SKILLS[skillName] || 1;
-        setSkills(tempSkills);
-        local('skills', tempSkills);
+        updateField('skills', tempSkills);
     };
 
     const addSlotFilter = (slot, level = 1) => {
-        const tempSlotFilters = { ...slotFilters };
+        const tempSlotFilters = { ...fields.slotFilters };
         tempSlotFilters[slot] = level;
-        setSlotFilters(tempSlotFilters);
-        local('slotFilters', tempSlotFilters);
+        updateField('slotFilters', tempSlotFilters);
     };
 
     const removeSkill = skillName => {
-        const tempSkills = { ...skills };
+        const tempSkills = { ...fields.skills };
         delete tempSkills[skillName];
-        setSkills(tempSkills);
-        local('skills', tempSkills);
+        updateField('skills', tempSkills);
     };
 
     const removeSlot = slotSize => {
-        const tempSlots = { ...slotFilters };
+        const tempSlots = { ...fields.slotFilters };
         delete tempSlots[slotSize];
-        setSlotFilters(tempSlots);
-        local('slotFilters', tempSlots);
+        updateField('slotFilters', tempSlots);
     };
 
     const levelMod = (name, amount, maxLevel) => {
-        const tSkills = { ...skills };
-        const currentLevel = skills[name] || 0;
+        const tSkills = { ...fields.skills };
+        const currentLevel = fields.skills[name] || 0;
         tSkills[name] = currentLevel + amount;
         if (tSkills[name] > maxLevel || tSkills[name] === 0) {
             return;
         }
 
-        setSkills(tSkills);
-        local('skills', tSkills);
+        updateField('skills', tSkills);
     };
 
     const slotLevelMod = (size, amount) => {
         const maxAmountOfSlots = 18; // 3 per armor piece (not that we currently have armor that can reach this)
-        const tSlots = { ...slotFilters };
+        const tSlots = { ...fields.slotFilters };
         const currentLevel = tSlots[size] || 0;
         tSlots[size] = currentLevel + amount;
         if (tSlots[size] > maxAmountOfSlots || tSlots[size] === 0) {
             return;
         }
 
-        setSlotFilters(tSlots);
-        local('slotFilters', tSlots);
-    };
-
-    // pins/unpins armor
-    const pin = (name, type) => {
-        const mm = pinArmor(name, type);
-        if (!mm) { return; }
-
-        setMandatoryArmor(mm.mandatoryArmor);
-        setBlacklistedArmor(mm.blacklistedArmor);
-        setBlacklistedArmorTypes(mm.blacklistedArmorTypes);
-    };
-
-    const exclude = name => {
-        const mm = excludeArmor(name);
-        if (!mm) { return; }
-        setBlacklistedArmor(mm.blacklistedArmor);
-        setMandatoryArmor(mm.mandatoryArmor);
+        updateField('slotFilters', tSlots);
     };
 
     const getArrowStyle = condition => {
@@ -357,7 +237,7 @@ const Search = () => {
 
         const maxLevel = getMaxLevel(skillName);
         let displayName = skillName;
-        if (showGroupSkillNames && (isAGroupSkill || isASetSkill)) {
+        if (fields.showGroupSkillNames && (isAGroupSkill || isASetSkill)) {
             displayName = skill.skill;
         }
 
@@ -389,7 +269,7 @@ const Search = () => {
         const gradientStyle = generateStyle("#c5abc5");
 
         return <div className="chosen-slot-filters">
-            {Object.entries(slotFilters).map(x => {
+            {Object.entries(fields.slotFilters).map(x => {
                 const slotSize = x[0];
                 const amount = x[1];
 
@@ -413,14 +293,14 @@ const Search = () => {
     const renderChosenSkills = () => {
         const gradientStyle = generateStyle("#d14848");
         return <div className="chosen-skills">
-            {!isEmpty(slotFilters) && renderSlotFilters()}
-            {Object.entries(skills).map(x => renderChosenSkill(x[0], x[1]))}
-            {(!isEmpty(skills) || !isEmpty(slotFilters)) &&
+            {!isEmpty(fields.slotFilters) && renderSlotFilters()}
+            {Object.entries(fields.skills).map(x => renderChosenSkill(x[0], x[1]))}
+            {(!isEmpty(fields.skills) || !isEmpty(fields.slotFilters)) &&
                 <div className="skills-search-bubble clear-all clear-gradient" onClick={() => {
-                    setSkills({});
-                    setSlotFilters({});
-                    local('skills', {});
-                    local('slotFilters', {});
+                    updateMultipleFields({
+                        skills: {},
+                        slotFilters: {}
+                    });
                 }}
                     style={gradientStyle}
                     title="Clear all chosen skills">
@@ -478,7 +358,7 @@ const Search = () => {
                     }
 
                     let displayName = skillName;
-                    if (showGroupSkillNames && (isAGroupSkill || isASetSkill)) {
+                    if (fields.showGroupSkillNames && (isAGroupSkill || isASetSkill)) {
                         displayName = skill.skill;
                     }
 
@@ -512,8 +392,8 @@ const Search = () => {
         <div className="search">
             {renderChosenSkills()}
             <SkillsPicker addSkill={addSkill} addSlotFilter={addSlotFilter}
-                showGroupSkillNames={showGroupSkillNames}
-                chosenSkillNames={Object.keys(skills)} />
+                showGroupSkillNames={fields.showGroupSkillNames}
+                chosenSkillNames={Object.keys(fields.skills)} />
             <div className="button-holder">
                 <Button variant="contained" disabled={isGenerating} onClick={getResults}>Search</Button>
                 <Button variant="outlined" disabled={isGenerating} onClick={() => getMoreSkills()}>More Skills</Button>
@@ -523,12 +403,7 @@ const Search = () => {
             </div>
             {isGenerating && <LoadingBar className="loading-bar" value={loadProgress}
                 variant={loadProgress ? 'determinate' : 'indeterminate'} />}
-            {!showMore && <Results results={results} showDecoSkills={showDecoSkillNames}
-                showGroupSkills={showGroupSkillNames} setShowDecos={x => setShowDecoSkillNames(x)}
-                pin={pin} exclude={exclude} slotFilters={slotFilters}
-                mandatoryArmor={mandatoryArmor} blacklistedArmor={blacklistedArmor}
-                blacklistedArmorTypes={blacklistedArmorTypes}
-                skills={searchedSkills} elapsedSeconds={elapsedSeconds} />}
+            {!showMore && <Results results={results} elapsedSeconds={elapsedSeconds} />}
             {showMore && renderMoreResults()}
         </div>
     );

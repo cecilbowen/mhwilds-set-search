@@ -1,29 +1,18 @@
-import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import {
     armorNameFormat,
-    excludeArmor,
-    getArmorTypeList, getFromLocalStorage,
-    isArmorOfType,
-    pinArmor,
-    saveToLocalStorage
+    getArmorTypeList,
+    isArmorOfType
 } from '../util/util';
 import { Autocomplete, Button, FormControlLabel, Paper, Switch, Typography } from '@mui/material';
 import ArmorSvgWrapper from './ArmorSvgWrapper';
-import Unpin from '@mui/icons-material/PushPinOutlined';
-import Undo from '@mui/icons-material/Undo';
 import Remove from '@mui/icons-material/Remove';
 import { iconCommon } from './Results';
 import styled from 'styled-components';
 import Divider from '@mui/material/Divider';
 import PropTypes from 'prop-types';
 import { getJsonFromType } from '../util/tools';
-
-const UnpinIcon = styled(Unpin)`
-    ${iconCommon}
-    transform: translateY(0px);
-    color: blue;
-`;
+import { useStorage } from '../hooks/StorageContext';
 
 const RemoveIcon = styled(Remove)`
     ${iconCommon}
@@ -31,74 +20,21 @@ const RemoveIcon = styled(Remove)`
     color: crimson;
 `;
 
-const UndoExcludeIcon = styled(Undo)`
-    ${iconCommon}
-    color: forestgreen;
-    transform: translateY(0px);
-    margin-left: 4px;
-    margin-right: 4px;
-`;
-
 const Settings = ({ onSourceChanged }) => {
-    const [blacklist, setBlacklist] = useState([]);
-    const [typeBlacklist, setTypeBlacklist] = useState([]);
-    const [mandatory, setMandatory] = useState(['', '', '', '', '', '']);
-
-    const [showDecoSkills, setShowDecoSkills] = useState(false);
-    const [showGroupSkills, setShowGroupSkills] = useState(false);
-    const [hideSource, setHideSource] = useState(false);
-    const [showAll, setShowAll] = useState(true);
-    const [showExtra, setShowExtra] = useState(false);
-
-    useEffect(() => {
-        const loadedMandatory = getFromLocalStorage('mandatoryArmor') || mandatory;
-        const loadedBlacklist = getFromLocalStorage('blacklistedArmor') || blacklist;
-        const loadedBlacklistTypes = getFromLocalStorage('blacklistedArmorTypes') || typeBlacklist;
-        const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showDecoSkills;
-        const loadedShowGroup = getFromLocalStorage('showGroupSkillNames') ?? showGroupSkills;
-        const loadedSource = getFromLocalStorage('hideSource') ?? hideSource;
-        const loadedShowAll = getFromLocalStorage('showAll') ?? showAll;
-        const loadedShowExtra = getFromLocalStorage('showExtra') ?? showExtra;
-        setMandatory(loadedMandatory);
-        setBlacklist(loadedBlacklist);
-        setTypeBlacklist(loadedBlacklistTypes);
-        setShowDecoSkills(loadedShowDeco);
-        setShowGroupSkills(loadedShowGroup);
-        setHideSource(loadedSource);
-        setShowAll(loadedShowAll);
-        setShowExtra(loadedShowExtra);
-    }, []);
-
+    const { fields, updateField, pinArmor, excludeArmor } = useStorage();
     const types = getArmorTypeList();
 
-    const pin = (name, type) => {
-        const mm = pinArmor(name, type);
-        if (!mm) { return; }
-
-        setMandatory(mm.mandatoryArmor);
-        setBlacklist(mm.blacklistedArmor);
-        setTypeBlacklist(mm.blacklistedArmorTypes);
-    };
-
-    const exclude = name => {
-        const mm = excludeArmor(name);
-        if (!mm) { return; }
-        setBlacklist(mm.blacklistedArmor);
-        setMandatory(mm.mandatoryArmor);
-    };
-
     const toggleBlacklistType = type => {
-        let tempTypeBlacklist = [...typeBlacklist];
+        let tempTypeBlacklist = [...fields.blacklistedArmorTypes];
         const armorTypeList = getArmorTypeList();
 
-        if (typeBlacklist.includes(type)) {
-            tempTypeBlacklist = typeBlacklist.filter(x => x !== type);
+        if (fields.blacklistedArmorTypes.includes(type)) {
+            tempTypeBlacklist = fields.blacklistedArmorTypes.filter(x => x !== type);
         } else if (tempTypeBlacklist.length < 5) {
-            tempTypeBlacklist = [...typeBlacklist, type];
-            const pulledMandatory = getFromLocalStorage('mandatoryArmor') || ['', '', '', '', '', ''];
+            tempTypeBlacklist = [...fields.blacklistedArmorTypes, type];
+            const pulledMandatory = fields.mandatoryArmor;
             pulledMandatory[armorTypeList.indexOf(type)] = '';
-            saveToLocalStorage('mandatoryArmor', pulledMandatory);
-            setMandatory(pulledMandatory);
+            updateField('mandatoryArmor', pulledMandatory);
         } else {
             window.snackbar.createSnackbar(`You can't exclude all armor types!`, {
                 timeout: 3000
@@ -106,14 +42,12 @@ const Settings = ({ onSourceChanged }) => {
             return;
         }
 
-        setTypeBlacklist(tempTypeBlacklist);
-        saveToLocalStorage('blacklistedArmorTypes', tempTypeBlacklist);
+        updateField('blacklistedArmorTypes', tempTypeBlacklist);
     };
 
     const clearBlacklist = (items, type) => {
-        const tempBlacklist = [...blacklist].filter(x => !items.includes(x));
-        setBlacklist(tempBlacklist);
-        saveToLocalStorage('blacklistedArmor', tempBlacklist);
+        const tempBlacklist = [...fields.blacklistedArmor].filter(x => !items.includes(x));
+        updateField('blacklistedArmor', tempBlacklist);
 
         window.snackbar.createSnackbar(`Cleared all ${type} pieces from the blacklist`, {
             timeout: 3000
@@ -121,29 +55,24 @@ const Settings = ({ onSourceChanged }) => {
     };
 
     const toggleShowDeco = () => {
-        saveToLocalStorage('showDecoSkillNames', !showDecoSkills);
-        setShowDecoSkills(!showDecoSkills);
+        updateField('showDecoSkillNames', !fields.showDecoSkillNames);
     };
 
     const toggleShowGroup = () => {
-        saveToLocalStorage('showGroupSkillNames', !showGroupSkills);
-        setShowGroupSkills(!showGroupSkills);
+        updateField('showGroupSkillNames', !fields.showGroupSkillNames);
     };
 
     const toggleShowAll = () => {
-        saveToLocalStorage('showAll', !showAll);
-        setShowAll(!showAll);
+        updateField('showAll', !fields.showAll);
     };
 
     const toggleShowExtra = () => {
-        saveToLocalStorage('showExtra', !showExtra);
-        setShowExtra(!showExtra);
+        updateField('showExtra', !fields.showExtra);
     };
 
     const toggleHideSource = () => {
-        saveToLocalStorage('hideSource', !hideSource);
-        setHideSource(!hideSource);
-        onSourceChanged();
+        updateField('hideSource', !fields.hideSource);
+        onSourceChanged?.();
     };
 
     const changePin = (type, armor, armorList) => {
@@ -152,7 +81,7 @@ const Settings = ({ onSourceChanged }) => {
             armorList.filter(x => x.value.toLowerCase() === armorName.toLowerCase())[0];
 
         if (isValid) {
-            pin(armorName, type);
+            pinArmor(armorName, type);
         }
 
         document.getElementById(`pinned-${type}`)?.blur();
@@ -160,16 +89,15 @@ const Settings = ({ onSourceChanged }) => {
 
     const renderBlacklist = armorName => {
         return <div key={armorName} className="blacklist-couple">
-            <RemoveIcon onClick={() => exclude(armorName)} />
+            <RemoveIcon onClick={() => excludeArmor(armorName)} />
             <span className="blacklist-name">{armorName}</span>
         </div>;
     };
 
     const renderList = (type, index) => {
         const svgStyle = { width: '35px', height: '35px', transform: 'translateY(7px)', marginRight: '2px' };
-        const noPin = <span style={{ fontStyle: 'italic', fontWeight: 'normal' }}>No {type} pinned</span>;
-        const hasPin = Boolean(mandatory[index]);
-        const myBlacklist = blacklist.filter(x => isArmorOfType(type, x));
+        const hasPin = Boolean(fields.mandatoryArmor[index]);
+        const myBlacklist = fields.blacklistedArmor.filter(x => isArmorOfType(type, x));
         const hasBlacklist = myBlacklist.length > 0;
 
         const datalist = [{
@@ -188,12 +116,15 @@ const Settings = ({ onSourceChanged }) => {
         const stilo = {
             '& .MuiOutlinedInput-root': {
                 '& fieldset': {
-                    borderColor: 'blue',
+                    borderColor: '#165493',
                 }
             },
         };
 
-        const value = hasPin ? { label: armorNameFormat(mandatory[index]), value: mandatory[index] } : datalist[0];
+        const value = hasPin ? {
+            label: armorNameFormat(fields.mandatoryArmor[index]),
+            value: fields.mandatoryArmor[index]
+        } : datalist[0];
 
         return <Paper key={type} className="blacklist-rows" elevation={2}>
             <div className="pinlist">
@@ -209,10 +140,13 @@ const Settings = ({ onSourceChanged }) => {
                         disableClearable={!hasPin}
                         isOptionEqualToValue={option => option.value === value.value}
                         value={value}
-                        renderInput={params => <TextField {...params} sx={hasPin ? stilo : {}} label={`Pinned ${type} Armor`} />}
+                        renderInput={
+                            params => <TextField {...params} sx={hasPin ? stilo : {}} label={`Pinned ${type} Armor`} />
+                        }
                     />
                 </div>
-                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={typeBlacklist.includes(type)} />}
+                <FormControlLabel sx={{ marginLeft: '1em' }}
+                    control={<Switch checked={fields.blacklistedArmorTypes.includes(type)} />}
                     onChange={() => toggleBlacklistType(type)}
                     label={`Exclude all '${type}' armor pieces?`} />
             </div>
@@ -230,13 +164,13 @@ const Settings = ({ onSourceChanged }) => {
                 General Settings
             </Typography>
             <div className="general-settings">
-                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={showDecoSkills} />}
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.showDecoSkillNames} />}
                     onChange={() => toggleShowDeco()}
                     label={`Label decorations by skill name`} />
-                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={showGroupSkills} />}
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.showGroupSkillNames} />}
                     onChange={() => toggleShowGroup()}
                     label={`Label set skills by skill name`} />
-                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={hideSource} />}
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.hideSource} />}
                     onChange={() => toggleHideSource()}
                     label={`Hide source code tab`} />
             </div>
@@ -246,10 +180,10 @@ const Settings = ({ onSourceChanged }) => {
                 Armor Result Settings
             </Typography>
             <div className="general-settings">
-                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={showAll} />}
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.showAll} />}
                     onChange={() => toggleShowAll()}
                     label={`Show all skills box`} />
-                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={showExtra} />}
+                <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.showExtra} />}
                     onChange={() => toggleShowExtra()}
                     label={`Show 'Extra Skills' line`} />
             </div>
@@ -267,6 +201,6 @@ const Settings = ({ onSourceChanged }) => {
     </div>;
 };
 Settings.propTypes = {
-    onSourceChanged: PropTypes.func.isRequired,
+    onSourceChanged: PropTypes.func,
 };
 export default Settings;

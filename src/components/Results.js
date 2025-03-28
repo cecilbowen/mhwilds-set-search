@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
-    areArmorSetsEqual, armorNameFormat, formatGroupSkills, formatSetSkills,
-    formatSkillsDiff,
-    generateWikiString,
-    getArmorColorHue,
-    getArmorDefenseFromName, getArmorDefenseFromNames, getArmorFromNames, getDecosFromNames,
-    getFromLocalStorage, getSkillDiff, getSkillPopup, isGroupSkillName, isSetSkillName, paginate, saveArmorSet, saveToLocalStorage
+    armorNameFormat, formatSkillsDiff,
+    generateWikiString, getArmorDefenseFromName, getArmorDefenseFromNames,
+    getArmorFromNames, getDecosFromNames,
+    getSkillDiff, getSkillPopup, isGroupSkillName,
+    isSetSkillName, paginate
 } from '../util/util';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -24,7 +23,7 @@ import { styled } from '@mui/material/styles';
 import TablePagination from '@mui/material/TablePagination';
 import TablePaginationActions from './TablePaginationActions';
 import Swap from '@mui/icons-material/Sync';
-import { Button, TextField } from '@mui/material';
+import { Button, IconButton, TextField } from '@mui/material';
 import SKILLS from '../data/skills/skills.json';
 import { isEmpty } from '../util/tools';
 import Pin from '@mui/icons-material/PushPin';
@@ -34,6 +33,9 @@ import Undo from '@mui/icons-material/Undo';
 import Edit from '@mui/icons-material/DriveFileRenameOutline';
 import Close from '@mui/icons-material/DisabledByDefaultRounded';
 import ArmorSvgWrapper from './ArmorSvgWrapper';
+import { useStorage } from '../hooks/StorageContext';
+import ArrowForward from '@mui/icons-material/ArrowForwardRounded';
+import ArrowBack from '@mui/icons-material/ArrowBackRounded';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -131,37 +133,26 @@ const EditIcon = styled(Edit)`
 const CloseIcon = styled(Close)`
     ${iconCommon}
     color: crimson;
-    position: absolute;
-    top: 9px;
-    right: 6px;
-    scale: 1.5;
 `;
 
 const Results = ({
-    results, skills, slotFilters, elapsedSeconds, showDecoSkills, mandatoryArmor,
-    blacklistedArmor, blacklistedArmorTypes, pin, exclude,
-    onSaveSet, save, showGroupSkills, setShowDecos
+    elapsedSeconds, onSaveSet, results, save
 }) => {
+    const { fields, updateField, pinArmor, excludeArmor, saveArmorSet } = useStorage();
     const [selectedResult, setSelectedResult] = useState();
-    const [allArmor, setAllArmor] = useState([]);
-
-    const [pageResults, setPageResults] = useState([]);
     const [page, setPage] = useState(-1);
     const [pageSize, setPageSize] = useState(100);
     const [customSlot, setCustomSlot] = useState("slots"); // or defense
-    const [savedSets, setSavedSets] = useState([]);
     const [editingName, setEditingName] = useState(false);
-    const [showExtra, setShowExtra] = useState(false);
-    const [showAll, setShowAll] = useState(true);
+
+    const [rIndex, setRIndex] = useState(0);
+    const [rArr, setRArr] = useState([]);
+
+    const [isShiftPressed, setIsShiftPressed] = useState(false);
+    const [isCtrlPressed, setIsCtrlPressed] = useState(false);
+    const [isMouseInside, setIsMouseInside] = useState(false);
 
     useEffect(() => {
-        const tempSets = getFromLocalStorage('savedSets');
-        const tempAll = getFromLocalStorage('showAll') ?? showAll;
-        const tempExtra = getFromLocalStorage('showExtra') ?? showExtra;
-        setSavedSets(tempSets);
-        setShowAll(tempAll);
-        setShowExtra(tempExtra);
-
         const handleKeyDown = event => {
             if (event.ctrlKey) { setIsCtrlPressed(true); }
             if (event.shiftKey) { setIsShiftPressed(true); }
@@ -181,13 +172,10 @@ const Results = ({
         };
     }, []);
 
-    const [isShiftPressed, setIsShiftPressed] = useState(false);
-    const [isCtrlPressed, setIsCtrlPressed] = useState(false);
-    const [isMouseInside, setIsMouseInside] = useState(false);
-
     useEffect(() => {
-
-    }, [page, results]);
+        setRArr([]);
+        setRIndex(0);
+    }, [page]);
 
     useEffect(() => {
         setPage(0);
@@ -200,12 +188,14 @@ const Results = ({
     useEffect(() => {
         if (!selectedResult) {
             setEditingName(false);
+            setRArr([]);
+            setRIndex(0);
         }
     }, [selectedResult]);
 
     useEffect(() => {
         if (editingName) {
-            const el = document.getElementById("edit-name").focus();
+            document.getElementById("edit-name").focus();
         }
     }, [editingName]);
 
@@ -220,10 +210,10 @@ const Results = ({
     const saveSet = () => {
         const tempSets = saveArmorSet({
             ...selectedResult,
-            searchedSkills: skills
+            searchedSkills: fields.skills
         });
         if (tempSets) {
-            setSavedSets(tempSets);
+            updateField('savedSets', tempSets);
         }
 
         if (onSaveSet) {
@@ -233,11 +223,12 @@ const Results = ({
 
     const updateSetName = ev => {
         if (!selectedResult) { return; }
-        const tempSavedSets = (getFromLocalStorage('savedSets') || savedSets || []).filter(x => x.id !== selectedResult.id);
+        const tempSavedSets = (
+            fields.savedSets || []
+        ).filter(x => x.id !== selectedResult.id);
         const tempSelectedResult = { ...selectedResult, name: ev.target.value };
         tempSavedSets.push(tempSelectedResult);
-        saveToLocalStorage('savedSets', tempSavedSets);
-        setSavedSets(tempSavedSets);
+        updateField('savedSets', tempSavedSets);
         setEditingName(false);
     };
 
@@ -278,16 +269,22 @@ const Results = ({
         </div>;
     };
 
-    const renderResult = result => {
+    const renderResult = (result, resultIndex, resultArr) => {
         const highlighted = result.id === selectedResult?.id;
         const armorNames = result.armorNames;
-        const theName = savedSets?.filter(x => x.id === result?.id)[0]?.name || "Unnamed Set";
+        const savedMatch = fields.savedSets?.filter(x => x.id === result?.id)[0];
+        const theName = savedMatch?.name || "Unnamed Set";
+        let cls = "";
+        if (!save && savedMatch) { cls += 'striped'; }
+        if (highlighted) { cls += ' row-shine'; }
 
-        return <StyledTableRow key={result.id} className={highlighted ? "row-shine" : ""}
+        return <StyledTableRow key={result.id} className={cls}
             onClick={() => {
                 if (selectedResult?.id === result.id) {
                     setSelectedResult(undefined);
                 } else {
+                    setRArr(resultArr);
+                    setRIndex(resultIndex);
                     setSelectedResult(result);
                 }
             }}
@@ -314,11 +311,19 @@ const Results = ({
         setPageSize(parseInt(event.target.value, 10));
     };
 
+    const cycleSelectedResult = amount => {
+        if (!selectedResult) { return; }
+        const next = rArr[rIndex + amount];
+        if (!next) { return; }
+        setRIndex(rIndex + amount);
+        setSelectedResult(next);
+    };
+
     const wikiSearch = () => {
         if (!selectedResult) { return; }
         const wiki = generateWikiString(
             selectedResult.skills, selectedResult.setSkills, selectedResult.groupSkills,
-            slotFilters
+            fields.slotFilters
         );
 
         // god the wiki site is so shit without an adblock
@@ -334,10 +339,9 @@ const Results = ({
             {decos.map(deco => {
                 const skillIcons = deco.skillNames.map(x => SKILLS.filter(y => y.name === x)[0].icon);
                 const singleIcon = skillIcons[0]; // todo: change this should armor decos ever have more than 1 skill each
-                const canFlip = setShowDecos !== undefined;
 
-                return <div key={deco.key} className="deco" style={canFlip ? { cursor: 'help' } : {}}
-                    title={deco.altText} onClick={canFlip ? () => setShowDecos(!showDecoSkills) : {}}>
+                return <div key={deco.key} className="deco" style={{ cursor: 'help' }}
+                    title={deco.altText} onClick={() => updateField('showDecoSkillNames', !fields.showDecoSkillNames)}>
                     <img className="deco-img" src={`images/slot${deco.slotSize}.png`} />
                     <div>
                         <span className="deco-name">{deco.name}</span>
@@ -357,13 +361,17 @@ const Results = ({
         </div>;
     };
 
-    const renderSkill = (sk, j, arr, searchedSkills) => {
+    const renderSkill = (sk, j, arr, searchedSkills, showLevelMods = false) => {
         const comma = j < arr.length - 1;
-        const want = searchedSkills?.[sk.name];
+        const want = searchedSkills?.[sk.name] || 0;
         const isWantedSkill = Boolean(want);
         let wantedCls = !isWantedSkill ? 'wanted' : '';
         if (searchedSkills === undefined) {
             wantedCls = '';
+        }
+        let levelModSpan = null;
+        if (showLevelMods && isWantedSkill && want < sk.level) {
+            levelModSpan = <span className="wanted left-space">{`(+${sk.level - want})`}</span>;
         }
         const title = getSkillPopup(sk.name);
         const setTag = isGroupSkillName(sk.name) ? 'set-names set-color' : '';
@@ -372,26 +380,25 @@ const Results = ({
 
         return <div key={sk.name} className={`result-skill ${tag}`} title={title}>
             <span className={`${wantedCls} sk-name`}>{`${sk.name} `}</span>
-            <span className={`${wantedCls}`}>{`Lv. ${sk.level}`}</span>
+            <span className={`${wantedCls}`}>{`Lv. ${sk.level}`}{levelModSpan}</span>
             {comma && ', '}
         </div>;
     };
 
     const renderArmor = (armorSet, result) => {
         const armorTypeMap = ["head", "chest", "arms", "waist", "legs", "talisman"];
-        const searchedSkills = skills || result.searchedSkills || {};
+        const searchedSkills = fields.skills || result.searchedSkills || {};
 
         return <div className="armor-holder">
             {armorSet.map((armor, i) => {
                 const defense = getArmorDefenseFromName(armor.name);
                 const type = armorTypeMap[i];
-                const isBlacklisted = blacklistedArmor.includes(armor.name);
-                const isMandatory = mandatoryArmor.includes(armor.name);
+                const isBlacklisted = fields.blacklistedArmor.includes(armor.name);
+                const isMandatory = fields.mandatoryArmor.includes(armor.name);
                 // const isTypeBlacklisted = blacklistedArmorTypes.includes(armorTypeMap[i]);
-                const pinFunc = () => pin(armor.name, type);
+                const pinFunc = () => pinArmor(armor.name, type);
                 const disabled = armor.name.toLowerCase() === "none";
-                const excludeFunc = () => exclude(armor.name);
-                // const armorHue = getArmorColorHue(armor.rarity);
+                const excludeFunc = () => excludeArmor(armor.name);
                 const cls = disabled ? 'disabled' : '';
 
                 return <div className="armor-piece" key={type}>
@@ -418,7 +425,7 @@ const Results = ({
     const renderSelectedResult = () => {
         const hasSelectedResult = Boolean(selectedResult);
         const pageStr = save ? "Your saved sets will appear below." : "Add skills above and tap 'Search' to get armor sets.";
-        const theName = (savedSets || []).filter(x => x.id === selectedResult?.id)[0]?.name;
+        const theName = (fields.savedSets || []).filter(x => x.id === selectedResult?.id)[0]?.name;
 
         const mySetName = theName || "Unnamed Set";
         const nameEl = save ? <Typography className="edit-name" sx={{ cursor: "pointer !important" }}
@@ -441,13 +448,13 @@ const Results = ({
         let freeSlots = null;
         let defenseTotal = null;
         if (selectedResult) {
-            const decos = getDecosFromNames(selectedResult.decoNames, showDecoSkills);
+            const decos = getDecosFromNames(selectedResult.decoNames, fields.showDecoSkillNames);
             const armor = getArmorFromNames(selectedResult.armorNames);
             const defense = getArmorDefenseFromNames(selectedResult.armorNames);
 
             summary = renderDecos(decos);
             details = renderArmor(armor, selectedResult);
-            const extras = skills || selectedResult.searchedSkills;
+            const extras = fields.skills || selectedResult.searchedSkills;
             const extraSkills = extras ? getSkillDiff(extras, {
                 ...selectedResult.skills,
                 ...selectedResult.setSkills,
@@ -465,15 +472,13 @@ const Results = ({
                 <div className="def-value base">({defense.base} base)</div>
             </div>;
 
-            const allMagic = formatSkillsDiff(selectedResult.skills, showGroupSkills);
             all = <div className="all-skills">
                 {Object.entries(selectedResult.skills).map(x => {
                     return { name: x[0], level: x[1] };
-                }).map(renderSkill)}
+                }).map((sk, j, arr) => renderSkill(sk, j, arr, fields.skills, true))}
             </div>;
 
             if (setExist) {
-                const setMagic = formatSetSkills(selectedResult.setSkills, showGroupSkills);
                 setEffects = <div className="set-skills">
                     <span className="set-label">Set Skills:</span>
                     {Object.entries(selectedResult.setSkills).map(x => {
@@ -482,7 +487,6 @@ const Results = ({
                 </div>;
             }
             if (groupExist) {
-                const groupMagic = formatGroupSkills(selectedResult.groupSkills, showGroupSkills);
                 groupSkills = <div className="set-skills">
                     <span className="set-label">Group Skills:</span>
                     {Object.entries(selectedResult.groupSkills).map(x => {
@@ -491,7 +495,7 @@ const Results = ({
                 </div>;
             }
             if (extraExist) {
-                const extraMagic = formatSkillsDiff(extraSkills, showGroupSkills, '+');
+                const extraMagic = formatSkillsDiff(extraSkills, fields.showGroupSkillNames, '+');
                 extraSkillsDiv = <div className="group-skills">
                     <span className="set-label"
                         title="Bonus skill levels you didn't search for">Extra Skills:</span>
@@ -502,10 +506,10 @@ const Results = ({
             freeSlots = renderSlots(selectedResult);
         }
 
-        const savedVar = save ? results : savedSets;
+        const savedVar = save ? results : fields.savedSets;
 
-        const isSaved = !selectedResult ? false :
-            (savedVar || []).filter(x => areArmorSetsEqual(x.armorNames, selectedResult.armorNames))[0];
+        const isSaved = selectedResult &&
+            (savedVar || []).filter(x => x.id === selectedResult.id)[0];
 
         const queueUpSkills = () => {
             if (!selectedResult && !selectedResult.searchedSkills) { return; }
@@ -515,7 +519,7 @@ const Results = ({
             };
 
             if (!isEmpty(mySkills)) {
-                saveToLocalStorage('skills', mySkills);
+                updateField('skills', mySkills);
                 window.snackbar.createSnackbar(`Added skills to search tab`, {
                     timeout: 3000
                 });
@@ -525,6 +529,9 @@ const Results = ({
         const searchTargetTitle = isShiftPressed ? "Set only skills used to find this set as the search target" :
             "Set all skills from this set as the search target";
         const paperStyle = hasSelectedResult ? "full" : "empty";
+
+        const disabledRight = !rArr[rIndex + 1];
+        const disabledLeft = !rArr[rIndex - 1];
 
         return <div style={{ marginBottom: '1em' }}
             onMouseEnter={() => setIsMouseInside(true)}
@@ -542,12 +549,12 @@ const Results = ({
                     {!editingName && hasSelectedResult && nameEl}
                     {summary}
                 </AccordionSummary>
-                {showAll && all}
+                {fields.showAll && all}
                 {details}
                 {defenseTotal}
                 {setEffects}
                 {groupSkills}
-                {showExtra && extraSkillsDiv}
+                {fields.showExtra && extraSkillsDiv}
                 <div className="free-slots-holder">
                     <span className="set-label">Free Slots:</span>
                     <div className="free-holder">{freeSlots}</div>
@@ -567,7 +574,13 @@ const Results = ({
                     variant="outlined" color="warning">
                     Search Wiki
                 </Button>}
-                <CloseIcon className="close-icon" onClick={() => setSelectedResult(undefined)} />
+                <div className="result-cyclers">
+                    <IconButton className="cycle" title="Previous Result"
+                        disabled={disabledLeft} onClick={() => cycleSelectedResult(-1)}><ArrowBack /></IconButton>
+                    <IconButton className="cycle" title="Next Result"
+                        disabled={disabledRight} onClick={() => cycleSelectedResult(1)}><ArrowForward /></IconButton>
+                    <CloseIcon className="close-icon" onClick={() => setSelectedResult(undefined)} />
+                </div>
             </Accordion>
         </div>;
     };
@@ -621,7 +634,7 @@ const Results = ({
                         </StyledTableRow>
                     </TableHead>
                     <TableBody>
-                        {paginate(results, page, pageSize).map(result => renderResult(result))}
+                        {paginate(results, page, pageSize).map((result, index, arr) => renderResult(result, index, arr))}
                     </TableBody>
                 </Table>
             </TableContainer>
@@ -653,22 +666,22 @@ const Results = ({
     };
 
     elapsedSeconds = elapsedSeconds || -1;
-    const skillsList = Object.entries(skills || {}).map(([k, v]) => [`${k} Lv. ${v}`]).join(", ");
+    const skillsList = Object.entries(fields.skills || {}).map(([k, v]) => [`${k} Lv. ${v}`]).join(", ");
     const displayStr = `Results for ${skillsList} (${results.length.toLocaleString('en', { useGrouping: true })}` +
         ` hits in ${elapsedSeconds.toFixed(2)} seconds):`;
     const displayStrEmpty = `No skills specified.  ` +
         `Showing best slotted armor combos (${results.length.toLocaleString('en', { useGrouping: true })}` +
         ` hits in ${elapsedSeconds.toFixed(2)} seconds):`;
-    const someArmorBlacklisted = blacklistedArmor.length > 0;
-    const someArmorMandatory = mandatoryArmor.filter(x => x).length > 0;
-    const someTypesBlacklisted = blacklistedArmorTypes.length > 0;
+    const someArmorBlacklisted = fields.blacklistedArmor.length > 0;
+    const someArmorMandatory = fields.mandatoryArmor.filter(x => x).length > 0;
+    const someTypesBlacklisted = fields.blacklistedArmorTypes.length > 0;
     const shouldNotify = someArmorBlacklisted || someArmorMandatory || someTypesBlacklisted;
 
     return <div className="results">
         {renderSelectedResult()}
         {elapsedSeconds > 0 && <div style={{ marginBottom: '0.5em' }}>
             {shouldNotify && <span className="warn">Some armor is pinned/blacklisted - </span>}
-            {!isEmpty(slotFilters) && <span className="notice">Deco filters active - </span>}
+            {!isEmpty(fields.slotFilters) && <span className="notice">Deco filters active - </span>}
             {skillsList ? displayStr : displayStrEmpty}
         </div>}
         {renderTable()}
@@ -677,17 +690,7 @@ const Results = ({
 
 Results.propTypes = {
     results: PropTypes.array.isRequired,
-    skills: PropTypes.object.isRequired,
-    slotFilters: PropTypes.object, // really only used for wikiSearch here
     elapsedSeconds: PropTypes.number,
-    showDecoSkills: PropTypes.bool,
-    showGroupSkills: PropTypes.bool,
-    mandatoryArmor: PropTypes.array,
-    blacklistedArmor: PropTypes.array,
-    blacklistedArmorTypes: PropTypes.array,
-    setShowDecos: PropTypes.func,
-    pin: PropTypes.func,
-    exclude: PropTypes.func,
     onSaveSet: PropTypes.func,
     save: PropTypes.bool, // if true, on saved sets page
 };

@@ -18,7 +18,9 @@
         const doc = parser.parseFromString(html, 'text/html');
 
         const armorSeriesName = doc.getElementsByTagName('h2')[0]?.innerText || 'Unknown Series';
-        const rank = armorSeriesName.includes("α") || armorSeriesName.includes("β") ? "high" : "low";
+        const rank = armorSeriesName.includes("α") ||
+            armorSeriesName.includes("β") ||
+            armorSeriesName.includes("γ") ? "high" : "low";
         const tableBodies = [...doc.getElementsByTagName('tbody')];
 
         if (tableBodies.length < 4) {

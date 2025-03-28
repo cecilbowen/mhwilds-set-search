@@ -1,24 +1,24 @@
 import { useState, useEffect } from 'react';
 import SKILLS from '../data/skills/skills.json';
 import TextField from '@mui/material/TextField';
-import { getDecoDisplayName, getDecoFromName, getFromLocalStorage,
-    saveToLocalStorage } from '../util/util';
+import { getDecoDisplayName, getDecoFromName } from '../util/util';
 import { Button, Typography } from '@mui/material';
 import DECOS from '../data/compact/decoration.json';
 import DECO_INVENTORY from '../data/user/deco-inventory.json';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import { useStorage } from '../hooks/StorageContext';
 
 const DecoInventory = () => {
+    const { fields, updateField } = useStorage();
     const [namesModded, setNamesModded] = useState({});
     const [inventory, setInventory] = useState([]);
-    const [showSkillNames, setShowSkillNames] = useState(false);
     const [searchText, setSearchText] = useState("");
     const [found, setFound] = useState([]);
     const [started, setStarted] = useState(false); // lazy activate
 
     const refreshDecos = () => {
-        const myDecos = getFromLocalStorage('decoInventory') || {};
+        const myDecos = { ...fields.decoInventory };
         const communistDecos = [];
         const armorDecos = Object.fromEntries(Object.entries(DECO_INVENTORY).filter(x => DECOS[x[0]][0] === "armor"));
 
@@ -43,8 +43,9 @@ const DecoInventory = () => {
         }
 
         const foundNames = communistDecos.filter(
-            x => !searchText || getDecoDisplayName(x.name, showSkillNames).toLowerCase().includes(searchText.toLowerCase())
-        ).map(x => getDecoDisplayName(x.name, showSkillNames));
+            x => !searchText || getDecoDisplayName(x.name, fields.showDecoSkillNames)
+                .toLowerCase().includes(searchText.toLowerCase())
+        ).map(x => getDecoDisplayName(x.name, fields.showDecoSkillNames));
         communistDecos.sort((a, b) => nameSort(a, b, foundNames));
         setNamesModded(modded);
         setInventory(communistDecos);
@@ -55,15 +56,12 @@ const DecoInventory = () => {
     };
 
     useEffect(() => {
-        const loadedShowDeco = getFromLocalStorage('showDecoSkillNames') ?? showSkillNames;
-        setShowSkillNames(loadedShowDeco);
-
         refreshDecos();
     }, []);
 
     const nameSort = (a, b, foundNames) => {
-        const aName = getDecoDisplayName(a.name, showSkillNames);
-        const bName = getDecoDisplayName(b.name, showSkillNames);
+        const aName = getDecoDisplayName(a.name, fields.showDecoSkillNames);
+        const bName = getDecoDisplayName(b.name, fields.showDecoSkillNames);
 
         let priority1 = 0;
         if (foundNames) {
@@ -80,8 +78,9 @@ const DecoInventory = () => {
             const tempInventory = [...inventory];
 
             const foundNames = tempInventory.filter(
-                x => !searchText || getDecoDisplayName(x.name, showSkillNames).toLowerCase().includes(searchText.toLowerCase())
-            ).map(x => getDecoDisplayName(x.name, showSkillNames));
+                x => !searchText || getDecoDisplayName(x.name, fields.showDecoSkillNames)
+                    .toLowerCase().includes(searchText.toLowerCase())
+            ).map(x => getDecoDisplayName(x.name, fields.showDecoSkillNames));
 
             tempInventory.sort((a, b) => nameSort(a, b, foundNames));
             setFound(foundNames);
@@ -95,14 +94,14 @@ const DecoInventory = () => {
             amount = 0;
             ev.target.value = amount;
         }
-        const mods = getFromLocalStorage('decoInventory') || {};
+        const mods = { ...fields.decoInventory };
         mods[decoName] = amount;
-        saveToLocalStorage('decoInventory', mods);
+        updateField('decoInventory', mods);
         refreshDecos();
     };
 
     const restock = () => {
-        saveToLocalStorage('decoInventory', {});
+        updateField('decoInventory', {});
         refreshDecos();
 
         const inputs = document.getElementsByClassName('deco-amount');
@@ -119,7 +118,7 @@ const DecoInventory = () => {
             emptyInv[decoName] = 0;
         }
 
-        saveToLocalStorage('decoInventory', emptyInv);
+        updateField('decoInventory', emptyInv);
         refreshDecos();
         const inputs = document.getElementsByClassName('deco-amount');
         for (const input of inputs) {
@@ -130,10 +129,10 @@ const DecoInventory = () => {
     const renderDeco = decoRaw => {
         const decoName = decoRaw.name;
         const amount = decoRaw.amount;
-        const deco = getDecoFromName(decoName, showSkillNames);
-        const howManyWeGot = namesModded[decoRaw.name] ?? 99;
+        const deco = getDecoFromName(decoName, fields.showDecoSkillNames);
 
         // todo: make the red highlight dynamic on change
+        const howManyWeGot = namesModded[decoRaw.name] ?? 99;
         const modded = howManyWeGot < deco.max;
         const highlighted = searchText && found.includes(deco.name);
         const highlightClass = highlighted ? "highlighted dhigh" : "";
@@ -160,7 +159,7 @@ const DecoInventory = () => {
         </div>;
     };
 
-    const label = showSkillNames ? "Search decorations by skill name" : "Search decorations by name";
+    const label = fields.showDecoSkillNames ? "Search decorations by skill name" : "Search decorations by name";
 
     return <div className="deco-inventory">
         <Typography sx={{ marginBottom: '8px', fontSize: '20px', fontWeight: 'bold', cursor: 'default' }}>
@@ -174,9 +173,9 @@ const DecoInventory = () => {
             <Button className="dbuttons" onClick={restock} variant="outlined" color="info" size="small">Fill Inventory</Button>
         </div>
         <div className="filters-div">
-            <FormControlLabel control={<Switch checked={showSkillNames} />}
-                onChange={ev => setShowSkillNames(ev.target.checked)}
-                label={showSkillNames ? "Label by Skill Names" : "Label by Decoration Names"} />
+            <FormControlLabel control={<Switch checked={fields.showDecoSkillNames} />}
+                onChange={ev => updateField('showDecoSkillNames', ev.target.checked)}
+                label={fields.showDecoSkillNames ? "Label by Skill Names" : "Label by Decoration Names"} />
         </div>
 
         {renderDecos()}
