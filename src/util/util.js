@@ -370,8 +370,9 @@ export const getSkillPopup = skillName => {
 
     if (!skill) { return ""; }
 
-    const levelsDesc = skill?.levels?.map((desc, i) => `Level ${i + 1}: ${desc}`).join('\n') || '';
-    return `${skill.description}\n${levelsDesc}`;
+    let levelsDesc = skill?.levels?.map((desc, i) => `Level ${i + 1}: ${desc}`).join('\n') || '';
+    if (levelsDesc) { levelsDesc = `\n\n${levelsDesc}`; }
+    return `${skill.description}${levelsDesc}`;
 };
 
 export const getArmorFromNames = names => {

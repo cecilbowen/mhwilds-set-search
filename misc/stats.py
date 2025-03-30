@@ -1409,6 +1409,7 @@ def run_all_tests():
 # speed(search, **asdict(tests.test_blacklist_armor_type))
 # speed(search, **asdict(tests.test_too_high))
 # speed(search, **asdict(tests.test_deco_bug))
+speed(search, **asdict(tests.test_gs_stamina))
 
 # ==============MORE SKILLS==============
 #speed(get_addable_skills, **asdict(tests.test_multi))
@@ -1420,7 +1421,7 @@ def run_all_tests():
 #     "Critical Eye": 3
 # })
 
-run_all_tests()
+# run_all_tests()
 
 # ==============PRINT==============
 print_results(search_results, wiki_string)

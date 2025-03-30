@@ -194,102 +194,24 @@ export const groupArmorIntoSets = (armorPieces, setSkills, groupSkills) => {
     return [groups, groupsEmpty];
 };
 
-export const slottageLengthCompare = (a, b, fallback) => {
-    const aSlots = [...a[1][3]];
-    const bSlots = [...b[1][3]];
-
-    while (aSlots.length < bSlots.length) { aSlots.push(0); }
-    while (bSlots.length < aSlots.length) { bSlots.push(0); }
-
-    for (let i = aSlots.length - 1; i >= 0; i--) {
-        if (aSlots[i] !== bSlots[i]) { return bSlots[i] - aSlots[i]; }
-    }
-    return fallback || 0;
-};
-
-export const slottageSizeCompare = (a, b, fallback) => {
-    const aSlots = [...a[1][3]];
-    const bSlots = [...b[1][3]];
-
-    while (aSlots.length < bSlots.length) { aSlots.push(0); }
-    while (bSlots.length < aSlots.length) { bSlots.push(0); }
-
-    for (let i = 0; i < aSlots.length; i++) {
-        if (aSlots[i] !== bSlots[i]) { return bSlots[i] - aSlots[i]; }
-    }
-    return fallback || 0;
-};
-
-export const slottageLengthCompareRaw = (topSlots, challengerSlots) => {
-    const bestSlots = [...topSlots];
-    const testSlots = [...challengerSlots];
-    const standardLength = Math.max(bestSlots.length, testSlots.length);
-    while (testSlots.length < standardLength) { testSlots.push(0); }
-    while (bestSlots.length < standardLength) { bestSlots.push(0); }
-
-    for (let i = bestSlots.length - 1; i >= 0; i--) {
-        if (testSlots[i] > bestSlots[i]) { return true; }
-    }
-    return false;
-};
-
-export const slottageLengthCompareSort = (slots = []) => {
-    // Returns an array of slot values, right-aligned with zeros.
-    return [...slots, ...Array(3 - slots.length).fill(0)].reverse();
-};
-
-export const hasBetterSlottage = (armors, challengerSlots) => {
-    if (!armors || Object.keys(armors).length === 0) { return true; }
-
-    const sortedBySlottage = Object.fromEntries(
-        Object.entries({ ...armors }).sort((a, b) => _x(b[1], "slots") - _x(a[1], "slots"))
-    );
-
-    const top = Object.values(sortedBySlottage)[0];
-    return challengerSlots > top[3];
-};
-
-export const hasLongerSlottage = (armors, challengerSlots, skillName = null) => {
-    if (!armors || Object.keys(armors).length === 0) { return true; }
-
-    // Filter by skillName before sorting
-    const filteredArmors = Object.fromEntries(
-        Object.entries(armors).filter(([_, v]) => !skillName || skillName in v[1])
-    );
-
-    // Sort by slottageLengthCompare (assumes it returns -1, 0, or 1 like Python's cmp_to_key)
-    const sortedData = Object.fromEntries(
-        Object.entries(filteredArmors).sort((a, b) => slottageLengthCompare(a[1], b[1]))
-    );
-
-    // Extract the first entry's slots
-    const firstEntry = Object.entries(sortedData)[0]?.[1][3] || [];
-
-    return slottageLengthCompareRaw(firstEntry, challengerSlots);
-};
-
-export const isBetterArmor = (existingArmors, newSlots) => {
-    return hasBetterSlottage(existingArmors, newSlots) || hasLongerSlottage(existingArmors, newSlots);
-};
-
 export const getSkillPotential = (armorData, skillName, decos, allSkills) => {
-    // Returns (max skill level, leftover slots, length of slots)
     const filteredDecos = Object.fromEntries(Object.entries(decos)
         .filter(([k, v]) => skillName in v[1])
-        .map(([k, v]) => [k, [v[1][skillName], v[2]]])
+        .map(([k, v]) => [k, [v[1][skillName], v[2]]]) // [name, [skill level, slot size]]
         .sort((a, b) => {
-            if (b[1][0] !== a[1][0]) { return b[1][0] - a[1][0]; } // Sort by skill level first
-            return b[1][1] - a[1][1]; // If levels are the same, sort by slot size
+            if (b[1][0] !== a[1][0]) { return b[1][0] - a[1][0]; } // Sort by skill level first (descending)
+            return b[1][1] - a[1][1]; // otherwise, slot size (descending)
         })
     );
 
+    // slot sizes of other wanted skills
     const otherDecoSlotSizes = Object.values(decos)
         .filter(v => !(skillName in v[1]))
         .map(v => v[2]);
 
     const extraPoints = Object.entries(armorData[1])
         .filter(([skill]) => skill !== skillName)
-        .reduce((sum, [skill, level]) => sum + (allSkills[skill] ? 5 : 1), 0);
+        .reduce((sum, [skill, level]) => sum + (allSkills[skill] ? 5 : 1), 0); // todo: improve this
 
     let maxPoints = 0;
     const leftoverSlots = [...armorData[3]];
@@ -317,42 +239,105 @@ export const getSkillPotential = (armorData, skillName, decos, allSkills) => {
     return { points, leftoverSlots, extraPoints, modPoints };
 };
 
-// returns true if slots1 > slots2 (eg, [3, 2, 1] > [2, 2, 1])
-export const slotSizeCompare = (slots1, slots2) => {
-    const biggerLength = Math.max(slots1.length, slots2.length);
-    for (let i = 0; i < biggerLength; i++) {
-        const a = slots1[i] || 0;
-        const b = slots2[i] || 0;
-        if (a > b) {
-            return true;
-        }
-    }
+export const paddedSlots = slots => [
+    slots[0] ?? 0,
+    slots[1] ?? 0,
+    slots[2] ?? 0,
+];
 
+export const reversedSlots = slots => [
+    slots[2] ?? 0,
+    slots[1] ?? 0,
+    slots[0] ?? 0,
+];
+
+export const areSlotsEqual = (a, b) => {
+    for (let i = 0; i < 3; i++) {
+        const aVal = a[i] ?? 0;
+        const bVal = b[i] ?? 0;
+        if (aVal !== bVal) { return false; }
+    }
+    return true;
+};
+
+// returns true if leftSlots are bigger than rightSlots (eg, [3, 2, 1] is bigger than [2, 2, 2])
+export const areLeftSlotsBigger = (leftSlots, rightSlots) => {
+    for (let i = 0; i < 3; i++) {
+        const left = leftSlots[i] ?? 0;
+        const right = rightSlots[i] ?? 0;
+        if (left > right) { return true; }
+    }
     return false;
 };
 
-const slotCompare = (topSlots, trySlots) => {
-    // redundant sort, but whatever
-    const bestSlots = [...topSlots, ...Array(3 - topSlots.length).fill(0)].sort((a, b) => b - a);
-    const testSlots = [...trySlots, ...Array(3 - trySlots.length).fill(0)].sort((a, b) => b - a);
-
-    let identical = true;
-    let longer = false;
-    const bigger = slotSizeCompare(testSlots, bestSlots);
-
-    for (let i = bestSlots.length - 1; i >= 0; i--) {
-        const test = testSlots[i];
-        const best = bestSlots[i];
-
-        if (test !== best) {
-            identical = false;
-        }
-
-        if (test > best) {
-            longer = true;
-            break;
-        }
+// returns true if leftSlots are longer than rightSlots (eg, [3, 2, 1] is shorter than [2, 2, 2])
+export const areLeftSlotsLonger = (leftSlots, rightSlots) => {
+    for (let i = 2; i >= 0; i--) {
+        const left = leftSlots[i] ?? 0;
+        const right = rightSlots[i] ?? 0;
+        if (left > right) { return true; }
     }
+    return false;
+};
+
+export const slottageLengthCompare = (a, b, fallback) => {
+    for (let i = 2; i >= 0; i--) {
+        const aVal = a[i] ?? 0;
+        const bVal = b[i] ?? 0;
+        if (aVal !== bVal) { return bVal - aVal; }
+    }
+    return fallback;
+};
+
+export const slottageSizeCompare = (a, b, fallback) => {
+    for (let i = 0; i < 3; i++) {
+        const aVal = a[i] ?? 0;
+        const bVal = b[i] ?? 0;
+        if (aVal !== bVal) { return bVal - aVal; }
+    }
+    return fallback;
+};
+
+export const hasBiggerSlottage = (armors, challengerSlots) => {
+    if (!armors || isEmpty(armors)) { return true; }
+
+    const sortedData = Object.fromEntries(
+        Object.entries({ ...armors }).sort((a, b) => slottageSizeCompare(a[1][3], b[1][3]))
+    );
+
+    const top = Object.values(sortedData)[0];
+    return areLeftSlotsBigger(challengerSlots, top[3]);
+};
+
+export const hasLongerSlottage = (armors, challengerSlots, skillName = null) => {
+    if (!armors || isEmpty(armors)) { return true; }
+
+    // Filter by skillName before sorting
+    const filteredArmors = Object.fromEntries(
+        Object.entries(armors).filter(([_, v]) => !skillName || skillName in v[1])
+    );
+
+    // Sort by slottageLengthCompare (assumes it returns -1, 0, or 1 like Python's cmp_to_key)
+    const sortedData = Object.fromEntries(
+        Object.entries(filteredArmors).sort((a, b) => slottageLengthCompare(a[1][3], b[1][3]))
+    );
+
+    // Extract the first entry's slots
+    const top = Object.values(sortedData)[0];
+    return areLeftSlotsLonger(challengerSlots, top[3]);
+};
+
+export const isBetterArmor = (existingArmors, newSlots) => {
+    return hasBiggerSlottage(existingArmors, newSlots) || hasLongerSlottage(existingArmors, newSlots);
+};
+
+const slotCompare = (topSlots, trySlots) => {
+    const bestSlots = paddedSlots(topSlots); // .sort((a, b) => b - a);
+    const testSlots = paddedSlots(trySlots); // .sort((a, b) => b - a);
+
+    const longer = areLeftSlotsLonger(testSlots, bestSlots);
+    const bigger = areLeftSlotsBigger(testSlots, bestSlots);
+    const identical = areSlotsEqual(testSlots, bestSlots);
 
     return identical ? "equal" : longer || bigger;
 };
@@ -394,7 +379,6 @@ export const updateSkillPotential = (
             leftoverSlots: keys.includes("leftover_slots") ? leftoverSlots : alias.leftoverSlots || [],
             defense: armorData[4]
         });
-        // console.log(`best: ${armorName}, points: ${points}`);
 
         if (oldBest && modPointMap[oldBest] >= modPoints) {
             applyForMore(oldBest);
@@ -412,7 +396,7 @@ export const updateSkillPotential = (
     } else if (points === currentPoints && compare) {
         if (compare === "equal") {
             const bestExtraPoints = alias.extraPoints || 0;
-            if (armorData[3] > (alias.slots || [])) {
+            if (areLeftSlotsBigger(armorData[3], alias.slots || [])) {
                 aliasUpdate();
             } else if (extraPoints > bestExtraPoints) {
                 aliasUpdate(["extra_points"]);

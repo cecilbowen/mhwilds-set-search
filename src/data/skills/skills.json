@@ -59,11 +59,11 @@
     "name": "Antivirus",
     "icon": "power",
     "type": "armor",
-    "description": "Once infected, makes it easier to overcome the Frenzy and increases affinity if cured.",
+    "description": "Once infected, makes it easier to overcome the Frenzy and increases affinity if cured (overcoming Frenzy without any levels of Antivirus, already gives +15% affinity).",
     "levels": [
       "Slightly increases recovery rate after contracting the Frenzy. Affinity +3% if cured.",
       "Increases recovery rate after contracting the Frenzy. Affinity +6% if cured.",
-      "Greatly increases recovery rate after contracting the Frenzy. Affinity +15% if cured."
+      "Greatly increases recovery rate after contracting the Frenzy. Affinity +10% if cured."
     ]
   },
   {

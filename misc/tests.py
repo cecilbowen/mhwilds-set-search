@@ -296,6 +296,22 @@ test_blacklist_armor_type = TestParams(
     verify_slots=[2, 0, 5]
 )
 
+test_gs_stamina = TestParams(
+    skills={
+        "Evade Extender": 3,
+        "Antivirus": 3,
+        "Agitator": 5,
+        "Maximum Might": 3,
+        "Constitution": 5,
+        "Counterstrike": 2
+    },
+    set_skills={
+        "Gore Magala's Tyranny": 1,
+        "Fulgur Anjanath's Will": 1
+    },
+    verify_slots=[2, 0, 5]
+)
+
 all_tests = {
     "test_single": test_single,
     "test_without_burst_deco": test_without_burst_deco,

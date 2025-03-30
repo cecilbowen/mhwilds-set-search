@@ -11,8 +11,8 @@ import {
     emptyGearSet, formatArmorC, getArmorSkillNames, getBestDecos, getDecoSkillsFromNames,
     getInclusiveRemainingSlots,
     getJsonFromType, getSearchParameters, getSkillTestOrderBinary, groupArmorIntoSets,
-    hasBetterSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
-    isInSets, mergeSumMaps, slottageLengthCompare, slottageLengthCompareSort,
+    hasBiggerSlottage, hasLongerSlottage, hasNeededSkill, isEmpty, isInGroups,
+    isInSets, mergeSumMaps, slottageLengthCompare,
     slottageSizeCompare, speed, updateSkillPotential
 } from "./tools";
 import { CHOSEN_ARMOR_DEBUG, DEBUG, DFS, DFS_DEBUG } from "./constants";
@@ -88,16 +88,16 @@ export const getBestArmor = (
         const allSort = Object.fromEntries(Object.entries(dataFile)
             .sort((a, b) => {
                 if (sortType === "size") {
-                    return slottageSizeCompare(a, b, b[1][4] - a[1][4]);
+                    return slottageSizeCompare(a[1][3], b[1][3], b[1][4] - a[1][4]);
                 }
-                return slottageLengthCompare(a, b, b[1][4] - a[1][4]); // default to defense at end
+                return slottageLengthCompare(a[1][3], b[1][3], b[1][4] - a[1][4]); // default to defense at end
             })
         );
 
         for (const [armorName, armorData] of Object.entries(allSort)) {
             const category = armorData[0];
             if (isEmpty(checker[category])) {
-                if (sortType === "size" && hasBetterSlottage(firsts[category], armorData[3]) ||
+                if (sortType === "size" && hasBiggerSlottage(firsts[category], armorData[3]) ||
                     sortType === "length" && hasLongerSlottage(firsts[category], armorData[3])) {
                     checker[category] = { checked: true };
                     firsts[category][armorName] = armorData;
@@ -157,7 +157,7 @@ export const getBestArmor = (
     const groupiesAlt = Object.fromEntries(Object.entries(dataFile)
         .filter(([k, v]) => isInSets(v, setSkills) || isInGroups(v, groupSkills))
         .sort((a, b) => {
-            return slottageSizeCompare(a, b, b[1][4] - a[1][4]);
+            return slottageSizeCompare(a[1][3], b[1][3], b[1][4] - a[1][4]);
         })
     );
 
@@ -238,17 +238,7 @@ export const getBestArmor = (
             continue;
         }
         const sorted = Object.fromEntries(Object.entries(armor)
-            .sort(([aK, aV], [bK, bV]) => {
-                const aSort = slottageLengthCompareSort(aV[3]);
-                const bSort = slottageLengthCompareSort(bV[3]);
-
-                if (bSort > aSort) {
-                    return 1;
-                } else if (bSort < aSort) {
-                    return -1;
-                }
-                return slottageLengthCompare([aK, aV], [bK, bV]);
-            })
+            .sort((a, b) => slottageLengthCompare(a[1][3], b[1][3]))
         );
         bareMinimum[cat] = sorted;
     }
@@ -343,8 +333,6 @@ export const armorCombo = (head, chest, arms, waist, legs, talisman) => {
         slots: slots,
         setSkills: setSkills,
         groupSkills: groupSkills,
-        // todo: add upgraded defense value (also in python too)
-        // defenseTotal: [head.data[4], chest.data[4], arms.data[4], waist.data[4], legs.data[4]].reduce((sum, value) => sum + value),
         defense: [head.data[4], chest.data[4], arms.data[4], waist.data[4], legs.data[4]]
     };
 };
@@ -462,10 +450,8 @@ export const reorder = dataList => {
         data.groupSkills = groupSkills;
     }
 
-    // i'll figure out this sorting bs to make it match python's sort later
-    // TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
     const damnSort = [...indexedData].sort((a, b) =>
-        slottageSizeCompare([0, [0, 0, 0, a.freeSlots]], [0, [0, 0, 0, b.freeSlots]], b.id - a.id) // Sort by highest slot value
+        slottageSizeCompare(a.freeSlots, b.freeSlots) // Sort by biggest slot value
     );
 
     damnSort.forEach(d => d.slots.sort((a, b) => b - a));
@@ -484,11 +470,7 @@ export const reorder = dataList => {
             bThrees - aThrees || // Most 3s
             bTwos - aTwos || // Most 2s
             b.freeSlots.length - a.freeSlots.length || // Longest slots
-            Object.keys(b.skills).length - Object.keys(a.skills).length ||
-            b.id - a.id
-            // a.armorNames.join().localeCompare(b.armorNames.join()) ||
-            // eslint-disable-next-line no-underscore-dangle
-            // a._originalIndex - b._originalIndex // Ensures stable sorting by original order
+            Object.keys(b.skills).length - Object.keys(a.skills).length
         );
     });
 
@@ -584,9 +566,9 @@ const rollCombosDfs = async(
             return false;
         }
 
+        // delay to let UI not look like it's frozen
         if (allCounter % 500 === 0) {
             await new Promise(resolve => setTimeout(resolve, 0));
-            // console.log('delay', allCounter);
         }
         if (cancelToken && cancelToken.current) {
             console.warn('rollCombosDfs() cancel pressed, returning early');
@@ -870,7 +852,10 @@ export const getAddableSkills = async parameters => {
     const totalSkills = Object.keys(combinedSkills).length;
 
     const skillsCanAdd = getMaxSkillLevelsFromResults(priorResults, combinedSkills);
-    console.log(`skillsCanAdd:\n${Object.entries(skillsCanAdd).filter(x => x[1]).map(x => `\t${x[0]}: ${x[1]}`).join("\n")}`);
+
+    if (DEBUG) {
+        console.log(`skillsCanAdd:\n${Object.entries(skillsCanAdd).filter(x => x[1]).map(x => `\t${x[0]}: ${x[1]}`).join("\n")}`);
+    }
 
     for (const [name, level] of Object.entries(combinedSkills)) {
         const myLevel = skillsCanAdd[name];
@@ -994,16 +979,16 @@ export const search = async parameters => {
         for (const roll of rolls) {
             const rollFree = roll.freeSlots.sort((a, b) => b - a);
             if (rollFree.length < desiredSlots.length) { continue; } // not enough slots
-            let pass = false;
+            let skip = false;
             for (let i = 0; i < desiredSlots.length; i++) {
                 const wantSlot = desiredSlots[i];
                 const haveSlot = rollFree[i];
                 if (wantSlot > haveSlot) {
-                    pass = true;
+                    skip = true;
                     break;
                 }
             }
-            if (pass) { continue; }
+            if (skip) { continue; }
             filteredRolls.push(roll);
         }
         rolls = filteredRolls;
