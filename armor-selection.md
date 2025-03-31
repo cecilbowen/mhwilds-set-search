@@ -6,9 +6,13 @@ As mentioned on the [main readme](https://github.com/cecilbowen/mhwilds-set-sear
 I suggest checking out the [getBestArmor() function in logic.js](https://github.com/cecilbowen/mhwilds-set-search/blob/master/src/util/logic.js#L32) for the full, detailed process.
 
 ## Common Terms
+
 **biggest slots** - left-to-right slots comparison.  [3,2,1] is *bigger* than [2,2,2]
+
 **longest slots** - right-to-left slots comparison.  [3,2,1] is *shorter* than [2,2,2]
+
 **keep pool** - final pool of armor we've chosen
+
 **refine pool** - armor pool we're filtering out of to add to the *keep pool*
 
 # Main function - getBestArmor()

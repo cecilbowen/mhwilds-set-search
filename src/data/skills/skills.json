@@ -222,7 +222,7 @@
     "name": "Burst",
     "icon": "power",
     "type": "armor",
-    "description": "Continuously landing hits gradually increases attack and elemental attack. (Amount increased depends on weapon.)",
+    "description": "Continuously landing hits gradually increases attack and elemental attack. (Amount increased depends on weapon.  Lasts 4 seconds.)",
     "levels": [
       "On first hit, gain a small temporary attack and element boost, replaced by a larger boost after the fifth hit.",
       "Hit 5 successive times for a moderate stat boost.",
@@ -706,7 +706,7 @@
     "name": "Latent Power",
     "icon": "power",
     "type": "armor",
-    "description": "Temporarily increases affinity and reduces stamina depletion when certain conditions are met.",
+    "description": "Increases affinity and reduces stamina depletion after about 2 minutes of combat or after taking around 130 damage.  The effect lasts about 2 minutes.",
     "levels": [
       "While active, affinity +10% and reduces stamina depletion by 30%.",
       "While active, affinity +20% and reduces stamina depletion by 30%.",

@@ -49,8 +49,8 @@
     "description": "Chance to deal additional fire damage after landing an attack.",
     "name": "Rathalos's Flare",
     "levels": [
-      "Chance to deal additional fire damage after landing an attack.",
-      "Increases additional fire damage after landing an attack."
+      "Chance to deal additional fire damage after landing an attack (33% chance for 24 fire damage).",
+      "Increases additional fire damage after landing an attack (33% chance for 60 fire damage)."
     ],
     "piecesPerLevel": [
       2,
@@ -89,8 +89,8 @@
     "description": "Grants an additional Stamina Gauge.",
     "name": "Fulgur Anjanath's Will",
     "levels": [
-      "Grants an additional Stamina Gauge.",
-      "Grants an additional long Stamina Gauge."
+      "Grants an additional Stamina Gauge (25 stamina).",
+      "Grants an additional long Stamina Gauge (50 stamina)."
     ],
     "piecesPerLevel": [
       2,
@@ -136,11 +136,11 @@
   },
   {
     "skill": "War Cry",
-    "description": "Using the To Victory! gesture increases attack temporarily to nearby allies. Also effects Palicoes and Support Hunters",
+    "description": "Using the To Victory! gesture increases attack temporarily to nearby allies. Also effects Palicoes and Support Hunters.  Lasts 3 minutes.",
     "name": "Blangonga's Spirit",
     "levels": [
-      "Using the To Victory! gesture moderately increases attack temporarily to nearby allies. Greatly effects Palicoes and Support Hunters",
-      "Using the To Victory! gesture increases attack temporarily to nearby allies. Greatly effects Palicoes and Support Hunters"
+      "Using the To Victory! gesture moderately increases attack (attack +3) temporarily to nearby allies. Greatly effects Palicoes and Support Hunters",
+      "Using the To Victory! gesture increases attack (attack +6) temporarily to nearby allies. Greatly effects Palicoes and Support Hunters"
     ],
     "piecesPerLevel": [
       2,
@@ -164,8 +164,8 @@
     "description": "Extends the duration of the Burst skill and grants attack while Burst is active.",
     "name": "Ebony Odogaron's Power",
     "levels": [
-      "Extends the duration of the Burst skill and grants attack +3 while Burst is active.",
-      "Further extends the duration of the Burst skill and grants attack +10 while Burst is active."
+      "Extends the duration of the Burst skill to 5 seconds and grants attack +3 while Burst is active.",
+      "Further extends the duration of the Burst skill to 6 seconds and grants attack +10 while Burst is active."
     ],
     "piecesPerLevel": [
       2,
@@ -191,7 +191,7 @@
   },
   {
     "skill": "Protein Fiend",
-    "description": "Temporarily grants attack after eating meat items.",
+    "description": "Temporarily grants attack after eating meat items (lasts 2 minutes).",
     "name": "Xu Wu's Vigor",
     "levels": [
       "Temporarily grants attack +15 after eating items such as well-done steak.",
@@ -219,8 +219,8 @@
     "description": "Increases defense temporarily when using a specialized tool.",
     "name": "Uth Duna's Cover",
     "levels": [
-      "Increases defense temporarily when using a specialized tool.",
-      "Greatly increases defense and resistance temporarily when using a specialized tool"
+      "Increases defense temporarily (defense +25) when using a specialized tool.",
+      "Greatly increases defense and resistance temporarily (defense +50, all resistances +12) when using a specialized tool"
     ],
     "piecesPerLevel": [
       2,
@@ -249,8 +249,8 @@
     "description": "Moderately extends the activation time of the Latent Power skill.",
     "name": "Rey Dau's Voltage",
     "levels": [
-      "Moderately extends the activation time of the Latent Power skill.",
-      "Extends the activation time of the Latent Power skill."
+      "Moderately extends the activation time of the Latent Power skill (about 2 and a half minutes).",
+      "Extends the activation time of the Latent Power skill (about 3 and a half minutes)."
     ],
     "piecesPerLevel": [
       2,
@@ -279,8 +279,8 @@
     "description": "Deals additional damage while the Resentment skill is active.",
     "name": "Nu Udra's Mutiny",
     "levels": [
-      "Deals moderate additional damage while the Resentment skill is active.",
-      "Deals additional damage while the Resentment skill is active."
+      "Deals moderate additional damage (+18 additional damage) while the Resentment skill is active.",
+      "Deals additional damage (+40 additional damage) while the Resentment skill is active."
     ],
     "piecesPerLevel": [
       2,
@@ -306,11 +306,11 @@
   },
   {
     "skill": "Binding Counter",
-    "description": "Increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash.",
+    "description": "Increases attack for 60 seconds after recovering from webbed status, frostblight, being pinned, or a Power Clash.",
     "name": "Jin Dahaad's Revolt",
     "levels": [
-      "Increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash",
-      "Greatly increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash"
+      "Increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash (attack +25)",
+      "Greatly increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash (attack +50)"
     ],
     "piecesPerLevel": [
       2,
@@ -335,7 +335,7 @@
     "name": "Gore Magala's Tyranny",
     "levels": [
       "Infects you with Frenzy when against large monsters.",
-      "Infects you with Frenzy and raises attack when against large monsters. Attack power increases upon recovery."
+      "Infects you with Frenzy and raises attack when against large monsters. Attack power increases upon recovery (attack +10 while infected, +15 when cured)."
     ],
     "piecesPerLevel": [
       2,
@@ -359,8 +359,8 @@
     "description": "Restores a moderate amount of health when destroying a wound on a large monster.",
     "name": "Guardian Arkveld's Vitality",
     "levels": [
-      "Restores a moderate amount of health when destroying a wound on a large monster.",
-      "Restores health when destroying a wound on a large monster."
+      "Restores a moderate amount of health (25 health) when destroying a wound on a large monster.",
+      "Restores health (50 health) when destroying a wound on a large monster."
     ],
     "piecesPerLevel": [
       2,

@@ -370,7 +370,9 @@ export const getSkillPopup = skillName => {
 
     if (!skill) { return ""; }
 
-    let levelsDesc = skill?.levels?.map((desc, i) => `Level ${i + 1}: ${desc}`).join('\n') || '';
+    const field = skill?.levels || (skill?.effect ? [skill.effect] : undefined);
+
+    let levelsDesc = field?.map((desc, i) => `Level ${i + 1}: ${desc}`).join('\n') || '';
     if (levelsDesc) { levelsDesc = `\n\n${levelsDesc}`; }
     return `${skill.description}${levelsDesc}`;
 };

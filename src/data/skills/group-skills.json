@@ -73,7 +73,7 @@
     "description": "Makes it easier to mount Monsters and to wound them once mounted.",
     "pieces": 3,
     "skill": "Master Mounter",
-    "effect": "Makes it easier to mount monsters and to wound them once mounted.Master Mounter has 1 level, after which, additional levels won't provide any further benefit.",
+    "effect": "Makes it 120% easier to mount monsters and 150% easier to wound them once mounted.",
     "armor": [
       "Balahara Coil",
       "Balahara Coil Alpha",
@@ -139,7 +139,7 @@
     "description": "Temporarily reduces stamina depletion when health is at 40% or lower.",
     "pieces": 3,
     "skill": "Adrenaline",
-    "effect": "Temporarily reduces stamina depletion when health is at 40% or lower.",
+    "effect": "10% less stamina depletion when health is at 40% or lower.",
     "armor": [
       "Balahara Coil Beta",
       "Balahara Greaves Beta",
@@ -189,7 +189,7 @@
     "description": "Increases gathering speed, and prevents knock back when gathering or carving.",
     "pieces": 3,
     "skill": "Hunter Gatherer",
-    "effect": "Increases gathering speed, and prevents knock back when gathering or carving.",
+    "effect": "Increases gathering speed by 140%, and prevents knock back when gathering or carving.",
     "armor": [
       "Chatacabra Coil",
       "Chatacabra Coil Alpha",
@@ -239,7 +239,7 @@
     "description": "Increases your Affinity temporarily when sliding on terrain.",
     "pieces": 3,
     "skill": "Affinity Sliding",
-    "effect": "Increases your affinity temporarily when sliding on terrain.",
+    "effect": "Affinity +30 for 30 seconds when sliding on terrain.",
     "armor": [
       "Chatacabra Coil Beta",
       "Chatacabra Greaves Beta",
@@ -270,7 +270,7 @@
     "description": "Increases attack and defense after fainting during a quest. (Can be used twice.)",
     "pieces": 3,
     "skill": "Fortify",
-    "effect": "Increases attack and defense after fainting during a quest. (Can be used twice.)",
+    "effect": "Attack/defense +10% after first faint, attack/defense +15% after second faint",
     "armor": [
       "Ajarakan Coil",
       "Ajarakan Coil Alpha",
@@ -320,7 +320,7 @@
     "description": "Increases the attention drawn to you when attacking a monster.",
     "pieces": 3,
     "skill": "Diversion",
-    "effect": "Increases the attention drawn to you when attacking a monster.",
+    "effect": "Doubles the attention drawn to you when attacking a monster.",
     "armor": [
       "Ajarakan Coil Beta",
       "Ajarakan Greaves Beta",
@@ -398,7 +398,7 @@
     "description": "Increases attack when inflicted with ailments.",
     "pieces": 3,
     "skill": "Resuscitate",
-    "effect": "Increases attack when inflicted with ailments.",
+    "effect": "Attack +10 when inflicted with ailments.",
     "armor": [
       "Dahaad Shardbraces Beta",
       "Dahaad Shardcoil Beta",
@@ -427,7 +427,7 @@
     "description": "Increases recovery speed of stamina and red gauge when near Wylkrystals.",
     "pieces": 3,
     "skill": "Wylk Burst",
-    "effect": "Increases recovery speed of stamina and red gauge when near Wylkrystals.",
+    "effect": "Quadruples stamina recovery speed and doubles red gauge recovery speed when near Wylkrystals.",
     "armor": [
       "G Arkveld Coil",
       "G Arkveld Coil Alpha",
@@ -483,7 +483,7 @@
     "description": "Reduces elemental and unique damage while in the Ruins of Wyveria.",
     "pieces": 3,
     "skill": "Ward of Wyveria",
-    "effect": "Reduces elemental and unique damage while in the Ruins of Wyveria.",
+    "effect": "10% reduction of elemental and unique damage while in the Ruins of Wyveria.",
     "armor": [
       "Artian Coil Alpha",
       "Artian Greaves Alpha",
@@ -523,7 +523,7 @@
     "description": "Increases the chance of finding rare gathering points.",
     "pieces": 3,
     "skill": "Forager's Luck",
-    "effect": "Increases the chance of finding rare gathering points.",
+    "effect": "25% increased chance of finding rare gathering points",
     "armor": [
       "Azuz Apron Alpha",
       "Azuz Headdress Alpha",
