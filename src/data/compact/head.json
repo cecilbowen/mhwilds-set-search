@@ -119,5 +119,7 @@
   "Mizutsune Helm Alpha":["head",{"Aquatic/Oilsilt Mobility":2,"Evade Extender":1},"Fortifying Pelt",[3],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
   "Mizutsune Helm Beta":["head",{"Aquatic/Oilsilt Mobility":2},"Alluring Pelt",[3,2],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
   "Numinous Crown Alpha":["head",{"Recovery Speed":2,"Agitator":1},"Guardian's Pulse",[3,2],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
-  "Numinous Crown Beta":["head",{"Recovery Speed":1,"Agitator":1},"Guardian's Protection",[3,2,1],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"]
+  "Numinous Crown Beta":["head",{"Recovery Speed":1,"Agitator":1},"Guardian's Protection",[3,2,1],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
+  "Strategist Spectacles Alpha":["head",{"Geologist":3},"",[2,1,1],66,[66,66,66,66,66],"high",""],
+  "Square Glasses Alpha":["head",{"Botanist":4,"Outdoorsman":1},"",[1,1],66,[66,66,66,66,66],"high",""]
 }

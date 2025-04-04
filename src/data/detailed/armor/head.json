@@ -5879,5 +5879,64 @@
     "materials": [],
     "url": "",
     "imgUrl": ""
+  },
+  {
+    "name": "Strategist Spectacles Alpha",
+    "type": "head",
+    "slots": [
+      2,
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Geologist",
+        "level": 3
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Square Glasses Alpha",
+    "type": "head",
+    "slots": [
+      1,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Botanist",
+        "level": 4
+      },
+      {
+        "name": "Outdoorsman",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]
