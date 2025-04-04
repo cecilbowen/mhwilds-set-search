@@ -101,5 +101,12 @@
   "Vespoid Vambraces Beta": ["arms",{"Paralysis Resistance":1},"Neopteron Camouflage",[2],32,[-2,1,1,1,2],"high",""],
   "Xu Wu Vambraces": ["arms",{"Maximum Might":1},"Flexible Leathercraft",[1],26,[1,1,1,-3,2],"low",""],
   "Xu Wu Vambraces Alpha": ["arms",{"Earplugs":2},"Flexible Leathercraft",[2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
-  "Xu Wu Vambraces Beta": ["arms",{"Earplugs":1},"Buttery Leathercraft",[2,2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"]
+  "Xu Wu Vambraces Beta": ["arms",{"Earplugs":1},"Buttery Leathercraft",[2,2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
+
+  "Guild Cross Vambraces Alpha":["arms",{"Flinch Free":2,"Bind Resistance":1,"Tremor Resistance":1},"Glory's Favor",[2],66,[66,66,66,66,66],"high",""],
+  "Clerk Vambraces Alpha":["arms",{"Tool Specialist":2,"Palico Rally":1,"Survival Expert":1},"Glory's Favor",[2,1],66,[66,66,66,66,66],"high",""],
+  "Mizutsune Braces Alpha":["arms",{"Evade Window":2,"Evade Extender":2},"Fortifying Pelt",[1],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Mizutsune Braces Beta":["arms",{"Evade Window":2,"Evade Extender":1},"Alluring Pelt",[3],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Numinous Vambraces Alpha":["arms",{"Elemental Absorption":2,"Coalescence":1},"Guardian's Pulse",[2],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
+  "Numinous Vambraces Beta":["arms",{"Elemental Absorption":2},"Guardian's Protection",[3,1],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"]
 }

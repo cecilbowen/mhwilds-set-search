@@ -5443,5 +5443,183 @@
     ],
     "url": "/Xu+Wu+Coil+Beta",
     "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_coil_b_waist_typea_mhwilds_wiki_guide_200px.png"
+  },
+
+  {
+    "name": "Guild Cross Coil Alpha",
+    "type": "waist",
+    "slots": [
+      2
+    ],
+    "skills": [
+      {
+        "name": "Windproof",
+        "level": 2
+      },
+      {
+        "name": "Earplugs",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Clerk Belt Alpha",
+    "type": "waist",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "level": 2
+      },
+      {
+        "name": "Recovery Up",
+        "level": 2
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Coil Alpha",
+    "type": "waist",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 2
+      },
+      {
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Fortifying Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Coil Beta",
+    "type": "waist",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 2
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Alluring Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Overlay Alpha",
+    "type": "waist",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 2
+      },
+      {
+        "name": "Coalescence",
+        "level": 2
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Pulse",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Overlay Beta",
+    "type": "waist",
+    "slots": [
+      2
+    ],
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 2
+      },
+      {
+        "name": "Coalescence",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Protection",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]

@@ -5313,5 +5313,192 @@
     ],
     "url": "/Xu+Wu+Vambraces+Beta",
     "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_vambraces_b_arm_typea_mhwilds_wiki_guide_200px.png"
+  },
+
+  {
+    "name": "Guild Cross Vambraces Alpha",
+    "type": "arms",
+    "slots": [
+      2
+    ],
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "level": 2
+      },
+      {
+        "name": "Bind Resistance",
+        "level": 1
+      },
+      {
+        "name": "Tremor Resistance",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Clerk Vambraces Alpha",
+    "type": "arms",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "level": 2
+      },
+      {
+        "name": "Palico Rally",
+        "level": 1
+      },
+      {
+        "name": "Survival Expert",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Braces Alpha",
+    "type": "arms",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Evade Window",
+        "level": 2
+      },
+      {
+        "name": "Evade Extender",
+        "level": 2
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Fortifying Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Braces Beta",
+    "type": "arms",
+    "slots": [
+      3
+    ],
+    "skills": [
+      {
+        "name": "Evade Window",
+        "level": 2
+      },
+      {
+        "name": "Evade Extender",
+        "level": 1
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Alluring Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Vambraces Alpha",
+    "type": "arms",
+    "slots": [
+      2
+    ],
+    "skills": [
+      {
+        "name": "Elemental Absorption",
+        "level": 2
+      },
+      {
+        "name": "Coalescence",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Pulse",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Vambraces Beta",
+    "type": "arms",
+    "slots": [
+      3,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Elemental Absorption",
+        "level": 2
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Protection",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]

@@ -5405,5 +5405,185 @@
     ],
     "url": "/Xu+Wu+Mail+Beta",
     "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_mail_b_body_typea_mhwilds_wiki_guide_200px.png"
+  },
+
+  {
+    "name": "Guild Cross Suit Alpha",
+    "type": "chest",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Earplugs",
+        "level": 1
+      },
+      {
+        "name": "Tremor Resistance",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Clerk Suit Alpha",
+    "type": "chest",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Survival Expert",
+        "level": 2
+      },
+      {
+        "name": "Divine Blessing",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Mail Alpha",
+    "type": "chest",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 2
+      },
+      {
+        "name": "Constitution",
+        "level": 1
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Fortifying Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Mail Beta",
+    "type": "chest",
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "name": "Constitution",
+        "level": 1
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Alluring Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Shroud Alpha",
+    "type": "chest",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 2
+      },
+      {
+        "name": "Counterstrike",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Pulse",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Shroud Beta",
+    "type": "chest",
+    "slots": [
+      3
+    ],
+    "skills": [
+      {
+        "name": "Agitator",
+        "level": 2
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Protection",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]

@@ -408,5 +408,55 @@
       "Arkvulcan Vambraces Alpha",
       "Arkvulcan Vambraces Beta"
     ]
+  },
+  {
+    "skill": "Bubbly Dance",
+    "description": "Prevents major bubbleblight and increases evasion while afflicted with minor bubbleblight.",
+    "name": "Mizutsune's Prowess",
+    "levels": [
+      "Prevents major bubbleblight and increases evasion while afflicted with minor bubbleblight.",
+      "Prevents major bubbleblight and ups evasion while afflicted.  Trigger minor bubbleblight by evading many times."
+    ],
+    "piecesPerLevel": [
+      2,
+      4
+    ],
+    "armor": [
+      "Mizutsune Helm Alpha",
+      "Mizutsune Mail Alpha",
+      "Mizutsune Braces Alpha",
+      "Mizutsune Coil Alpha",
+      "Mizutsune Greaves Alpha",
+      "Mizutsune Helm Beta",
+      "Mizutsune Mail Beta",
+      "Mizutsune Braces Beta",
+      "Mizutsune Coil Beta",
+      "Mizutsune Greaves Beta"
+    ]
+  },
+  {
+    "skill": "Super Recovery",
+    "description": "Allows the Health Gauge to continue to slowly recover up to the max value, even if there is no red portion.",
+    "name": "Zoh Shia's Pulse",
+    "levels": [
+      "Allows the Health Gauge to continue to slowly recover up to the max value, even if there is no red portion.",
+      "Allows the Health Gauge to continue to slowly recover up to the max value, even if there is no red portion."
+    ],
+    "piecesPerLevel": [
+      2,
+      4
+    ],
+    "armor": [
+      "Numinous Crown Alpha",
+      "Numinous Shroud Alpha",
+      "Numinous Vambraces Alpha",
+      "Numinous Overlay Alpha",
+      "Numinous Greaves Alpha",
+      "Numinous Crown Beta",
+      "Numinous Shroud Beta",
+      "Numinous Vambraces Beta",
+      "Numinous Overlay Beta",
+      "Numinous Greaves Beta"
+    ]
   }
 ]

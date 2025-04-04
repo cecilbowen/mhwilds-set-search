@@ -104,5 +104,12 @@
   "Vespoid Mail Beta": ["chest",{"Survival Expert":1},"Neopteron Camouflage",[1,1,1],32,[-2,1,1,1,2],"high",""],
   "Xu Wu Mail": ["chest",{"Stamina Surge":1},"Flexible Leathercraft",[1],26,[1,1,1,-3,2],"low",""],
   "Xu Wu Mail Alpha": ["chest",{"Heroics":3,"Ambush":1},"Flexible Leathercraft",[],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
-  "Xu Wu Mail Beta": ["chest",{"Heroics":3},"Buttery Leathercraft",[1,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"]
+  "Xu Wu Mail Beta": ["chest",{"Heroics":3},"Buttery Leathercraft",[1,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
+
+  "Guild Cross Suit Alpha":["chest",{"Earplugs":1,"Tremor Resistance":1},"Glory's Favor",[2,1],66,[66,66,66,66,66],"high",""],
+  "Clerk Suit Alpha":["chest",{"Survival Expert":2,"Divine Blessing":1},"Glory's Favor",[2,1],66,[66,66,66,66,66],"high",""],
+  "Mizutsune Mail Alpha":["chest",{"Burst":2,"Constitution":1},"Fortifying Pelt",[1],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Mizutsune Mail Beta":["chest",{"Burst":1,"Constitution":1},"Alluring Pelt",[2,2],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Numinous Shroud Alpha":["chest",{"Agitator":2,"Counterstrike":1},"Guardian's Pulse",[1],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
+  "Numinous Shroud Beta":["chest",{"Agitator":2},"Guardian's Protection",[3],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"]
 }

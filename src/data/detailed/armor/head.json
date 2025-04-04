@@ -5635,5 +5635,249 @@
     ],
     "url": "/Xu+Wu+Helm+Beta",
     "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_helm_b_helm_typea_mhwilds_wiki_guide_200px.png"
+  },
+
+  {
+    "name": "Guild Cross Circlet Alpha",
+    "type": "head",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Bind Resistance",
+        "level": 2
+      },
+      {
+        "name": "Earplugs",
+        "level": 1
+      },
+      {
+        "name": "Flinch Free",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Clerk Visor Alpha",
+    "type": "head",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Palico Rally",
+        "level": 2
+      },
+      {
+        "name": "Divine Blessing",
+        "level": 2
+      },
+      {
+        "name": "Recovery Up",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Gourmand's Earring Alpha",
+    "type": "head",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "level": 2
+      },
+      {
+        "name": "Free Meal",
+        "level": 2
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Earrings of Dedication Alpha",
+    "type": "head",
+    "slots": [],
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "level": 4
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Helm Alpha",
+    "type": "head",
+    "slots": [
+      3
+    ],
+    "skills": [
+      {
+        "name": "Aquatic/Oilsilt Mobility",
+        "level": 2
+      },
+      {
+        "name": "Evade Extender",
+        "level": 1
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Fortifying Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Helm Beta",
+    "type": "head",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Aquatic/Oilsilt Mobility",
+        "level": 2
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Alluring Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Crown Alpha",
+    "type": "head",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "level": 2
+      },
+      {
+        "name": "Agitator",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Pulse",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Crown Beta",
+    "type": "head",
+    "slots": [
+      3,
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "level": 1
+      },
+      {
+        "name": "Agitator",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Protection",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]

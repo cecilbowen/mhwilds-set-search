@@ -110,5 +110,14 @@
   "Vespoid Helm Beta": ["head",{"Survival Expert":1},"Neopteron Camouflage",[2],32,[-2,1,1,1,2],"high",""],
   "Xu Wu Helm": ["head",{"Maximum Might":1},"Flexible Leathercraft",[1],26,[1,1,1,-3,2],"low",""],
   "Xu Wu Helm Alpha": ["head",{"Adrenaline Rush":2,"Ambush":1},"Flexible Leathercraft",[1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
-  "Xu Wu Helm Beta": ["head",{"Adrenaline Rush":2},"Buttery Leathercraft",[2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"]
+  "Xu Wu Helm Beta": ["head",{"Adrenaline Rush":2},"Buttery Leathercraft",[2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
+
+  "Guild Cross Circlet Alpha":["head",{"Bind Resistance":2,"Earplugs":1,"Flinch Free":1},"Glory's Favor",[1],66,[66,66,66,66,66],"high",""],
+  "Clerk Visor Alpha":["head",{"Palico Rally":2,"Divine Blessing":2,"Recovery Up":1},"",[2,1],66,[66,66,66,66,66],"high",""],
+  "Gourmand's Earring Alpha":["head",{"Speed Eating":2,"Free Meal":2},"Glory's Favor",[1],66,[66,66,66,66,66],"high",""],
+  "Earrings of Dedication Alpha":["head",{"Wide-Range":4},"",[],66,[66,66,66,66,66],"high",""],
+  "Mizutsune Helm Alpha":["head",{"Aquatic/Oilsilt Mobility":2,"Evade Extender":1},"Fortifying Pelt",[3],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Mizutsune Helm Beta":["head",{"Aquatic/Oilsilt Mobility":2},"Alluring Pelt",[3,2],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Numinous Crown Alpha":["head",{"Recovery Speed":2,"Agitator":1},"Guardian's Pulse",[3,2],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
+  "Numinous Crown Beta":["head",{"Recovery Speed":1,"Agitator":1},"Guardian's Protection",[3,2,1],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"]
 }

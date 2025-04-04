@@ -5593,5 +5593,194 @@
     ],
     "url": "/Xu+Wu+Greaves+Beta",
     "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/xu_wu_greaves_b_leg_typea_mhwilds_wiki_guide_200px.png"
+  },
+
+  {
+    "name": "Guild Cross Boots Alpha",
+    "type": "legs",
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Windproof",
+        "level": 1
+      },
+      {
+        "name": "Tremor Resistance",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Clerk Shoes Alpha",
+    "type": "legs",
+    "slots": [
+      2,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Palico Rally",
+        "level": 2
+      },
+      {
+        "name": "Tool Specialist",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Glory's Favor",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Greaves Alpha",
+    "type": "legs",
+    "slots": [
+      1
+    ],
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 2
+      },
+      {
+        "name": "Peak Performance",
+        "level": 1
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Fortifying Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Mizutsune Greaves Beta",
+    "type": "legs",
+    "slots": [
+      3
+    ],
+    "skills": [
+      {
+        "name": "Burst",
+        "level": 2
+      }
+    ],
+    "setSkill": "Mizutsune's Prowess",
+    "groupSkill": "Alluring Pelt",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Greaves Alpha",
+    "type": "legs",
+    "slots": [
+      2,
+      1
+    ],
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "level": 2
+      },
+      {
+        "name": "Recovery Speed",
+        "level": 1
+      },
+      {
+        "name": "Elemental Absorption",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Pulse",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Numinous Greaves Beta",
+    "type": "legs",
+    "slots": [
+      3,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "level": 1
+      },
+      {
+        "name": "Recovery Speed",
+        "level": 1
+      },
+      {
+        "name": "Elemental Absorption",
+        "level": 1
+      }
+    ],
+    "setSkill": "Zoh Shia's Pulse",
+    "groupSkill": "Guardian's Protection",
+    "rarity": 8,
+    "rank": "high",
+    "defense": 66,
+    "fireResistance": 66,
+    "waterResistance": 66,
+    "thunderResistance": 66,
+    "iceResistance": 66,
+    "dragonResistance": 66,
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]

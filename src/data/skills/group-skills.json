@@ -312,7 +312,12 @@
       "Doshaguma Helm Alpha",
       "Doshaguma Mail",
       "Doshaguma Mail Alpha",
-      "Mimiphyta Alpha"
+      "Mimiphyta Alpha",
+      "Mizutsune Helm Alpha",
+      "Mizutsune Mail Alpha",
+      "Mizutsune Braces Alpha",
+      "Mizutsune Coil Alpha",
+      "Mizutsune Greaves Alpha"
     ]
   },
   {
@@ -346,7 +351,12 @@
       "Doshaguma Coil Beta",
       "Doshaguma Greaves Beta",
       "Doshaguma Helm Beta",
-      "Doshaguma Mail Beta"
+      "Doshaguma Mail Beta",
+      "Mizutsune Helm Beta",
+      "Mizutsune Mail Beta",
+      "Mizutsune Braces Beta",
+      "Mizutsune Coil Beta",
+      "Mizutsune Greaves Beta"
     ]
   },
   {
@@ -475,7 +485,12 @@
       "G Rathalos Vambraces",
       "G Rathalos Vambraces Alpha",
       "G Seikret Coil",
-      "G Seikret Coil Alpha"
+      "G Seikret Coil Alpha",
+      "Numinous Crown Alpha",
+      "Numinous Shroud Alpha",
+      "Numinous Vambraces Alpha",
+      "Numinous Overlay Alpha",
+      "Numinous Greaves Alpha"
     ]
   },
   {
@@ -515,7 +530,12 @@
       "G Rathalos Helm Beta",
       "G Rathalos Mail Beta",
       "G Rathalos Vambraces Beta",
-      "G Seikret Coil Beta"
+      "G Seikret Coil Beta",
+      "Numinous Crown Beta",
+      "Numinous Shroud Beta",
+      "Numinous Vambraces Beta",
+      "Numinous Overlay Beta",
+      "Numinous Greaves Beta"
     ]
   },
   {
@@ -565,6 +585,27 @@
       "Sild Coat Alpha",
       "Sild Hood Alpha",
       "Suja Sash Alpha"
+    ]
+  },
+  {
+    "name": "Glory's Favor",
+    "description": "Increases quest target rewards (no effect when joining mid-quest).",
+    "pieces": 3,
+    "skill": "Luck",
+    "effect": "Increases quest target rewards.",
+    "armor": [
+      "Guild Cross Circlet Alpha",
+      "Guild Cross Suit Alpha",
+      "Guild Cross Vambraces Alpha",
+      "Guild Cross Coil Alpha",
+      "Guild Cross Boots Alpha",
+      "Clerk Visor Alpha",
+      "Clerk Suit Alpha",
+      "Clerk Vambraces Alpha",
+      "Clerk Belt Alpha",
+      "Clerk Shoes Alpha",
+      "Gourmand's Earring Alpha",
+      "Earrings of Dedication Alpha"
     ]
   }
 ]

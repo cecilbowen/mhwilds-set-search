@@ -103,5 +103,12 @@
   "Vespoid Coil Beta": ["waist",{"Paralysis Resistance":1},"Neopteron Camouflage",[1,1,1],32,[-2,1,1,1,2],"high",""],
   "Xu Wu Coil": ["waist",{"Maximum Might":1,"Stamina Surge":1},"Flexible Leathercraft",[],26,[1,1,1,-3,2],"low",""],
   "Xu Wu Coil Alpha": ["waist",{"Heroics":2,"Earplugs":1},"Flexible Leathercraft",[2],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
-  "Xu Wu Coil Beta": ["waist",{"Heroics":1,"Earplugs":1},"Buttery Leathercraft",[2,1,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"]
+  "Xu Wu Coil Beta": ["waist",{"Heroics":1,"Earplugs":1},"Buttery Leathercraft",[2,1,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
+
+  "Guild Cross Coil Alpha":["waist",{"Windproof":2,"Earplugs":1},"Glory's Favor",[2],66,[66,66,66,66,66],"high",""],
+  "Clerk Belt Alpha":["waist",{"Tool Specialist":2,"Recovery Up":2},"Glory's Favor",[1],66,[66,66,66,66,66],"high",""],
+  "Mizutsune Coil Alpha":["waist",{"Constitution":2,"Burst":1},"Fortifying Pelt",[2,1],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Mizutsune Coil Beta":["waist",{"Constitution":2},"Alluring Pelt",[3,2,1],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Numinous Overlay Alpha":["waist",{"Agitator":2,"Coalescence":2},"Guardian's Pulse",[],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
+  "Numinous Overlay Beta":["waist",{"Agitator":2,"Coalescence":1},"Guardian's Protection",[2],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"]
 }

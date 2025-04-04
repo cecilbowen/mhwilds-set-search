@@ -105,5 +105,12 @@
   "Vespoid Greaves Beta": ["legs",{"Survival Expert":1},"Neopteron Camouflage",[2,1],32,[-2,1,1,1,2],"high",""],
   "Xu Wu Greaves": ["legs",{"Stamina Surge":1},"Flexible Leathercraft",[1],26,[1,1,1,-3,2],"low",""],
   "Xu Wu Greaves Alpha": ["legs",{"Adrenaline Rush":1,"Ambush":1},"Flexible Leathercraft",[2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
-  "Xu Wu Greaves Beta": ["legs",{"Adrenaline Rush":1},"Buttery Leathercraft",[2,2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"]
+  "Xu Wu Greaves Beta": ["legs",{"Adrenaline Rush":1},"Buttery Leathercraft",[2,2,1],48,[1,1,1,-3,2],"high","Xu Wu's Vigor"],
+
+  "Guild Cross Boots Alpha":["legs",{"Windproof":1,"Tremor Resistance":1},"Glory's Favor",[2,2],66,[66,66,66,66,66],"high",""],
+  "Clerk Shoes Alpha":["legs",{"Palico Rally":2,"Tool Specialist":1},"Glory's Favor",[2,2],66,[66,66,66,66,66],"high",""],
+  "Mizutsune Greaves Alpha":["legs",{"Burst":2,"Peak Performance":1},"Fortifying Pelt",[1],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Mizutsune Greaves Beta":["legs",{"Burst":2},"Alluring Pelt",[3],66,[66,66,66,66,66],"high","Mizutsune's Prowess"],
+  "Numinous Greaves Alpha":["legs",{"Counterstrike":2,"Recovery Speed":1,"Elemental Absorption":1},"Guardian's Pulse",[2,1],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"],
+  "Numinous Greaves Beta":["legs",{"Counterstrike":1,"Recovery Speed":1,"Elemental Absorption":1},"Guardian's Protection",[3,2],66,[66,66,66,66,66],"high","Zoh Shia's Pulse"]
 }
