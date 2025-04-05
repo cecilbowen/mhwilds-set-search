@@ -7043,5 +7043,95 @@
     ],
     "url": "/Windproof+Charm+III",
     "imgUrl": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/windproof_charm_iii_talisman_mhwilds_wiki_guide_200px.png"
+  },
+  {
+    "name": "Convert Charm II",
+    "rarity": 6,
+    "effect": "",
+    "skills": [
+      {
+        "name": "Convert Element",
+        "level": 2
+      }
+    ],
+    "type": "talisman",
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Defense Charm V",
+    "rarity": 6,
+    "effect": "",
+    "skills": [
+      {
+        "name": "Defense Boost",
+        "level": 5
+      }
+    ],
+    "type": "talisman",
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Earplugs Charm II",
+    "rarity": 6,
+    "effect": "",
+    "skills": [
+      {
+        "name": "Earplugs",
+        "level": 2
+      }
+    ],
+    "type": "talisman",
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Evasion Charm IV",
+    "rarity": 6,
+    "effect": "",
+    "skills": [
+      {
+        "name": "Evade Window",
+        "level": 4
+      }
+    ],
+    "type": "talisman",
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Fitness Charm V",
+    "rarity": 6,
+    "effect": "",
+    "skills": [
+      {
+        "name": "Constitution",
+        "level": 5
+      }
+    ],
+    "type": "talisman",
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
+  },
+  {
+    "name": "Power Charm III",
+    "rarity": 6,
+    "effect": "",
+    "skills": [
+      {
+        "name": "Latent Power",
+        "level": 3
+      }
+    ],
+    "type": "talisman",
+    "materials": [],
+    "url": "",
+    "imgUrl": ""
   }
 ]
