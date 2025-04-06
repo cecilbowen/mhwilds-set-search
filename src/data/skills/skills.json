@@ -782,9 +782,9 @@
     "type": "armor",
     "description": "Lets you digest mushrooms that would otherwise be inedible and gain their advantageous effects.",
     "levels": [
-      "Lets you digets blue mushrooms and toadstools.",
-      "Additionally lets you digest nitroshrooms and parashrooms.",
-      "Additionally lets you digest mandragoras, devil's blight, and exciteshrooms."
+      "Lets you digets blue mushrooms (potion effect) and toadstools (immunizer effect).",
+      "Additionally lets you digest nitroshrooms (demon drug effect) and parashrooms (armor skin effect).",
+      "Additionally lets you digest mandragoras (max potion effect), devil's blight (dash juice effect), and exciteshrooms (random mushroom effect)."
     ]
   },
   {

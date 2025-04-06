@@ -182,7 +182,9 @@ const Results = ({
     }, [pageSize]);
 
     useEffect(() => {
-        setSelectedResult(undefined);
+        if (!save) {
+            setSelectedResult(undefined);
+        }
     }, [results]);
 
     useEffect(() => {
@@ -214,6 +216,11 @@ const Results = ({
         });
         if (tempSets) {
             updateField('savedSets', tempSets);
+
+            // only close selected result window on set removal if on saved sets page
+            if (save && !tempSets.filter(x => x.id === selectedResult.id)[0]) {
+                setSelectedResult(undefined);
+            }
         }
 
         if (onSaveSet) {

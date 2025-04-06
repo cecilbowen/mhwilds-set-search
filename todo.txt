@@ -5,7 +5,7 @@ make 100% certain results are sorted so that best free slots are at top, specifi
     biggest free slots, longest free slots
 improve getBestArmor() when it comes to searches with lots of skills 
     eg, try searching 19 level 1 skills; took me 30 seconds+ on non-dfs, ~10 with dfs
-check out why saved set minimizes after changing name, kind of annoying
+rename your sets from search page too, so we dont have to guess which "Unnamed Set" is the one we just added
 fix progress bar being slightly offset during more skills search (appears as though it finishes at eg, 115% instead of 100%)
 url to auto swap to saved sets page and show a set, with an option to save it
     something like /?set=2_3_66_31_99_1
@@ -22,6 +22,7 @@ MAYBE:
 ------------------------------------------
 add weapon searching
 add an optional "Help" tab with tips on how to use the tool
+re-order saved sets
 ctrl+clicking or etc ANYTHING on selectedResult display takes you to a site like kiranico, etc for details
 add color option to settings for stuff like skill and slot gradients on search page
 persist hide icons and minimize skill box options
