@@ -5938,5 +5938,33 @@
     "materials": [],
     "url": "",
     "imgUrl": ""
+  },
+  {
+    "name": "Amstrigian Alpha",
+    "rank": "high",
+    "type": "head",
+    "defense": 36,
+    "fireResistance": 36,
+    "waterResistance": -2,
+    "thunderResistance": 2,
+    "iceResistance": 1,
+    "dragonResistance": -2,
+    "slots": [],
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "level": 2
+      },
+      {
+        "name": "Evade Extender",
+        "level": 1
+      }
+    ],
+    "setSkill": "",
+    "groupSkill": "Buttery Leathercraft",
+    "materials": [],
+    "url": "",
+    "imgUrl": "",
+    "rarity": 6
   }
 ]

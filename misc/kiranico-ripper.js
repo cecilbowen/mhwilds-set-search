@@ -1,7 +1,7 @@
 // ran from a kiranico page browser console, cause i'm too lazy to debug beautifulsoup/selenium
 // pulls all wilds armor details from kiranico (which I then copy armor.json and armor-series.json to /src/data/kiranico)
 
-(async() => {
+const pullArmor = async() => {
     const delay = ms => new Promise(res => setTimeout(res, ms));
 
     const urlsToParse = [...document.querySelectorAll('td > a')].map(x => x.href);
@@ -17,10 +17,11 @@
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
 
-        const armorSeriesName = doc.getElementsByTagName('h2')[0]?.innerText || 'Unknown Series';
+        let armorSeriesName = doc.getElementsByTagName('h2')[0]?.innerText || 'Unknown Series';
         const rank = armorSeriesName.includes("α") ||
             armorSeriesName.includes("β") ||
             armorSeriesName.includes("γ") ? "high" : "low";
+        armorSeriesName = armorSeriesName.replace('γ', 'Gamma').replace('α', 'Alpha').replace('β', 'Beta');
         const tableBodies = [...doc.getElementsByTagName('tbody')];
 
         if (tableBodies.length < 4) {
@@ -31,7 +32,7 @@
         // Table 1: name + description
         const nameDescRows = [...tableBodies[0].children];
         for (const row of nameDescRows) {
-            const name = row.children[0].innerText;
+            const name = row.children[0].innerText.replace('γ', 'Gamma').replace('α', 'Alpha').replace('β', 'Beta');
             armor[name] = {
                 description: row.children[1].innerText,
                 rank,
@@ -86,7 +87,12 @@
                 ...armor[name],
                 slots: children[2].innerText.replaceAll('[', '').replaceAll(']', '')
                     .trim().split('').map(x => parseInt(x, 10)),
-                skills
+                skills,
+                materials: [],
+                url: "",
+                imgUrl: "",
+                // setSkill
+                // groupSkill
             };
         }
 
@@ -125,4 +131,121 @@
 
     // saveJSON(armor, "armor.json");
     // saveJSON(armorSeries, "armor-series.json");
-})();
+};
+
+const pullSkills = async() => {
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    // returns
+    const skills = {};
+    const setSkills = {};
+    const groupSkills = {};
+
+    const links = {
+        weapon: [],
+        armor: [],
+        group: [],
+        set: []
+    };
+
+    const linkGroups = [...document.getElementsByClassName("my-8")];
+    for (let i = 0; i < linkGroups.length; i++) {
+        const group = [...linkGroups[i].querySelectorAll('td > a')].map(x => x.href);
+        const groupType = Object.keys(links)[i];
+        links[groupType] = group;
+    }
+
+    // weapon skills
+    for (const url of links.weapon) {
+        console.log(`Fetching: ${url}`);
+        const res = await fetch(url);
+        const html = await res.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const name = doc.getElementsByTagName('h2')[0]?.innerText.trim();
+        const type = 'weapon';
+        const icon = '';
+        const description = [...doc.getElementsByTagName('blockquote')][0].innerText.trim();
+        const levels = [
+            ...[...doc.getElementsByTagName('tbody')][0].getElementsByTagName('tr')
+        ].map(x => x.children[2].innerText);
+
+        skills[name] = { icon, type, description, levels };
+        await delay(300); // slight wait to make site less likely to throttle me
+    }
+
+    // armor skills
+    for (const url of links.armor) {
+        console.log(`Fetching: ${url}`);
+        const res = await fetch(url);
+        const html = await res.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const name = doc.getElementsByTagName('h2')[0]?.innerText.trim();
+        const type = 'armor';
+        const icon = '';
+        const description = [...doc.getElementsByTagName('blockquote')][0].innerText.trim();
+        const levels = [
+            ...[...doc.getElementsByTagName('tbody')][0].getElementsByTagName('tr')
+        ].map(x => x.children[2].innerText);
+
+        skills[name] = { icon, type, description, levels };
+        await delay(300); // slight wait to make site less likely to throttle me
+    }
+
+    // group skills
+    for (const url of links.group) {
+        console.log(`Fetching: ${url}`);
+        const res = await fetch(url);
+        const html = await res.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const name = doc.getElementsByTagName('h2')[0]?.innerText.trim();
+        const skill = ""; // annoying that kiranico doesn't appear to have the skill name for sets/groups
+        const description = [...doc.getElementsByTagName('blockquote')][0].innerText.trim();
+        const effect = [
+            ...[...doc.getElementsByTagName('tbody')][0].getElementsByTagName('tr')
+        ].map(x => x.children[2].innerText)[0];
+        const pieces = 3;
+        const armor = [
+            ...[...doc.getElementsByTagName('tbody')][1].getElementsByTagName('tr')
+        ].map(x => x.children[0].innerText.replace('γ', 'Gamma').replace('α', 'Alpha').replace('β', 'Beta'));
+
+        groupSkills[name] = { skill, description, effect, pieces, armor };
+        await delay(300); // slight wait to make site less likely to throttle me
+    }
+
+    // set skills
+    for (const url of links.set) {
+        console.log(`Fetching: ${url}`);
+        const res = await fetch(url);
+        const html = await res.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const name = doc.getElementsByTagName('h2')[0]?.innerText.trim();
+        const skill = ""; // annoying that kiranico doesn't appear to have the skill name for sets/groups
+        const description = [...doc.getElementsByTagName('blockquote')][0].innerText.trim();
+        const levels = [
+            ...[...doc.getElementsByTagName('tbody')][0].getElementsByTagName('tr')
+        ].map(x => x.children[2].innerText);
+        const piecesPerLevel = [2, 4];
+        const armor = [
+            ...[...doc.getElementsByTagName('tbody')][1].getElementsByTagName('tr')
+        ].map(x => x.children[0].innerText.replace('γ', 'Gamma').replace('α', 'Alpha').replace('β', 'Beta'));
+
+        setSkills[name] = { skill, description, levels, piecesPerLevel, armor };
+        await delay(300); // slight wait to make site less likely to throttle me
+    }
+
+    console.log("skills", skills);
+    console.log("groupSkills", groupSkills);
+    console.log("setSkills", setSkills);
+};

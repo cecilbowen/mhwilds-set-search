@@ -1,15 +1,17 @@
 TO-DO (somewhat sorted by priority):
 ------------------------------------------
+implement automation of adding new armor/skills to tool
 improve 'more skills' feature.  things like, broader initial search to capture more starting skills 
 make 100% certain results are sorted so that best free slots are at top, specifically:
     biggest free slots, longest free slots
+make the detailed jsons maps instead of lists, since we use them by name lookups mostly
 improve getBestArmor() when it comes to searches with lots of skills 
     eg, try searching 19 level 1 skills; took me 30 seconds+ on non-dfs, ~10 with dfs
 fix some max-level 1 skills go above level 1 in more skills results
 rename your sets from search page too, so we dont have to guess which "Unnamed Set" is the one we just added
 fix progress bar being slightly offset during more skills search (appears as though it finishes at eg, 115% instead of 100%)
 url to auto swap to saved sets page and show a set, with an option to save it
-    something like /?set=2_3_66_31_99_1
+    something like /?set=2_3_66_31_99_1&name=BigFish
 see whats up with test_more not including the [3, 2, 1] result
     probably just a case of broadening the limits of my mod_point_map bs in get_best_armor
 allow tabbing after text searching skills and then enter to quickly select one
