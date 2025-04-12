@@ -310,7 +310,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "",
-        "rarity": 1
+        "rarity": 4
     },
     "Duna Coil": {
         "type": "waist",
@@ -385,7 +385,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 4
     },
     "G Rathalos Coil": {
         "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
@@ -405,7 +405,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 4
     },
     "G Ebony Coil": {
         "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
@@ -424,7 +424,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 4
     },
     "Xu Wu Coil": {
         "type": "waist",
@@ -463,7 +463,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 4
     },
     "Hope Coil Alpha": {
         "type": "waist",
@@ -1066,7 +1066,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "",
-        "rarity": 1
+        "rarity": 6
     },
     "G Seikret Coil Beta": {
         "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
@@ -1088,7 +1088,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "",
-        "rarity": 1
+        "rarity": 6
     },
     "G Fulgur Coil Alpha": {
         "description": "Waistgear made from Guardian Fulgur Anjanath spoils. The white areas self-repair when damaged.",
@@ -1110,7 +1110,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Fulgur Anjanath's Will",
-        "rarity": 1
+        "rarity": 6
     },
     "G Fulgur Coil Beta": {
         "description": "Waistgear made from Guardian Fulgur Anjanath spoils. The white areas self-repair when damaged.",
@@ -1131,7 +1131,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Fulgur Anjanath's Will",
-        "rarity": 1
+        "rarity": 6
     },
     "Doshaguma Coil Alpha": {
         "type": "waist",
@@ -1191,7 +1191,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 6
     },
     "G Doshaguma Coil Beta": {
         "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
@@ -1212,7 +1212,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 6
     },
     "Ajarakan Coil Alpha": {
         "type": "waist",
@@ -1273,7 +1273,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 6
     },
     "G Ebony Coil Beta": {
         "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
@@ -1294,7 +1294,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 6
     },
     "Xu Wu Coil Alpha": {
         "type": "waist",
@@ -1395,7 +1395,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 6
     },
     "G Rathalos Coil Beta": {
         "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
@@ -1417,7 +1417,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 6
     },
     "Gravios Coil Alpha": {
         "type": "waist",
@@ -2009,7 +2009,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 8
     },
     "G Arkveld Coil Beta": {
         "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
@@ -2030,7 +2030,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 8
     },
     "Guild Ace Coil Alpha": {
         "type": "waist",
@@ -2190,7 +2190,7 @@
         },
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
-        "rarity": 1
+        "rarity": 8
     },
     "Sakuratide Obi Alpha": {
         "description": "Blossomdance Ticket waistgear. It embodies the determination of resplendent warriors from spring sunrises past.",

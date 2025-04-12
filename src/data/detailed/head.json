@@ -396,7 +396,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 4
     },
     "G Rathalos Helm": {
         "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
@@ -415,7 +415,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 4
     },
     "G Ebony Helm": {
         "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
@@ -435,7 +435,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 4
     },
     "Xu Wu Helm": {
         "type": "head",
@@ -474,7 +474,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 4
     },
     "Hope Mask Alpha": {
         "type": "head",
@@ -1152,7 +1152,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Fulgur Anjanath's Will",
-        "rarity": 1
+        "rarity": 6
     },
     "G Fulgur Helm Beta": {
         "description": "Head armor made from Guardian Fulgur Anjanath spoils. To don it is to be seized by unspeakable cravings.",
@@ -1172,7 +1172,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Fulgur Anjanath's Will",
-        "rarity": 1
+        "rarity": 6
     },
     "Doshaguma Helm Alpha": {
         "type": "head",
@@ -1237,7 +1237,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 6
     },
     "G Doshaguma Helm Beta": {
         "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
@@ -1259,7 +1259,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 6
     },
     "Ajarakan Helm Alpha": {
         "type": "head",
@@ -1319,7 +1319,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 6
     },
     "G Ebony Helm Beta": {
         "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
@@ -1339,7 +1339,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 6
     },
     "Xu Wu Helm Alpha": {
         "type": "head",
@@ -1443,7 +1443,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 6
     },
     "G Rathalos Helm Beta": {
         "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
@@ -1464,7 +1464,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 6
     },
     "Gravios Helm Alpha": {
         "type": "head",
@@ -2074,7 +2074,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 8
     },
     "G Arkveld Helm Beta": {
         "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
@@ -2096,7 +2096,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 8
     },
     "Guild Ace Earrings Alpha": {
         "type": "head",
@@ -2319,7 +2319,7 @@
         },
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
-        "rarity": 1
+        "rarity": 8
     },
     "Sakuratide Headgear Alpha": {
         "description": "Blossomdance Ticket headgear. It embodies the vigor of resplendent warriors from spring sunrises past.",

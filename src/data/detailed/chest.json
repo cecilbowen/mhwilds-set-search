@@ -378,7 +378,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 4
     },
     "G Rathalos Mail": {
         "description": "Chest armor made from Guardian Rathalos spoils. It instills a new vitality and sense of purpose.",
@@ -398,7 +398,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 4
     },
     "G Ebony Mail": {
         "description": "Chest armor made from Guardian Ebony Odogaron spoils. It instills a new vitality and sense of purpose.",
@@ -418,7 +418,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 4
     },
     "Xu Wu Mail": {
         "type": "chest",
@@ -456,7 +456,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 4
     },
     "Hope Mail Alpha": {
         "type": "chest",
@@ -1103,7 +1103,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Fulgur Anjanath's Will",
-        "rarity": 1
+        "rarity": 6
     },
     "G Fulgur Mail Beta": {
         "description": "Chest armor made from Guardian Fulgur Anjanath spoils. It instills a new vitality and sense of purpose.",
@@ -1125,7 +1125,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Fulgur Anjanath's Will",
-        "rarity": 1
+        "rarity": 6
     },
     "Doshaguma Mail Alpha": {
         "type": "chest",
@@ -1188,7 +1188,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 6
     },
     "G Doshaguma Mail Beta": {
         "description": "Chest armor made from Guardian Doshaguma spoils. It instills a new vitality and sense of purpose.",
@@ -1209,7 +1209,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Doshaguma's Might",
-        "rarity": 1
+        "rarity": 6
     },
     "Ajarakan Mail Alpha": {
         "type": "chest",
@@ -1269,7 +1269,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 6
     },
     "G Ebony Mail Beta": {
         "description": "Chest armor made from Guardian Ebony Odogaron spoils. It instills a new vitality and sense of purpose.",
@@ -1290,7 +1290,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Ebony Odogaron's Power",
-        "rarity": 1
+        "rarity": 6
     },
     "Xu Wu Mail Alpha": {
         "type": "chest",
@@ -1389,7 +1389,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 6
     },
     "G Rathalos Mail Beta": {
         "description": "Chest armor made from Guardian Rathalos spoils. It instills a new vitality and sense of purpose.",
@@ -1410,7 +1410,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Rathalos's Flare",
-        "rarity": 1
+        "rarity": 6
     },
     "Gravios Mail Alpha": {
         "type": "chest",
@@ -2019,7 +2019,7 @@
         },
         "groupSkill": "Guardian's Pulse",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 8
     },
     "G Arkveld Mail Beta": {
         "description": "Guardian Arkveld chest armor. It beckons forth a shudder of indescribable power.",
@@ -2040,7 +2040,7 @@
         },
         "groupSkill": "Guardian's Protection",
         "setSkill": "Guardian Arkveld's Vitality",
-        "rarity": 1
+        "rarity": 8
     },
     "Guild Ace Mail Alpha": {
         "type": "chest",
@@ -2203,7 +2203,7 @@
         },
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
-        "rarity": 1
+        "rarity": 8
     },
     "Sakuratide Robe Alpha": {
         "description": "Blossomdance Ticket chest armor. It embodies the spirit of resplendent warriors from spring sunrises past.",
