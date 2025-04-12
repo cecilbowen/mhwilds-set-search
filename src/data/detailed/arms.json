@@ -1,0 +1,2201 @@
+{
+    "Hope Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Divine Blessing": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 2,
+        "fireResistance": 1,
+        "waterResistance": 0,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Leather Gloves": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Hunger Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 2,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Chainmail Gloves": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Geologist": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 2,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Bone Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Stun Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 4,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Talioth Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Leap of Faith": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 4,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Chatacabra Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Item Prolonger": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 6,
+        "fireResistance": 1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Quematrice Braces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Flinch Free": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 6,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Alloy Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Tremor Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 6,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Vespoid Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 4,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Barina Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Recovery Up": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 8,
+        "fireResistance": -3,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Conga Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Stench Resistance": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 2,
+        "rank": "low",
+        "defense": 8,
+        "fireResistance": -3,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Balahara Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Evade Extender": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 2,
+        "rank": "low",
+        "defense": 12,
+        "fireResistance": -1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Doshaguma Braces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Recovery Speed": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 2,
+        "rank": "low",
+        "defense": 16,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": "Doshaguma's Might"
+    },
+    "Ingot Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Stun Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 16,
+        "fireResistance": -2,
+        "waterResistance": 0,
+        "thunderResistance": 3,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Rompopolo Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Wide-Range": 1,
+            "Poison Resistance": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 18,
+        "fireResistance": 0,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Nerscylla Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Ambush": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 20,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Hirabami Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Evade Window": 1,
+            "Ice Resistance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 22,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Ajarakan Vambraces": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Bombardier": 1,
+            "Cliffhanger": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 24,
+        "fireResistance": 3,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Duna Vambraces": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Tool Specialist": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": "Uth Duna's Cover"
+    },
+    "Rey Sandbraces": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Latent Power": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "setSkill": "Rey Dau's Voltage"
+    },
+    "Udra Mirebraces": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Speed Eating": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "setSkill": "Nu Udra's Mutiny"
+    },
+    "G Doshaguma Braces": {
+        "description": "Armguards made from Guardian Doshaguma spoils. They agitate the wearer unless in constant motion.",
+        "rank": "low",
+        "type": "arms",
+        "defense": 26,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Marathon Runner": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "G Rathalos Vambraces": {
+        "description": "Armguards made from Guardian Rathalos spoils. They agitate the wearer unless in constant motion.",
+        "rank": "low",
+        "type": "arms",
+        "defense": 26,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -5,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Rathalos's Flare",
+        "rarity": 1
+    },
+    "G Ebony Braces": {
+        "description": "Armguards made from Guardian Ebony Odogaron spoils. They agitate the wearer unless in constant motion.",
+        "rank": "low",
+        "type": "arms",
+        "defense": 26,
+        "fireResistance": -2,
+        "waterResistance": -3,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 4,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Burst": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Ebony Odogaron's Power",
+        "rarity": 1
+    },
+    "Xu Wu Vambraces": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Maximum Might": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "G Arkveld Vambraces": {
+        "description": "Guardian Arkveld armguards. Instills the desire to tear at friend and foe alike.",
+        "rank": "low",
+        "type": "arms",
+        "defense": 30,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -4,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Flayer": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Guardian Arkveld's Vitality",
+        "rarity": 1
+    },
+    "Hope Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Sleep Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 26,
+        "fireResistance": 1,
+        "waterResistance": 0,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Leather Gloves Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Botanist": 1,
+            "Hunger Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 26,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Chainmail Gloves Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Recovery Speed": 1,
+            "Geologist": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 26,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Bone Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Marathon Runner": 1,
+            "Speed Eating": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Alloy Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Tremor Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Talioth Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Burst": 1,
+            "Leap of Faith": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Talioth Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Leap of Faith": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Vespoid Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Paralysis Resistance": 1,
+            "Ambush": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Vespoid Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "groupSkill": "Neopteron Camouflage",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Kut-Ku Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Agitator": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": -4,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Kut-Ku Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Constitution": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": -4,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Chatacabra Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Wide-Range": 1,
+            "Item Prolonger": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Chatacabra Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Item Prolonger": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Quematrice Braces Alpha": {
+        "type": "arms",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Fire Resistance": 1,
+            "Flinch Free": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Quematrice Braces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Flinch Free": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Barina Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Foray": 1,
+            "Recovery Up": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Barina Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Recovery Up": 1
+        },
+        "groupSkill": "Neopteron Camouflage",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Conga Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Speed Eating": 1,
+            "Mushroomancer": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Conga Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Mushroomancer": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Rompopolo Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Poison Resistance": 1,
+            "Earplugs": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 0,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Rompopolo Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Earplugs": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 0,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Gypceros Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Resentment": 2,
+            "Poison Resistance": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Gypceros Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Resentment": 2
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Nerscylla Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Poison Resistance": 1,
+            "Ambush": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Nerscylla Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Ambush": 1
+        },
+        "groupSkill": "Neopteron Camouflage",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Balahara Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Stamina Surge": 1,
+            "Evade Extender": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Balahara Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Evade Extender": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Hirabami Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Peak Performance": 1,
+            "Evade Window": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Hirabami Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Evade Window": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Rathian Vambraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Divine Blessing": 2,
+            "Foray": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": ""
+    },
+    "Rathian Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Foray": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": ""
+    },
+    "Ingot Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Stun Resistance": 2,
+            "Resentment": 1
+        },
+        "groupSkill": "",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": -2,
+        "waterResistance": 0,
+        "thunderResistance": 3,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "G Fulgur Vambraces Alpha": {
+        "description": "Armguards made from Guardian Fulgur Anjanath spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": -2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Maximum Might": 1,
+            "Agitator": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Fulgur Anjanath's Will",
+        "rarity": 1
+    },
+    "G Fulgur Vambraces Beta": {
+        "description": "Armguards made from Guardian Fulgur Anjanath spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Maximum Might": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Fulgur Anjanath's Will",
+        "rarity": 1
+    },
+    "Doshaguma Braces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Stun Resistance": 2,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": "Doshaguma's Might"
+    },
+    "Doshaguma Braces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Stun Resistance": 1,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": "Doshaguma's Might"
+    },
+    "G Doshaguma Braces Alpha": {
+        "description": "Armguards made from Guardian Doshaguma spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Heroics": 1,
+            "Iron Skin": 2
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "G Doshaguma Braces Beta": {
+        "description": "Armguards made from Guardian Doshaguma spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Heroics": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "Ajarakan Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Bombardier": 2,
+            "Partbreaker": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Ajarakan Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Partbreaker": 1,
+            "Bombardier": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "G Ebony Braces Alpha": {
+        "description": "Armguards made from Guardian Ebony Odogaron spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": -2,
+        "waterResistance": -3,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 4,
+        "slots": [],
+        "skills": {
+            "Burst": 2,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Ebony Odogaron's Power",
+        "rarity": 1
+    },
+    "G Ebony Braces Beta": {
+        "description": "Armguards made from Guardian Ebony Odogaron spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": -2,
+        "waterResistance": -3,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 4,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Burst": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Ebony Odogaron's Power",
+        "rarity": 1
+    },
+    "Xu Wu Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Earplugs": 2
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "setSkill": "Xu Wu's Vigor"
+    },
+    "Xu Wu Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Earplugs": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "setSkill": "Xu Wu's Vigor"
+    },
+    "Rathalos Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Constitution": 2,
+            "Evade Window": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -3,
+        "setSkill": "Rathalos's Flare"
+    },
+    "Rathalos Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Constitution": 2
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -3,
+        "setSkill": "Rathalos's Flare"
+    },
+    "G Rathalos Vambraces Alpha": {
+        "description": "Armguards made from Guardian Rathalos spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -5,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Intimidator": 1,
+            "Survival Expert": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Rathalos's Flare",
+        "rarity": 1
+    },
+    "G Rathalos Vambraces Beta": {
+        "description": "Armguards made from Guardian Rathalos spoils. They agitate the wearer unless in constant motion.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -5,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Rathalos's Flare",
+        "rarity": 1
+    },
+    "Gravios Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Flinch Free": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 52,
+        "fireResistance": 4,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": -2,
+        "setSkill": "Gravios's Protection"
+    },
+    "Gravios Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Peak Performance": 2
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 52,
+        "fireResistance": 4,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": -2,
+        "setSkill": "Gravios's Protection"
+    },
+    "Blango Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Palico Rally": 2,
+            "Counterstrike": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -4,
+        "waterResistance": 1,
+        "thunderResistance": 0,
+        "iceResistance": 4,
+        "dragonResistance": 0,
+        "setSkill": "Blangonga's Spirit"
+    },
+    "Blango Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Counterstrike": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -4,
+        "waterResistance": 1,
+        "thunderResistance": 0,
+        "iceResistance": 4,
+        "dragonResistance": 0,
+        "setSkill": "Blangonga's Spirit"
+    },
+    "Commission Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Quick Sheathe": 2
+        },
+        "groupSkill": "",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Death Stench Grip Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Ambush": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 4,
+        "setSkill": ""
+    },
+    "Butterfly Brachia Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Recovery Speed": 2,
+            "Constitution": 1,
+            "Evade Window": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "King Beetle Brachia Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Heroics": 1,
+            "Foray": 1,
+            "Poison Resistance": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "High Metal Braces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Blast Resistance": 3,
+            "Partbreaker": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 0,
+        "waterResistance": -1,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Battle Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Free Meal": 3
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 2,
+        "waterResistance": -1,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Melahoa Branch Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Recovery Speed": 3,
+            "Paralysis Resistance": 2
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 0,
+        "waterResistance": 1,
+        "thunderResistance": 3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Artian Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Blight Resistance": 2,
+            "Flayer": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 1,
+        "waterResistance": -2,
+        "thunderResistance": -2,
+        "iceResistance": 2,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Dober Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Stamina Surge": 2,
+            "Constitution": 1
+        },
+        "groupSkill": "",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 56,
+        "fireResistance": -2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": ""
+    },
+    "Damascus Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Wide-Range": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 56,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Dahaad Shardbraces Alpha": {
+        "type": "arms",
+        "slots": [],
+        "skills": {
+            "Agitator": 2,
+            "Adaptability": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Jin Dahaad's Revolt"
+    },
+    "Dahaad Shardbraces Beta": {
+        "type": "arms",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Adaptability": 1
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Jin Dahaad's Revolt"
+    },
+    "Duna Wildbraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Quick Sheathe": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": "Uth Duna's Cover"
+    },
+    "Duna Wildbraces Beta": {
+        "type": "arms",
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Peak Performance": 1,
+            "Quick Sheathe": 1
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": "Uth Duna's Cover"
+    },
+    "Rey Sandbraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Latent Power": 2,
+            "Stun Resistance": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "setSkill": "Rey Dau's Voltage"
+    },
+    "Rey Sandbraces Beta": {
+        "type": "arms",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Latent Power": 2
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "setSkill": "Rey Dau's Voltage"
+    },
+    "Udra Mirebraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Counterstrike": 2,
+            "Speed Eating": 2
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "setSkill": "Nu Udra's Mutiny"
+    },
+    "Udra Mirebraces Beta": {
+        "type": "arms",
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Speed Eating": 2,
+            "Counterstrike": 1
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "setSkill": "Nu Udra's Mutiny"
+    },
+    "Gore Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Constitution": 2,
+            "Evade Window": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -2,
+        "waterResistance": 3,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Gore Magala's Tyranny"
+    },
+    "Gore Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Evade Window": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -2,
+        "waterResistance": 3,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Gore Magala's Tyranny"
+    },
+    "Arkvulcan Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Convert Element": 1,
+            "Recovery Speed": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": "Arkveld's Hunger"
+    },
+    "Arkvulcan Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Convert Element": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": "Arkveld's Hunger"
+    },
+    "G Arkveld Vambraces Alpha": {
+        "description": "Guardian Arkveld armguards. Instills the desire to tear at friend and foe alike.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -4,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 2,
+            "Blight Resistance": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Guardian Arkveld's Vitality",
+        "rarity": 1
+    },
+    "G Arkveld Vambraces Beta": {
+        "description": "Guardian Arkveld armguards. Instills the desire to tear at friend and foe alike.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -4,
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 2
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Guardian Arkveld's Vitality",
+        "rarity": 1
+    },
+    "Guild Ace Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Peak Performance": 1,
+            "Constitution": 1,
+            "Foray": 1
+        },
+        "groupSkill": "",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Guild Cross Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Flinch Free": 2,
+            "Bind Resistance": 1,
+            "Tremor Resistance": 1
+        },
+        "setSkill": "",
+        "groupSkill": "Glory's Favor",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 0,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0
+    },
+    "Clerk Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Tool Specialist": 2,
+            "Palico Rally": 1,
+            "Survival Expert": 1
+        },
+        "setSkill": "",
+        "groupSkill": "Glory's Favor",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2
+    },
+    "Mizutsune Braces Alpha": {
+        "type": "arms",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Evade Window": 2,
+            "Evade Extender": 2
+        },
+        "setSkill": "Mizutsune's Prowess",
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": -1
+    },
+    "Mizutsune Braces Beta": {
+        "type": "arms",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Evade Window": 2,
+            "Evade Extender": 1
+        },
+        "setSkill": "Mizutsune's Prowess",
+        "groupSkill": "Alluring Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": -1
+    },
+    "Numinous Vambraces Alpha": {
+        "type": "arms",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Elemental Absorption": 2,
+            "Coalescence": 1
+        },
+        "setSkill": "Zoh Shia's Pulse",
+        "groupSkill": "Guardian's Pulse",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 68,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": -4
+    },
+    "Numinous Vambraces Beta": {
+        "type": "arms",
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Elemental Absorption": 2
+        },
+        "setSkill": "Zoh Shia's Pulse",
+        "groupSkill": "Guardian's Protection",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 68,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": -4
+    },
+    "Rey Sandbraces Gamma": {
+        "description": "Armguards made from special Rey Dau materials. The azure gauntlets evoke the ambition of the Arch-tempered.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 68,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            3
+        ],
+        "skills": {
+            "Evade Extender": 2
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Rey Dau's Voltage",
+        "rarity": 1
+    },
+    "Sakuratide Bracers Alpha": {
+        "description": "Blossomdance Ticket armguards. They embody the virtue of resplendent warriors from spring sunrises past.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Foray": 1,
+            "Item Prolonger": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Blossomdance Prayer",
+        "rarity": 1
+    },
+    "Blossom Cuffs Alpha": {
+        "description": "Blossom Ticket armguards. A flower-inspired design to add some elegance and cheer.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 4,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Poison Resistance": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    }
+}

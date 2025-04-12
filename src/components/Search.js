@@ -4,9 +4,9 @@ import { freeOne, freeThree, freeTwo, moreAndSpeed, searchAndSpeed } from "../ut
 import SKILLS from '../data/compact/skills.json';
 import GROUP_SKILLS from '../data/compact/group-skills.json';
 import SET_SKILLS from '../data/compact/set-skills.json';
-import SKILLS_DB from '../data/skills/skills.json';
-import SET_SKILLS_DB from '../data/skills/set-skills.json';
-import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
+import SKILLS_DB from '../data/detailed/skills.json';
+import SET_SKILLS_DB from '../data/detailed/set-skills.json';
+import GROUP_SKILLS_DB from '../data/detailed/group-skills.json';
 import {
     getSearchUrl, generateStyle,
     generateWikiString, getMaxLevel, getSkillPopup,
@@ -225,9 +225,9 @@ const Search = () => {
     };
 
     const renderChosenSkill = (skillName, level) => {
-        const skill = SKILLS_DB.filter(x => x.name === skillName)[0] ||
-            SET_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0] ||
-            GROUP_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0];
+        const skill = SKILLS_DB[skillName] ||
+            SET_SKILLS_DB[skillName] ||
+            GROUP_SKILLS_DB[skillName];
         let skillIcon = skill.icon;
         const isASetSkill = isSetSkill(skill);
         const isAGroupSkill = isGroupSkill(skill);
@@ -347,9 +347,9 @@ const Search = () => {
                     const skillName = sk[0];
                     const maxLevel = sk[1];
 
-                    const skill = SKILLS_DB.filter(x => x.name === skillName)[0] ||
-                        SET_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0] ||
-                        GROUP_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0];
+                    const skill = SKILLS_DB[skillName] ||
+                        SET_SKILLS_DB[skillName] ||
+                        GROUP_SKILLS_DB[skillName];
                     let skillIcon = skill.icon;
                     const isASetSkill = isSetSkill(skill);
                     const isAGroupSkill = isGroupSkill(skill);

@@ -13,7 +13,7 @@ import { useStorage } from "./hooks/StorageContext";
 // import { compareArmor } from "./util/kiranico";
 
 const App = () => {
-  const { fields } = useStorage();
+  const { fields, swapTab, setSwapTab } = useStorage();
   const [tab, setTab] = useState(0);
 
   useEffect(() => {
@@ -22,6 +22,13 @@ const App = () => {
       // compareArmor();
     }
   }, []);
+
+  useEffect(() => {
+    if (swapTab) {
+      setTab(swapTab);
+      setSwapTab(false);
+    }
+  }, [swapTab]);
 
   const tabProps = index => {
     return {

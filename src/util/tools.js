@@ -6,7 +6,7 @@ import WAIST from "../data/compact/waist.json";
 import LEGS from "../data/compact/legs.json";
 import TALISMANS from "../data/compact/talisman.json";
 import DECORATIONS from "../data/compact/decoration.json";
-import SKILLS from '../data/skills/skills.json';
+import SKILLS from '../data/detailed/skills.json';
 import { getArmorTypeList } from "./util";
 
 export const getSearchParameters = parameters => {
@@ -58,7 +58,7 @@ export const getJsonFromType = type => {
 };
 
 export const getArmorSkillNames = () => {
-    return SKILLS.filter(x => x.type === "armor").map(x => x.name);
+    return Object.entries(SKILLS).filter(x => x[1].type === "armor").map(x => x[0]);
 };
 
 export const speed = (func, ...args) => {

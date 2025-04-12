@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import SKILLS from '../data/skills/skills.json';
+import SKILLS from '../data/detailed/skills.json';
 import TextField from '@mui/material/TextField';
 import { getDecoDisplayName, getDecoFromName } from '../util/util';
 import { Button, Typography } from '@mui/material';
@@ -138,7 +138,7 @@ const DecoInventory = () => {
         const highlightClass = highlighted ? "highlighted dhigh" : "";
         const modClass = modded ? 'dmodded' : '';
 
-        const skillIcons = deco.skillNames.map(x => SKILLS.filter(y => y.name === x)[0].icon);
+        const skillIcons = deco.skillNames.map(x => SKILLS[x].icon);
         const singleIcon = skillIcons[0]; // todo: change this should armor decos ever have more than 1 skill each
 
         return <div key={deco.name} className={`deco dpad ${highlightClass}`} title={deco.altText}>

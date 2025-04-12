@@ -26,3 +26,9 @@
 4/4/2025:
 
 * Started adding Title Update 1 content
+
+4/12/2025:
+
+* Title Update 1 content should be all added by now
+* Added "Share Set" button to saved sets allowing sharing of set URLs with others
+* Re-factored a lot of data behind-the-scenes

@@ -18,6 +18,9 @@ import {
 import { CHOSEN_ARMOR_DEBUG, DEBUG, DFS, DFS_DEBUG } from "./constants";
 import { allTests } from "../test/tests";
 import { getArmorTypeList, isGroupSkillName, isSetSkillName, stringToId } from "./util";
+import INTERNAL_BLACKLIST from '../data/internal-blacklist.json';
+
+const INTERNAL_BLACKMAP = Object.fromEntries(INTERNAL_BLACKLIST.map(x => [x, true]));
 
 let totalPossibleCombinations = 0;
 let decoInventory = { ...DECO_INVENTORY };
@@ -37,7 +40,10 @@ export const getBestArmor = (
     dontUseDecos = false,
     rank = "high"
 ) => {
-    const fullDataFile = getJsonFromType("armor");
+    // const fullDataFile = getJsonFromType("armor");
+    const fullDataFile = Object.fromEntries(
+        Object.entries(getJsonFromType("armor")).filter(([name, _]) => !INTERNAL_BLACKMAP[name])
+    );
 
     const mandatory = {};
     mandatoryPieceNames.forEach(name => {
@@ -798,6 +804,7 @@ const getMaxSkillLevelsFromResults = (results, allSkills) => {
     for (const res of results) {
         for (const [name, level] of Object.entries(res.skills)) {
             soFar[name] = Math.max(soFar[name] || 0, level);
+            soFar[name] = Math.min(soFar[name], SKILL_DB[name]); // limit skill level max
         }
         for (const [name, level] of Object.entries(res.setSkills)) {
             soFar[name] = Math.max(soFar[name] || 0, level);
@@ -822,6 +829,7 @@ const getMaxSkillLevelsFromResults = (results, allSkills) => {
                 const slotsWeUsing = res.freeSlots.filter(x => x >= slotSize);
                 const newLevel = slotsWeUsing.length * skillLevel;
                 soFar[name] = Math.max(newLevel, soFar[name] || 0);
+                soFar[name] = Math.min(soFar[name], SKILL_DB[name]); // limit skill level max
             }
         }
     }

@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
-    armorNameFormat, formatSkillsDiff,
+    armorNameFormat, copyTextToClipboard, formatSkillsDiff,
     generateWikiString, getArmorDefenseFromName, getArmorDefenseFromNames,
     getArmorFromNames, getDecosFromNames,
+    getSetUrl,
     getSkillDiff, getSkillPopup, isGroupSkillName,
     isSetSkillName, paginate
 } from '../util/util';
@@ -24,7 +25,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TablePaginationActions from './TablePaginationActions';
 import Swap from '@mui/icons-material/Sync';
 import { Button, IconButton, TextField } from '@mui/material';
-import SKILLS from '../data/skills/skills.json';
+import SKILLS from '../data/detailed/skills.json';
 import { isEmpty } from '../util/tools';
 import Pin from '@mui/icons-material/PushPin';
 import Unpin from '@mui/icons-material/PushPinOutlined';
@@ -138,7 +139,7 @@ const CloseIcon = styled(Close)`
 const Results = ({
     elapsedSeconds, onSaveSet, results, save
 }) => {
-    const { fields, updateField, pinArmor, excludeArmor, saveArmorSet } = useStorage();
+    const { fields, updateField, pinArmor, excludeArmor, saveArmorSet, setId, setSetId } = useStorage();
     const [selectedResult, setSelectedResult] = useState();
     const [page, setPage] = useState(-1);
     const [pageSize, setPageSize] = useState(100);
@@ -184,6 +185,12 @@ const Results = ({
     useEffect(() => {
         if (!save) {
             setSelectedResult(undefined);
+        } else if (setId) {
+            const instantResult = results.filter(x => x.id === setId)[0];
+            if (instantResult) {
+                setSelectedResult(instantResult);
+            }
+            setSetId(undefined);
         }
     }, [results]);
 
@@ -233,7 +240,9 @@ const Results = ({
         const tempSavedSets = (
             fields.savedSets || []
         ).filter(x => x.id !== selectedResult.id);
-        const tempSelectedResult = { ...selectedResult, name: ev.target.value };
+        const name = ev.target.value;
+        const tempSelectedResult = { ...selectedResult, name };
+        selectedResult.name = name;
         tempSavedSets.push(tempSelectedResult);
         updateField('savedSets', tempSavedSets);
         setEditingName(false);
@@ -344,7 +353,7 @@ const Results = ({
 
         return <div className="decos-selected">
             {decos.map(deco => {
-                const skillIcons = deco.skillNames.map(x => SKILLS.filter(y => y.name === x)[0].icon);
+                const skillIcons = deco.skillNames.map(x => SKILLS[x].icon);
                 const singleIcon = skillIcons[0]; // todo: change this should armor decos ever have more than 1 skill each
 
                 return <div key={deco.key} className="deco" style={{ cursor: 'help' }}
@@ -368,7 +377,8 @@ const Results = ({
         </div>;
     };
 
-    const renderSkill = (sk, j, arr, searchedSkills, showLevelMods = false) => {
+    const renderSkill = (skM, j, arr, searchedSkills, showLevelMods = false) => {
+        const sk = skM.name ? skM : { name: skM[0], level: skM[1] };
         const comma = j < arr.length - 1;
         const want = searchedSkills?.[sk.name] || 0;
         const isWantedSkill = Boolean(want);
@@ -422,7 +432,7 @@ const Results = ({
                     </div>}
                     {renderArmorSlots(armor.slots)}
                     <span className="armor-skills">
-                        {armor.skills.map((sk, j, arr) => renderSkill(sk, j, arr, searchedSkills))}
+                        {Object.entries(armor.skills).map((sk, j, arr) => renderSkill(sk, j, arr, searchedSkills))}
                     </span>
                 </div>;
             })}
@@ -533,6 +543,17 @@ const Results = ({
             }
         };
 
+        const shareSet = () => {
+            if (!selectedResult) { return; }
+
+            const url = getSetUrl(selectedResult.armorNames, selectedResult.decoNames, selectedResult?.name);
+            copyTextToClipboard(url, () => {
+                window.snackbar.createSnackbar(`Copied armor set ${selectedResult?.name || ""} url to clipboard!`, {
+                    timeout: 3000
+                });
+            });
+        };
+
         const searchTargetTitle = isShiftPressed ? "Set only skills used to find this set as the search target" :
             "Set all skills from this set as the search target";
         const paperStyle = hasSelectedResult ? "full" : "empty";
@@ -574,6 +595,11 @@ const Results = ({
                     title={searchTargetTitle}
                     variant="outlined" color="info">
                     {isShiftPressed ? "Set as Search Target 🔍" : "Set as Search Target"}
+                </Button>}
+                {save && <Button className="save-set-button" onClick={shareSet}
+                    title={"Copy armor set url to clipboard"}
+                    variant="outlined" color="info">
+                    Share Set
                 </Button>}
                 {isCtrlPressed && isMouseInside && <Button className="save-set-button"
                     title="Search for these skills on the wiki armor set search instead"

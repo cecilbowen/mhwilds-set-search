@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import SKILLS from '../data/skills/skills.json';
-import SET_SKILLS from '../data/skills/set-skills.json';
-import GROUP_SKILLS from '../data/skills/group-skills.json';
+import SKILLS from '../data/detailed/skills.json';
+import SET_SKILLS from '../data/detailed/set-skills.json';
+import GROUP_SKILLS from '../data/detailed/group-skills.json';
 import TextField from '@mui/material/TextField';
 import { getSkillPopup, isGroupSkill, isSetSkill } from '../util/util';
 import Image from '@mui/icons-material/Image';
@@ -11,6 +11,7 @@ import Expand from '@mui/icons-material/Expand';
 import Minimize from '@mui/icons-material/CloseFullscreen';
 import styled from 'styled-components';
 import { IconButton } from '@mui/material';
+import INTERNAL_BLACKLIST from '../data/internal-blacklist.json';
 
 const ImageIcon = styled(Image)`
     width: 24px;
@@ -29,6 +30,8 @@ const MinimizeIcon = styled(Minimize)`
     color: black;
 `;
 
+const INTERNAL_BLACKMAP = Object.fromEntries(INTERNAL_BLACKLIST.map(x => [x, true]));
+
 const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkillNames }) => {
     const [searchText, setSearchText] = useState('');
     const [foundSkillNames, setFoundSkillNames] = useState([]);
@@ -38,12 +41,14 @@ const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkil
     const [expanded, setExpanded] = useState(true);
 
     const combinedSkills = () => {
-        return [...SKILLS, ...SET_SKILLS, ...GROUP_SKILLS].filter(x => !x.type || x.type === "armor").map(x => {
+        const combo = Object.entries({ ...SKILLS, ...SET_SKILLS, ...GROUP_SKILLS })
+            .filter(x => !INTERNAL_BLACKMAP[x[0]] && (!x[1].type || x[1].type === "armor")).map(y => {
+            const x = y[1];
             const isAGroupSkill = isGroupSkill(x);
             const isASetSkill = isSetSkill(x);
 
             let iconName = x.icon;
-            const name = x.name;
+            const name = y[0];
             let displayName = name;
             if (isAGroupSkill || isASetSkill) {
                 iconName = isAGroupSkill ? "group" : "set";
@@ -62,10 +67,11 @@ const SkillsPicker = ({ addSkill, addSlotFilter, showGroupSkillNames, chosenSkil
                 icon: iconName
             };
         }).sort((a, b) => a.displayName - b.displayName);
+        return combo;
     };
 
     useEffect(() => {
-        const all = combinedSkills;
+        const all = combinedSkills();
         setAllSkills(all);
     }, [showGroupSkillNames]);
 

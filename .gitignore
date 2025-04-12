@@ -28,7 +28,11 @@ misc/*
 /src/data/kiranico
 /src/util/sync.js
 
-!/misc/kiranico-ripper.js
+src/data/format
+src/data/merge
+src/data/merge-compact
+
 !/misc/stats.py
 !/misc/tests.py
 !/misc/tasks.py
+!/misc/jsoner.py

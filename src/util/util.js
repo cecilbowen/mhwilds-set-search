@@ -1,11 +1,11 @@
 import SKILLS from '../data/compact/skills.json';
 import SET_SKILLS from '../data/compact/set-skills.json';
 import GROUP_SKILLS from '../data/compact/group-skills.json';
-import HEAD from "../data/detailed/armor/head.json";
-import CHEST from "../data/detailed/armor/chest.json";
-import ARMS from "../data/detailed/armor/arms.json";
-import WAIST from "../data/detailed/armor/waist.json";
-import LEGS from "../data/detailed/armor/legs.json";
+import HEAD from "../data/detailed/head.json";
+import CHEST from "../data/detailed/chest.json";
+import ARMS from "../data/detailed/arms.json";
+import WAIST from "../data/detailed/waist.json";
+import LEGS from "../data/detailed/legs.json";
 import TALISMANS from "../data/detailed/talisman.json";
 import DECORATIONS from '../data/compact/decoration.json';
 import DEFENSE_LEVELS from '../data/compact/defense-levels.json';
@@ -18,20 +18,22 @@ import WAIST_MAP from '../data/compact/waist.json';
 import LEGS_MAP from '../data/compact/legs.json';
 import TALIS_MAP from '../data/compact/talisman.json';
 
-import SKILLS_DB from '../data/skills/skills.json';
-import SET_SKILLS_DB from '../data/skills/set-skills.json';
-import GROUP_SKILLS_DB from '../data/skills/group-skills.json';
+import SKILLS_DB from '../data/detailed/skills.json';
+import SET_SKILLS_DB from '../data/detailed/set-skills.json';
+import GROUP_SKILLS_DB from '../data/detailed/group-skills.json';
 
 import SKILL_ID_MAP from '../data/ids/skill-ids.json';
+import ARMOR_ID_MAP from '../data/ids/armor-ids.json';
+import DECO_ID_MAP from '../data/ids/deco-ids.json';
 
 import { renderToStaticMarkup } from 'react-dom/server';
-import { isEmpty } from './tools';
+import { isEmpty, mergeSumMaps } from './tools';
 
 export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
 export const isSetSkill = skill => Boolean(skill.piecesPerLevel);
-export const isGroupSkillName = name => GROUP_SKILLS[name] || GROUP_SKILLS_DB.filter(x => x.skill === name).length > 0;
-export const isSetSkillName = name => SET_SKILLS[name] || SET_SKILLS_DB.filter(x => x.skill === name).length > 0;
+export const isGroupSkillName = name => GROUP_SKILLS[name] || Object.values(GROUP_SKILLS_DB).filter(x => x.skill === name).length > 0;
+export const isSetSkillName = name => SET_SKILLS[name] || Object.values(SET_SKILLS_DB).filter(x => x.skill === name).length > 0;
 export const getMaxLevel = skillName => {
     const isSet = SET_SKILLS[skillName];
     const isGroup = GROUP_SKILLS[skillName];
@@ -55,7 +57,7 @@ export const allArmorMaps = () => {
     return { ...HEAD_MAP, ...CHEST_MAP, ...ARMS_MAP, ...WAIST_MAP, ...LEGS_MAP };
 };
 export const allArmor = () => {
-    return [...HEAD, ...CHEST, ...ARMS, ...WAIST, ...LEGS];
+    return { ...HEAD, ...CHEST, ...ARMS, ...WAIST, ...LEGS };
 };
 const armorByType = type => {
     const typeMap = {
@@ -71,7 +73,7 @@ const armorByType = type => {
 };
 
 export const getArmorDefenseFromName = name => {
-    const data = allArmor().filter(x => x.name === name)[0];
+    const data = allArmor()[name];
     if (!data) { // happens if 'None' piece (excluded)
         // console.warn('getArmorDefenseFromName(): unable to find armor piece - ', name);
         return undefined;
@@ -101,6 +103,45 @@ export const copyTextToClipboard = (text, postFunc) => {
     });
 };
 
+const getRandomInt = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+// pulled from my old battleship game lol
+const generateRandomName = () => {
+    const min = 5;
+    const max = 8;
+    let name = "";
+    const vowels = "aeiou";
+    const consonants = "bcdfghjklmnpqrstvwxyz";
+
+    const length = getRandomInt(min, max);
+
+    for (let i = 0; i < length; i++) {
+        let v = true; // true for vowel, false for consonant
+        if (i === 0 || i === 2 || i === length - 1) {
+            v = false;
+        }
+
+        let add = "";
+        if (v) {
+            add = vowels[getRandomInt(0, vowels.length - 1)];
+        } else {
+            add = consonants[getRandomInt(0, consonants.length - 1)];
+        }
+
+        if (i === 0) {
+            add = add.toUpperCase();
+        }
+
+        name += add;
+    }
+
+    return name;
+};
+
 const fallbackCopyTextToClipboard = text => {
     const textArea = document.createElement("textarea");
     textArea.value = text;
@@ -123,6 +164,111 @@ const fallbackCopyTextToClipboard = text => {
     }
 
     document.body.removeChild(textArea);
+};
+
+export const getSetFromUrlParams = urlParams => {
+    const setStr = urlParams.get("set");
+    if (!setStr) { return undefined; }
+
+    const name = urlParams.get("name") || generateRandomName();
+    const armorNames = setStr.split("_")[0].split("-")
+        .map(id => Object.entries(ARMOR_ID_MAP).filter(x => x[1] === parseInt(id, 10))[0]?.[0]);
+    const hasDecos = Boolean(setStr.split("_")[1]);
+    const decoNames = hasDecos ? setStr.split("_")[1].split("-")
+        .map(id => Object.entries(DECO_ID_MAP).filter(x => x[1] === parseInt(id, 10))[0]?.[0]) : [];
+    const id = stringToId(`${armorNames.join(",")}_${decoNames.join(",")}`); // should prob sort before
+    // const _id = id;
+
+    let skills = {};
+    let setSkills = {};
+    let groupSkills = {};
+    let slots = [];
+    const all = { ...allArmorMaps(), ...TALIS_MAP };
+    for (let i = 0; i < armorNames.length; i++) {
+        const armorName = armorNames[i];
+        const isTalisman = i === 5;
+        const armor = all[armorName];
+        if (!armor) { continue; }
+        skills = mergeSumMaps([skills, armor[1]]);
+
+        if (!isTalisman) {
+            if (armor[2]) { // group skill
+                groupSkills[armor[2]] = (groupSkills[armor[2]] || 0) + 1;
+            }
+            if (armor[7]) { // set skill
+                setSkills[armor[7]] = (setSkills[armor[7]] || 0) + 1;
+            }
+            slots = [ ...slots, ...armor[3]].sort((a, b) => b - a);
+        }
+    }
+
+    const freeSlots = [...slots];
+    for (const decoName of decoNames) {
+        const deco = DECORATIONS[decoName];
+        if (!deco) { continue; }
+        const slotSize = deco[2];
+        const decoSkills = deco[1];
+        const bigEnoughSlot = [...freeSlots].sort().filter(x => x >= slotSize)[0];
+        if (bigEnoughSlot) {
+            freeSlots.splice(freeSlots.indexOf(bigEnoughSlot), 1);
+        }
+        skills = mergeSumMaps([skills, decoSkills]);
+    }
+
+    // correct set skill levels
+    setSkills = Object.fromEntries(
+        Object.entries(setSkills)
+            .filter(([k, v]) => k && Math.floor(v / 2) > 0)
+            .map(([k, v]) => [k, Math.floor(v / 2)])
+    );
+
+    // correct group skill levels
+    groupSkills = Object.fromEntries(
+        Object.entries(groupSkills)
+            .filter(([k, v]) => k && Math.floor(v / 3) > 0)
+            .map(([k, v]) => [k, Math.floor(v / 3)])
+    );
+
+    // correct (limit) skill levels
+    for (const [skillName, level] of Object.entries(skills)) {
+        if (level > SKILLS[skillName]) {
+            skills[skillName] = SKILLS[skillName];
+        }
+    }
+
+    const newSet = {
+        id,
+        // _id,
+        name,
+        armorNames,
+        decoNames,
+        slots,
+        searchedSkills: { ...skills },
+        skills,
+        setSkills,
+        groupSkills,
+        freeSlots
+    };
+    // console.log('newSet', newSet);
+
+    return newSet;
+};
+
+export const getSetUrl = (armorNames, decoNames, setName) => {
+    if (armorNames.length === 0) {
+        console.warn("tried to get armor set url with no armor!");
+        return '';
+    }
+    const urlParams = new URLSearchParams();
+    const armorStr = armorNames.map(name => `${ARMOR_ID_MAP[name]}`).join('-');
+    const decoStr = decoNames.map(name => `${DECO_ID_MAP[name]}`).join('-');
+    urlParams.set("set", `${armorStr}_${decoStr}`);
+
+    if (setName) {
+        urlParams.set("name", setName);
+    }
+
+    return `${window.location.href}?${urlParams}`;
 };
 
 export const getSearchUrl = (skills, slotFilters) => {
@@ -164,7 +310,7 @@ export const getArmorDefenseFromNames = theNames => {
     let base = 0;
     let upgraded = 0;
     for (const name of names) {
-        const data = allArmor().filter(x => x.name === name)[0];
+        const data = allArmor()[name];
         if (!data) {
             // console.warn('getArmorDefenseFromNames(): unable to find armor piece - ', name);
             continue;
@@ -213,7 +359,7 @@ export const notImplemented = text => {
 
 export const getDecoFromName = (name, showSkillNames = false) => {
     const data = DECORATIONS[name];
-    const detailed = DECO_DB.filter(x => x.name === name)[0];
+    const detailed = DECO_DB[name];
     const decoSkillNames = `${Object.entries(data[1]).map(x => [`${x[0]} Lv. ${x[1]}`]).join("/")} Jewel`;
     return {
         skillNames: Object.entries(data[1]).map(x => x[0]),
@@ -252,10 +398,11 @@ export const getDecosFromNames = (names, showSkillNames = false) => {
 
 export const getMaxDecoCount = deco => {
     const maxWeaponSlots = deco.type === "weapon" ? 3 : 99;
-    const skill1 = deco.skills[0];
-    const skill2 = deco.skills[1];
+    const skillEntries = Object.entries(deco.skills);
+    const skill1 = { name: skillEntries[0]?.[0], level: skillEntries[0]?.[1] };
+    const skill2 = { name: skillEntries[1]?.[0], level: skillEntries[1]?.[1] };
 
-    const s1 = SKILLS_DB.filter(x => x.name.toLowerCase() === skill1.name.toLowerCase())[0];
+    const s1 = SKILLS_DB[skill1.name];
 
     if (!s1) {
         console.warn("Failed to getMaxDecoCount()", deco);
@@ -265,8 +412,8 @@ export const getMaxDecoCount = deco => {
     const max1 = Math.ceil(s1.levels.length / skill1.level);
     let max2 = 3;
 
-    if (skill2) {
-        const s2 = SKILLS_DB.filter(x => x.name.toLowerCase() === skill2.name.toLowerCase())[0];
+    if (skill2.name) {
+        const s2 = SKILLS_DB[skill2.name];
         max2 = Math.ceil(s2.levels.length / skill2.level);
     }
 
@@ -362,10 +509,10 @@ export const getSkillDiff = (skillsA, skillsB) => {
 export const getSkillPopup = skillName => {
     let skill = skillName;
 
-    if (!skill.description) {
-        skill = SKILLS_DB.filter(x => x.name === skillName)[0] ||
-            SET_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0] ||
-            GROUP_SKILLS_DB.filter(x => x.name === skillName || x.skill === skillName)[0];
+    if (!skill?.description) {
+        skill = SKILLS_DB[skillName] ||
+            SET_SKILLS_DB[skillName] || Object.values(SET_SKILLS_DB).filter(x => x.skill === skillName)[0] ||
+            GROUP_SKILLS_DB[skillName] || Object.values(GROUP_SKILLS_DB).filter(x => x.skill === skillName);
     }
 
     if (!skill) { return ""; }
@@ -378,11 +525,11 @@ export const getSkillPopup = skillName => {
 };
 
 export const getArmorFromNames = names => {
-    const all = [...HEAD, ...CHEST, ...ARMS, ...WAIST, ...LEGS, ...TALISMANS];
+    const all = { ...allArmor(), ...TALISMANS };
     const ret = [];
 
     for (const name of names) {
-        const found = all.filter(x => x.name === name)[0];
+        const found = all[name];
         if (!found) {
             ret.push({
                 name, // should be None

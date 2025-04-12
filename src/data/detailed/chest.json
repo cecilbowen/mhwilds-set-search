@@ -1,0 +1,2251 @@
+{
+    "Hope Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Divine Blessing": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 2,
+        "fireResistance": 1,
+        "waterResistance": 0,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Leather Vest": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Botanist": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 2,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Chainmail Vest": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Geologist": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 2,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Bone Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Marathon Runner": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 4,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Chatacabra Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Speed Eating": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 6,
+        "fireResistance": 1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Quematrice Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Fire Resistance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 6,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Alloy Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Tremor Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 6,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Vespoid Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Survival Expert": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 4,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Barina Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 1,
+        "rank": "low",
+        "defense": 8,
+        "fireResistance": -3,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Conga Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Mushroomancer": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 2,
+        "rank": "low",
+        "defense": 8,
+        "fireResistance": -3,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Balahara Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Quick Sheathe": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 2,
+        "rank": "low",
+        "defense": 12,
+        "fireResistance": -1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Doshaguma Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Free Meal": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 2,
+        "rank": "low",
+        "defense": 16,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": "Doshaguma's Might"
+    },
+    "Ingot Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Windproof": 1
+        },
+        "groupSkill": "",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 16,
+        "fireResistance": -2,
+        "waterResistance": 0,
+        "thunderResistance": 3,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Kranodath Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Flinch Free": 2
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 16,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Rompopolo Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Wide-Range": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 18,
+        "fireResistance": 0,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Nerscylla Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Poison Resistance": 1,
+            "Bind Resistance": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 20,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Hirabami Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Evade Window": 1,
+            "Recovery Speed": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 22,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Ajarakan Mail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Partbreaker": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 3,
+        "rank": "low",
+        "defense": 24,
+        "fireResistance": 3,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Duna Mail": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Peak Performance": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": "Uth Duna's Cover"
+    },
+    "Rey Sandmail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Constitution": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "setSkill": "Rey Dau's Voltage"
+    },
+    "Udra Miremail": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Resentment": 1,
+            "Speed Eating": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "setSkill": "Nu Udra's Mutiny"
+    },
+    "G Doshaguma Mail": {
+        "description": "Chest armor made from Guardian Doshaguma spoils. It instills a new vitality and sense of purpose.",
+        "rank": "low",
+        "type": "chest",
+        "defense": 26,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "slots": [],
+        "skills": {
+            "Heroics": 1,
+            "Iron Skin": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "G Rathalos Mail": {
+        "description": "Chest armor made from Guardian Rathalos spoils. It instills a new vitality and sense of purpose.",
+        "rank": "low",
+        "type": "chest",
+        "defense": 26,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -5,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Intimidator": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Rathalos's Flare",
+        "rarity": 1
+    },
+    "G Ebony Mail": {
+        "description": "Chest armor made from Guardian Ebony Odogaron spoils. It instills a new vitality and sense of purpose.",
+        "rank": "low",
+        "type": "chest",
+        "defense": 26,
+        "fireResistance": -2,
+        "waterResistance": -3,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 4,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Bleeding Resistance": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Ebony Odogaron's Power",
+        "rarity": 1
+    },
+    "Xu Wu Mail": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 4,
+        "rank": "low",
+        "defense": 26,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "G Arkveld Mail": {
+        "description": "Guardian Arkveld chest armor. It beckons forth a shudder of indescribable power.",
+        "rank": "low",
+        "type": "chest",
+        "defense": 30,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -4,
+        "slots": [],
+        "skills": {
+            "Flayer": 1,
+            "Blight Resistance": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Guardian Arkveld's Vitality",
+        "rarity": 1
+    },
+    "Hope Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Poison Resistance": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 26,
+        "fireResistance": 1,
+        "waterResistance": 0,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Leather Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Botanist": 1,
+            "Item Prolonger": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 26,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Chainmail Armor Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Ice Resistance": 1,
+            "Geologist": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 26,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Bone Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Stun Resistance": 1,
+            "Marathon Runner": 1
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Alloy Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Flinch Free": 2
+        },
+        "groupSkill": "",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Vespoid Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Evade Window": 1,
+            "Survival Expert": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Vespoid Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Survival Expert": 1
+        },
+        "groupSkill": "Neopteron Camouflage",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": -2,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Kranodath Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Flinch Free": 2,
+            "Partbreaker": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Kranodath Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Flinch Free": 2
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 32,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Kut-Ku Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Fire Resistance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": -4,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Kut-Ku Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Agitator": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": -4,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Chatacabra Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Speed Eating": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Chatacabra Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Speed Eating": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Quematrice Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Latent Power": 1,
+            "Fire Resistance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Quematrice Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Latent Power": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Barina Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Recovery Up": 2,
+            "Evade Window": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Barina Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Evade Window": 1,
+            "Recovery Up": 1
+        },
+        "groupSkill": "Neopteron Camouflage",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Conga Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Intimidator": 2,
+            "Burst": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Conga Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Intimidator": 2
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Rompopolo Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Poison Resistance": 2,
+            "Wide-Range": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 0,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Rompopolo Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Poison Resistance": 2
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 0,
+        "waterResistance": -3,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Gypceros Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Poison Resistance": 1,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Gypceros Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Nerscylla Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Ambush": 1
+        },
+        "groupSkill": "Neopteron Alert",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Nerscylla Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Ambush": 1
+        },
+        "groupSkill": "Neopteron Camouflage",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Balahara Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Stamina Surge": 1,
+            "Geologist": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Balahara Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Geologist": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -1,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Hirabami Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Ice Resistance": 2,
+            "Evade Window": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Hirabami Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Evade Window": 1,
+            "Ice Resistance": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Rathian Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Foray": 2
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": ""
+    },
+    "Rathian Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Foray": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 5,
+        "rank": "high",
+        "defense": 38,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": ""
+    },
+    "Ingot Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Windproof": 1
+        },
+        "groupSkill": "",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": -2,
+        "waterResistance": 0,
+        "thunderResistance": 3,
+        "iceResistance": -1,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "G Fulgur Mail Alpha": {
+        "description": "Chest armor made from Guardian Fulgur Anjanath spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": -2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Maximum Might": 1,
+            "Coalescence": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Fulgur Anjanath's Will",
+        "rarity": 1
+    },
+    "G Fulgur Mail Beta": {
+        "description": "Chest armor made from Guardian Fulgur Anjanath spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Maximum Might": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Fulgur Anjanath's Will",
+        "rarity": 1
+    },
+    "Doshaguma Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Latent Power": 1,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": "Doshaguma's Might"
+    },
+    "Doshaguma Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Latent Power": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": "Doshaguma's Might"
+    },
+    "G Doshaguma Mail Alpha": {
+        "description": "Chest armor made from Guardian Doshaguma spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Constitution": 2,
+            "Iron Skin": 1
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "G Doshaguma Mail Beta": {
+        "description": "Chest armor made from Guardian Doshaguma spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -2,
+        "dragonResistance": 2,
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Constitution": 2
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "Ajarakan Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Resentment": 2,
+            "Blast Resistance": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Ajarakan Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Resentment": 2
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "G Ebony Mail Alpha": {
+        "description": "Chest armor made from Guardian Ebony Odogaron spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": -2,
+        "waterResistance": -3,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 4,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Bleeding Resistance": 2
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Ebony Odogaron's Power",
+        "rarity": 1
+    },
+    "G Ebony Mail Beta": {
+        "description": "Chest armor made from Guardian Ebony Odogaron spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": -2,
+        "waterResistance": -3,
+        "thunderResistance": -2,
+        "iceResistance": -2,
+        "dragonResistance": 4,
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Earplugs": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Ebony Odogaron's Power",
+        "rarity": 1
+    },
+    "Xu Wu Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Heroics": 3,
+            "Ambush": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "setSkill": "Xu Wu's Vigor"
+    },
+    "Xu Wu Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Heroics": 3
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "setSkill": "Xu Wu's Vigor"
+    },
+    "Rathalos Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Constitution": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -3,
+        "setSkill": "Rathalos's Flare"
+    },
+    "Rathalos Mail Beta": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Adrenaline Rush": 2
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -3,
+        "setSkill": "Rathalos's Flare"
+    },
+    "G Rathalos Mail Alpha": {
+        "description": "Chest armor made from Guardian Rathalos spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -5,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Intimidator": 2
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Rathalos's Flare",
+        "rarity": 1
+    },
+    "G Rathalos Mail Beta": {
+        "description": "Chest armor made from Guardian Rathalos spoils. It instills a new vitality and sense of purpose.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": 1,
+        "thunderResistance": -2,
+        "iceResistance": 1,
+        "dragonResistance": -5,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Intimidator": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Rathalos's Flare",
+        "rarity": 1
+    },
+    "Gravios Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Recovery Speed": 2,
+            "Peak Performance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 52,
+        "fireResistance": 4,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": -2,
+        "setSkill": "Gravios's Protection"
+    },
+    "Gravios Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Peak Performance": 1,
+            "Recovery Speed": 1
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 52,
+        "fireResistance": 4,
+        "waterResistance": -3,
+        "thunderResistance": 1,
+        "iceResistance": 0,
+        "dragonResistance": -2,
+        "setSkill": "Gravios's Protection"
+    },
+    "Blango Mail Alpha": {
+        "type": "chest",
+        "slots": [],
+        "skills": {
+            "Agitator": 2,
+            "Item Prolonger": 2
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -4,
+        "waterResistance": 1,
+        "thunderResistance": 0,
+        "iceResistance": 4,
+        "dragonResistance": 0,
+        "setSkill": "Blangonga's Spirit"
+    },
+    "Blango Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Agitator": 2
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": -4,
+        "waterResistance": 1,
+        "thunderResistance": 0,
+        "iceResistance": 4,
+        "dragonResistance": 0,
+        "setSkill": "Blangonga's Spirit"
+    },
+    "Commission Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Divine Blessing": 2
+        },
+        "groupSkill": "",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Kunafa Cloak Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Free Meal": 2,
+            "Palico Rally": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 4,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Azuz Apron Alpha": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Heroics": 3
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 4,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "setSkill": ""
+    },
+    "Sild Coat Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Wide-Range": 4
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 4,
+        "setSkill": ""
+    },
+    "Death Stench Muscle Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Ambush": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 3,
+        "waterResistance": 2,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 4,
+        "setSkill": ""
+    },
+    "Butterfly Thorax Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Evade Window": 1,
+            "Evade Extender": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "King Beetle Thorax Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Heroics": 1,
+            "Foray": 1,
+            "Paralysis Resistance": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": -1,
+        "waterResistance": -1,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "High Metal Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Iron Skin": 3,
+            "Partbreaker": 1
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 0,
+        "waterResistance": -1,
+        "thunderResistance": -2,
+        "iceResistance": 3,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Battle Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Hunger Resistance": 3,
+            "Sleep Resistance": 2
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 2,
+        "waterResistance": -1,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Melahoa Jacket Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Tool Specialist": 3
+        },
+        "groupSkill": "Imparted Wisdom",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 0,
+        "waterResistance": 1,
+        "thunderResistance": 3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Artian Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Flayer": 1,
+            "Adaptability": 1
+        },
+        "groupSkill": "Guardian's Protection",
+        "rarity": 6,
+        "rank": "high",
+        "defense": 44,
+        "fireResistance": 1,
+        "waterResistance": -2,
+        "thunderResistance": -2,
+        "iceResistance": 2,
+        "dragonResistance": 3,
+        "setSkill": ""
+    },
+    "Dober Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Marathon Runner": 1
+        },
+        "groupSkill": "",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 56,
+        "fireResistance": -2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "setSkill": ""
+    },
+    "Damascus Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Recovery Up": 2,
+            "Wide-Range": 1
+        },
+        "groupSkill": "",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 56,
+        "fireResistance": 4,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": ""
+    },
+    "Dahaad Shardmail Alpha": {
+        "type": "chest",
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Bind Resistance": 2,
+            "Adaptability": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Jin Dahaad's Revolt"
+    },
+    "Dahaad Shardmail Beta": {
+        "type": "chest",
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Bind Resistance": 1,
+            "Adaptability": 1
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Jin Dahaad's Revolt"
+    },
+    "Duna Wildmail Alpha": {
+        "type": "chest",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Tool Specialist": 2,
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": "Uth Duna's Cover"
+    },
+    "Duna Wildmail Beta": {
+        "type": "chest",
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Tool Specialist": 2
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "setSkill": "Uth Duna's Cover"
+    },
+    "Rey Sandmail Alpha": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Maximum Might": 2,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "setSkill": "Rey Dau's Voltage"
+    },
+    "Rey Sandmail Beta": {
+        "type": "chest",
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Maximum Might": 1,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "setSkill": "Rey Dau's Voltage"
+    },
+    "Udra Miremail Alpha": {
+        "type": "chest",
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Burst": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "setSkill": "Nu Udra's Mutiny"
+    },
+    "Udra Miremail Beta": {
+        "type": "chest",
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Resentment": 1
+        },
+        "groupSkill": "Lord's Fury",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "setSkill": "Nu Udra's Mutiny"
+    },
+    "Gore Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Evade Window": 2,
+            "Antivirus": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -2,
+        "waterResistance": 3,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Gore Magala's Tyranny"
+    },
+    "Gore Mail Beta": {
+        "type": "chest",
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Evade Window": 2
+        },
+        "groupSkill": "Scale Layering",
+        "rarity": 7,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": -2,
+        "waterResistance": 3,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "setSkill": "Gore Magala's Tyranny"
+    },
+    "Arkvulcan Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Elemental Absorption": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": "Arkveld's Hunger"
+    },
+    "Arkvulcan Mail Beta": {
+        "type": "chest",
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 1
+        },
+        "groupSkill": "Alluring Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -3,
+        "setSkill": "Arkveld's Hunger"
+    },
+    "G Arkveld Mail Alpha": {
+        "description": "Guardian Arkveld chest armor. It beckons forth a shudder of indescribable power.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -4,
+        "slots": [],
+        "skills": {
+            "Flayer": 2,
+            "Blight Resistance": 2
+        },
+        "groupSkill": "Guardian's Pulse",
+        "setSkill": "Guardian Arkveld's Vitality",
+        "rarity": 1
+    },
+    "G Arkveld Mail Beta": {
+        "description": "Guardian Arkveld chest armor. It beckons forth a shudder of indescribable power.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -1,
+        "iceResistance": 0,
+        "dragonResistance": -4,
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Flayer": 1,
+            "Blight Resistance": 2
+        },
+        "groupSkill": "Guardian's Protection",
+        "setSkill": "Guardian Arkveld's Vitality",
+        "rarity": 1
+    },
+    "Guild Ace Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Peak Performance": 1,
+            "Constitution": 1,
+            "Foray": 1
+        },
+        "groupSkill": "",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 60,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "setSkill": ""
+    },
+    "Guild Cross Suit Alpha": {
+        "type": "chest",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Tremor Resistance": 1
+        },
+        "setSkill": "",
+        "groupSkill": "Glory's Favor",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 36,
+        "fireResistance": 0,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0
+    },
+    "Clerk Suit Alpha": {
+        "type": "chest",
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Survival Expert": 2,
+            "Divine Blessing": 1
+        },
+        "setSkill": "",
+        "groupSkill": "Glory's Favor",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2
+    },
+    "Mizutsune Mail Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Burst": 2,
+            "Constitution": 1
+        },
+        "setSkill": "Mizutsune's Prowess",
+        "groupSkill": "Fortifying Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": -1
+    },
+    "Mizutsune Mail Beta": {
+        "type": "chest",
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Burst": 1,
+            "Constitution": 1
+        },
+        "setSkill": "Mizutsune's Prowess",
+        "groupSkill": "Alluring Pelt",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 48,
+        "fireResistance": 0,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 1,
+        "dragonResistance": -1
+    },
+    "Numinous Shroud Alpha": {
+        "type": "chest",
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Agitator": 2,
+            "Counterstrike": 1
+        },
+        "setSkill": "Zoh Shia's Pulse",
+        "groupSkill": "Guardian's Pulse",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 68,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": -4
+    },
+    "Numinous Shroud Beta": {
+        "type": "chest",
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Agitator": 2
+        },
+        "setSkill": "Zoh Shia's Pulse",
+        "groupSkill": "Guardian's Protection",
+        "rarity": 8,
+        "rank": "high",
+        "defense": 68,
+        "fireResistance": -2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 0,
+        "dragonResistance": -4
+    },
+    "Rey Sandmail Gamma": {
+        "description": "Chest armor made from special Rey Dau materials. The azure armor evokes the valor of the Arch-tempered.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": 0,
+        "waterResistance": -2,
+        "thunderResistance": 4,
+        "iceResistance": -3,
+        "dragonResistance": 0,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Latent Power": 3
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Rey Dau's Voltage",
+        "rarity": 1
+    },
+    "Sakuratide Robe Alpha": {
+        "description": "Blossomdance Ticket chest armor. It embodies the spirit of resplendent warriors from spring sunrises past.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Foray": 1,
+            "Quick Sheathe": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Blossomdance Prayer",
+        "rarity": 1
+    },
+    "Blossom Vest Alpha": {
+        "description": "Blossom Ticket chest armor. The flower brooch adds a snazzy touch.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 4,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    }
+}

@@ -1,7 +1,10 @@
 // handles anything that modifies local storage
 /* eslint-disable react/prop-types */
 import { createContext, useContext, useEffect, useState } from "react";
-import { areArmorSetsEqual, getArmorTypeList, getFromLocalStorage, saveToLocalStorage, stringToId } from "../util/util";
+import {
+    getArmorTypeList, getFromLocalStorage,
+    getSetFromUrlParams, saveToLocalStorage, stringToId
+} from "../util/util";
 import SKILL_ID_MAP from '../data/ids/skill-ids.json';
 import { renderToStaticMarkup } from "react-dom/server";
 
@@ -38,6 +41,8 @@ const DEFAULTS = {
 
 export const StorageProvider = ({ children }) => {
     const [fields, setFields] = useState(DEFAULTS);
+    const [swapTab, setSwapTab] = useState(false);
+    const [setId, setSetId] = useState();
 
     useEffect(() => {
         // honestly, should probably combine all these into one localStorage object
@@ -46,8 +51,9 @@ export const StorageProvider = ({ children }) => {
             tempFields[fieldName] = getFromLocalStorage(fieldName, defaultValue);
         }
 
-        // handle getting skills from url
         const urlParams = new URLSearchParams(window.location.search);
+
+        // handle getting skills from url
         const skillsStr = urlParams.get('skills');
         let moddedSearch = false;
         if (skillsStr) {
@@ -81,6 +87,29 @@ export const StorageProvider = ({ children }) => {
             saveToLocalStorage('slotFilters', tempFields.slotFilters);
         }
 
+        // handle getting a shared set from a url
+        let addedSharedSet = false;
+        const sharedSet = getSetFromUrlParams(urlParams);
+        if (sharedSet) {
+            const exists = tempFields.savedSets.filter(x => x.id === sharedSet.id)[0];
+            if (!exists) {
+                tempFields.savedSets.push(sharedSet);
+                addedSharedSet = true;
+
+                saveToLocalStorage('savedSets', tempFields.savedSets);
+
+                const bite = <span>
+                    Added new set to saved sets:<span style={{ color: 'aqua' }}>{` ${sharedSet.name}`}</span>!
+                </span>;
+                const message = document.createElement('div');
+                message.innerHTML = renderToStaticMarkup(bite);
+                window.snackbar.createSnackbar(message, { timeout: 3000 });
+            }
+            urlParams.delete("set");
+            urlParams.delete("name");
+            moddedSearch = true;
+        }
+
         // update any deprecated saved set ids to new format
         if (!tempFields.updatedIds && tempFields.savedSets.length > 0) {
             for (const armor of tempFields.savedSets) {
@@ -98,6 +127,11 @@ export const StorageProvider = ({ children }) => {
             window.history.replaceState({}, document.title, window.location.pathname + urlParams);
         }
         setFields(tempFields);
+
+        if (addedSharedSet) {
+            setSwapTab(1);
+            setSetId(sharedSet.id);
+        }
     }, []);
 
     const updateField = (name, value) => {
@@ -207,12 +241,11 @@ export const StorageProvider = ({ children }) => {
     const saveArmorSet = result => {
         if (!result) { return undefined; }
         let currentSets = getFromLocalStorage('savedSets') || [];
-        const alreadyHas = currentSets.filter(x => x.id === result.id); // currentSets.filter(x => areArmorSetsEqual(result.armorNames, x.armorNames));
+        const alreadyHas = currentSets.filter(x => x.id === result.id);
 
         if (alreadyHas.length > 0) {
-            currentSets = currentSets.filter(x => x.id !== result.id); // currentSets.filter(x => !areArmorSetsEqual(result.armorNames, x.armorNames));
+            currentSets = currentSets.filter(x => x.id !== result.id);
         } else {
-            // const nextId = (currentSets[currentSets.length - 1]?.id || 1) + 1;
             currentSets.push({ ...result });
         }
 
@@ -223,7 +256,8 @@ export const StorageProvider = ({ children }) => {
     return (
         <StorageContext.Provider value={{
             fields, updateField, updateMultipleFields,
-            pinArmor, excludeArmor, saveArmorSet
+            pinArmor, excludeArmor, saveArmorSet, swapTab,
+            setSwapTab, setId, setSetId
         }}>
             {children}
         </StorageContext.Provider>

@@ -1,0 +1,465 @@
+{
+    "Doshaguma's Might": {
+        "skill": "Powerhouse",
+        "description": "Temporarily increases attack after a successful Power Clash or Offset attack",
+        "levels": [
+            "Temporarily grants attack +10 after a successful Power Clash or Offset attack",
+            "Temporarily grants attack +25 after a successful Power Clash or Offset attack"
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Doshaguma Braces",
+            "Doshaguma Braces Alpha",
+            "Doshaguma Braces Beta",
+            "Doshaguma Coil",
+            "Doshaguma Coil Alpha",
+            "Doshaguma Coil Beta",
+            "Doshaguma Greaves",
+            "Doshaguma Greaves Alpha",
+            "Doshaguma Greaves Beta",
+            "Doshaguma Helm",
+            "Doshaguma Helm Alpha",
+            "Doshaguma Helm Beta",
+            "Doshaguma Mail",
+            "Doshaguma Mail Alpha",
+            "Doshaguma Mail Beta",
+            "G Doshaguma Braces",
+            "G Doshaguma Braces Alpha",
+            "G Doshaguma Braces Beta",
+            "G Doshaguma Coil",
+            "G Doshaguma Coil Alpha",
+            "G Doshaguma Coil Beta",
+            "G Doshaguma Greaves",
+            "G Doshaguma Greaves Alpha",
+            "G Doshaguma Greaves Beta",
+            "G Doshaguma Helm",
+            "G Doshaguma Helm Alpha",
+            "G Doshaguma Helm Beta",
+            "G Doshaguma Mail",
+            "G Doshaguma Mail Alpha",
+            "G Doshaguma Mail Beta"
+        ]
+    },
+    "Rathalos's Flare": {
+        "skill": "Scorcher",
+        "description": "Chance to deal additional fire damage after landing an attack.",
+        "levels": [
+            "Chance to deal additional fire damage after landing an attack (33% chance for 24 fire damage).",
+            "Increases additional fire damage after landing an attack (33% chance for 60 fire damage)."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "G Rathalos Coil",
+            "G Rathalos Coil Alpha",
+            "G Rathalos Coil Beta",
+            "G Rathalos Greaves",
+            "G Rathalos Greaves Alpha",
+            "G Rathalos Greaves Beta",
+            "G Rathalos Helm",
+            "G Rathalos Helm Alpha",
+            "G Rathalos Helm Beta",
+            "G Rathalos Mail",
+            "G Rathalos Mail Alpha",
+            "G Rathalos Mail Beta",
+            "G Rathalos Vambraces",
+            "G Rathalos Vambraces Alpha",
+            "G Rathalos Vambraces Beta",
+            "Rathalos Coil Alpha",
+            "Rathalos Coil Beta",
+            "Rathalos Greaves Alpha",
+            "Rathalos Greaves Beta",
+            "Rathalos Helm Alpha",
+            "Rathalos Helm Beta",
+            "Rathalos Mail Alpha",
+            "Rathalos Mail Beta",
+            "Rathalos Vambraces Alpha",
+            "Rathalos Vambraces Beta"
+        ]
+    },
+    "Xu Wu's Vigor": {
+        "skill": "Protein Fiend",
+        "description": "Temporarily grants attack after eating meat items (lasts 2 minutes).",
+        "levels": [
+            "Temporarily grants attack +15 after eating items such as well-done steak.",
+            "Temporarily grants attack +25 after eating items such as well-done steak."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Xu Wu Coil Alpha",
+            "Xu Wu Coil Beta",
+            "Xu Wu Greaves Alpha",
+            "Xu Wu Greaves Beta",
+            "Xu Wu Helm Alpha",
+            "Xu Wu Helm Beta",
+            "Xu Wu Mail Alpha",
+            "Xu Wu Mail Beta",
+            "Xu Wu Vambraces Alpha",
+            "Xu Wu Vambraces Beta"
+        ]
+    },
+    "Gravios's Protection": {
+        "skill": "Flawless Armor",
+        "description": "Reduces the damage you take when your health is full.",
+        "levels": [
+            "Reduces the damage you take by 5% when your health is full.",
+            "Reduces the damage you take by 10% when your health is full."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Gravios Coil Alpha",
+            "Gravios Coil Beta",
+            "Gravios Greaves Alpha",
+            "Gravios Greaves Beta",
+            "Gravios Helm Alpha",
+            "Gravios Helm Beta",
+            "Gravios Mail Alpha",
+            "Gravios Mail Beta",
+            "Gravios Vambraces Alpha",
+            "Gravios Vambraces Beta"
+        ]
+    },
+    "Blangonga's Spirit": {
+        "skill": "War Cry",
+        "description": "Using the To Victory! gesture increases attack temporarily to nearby allies. Also effects Palicoes and Support Hunters.  Lasts 3 minutes.",
+        "levels": [
+            "Using the To Victory! gesture moderately increases attack (attack +3) temporarily to nearby allies. Greatly effects Palicoes and Support Hunters",
+            "Using the To Victory! gesture increases attack (attack +6) temporarily to nearby allies. Greatly effects Palicoes and Support Hunters"
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Blango Coil Alpha",
+            "Blango Coil Beta",
+            "Blango Greaves Alpha",
+            "Blango Greaves Beta",
+            "Blango Helm Alpha",
+            "Blango Helm Beta",
+            "Blango Mail Alpha",
+            "Blango Mail Beta",
+            "Blango Vambraces Alpha",
+            "Blango Vambraces Beta"
+        ]
+    },
+    "Ebony Odogaron's Power": {
+        "skill": "Burst Boost",
+        "description": "Extends the duration of the Burst skill and grants attack while Burst is active.",
+        "levels": [
+            "Extends the duration of the Burst skill to 5 seconds and grants attack +3 while Burst is active.",
+            "Further extends the duration of the Burst skill to 6 seconds and grants attack +10 while Burst is active."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "G Ebony Braces",
+            "G Ebony Braces Alpha",
+            "G Ebony Braces Beta",
+            "G Ebony Coil",
+            "G Ebony Coil Alpha",
+            "G Ebony Coil Beta",
+            "G Ebony Greaves",
+            "G Ebony Greaves Alpha",
+            "G Ebony Greaves Beta",
+            "G Ebony Helm",
+            "G Ebony Helm Alpha",
+            "G Ebony Helm Beta",
+            "G Ebony Mail",
+            "G Ebony Mail Alpha",
+            "G Ebony Mail Beta"
+        ]
+    },
+    "Fulgur Anjanath's Will": {
+        "skill": "Second Wind",
+        "description": "Grants an additional Stamina Gauge.",
+        "levels": [
+            "Grants an additional Stamina Gauge (25 stamina).",
+            "Grants an additional long Stamina Gauge (50 stamina)."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "G Fulgur Coil Alpha",
+            "G Fulgur Coil Beta",
+            "G Fulgur Greaves Alpha",
+            "G Fulgur Greaves Beta",
+            "G Fulgur Helm Alpha",
+            "G Fulgur Helm Beta",
+            "G Fulgur Mail Alpha",
+            "G Fulgur Mail Beta",
+            "G Fulgur Vambraces Alpha",
+            "G Fulgur Vambraces Beta"
+        ]
+    },
+    "Uth Duna's Cover": {
+        "skill": "Protective Veil",
+        "description": "Increases defense temporarily when using a specialized tool.",
+        "levels": [
+            "Increases defense temporarily (defense +25) when using a specialized tool.",
+            "Greatly increases defense and resistance temporarily (defense +50, all resistances +12) when using a specialized tool"
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Duna Coil",
+            "Duna Greaves",
+            "Duna Helm",
+            "Duna Mail",
+            "Duna Vambraces",
+            "Duna Wildbraces Alpha",
+            "Duna Wildbraces Beta",
+            "Duna Wildcoil Alpha",
+            "Duna Wildcoil Beta",
+            "Duna Wildgreaves Alpha",
+            "Duna Wildgreaves Beta",
+            "Duna Wildhelm Alpha",
+            "Duna Wildhelm Beta",
+            "Duna Wildmail Alpha",
+            "Duna Wildmail Beta"
+        ]
+    },
+    "Rey Dau's Voltage": {
+        "skill": "Thunderous Roar",
+        "description": "Moderately extends the activation time of the Latent Power skill.",
+        "levels": [
+            "Moderately extends the activation time of the Latent Power skill (about 2 and a half minutes).",
+            "Extends the activation time of the Latent Power skill (about 3 and a half minutes)."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Rey Sandbraces",
+            "Rey Sandbraces Alpha",
+            "Rey Sandbraces Beta",
+            "Rey Sandcoil",
+            "Rey Sandcoil Alpha",
+            "Rey Sandcoil Beta",
+            "Rey Sandgreaves",
+            "Rey Sandgreaves Alpha",
+            "Rey Sandgreaves Beta",
+            "Rey Sandhelm",
+            "Rey Sandhelm Alpha",
+            "Rey Sandhelm Beta",
+            "Rey Sandmail",
+            "Rey Sandmail Alpha",
+            "Rey Sandmail Beta"
+        ]
+    },
+    "Nu Udra's Mutiny": {
+        "skill": "Bad Blood",
+        "description": "Deals additional damage while the Resentment skill is active.",
+        "levels": [
+            "Deals moderate additional damage (+18 additional damage) while the Resentment skill is active.",
+            "Deals additional damage (+40 additional damage) while the Resentment skill is active."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Udra Mirebraces",
+            "Udra Mirebraces Alpha",
+            "Udra Mirebraces Beta",
+            "Udra Mirecoil",
+            "Udra Mirecoil Alpha",
+            "Udra Mirecoil Beta",
+            "Udra Miregreaves",
+            "Udra Miregreaves Alpha",
+            "Udra Miregreaves Beta",
+            "Udra Mirehelm",
+            "Udra Mirehelm Alpha",
+            "Udra Mirehelm Beta",
+            "Udra Miremail",
+            "Udra Miremail Alpha",
+            "Udra Miremail Beta"
+        ]
+    },
+    "Jin Dahaad's Revolt": {
+        "skill": "Binding Counter",
+        "description": "Increases attack for 60 seconds after recovering from webbed status, frostblight, being pinned, or a Power Clash.",
+        "levels": [
+            "Increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash (attack +25)",
+            "Greatly increases attack after recovering from webbed status, frostblight, being pinned, or a Power Clash (attack +50)"
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Dahaad Shardbraces Alpha",
+            "Dahaad Shardbraces Beta",
+            "Dahaad Shardcoil Alpha",
+            "Dahaad Shardcoil Beta",
+            "Dahaad Shardgreaves Alpha",
+            "Dahaad Shardgreaves Beta",
+            "Dahaad Shardhelm Alpha",
+            "Dahaad Shardhelm Beta",
+            "Dahaad Shardmail Alpha",
+            "Dahaad Shardmail Beta"
+        ]
+    },
+    "Gore Magala's Tyranny": {
+        "skill": "Black Eclipse",
+        "description": "Infects you with Frenzy when against large monsters.",
+        "levels": [
+            "Infects you with Frenzy when against large monsters.",
+            "Infects you with Frenzy and raises attack when against large monsters. Attack power increases upon recovery (attack +10 while infected, +15 when cured)."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Gore Coil Alpha",
+            "Gore Coil Beta",
+            "Gore Greaves Alpha",
+            "Gore Greaves Beta",
+            "Gore Helm Alpha",
+            "Gore Helm Beta",
+            "Gore Mail Alpha",
+            "Gore Mail Beta",
+            "Gore Vambraces Alpha",
+            "Gore Vambraces Beta"
+        ]
+    },
+    "Arkveld's Hunger": {
+        "skill": "Hasten Recovery",
+        "description": "Regenerates your health as you continually attack a monster. Recovery varies by weapon.",
+        "levels": [
+            "Regenerates a small amount of your health as you continually attack a monster. Recovery varies by weapon.",
+            "Regenerates your health as you continually attack a monster. Recovery varies by weapon."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Arkvulcan Coil Alpha",
+            "Arkvulcan Coil Beta",
+            "Arkvulcan Greaves Alpha",
+            "Arkvulcan Greaves Beta",
+            "Arkvulcan Helm Alpha",
+            "Arkvulcan Helm Beta",
+            "Arkvulcan Mail Alpha",
+            "Arkvulcan Mail Beta",
+            "Arkvulcan Vambraces Alpha",
+            "Arkvulcan Vambraces Beta"
+        ]
+    },
+    "Guardian Arkveld's Vitality": {
+        "skill": "Decimator",
+        "description": "Restores a moderate amount of health when destroying a wound on a large monster.",
+        "levels": [
+            "Restores a moderate amount of health (25 health) when destroying a wound on a large monster.",
+            "Restores health (50 health) when destroying a wound on a large monster."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "G Arkveld Coil",
+            "G Arkveld Coil Alpha",
+            "G Arkveld Coil Beta",
+            "G Arkveld Greaves",
+            "G Arkveld Greaves Alpha",
+            "G Arkveld Greaves Beta",
+            "G Arkveld Helm",
+            "G Arkveld Helm Alpha",
+            "G Arkveld Helm Beta",
+            "G Arkveld Mail",
+            "G Arkveld Mail Alpha",
+            "G Arkveld Mail Beta",
+            "G Arkveld Vambraces",
+            "G Arkveld Vambraces Alpha",
+            "G Arkveld Vambraces Beta"
+        ]
+    },
+    "Mizutsune's Prowess": {
+        "skill": "Bubbly Dance",
+        "description": "Prevents major bubbleblight and increases evasion while afflicted with minor bubbleblight.",
+        "levels": [
+            "Prevents major bubbleblight and increases evasion while afflicted with minor bubbleblight.",
+            "Prevents major bubbleblight and ups evasion while afflicted.  Trigger minor bubbleblight by evading many times."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Mizutsune Helm Alpha",
+            "Mizutsune Mail Alpha",
+            "Mizutsune Braces Alpha",
+            "Mizutsune Coil Alpha",
+            "Mizutsune Greaves Alpha",
+            "Mizutsune Helm Beta",
+            "Mizutsune Mail Beta",
+            "Mizutsune Braces Beta",
+            "Mizutsune Coil Beta",
+            "Mizutsune Greaves Beta"
+        ]
+    },
+    "Zoh Shia's Pulse": {
+        "skill": "Super Recovery",
+        "description": "Allows the Health Gauge to continue to slowly recover up to the max value, even if there is no red portion.",
+        "levels": [
+            "Allows the Health Gauge to continue to slowly recover up to the max value, even if there is no red portion.",
+            "Allows the Health Gauge to continue to slowly recover up to the max value, even if there is no red portion."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Numinous Crown Alpha",
+            "Numinous Shroud Alpha",
+            "Numinous Vambraces Alpha",
+            "Numinous Overlay Alpha",
+            "Numinous Greaves Alpha",
+            "Numinous Crown Beta",
+            "Numinous Shroud Beta",
+            "Numinous Vambraces Beta",
+            "Numinous Overlay Beta",
+            "Numinous Greaves Beta"
+        ]
+    },
+    "Blossomdance Prayer": {
+        "skill": "Blossomdance Prayer",
+        "description": "During Blossomdance, adds special items to quest rewards. (No effect when joining mid-quest.)",
+        "levels": [
+            "During Blossomdance, adds special items to quest rewards. (No effect when joining mid-quest.)",
+            "During Blossomdance, adds special items to quest rewards, and greatly boosts attack and defense."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Sakuratide Headgear Alpha",
+            "Sakuratide Robe Alpha",
+            "Sakuratide Bracers Alpha",
+            "Sakuratide Obi Alpha",
+            "Sakuratide Hakama Alpha"
+        ]
+    }
+}
