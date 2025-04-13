@@ -37,6 +37,7 @@ import ArmorSvgWrapper from './ArmorSvgWrapper';
 import { useStorage } from '../hooks/StorageContext';
 import ArrowForward from '@mui/icons-material/ArrowForwardRounded';
 import ArrowBack from '@mui/icons-material/ArrowBackRounded';
+import { useWindowWidth } from '../hooks/useWindowWidth';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -152,6 +153,8 @@ const Results = ({
     const [isShiftPressed, setIsShiftPressed] = useState(false);
     const [isCtrlPressed, setIsCtrlPressed] = useState(false);
     const [isMouseInside, setIsMouseInside] = useState(false);
+    const width = useWindowWidth();
+    const isMobile = !fields.forceDesktop && width < 640;
 
     useEffect(() => {
         const handleKeyDown = event => {
@@ -258,7 +261,7 @@ const Results = ({
         const defense = getArmorDefenseFromNames(result.armorNames);
 
         return <div className="defense">
-            {defense.upgraded}
+            {`${defense.upgraded} (${defense.base} base)`}
         </div>;
     };
 
@@ -310,12 +313,13 @@ const Results = ({
                 {customSlot === "slots" && renderSlots(result)}
                 {customSlot === "defense" && renderDefense(result)}
             </StyledTableCell>
-            <StyledTableCell align="left" scope="row">{armorNameFormat(armorNames[0])}</StyledTableCell>
-            <StyledTableCell align="left">{armorNameFormat(armorNames[1])}</StyledTableCell>
-            <StyledTableCell align="left">{armorNameFormat(armorNames[2])}</StyledTableCell>
-            <StyledTableCell align="left">{armorNameFormat(armorNames[3])}</StyledTableCell>
-            <StyledTableCell align="left">{armorNameFormat(armorNames[4])}</StyledTableCell>
-            <StyledTableCell align="left">{armorNameFormat(armorNames[5])}</StyledTableCell>
+            {isMobile && <StyledTableCell align="left" scope="row">{renderDefense(result)}</StyledTableCell>}
+            {!isMobile && <StyledTableCell align="left" scope="row">{armorNameFormat(armorNames[0])}</StyledTableCell>}
+            {!isMobile && <StyledTableCell align="left">{armorNameFormat(armorNames[1])}</StyledTableCell>}
+            {!isMobile && <StyledTableCell align="left">{armorNameFormat(armorNames[2])}</StyledTableCell>}
+            {!isMobile && <StyledTableCell align="left">{armorNameFormat(armorNames[3])}</StyledTableCell>}
+            {!isMobile && <StyledTableCell align="left">{armorNameFormat(armorNames[4])}</StyledTableCell>}
+            {!isMobile && <StyledTableCell align="left">{armorNameFormat(armorNames[5])}</StyledTableCell>}
         </StyledTableRow>;
     };
 
@@ -426,14 +430,14 @@ const Results = ({
                             title="Exclude" onClick={excludeFunc} />}
                     <ArmorSvgWrapper type={type} rarity={armor.rarity} />
                     <span className="armor-name">{armorNameFormat(armor.name)}</span>
-                    {type !== "talisman" && <div className="def-holder">
+                    {type !== "talisman" && !isMobile && <div className="def-holder">
                         <img className="armor-def-img" src={`images/defense-up.png`} />
                         <div className="def-value">{defense?.upgraded || 0}</div>
                     </div>}
-                    {renderArmorSlots(armor.slots)}
-                    <span className="armor-skills">
+                    {!isMobile && renderArmorSlots(armor.slots)}
+                    {!isMobile && <span className="armor-skills">
                         {Object.entries(armor.skills).map((sk, j, arr) => renderSkill(sk, j, arr, searchedSkills))}
-                    </span>
+                    </span>}
                 </div>;
             })}
         </div>;
@@ -652,18 +656,20 @@ const Results = ({
                                 <div style={{ display: 'inline', marginLeft: '4px' }}>{customSlot}</div>
                                 {/* {<SwapIcon onClick={swapCustomSlot} />} */}
                             </StyledTableCell>
-                            <StyledTableCell align="left" component="th">
-                                <span className="fspan">{armorImages[0]} Head</span></StyledTableCell>
-                            <StyledTableCell align="left" component="th">
-                                <span className="fspan">{armorImages[1]} Chest</span></StyledTableCell>
-                            <StyledTableCell align="left" component="th">
-                                <span className="fspan">{armorImages[2]} Arms</span></StyledTableCell>
-                            <StyledTableCell align="left" component="th">
-                                <span className="fspan">{armorImages[3]} Waist</span></StyledTableCell>
-                            <StyledTableCell align="left" component="th">
-                                <span className="fspan">{armorImages[4]} Legs</span></StyledTableCell>
-                            <StyledTableCell align="left" component="th">
-                                <span className="fspan">{armorImages[5]} Talisman</span></StyledTableCell>
+                            {isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{defImg} Defense</span></StyledTableCell>}
+                            {!isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[0]} Head</span></StyledTableCell>}
+                            {!isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[1]} Chest</span></StyledTableCell>}
+                            {!isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[2]} Arms</span></StyledTableCell>}
+                            {!isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[3]} Waist</span></StyledTableCell>}
+                            {!isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[4]} Legs</span></StyledTableCell>}
+                            {!isMobile && <StyledTableCell align="left" component="th">
+                                <span className="fspan">{armorImages[5]} Talisman</span></StyledTableCell>}
                         </StyledTableRow>
                     </TableHead>
                     <TableBody>

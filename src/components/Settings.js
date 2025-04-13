@@ -75,6 +75,10 @@ const Settings = ({ onSourceChanged }) => {
         onSourceChanged?.();
     };
 
+    const toggleForceDesktop = () => {
+        updateField('forceDesktop', !fields.forceDesktop);
+    };
+
     const changePin = (type, armor, armorList) => {
         const armorName = armor?.value || "none";
         const isValid = !armorName ||
@@ -170,6 +174,11 @@ const Settings = ({ onSourceChanged }) => {
                 <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.showGroupSkillNames} />}
                     onChange={() => toggleShowGroup()}
                     label={`Label set skills by skill name`} />
+                <FormControlLabel sx={{ marginLeft: '1em' }}
+                    title="The UI is simplified when the screen is small enough.  This will force it to never do that."
+                    control={<Switch checked={fields.forceDesktop} />}
+                    onChange={() => toggleForceDesktop()}
+                    label={`Force desktop mode`} />
                 <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.hideSource} />}
                     onChange={() => toggleHideSource()}
                     label={`Hide source code tab`} />

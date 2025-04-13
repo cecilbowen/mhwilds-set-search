@@ -37,6 +37,7 @@ const DEFAULTS = {
     hideSource: false,
     showAll: true,
     showExtra: false,
+    forceDesktop: false,
 };
 
 export const StorageProvider = ({ children }) => {

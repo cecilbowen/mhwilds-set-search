@@ -5,12 +5,13 @@ improve 'more skills' feature.  things like, broader initial search to capture m
 make 100% certain results are sorted so that best free slots are at top, specifically:
     biggest free slots, longest free slots
 improve getBestArmor() when it comes to searches with lots of skills 
-    eg, try searching 19 level 1 skills; took me 30 seconds+ on non-dfs, ~10 with dfs
+    eg, try searching 19 level 1 skills; took me 30 seconds+ on non-dfs, ~10 seconds with dfs
 rename your sets from search page too, so we dont have to guess which "Unnamed Set" is the one we just added
 fix progress bar being slightly offset during more skills search (appears as though it finishes at eg, 115% instead of 100%)
 see whats up with test_more not including the [3, 2, 1] result
     probably just a case of broadening the limits of my mod_point_map bs in get_best_armor
 languages translation system, similar to what i have in pokemon sandwich simulator 
+    this would involve a lot of overhead: updating each language's data on every game update
 make slot filters jump to front when text searching them in the skill picker
 on deco inventory page, make red "you've got less of this deco than normal" highlight dynamic as you
     edit the input fields, not only on blur 

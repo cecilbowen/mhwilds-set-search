@@ -191,9 +191,10 @@ tbody > tr {
   font-family: monospace;
 }
 .def-icon {
-  width: 10px;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
-  transform: translateY(3px);
+  transform: translate(-4px, 4px);
 }
 
 .decos-selected {
@@ -280,18 +281,24 @@ tbody > tr {
 .set-skills {
   margin-left: 1em;
   display: flex;
+  flex-wrap: wrap;
   white-space: break-spaces;
   align-items: baseline;
 }
 .group-skills {
   margin-left: 1em;
 }
+
+.set-skills > :first-child {
+  margin-right: 1em;
+}
+
 .set-label {
   font-weight: bold;
 }
 .set-names {
   font-family: monospace;
-  margin-left: 1em;
+  /* margin-left: 1em; */
   font-size: 16px;
 }
 .set-color {
@@ -592,7 +599,7 @@ input[type=number] {
   color: #0183d1;
 }
 .result-skill {
-  display: flex;
+  /* display: flex; */
 }
 
 .striped {
@@ -778,7 +785,7 @@ input[type=number] {
   }
 
   .tab-root {
-    background-color: transparent !important;
+    background-color: var(--dark-mode-bkg-color);
   }
 
   .MuiButton-contained.MuiButton-colorPrimary, .MuiButton-contained.MuiButton-colorInfo {
