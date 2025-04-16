@@ -79,6 +79,10 @@ const Settings = ({ onSourceChanged }) => {
         updateField('forceDesktop', !fields.forceDesktop);
     };
 
+    const toggleShowCalcExport = () => {
+        updateField('showCalcExport', !fields.showCalcExport);
+    };
+
     const changePin = (type, armor, armorList) => {
         const armorName = armor?.value || "none";
         const isValid = !armorName ||
@@ -195,6 +199,11 @@ const Settings = ({ onSourceChanged }) => {
                 <FormControlLabel sx={{ marginLeft: '1em' }} control={<Switch checked={fields.showExtra} />}
                     onChange={() => toggleShowExtra()}
                     label={`Show 'Extra Skills' line`} />
+                <FormControlLabel sx={{ marginLeft: '1em' }}
+                    title="Whether to show a button that exports an armor set to mhwilds-calculator format"
+                    control={<Switch checked={fields.showCalcExport} />}
+                    onChange={() => toggleShowCalcExport()}
+                    label={`Show mhwilds-calculator export`} />
             </div>
 
             <Divider component="div" />

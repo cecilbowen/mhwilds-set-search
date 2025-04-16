@@ -333,6 +333,10 @@ tbody > tr {
   margin-left: 1em !important;
   margin-bottom: 1em !important;
 }
+.export-calc-button {
+  color: #f96af9 !important;
+  border-color: #f96af9 !important;
+}
 
 .def-total-holder {
   display: flex;

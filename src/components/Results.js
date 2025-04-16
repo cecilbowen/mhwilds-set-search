@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
-    armorNameFormat, copyTextToClipboard, formatSkillsDiff,
+    armorNameFormat, armorSetToCalculatorJSON, copyTextToClipboard, formatSkillsDiff,
     generateWikiString, getArmorDefenseFromName, getArmorDefenseFromNames,
     getArmorFromNames, getDecosFromNames,
     getSetUrl,
@@ -558,6 +558,17 @@ const Results = ({
             });
         };
 
+        const exportToCalculator = () => {
+            if (!selectedResult) { return; }
+
+            const data = armorSetToCalculatorJSON(selectedResult);
+            copyTextToClipboard(JSON.stringify(data), () => {
+                window.snackbar.createSnackbar(`Copied calculator export data to clipboard!`, {
+                    timeout: 3000
+                });
+            });
+        };
+
         const searchTargetTitle = isShiftPressed ? "Set only skills used to find this set as the search target" :
             "Set all skills from this set as the search target";
         const paperStyle = hasSelectedResult ? "full" : "empty";
@@ -604,6 +615,12 @@ const Results = ({
                     title={"Copy armor set url to clipboard"}
                     variant="outlined" color="info">
                     Share Set
+                </Button>}
+                {save && fields.showCalcExport && <Button className="save-set-button export-calc-button"
+                    onClick={exportToCalculator}
+                    title={"Copy armor set JSON data for mhwilds-calculator to clipboard"}
+                    variant="outlined" color="info">
+                    🧮 Export
                 </Button>}
                 {isCtrlPressed && isMouseInside && <Button className="save-set-button"
                     title="Search for these skills on the wiki armor set search instead"

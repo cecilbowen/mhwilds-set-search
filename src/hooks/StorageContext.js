@@ -38,6 +38,7 @@ const DEFAULTS = {
     showAll: true,
     showExtra: false,
     forceDesktop: false,
+    showCalcExport: false,
 };
 
 export const StorageProvider = ({ children }) => {

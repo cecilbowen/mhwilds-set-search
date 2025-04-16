@@ -294,6 +294,79 @@ export const removeUrlParam = key => {
     window.location.search = urlParams;
 };
 
+export const armorSetToCalculatorJSON = armorSet => {
+    const armor = getArmorFromNames(armorSet.armorNames);
+    const decosNeat = getDecosFromNames(armorSet.decoNames, false);
+    const decos = [];
+    for (const deco of decosNeat) {
+        for (let i = 0; i < deco.amount; i++) {
+            decos.push(deco);
+        }
+    }
+    const ret = {};
+
+    // this tool to calc tool type map
+    const typeMap = {
+        head: "helm",
+        chest: "body",
+        arms: "arms",
+        waist: "waist",
+        legs: "legs",
+        talisman: "charm"
+    };
+
+    const sortedDecos = [...decos].sort((a, b) => a.slotSize - b.slotSize); // smallest first
+    const decoSlots = [];
+    const slotPool = [...armorSet.slots].sort((a, b) => a - b);
+    for (const deco of sortedDecos) {
+        for (let i = 0; i < slotPool.length; i++) {
+            if (slotPool[i] >= deco.slotSize) {
+                decoSlots.push({
+                    name: deco.name,
+                    slotSize: deco.slotSize,
+                    slotSizeUsed: slotPool[i],
+                });
+                slotPool.splice(i, 1);
+                break;
+            }
+        }
+    }
+
+    for (const piece of armor) {
+        const type = { ...allArmor(), ...TALISMANS }[piece.name]?.type;
+        if (type === "talisman") { continue; } // talisman doesn't have slots
+        const typeName = `${typeMap[type]}Slots`;
+        const slots = [...piece.slots].sort((a, b) => a - b);
+        for (const slot of slots) {
+            for (const deco of decoSlots) {
+                if (deco.slotSizeUsed === slot && !deco.used) {
+                    deco.used = true;
+                    const split = deco.name.split(" ");
+                    split.splice(split.length - 1, 1);
+                    const formatted = `${split.join(" ")} [${deco.slotSize}]`.replaceAll("-", "/");
+                    ret[typeName] = ret[typeName] || [];
+                    ret[typeName].push(formatted);
+                    break;
+                }
+            }
+        }
+    }
+
+    for (const piece of armor) {
+        const type = { ...allArmor(), ...TALISMANS }[piece.name]?.type;
+        if (type && !ret[typeMap[type]]) {
+            ret[typeMap[type]] = armorNameFormat(piece.name);
+        }
+    }
+    ret.weapon = {
+        name: "Varianza",
+        type: "Great Sword"
+    };
+
+    // console.log("calculator json", ret);
+    return ret;
+};
+
 // string to unique id
 export const stringToId = str => {
     let hash = 0;
