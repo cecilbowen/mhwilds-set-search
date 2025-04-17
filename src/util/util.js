@@ -334,6 +334,9 @@ export const armorSetToCalculatorJSON = armorSet => {
 
     for (const piece of armor) {
         const type = { ...allArmor(), ...TALISMANS }[piece.name]?.type;
+        if (type && !ret[typeMap[type]]) {
+            ret[typeMap[type]] = armorNameFormat(piece.name).replace("G ", "G. ");
+        }
         if (type === "talisman") { continue; } // talisman doesn't have slots
         const typeName = `${typeMap[type]}Slots`;
         const slots = [...piece.slots].sort((a, b) => a - b);
@@ -343,21 +346,28 @@ export const armorSetToCalculatorJSON = armorSet => {
                     deco.used = true;
                     const split = deco.name.split(" ");
                     split.splice(split.length - 1, 1);
+
+                    // hyphens are only used in weapon decos currently, so it doesn't REALLY matter here to replace them
                     const formatted = `${split.join(" ")} [${deco.slotSize}]`.replaceAll("-", "/");
                     ret[typeName] = ret[typeName] || [];
                     ret[typeName].push(formatted);
+                    ret[typeName].sort((a, b) => {
+                        // since mhwilds-calculator's slots are in an ordered array
+                        // eg, first item in slot array MUST match first (left-to-right) slot in armor piece
+                        // so we sort the slots in descending order
+                        const matchA = a.match(/\[(\d+)\]/);
+                        const aSlot = matchA ? parseInt(matchA[1], 10) : null;
+                        const matchB = b.match(/\[(\d+)\]/);
+                        const bSlot = matchB ? parseInt(matchB[1], 10) : null;
+
+                        return bSlot - aSlot;
+                    });
                     break;
                 }
             }
         }
     }
 
-    for (const piece of armor) {
-        const type = { ...allArmor(), ...TALISMANS }[piece.name]?.type;
-        if (type && !ret[typeMap[type]]) {
-            ret[typeMap[type]] = armorNameFormat(piece.name);
-        }
-    }
     ret.weapon = {
         name: "Varianza",
         type: "Great Sword"
