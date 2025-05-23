@@ -159,19 +159,12 @@ export const getBestArmor = (
         }
     }
 
-    // Optimized set/group skills processing
-    const groupiesAlt = {};
-    for (const [name, data] of Object.entries(dataFile)) {
-        if (isInSets(data, setSkills) || isInGroups(data, groupSkills)) {
-            groupiesAlt[name] = data;
-        }
-    }
-
-    // Reuse pre-sorted data
-    const sortedGroupies = Object.fromEntries(
-        Object.entries(groupiesAlt).sort((a, b) =>
-            slottageSizeCompare(a[1][3], b[1][3], b[1][4] - a[1][4])
-        )
+    // now handle set/group skills
+    const groupiesAlt = Object.fromEntries(Object.entries(dataFile)
+        .filter(([k, v]) => isInSets(v, setSkills) || isInGroups(v, groupSkills))
+        .sort((a, b) => {
+            return slottageSizeCompare(a[1][3], b[1][3], b[1][4] - a[1][4]);
+        })
     );
 
     totalMaxSkillPotential = {};
@@ -245,23 +238,15 @@ export const getBestArmor = (
         }
     }
 
-    // Optimized final sorting using existing armorTypes array
-    for (let i = 0; i < armorTypes.length; i++) {
-        const cat = armorTypes[i];
+    // sort final return armor by slottage
+    for (const [cat, armor] of Object.entries(bareMinimum)) {
         if (["decos", "talisman"].includes(cat)) {
             continue;
         }
-
-        const armor = bareMinimum[cat];
-        if (!armor || Object.keys(armor).length === 0) {
-            continue;
-        }
-
-        const sortedEntries = Object.entries(armor).sort((a, b) =>
-            slottageLengthCompare(a[1][3], b[1][3])
+        const sorted = Object.fromEntries(Object.entries(armor)
+            .sort((a, b) => slottageLengthCompare(a[1][3], b[1][3]))
         );
-
-        bareMinimum[cat] = Object.fromEntries(sortedEntries);
+        bareMinimum[cat] = sorted;
     }
 
     if (DEBUG && CHOSEN_ARMOR_DEBUG) {
