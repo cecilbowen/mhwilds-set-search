@@ -32,3 +32,8 @@
 * Title Update 1 content should be all added by now
 * Added "Share Set" button to saved sets allowing sharing of set URLs with others
 * Re-factored a lot of data behind-the-scenes
+
+7/1/2025:
+
+* Title Update 2 content first pass update
+* Update Duna armor set names to match in-game (eg, Duna Coil ->  Duna Wildcoil, etc.)
