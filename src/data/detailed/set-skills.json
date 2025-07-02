@@ -219,11 +219,11 @@
             4
         ],
         "armor": [
-            "Duna Coil",
-            "Duna Greaves",
-            "Duna Helm",
-            "Duna Mail",
-            "Duna Vambraces",
+            "Duna Wildcoil",
+            "Duna Wildgreaves",
+            "Duna Wildhelm",
+            "Duna Wildmail",
+            "Duna Wildbraces",
             "Duna Wildbraces Alpha",
             "Duna Wildbraces Beta",
             "Duna Wildcoil Alpha",
@@ -460,6 +460,73 @@
             "Sakuratide Bracers Alpha",
             "Sakuratide Obi Alpha",
             "Sakuratide Hakama Alpha"
+        ]
+    },
+    "Leviathan's Fury": {
+        "skill": "Leviathan's Fury",
+        "description": "Temporarily increases affinity and can deal extra thunder damage upon buildup. (Excludes some attacks.)",
+        "levels": [
+            "Temporarily increases affinity and can deal extra thunder damage upon buildup. (Excludes some attacks.)",
+            "Further increases additional thunder damage and moderately extends the duration affinity is increased."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Lagiacrus Helm Alpha",
+            "Lagiacrus Mail Alpha",
+            "Lagiacrus Braces Alpha",
+            "Lagiacrus Coil Alpha",
+            "Lagiacrus Greaves Alpha",
+            "Lagiacrus Helm Beta",
+            "Lagiacrus Mail Beta",
+            "Lagiacrus Braces Beta",
+            "Lagiacrus Coil Beta",
+            "Lagiacrus Greaves Beta"
+        ]
+    },
+    "Seregios's Tenacity": {
+        "skill": "Seregios's Tenacity",
+        "description": "Extends the duration of Adrenaline Rush. If triggered again while the skill is active, extends the effect duration once.",
+        "levels": [
+            "Extends the duration of Adrenaline Rush. If triggered again while the skill is active, extends the effect duration once.",
+            "Additionally, if triggered again while the skill is active, further increases attack."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Regios Helm Alpha",
+            "Regios Mail Alpha",
+            "Regios Vambraces Alpha",
+            "Regios Coil Alpha",
+            "Regios Greaves Alpha",
+            "Regios Helm Beta",
+            "Regios Mail Beta",
+            "Regios Vambraces Beta",
+            "Regios Coil Beta",
+            "Regios Greaves Beta"
+        ]
+    },
+    "Flamefete Prayer": {
+        "skill": "Flamefete Prayer",
+        "description": "During Flamefete, adds special items to quest rewards. (No effect when joining mid-quest.)",
+        "levels": [
+            "During Flamefete, adds special items to quest rewards. (No effect when joining mid-quest.)",
+            "During Flamefete, adds special items to quest rewards, and greatly boosts attack and defense."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Afi Crown Alpha",
+            "Afi Top Alpha",
+            "Afi Armguards Alpha",
+            "Afi Wrap Alpha",
+            "Afi Sandals Alpha"
         ]
     }
 }

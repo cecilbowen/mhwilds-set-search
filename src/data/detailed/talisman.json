@@ -119,6 +119,13 @@
         },
         "type": "talisman"
     },
+    "Unscathed Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Peak Performance": 3
+        }
+    },
     "Fury Charm I": {
         "rarity": 5,
         "effect": "A charm that grants the Resentment skill.",
@@ -190,6 +197,13 @@
             "Maximum Might": 2
         },
         "type": "talisman"
+    },
+    "Mighty Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Maximum Might": 3
+        }
     },
     "Surge Charm I": {
         "rarity": 4,
@@ -903,6 +917,13 @@
         },
         "type": "talisman"
     },
+    "Friendship Charm V": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Wide-Range": 5
+        }
+    },
     "Light Eater's Charm I": {
         "rarity": 4,
         "effect": "A charm that grants the Free Meal skill.",
@@ -950,6 +971,13 @@
             "Heroics": 3
         },
         "type": "talisman"
+    },
+    "Grit Charm IV": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Heroics": 4
+        }
     },
     "Impact Charm I": {
         "rarity": 3,
@@ -1086,6 +1114,13 @@
             "Adrenaline Rush": 2
         },
         "type": "talisman"
+    },
+    "Counterattack Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Adrenaline Rush": 3
+        }
     },
     "Descent Charm I": {
         "rarity": 4,
@@ -1271,6 +1306,13 @@
         },
         "type": "talisman"
     },
+    "Imbibe Charm II": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Elemental Absorption": 2
+        }
+    },
     "Convert Charm I": {
         "rarity": 7,
         "effect": "A charm that grants the Convert Element skill.",
@@ -1319,5 +1361,19 @@
             "Recovery Up": 1
         },
         "type": "talisman"
+    },
+    "Maintenance Charm IV": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Tool Specialist": 4
+        }
+    },
+    "Rice Ball Charm": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Rice Ball": 1
+        }
     }
 }

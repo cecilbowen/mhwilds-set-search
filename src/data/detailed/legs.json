@@ -324,22 +324,23 @@
         "dragonResistance": 0,
         "setSkill": ""
     },
-    "Duna Greaves": {
-        "type": "legs",
-        "slots": [],
-        "skills": {
-            "Peak Performance": 1
-        },
-        "groupSkill": "Lord's Favor",
-        "rarity": 4,
+    "Duna Wildgreaves": {
+        "description": "Elaborately patterned Uth Duna leg armor. The design is said to invoke the forest's protection.",
         "rank": "low",
+        "type": "legs",
         "defense": 26,
         "fireResistance": -1,
         "waterResistance": 4,
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "slots": [],
+        "skills": {
+            "Peak Performance": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Rey Sandgreaves": {
         "type": "legs",
@@ -2220,6 +2221,88 @@
         "iceResistance": 0,
         "dragonResistance": -4
     },
+    "Lagiacrus Greaves Alpha": {
+        "description": "Leg armor made from Lagiacrus parts. It sharpens the wearer's senses and draws out latent abilities.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [],
+        "skills": {
+            "Weakness Exploit": 2,
+            "Latent Power": 1,
+            "Thunder Resistance": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Lagiacrus Greaves Beta": {
+        "description": "Leg armor made from Lagiacrus parts. It sharpens the wearer's senses and draws out latent abilities.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 2,
+            "Latent Power": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Regios Greaves Alpha": {
+        "description": "Seregios leg armor. A shining army tramples a thousand lands underfoot and walks the path to glory.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Agitator": 1,
+            "Bleeding Resistance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
+    "Regios Greaves Beta": {
+        "description": "Seregios leg armor. A shining army tramples a thousand lands underfoot and walks the path to glory.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Agitator": 1
+        },
+        "groupSkill": "Scale Layering",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
     "Rey Sandgreaves Gamma": {
         "description": "Leg armor made from special Rey Dau materials. The azure greaves evoke the independence of the Arch-tempered.",
         "rank": "high",
@@ -2240,6 +2323,29 @@
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
         "rarity": 8
+    },
+    "Duna Wildgreaves Gamma": {
+        "description": "Leg armor made from special Uth Duna materials. The vibrant patterns evoke the independence of the Arch-tempered.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Quick Sheathe": 3,
+            "Agitator": 1
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Sakuratide Hakama Alpha": {
         "description": "Blossomdance Ticket leg armor. It embodies the allure of resplendent warriors from spring sunrises past.",
@@ -2281,6 +2387,73 @@
             "Recovery Speed": 2
         },
         "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Afi Sandals Alpha": {
+        "description": "Flamefete Ticket leg armor. They dance breezily in the midsummer heat, sending prayers with every step and twirl.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Burst": 1,
+            "Bombardier": 1,
+            "Blast Resistance": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Flamefete Prayer",
+        "rarity": 1
+    },
+    "Diver's Boots Alpha": {
+        "description": "Diving Ticket leg armor. Footwear that lets you move so fast underwater, your hunts will never go belly up.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 4,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1,
+            "Marathon Runner": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Demon Pants Alpha": {
+        "description": "Pants worn by a demon of combat who treads through even the holiest of domains. (Full Armor Set)",
+        "rank": "high",
+        "type": "legs",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 3,
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Partbreaker": 1
+        },
+        "groupSkill": "Master of the Fist",
         "setSkill": "",
         "rarity": 1
     }

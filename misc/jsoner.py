@@ -717,7 +717,7 @@ def update_compact_data():
 # =================================================================
 
 # format_all_jsons() # this was really a run one-time-only thing to convert old list format to map
-pull_kiranico_data(pull_armor=True)
+pull_kiranico_data(True, True, True)
 update_detailed_data()
 update_compact_data()
 

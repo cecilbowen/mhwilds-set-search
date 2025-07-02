@@ -505,6 +505,54 @@
             "Activates skill effect. (When used with Scorcher, does not stack but adds extra fire damage.)"
         ]
     },
+    "Convert Thunder Resistance": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Increase to your weapon's elemental attack proportional to your thunder resistance.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
+    "Bladescale Honing": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Narrowly evading a monster's attack while your weapon is drawn grants special sharpness.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
+    "Bladescale Loading": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Narrowly evading a monster's attack while your weapon is drawn grants special loaded ammo or applied coatings.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
+    "Power Stone": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Temporarily increases attack upon mining materials.",
+        "levels": [
+            "Mining particularly rare materials greatly increases attack. (Attack increase has a maximum limit.)"
+        ]
+    },
+    "Crackling Cornpopper": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Increases shelling power and fire attack while overheated.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
+    "Evading Reload": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Evading loads the currently selected ammo automatically.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
     "Resentment": {
         "type": "armor",
         "icon": "attack",
@@ -1219,6 +1267,14 @@
         "description": "Improves fishing, grilling, and transporting abilities.",
         "levels": [
             "Improves fishing, grilling, and transporting abilities."
+        ]
+    },
+    "Rice Ball": {
+        "icon": "",
+        "type": "armor",
+        "description": "Increases the attack power of Akuma actions and stun damage.",
+        "levels": [
+            "Activates skill effect."
         ]
     }
 }

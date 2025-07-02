@@ -307,8 +307,16 @@
         "dragonResistance": 0,
         "setSkill": ""
     },
-    "Duna Mail": {
+    "Duna Wildmail": {
+        "description": "Uth Duna chest armor. The tightly fitted scales make the wearer feel as if they are one with nature.",
+        "rank": "low",
         "type": "chest",
+        "defense": 26,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
         "slots": [
             1
         ],
@@ -316,15 +324,8 @@
             "Peak Performance": 1
         },
         "groupSkill": "Lord's Favor",
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Rey Sandmail": {
         "type": "chest",
@@ -2185,6 +2186,96 @@
         "iceResistance": 0,
         "dragonResistance": -4
     },
+    "Lagiacrus Mail Alpha": {
+        "description": "Chest armor made from Lagiacrus parts. Its snug, azure plating has the power to fend off any impact.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Stamina Surge": 1,
+            "Thunder Resistance": 2
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Lagiacrus Mail Beta": {
+        "description": "Chest armor made from Lagiacrus parts. Its snug, azure plating has the power to fend off any impact.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Stamina Surge": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Regios Mail Alpha": {
+        "description": "Seregios chest armor. A shining army bearing a thousand souls emerges from the heated battle as victors.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Evade Window": 2,
+            "Agitator": 1,
+            "Counterstrike": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
+    "Regios Mail Beta": {
+        "description": "Seregios chest armor. A shining army bearing a thousand souls emerges from the heated battle as victors.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Evade Window": 2,
+            "Agitator": 1
+        },
+        "groupSkill": "Scale Layering",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
     "Rey Sandmail Gamma": {
         "description": "Chest armor made from special Rey Dau materials. The azure armor evokes the valor of the Arch-tempered.",
         "rank": "high",
@@ -2204,6 +2295,25 @@
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
         "rarity": 8
+    },
+    "Duna Wildmail Gamma": {
+        "description": "Chest armor made from special Uth Duna materials. The vibrant scales evoke the valor of the Arch-tempered.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [],
+        "skills": {
+            "Peak Performance": 3,
+            "Earplugs": 2
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Sakuratide Robe Alpha": {
         "description": "Blossomdance Ticket chest armor. It embodies the spirit of resplendent warriors from spring sunrises past.",
@@ -2245,6 +2355,110 @@
             "Paralysis Resistance": 1
         },
         "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Afi Top Alpha": {
+        "description": "Flamefete Ticket chest armor. It's adorned with fiery designs that stand out in the midsummer heat, enlivening the festivities.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Burst": 1,
+            "Heroics": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Flamefete Prayer",
+        "rarity": 1
+    },
+    "Diver's Suit Alpha": {
+        "description": "Diving Ticket chest armor. Swimwear made with materials that fit tight to the body to ensure swimming is never a drag.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 4,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Hunger Resistance": 2,
+            "Leap of Faith": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Demon Garb Alpha": {
+        "description": "Garb worn by a demon of combat who bears the weight of heaven on his back. (Full Armor Set)",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 3,
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Heroics": 3
+        },
+        "groupSkill": "Master of the Fist",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Pinion Necklace Alpha": {
+        "description": "A necklace made with a single, beautiful feather. Like the bird in the expedition's emblem, it serves as a guide to hunters.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 60,
+        "fireResistance": 0,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [],
+        "skills": {
+            "Heroics": 2,
+            "Agitator": 1
+        },
+        "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Hawkheart Jacket Alpha": {
+        "description": "A jacket harboring Gemma's adventurous spirit. Wearing it serves as a gentle reminder that she'll always have your back.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 48,
+        "fireResistance": 0,
+        "waterResistance": 0,
+        "thunderResistance": 0,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Constitution": 4,
+            "Quick Sheathe": 2
+        },
+        "groupSkill": "",
         "setSkill": "",
         "rarity": 1
     }

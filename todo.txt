@@ -16,6 +16,7 @@ make slot filters jump to front when text searching them in the skill picker
 on deco inventory page, make red "you've got less of this deco than normal" highlight dynamic as you
     edit the input fields, not only on blur 
 get python back on parity with js (low priority)
+prepare for TU3 when randomized talismans (PTSD intensifies...) becomes a thing (probably similar to decorations inventory, but talismans)
 
 
 MAYBE: 

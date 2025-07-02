@@ -312,23 +312,24 @@
         "setSkill": "",
         "rarity": 4
     },
-    "Duna Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Tool Specialist": 1,
-            "Aquatic/Oilsilt Mobility": 1
-        },
-        "groupSkill": "Lord's Favor",
-        "rarity": 4,
+    "Duna Wildcoil": {
+        "description": "Uth Duna waistgear. The fabric is imbued with the breath of the forest, absorbing any impact.",
         "rank": "low",
+        "type": "waist",
         "defense": 26,
         "fireResistance": -1,
         "waterResistance": 4,
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "slots": [],
+        "skills": {
+            "Tool Specialist": 1,
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Rey Sandcoil": {
         "type": "waist",
@@ -2173,6 +2174,98 @@
         "iceResistance": 0,
         "dragonResistance": -4
     },
+    "Lagiacrus Coil Alpha": {
+        "description": "Waistgear made from Lagiacrus parts. Its heavy plating boasts exceptional resistance and is a true emblem of honor.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Maximum Might": 1,
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Lagiacrus Coil Beta": {
+        "description": "Waistgear made from Lagiacrus parts. Its heavy plating boasts exceptional resistance and is a true emblem of honor.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Maximum Might": 1
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Regios Coil Alpha": {
+        "description": "Seregios waistgear. A shining army claims victory in a thousand wars and brings their conquest to the ends of the earth.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Evade Window": 2,
+            "Agitator": 1,
+            "Bleeding Resistance": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
+    "Regios Coil Beta": {
+        "description": "Seregios waistgear. A shining army claims victory in a thousand wars and brings their conquest to the ends of the earth.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Evade Window": 1,
+            "Agitator": 1
+        },
+        "groupSkill": "Scale Layering",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
     "Rey Sandcoil Gamma": {
         "description": "Waist armor made from special Rey Dau materials. The azure design evokes the fortitude of the Arch-tempered.",
         "rank": "high",
@@ -2191,6 +2284,27 @@
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
         "rarity": 8
+    },
+    "Duna Wildcoil Gamma": {
+        "description": "Waist armor made from special Uth Duna materials. The vibrant fabric evokes the fortitude of the Arch-tempered.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            3
+        ],
+        "skills": {
+            "Tool Specialist": 2
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Sakuratide Obi Alpha": {
         "description": "Blossomdance Ticket waistgear. It embodies the determination of resplendent warriors from spring sunrises past.",
@@ -2233,6 +2347,70 @@
             "Recovery Speed": 1
         },
         "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Afi Wrap Alpha": {
+        "description": "Flamefete Ticket waistgear. Its strikingly vibrant colors flutter in the midsummer heat, painting the wind.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [],
+        "skills": {
+            "Burst": 1,
+            "Blast Resistance": 2,
+            "Fire Resistance": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Flamefete Prayer",
+        "rarity": 1
+    },
+    "Diver's Belt Alpha": {
+        "description": "Diving Ticket waistgear. As versatile as it is stylish, no underwater adventure is complete without this utility belt.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 4,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1,
+            "Hunger Resistance": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Demon Belt Alpha": {
+        "description": "The belt worn by a demon of combat who lives for brutal duels to the death. (Full Armor Set)",
+        "rank": "high",
+        "type": "waist",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 3,
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Evade Window": 2
+        },
+        "groupSkill": "Master of the Fist",
         "setSkill": "",
         "rarity": 1
     }

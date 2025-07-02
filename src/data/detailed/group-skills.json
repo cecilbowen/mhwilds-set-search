@@ -363,11 +363,11 @@
             "Dahaad Shardgreaves Alpha",
             "Dahaad Shardhelm Alpha",
             "Dahaad Shardmail Alpha",
-            "Duna Coil",
-            "Duna Greaves",
-            "Duna Helm",
-            "Duna Mail",
-            "Duna Vambraces",
+            "Duna Wildcoil",
+            "Duna Wildgreaves",
+            "Duna Wildhelm",
+            "Duna Wildmail",
+            "Duna Wildbraces",
             "Duna Wildbraces Alpha",
             "Duna Wildcoil Alpha",
             "Duna Wildgreaves Alpha",
@@ -586,6 +586,19 @@
             "Rey Sandbraces Gamma",
             "Rey Sandcoil Gamma",
             "Rey Sandgreaves Gamma"
+        ]
+    },
+    "Master of the Fist": {
+        "skill": "Master of the Fist",
+        "description": "Increases power of special actions. Drive Impacts can trigger offset attacks. Further increases power of offset attacks.",
+        "effect": "Increases power of special actions. Drive Impacts can trigger offset attacks. Further increases power of offset attacks.",
+        "pieces": 3,
+        "armor": [
+            "Demon Prayer Beads Alpha",
+            "Demon Garb Alpha",
+            "Demon Arm Wraps Alpha",
+            "Demon Belt Alpha",
+            "Demon Pants Alpha"
         ]
     },
     "Festival Spirit": {

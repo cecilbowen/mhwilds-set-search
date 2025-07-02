@@ -308,8 +308,16 @@
         "dragonResistance": 0,
         "setSkill": ""
     },
-    "Duna Vambraces": {
+    "Duna Wildbraces": {
+        "description": "Uth Duna armguards. The rows of stone beading are an elegant touch that boosts concentration.",
+        "rank": "low",
         "type": "arms",
+        "defense": 26,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
         "slots": [
             1
         ],
@@ -317,15 +325,8 @@
             "Tool Specialist": 1
         },
         "groupSkill": "Lord's Favor",
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Rey Sandbraces": {
         "type": "arms",
@@ -2133,6 +2134,91 @@
         "iceResistance": 0,
         "dragonResistance": -4
     },
+    "Lagiacrus Braces Alpha": {
+        "description": "Armguards made from Lagiacrus parts. Made with all the force of the leviathan, eclipsing standard equipment.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Stamina Surge": 2,
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Lagiacrus Braces Beta": {
+        "description": "Armguards made from Lagiacrus parts. Made with all the force of the leviathan, eclipsing standard equipment.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Stamina Surge": 2
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Regios Vambraces Alpha": {
+        "description": "Seregios armguards. A shining army routs a thousand foes and celebrates their newfound glory.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Evade Extender": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
+    "Regios Vambraces Beta": {
+        "description": "Seregios armguards. A shining army routs a thousand foes and celebrates their newfound glory.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Adrenaline Rush": 2
+        },
+        "groupSkill": "Scale Layering",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
     "Rey Sandbraces Gamma": {
         "description": "Armguards made from special Rey Dau materials. The azure gauntlets evoke the ambition of the Arch-tempered.",
         "rank": "high",
@@ -2153,6 +2239,27 @@
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
         "rarity": 8
+    },
+    "Duna Wildbraces Gamma": {
+        "description": "Armguards made from special Uth Duna materials. The vibrant beads evoke the ambition of the Arch-tempered.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 68,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Tool Specialist": 3,
+            "Agitator": 1
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Sakuratide Bracers Alpha": {
         "description": "Blossomdance Ticket armguards. They embody the virtue of resplendent warriors from spring sunrises past.",
@@ -2195,6 +2302,90 @@
             "Poison Resistance": 2
         },
         "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Afi Armguards Alpha": {
+        "description": "Flamefete Ticket armguards. They're imbued with blessed fire to be raised up in the midsummer heat, illuminating the people.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Burst": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Flamefete Prayer",
+        "rarity": 1
+    },
+    "Diver's Braces Alpha": {
+        "description": "Diving Ticket armguards. The device on the right arm is built to function under pressure\u2014 just like you.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 4,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Ambush": 1,
+            "Marathon Runner": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Demon Arm Wraps Alpha": {
+        "description": "Arm wraps worn by a demon of combat that contain the malefic powers of the Satsui no Hado. (Full Armor Set)",
+        "rank": "high",
+        "type": "arms",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 3,
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Partbreaker": 1
+        },
+        "groupSkill": "Master of the Fist",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Toe Bean Mittens Alpha": {
+        "description": "Purr-fectly replicated Palico paws that allow you to wield both your weapon and the power of unbearable cuteness at once.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 60,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Item Prolonger": 3,
+            "Bombardier": 3
+        },
+        "groupSkill": "",
         "setSkill": "",
         "rarity": 1
     }

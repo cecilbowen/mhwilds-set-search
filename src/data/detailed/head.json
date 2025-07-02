@@ -324,23 +324,24 @@
         "dragonResistance": 0,
         "setSkill": ""
     },
-    "Duna Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Peak Performance": 1,
-            "Tool Specialist": 1
-        },
-        "groupSkill": "Lord's Favor",
-        "rarity": 4,
+    "Duna Wildhelm": {
+        "description": "Uth Duna head armor. The plumage crafted from its fins convey the forest's will to the wearer.",
         "rank": "low",
+        "type": "head",
         "defense": 26,
         "fireResistance": -1,
         "waterResistance": 4,
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "slots": [],
+        "skills": {
+            "Peak Performance": 1,
+            "Tool Specialist": 1
+        },
+        "groupSkill": "Lord's Favor",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Rey Sandhelm": {
         "type": "head",
@@ -2299,6 +2300,95 @@
         "iceResistance": 0,
         "dragonResistance": -4
     },
+    "Lagiacrus Helm Alpha": {
+        "description": "A helmet made from Lagiacrus parts. Its deep azure reflects the glory of besting the Lord of the Seas.",
+        "rank": "high",
+        "type": "head",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Maximum Might": 2,
+            "Latent Power": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Lagiacrus Helm Beta": {
+        "description": "A helmet made from Lagiacrus parts. Its deep azure reflects the glory of besting the Lord of the Seas.",
+        "rank": "high",
+        "type": "head",
+        "defense": 64,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": -1,
+        "dragonResistance": -2,
+        "slots": [
+            3,
+            2,
+            1
+        ],
+        "skills": {
+            "Maximum Might": 2
+        },
+        "groupSkill": "Buttery Leathercraft",
+        "setSkill": "Leviathan's Fury",
+        "rarity": 1
+    },
+    "Regios Helm Alpha": {
+        "description": "Seregios head armor. A shining army adorned with a thousand merits returns home, resplendent in the morning sun.",
+        "rank": "high",
+        "type": "head",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Adrenaline Rush": 1,
+            "Bleeding Resistance": 1,
+            "Counterstrike": 1
+        },
+        "groupSkill": "Scaling Prowess",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
+    "Regios Helm Beta": {
+        "description": "Seregios head armor. A shining army adorned with a thousand merits returns home, resplendent in the morning sun.",
+        "rank": "high",
+        "type": "head",
+        "defense": 64,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Adrenaline Rush": 1,
+            "Bleeding Resistance": 1
+        },
+        "groupSkill": "Scale Layering",
+        "setSkill": "Seregios's Tenacity",
+        "rarity": 1
+    },
     "Rey Sandhelm Gamma": {
         "description": "Head armor made from special Rey Dau materials. The azure horns evoke the dignity of the Arch-tempered.",
         "rank": "high",
@@ -2320,6 +2410,28 @@
         "groupSkill": "Lord's Soul",
         "setSkill": "Rey Dau's Voltage",
         "rarity": 8
+    },
+    "Duna Wildhelm Gamma": {
+        "description": "Head armor made from special Uth Duna materials. The vibrant plumage evokes the dignity of the Arch-tempered.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": -1,
+        "waterResistance": 4,
+        "thunderResistance": -3,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Earplugs": 1
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Uth Duna's Cover",
+        "rarity": 1
     },
     "Sakuratide Headgear Alpha": {
         "description": "Blossomdance Ticket headgear. It embodies the vigor of resplendent warriors from spring sunrises past.",
@@ -2358,6 +2470,69 @@
             "Paralysis Resistance": 2
         },
         "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Afi Crown Alpha": {
+        "description": "Flamefete Ticket headgear. Its flames dance in the midsummer heat, flames rising ever higher.",
+        "rank": "high",
+        "type": "head",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": -3,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Bombardier": 2,
+            "Fire Resistance": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Flamefete Prayer",
+        "rarity": 1
+    },
+    "Diver's Mask Alpha": {
+        "description": "Diving Ticket headgear. This underwater equipment will have you ready to dive in head first!",
+        "rank": "high",
+        "type": "head",
+        "defense": 36,
+        "fireResistance": 1,
+        "waterResistance": 4,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Ambush": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Demon Prayer Beads Alpha": {
+        "description": "Prayer beads worn by a demon of combat who burns to become the ultimate master of the fist. (Full Armor Set)",
+        "rank": "high",
+        "type": "head",
+        "defense": 48,
+        "fireResistance": 3,
+        "waterResistance": -2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 3,
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "skills": {
+            "Partbreaker": 1
+        },
+        "groupSkill": "Master of the Fist",
         "setSkill": "",
         "rarity": 1
     },
@@ -2541,6 +2716,84 @@
         },
         "groupSkill": "",
         "setSkill": "",
+        "rarity": 1
+    },
+    "Faux Felyne Alpha": {
+        "description": "A Felyne mask. The fur is specially crafted to look just like the real thing.",
+        "rank": "high",
+        "type": "head",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [],
+        "skills": {
+            "Palico Rally": 5
+        },
+        "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Half Rim Glasses Alpha": {
+        "description": "Refreshingly stylish glasses with frames that don't obscure your field of vision. Now you can look sophisticated on and off the hunt.",
+        "rank": "high",
+        "type": "head",
+        "defense": 48,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Wide-Range": 5
+        },
+        "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Lovely Shades Alpha": {
+        "description": "Glasses with stylish yet adorable frames that are hard not to love. Now you can show everyone your undying passion for hunting.",
+        "rank": "high",
+        "type": "head",
+        "defense": 48,
+        "fireResistance": 4,
+        "waterResistance": 0,
+        "thunderResistance": 4,
+        "iceResistance": 0,
+        "dragonResistance": 2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Mushroomancer": 3
+        },
+        "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Doshagumask Alpha": {
+        "description": "An uncanny replica Doshaguma head. The mask might be fake, but the intimidating aura it exudes is as real as it gets.",
+        "rank": "high",
+        "type": "head",
+        "defense": 48,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 4,
+        "slots": [],
+        "skills": {
+            "Latent Power": 2,
+            "Stamina Surge": 1,
+            "Recovery Up": 1
+        },
+        "groupSkill": "Fortifying Pelt",
+        "setSkill": "Doshaguma's Might",
         "rarity": 1
     }
 }
