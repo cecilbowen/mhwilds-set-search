@@ -36,4 +36,9 @@
 7/1/2025:
 
 * Title Update 2 content first pass update
-* Update Duna armor set names to match in-game (eg, Duna Coil ->  Duna Wildcoil, etc.)
+* Updated Duna armor set names to match in-game (eg, Duna Coil ->  Duna Wildcoil, etc.)
+
+10/23/2025:
+
+* Title Update 3 content
+* Mental preparation for adding RNG talisman change to tool

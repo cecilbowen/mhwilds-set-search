@@ -2261,6 +2261,28 @@
         "setSkill": "Uth Duna's Cover",
         "rarity": 1
     },
+    "Udra Mirebraces Gamma": {
+        "description": "Armguards made from special Nu Udra materials. The undulating crimson gloves evoke the ambition of the Arch-tempered.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 68,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Resentment": 3
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Nu Udra's Mutiny",
+        "rarity": 1
+    },
     "Sakuratide Bracers Alpha": {
         "description": "Blossomdance Ticket armguards. They embody the virtue of resplendent warriors from spring sunrises past.",
         "rank": "high",
@@ -2346,6 +2368,48 @@
         "setSkill": "",
         "rarity": 1
     },
+    "Dreamwalker Braces Alpha": {
+        "description": "Dreamspell Ticket armguards. Pale fingertips trace one's neck, leaving the bite of autumn wind in their wake.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Flayer": 1,
+            "Sleep Resistance": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Dreamspell Prayer",
+        "rarity": 1
+    },
+    "Harvest Trama Alpha": {
+        "description": "Harvest Ticket armguards. Pumpkins reinforced with a special potion house the spirits of the dead.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 36,
+        "fireResistance": 4,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [],
+        "skills": {
+            "Constitution": 2,
+            "Mushroomancer": 1,
+            "Free Meal": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
     "Demon Arm Wraps Alpha": {
         "description": "Arm wraps worn by a demon of combat that contain the malefic powers of the Satsui no Hado. (Full Armor Set)",
         "rank": "high",
@@ -2366,6 +2430,50 @@
         },
         "groupSkill": "Master of the Fist",
         "setSkill": "",
+        "rarity": 1
+    },
+    "Bale Gauntlets Alpha": {
+        "description": "Armguards worn by a dark knight. Shadowy proof of those who seek justice at all costs.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 68,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Latent Power": 1,
+            "Maximum Might": 1,
+            "Resentment": 1
+        },
+        "groupSkill": "",
+        "setSkill": "Soul of the Dark Knight",
+        "rarity": 1
+    },
+    "Omega Vambraces Alpha": {
+        "description": "Armguards fashioned after the apex of autonomous weaponry. Analyze all possible threats.",
+        "rank": "high",
+        "type": "arms",
+        "defense": 68,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": -2,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "",
+        "setSkill": "Omega Resonance",
         "rarity": 1
     },
     "Toe Bean Mittens Alpha": {

@@ -2347,6 +2347,28 @@
         "setSkill": "Uth Duna's Cover",
         "rarity": 1
     },
+    "Udra Miregreaves Gamma": {
+        "description": "Leg armor made from special Nu Udra materials. The undulating crimson sheathing evokes the autonomy of the Arch-tempered.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Resentment": 2,
+            "Counterstrike": 1,
+            "Speed Eating": 3
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Nu Udra's Mutiny",
+        "rarity": 1
+    },
     "Sakuratide Hakama Alpha": {
         "description": "Blossomdance Ticket leg armor. It embodies the allure of resplendent warriors from spring sunrises past.",
         "rank": "high",
@@ -2435,6 +2457,49 @@
         "setSkill": "",
         "rarity": 1
     },
+    "Dreamwalker Greaves Alpha": {
+        "description": "Dreamspell Ticket leg armor. The sound of wandering footsteps stirs the souls lost in the bitter autumn night.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Flayer": 1,
+            "Wide-Range": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Dreamspell Prayer",
+        "rarity": 1
+    },
+    "Harvest Raiz Alpha": {
+        "description": "Harvest Ticket leg armor. Spirits of the dead beneath the earth will warn the wearer of impending danger.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 36,
+        "fireResistance": 4,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Constitution": 2,
+            "Botanist": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
     "Demon Pants Alpha": {
         "description": "Pants worn by a demon of combat who treads through even the holiest of domains. (Full Armor Set)",
         "rank": "high",
@@ -2455,6 +2520,48 @@
         },
         "groupSkill": "Master of the Fist",
         "setSkill": "",
+        "rarity": 1
+    },
+    "Bale Sollerets Alpha": {
+        "description": "Leg armor worn by a dark knight. Shadowy proof of those who protect others even at their own expense.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Latent Power": 2
+        },
+        "groupSkill": "",
+        "setSkill": "Soul of the Dark Knight",
+        "rarity": 1
+    },
+    "Omega Boots Alpha": {
+        "description": "Leg armor fashioned after the apex of autonomous weaponry. Their wearer's journey is eternal.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": -2,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Evade Window": 2
+        },
+        "groupSkill": "",
+        "setSkill": "Omega Resonance",
         "rarity": 1
     }
 }

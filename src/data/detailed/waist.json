@@ -2306,6 +2306,27 @@
         "setSkill": "Uth Duna's Cover",
         "rarity": 1
     },
+    "Udra Mirecoil Gamma": {
+        "description": "Waist armor made from special Nu Udra materials. The undulating crimson ornamentation evokes the fortitude of the Arch-tempered.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Burst": 2,
+            "Ambush": 1
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Nu Udra's Mutiny",
+        "rarity": 1
+    },
     "Sakuratide Obi Alpha": {
         "description": "Blossomdance Ticket waistgear. It embodies the determination of resplendent warriors from spring sunrises past.",
         "rank": "high",
@@ -2393,6 +2414,48 @@
         "setSkill": "",
         "rarity": 1
     },
+    "Dreamwalker Coil Alpha": {
+        "description": "Dreamspell Ticket waistgear. The scent of roses evokes hazy memories of lingering shadows in the crisp autumn air.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [],
+        "skills": {
+            "Flayer": 1,
+            "Ambush": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Dreamspell Prayer",
+        "rarity": 1
+    },
+    "Harvest Hoja Alpha": {
+        "description": "Harvest Ticket waistgear. The pumpkins on the sides grin back when you meet their hollow eyes.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 36,
+        "fireResistance": 4,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Free Meal": 1,
+            "Botanist": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
     "Demon Belt Alpha": {
         "description": "The belt worn by a demon of combat who lives for brutal duels to the death. (Full Armor Set)",
         "rank": "high",
@@ -2412,6 +2475,51 @@
         },
         "groupSkill": "Master of the Fist",
         "setSkill": "",
+        "rarity": 1
+    },
+    "Bale Flanchard Alpha": {
+        "description": "Waistgear worn by a dark knight. Shadowy proof of those who resort to anything to realize their ideals.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "slots": [
+            3,
+            2,
+            1
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Constitution": 2
+        },
+        "groupSkill": "",
+        "setSkill": "Soul of the Dark Knight",
+        "rarity": 1
+    },
+    "Omega Accessory Alpha": {
+        "description": "Waistgear fashioned after the apex of autonomous weaponry. Initiate experimentation on target subjects.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": -2,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Burst": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "",
+        "setSkill": "Omega Resonance",
         "rarity": 1
     }
 }

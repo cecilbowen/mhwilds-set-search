@@ -545,10 +545,42 @@
             "Activates skill effect."
         ]
     },
+    "Grillmaster": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Grill meat to sharpen your weapon and temporarily increase your attack. (Duration and effect vary based on results.)",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
     "Evading Reload": {
         "icon": "",
         "type": "weapon",
         "description": "Evading loads the currently selected ammo automatically.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
+    "Darkside": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Performing certain Lvl 2 or higher charged slashes temporarily increases attack but also deals self-damage.",
+        "levels": [
+            "Activates skill effect. (Will not activate again for a set period of time.)"
+        ]
+    },
+    "Synthetic Shield": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Temporarily increases your defense and the defense of those around you after a successful Perfect Guard.",
+        "levels": [
+            "Activates skill effect."
+        ]
+    },
+    "Synergy": {
+        "icon": "",
+        "type": "weapon",
+        "description": "Temporarily increases your affinity and the affinity of those around you after using a Rising Spiral Slash.",
         "levels": [
             "Activates skill effect."
         ]

@@ -444,7 +444,7 @@
         ]
     },
     "Blossomdance Prayer": {
-        "skill": "Blossomdance Prayer",
+        "skill": "Blossomdance Boon",
         "description": "During Blossomdance, adds special items to quest rewards. (No effect when joining mid-quest.)",
         "levels": [
             "During Blossomdance, adds special items to quest rewards. (No effect when joining mid-quest.)",
@@ -463,7 +463,7 @@
         ]
     },
     "Leviathan's Fury": {
-        "skill": "Leviathan's Fury",
+        "skill": "Azure Bolt",
         "description": "Temporarily increases affinity and can deal extra thunder damage upon buildup. (Excludes some attacks.)",
         "levels": [
             "Temporarily increases affinity and can deal extra thunder damage upon buildup. (Excludes some attacks.)",
@@ -487,7 +487,7 @@
         ]
     },
     "Seregios's Tenacity": {
-        "skill": "Seregios's Tenacity",
+        "skill": "Razer's Edge",
         "description": "Extends the duration of Adrenaline Rush. If triggered again while the skill is active, extends the effect duration once.",
         "levels": [
             "Extends the duration of Adrenaline Rush. If triggered again while the skill is active, extends the effect duration once.",
@@ -511,7 +511,7 @@
         ]
     },
     "Flamefete Prayer": {
-        "skill": "Flamefete Prayer",
+        "skill": "Flamefete Boon",
         "description": "During Flamefete, adds special items to quest rewards. (No effect when joining mid-quest.)",
         "levels": [
             "During Flamefete, adds special items to quest rewards. (No effect when joining mid-quest.)",
@@ -527,6 +527,63 @@
             "Afi Armguards Alpha",
             "Afi Wrap Alpha",
             "Afi Sandals Alpha"
+        ]
+    },
+    "Dreamspell Prayer": {
+        "skill": "Dreamspell Boon",
+        "description": "During Dreamspell, adds special items to quest rewards. (No effect when joining mid-quest.)",
+        "levels": [
+            "During Dreamspell, adds special items to quest rewards. (No effect when joining mid-quest.)",
+            "During Dreamspell, adds special items to quest rewards, and greatly boosts attack and defense."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Dreamwalker Helm Alpha",
+            "Dreamwalker Mail Alpha",
+            "Dreamwalker Braces Alpha",
+            "Dreamwalker Coil Alpha",
+            "Dreamwalker Greaves Alpha"
+        ]
+    },
+    "Soul of the Dark Knight": {
+        "skill": "Dark Arts/The Blackest Knight",
+        "description": "Having recoverable damage increases elemental attack, and some great sword Lvl 3 charged slashes are strengthened.",
+        "levels": [
+            "Having recoverable damage increases elemental attack, and some great sword Lvl 3 charged slashes are strengthened.",
+            "Allows you to perform the special action: The Blackest Night."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Bale Burgeonet Alpha",
+            "Bale Cuirass Alpha",
+            "Bale Gauntlets Alpha",
+            "Bale Flanchard Alpha",
+            "Bale Sollerets Alpha"
+        ]
+    },
+    "Omega Resonance": {
+        "skill": "Resonance",
+        "description": "(When quest starts) Local and Remote Resonance alternate, increasing attack or affinity when conditions are met.",
+        "levels": [
+            "(When quest starts) Local and Remote Resonance alternate, increasing attack or affinity when conditions are met.",
+            "Increases the effect of Resonance I, and the effect of the weapon skill Synthetic Shield or the effect of Synergy."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Omega Ear Cuffs Alpha",
+            "Omega Suit Alpha",
+            "Omega Vambraces Alpha",
+            "Omega Accessory Alpha",
+            "Omega Boots Alpha"
         ]
     }
 }

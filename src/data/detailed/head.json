@@ -2433,6 +2433,28 @@
         "setSkill": "Uth Duna's Cover",
         "rarity": 1
     },
+    "Udra Mirehelm Gamma": {
+        "description": "Head armor made from special Nu Udra materials. The undulating crimson mask evokes the dignity of the Arch-tempered.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Burst": 3
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Nu Udra's Mutiny",
+        "rarity": 1
+    },
     "Sakuratide Headgear Alpha": {
         "description": "Blossomdance Ticket headgear. It embodies the vigor of resplendent warriors from spring sunrises past.",
         "rank": "high",
@@ -2514,6 +2536,48 @@
         "setSkill": "",
         "rarity": 1
     },
+    "Dreamwalker Helm Alpha": {
+        "description": "Dreamspell Ticket headgear. Its crown-like silhouette is illuminated by the autumn moon\u2014and wreathed in fear.",
+        "rank": "high",
+        "type": "head",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [],
+        "skills": {
+            "Flayer": 1,
+            "Ambush": 1,
+            "Wide-Range": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Dreamspell Prayer",
+        "rarity": 1
+    },
+    "Harvest Flor Alpha": {
+        "description": "Harvest Ticket headgear. Inspired by the spirit of plenty, it is sure to surprise any and all who lay eyes on it.",
+        "rank": "high",
+        "type": "head",
+        "defense": 36,
+        "fireResistance": 4,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Resentment": 1,
+            "Botanist": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
     "Demon Prayer Beads Alpha": {
         "description": "Prayer beads worn by a demon of combat who burns to become the ultimate master of the fist. (Full Armor Set)",
         "rank": "high",
@@ -2534,6 +2598,50 @@
         },
         "groupSkill": "Master of the Fist",
         "setSkill": "",
+        "rarity": 1
+    },
+    "Bale Burgeonet Alpha": {
+        "description": "Head armor worn by a dark knight. Shadowy proof of those who have tamed the darkness within.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Resentment": 2,
+            "Maximum Might": 2
+        },
+        "groupSkill": "",
+        "setSkill": "Soul of the Dark Knight",
+        "rarity": 1
+    },
+    "Omega Ear Cuffs Alpha": {
+        "description": "Head armor fashioned after the apex of autonomous weaponry. Observation begets evolution.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": -2,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": "",
+        "setSkill": "Omega Resonance",
         "rarity": 1
     },
     "Mimiphyta Alpha": {
@@ -2794,6 +2902,94 @@
         },
         "groupSkill": "Fortifying Pelt",
         "setSkill": "Doshaguma's Might",
+        "rarity": 1
+    },
+    "Gelidron Mask Alpha": {
+        "description": "A stunning replica of a Gelidron head. If it looks like there isn't a single thought behind those eyes, it's because it's true.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 4,
+        "waterResistance": 2,
+        "thunderResistance": -4,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "skills": {
+            "Speed Eating": 2,
+            "Hunger Resistance": 1,
+            "Free Meal": 1
+        },
+        "groupSkill": "Flexible Leathercraft",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Aviator Shades Alpha": {
+        "description": "Rugged and stylish sunglasses that will have you looking the part of a hard-boiled but dependable veteran hunter.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "skills": {
+            "Windproof": 3,
+            "Tool Specialist": 2
+        },
+        "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Kitten Frames Alpha": {
+        "description": "Give yourself a new, mysterious look with these chic frames. Purrfect for when you want to go incognito.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": 4,
+        "iceResistance": 0,
+        "dragonResistance": 4,
+        "slots": [],
+        "skills": {
+            "Ambush": 3,
+            "Evade Extender": 2,
+            "Jump Master": 1
+        },
+        "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Skull Mask Alpha": {
+        "description": "A mask for impersonating the dead. They say it enhances the senses, allowing the wearer to hear the cries of lost souls.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": -3,
+        "waterResistance": -1,
+        "thunderResistance": -1,
+        "iceResistance": -1,
+        "dragonResistance": 2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Intimidator": 3,
+            "Earplugs": 3
+        },
+        "groupSkill": "",
+        "setSkill": "",
         "rarity": 1
     }
 }

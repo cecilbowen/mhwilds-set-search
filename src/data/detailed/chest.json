@@ -2315,6 +2315,27 @@
         "setSkill": "Uth Duna's Cover",
         "rarity": 1
     },
+    "Udra Miremail Gamma": {
+        "description": "Chest armor made from special Nu Udra materials. The undulating crimson overcoat evokes the valor of the Arch-tempered.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": 5,
+        "waterResistance": -4,
+        "thunderResistance": 0,
+        "iceResistance": 1,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            3
+        ],
+        "skills": {
+            "Counterstrike": 2
+        },
+        "groupSkill": "Lord's Soul",
+        "setSkill": "Nu Udra's Mutiny",
+        "rarity": 1
+    },
     "Sakuratide Robe Alpha": {
         "description": "Blossomdance Ticket chest armor. It embodies the spirit of resplendent warriors from spring sunrises past.",
         "rank": "high",
@@ -2401,6 +2422,47 @@
         "setSkill": "",
         "rarity": 1
     },
+    "Dreamwalker Mail Alpha": {
+        "description": "Dreamspell Ticket chest armor. With accents resembling restraints, it exudes nobility even in the cool autumn mist.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Flayer": 1,
+            "Wide-Range": 1,
+            "Sleep Resistance": 1
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "Dreamspell Prayer",
+        "rarity": 1
+    },
+    "Harvest Tronco Alpha": {
+        "description": "Harvest Ticket chest armor. Said to dispel fear and draw out hidden power from within.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": 4,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 1,
+        "dragonResistance": 1,
+        "slots": [],
+        "skills": {
+            "Resentment": 1,
+            "Mushroomancer": 2
+        },
+        "groupSkill": "Festival Spirit",
+        "setSkill": "",
+        "rarity": 1
+    },
     "Demon Garb Alpha": {
         "description": "Garb worn by a demon of combat who bears the weight of heaven on his back. (Full Armor Set)",
         "rank": "high",
@@ -2420,6 +2482,48 @@
         },
         "groupSkill": "Master of the Fist",
         "setSkill": "",
+        "rarity": 1
+    },
+    "Bale Cuirass Alpha": {
+        "description": "Chest armor worn by a dark knight. Shadowy proof of those who persist despite losing their honor.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": 2,
+        "waterResistance": 0,
+        "thunderResistance": -2,
+        "iceResistance": 0,
+        "dragonResistance": 3,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Quick Sheathe": 2,
+            "Latent Power": 2
+        },
+        "groupSkill": "",
+        "setSkill": "Soul of the Dark Knight",
+        "rarity": 1
+    },
+    "Omega Suit Alpha": {
+        "description": "Chest armor fashioned after the apex of autonomous weaponry. No worthy opponent has been found.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": 3,
+        "waterResistance": 0,
+        "thunderResistance": -3,
+        "iceResistance": 2,
+        "dragonResistance": -2,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Partbreaker": 2
+        },
+        "groupSkill": "",
+        "setSkill": "Omega Resonance",
         "rarity": 1
     },
     "Pinion Necklace Alpha": {
@@ -2459,6 +2563,29 @@
             "Quick Sheathe": 2
         },
         "groupSkill": "",
+        "setSkill": "",
+        "rarity": 1
+    },
+    "Gelidron Backpack Alpha": {
+        "description": "A highly elastic Gelidron-shaped backpack that grants impressive storage capacity. Opens via the mouth, obviously.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 66,
+        "fireResistance": 4,
+        "waterResistance": 2,
+        "thunderResistance": -4,
+        "iceResistance": -2,
+        "dragonResistance": 0,
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Speed Eating": 1,
+            "Hunger Resistance": 2,
+            "Free Meal": 2
+        },
+        "groupSkill": "Flexible Leathercraft",
         "setSkill": "",
         "rarity": 1
     }

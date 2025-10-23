@@ -142,6 +142,13 @@
         },
         "type": "talisman"
     },
+    "Fury Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Resentment": 3
+        }
+    },
     "Exploiter Charm I": {
         "rarity": 5,
         "effect": "A charm that grants the Weakness Exploit skill.",
@@ -1067,6 +1074,13 @@
         },
         "type": "talisman"
     },
+    "Foray Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Foray": 3
+        }
+    },
     "Phoenix Charm I": {
         "rarity": 6,
         "effect": "A charm that grants the Coalescence skill.",
@@ -1098,6 +1112,13 @@
             "Burst": 2
         },
         "type": "talisman"
+    },
+    "Chain Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Burst": 3
+        }
     },
     "Counterattack Charm I": {
         "rarity": 5,
@@ -1137,6 +1158,13 @@
             "Ambush": 2
         },
         "type": "talisman"
+    },
+    "Descent Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Ambush": 3
+        }
     },
     "Bleed Charm I": {
         "rarity": 3,
@@ -1375,5 +1403,25 @@
         "skills": {
             "Rice Ball": 1
         }
+    },
+    "Unknown Charm": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {}
+    },
+    "Historical Charm": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {}
+    },
+    "Secret Charm": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {}
+    },
+    "Golden Age Charm": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {}
     }
 }

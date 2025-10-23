@@ -17,6 +17,7 @@ on deco inventory page, make red "you've got less of this deco than normal" high
     edit the input fields, not only on blur 
 get python back on parity with js (low priority)
 prepare for TU3 when randomized talismans (PTSD intensifies...) becomes a thing (probably similar to decorations inventory, but talismans)
+handle set skills where level 1 of the set skill has a different name than level 2 (eg, soul of the dark knight -> dark arts lv1, the blackest night lv2)
 
 
 MAYBE: 
