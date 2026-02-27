@@ -13,6 +13,7 @@ import Divider from '@mui/material/Divider';
 import PropTypes from 'prop-types';
 import { getJsonFromType } from '../util/tools';
 import { useStorage } from '../hooks/StorageContext';
+import { _x } from '../util/armorAccessor';
 
 const RemoveIcon = styled(Remove)`
     ${iconCommon}
@@ -111,15 +112,15 @@ const Settings = ({ onSourceChanged }) => {
         const datalist = [{
             label: `No ${type} pinned`,
             value: "none"
-        }, ...Object.entries(getJsonFromType(type)).filter(x => x[1][0] === "talisman" ||
-            x[1][x[1].length - 2] === "high"
-        )
-            .map(armor => {
-                return {
-                    label: armorNameFormat(armor[0]),
-                    value: armor[0]
-                };
-            }).sort()];
+        }, ...Object.entries(getJsonFromType(type)).filter(armor =>
+            _x.type(armor[1]) === "talisman" ||
+            _x.rank(armor[1]) === "high"
+        ).map(armor => {
+            return {
+                label: armorNameFormat(armor[0]),
+                value: armor[0]
+            };
+        }).sort()];
 
         const stilo = {
             '& .MuiOutlinedInput-root': {

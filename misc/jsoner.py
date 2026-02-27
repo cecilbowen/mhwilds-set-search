@@ -127,6 +127,7 @@ def pull_kiranico_data(pull_skills = False, pull_armor = False, pull_talismans =
 
     if pull_armor:
         pull_kiranico_armor(session)
+        retro_update_sets()
 
     if pull_talismans:
         pull_kiranico_talismans(session)
@@ -142,8 +143,7 @@ def pull_kiranico_skills(session):
     doc = BeautifulSoup(response.text, 'html.parser')
 
     # Extract skill link groups
-    link_groups = doc.find_all(class_='my-8')
-
+    link_groups = doc.select('.my-8')
     links = {
         'weapon': [],
         'armor': [],
@@ -151,11 +151,43 @@ def pull_kiranico_skills(session):
         'set': []
     }
 
-    for i, group in enumerate(link_groups[:4]):  # Only the first 4 groups are used
-        category = list(links.keys())[i]
-        links[category] = [a['href'] for a in group.select('td > a[href]')]
+    # will contain skills as they show up on the base page (less detail than going into each individual skill page)
+    previews = {}
 
-    # Initialize result dictionaries
+    for i, div in enumerate(link_groups[:4]):  # Only the first 4 groups are used
+        category = list(links.keys())[i]
+        links[category] = [
+            {
+                "name": a.get_text(strip=True),
+                "link": a.get("href")
+            }
+            for a in div.select("td > a")
+        ]
+
+
+        tr_map = {}
+
+        for tr in div.select('tr'):
+            tds = tr.find_all(recursive=False)
+            if len(tds) < 2:
+                continue
+
+            name = tds[0].get_text(strip=True)
+            effect_text = tds[1].get_text(strip=True)
+
+            is_group_or_set_skill = "→" in effect_text
+
+            effect_rows = []
+            for child in tds[1].find_all(recursive=False):
+                text = child.get_text(strip=True)
+                if "→" in text:
+                    text = text.split("→", 1)[1].strip()
+                effect_rows.append(text)
+
+            tr_map[name] = effect_rows if is_group_or_set_skill else effect_rows[0]
+
+        previews[category] = tr_map
+
     skills = {}
     set_skills = {}
     group_skills = {}
@@ -169,9 +201,18 @@ def pull_kiranico_skills(session):
 
     # Weapon and Armor Skills
     for skill_type in ['weapon', 'armor']:
-        for link in links[skill_type]:
+        for link_obj in links[skill_type]:
+            link = link_obj['link']
+            skill_name = link_obj['name']
             doc = get_doc_from_url(f"{base_url}{link}")
-            name = doc.find('h2').get_text(strip=True)
+            h2 = doc.find('h2')
+            if not h2:
+                if previews[skill_type][skill_name]:
+                    print(f"Skill from {link} not found, skipping... (dead link)")
+                else:
+                    print(f"Skill from {link} not found, skipping...")
+                continue
+            name = h2.get_text(strip=True)
             description = doc.find('blockquote').get_text(strip=True)
             level_rows = doc.find_all('tbody')[0].find_all('tr')
             levels = [row.find_all('td')[2].get_text(strip=True) for row in level_rows]
@@ -183,9 +224,25 @@ def pull_kiranico_skills(session):
             }
 
     # Group Skills
-    for link in links['group']:
+    for link_obj in links['group']:
+        link = link_obj['link']
+        skill_name = link_obj['name']
         doc = get_doc_from_url(f"{base_url}{link}")
-        name = doc.find('h2').get_text(strip=True)
+        h2 = doc.find('h2')
+        if not h2:
+            if previews['group'][skill_name]:
+                print(f"Group skill from {link} not found, using surface level info instead...")
+                group_skills[skill_name] = {
+                    'skill': skill_name, # replace manually once it's in-game i guess
+                    'description': previews['group'][skill_name][0],
+                    'effect': previews['group'][skill_name],
+                    'piecesPerLevel': 3,
+                    'armor': []
+                }
+            else:
+                print(f"Group skill from {link} not found, skipping...")
+            continue
+        name = h2.get_text(strip=True)
         effect_row = doc.find_all('tbody')[0].find_all('tr')[0]
         effect = effect_row.find_all('td')[2].get_text(strip=True)
         description = effect
@@ -200,9 +257,25 @@ def pull_kiranico_skills(session):
         }
 
     # Set Skills
-    for link in links['set']:
+    for link_obj in links['set']:
+        link = link_obj['link']
+        skill_name = link_obj['name']
         doc = get_doc_from_url(f"{base_url}{link}")
-        name = doc.find('h2').get_text(strip=True)
+        h2 = doc.find('h2')
+        if not h2:
+            if previews['set'][skill_name]:
+                print(f"Set skill from {link} not found, using surface level info instead...")
+                set_skills[skill_name] = {
+                    'skill': skill_name, # replace manually once it's in-game i guess
+                    'description': previews['set'][skill_name][0],
+                    'levels': previews['set'][skill_name],
+                    'piecesPerLevel': [2, 4],  # hardcoded like in JS
+                    'armor': []
+                }
+            else:
+                print(f"Set skill from {link} not found, skipping...")
+            continue
+        name = h2.get_text(strip=True)
         level_rows = doc.find_all('tbody')[0].find_all('tr')
         levels = [row.find_all('td')[2].get_text(strip=True) for row in level_rows]
         description = levels[0]
@@ -274,6 +347,9 @@ def pull_kiranico_armor(session):
 
         current_name = ""
 
+        if relative_link == '/data/armor-series/gogmazios-a':
+            dog = 1
+
         # Table 1: Name + Description
         for row in table_bodies[0].find_all('tr'):
             cols = row.find_all('td')
@@ -315,26 +391,30 @@ def pull_kiranico_armor(session):
             slots = [int(d) for d in str(slots[0])]
             slots = [x for x in slots if x != 0]
             skills_text = cols[3].get_text(strip=True)
-            set_skill = ""
-            group_skill = ""
+            set_skill = []
+            group_skill = []
 
-            if name == "Leather Headgear Alpha":
-                dog = 1
+            # if name == "Leather Headgear Alpha":
+            #     dog = 1
 
             skills = {}
             if '\n' in skills_text:
                 for skill in skills_text.split('\n'):
                     skill_name, skill_level = skill.rsplit(' +', 1)
+                    if skill_name == 'Gogmapocalypse':
+                        dog = 1
                     skills[skill_name] = int(skill_level)
             else:
                 # Split at each +<number> (with optional space), but keep the +<number> with the preceding text
                 parts = re.findall(r'.*?\+\d+', skills_text)
                 for skill in parts:
                     skill_name, skill_level = skill.rsplit(' +', 1)
+                    if skill_name == 'Gogmapocalypse':
+                        dog = 1
                     if set_skills_db.get(skill_name):
-                        set_skill = skill_name
+                        set_skill.append(skill_name)
                     elif group_skills_db.get(skill_name):
-                        group_skill = skill_name
+                        group_skill.append(skill_name)
                     else:
                         skills[skill_name] = int(skill_level)
             armor[name].update({
@@ -428,6 +508,34 @@ def pull_kiranico_talismans(session):
     with open(f'{base_path}/kiranico/talisman.json', 'w') as f:
         json.dump(talismans, f, indent=4)
 
+def retro_update_sets():
+    with open(f'{base_path}/kiranico/group-skills.json', 'r') as f: 
+        group_skills_db = json.load(f)
+    with open(f'{base_path}/kiranico/set-skills.json', 'r') as f: 
+        set_skills_db = json.load(f)
+    with open(f'{base_path}/kiranico/armor.json', 'r') as f:
+        armor = json.load(f)
+    
+    for armor_name, armor_data in armor.items():
+        for skill_name in armor_data['groupSkill']:
+            group_skill_obj = group_skills_db.get(skill_name)
+            if group_skill_obj:
+                if not armor_name in group_skill_obj['armor']:
+                    group_skill_obj['armor'].append(armor_name)
+                    print(f'Retroactively adding {armor_name} under {skill_name} (group skill)')
+        for skill_name in armor_data['setSkill']:
+            set_skill_obj = set_skills_db.get(skill_name)
+            if set_skill_obj:
+                if not armor_name in set_skill_obj['armor']:
+                    set_skill_obj['armor'].append(armor_name)
+                    print(f'Retroactively adding {armor_name} under {skill_name} (set skill)')
+
+    with open(f'{base_path}/kiranico/group-skills.json', 'w') as f:
+        json.dump(group_skills_db, f, indent=4)
+    with open(f'{base_path}/kiranico/set-skills.json', 'w') as f:
+        json.dump(set_skills_db, f, indent=4)
+
+
 def update_detailed_data():
     ret = {
         "skills": {},
@@ -474,6 +582,8 @@ def update_detailed_data():
     armor = { **head, **arms, **chest, **waist, **legs }
     with open(f'{base_path}/detailed/talisman.json', 'r') as f: 
         talisman = json.load(f)
+    with open(f'{base_path}/compact/set-map.json', 'r') as f: 
+        set_map = json.load(f)
 
     # skills
     for name, data in skills_kira.items():
@@ -499,8 +609,8 @@ def update_detailed_data():
             obj = {
                 **data
             }
-            if not obj.get("skill"):
-                obj["skill"] = name
+        obj["skill"] = set_map.get(name) or obj.get("skill") or name
+        obj["armor"] = data["armor"] # could sort alphabetically to match prior format if i wanted
         ret["setSkills"][name] = obj
 
     # group skills
@@ -514,8 +624,8 @@ def update_detailed_data():
             obj = {
                 **data
             }
-            if not obj.get("skill"):
-                obj["skill"] = name
+        obj["skill"] = set_map.get(name) or obj.get("skill") or name
+        obj["armor"] = data["armor"] # could sort alphabetically to match prior format if i wanted
         ret["groupSkills"][name] = obj
 
     # armor
@@ -533,10 +643,12 @@ def update_detailed_data():
             obj["thunderResistance"] = data["thunderResistance"]
             obj["iceResistance"] = data["iceResistance"]
             obj["dragonResistance"] = data["dragonResistance"]
-            if not obj.get("setSkill"):
-                obj["setSkill"] = data["setSkill"]
-            if not obj.get("groupSkill"):
-                obj["groupSkill"] = data["groupSkill"]
+            obj["setSkill"] = data["setSkill"]
+            obj["groupSkill"] = data["groupSkill"]
+            # if not obj.get("setSkill"):
+            #     obj["setSkill"] = data["setSkill"]
+            # if not obj.get("groupSkill"):
+            #     obj["groupSkill"] = data["groupSkill"]
         else:
             obj = {
                 **data
@@ -717,10 +829,18 @@ def update_compact_data():
 # =================================================================
 
 # format_all_jsons() # this was really a run one-time-only thing to convert old list format to map
+
+# first, check detailed/set-map.json.  kiranico only has the set names, not the set skill names.
+# so the set skill names will just show up here as identical to the set names.
+# you'll have to manually edit these to be correct
+# then run the below functions (this file)
+
+# if you are lazy, you can run this file first, THEN update the set skill names, THEN run this file again and it will auto-update them
+
 pull_kiranico_data(True, True, True)
 update_detailed_data()
 update_compact_data()
 
 # after this, run tasks.py to map any new ids
-# finally, manually edit any set/group skills that kiranico doesn't list (will default to same as set/group names)
-#   and armor/talisman rarities that kiranico also doesn't list
+# check for any old skills/gear that had a name change and remove if duped
+# finally, edit any armor/talisman rarities that kiranico also doesn't list

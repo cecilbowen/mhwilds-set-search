@@ -5,7 +5,7 @@
         "skills": {
             "Stun Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -14,7 +14,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Belt": {
         "type": "waist",
@@ -22,7 +22,7 @@
         "skills": {
             "Botanist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -31,7 +31,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Belt": {
         "type": "waist",
@@ -39,7 +39,7 @@
         "skills": {
             "Recovery Speed": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -48,7 +48,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Coil": {
         "type": "waist",
@@ -56,7 +56,7 @@
         "skills": {
             "Marathon Runner": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -65,7 +65,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Coil": {
         "type": "waist",
@@ -73,7 +73,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -82,7 +84,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Coil": {
         "type": "waist",
@@ -90,7 +92,9 @@
         "skills": {
             "Fire Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -99,7 +103,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Coil": {
         "type": "waist",
@@ -107,7 +111,7 @@
         "skills": {
             "Tremor Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -116,7 +120,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Coil": {
         "type": "waist",
@@ -124,7 +128,9 @@
         "skills": {
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -133,7 +139,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Coil": {
         "type": "waist",
@@ -141,7 +147,9 @@
         "skills": {
             "Recovery Up": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 8,
@@ -150,7 +158,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Coil": {
         "type": "waist",
@@ -158,7 +166,9 @@
         "skills": {
             "Stench Resistance": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 8,
@@ -167,7 +177,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Coil": {
         "type": "waist",
@@ -175,7 +185,9 @@
         "skills": {
             "Evade Extender": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 12,
@@ -184,7 +196,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Doshaguma Coil": {
         "type": "waist",
@@ -192,7 +204,9 @@
         "skills": {
             "Item Prolonger": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 16,
@@ -201,7 +215,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Ingot Coil": {
         "type": "waist",
@@ -209,7 +225,7 @@
         "skills": {
             "Divine Blessing": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 3,
         "rank": "low",
         "defense": 16,
@@ -218,7 +234,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Coil": {
         "type": "waist",
@@ -227,7 +243,9 @@
             "Wide-Range": 1,
             "Poison Resistance": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 18,
@@ -236,7 +254,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Coil": {
         "type": "waist",
@@ -245,7 +263,9 @@
             "Sleep Resistance": 1,
             "Bind Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 20,
@@ -254,7 +274,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Coil": {
         "type": "waist",
@@ -263,7 +283,9 @@
             "Evade Window": 1,
             "Ice Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 22,
@@ -272,7 +294,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Coil": {
         "type": "waist",
@@ -281,7 +303,9 @@
             "Blast Resistance": 1,
             "Bombardier": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 24,
@@ -290,7 +314,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Seikret Coil": {
         "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
@@ -308,8 +332,10 @@
         "skills": {
             "Jump Master": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [],
         "rarity": 4
     },
     "Duna Wildcoil": {
@@ -327,8 +353,12 @@
             "Tool Specialist": 1,
             "Aquatic/Oilsilt Mobility": 1
         },
-        "groupSkill": "Lord's Favor",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Rey Sandcoil": {
@@ -339,7 +369,9 @@
         "skills": {
             "Constitution": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -348,7 +380,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Mirecoil": {
         "type": "waist",
@@ -358,7 +392,9 @@
         "skills": {
             "Resentment": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -367,7 +403,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "G Doshaguma Coil": {
         "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
@@ -384,8 +422,12 @@
             "Heroics": 1,
             "Marathon Runner": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 4
     },
     "G Rathalos Coil": {
@@ -404,8 +446,12 @@
         "skills": {
             "Intimidator": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 4
     },
     "G Ebony Coil": {
@@ -423,8 +469,12 @@
             "Burst": 1,
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 4
     },
     "Xu Wu Coil": {
@@ -434,7 +484,9 @@
             "Maximum Might": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -443,7 +495,7 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Arkveld Coil": {
         "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
@@ -462,8 +514,12 @@
         "skills": {
             "Blight Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 4
     },
     "Hope Coil Alpha": {
@@ -475,7 +531,7 @@
             "Divine Blessing": 1,
             "Stun Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -484,7 +540,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Belt Alpha": {
         "type": "waist",
@@ -495,7 +551,7 @@
         "skills": {
             "Hunger Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -504,7 +560,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Belt Alpha": {
         "type": "waist",
@@ -515,7 +571,7 @@
             "Ice Resistance": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -524,7 +580,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Coil Alpha": {
         "type": "waist",
@@ -535,7 +591,7 @@
         "skills": {
             "Marathon Runner": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -544,7 +600,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Coil Alpha": {
         "type": "waist",
@@ -555,7 +611,7 @@
             "Quick Sheathe": 1,
             "Tremor Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -564,7 +620,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Coil Alpha": {
         "type": "waist",
@@ -575,7 +631,9 @@
             "Evade Window": 1,
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -584,7 +642,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Coil Beta": {
         "type": "waist",
@@ -596,7 +654,9 @@
         "skills": {
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -605,7 +665,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Coil Alpha": {
         "type": "waist",
@@ -614,7 +674,9 @@
             "Recovery Up": 2,
             "Agitator": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -623,7 +685,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Coil Beta": {
         "type": "waist",
@@ -634,7 +696,9 @@
             "Agitator": 1,
             "Recovery Up": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -643,7 +707,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Coil Alpha": {
         "type": "waist",
@@ -654,7 +718,9 @@
             "Speed Eating": 1,
             "Item Prolonger": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -663,7 +729,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Coil Beta": {
         "type": "waist",
@@ -674,7 +740,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -683,7 +751,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Coil Alpha": {
         "type": "waist",
@@ -692,7 +760,9 @@
             "Latent Power": 1,
             "Fire Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -701,7 +771,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Coil Beta": {
         "type": "waist",
@@ -711,7 +781,9 @@
         "skills": {
             "Fire Resistance": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -720,7 +792,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Coil Alpha": {
         "type": "waist",
@@ -730,7 +802,9 @@
         "skills": {
             "Paralysis Resistance": 2
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -739,7 +813,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Coil Beta": {
         "type": "waist",
@@ -750,7 +824,9 @@
         "skills": {
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -759,7 +835,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Coil Alpha": {
         "type": "waist",
@@ -770,7 +846,9 @@
             "Mushroomancer": 1,
             "Free Meal": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -779,7 +857,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Coil Beta": {
         "type": "waist",
@@ -789,7 +867,9 @@
         "skills": {
             "Mushroomancer": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -798,7 +878,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Coil Alpha": {
         "type": "waist",
@@ -807,7 +887,9 @@
             "Foray": 1,
             "Wide-Range": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -816,7 +898,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Coil Beta": {
         "type": "waist",
@@ -826,7 +908,9 @@
         "skills": {
             "Foray": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -835,7 +919,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Coil Alpha": {
         "type": "waist",
@@ -846,7 +930,9 @@
             "Resentment": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -855,7 +941,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Coil Beta": {
         "type": "waist",
@@ -866,7 +952,9 @@
         "skills": {
             "Stamina Surge": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -875,7 +963,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Coil Alpha": {
         "type": "waist",
@@ -884,7 +972,9 @@
             "Sleep Resistance": 2,
             "Bind Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -893,7 +983,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Coil Beta": {
         "type": "waist",
@@ -904,7 +994,9 @@
         "skills": {
             "Bind Resistance": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -913,7 +1005,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Coil Alpha": {
         "type": "waist",
@@ -922,7 +1014,9 @@
             "Evade Window": 1,
             "Evade Extender": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -931,7 +1025,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Coil Beta": {
         "type": "waist",
@@ -942,7 +1036,9 @@
         "skills": {
             "Evade Window": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -951,7 +1047,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Coil Alpha": {
         "type": "waist",
@@ -959,7 +1055,9 @@
         "skills": {
             "Evade Window": 2
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -968,7 +1066,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Coil Beta": {
         "type": "waist",
@@ -978,7 +1076,9 @@
         "skills": {
             "Evade Window": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -987,7 +1087,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Coil Alpha": {
         "type": "waist",
@@ -996,7 +1096,9 @@
             "Foray": 1,
             "Tool Specialist": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1005,7 +1107,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Coil Beta": {
         "type": "waist",
@@ -1015,7 +1117,9 @@
         "skills": {
             "Foray": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1024,7 +1128,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ingot Coil Alpha": {
         "type": "waist",
@@ -1037,7 +1141,7 @@
             "Resentment": 1,
             "Divine Blessing": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1046,7 +1150,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Seikret Coil Alpha": {
         "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
@@ -1065,8 +1169,10 @@
             "Jump Master": 1,
             "Earplugs": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [],
         "rarity": 6
     },
     "G Seikret Coil Beta": {
@@ -1087,8 +1193,10 @@
             "Jump Master": 1,
             "Earplugs": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [],
         "rarity": 6
     },
     "G Fulgur Coil Alpha": {
@@ -1109,8 +1217,12 @@
             "Stamina Surge": 1,
             "Maximum Might": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "G Fulgur Coil Beta": {
@@ -1130,8 +1242,12 @@
         "skills": {
             "Stamina Surge": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "Doshaguma Coil Alpha": {
@@ -1142,7 +1258,9 @@
         "skills": {
             "Latent Power": 2
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1151,7 +1269,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Doshaguma Coil Beta": {
         "type": "waist",
@@ -1162,7 +1282,9 @@
         "skills": {
             "Latent Power": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1171,7 +1293,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "G Doshaguma Coil Alpha": {
         "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
@@ -1190,8 +1314,12 @@
             "Heroics": 2,
             "Hunger Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "G Doshaguma Coil Beta": {
@@ -1211,8 +1339,12 @@
         "skills": {
             "Heroics": 2
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "Ajarakan Coil Alpha": {
@@ -1224,7 +1356,9 @@
             "Blast Resistance": 2,
             "Partbreaker": 2
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1233,7 +1367,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Coil Beta": {
         "type": "waist",
@@ -1244,7 +1378,9 @@
             "Partbreaker": 2,
             "Blast Resistance": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1253,7 +1389,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Ebony Coil Alpha": {
         "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
@@ -1272,8 +1408,12 @@
             "Burst": 1,
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "G Ebony Coil Beta": {
@@ -1293,8 +1433,12 @@
         "skills": {
             "Burst": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "Xu Wu Coil Alpha": {
@@ -1306,7 +1450,9 @@
             "Heroics": 2,
             "Earplugs": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1315,7 +1461,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Xu Wu Coil Beta": {
         "type": "waist",
@@ -1328,7 +1476,9 @@
             "Heroics": 1,
             "Earplugs": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1337,7 +1487,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Rathalos Coil Alpha": {
         "type": "waist",
@@ -1346,7 +1498,9 @@
             "Adrenaline Rush": 2,
             "Evade Window": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1355,7 +1509,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "Rathalos Coil Beta": {
         "type": "waist",
@@ -1365,7 +1521,9 @@
         "skills": {
             "Adrenaline Rush": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1374,7 +1532,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "G Rathalos Coil Alpha": {
         "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
@@ -1394,8 +1554,12 @@
             "Weakness Exploit": 1,
             "Windproof": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "G Rathalos Coil Beta": {
@@ -1416,8 +1580,12 @@
         "skills": {
             "Windproof": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "Gravios Coil Alpha": {
@@ -1429,7 +1597,9 @@
             "Flinch Free": 2,
             "Peak Performance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1438,7 +1608,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Gravios Coil Beta": {
         "type": "waist",
@@ -1450,7 +1622,9 @@
             "Peak Performance": 1,
             "Flinch Free": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1459,7 +1633,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Blango Coil Alpha": {
         "type": "waist",
@@ -1470,7 +1646,9 @@
             "Agitator": 2,
             "Wide-Range": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1479,7 +1657,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Blango Coil Beta": {
         "type": "waist",
@@ -1490,7 +1670,9 @@
         "skills": {
             "Agitator": 2
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1499,7 +1681,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Commission Coil Alpha": {
         "type": "waist",
@@ -1510,7 +1694,7 @@
             "Agitator": 1,
             "Tool Specialist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1519,7 +1703,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kunafa Sash Alpha": {
         "type": "waist",
@@ -1530,7 +1714,9 @@
             "Speed Eating": 2,
             "Palico Rally": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1539,7 +1725,7 @@
         "thunderResistance": 4,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Suja Sash Alpha": {
         "type": "waist",
@@ -1551,7 +1737,9 @@
         "skills": {
             "Divine Blessing": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1560,7 +1748,7 @@
         "thunderResistance": 1,
         "iceResistance": 4,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Death Stench Bowels Alpha": {
         "type": "waist",
@@ -1572,7 +1760,9 @@
             "Intimidator": 2,
             "Resentment": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1581,7 +1771,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Butterfly Elytra Alpha": {
         "type": "waist",
@@ -1593,7 +1783,9 @@
             "Evade Window": 1,
             "Evade Extender": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1602,7 +1794,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "King Beetle Elytra Alpha": {
         "type": "waist",
@@ -1614,7 +1806,9 @@
             "Flayer": 1,
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1623,7 +1817,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "High Metal Coil Alpha": {
         "type": "waist",
@@ -1634,7 +1828,9 @@
             "Bombardier": 3,
             "Aquatic/Oilsilt Mobility": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1643,7 +1839,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Battle Coil Alpha": {
         "type": "waist",
@@ -1654,7 +1850,9 @@
             "Item Prolonger": 3,
             "Bind Resistance": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1663,7 +1861,7 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Melahoa Folia Alpha": {
         "type": "waist",
@@ -1674,7 +1872,9 @@
             "Recovery Up": 3,
             "Bleeding Resistance": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1683,7 +1883,7 @@
         "thunderResistance": 3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Artian Coil Alpha": {
         "type": "waist",
@@ -1694,7 +1894,9 @@
             "Windproof": 2,
             "Flayer": 1
         },
-        "groupSkill": "Guardian's Protection",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1703,7 +1905,7 @@
         "thunderResistance": -2,
         "iceResistance": 2,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dober Coil Alpha": {
         "type": "waist",
@@ -1715,7 +1917,7 @@
             "Marathon Runner": 2,
             "Constitution": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1724,7 +1926,7 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Damascus Coil Alpha": {
         "type": "waist",
@@ -1736,7 +1938,7 @@
             "Wide-Range": 1,
             "Recovery Up": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1745,7 +1947,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dahaad Shardcoil Alpha": {
         "type": "waist",
@@ -1757,7 +1959,9 @@
             "Tremor Resistance": 2,
             "Weakness Exploit": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1766,7 +1970,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Dahaad Shardcoil Beta": {
         "type": "waist",
@@ -1779,7 +1985,9 @@
             "Weakness Exploit": 1,
             "Tremor Resistance": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1788,7 +1996,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Duna Wildcoil Alpha": {
         "type": "waist",
@@ -1800,7 +2010,9 @@
             "Peak Performance": 2,
             "Aquatic/Oilsilt Mobility": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1809,7 +2021,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Duna Wildcoil Beta": {
         "type": "waist",
@@ -1820,7 +2034,9 @@
         "skills": {
             "Peak Performance": 2
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1829,7 +2045,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Rey Sandcoil Alpha": {
         "type": "waist",
@@ -1840,7 +2058,9 @@
             "Stun Resistance": 2,
             "Stamina Surge": 2
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1849,7 +2069,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Rey Sandcoil Beta": {
         "type": "waist",
@@ -1861,7 +2083,9 @@
             "Stun Resistance": 2,
             "Stamina Surge": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1870,7 +2094,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Mirecoil Alpha": {
         "type": "waist",
@@ -1881,7 +2107,9 @@
             "Resentment": 2,
             "Speed Eating": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1890,7 +2118,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Udra Mirecoil Beta": {
         "type": "waist",
@@ -1900,7 +2130,9 @@
         "skills": {
             "Resentment": 2
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1909,7 +2141,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Gore Coil Alpha": {
         "type": "waist",
@@ -1921,7 +2155,9 @@
             "Constitution": 2,
             "Antivirus": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1930,7 +2166,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Gore Coil Beta": {
         "type": "waist",
@@ -1941,7 +2179,9 @@
         "skills": {
             "Constitution": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1950,7 +2190,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Arkvulcan Coil Alpha": {
         "type": "waist",
@@ -1961,7 +2203,9 @@
             "Weakness Exploit": 2,
             "Recovery Speed": 2
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -1970,7 +2214,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "Arkvulcan Coil Beta": {
         "type": "waist",
@@ -1982,7 +2228,9 @@
             "Weakness Exploit": 2,
             "Recovery Speed": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -1991,7 +2239,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "G Arkveld Coil Alpha": {
         "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
@@ -2008,8 +2258,12 @@
             "Flayer": 2,
             "Elemental Absorption": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "G Arkveld Coil Beta": {
@@ -2029,8 +2283,12 @@
         "skills": {
             "Flayer": 2
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "Guild Ace Coil Alpha": {
@@ -2043,7 +2301,7 @@
             "Constitution": 1,
             "Foray": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 60,
@@ -2052,7 +2310,7 @@
         "thunderResistance": 2,
         "iceResistance": 2,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Guild Cross Coil Alpha": {
         "type": "waist",
@@ -2063,8 +2321,10 @@
             "Windproof": 2,
             "Earplugs": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 36,
@@ -2083,8 +2343,10 @@
             "Tool Specialist": 2,
             "Recovery Up": 2
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2104,8 +2366,12 @@
             "Constitution": 2,
             "Burst": 1
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Fortifying Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2125,8 +2391,12 @@
         "skills": {
             "Constitution": 2
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Alluring Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2143,8 +2413,12 @@
             "Agitator": 2,
             "Coalescence": 2
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Pulse",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2163,8 +2437,12 @@
             "Agitator": 2,
             "Coalescence": 1
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Protection",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2194,8 +2472,12 @@
             "Maximum Might": 1,
             "Aquatic/Oilsilt Mobility": 1
         },
-        "groupSkill": "Flexible Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Lagiacrus Coil Beta": {
@@ -2217,8 +2499,12 @@
             "Weakness Exploit": 1,
             "Maximum Might": 1
         },
-        "groupSkill": "Buttery Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Regios Coil Alpha": {
@@ -2239,8 +2525,12 @@
             "Agitator": 1,
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
         "rarity": 1
     },
     "Regios Coil Beta": {
@@ -2262,8 +2552,64 @@
             "Evade Window": 1,
             "Agitator": 1
         },
-        "groupSkill": "Scale Layering",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Coil Alpha": {
+        "description": "Gogmazios waistgear. Its tendrils creep grotesquely across the night, seizing control of prey.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Burst": 2,
+            "Peak Performance": 1
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Ebony Odogaron's Power"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Coil Beta": {
+        "description": "Gogmazios waistgear. Its tendrils creep grotesquely across the night, seizing control of prey.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Burst": 2,
+            "Peak Performance": 1
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Mizutsune's Prowess"
+        ],
         "rarity": 1
     },
     "Rey Sandcoil Gamma": {
@@ -2281,8 +2627,12 @@
             "Latent Power": 2,
             "Maximum Might": 2
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Rey Dau's Voltage",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
         "rarity": 8
     },
     "Duna Wildcoil Gamma": {
@@ -2302,8 +2652,12 @@
         "skills": {
             "Tool Specialist": 2
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Udra Mirecoil Gamma": {
@@ -2323,8 +2677,37 @@
             "Burst": 2,
             "Ambush": 1
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Nu Udra's Mutiny",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "rarity": 1
+    },
+    "Dahaad Shardcoil Gamma": {
+        "description": "Waist armor made from special Jin Dahaad materials. The shining white ornamentation evokes the fortitude of the Arch-tempered.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 68,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Agitator": 3,
+            "Bind Resistance": 2
+        },
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
         "rarity": 1
     },
     "Sakuratide Obi Alpha": {
@@ -2345,8 +2728,12 @@
             "Quick Sheathe": 2,
             "Adaptability": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Blossomdance Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Blossomdance Prayer"
+        ],
         "rarity": 1
     },
     "Blossom Coat Alpha": {
@@ -2367,8 +2754,10 @@
             "Entomologist": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Afi Wrap Alpha": {
@@ -2387,8 +2776,12 @@
             "Blast Resistance": 2,
             "Fire Resistance": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Flamefete Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Flamefete Prayer"
+        ],
         "rarity": 1
     },
     "Diver's Belt Alpha": {
@@ -2410,8 +2803,10 @@
             "Aquatic/Oilsilt Mobility": 1,
             "Hunger Resistance": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Dreamwalker Coil Alpha": {
@@ -2429,8 +2824,12 @@
             "Flayer": 1,
             "Ambush": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Dreamspell Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Dreamspell Prayer"
+        ],
         "rarity": 1
     },
     "Harvest Hoja Alpha": {
@@ -2452,8 +2851,62 @@
             "Free Meal": 1,
             "Botanist": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Ceremonial Coil Alpha": {
+        "description": "Lumenhymn Ticket waistgear. A comforting presence, like the sun in the splendor of winter.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "slots": [
+            1,
+            1
+        ],
+        "skills": {
+            "Convert Element": 1,
+            "Divine Blessing": 1,
+            "Dragon Resistance": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Lumenhymn Prayer"
+        ],
+        "rarity": 1
+    },
+    "Orion Coat Alpha": {
+        "description": "Orion Ticket waistgear adorned with festive, sparkly snowflakes that warm the heart.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 66,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 4,
+        "dragonResistance": 1,
+        "slots": [
+            2,
+            2,
+            2
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Cliffhanger": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Demon Belt Alpha": {
@@ -2473,8 +2926,10 @@
         "skills": {
             "Evade Window": 2
         },
-        "groupSkill": "Master of the Fist",
-        "setSkill": "",
+        "groupSkill": [
+            "Master of the Fist"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Bale Flanchard Alpha": {
@@ -2496,8 +2951,10 @@
             "Resentment": 1,
             "Constitution": 2
         },
-        "groupSkill": "",
-        "setSkill": "Soul of the Dark Knight",
+        "groupSkill": [],
+        "setSkill": [
+            "Soul of the Dark Knight"
+        ],
         "rarity": 1
     },
     "Omega Accessory Alpha": {
@@ -2518,8 +2975,31 @@
             "Burst": 1,
             "Divine Blessing": 1
         },
-        "groupSkill": "",
-        "setSkill": "Omega Resonance",
+        "groupSkill": [],
+        "setSkill": [
+            "Omega Resonance"
+        ],
+        "rarity": 1
+    },
+    "Blessed Waistchain Alpha": {
+        "description": "Waist protection said to bring hunters safety and prosperity, each link woven a blessing.",
+        "rank": "high",
+        "type": "waist",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 0,
+        "iceResistance": -2,
+        "dragonResistance": 3,
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Constitution": 4,
+            "Divine Blessing": 3
+        },
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     }
 }

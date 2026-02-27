@@ -5,7 +5,7 @@
         "skills": {
             "Divine Blessing": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -14,7 +14,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Pants": {
         "type": "legs",
@@ -22,7 +22,7 @@
         "skills": {
             "Botanist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -31,7 +31,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Pants": {
         "type": "legs",
@@ -39,7 +39,7 @@
         "skills": {
             "Recovery Speed": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -48,7 +48,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Greaves": {
         "type": "legs",
@@ -56,7 +56,7 @@
         "skills": {
             "Stun Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -65,7 +65,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Greaves": {
         "type": "legs",
@@ -73,7 +73,9 @@
         "skills": {
             "Item Prolonger": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -82,7 +84,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Greaves": {
         "type": "legs",
@@ -90,7 +92,9 @@
         "skills": {
             "Flinch Free": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -99,7 +103,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Greaves": {
         "type": "legs",
@@ -107,7 +111,7 @@
         "skills": {
             "Quick Sheathe": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -116,7 +120,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Piragill Greaves": {
         "type": "legs",
@@ -124,7 +128,9 @@
         "skills": {
             "Water Resistance": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -133,7 +139,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Greaves": {
         "type": "legs",
@@ -141,7 +147,9 @@
         "skills": {
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -150,7 +158,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gajau Boots": {
         "type": "legs",
@@ -158,7 +166,9 @@
         "skills": {
             "Water Resistance": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -167,7 +177,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Greaves": {
         "type": "legs",
@@ -175,7 +185,9 @@
         "skills": {
             "Recovery Up": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 8,
@@ -184,7 +196,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Greaves": {
         "type": "legs",
@@ -192,7 +204,9 @@
         "skills": {
             "Mushroomancer": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 8,
@@ -201,7 +215,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Greaves": {
         "type": "legs",
@@ -209,7 +223,9 @@
         "skills": {
             "Evade Extender": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 12,
@@ -218,7 +234,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Doshaguma Greaves": {
         "type": "legs",
@@ -226,7 +242,9 @@
         "skills": {
             "Free Meal": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 16,
@@ -235,7 +253,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Ingot Greaves": {
         "type": "legs",
@@ -243,7 +263,7 @@
         "skills": {
             "Windproof": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 3,
         "rank": "low",
         "defense": 16,
@@ -252,7 +272,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Greaves": {
         "type": "legs",
@@ -260,7 +280,9 @@
         "skills": {
             "Wide-Range": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 18,
@@ -269,7 +291,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Greaves": {
         "type": "legs",
@@ -277,7 +299,9 @@
         "skills": {
             "Ambush": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 20,
@@ -286,7 +310,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Greaves": {
         "type": "legs",
@@ -295,7 +319,9 @@
             "Evade Window": 1,
             "Ice Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 22,
@@ -304,7 +330,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Greaves": {
         "type": "legs",
@@ -313,7 +339,9 @@
             "Blast Resistance": 1,
             "Partbreaker": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 24,
@@ -322,7 +350,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Duna Wildgreaves": {
         "description": "Elaborately patterned Uth Duna leg armor. The design is said to invoke the forest's protection.",
@@ -338,8 +366,12 @@
         "skills": {
             "Peak Performance": 1
         },
-        "groupSkill": "Lord's Favor",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Rey Sandgreaves": {
@@ -349,7 +381,9 @@
             "Constitution": 1,
             "Latent Power": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -358,7 +392,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Miregreaves": {
         "type": "legs",
@@ -368,7 +404,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -377,7 +415,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "G Doshaguma Greaves": {
         "description": "Leg armor made from Guardian Doshaguma spoils. Produces a faint white aura when worn.",
@@ -394,8 +434,12 @@
             "Marathon Runner": 1,
             "Iron Skin": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 4
     },
     "G Rathalos Greaves": {
@@ -414,8 +458,12 @@
         "skills": {
             "Weakness Exploit": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 4
     },
     "G Ebony Greaves": {
@@ -434,8 +482,12 @@
         "skills": {
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 4
     },
     "Xu Wu Greaves": {
@@ -446,7 +498,9 @@
         "skills": {
             "Stamina Surge": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -455,7 +509,7 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Arkveld Greaves": {
         "description": "Guardian Arkveld leg armor. Their power grows with each relentless, hungry step.",
@@ -473,8 +527,12 @@
         "skills": {
             "Blight Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 4
     },
     "Hope Greaves Alpha": {
@@ -485,7 +543,7 @@
         "skills": {
             "Stun Resistance": 2
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -494,7 +552,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Pants Alpha": {
         "type": "legs",
@@ -505,7 +563,7 @@
             "Hunger Resistance": 1,
             "Item Prolonger": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -514,7 +572,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Pants Alpha": {
         "type": "legs",
@@ -525,7 +583,7 @@
         "skills": {
             "Recovery Speed": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -534,7 +592,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Greaves Alpha": {
         "type": "legs",
@@ -545,7 +603,7 @@
         "skills": {
             "Stun Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -554,7 +612,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Greaves Alpha": {
         "type": "legs",
@@ -565,7 +623,7 @@
             "Quick Sheathe": 1,
             "Flinch Free": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -574,7 +632,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Piragill Greaves Alpha": {
         "type": "legs",
@@ -583,7 +641,9 @@
             "Water Resistance": 2,
             "Aquatic/Oilsilt Mobility": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -592,7 +652,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Piragill Greaves Beta": {
         "type": "legs",
@@ -602,7 +662,9 @@
         "skills": {
             "Aquatic/Oilsilt Mobility": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -611,7 +673,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Greaves Alpha": {
         "type": "legs",
@@ -623,7 +685,9 @@
             "Paralysis Resistance": 1,
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -632,7 +696,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Greaves Beta": {
         "type": "legs",
@@ -643,7 +707,9 @@
         "skills": {
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -652,7 +718,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Greaves Alpha": {
         "type": "legs",
@@ -663,7 +729,9 @@
             "Constitution": 2,
             "Recovery Up": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -672,7 +740,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Greaves Beta": {
         "type": "legs",
@@ -684,7 +752,9 @@
             "Constitution": 1,
             "Recovery Up": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -693,7 +763,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Greaves Alpha": {
         "type": "legs",
@@ -702,7 +772,9 @@
             "Weakness Exploit": 1,
             "Item Prolonger": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -711,7 +783,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Greaves Beta": {
         "type": "legs",
@@ -721,7 +793,9 @@
         "skills": {
             "Weakness Exploit": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -730,7 +804,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Greaves Alpha": {
         "type": "legs",
@@ -741,7 +815,9 @@
             "Evade Extender": 1,
             "Flinch Free": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -750,7 +826,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Greaves Beta": {
         "type": "legs",
@@ -762,7 +838,9 @@
         "skills": {
             "Flinch Free": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -771,7 +849,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Greaves Alpha": {
         "type": "legs",
@@ -780,7 +858,9 @@
             "Foray": 1,
             "Evade Window": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -789,7 +869,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Greaves Beta": {
         "type": "legs",
@@ -801,7 +881,9 @@
         "skills": {
             "Evade Window": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -810,7 +892,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Greaves Alpha": {
         "type": "legs",
@@ -819,7 +901,9 @@
             "Burst": 1,
             "Mushroomancer": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -828,7 +912,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Greaves Beta": {
         "type": "legs",
@@ -838,7 +922,9 @@
         "skills": {
             "Burst": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -847,7 +933,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Greaves Alpha": {
         "type": "legs",
@@ -856,7 +942,9 @@
             "Wide-Range": 2,
             "Earplugs": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -865,7 +953,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Greaves Beta": {
         "type": "legs",
@@ -875,7 +963,9 @@
         "skills": {
             "Wide-Range": 2
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -884,7 +974,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Greaves Alpha": {
         "type": "legs",
@@ -893,7 +983,9 @@
             "Marathon Runner": 2,
             "Resentment": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -902,7 +994,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Greaves Beta": {
         "type": "legs",
@@ -913,7 +1005,9 @@
             "Resentment": 1,
             "Marathon Runner": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -922,7 +1016,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Greaves Alpha": {
         "type": "legs",
@@ -933,7 +1027,9 @@
             "Sleep Resistance": 1,
             "Ambush": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -942,7 +1038,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Greaves Beta": {
         "type": "legs",
@@ -953,7 +1049,9 @@
         "skills": {
             "Sleep Resistance": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -962,7 +1060,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Greaves Alpha": {
         "type": "legs",
@@ -974,7 +1072,9 @@
             "Evade Extender": 1,
             "Geologist": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -983,7 +1083,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Greaves Beta": {
         "type": "legs",
@@ -995,7 +1095,9 @@
         "skills": {
             "Evade Extender": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1004,7 +1106,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Greaves Alpha": {
         "type": "legs",
@@ -1015,7 +1117,9 @@
             "Peak Performance": 1,
             "Ice Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1024,7 +1128,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Greaves Beta": {
         "type": "legs",
@@ -1034,7 +1138,9 @@
         "skills": {
             "Peak Performance": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1043,7 +1149,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Greaves Alpha": {
         "type": "legs",
@@ -1052,7 +1158,9 @@
             "Recovery Speed": 2,
             "Foray": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1061,7 +1169,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Greaves Beta": {
         "type": "legs",
@@ -1072,7 +1180,9 @@
             "Foray": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1081,7 +1191,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ingot Greaves Alpha": {
         "type": "legs",
@@ -1092,7 +1202,7 @@
             "Resentment": 1,
             "Windproof": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1101,7 +1211,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gajau Boots Alpha": {
         "type": "legs",
@@ -1114,7 +1224,9 @@
             "Water Resistance": 1,
             "Outdoorsman": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1123,7 +1235,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Fulgur Greaves Alpha": {
         "description": "Leg armor made from Guardian Fulgur Anjanath spoils. Produces a faint white aura when worn.",
@@ -1142,8 +1254,12 @@
             "Coalescence": 1,
             "Stamina Surge": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "G Fulgur Greaves Beta": {
@@ -1164,8 +1280,12 @@
             "Coalescence": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "Doshaguma Greaves Alpha": {
@@ -1178,7 +1298,9 @@
             "Recovery Up": 2,
             "Free Meal": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1187,7 +1309,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Doshaguma Greaves Beta": {
         "type": "legs",
@@ -1200,7 +1324,9 @@
             "Recovery Up": 1,
             "Free Meal": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1209,7 +1335,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "G Doshaguma Greaves Alpha": {
         "description": "Leg armor made from Guardian Doshaguma spoils. Produces a faint white aura when worn.",
@@ -1228,8 +1356,12 @@
             "Heroics": 1,
             "Constitution": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "G Doshaguma Greaves Beta": {
@@ -1250,8 +1382,12 @@
             "Heroics": 1,
             "Constitution": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "Ajarakan Greaves Alpha": {
@@ -1261,7 +1397,9 @@
             "Partbreaker": 2,
             "Resentment": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1270,7 +1408,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Greaves Beta": {
         "type": "legs",
@@ -1281,7 +1419,9 @@
         "skills": {
             "Partbreaker": 2
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1290,7 +1430,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Ebony Greaves Alpha": {
         "description": "Leg armor made from Guardian Ebony Odogaron spoils. Produces a faint white aura when worn.",
@@ -1309,8 +1449,12 @@
             "Earplugs": 1,
             "Divine Blessing": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "G Ebony Greaves Beta": {
@@ -1331,8 +1475,12 @@
             "Earplugs": 1,
             "Divine Blessing": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "Xu Wu Greaves Alpha": {
@@ -1345,7 +1493,9 @@
             "Adrenaline Rush": 1,
             "Ambush": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1354,7 +1504,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Xu Wu Greaves Beta": {
         "type": "legs",
@@ -1366,7 +1518,9 @@
         "skills": {
             "Adrenaline Rush": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1375,7 +1529,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Rathalos Greaves Alpha": {
         "type": "legs",
@@ -1386,7 +1542,9 @@
             "Evade Window": 2,
             "Adrenaline Rush": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1395,7 +1553,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "Rathalos Greaves Beta": {
         "type": "legs",
@@ -1407,7 +1567,9 @@
         "skills": {
             "Evade Window": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1416,7 +1578,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "G Rathalos Greaves Alpha": {
         "description": "Leg armor made from Guardian Rathalos spoils. Produces a faint white aura when worn.",
@@ -1435,8 +1599,12 @@
             "Weakness Exploit": 1,
             "Windproof": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "G Rathalos Greaves Beta": {
@@ -1456,8 +1624,12 @@
             "Weakness Exploit": 1,
             "Windproof": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "Gravios Greaves Alpha": {
@@ -1470,7 +1642,9 @@
             "Tremor Resistance": 2,
             "Recovery Speed": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1479,7 +1653,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Gravios Greaves Beta": {
         "type": "legs",
@@ -1491,7 +1667,9 @@
             "Recovery Speed": 1,
             "Tremor Resistance": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1500,7 +1678,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Blango Greaves Alpha": {
         "type": "legs",
@@ -1512,7 +1692,9 @@
             "Agitator": 1,
             "Counterstrike": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1521,7 +1703,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Blango Greaves Beta": {
         "type": "legs",
@@ -1532,7 +1716,9 @@
         "skills": {
             "Agitator": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1541,7 +1727,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Commission Greaves Alpha": {
         "type": "legs",
@@ -1552,7 +1740,7 @@
             "Agitator": 1,
             "Earplugs": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1561,7 +1749,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kunafa Chaps Alpha": {
         "type": "legs",
@@ -1572,7 +1760,9 @@
             "Wide-Range": 2,
             "Palico Rally": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1581,7 +1771,7 @@
         "thunderResistance": 4,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Azuz Pants Alpha": {
         "type": "legs",
@@ -1593,7 +1783,9 @@
         "skills": {
             "Geologist": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1602,7 +1794,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Death Stench Heel Alpha": {
         "type": "legs",
@@ -1614,7 +1806,9 @@
             "Stun Resistance": 2,
             "Resentment": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1623,7 +1817,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Butterfly Crura Alpha": {
         "type": "legs",
@@ -1635,7 +1829,9 @@
             "Constitution": 1,
             "Evade Window": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1644,7 +1840,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "King Beetle Crura Alpha": {
         "type": "legs",
@@ -1656,7 +1852,9 @@
             "Flayer": 1,
             "Poison Resistance": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1665,7 +1863,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "High Metal Greaves Alpha": {
         "type": "legs",
@@ -1676,7 +1874,9 @@
             "Bleeding Resistance": 3,
             "Flinch Free": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1685,7 +1885,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Battle Greaves Alpha": {
         "type": "legs",
@@ -1696,7 +1896,9 @@
             "Marathon Runner": 3,
             "Constitution": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1705,7 +1907,7 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Melahoa Roots Alpha": {
         "type": "legs",
@@ -1715,7 +1917,9 @@
         "skills": {
             "Mushroomancer": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1724,7 +1928,7 @@
         "thunderResistance": 3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Artian Greaves Alpha": {
         "type": "legs",
@@ -1735,7 +1939,9 @@
             "Tremor Resistance": 2,
             "Flayer": 1
         },
-        "groupSkill": "Guardian's Protection",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1744,7 +1950,7 @@
         "thunderResistance": -2,
         "iceResistance": 2,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dober Greaves Alpha": {
         "type": "legs",
@@ -1756,7 +1962,7 @@
             "Mushroomancer": 2,
             "Constitution": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1765,7 +1971,7 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Damascus Greaves Alpha": {
         "type": "legs",
@@ -1776,7 +1982,7 @@
             "Item Prolonger": 2,
             "Wide-Range": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1785,7 +1991,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dahaad Shardgreaves Alpha": {
         "type": "legs",
@@ -1796,7 +2002,9 @@
             "Agitator": 2,
             "Tremor Resistance": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1805,7 +2013,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Dahaad Shardgreaves Beta": {
         "type": "legs",
@@ -1815,7 +2025,9 @@
         "skills": {
             "Agitator": 2
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1824,7 +2036,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Duna Wildgreaves Alpha": {
         "type": "legs",
@@ -1835,7 +2049,9 @@
             "Peak Performance": 1,
             "Tool Specialist": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1844,7 +2060,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Duna Wildgreaves Beta": {
         "type": "legs",
@@ -1856,7 +2074,9 @@
         "skills": {
             "Peak Performance": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1865,7 +2085,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Rey Sandgreaves Alpha": {
         "type": "legs",
@@ -1876,7 +2098,9 @@
             "Latent Power": 1,
             "Maximum Might": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1885,7 +2109,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Rey Sandgreaves Beta": {
         "type": "legs",
@@ -1897,7 +2123,9 @@
         "skills": {
             "Latent Power": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1906,7 +2134,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Miregreaves Alpha": {
         "type": "legs",
@@ -1917,7 +2147,9 @@
             "Windproof": 2,
             "Burst": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1926,7 +2158,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Udra Miregreaves Beta": {
         "type": "legs",
@@ -1938,7 +2172,9 @@
             "Burst": 1,
             "Windproof": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1947,7 +2183,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Gore Greaves Alpha": {
         "type": "legs",
@@ -1959,7 +2197,9 @@
             "Flinch Free": 2,
             "Antivirus": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1968,7 +2208,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Gore Greaves Beta": {
         "type": "legs",
@@ -1981,7 +2223,9 @@
             "Antivirus": 1,
             "Flinch Free": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1990,7 +2234,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Arkvulcan Greaves Alpha": {
         "type": "legs",
@@ -2002,7 +2248,9 @@
             "Quick Sheathe": 2,
             "Convert Element": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -2011,7 +2259,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "Arkvulcan Greaves Beta": {
         "type": "legs",
@@ -2023,7 +2273,9 @@
             "Convert Element": 1,
             "Quick Sheathe": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -2032,7 +2284,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "G Arkveld Greaves Alpha": {
         "description": "Guardian Arkveld leg armor. Their power grows with each relentless, hungry step.",
@@ -2049,8 +2303,12 @@
             "Elemental Absorption": 2,
             "Weakness Exploit": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "G Arkveld Greaves Beta": {
@@ -2071,8 +2329,12 @@
             "Elemental Absorption": 1,
             "Weakness Exploit": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "Guild Ace Boots Alpha": {
@@ -2085,7 +2347,7 @@
             "Constitution": 1,
             "Foray": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 60,
@@ -2094,7 +2356,7 @@
         "thunderResistance": 2,
         "iceResistance": 2,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Guild Cross Boots Alpha": {
         "type": "legs",
@@ -2106,8 +2368,10 @@
             "Windproof": 1,
             "Tremor Resistance": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 36,
@@ -2127,8 +2391,10 @@
             "Palico Rally": 2,
             "Tool Specialist": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2147,8 +2413,12 @@
             "Burst": 2,
             "Peak Performance": 1
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Fortifying Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2166,8 +2436,12 @@
         "skills": {
             "Burst": 2
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Alluring Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2188,8 +2462,12 @@
             "Recovery Speed": 1,
             "Elemental Absorption": 1
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Pulse",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2210,8 +2488,12 @@
             "Recovery Speed": 1,
             "Elemental Absorption": 1
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Protection",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2237,8 +2519,12 @@
             "Latent Power": 1,
             "Thunder Resistance": 1
         },
-        "groupSkill": "Flexible Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Lagiacrus Greaves Beta": {
@@ -2258,8 +2544,12 @@
             "Weakness Exploit": 2,
             "Latent Power": 1
         },
-        "groupSkill": "Buttery Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Regios Greaves Alpha": {
@@ -2278,8 +2568,12 @@
             "Agitator": 1,
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
         "rarity": 1
     },
     "Regios Greaves Beta": {
@@ -2299,8 +2593,64 @@
             "Adrenaline Rush": 2,
             "Agitator": 1
         },
-        "groupSkill": "Scale Layering",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Greaves Alpha": {
+        "description": "Gogmazios leg armor. From beneath the earth, it wells forth on a shadowy mission to devour the world.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            3,
+            2,
+            1
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Agitator": 1
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Doshaguma's Might"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Greaves Beta": {
+        "description": "Gogmazios leg armor. From beneath the earth, it wells forth on a shadowy mission to devour the world.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            3,
+            2,
+            1
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Agitator": 1
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Gravios's Protection"
+        ],
         "rarity": 1
     },
     "Rey Sandgreaves Gamma": {
@@ -2320,8 +2670,12 @@
             "Stamina Surge": 2,
             "Stun Resistance": 3
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Rey Dau's Voltage",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
         "rarity": 8
     },
     "Duna Wildgreaves Gamma": {
@@ -2343,8 +2697,12 @@
             "Quick Sheathe": 3,
             "Agitator": 1
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Udra Miregreaves Gamma": {
@@ -2365,8 +2723,37 @@
             "Counterstrike": 1,
             "Speed Eating": 3
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Nu Udra's Mutiny",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "rarity": 1
+    },
+    "Dahaad Shardgreaves Gamma": {
+        "description": "Leg armor made from special Jin Dahaad materials. The shining white greaves evoke the autonomy of the Arch-tempered.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 68,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 2,
+            "Foray": 1
+        },
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
         "rarity": 1
     },
     "Sakuratide Hakama Alpha": {
@@ -2386,8 +2773,12 @@
             "Foray": 1,
             "Item Prolonger": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Blossomdance Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Blossomdance Prayer"
+        ],
         "rarity": 1
     },
     "Blossom Boots Alpha": {
@@ -2408,8 +2799,10 @@
             "Poison Resistance": 1,
             "Recovery Speed": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Afi Sandals Alpha": {
@@ -2431,8 +2824,12 @@
             "Bombardier": 1,
             "Blast Resistance": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Flamefete Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Flamefete Prayer"
+        ],
         "rarity": 1
     },
     "Diver's Boots Alpha": {
@@ -2453,8 +2850,10 @@
             "Aquatic/Oilsilt Mobility": 1,
             "Marathon Runner": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Dreamwalker Greaves Alpha": {
@@ -2475,8 +2874,12 @@
             "Flayer": 1,
             "Wide-Range": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Dreamspell Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Dreamspell Prayer"
+        ],
         "rarity": 1
     },
     "Harvest Raiz Alpha": {
@@ -2496,8 +2899,60 @@
             "Constitution": 2,
             "Botanist": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Ceremonial Greaves Alpha": {
+        "description": "Lumenhymn Ticket leg armor. Softly they walk, a wordless reminder of the splendor of winter.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "slots": [
+            2
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Tool Specialist": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Lumenhymn Prayer"
+        ],
+        "rarity": 1
+    },
+    "Orion Boots Alpha": {
+        "description": "Orion Ticket leg armor that's perfect for walking\u2014nay, dancing and playing through snow and ice.",
+        "rank": "high",
+        "type": "legs",
+        "defense": 66,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 4,
+        "dragonResistance": 1,
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "skills": {
+            "Earplugs": 2,
+            "Flinch Free": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Demon Pants Alpha": {
@@ -2518,8 +2973,10 @@
         "skills": {
             "Partbreaker": 1
         },
-        "groupSkill": "Master of the Fist",
-        "setSkill": "",
+        "groupSkill": [
+            "Master of the Fist"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Bale Sollerets Alpha": {
@@ -2539,8 +2996,10 @@
             "Resentment": 1,
             "Latent Power": 2
         },
-        "groupSkill": "",
-        "setSkill": "Soul of the Dark Knight",
+        "groupSkill": [],
+        "setSkill": [
+            "Soul of the Dark Knight"
+        ],
         "rarity": 1
     },
     "Omega Boots Alpha": {
@@ -2560,8 +3019,10 @@
         "skills": {
             "Evade Window": 2
         },
-        "groupSkill": "",
-        "setSkill": "Omega Resonance",
+        "groupSkill": [],
+        "setSkill": [
+            "Omega Resonance"
+        ],
         "rarity": 1
     }
 }

@@ -8,6 +8,7 @@ import TALISMANS from "../data/compact/talisman.json";
 import DECORATIONS from "../data/compact/decoration.json";
 import SKILLS from '../data/detailed/skills.json';
 import { getArmorTypeList } from "./util";
+import { _x } from "./armorAccessor";
 
 export const getSearchParameters = parameters => {
     return {
@@ -102,13 +103,11 @@ export const hasNeededSkill = (gearSkills, neededSkills) => {
 };
 
 export const isInSets = (armorData, setSkills) => {
-    // return setSkills.hasOwnProperty(armorData[7]);
-    return armorData[7] in setSkills;
+    return _x.setSkills(armorData).some(sk => sk in setSkills);
 };
 
 export const isInGroups = (armorData, groupSkills) => {
-    // return groupSkills.hasOwnProperty(armorData[2]);
-    return armorData[2] in groupSkills;
+    return _x.groupSkills(armorData).some(sk => sk in groupSkills);
 };
 
 export const formatArmorC = obj => {
@@ -140,34 +139,8 @@ export const isEmpty = obj => {
     return Object.keys(obj).length === 0;
 };
 
-export const getSetName = armorData => {
-    return armorData[7];
-};
-
-export const getGroupName = armorData => {
-    return armorData[2];
-};
-
 export const getDecoSkillsFromNames = names => {
-    return mergeSumMaps(names.map(name => _x(DECORATIONS[name], "skills")));
-};
-
-// eslint-disable-next-line no-underscore-dangle
-export const _x = (piece, field) => {
-    // Extracts a field from an armor piece or decoration
-
-    const fieldMap = {
-        type: 0,
-        skills: 1,
-        slot: 2, // for decos
-        groupSkill: 2,
-        slots: 3,
-        defense: 4,
-        resistances: 5,
-        rank: 6
-    };
-
-    return piece[fieldMap[field]];
+    return mergeSumMaps(names.map(name => _x.skills(DECORATIONS[name])));
 };
 
 export const groupArmorIntoSets = (armorPieces, setSkills, groupSkills) => {
@@ -175,19 +148,22 @@ export const groupArmorIntoSets = (armorPieces, setSkills, groupSkills) => {
     const groupsEmpty = {};
 
     Object.entries(armorPieces).forEach(([armorName, armorData]) => {
-        const setName = getSetName(armorData);
-        const groupName = getGroupName(armorData);
+        const setNames = _x.setSkills(armorData);
+        const groupNames = _x.groupSkills(armorData);
 
-        if (setName && setSkills[setName]) {
-            groups[setName] = groups[setName] || {};
-            groupsEmpty[setName] = groupsEmpty[setName] || {};
-            groups[setName][armorName] = armorData;
+        for (const setName of setNames) {
+            if (setName && setSkills[setName]) {
+                groups[setName] = groups[setName] || {};
+                groupsEmpty[setName] = groupsEmpty[setName] || {};
+                groups[setName][armorName] = armorData;
+            }
         }
-
-        if (groupName && groupSkills[groupName]) {
-            groups[groupName] = groups[groupName] || {};
-            groupsEmpty[groupName] = groupsEmpty[groupName] || {};
-            groups[groupName][armorName] = armorData;
+        for (const groupName of groupNames) {
+            if (groupName && groupSkills[groupName]) {
+                groups[groupName] = groups[groupName] || {};
+                groupsEmpty[groupName] = groupsEmpty[groupName] || {};
+                groups[groupName][armorName] = armorData;
+            }
         }
     });
 

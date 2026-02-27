@@ -11,36 +11,38 @@
             4
         ],
         "armor": [
-            "Doshaguma Braces",
-            "Doshaguma Braces Alpha",
-            "Doshaguma Braces Beta",
-            "Doshaguma Coil",
-            "Doshaguma Coil Alpha",
-            "Doshaguma Coil Beta",
-            "Doshaguma Greaves",
-            "Doshaguma Greaves Alpha",
-            "Doshaguma Greaves Beta",
             "Doshaguma Helm",
-            "Doshaguma Helm Alpha",
-            "Doshaguma Helm Beta",
             "Doshaguma Mail",
-            "Doshaguma Mail Alpha",
-            "Doshaguma Mail Beta",
-            "G Doshaguma Braces",
-            "G Doshaguma Braces Alpha",
-            "G Doshaguma Braces Beta",
-            "G Doshaguma Coil",
-            "G Doshaguma Coil Alpha",
-            "G Doshaguma Coil Beta",
-            "G Doshaguma Greaves",
-            "G Doshaguma Greaves Alpha",
-            "G Doshaguma Greaves Beta",
+            "Doshaguma Braces",
+            "Doshaguma Coil",
+            "Doshaguma Greaves",
             "G Doshaguma Helm",
-            "G Doshaguma Helm Alpha",
-            "G Doshaguma Helm Beta",
             "G Doshaguma Mail",
+            "G Doshaguma Braces",
+            "G Doshaguma Coil",
+            "G Doshaguma Greaves",
+            "Doshaguma Helm Alpha",
+            "Doshaguma Mail Alpha",
+            "Doshaguma Braces Alpha",
+            "Doshaguma Coil Alpha",
+            "Doshaguma Greaves Alpha",
+            "Doshaguma Helm Beta",
+            "Doshaguma Mail Beta",
+            "Doshaguma Braces Beta",
+            "Doshaguma Coil Beta",
+            "Doshaguma Greaves Beta",
+            "G Doshaguma Helm Alpha",
             "G Doshaguma Mail Alpha",
-            "G Doshaguma Mail Beta"
+            "G Doshaguma Braces Alpha",
+            "G Doshaguma Coil Alpha",
+            "G Doshaguma Greaves Alpha",
+            "G Doshaguma Helm Beta",
+            "G Doshaguma Mail Beta",
+            "G Doshaguma Braces Beta",
+            "G Doshaguma Coil Beta",
+            "G Doshaguma Greaves Beta",
+            "Gogmazios Greaves Alpha",
+            "Doshagumask Alpha"
         ]
     },
     "Rathalos's Flare": {
@@ -55,31 +57,32 @@
             4
         ],
         "armor": [
-            "G Rathalos Coil",
-            "G Rathalos Coil Alpha",
-            "G Rathalos Coil Beta",
-            "G Rathalos Greaves",
-            "G Rathalos Greaves Alpha",
-            "G Rathalos Greaves Beta",
             "G Rathalos Helm",
-            "G Rathalos Helm Alpha",
-            "G Rathalos Helm Beta",
             "G Rathalos Mail",
-            "G Rathalos Mail Alpha",
-            "G Rathalos Mail Beta",
             "G Rathalos Vambraces",
+            "G Rathalos Coil",
+            "G Rathalos Greaves",
+            "G Rathalos Helm Alpha",
+            "G Rathalos Mail Alpha",
             "G Rathalos Vambraces Alpha",
+            "G Rathalos Coil Alpha",
+            "G Rathalos Greaves Alpha",
+            "G Rathalos Helm Beta",
+            "G Rathalos Mail Beta",
             "G Rathalos Vambraces Beta",
-            "Rathalos Coil Alpha",
-            "Rathalos Coil Beta",
-            "Rathalos Greaves Alpha",
-            "Rathalos Greaves Beta",
+            "G Rathalos Coil Beta",
+            "G Rathalos Greaves Beta",
             "Rathalos Helm Alpha",
-            "Rathalos Helm Beta",
             "Rathalos Mail Alpha",
-            "Rathalos Mail Beta",
             "Rathalos Vambraces Alpha",
-            "Rathalos Vambraces Beta"
+            "Rathalos Coil Alpha",
+            "Rathalos Greaves Alpha",
+            "Rathalos Helm Beta",
+            "Rathalos Mail Beta",
+            "Rathalos Vambraces Beta",
+            "Rathalos Coil Beta",
+            "Rathalos Greaves Beta",
+            "Gogmazios Mail Beta"
         ]
     },
     "Xu Wu's Vigor": {
@@ -94,16 +97,17 @@
             4
         ],
         "armor": [
-            "Xu Wu Coil Alpha",
-            "Xu Wu Coil Beta",
-            "Xu Wu Greaves Alpha",
-            "Xu Wu Greaves Beta",
             "Xu Wu Helm Alpha",
-            "Xu Wu Helm Beta",
             "Xu Wu Mail Alpha",
-            "Xu Wu Mail Beta",
             "Xu Wu Vambraces Alpha",
-            "Xu Wu Vambraces Beta"
+            "Xu Wu Coil Alpha",
+            "Xu Wu Greaves Alpha",
+            "Xu Wu Helm Beta",
+            "Xu Wu Mail Beta",
+            "Xu Wu Vambraces Beta",
+            "Xu Wu Coil Beta",
+            "Xu Wu Greaves Beta",
+            "Gogmazios Mail Alpha"
         ]
     },
     "Gravios's Protection": {
@@ -118,16 +122,17 @@
             4
         ],
         "armor": [
-            "Gravios Coil Alpha",
-            "Gravios Coil Beta",
-            "Gravios Greaves Alpha",
-            "Gravios Greaves Beta",
             "Gravios Helm Alpha",
-            "Gravios Helm Beta",
             "Gravios Mail Alpha",
-            "Gravios Mail Beta",
             "Gravios Vambraces Alpha",
-            "Gravios Vambraces Beta"
+            "Gravios Coil Alpha",
+            "Gravios Greaves Alpha",
+            "Gravios Helm Beta",
+            "Gravios Mail Beta",
+            "Gravios Vambraces Beta",
+            "Gravios Coil Beta",
+            "Gravios Greaves Beta",
+            "Gogmazios Greaves Beta"
         ]
     },
     "Blangonga's Spirit": {
@@ -142,16 +147,17 @@
             4
         ],
         "armor": [
-            "Blango Coil Alpha",
-            "Blango Coil Beta",
-            "Blango Greaves Alpha",
-            "Blango Greaves Beta",
             "Blango Helm Alpha",
-            "Blango Helm Beta",
             "Blango Mail Alpha",
-            "Blango Mail Beta",
             "Blango Vambraces Alpha",
-            "Blango Vambraces Beta"
+            "Blango Coil Alpha",
+            "Blango Greaves Alpha",
+            "Blango Helm Beta",
+            "Blango Mail Beta",
+            "Blango Vambraces Beta",
+            "Blango Coil Beta",
+            "Blango Greaves Beta",
+            "Gogmazios Vambraces Beta"
         ]
     },
     "Ebony Odogaron's Power": {
@@ -166,21 +172,22 @@
             4
         ],
         "armor": [
-            "G Ebony Braces",
-            "G Ebony Braces Alpha",
-            "G Ebony Braces Beta",
-            "G Ebony Coil",
-            "G Ebony Coil Alpha",
-            "G Ebony Coil Beta",
-            "G Ebony Greaves",
-            "G Ebony Greaves Alpha",
-            "G Ebony Greaves Beta",
             "G Ebony Helm",
-            "G Ebony Helm Alpha",
-            "G Ebony Helm Beta",
             "G Ebony Mail",
+            "G Ebony Braces",
+            "G Ebony Coil",
+            "G Ebony Greaves",
+            "G Ebony Helm Alpha",
             "G Ebony Mail Alpha",
-            "G Ebony Mail Beta"
+            "G Ebony Braces Alpha",
+            "G Ebony Coil Alpha",
+            "G Ebony Greaves Alpha",
+            "G Ebony Helm Beta",
+            "G Ebony Mail Beta",
+            "G Ebony Braces Beta",
+            "G Ebony Coil Beta",
+            "G Ebony Greaves Beta",
+            "Gogmazios Coil Alpha"
         ]
     },
     "Fulgur Anjanath's Will": {
@@ -195,16 +202,17 @@
             4
         ],
         "armor": [
-            "G Fulgur Coil Alpha",
-            "G Fulgur Coil Beta",
-            "G Fulgur Greaves Alpha",
-            "G Fulgur Greaves Beta",
             "G Fulgur Helm Alpha",
-            "G Fulgur Helm Beta",
             "G Fulgur Mail Alpha",
-            "G Fulgur Mail Beta",
             "G Fulgur Vambraces Alpha",
-            "G Fulgur Vambraces Beta"
+            "G Fulgur Coil Alpha",
+            "G Fulgur Greaves Alpha",
+            "G Fulgur Helm Beta",
+            "G Fulgur Mail Beta",
+            "G Fulgur Vambraces Beta",
+            "G Fulgur Coil Beta",
+            "G Fulgur Greaves Beta",
+            "Gogmazios Vambraces Alpha"
         ]
     },
     "Uth Duna's Cover": {
@@ -219,21 +227,26 @@
             4
         ],
         "armor": [
-            "Duna Wildcoil",
-            "Duna Wildgreaves",
             "Duna Wildhelm",
             "Duna Wildmail",
             "Duna Wildbraces",
-            "Duna Wildbraces Alpha",
-            "Duna Wildbraces Beta",
-            "Duna Wildcoil Alpha",
-            "Duna Wildcoil Beta",
-            "Duna Wildgreaves Alpha",
-            "Duna Wildgreaves Beta",
+            "Duna Wildcoil",
+            "Duna Wildgreaves",
             "Duna Wildhelm Alpha",
-            "Duna Wildhelm Beta",
             "Duna Wildmail Alpha",
-            "Duna Wildmail Beta"
+            "Duna Wildbraces Alpha",
+            "Duna Wildcoil Alpha",
+            "Duna Wildgreaves Alpha",
+            "Duna Wildhelm Beta",
+            "Duna Wildmail Beta",
+            "Duna Wildbraces Beta",
+            "Duna Wildcoil Beta",
+            "Duna Wildgreaves Beta",
+            "Duna Wildhelm Gamma",
+            "Duna Wildmail Gamma",
+            "Duna Wildbraces Gamma",
+            "Duna Wildcoil Gamma",
+            "Duna Wildgreaves Gamma"
         ]
     },
     "Rey Dau's Voltage": {
@@ -248,21 +261,26 @@
             4
         ],
         "armor": [
-            "Rey Sandbraces",
-            "Rey Sandbraces Alpha",
-            "Rey Sandbraces Beta",
-            "Rey Sandcoil",
-            "Rey Sandcoil Alpha",
-            "Rey Sandcoil Beta",
-            "Rey Sandgreaves",
-            "Rey Sandgreaves Alpha",
-            "Rey Sandgreaves Beta",
             "Rey Sandhelm",
-            "Rey Sandhelm Alpha",
-            "Rey Sandhelm Beta",
             "Rey Sandmail",
+            "Rey Sandbraces",
+            "Rey Sandcoil",
+            "Rey Sandgreaves",
+            "Rey Sandhelm Alpha",
             "Rey Sandmail Alpha",
-            "Rey Sandmail Beta"
+            "Rey Sandbraces Alpha",
+            "Rey Sandcoil Alpha",
+            "Rey Sandgreaves Alpha",
+            "Rey Sandhelm Beta",
+            "Rey Sandmail Beta",
+            "Rey Sandbraces Beta",
+            "Rey Sandcoil Beta",
+            "Rey Sandgreaves Beta",
+            "Rey Sandhelm Gamma",
+            "Rey Sandmail Gamma",
+            "Rey Sandbraces Gamma",
+            "Rey Sandcoil Gamma",
+            "Rey Sandgreaves Gamma"
         ]
     },
     "Nu Udra's Mutiny": {
@@ -277,21 +295,26 @@
             4
         ],
         "armor": [
-            "Udra Mirebraces",
-            "Udra Mirebraces Alpha",
-            "Udra Mirebraces Beta",
-            "Udra Mirecoil",
-            "Udra Mirecoil Alpha",
-            "Udra Mirecoil Beta",
-            "Udra Miregreaves",
-            "Udra Miregreaves Alpha",
-            "Udra Miregreaves Beta",
             "Udra Mirehelm",
-            "Udra Mirehelm Alpha",
-            "Udra Mirehelm Beta",
             "Udra Miremail",
+            "Udra Mirebraces",
+            "Udra Mirecoil",
+            "Udra Miregreaves",
+            "Udra Mirehelm Alpha",
             "Udra Miremail Alpha",
-            "Udra Miremail Beta"
+            "Udra Mirebraces Alpha",
+            "Udra Mirecoil Alpha",
+            "Udra Miregreaves Alpha",
+            "Udra Mirehelm Beta",
+            "Udra Miremail Beta",
+            "Udra Mirebraces Beta",
+            "Udra Mirecoil Beta",
+            "Udra Miregreaves Beta",
+            "Udra Mirehelm Gamma",
+            "Udra Miremail Gamma",
+            "Udra Mirebraces Gamma",
+            "Udra Mirecoil Gamma",
+            "Udra Miregreaves Gamma"
         ]
     },
     "Jin Dahaad's Revolt": {
@@ -306,16 +329,21 @@
             4
         ],
         "armor": [
-            "Dahaad Shardbraces Alpha",
-            "Dahaad Shardbraces Beta",
-            "Dahaad Shardcoil Alpha",
-            "Dahaad Shardcoil Beta",
-            "Dahaad Shardgreaves Alpha",
-            "Dahaad Shardgreaves Beta",
             "Dahaad Shardhelm Alpha",
-            "Dahaad Shardhelm Beta",
             "Dahaad Shardmail Alpha",
-            "Dahaad Shardmail Beta"
+            "Dahaad Shardbraces Alpha",
+            "Dahaad Shardcoil Alpha",
+            "Dahaad Shardgreaves Alpha",
+            "Dahaad Shardhelm Beta",
+            "Dahaad Shardmail Beta",
+            "Dahaad Shardbraces Beta",
+            "Dahaad Shardcoil Beta",
+            "Dahaad Shardgreaves Beta",
+            "Dahaad Shardhelm Gamma",
+            "Dahaad Shardmail Gamma",
+            "Dahaad Shardbraces Gamma",
+            "Dahaad Shardcoil Gamma",
+            "Dahaad Shardgreaves Gamma"
         ]
     },
     "Gore Magala's Tyranny": {
@@ -330,16 +358,16 @@
             4
         ],
         "armor": [
-            "Gore Coil Alpha",
-            "Gore Coil Beta",
-            "Gore Greaves Alpha",
-            "Gore Greaves Beta",
             "Gore Helm Alpha",
-            "Gore Helm Beta",
             "Gore Mail Alpha",
-            "Gore Mail Beta",
             "Gore Vambraces Alpha",
-            "Gore Vambraces Beta"
+            "Gore Coil Alpha",
+            "Gore Greaves Alpha",
+            "Gore Helm Beta",
+            "Gore Mail Beta",
+            "Gore Vambraces Beta",
+            "Gore Coil Beta",
+            "Gore Greaves Beta"
         ]
     },
     "Arkveld's Hunger": {
@@ -354,16 +382,16 @@
             4
         ],
         "armor": [
-            "Arkvulcan Coil Alpha",
-            "Arkvulcan Coil Beta",
-            "Arkvulcan Greaves Alpha",
-            "Arkvulcan Greaves Beta",
             "Arkvulcan Helm Alpha",
-            "Arkvulcan Helm Beta",
             "Arkvulcan Mail Alpha",
-            "Arkvulcan Mail Beta",
             "Arkvulcan Vambraces Alpha",
-            "Arkvulcan Vambraces Beta"
+            "Arkvulcan Coil Alpha",
+            "Arkvulcan Greaves Alpha",
+            "Arkvulcan Helm Beta",
+            "Arkvulcan Mail Beta",
+            "Arkvulcan Vambraces Beta",
+            "Arkvulcan Coil Beta",
+            "Arkvulcan Greaves Beta"
         ]
     },
     "Guardian Arkveld's Vitality": {
@@ -378,21 +406,22 @@
             4
         ],
         "armor": [
-            "G Arkveld Coil",
-            "G Arkveld Coil Alpha",
-            "G Arkveld Coil Beta",
-            "G Arkveld Greaves",
-            "G Arkveld Greaves Alpha",
-            "G Arkveld Greaves Beta",
             "G Arkveld Helm",
-            "G Arkveld Helm Alpha",
-            "G Arkveld Helm Beta",
             "G Arkveld Mail",
-            "G Arkveld Mail Alpha",
-            "G Arkveld Mail Beta",
             "G Arkveld Vambraces",
+            "G Arkveld Coil",
+            "G Arkveld Greaves",
+            "G Arkveld Helm Alpha",
+            "G Arkveld Mail Alpha",
             "G Arkveld Vambraces Alpha",
-            "G Arkveld Vambraces Beta"
+            "G Arkveld Coil Alpha",
+            "G Arkveld Greaves Alpha",
+            "G Arkveld Helm Beta",
+            "G Arkveld Mail Beta",
+            "G Arkveld Vambraces Beta",
+            "G Arkveld Coil Beta",
+            "G Arkveld Greaves Beta",
+            "Gogmazios Helm Beta"
         ]
     },
     "Mizutsune's Prowess": {
@@ -416,7 +445,8 @@
             "Mizutsune Mail Beta",
             "Mizutsune Braces Beta",
             "Mizutsune Coil Beta",
-            "Mizutsune Greaves Beta"
+            "Mizutsune Greaves Beta",
+            "Gogmazios Coil Beta"
         ]
     },
     "Zoh Shia's Pulse": {
@@ -440,7 +470,8 @@
             "Numinous Shroud Beta",
             "Numinous Vambraces Beta",
             "Numinous Overlay Beta",
-            "Numinous Greaves Beta"
+            "Numinous Greaves Beta",
+            "Gogmazios Helm Alpha"
         ]
     },
     "Blossomdance Prayer": {
@@ -548,6 +579,25 @@
             "Dreamwalker Greaves Alpha"
         ]
     },
+    "Lumenhymn Prayer": {
+        "skill": "Lumenhymn Boon",
+        "description": "During Lumenhymn, adds special items to quest rewards. (No effect when joining mid-quest.)",
+        "levels": [
+            "During Lumenhymn, adds special items to quest rewards. (No effect when joining mid-quest.)",
+            "During Lumenhymn, adds special items to quest rewards, and greatly boosts attack and defense."
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Ceremonial Helm Alpha",
+            "Ceremonial Mail Alpha",
+            "Ceremonial Vambraces Alpha",
+            "Ceremonial Coil Alpha",
+            "Ceremonial Greaves Alpha"
+        ]
+    },
     "Soul of the Dark Knight": {
         "skill": "Dark Arts/The Blackest Knight",
         "description": "Having recoverable damage increases elemental attack, and some great sword Lvl 3 charged slashes are strengthened.",
@@ -584,6 +634,30 @@
             "Omega Vambraces Alpha",
             "Omega Accessory Alpha",
             "Omega Boots Alpha"
+        ]
+    },
+    "Gogmapocalypse": {
+        "skill": "Mutual Hostility",
+        "description": "Increases elemental attack when large monsters become enraged.",
+        "levels": [
+            "Increases elemental attack when large monsters become enraged.",
+            "Level I effect is increased, and you gain a temporary damage barrier. (Barrier reactivates after cooldown.)"
+        ],
+        "piecesPerLevel": [
+            2,
+            4
+        ],
+        "armor": [
+            "Gogmazios Helm Alpha",
+            "Gogmazios Mail Alpha",
+            "Gogmazios Vambraces Alpha",
+            "Gogmazios Coil Alpha",
+            "Gogmazios Greaves Alpha",
+            "Gogmazios Helm Beta",
+            "Gogmazios Mail Beta",
+            "Gogmazios Vambraces Beta",
+            "Gogmazios Coil Beta",
+            "Gogmazios Greaves Beta"
         ]
     }
 }

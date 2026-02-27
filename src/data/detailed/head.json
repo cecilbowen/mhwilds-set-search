@@ -5,7 +5,7 @@
         "skills": {
             "Stun Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -14,7 +14,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Headgear": {
         "type": "head",
@@ -22,7 +22,7 @@
         "skills": {
             "Botanist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -31,7 +31,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Headgear": {
         "type": "head",
@@ -39,7 +39,7 @@
         "skills": {
             "Geologist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -48,7 +48,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Helm": {
         "type": "head",
@@ -56,7 +56,7 @@
         "skills": {
             "Marathon Runner": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -65,7 +65,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bulaqchi Specs": {
         "type": "head",
@@ -73,7 +73,9 @@
         "skills": {
             "Entomologist": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -82,7 +84,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Helm": {
         "type": "head",
@@ -90,7 +92,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -99,7 +103,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Helm": {
         "type": "head",
@@ -107,7 +111,9 @@
         "skills": {
             "Flinch Free": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -116,7 +122,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Helm": {
         "type": "head",
@@ -124,7 +130,7 @@
         "skills": {
             "Quick Sheathe": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -133,7 +139,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Helm": {
         "type": "head",
@@ -141,7 +147,9 @@
         "skills": {
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -150,7 +158,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Headgear": {
         "type": "head",
@@ -158,7 +166,9 @@
         "skills": {
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 8,
@@ -167,7 +177,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Helm": {
         "type": "head",
@@ -175,7 +185,9 @@
         "skills": {
             "Mushroomancer": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 8,
@@ -184,7 +196,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Helm": {
         "type": "head",
@@ -192,7 +204,9 @@
         "skills": {
             "Hunger Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 12,
@@ -201,7 +215,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Doshaguma Helm": {
         "type": "head",
@@ -209,7 +223,9 @@
         "skills": {
             "Free Meal": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 16,
@@ -218,7 +234,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Ingot Helm": {
         "type": "head",
@@ -226,7 +244,7 @@
         "skills": {
             "Divine Blessing": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 3,
         "rank": "low",
         "defense": 16,
@@ -235,7 +253,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Comaqchi Accessory": {
         "type": "head",
@@ -243,7 +261,9 @@
         "skills": {
             "Sleep Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 16,
@@ -252,7 +272,7 @@
         "thunderResistance": 0,
         "iceResistance": 3,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Helm": {
         "type": "head",
@@ -260,7 +280,9 @@
         "skills": {
             "Wide-Range": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 18,
@@ -269,7 +291,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Helm": {
         "type": "head",
@@ -277,7 +299,9 @@
         "skills": {
             "Ambush": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 20,
@@ -286,7 +310,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Headdress": {
         "type": "head",
@@ -295,7 +319,9 @@
             "Evade Window": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 22,
@@ -304,7 +330,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Helm": {
         "type": "head",
@@ -313,7 +339,9 @@
             "Partbreaker": 1,
             "Bombardier": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 24,
@@ -322,7 +350,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Duna Wildhelm": {
         "description": "Uth Duna head armor. The plumage crafted from its fins convey the forest's will to the wearer.",
@@ -339,8 +367,12 @@
             "Peak Performance": 1,
             "Tool Specialist": 1
         },
-        "groupSkill": "Lord's Favor",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Rey Sandhelm": {
@@ -349,7 +381,9 @@
         "skills": {
             "Latent Power": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -358,7 +392,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Mirehelm": {
         "type": "head",
@@ -368,7 +404,9 @@
         "skills": {
             "Resentment": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -377,7 +415,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "G Doshaguma Helm": {
         "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
@@ -395,8 +435,12 @@
         "skills": {
             "Heroics": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 4
     },
     "G Rathalos Helm": {
@@ -414,8 +458,12 @@
             "Weakness Exploit": 1,
             "Intimidator": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 4
     },
     "G Ebony Helm": {
@@ -434,8 +482,12 @@
         "skills": {
             "Burst": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 4
     },
     "Xu Wu Helm": {
@@ -446,7 +498,9 @@
         "skills": {
             "Maximum Might": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -455,7 +509,7 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Arkveld Helm": {
         "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
@@ -473,8 +527,12 @@
         "skills": {
             "Flayer": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 4
     },
     "Hope Mask Alpha": {
@@ -485,7 +543,7 @@
         "skills": {
             "Divine Blessing": 2
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -494,7 +552,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Headgear Alpha": {
         "type": "head",
@@ -504,7 +562,7 @@
         "skills": {
             "Botanist": 2
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -513,7 +571,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Headgear Alpha": {
         "type": "head",
@@ -524,7 +582,7 @@
         "skills": {
             "Geologist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -533,7 +591,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Helm Alpha": {
         "type": "head",
@@ -544,7 +602,7 @@
             "Stun Resistance": 1,
             "Speed Eating": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -553,7 +611,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Helm Alpha": {
         "type": "head",
@@ -564,7 +622,7 @@
         "skills": {
             "Quick Sheathe": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -573,7 +631,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bulaqchi Specs Alpha": {
         "type": "head",
@@ -582,7 +640,9 @@
             "Weakness Exploit": 1,
             "Entomologist": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -591,7 +651,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bulaqchi Specs Beta": {
         "type": "head",
@@ -602,7 +662,9 @@
         "skills": {
             "Entomologist": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -611,7 +673,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Helm Alpha": {
         "type": "head",
@@ -620,7 +682,9 @@
             "Survival Expert": 1,
             "Ambush": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -629,7 +693,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Helm Beta": {
         "type": "head",
@@ -639,7 +703,9 @@
         "skills": {
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -648,7 +714,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Comaqchi Accessory Alpha": {
         "type": "head",
@@ -657,7 +723,9 @@
             "Sleep Resistance": 2,
             "Foray": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -666,7 +734,7 @@
         "thunderResistance": 0,
         "iceResistance": 3,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Comaqchi Accessory Beta": {
         "type": "head",
@@ -677,7 +745,9 @@
         "skills": {
             "Sleep Resistance": 2
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -686,7 +756,7 @@
         "thunderResistance": 0,
         "iceResistance": 3,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Helm Alpha": {
         "type": "head",
@@ -697,7 +767,9 @@
             "Constitution": 2,
             "Fire Resistance": 2
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -706,7 +778,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Helm Beta": {
         "type": "head",
@@ -717,7 +789,9 @@
         "skills": {
             "Constitution": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -726,7 +800,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Helm Alpha": {
         "type": "head",
@@ -737,7 +811,9 @@
             "Wide-Range": 1,
             "Speed Eating": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -746,7 +822,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Helm Beta": {
         "type": "head",
@@ -756,7 +832,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -765,7 +843,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Helm Alpha": {
         "type": "head",
@@ -776,7 +854,9 @@
             "Latent Power": 1,
             "Flinch Free": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -785,7 +865,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Helm Beta": {
         "type": "head",
@@ -795,7 +875,9 @@
         "skills": {
             "Latent Power": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -804,7 +886,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Headgear Alpha": {
         "type": "head",
@@ -813,7 +895,9 @@
             "Foray": 1,
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -822,7 +906,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Headgear Beta": {
         "type": "head",
@@ -832,7 +916,9 @@
         "skills": {
             "Foray": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -841,7 +927,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Helm Alpha": {
         "type": "head",
@@ -852,7 +938,9 @@
             "Intimidator": 1,
             "Free Meal": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -861,7 +949,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Helm Beta": {
         "type": "head",
@@ -871,7 +959,9 @@
         "skills": {
             "Intimidator": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -880,7 +970,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Helm Alpha": {
         "type": "head",
@@ -891,7 +981,9 @@
         "skills": {
             "Wide-Range": 2
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -900,7 +992,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Helm Beta": {
         "type": "head",
@@ -911,7 +1003,9 @@
         "skills": {
             "Wide-Range": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -920,7 +1014,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Helm Alpha": {
         "type": "head",
@@ -931,7 +1025,9 @@
             "Stamina Surge": 1,
             "Blindsider": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -940,7 +1036,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Helm Beta": {
         "type": "head",
@@ -951,7 +1047,9 @@
         "skills": {
             "Stamina Surge": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -960,7 +1058,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Helm Alpha": {
         "type": "head",
@@ -969,7 +1067,9 @@
             "Poison Resistance": 2,
             "Bind Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -978,7 +1078,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Helm Beta": {
         "type": "head",
@@ -988,7 +1088,9 @@
         "skills": {
             "Bind Resistance": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -997,7 +1099,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Helm Alpha": {
         "type": "head",
@@ -1008,7 +1110,9 @@
             "Evade Window": 1,
             "Geologist": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1017,7 +1121,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Helm Beta": {
         "type": "head",
@@ -1027,7 +1131,9 @@
         "skills": {
             "Evade Window": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1036,7 +1142,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Headdress Alpha": {
         "type": "head",
@@ -1045,7 +1151,9 @@
             "Evade Window": 1,
             "Evade Extender": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1054,7 +1162,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Headdress Beta": {
         "type": "head",
@@ -1065,7 +1173,9 @@
         "skills": {
             "Evade Window": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1074,7 +1184,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Helm Alpha": {
         "type": "head",
@@ -1085,7 +1195,9 @@
             "Divine Blessing": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1094,7 +1206,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Helm Beta": {
         "type": "head",
@@ -1105,7 +1217,9 @@
         "skills": {
             "Divine Blessing": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1114,7 +1228,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ingot Helm Alpha": {
         "type": "head",
@@ -1125,7 +1239,7 @@
             "Divine Blessing": 2,
             "Resentment": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1134,7 +1248,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Fulgur Helm Alpha": {
         "description": "Head armor made from Guardian Fulgur Anjanath spoils. To don it is to be seized by unspeakable cravings.",
@@ -1151,8 +1265,12 @@
             "Agitator": 2,
             "Coalescence": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "G Fulgur Helm Beta": {
@@ -1171,8 +1289,12 @@
         "skills": {
             "Agitator": 2
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "Doshaguma Helm Alpha": {
@@ -1185,7 +1307,9 @@
             "Free Meal": 2,
             "Stun Resistance": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1194,7 +1318,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Doshaguma Helm Beta": {
         "type": "head",
@@ -1207,7 +1333,9 @@
             "Stun Resistance": 1,
             "Free Meal": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1216,7 +1344,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "G Doshaguma Helm Alpha": {
         "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
@@ -1236,8 +1366,12 @@
             "Heroics": 1,
             "Hunger Resistance": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "G Doshaguma Helm Beta": {
@@ -1258,8 +1392,12 @@
         "skills": {
             "Heroics": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "Ajarakan Helm Alpha": {
@@ -1271,7 +1409,9 @@
             "Resentment": 2,
             "Bombardier": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1280,7 +1420,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Helm Beta": {
         "type": "head",
@@ -1292,7 +1432,9 @@
             "Resentment": 1,
             "Bombardier": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1301,7 +1443,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Ebony Helm Alpha": {
         "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
@@ -1318,8 +1460,12 @@
             "Burst": 2,
             "Earplugs": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "G Ebony Helm Beta": {
@@ -1338,8 +1484,12 @@
         "skills": {
             "Burst": 2
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "Xu Wu Helm Alpha": {
@@ -1351,7 +1501,9 @@
             "Adrenaline Rush": 2,
             "Ambush": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1360,7 +1512,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Xu Wu Helm Beta": {
         "type": "head",
@@ -1371,7 +1525,9 @@
         "skills": {
             "Adrenaline Rush": 2
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1380,7 +1536,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Rathalos Helm Alpha": {
         "type": "head",
@@ -1392,7 +1550,9 @@
             "Evade Window": 2,
             "Constitution": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1401,7 +1561,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "Rathalos Helm Beta": {
         "type": "head",
@@ -1413,7 +1575,9 @@
             "Constitution": 1,
             "Evade Window": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1422,7 +1586,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "G Rathalos Helm Alpha": {
         "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
@@ -1442,8 +1608,12 @@
             "Weakness Exploit": 1,
             "Survival Expert": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "G Rathalos Helm Beta": {
@@ -1463,8 +1633,12 @@
         "skills": {
             "Weakness Exploit": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "Gravios Helm Alpha": {
@@ -1477,7 +1651,9 @@
             "Peak Performance": 1,
             "Tremor Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1486,7 +1662,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Gravios Helm Beta": {
         "type": "head",
@@ -1497,7 +1675,9 @@
         "skills": {
             "Peak Performance": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1506,7 +1686,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Blango Helm Alpha": {
         "type": "head",
@@ -1518,7 +1700,9 @@
             "Wide-Range": 2,
             "Counterstrike": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1527,7 +1711,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Blango Helm Beta": {
         "type": "head",
@@ -1539,7 +1725,9 @@
         "skills": {
             "Wide-Range": 2
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1548,7 +1736,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Commission Helm Alpha": {
         "type": "head",
@@ -1559,7 +1749,7 @@
             "Agitator": 1,
             "Maximum Might": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1568,7 +1758,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kunafa Headgear Alpha": {
         "type": "head",
@@ -1579,7 +1769,9 @@
             "Wide-Range": 2,
             "Palico Rally": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1588,7 +1780,7 @@
         "thunderResistance": 4,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Azuz Headdress Alpha": {
         "type": "head",
@@ -1598,7 +1790,9 @@
         "skills": {
             "Maximum Might": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1607,7 +1801,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Sild Hood Alpha": {
         "type": "head",
@@ -1619,7 +1813,9 @@
         "skills": {
             "Botanist": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1628,7 +1824,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Death Stench Brain Alpha": {
         "type": "head",
@@ -1639,7 +1835,9 @@
             "Resentment": 1,
             "Ambush": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1648,7 +1846,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Butterfly Vertex Alpha": {
         "type": "head",
@@ -1660,7 +1858,9 @@
             "Evade Window": 1,
             "Evade Extender": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1669,7 +1869,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "King Beetle Vertex Alpha": {
         "type": "head",
@@ -1681,7 +1881,9 @@
             "Foray": 1,
             "Sleep Resistance": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1690,7 +1892,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "High Metal Helm Alpha": {
         "type": "head",
@@ -1701,7 +1903,9 @@
             "Stun Resistance": 3,
             "Partbreaker": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1710,7 +1914,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Battle Helm Alpha": {
         "type": "head",
@@ -1720,7 +1924,9 @@
         "skills": {
             "Stamina Surge": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1729,7 +1935,7 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Melahoa Hat Alpha": {
         "type": "head",
@@ -1740,7 +1946,9 @@
             "Survival Expert": 3,
             "Poison Resistance": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1749,7 +1957,7 @@
         "thunderResistance": 3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Artian Helm Alpha": {
         "type": "head",
@@ -1761,7 +1969,9 @@
             "Flayer": 1,
             "Earplugs": 1
         },
-        "groupSkill": "Guardian's Protection",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1770,7 +1980,7 @@
         "thunderResistance": -2,
         "iceResistance": 2,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dober Helm Alpha": {
         "type": "head",
@@ -1781,7 +1991,7 @@
             "Constitution": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1790,7 +2000,7 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Damascus Helm Alpha": {
         "type": "head",
@@ -1802,7 +2012,7 @@
             "Divine Blessing": 2,
             "Wide-Range": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1811,7 +2021,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dahaad Shardhelm Alpha": {
         "type": "head",
@@ -1822,7 +2032,9 @@
             "Weakness Exploit": 1,
             "Agitator": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1831,7 +2043,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Dahaad Shardhelm Beta": {
         "type": "head",
@@ -1842,7 +2056,9 @@
         "skills": {
             "Agitator": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1851,7 +2067,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Duna Wildhelm Alpha": {
         "type": "head",
@@ -1863,7 +2081,9 @@
             "Tool Specialist": 2,
             "Earplugs": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1872,7 +2092,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Duna Wildhelm Beta": {
         "type": "head",
@@ -1884,7 +2106,9 @@
             "Tool Specialist": 1,
             "Earplugs": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1893,7 +2117,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Rey Sandhelm Alpha": {
         "type": "head",
@@ -1902,7 +2128,9 @@
             "Latent Power": 2,
             "Evade Extender": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1911,7 +2139,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Rey Sandhelm Beta": {
         "type": "head",
@@ -1922,7 +2152,9 @@
             "Latent Power": 1,
             "Evade Extender": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1931,7 +2163,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Mirehelm Alpha": {
         "type": "head",
@@ -1943,7 +2177,9 @@
             "Resentment": 2,
             "Counterstrike": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1952,7 +2188,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Udra Mirehelm Beta": {
         "type": "head",
@@ -1964,7 +2202,9 @@
             "Resentment": 1,
             "Counterstrike": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1973,7 +2213,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Gore Helm Alpha": {
         "type": "head",
@@ -1984,7 +2226,9 @@
             "Evade Window": 2,
             "Coalescence": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1993,7 +2237,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Gore Helm Beta": {
         "type": "head",
@@ -2005,7 +2251,9 @@
             "Evade Window": 1,
             "Coalescence": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -2014,7 +2262,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Arkvulcan Helm Alpha": {
         "type": "head",
@@ -2023,7 +2273,9 @@
             "Elemental Absorption": 2,
             "Convert Element": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -2032,7 +2284,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "Arkvulcan Helm Beta": {
         "type": "head",
@@ -2044,7 +2298,9 @@
         "skills": {
             "Convert Element": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -2053,7 +2309,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "G Arkveld Helm Alpha": {
         "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
@@ -2073,8 +2331,12 @@
             "Flayer": 1,
             "Partbreaker": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "G Arkveld Helm Beta": {
@@ -2095,8 +2357,12 @@
             "Flayer": 1,
             "Partbreaker": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "Guild Ace Earrings Alpha": {
@@ -2109,7 +2375,7 @@
             "Constitution": 1,
             "Foray": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 60,
@@ -2118,7 +2384,7 @@
         "thunderResistance": 2,
         "iceResistance": 2,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dragonking Eyepatch Alpha": {
         "type": "head",
@@ -2126,7 +2392,7 @@
         "skills": {
             "Counterstrike": 3
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 60,
@@ -2135,7 +2401,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Guild Cross Circlet Alpha": {
         "type": "head",
@@ -2147,8 +2413,10 @@
             "Earplugs": 1,
             "Flinch Free": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 36,
@@ -2169,8 +2437,10 @@
             "Divine Blessing": 2,
             "Recovery Up": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2189,8 +2459,10 @@
             "Speed Eating": 2,
             "Free Meal": 2
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 36,
@@ -2206,8 +2478,10 @@
         "skills": {
             "Wide-Range": 4
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2226,8 +2500,12 @@
             "Aquatic/Oilsilt Mobility": 2,
             "Evade Extender": 1
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Fortifying Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2246,8 +2524,12 @@
         "skills": {
             "Aquatic/Oilsilt Mobility": 2
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Alluring Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2267,8 +2549,12 @@
             "Recovery Speed": 2,
             "Agitator": 1
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Pulse",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2289,8 +2575,12 @@
             "Recovery Speed": 1,
             "Agitator": 1
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Protection",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2318,8 +2608,12 @@
             "Maximum Might": 2,
             "Latent Power": 1
         },
-        "groupSkill": "Flexible Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Lagiacrus Helm Beta": {
@@ -2340,8 +2634,12 @@
         "skills": {
             "Maximum Might": 2
         },
-        "groupSkill": "Buttery Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Regios Helm Alpha": {
@@ -2362,8 +2660,12 @@
             "Bleeding Resistance": 1,
             "Counterstrike": 1
         },
-        "groupSkill": "Scaling Prowess",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
         "rarity": 1
     },
     "Regios Helm Beta": {
@@ -2385,8 +2687,62 @@
             "Adrenaline Rush": 1,
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Scale Layering",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Helm Alpha": {
+        "description": "Gogmazios head armor. The eyes, having seen the world's darkness, burn with bleak despair.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Elemental Absorption": 2
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Zoh Shia's Pulse"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Helm Beta": {
+        "description": "Gogmazios head armor. The eyes, having seen the world's darkness, burn with bleak despair.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            3,
+            1
+        ],
+        "skills": {
+            "Peak Performance": 2,
+            "Elemental Absorption": 2
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 1
     },
     "Rey Sandhelm Gamma": {
@@ -2407,8 +2763,12 @@
             "Maximum Might": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Rey Dau's Voltage",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
         "rarity": 8
     },
     "Duna Wildhelm Gamma": {
@@ -2429,8 +2789,12 @@
             "Peak Performance": 2,
             "Earplugs": 1
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Udra Mirehelm Gamma": {
@@ -2451,8 +2815,37 @@
         "skills": {
             "Burst": 3
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Nu Udra's Mutiny",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "rarity": 1
+    },
+    "Dahaad Shardhelm Gamma": {
+        "description": "Head armor made from special Jin Dahaad materials. The shining white helm evokes the dignity of the Arch-tempered.",
+        "rank": "high",
+        "type": "head",
+        "defense": 68,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "slots": [
+            3,
+            3
+        ],
+        "skills": {
+            "Foray": 2
+        },
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
         "rarity": 1
     },
     "Sakuratide Headgear Alpha": {
@@ -2470,8 +2863,12 @@
             "Foray": 2,
             "Adaptability": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Blossomdance Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Blossomdance Prayer"
+        ],
         "rarity": 1
     },
     "Blossom Headgear Alpha": {
@@ -2491,8 +2888,10 @@
         "skills": {
             "Paralysis Resistance": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Afi Crown Alpha": {
@@ -2512,8 +2911,12 @@
             "Bombardier": 2,
             "Fire Resistance": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Flamefete Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Flamefete Prayer"
+        ],
         "rarity": 1
     },
     "Diver's Mask Alpha": {
@@ -2532,8 +2935,10 @@
         "skills": {
             "Ambush": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Dreamwalker Helm Alpha": {
@@ -2552,8 +2957,12 @@
             "Ambush": 1,
             "Wide-Range": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Dreamspell Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Dreamspell Prayer"
+        ],
         "rarity": 1
     },
     "Harvest Flor Alpha": {
@@ -2574,8 +2983,60 @@
             "Resentment": 1,
             "Botanist": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Ceremonial Helm Alpha": {
+        "description": "Lumenhymn Ticket headgear. Luxurious and regal, it glows with the splendor of winter.",
+        "rank": "high",
+        "type": "head",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "slots": [
+            2,
+            1
+        ],
+        "skills": {
+            "Latent Power": 1,
+            "Divine Blessing": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Lumenhymn Prayer"
+        ],
+        "rarity": 1
+    },
+    "Orion Cap Alpha": {
+        "description": "Orion Ticket headgear, imbued with a saint's wish to deliver joy and presents to all the world.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 4,
+        "dragonResistance": 1,
+        "slots": [
+            3,
+            3,
+            1
+        ],
+        "skills": {
+            "Flinch Free": 2
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Demon Prayer Beads Alpha": {
@@ -2596,8 +3057,10 @@
         "skills": {
             "Partbreaker": 1
         },
-        "groupSkill": "Master of the Fist",
-        "setSkill": "",
+        "groupSkill": [
+            "Master of the Fist"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Bale Burgeonet Alpha": {
@@ -2618,8 +3081,10 @@
             "Resentment": 2,
             "Maximum Might": 2
         },
-        "groupSkill": "",
-        "setSkill": "Soul of the Dark Knight",
+        "groupSkill": [],
+        "setSkill": [
+            "Soul of the Dark Knight"
+        ],
         "rarity": 1
     },
     "Omega Ear Cuffs Alpha": {
@@ -2640,8 +3105,10 @@
             "Weakness Exploit": 1,
             "Divine Blessing": 1
         },
-        "groupSkill": "",
-        "setSkill": "Omega Resonance",
+        "groupSkill": [],
+        "setSkill": [
+            "Omega Resonance"
+        ],
         "rarity": 1
     },
     "Mimiphyta Alpha": {
@@ -2653,7 +3120,9 @@
             "Entomologist": 1,
             "Ambush": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -2662,7 +3131,7 @@
         "thunderResistance": -2,
         "iceResistance": 2,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Expedition Headgear Alpha": {
         "type": "head",
@@ -2673,7 +3142,7 @@
             "Blight Resistance": 1,
             "Coalescence": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 40,
@@ -2682,7 +3151,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Amstrigian Alpha": {
         "type": "head",
@@ -2691,8 +3160,10 @@
             "Wide-Range": 2,
             "Evade Extender": 1
         },
-        "setSkill": "",
-        "groupSkill": "Buttery Leathercraft",
+        "setSkill": [],
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 36,
@@ -2717,8 +3188,8 @@
             "Resentment": 2,
             "Dragon Resistance": 3
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Strategist Spectacles Alpha": {
@@ -2731,8 +3202,8 @@
         "skills": {
             "Geologist": 3
         },
-        "setSkill": "",
-        "groupSkill": "",
+        "setSkill": [],
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2752,8 +3223,8 @@
             "Botanist": 4,
             "Outdoorsman": 1
         },
-        "setSkill": "",
-        "groupSkill": "",
+        "setSkill": [],
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2780,8 +3251,8 @@
         "skills": {
             "Fire Resistance": 2
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Shadow Shades Alpha": {
@@ -2801,8 +3272,8 @@
             "Stun Resistance": 3,
             "Blindsider": 1
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Round Glasses Alpha": {
@@ -2822,8 +3293,8 @@
         "skills": {
             "Blight Resistance": 3
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Faux Felyne Alpha": {
@@ -2840,8 +3311,8 @@
         "skills": {
             "Palico Rally": 5
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Half Rim Glasses Alpha": {
@@ -2860,8 +3331,8 @@
         "skills": {
             "Wide-Range": 5
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Lovely Shades Alpha": {
@@ -2880,8 +3351,8 @@
         "skills": {
             "Mushroomancer": 3
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Doshagumask Alpha": {
@@ -2900,8 +3371,12 @@
             "Stamina Surge": 1,
             "Recovery Up": 1
         },
-        "groupSkill": "Fortifying Pelt",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 1
     },
     "Gelidron Mask Alpha": {
@@ -2924,8 +3399,10 @@
             "Hunger Resistance": 1,
             "Free Meal": 1
         },
-        "groupSkill": "Flexible Leathercraft",
-        "setSkill": "",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Aviator Shades Alpha": {
@@ -2947,8 +3424,8 @@
             "Windproof": 3,
             "Tool Specialist": 2
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Kitten Frames Alpha": {
@@ -2967,8 +3444,8 @@
             "Evade Extender": 2,
             "Jump Master": 1
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Skull Mask Alpha": {
@@ -2988,8 +3465,71 @@
             "Intimidator": 3,
             "Earplugs": 3
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Analytic E.Y.E. Alpha": {
+        "description": "Cyberesque specs that display a host of info right on the lenses. This is the Future of Hunting.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 4,
+        "waterResistance": 2,
+        "thunderResistance": 4,
+        "iceResistance": 0,
+        "dragonResistance": 0,
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Weakness Exploit": 2
+        },
+        "groupSkill": [],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Mirror Visor Alpha": {
+        "description": "A visor with a special coating that makes you the new pinnacle of cool. Hunt Smart, Everywhere.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 0,
+        "waterResistance": 0,
+        "thunderResistance": 2,
+        "iceResistance": 4,
+        "dragonResistance": 4,
+        "slots": [
+            3
+        ],
+        "skills": {
+            "Evade Window": 4
+        },
+        "groupSkill": [],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Eager Wudwud Alpha": {
+        "description": "Lured by the likey-like you had, a curious Wudwud has clambered along for a ride, pointing the way it wants to go.",
+        "rank": "high",
+        "type": "head",
+        "defense": 66,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": 2,
+        "dragonResistance": 2,
+        "slots": [],
+        "skills": {
+            "Mushroomancer": 3,
+            "Earplugs": 2,
+            "Survival Expert": 2
+        },
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "setSkill": [],
         "rarity": 1
     }
 }

@@ -28,6 +28,7 @@ import DECO_ID_MAP from '../data/ids/deco-ids.json';
 
 import { renderToStaticMarkup } from 'react-dom/server';
 import { isEmpty, mergeSumMaps } from './tools';
+import { _x } from './armorAccessor';
 
 export const getArmorTypeList = () => ['head', 'chest', 'arms', 'waist', 'legs', 'talisman'];
 export const isGroupSkill = skill => Boolean(skill.pieces);
@@ -192,11 +193,11 @@ export const getSetFromUrlParams = urlParams => {
         skills = mergeSumMaps([skills, armor[1]]);
 
         if (!isTalisman) {
-            if (armor[2]) { // group skill
-                groupSkills[armor[2]] = (groupSkills[armor[2]] || 0) + 1;
+            for (const groupSk of _x.groupSkills(armor)) {
+                groupSkills[groupSk] = (groupSkills[groupSk] || 0) + 1;
             }
-            if (armor[7]) { // set skill
-                setSkills[armor[7]] = (setSkills[armor[7]] || 0) + 1;
+            for (const setSk of _x.setSkills(armor)) {
+                setSkills[setSk] = (setSkills[setSk] || 0) + 1;
             }
             slots = [ ...slots, ...armor[3]].sort((a, b) => b - a);
         }

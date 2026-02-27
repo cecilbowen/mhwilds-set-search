@@ -103,6 +103,13 @@
         },
         "type": "talisman"
     },
+    "Challenger Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Agitator": 3
+        }
+    },
     "Unscathed Charm I": {
         "rarity": 5,
         "effect": "A charm that grants the Peak Performance skill.",
@@ -628,6 +635,13 @@
         },
         "type": "talisman"
     },
+    "Blight Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Blight Resistance": 3
+        }
+    },
     "Poison Charm I": {
         "rarity": 3,
         "effect": "A charm that grants the Poison Resistance skill.",
@@ -819,6 +833,13 @@
             "Partbreaker": 2
         },
         "type": "talisman"
+    },
+    "Breaker Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Partbreaker": 3
+        }
     },
     "Bombardier Charm I": {
         "rarity": 4,
@@ -1096,6 +1117,13 @@
             "Coalescence": 2
         },
         "type": "talisman"
+    },
+    "Phoenix Charm III": {
+        "type": "talisman",
+        "rarity": 1,
+        "skills": {
+            "Coalescence": 3
+        }
     },
     "Chain Charm I": {
         "rarity": 5,

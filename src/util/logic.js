@@ -4,7 +4,6 @@ import SKILL_DB from "../data/compact/skills.json";
 import SET_SKILL_DB from '../data/compact/set-skills.json';
 import GROUP_SKILL_DB from '../data/compact/group-skills.json';
 import {
-    _x,
     canArmorFulfillSkill,
     cartesianProduct,
     emptyGearPiece,
@@ -19,6 +18,7 @@ import { CHOSEN_ARMOR_DEBUG, DEBUG, DFS, DFS_DEBUG } from "./constants";
 import { allTests } from "../test/tests";
 import { getArmorTypeList, isGroupSkillName, isSetSkillName, stringToId } from "./util";
 import INTERNAL_BLACKLIST from '../data/internal-blacklist.json';
+import { _x } from "./armorAccessor";
 
 const INTERNAL_BLACKMAP = Object.fromEntries(INTERNAL_BLACKLIST.map(x => [x, true]));
 
@@ -65,7 +65,7 @@ export const getBestArmor = (
 
     const bestTalismans = Object.fromEntries(Object.entries(TALISMANS)
         .filter(([k, v]) => !blacklistedArmor.includes(k) &&
-            (!mandatory[v[0]] && hasNeededSkill(v[1], skills) || k === mandatory[v[0]]))
+            (!mandatory[_x.type[v]] && hasNeededSkill(_x.skills(v), skills) || k === mandatory[_x.type(v)]))
         .sort((a, b) => Object.values(b[1][1])[0] - Object.values(a[1][1])[0])
     );
 
@@ -74,7 +74,10 @@ export const getBestArmor = (
         const topTalisLevels = {};
         for (const [talisName, talisData] of Object.entries(bestTalismans)) {
             const sks = talisData[1];
-            if (Object.keys(sks).length === 1) {
+
+            // for talismans that only have 1 skill, it's easy
+            // but multiple skills...
+            if (Object.keys(sks).length > 0) {
                 for (const [skName, skLevel] of Object.entries(sks)) {
                     if (skLevel > (topTalisLevels[skName] || 0)) {
                         topTalis[talisName] = talisData;
@@ -86,6 +89,7 @@ export const getBestArmor = (
     }
 
     const firsts = emptyGearSet();
+    firsts.talisman = {};
     const best = emptyGearSet();
     const bestDecos = dontUseDecos ? {} : getBestDecos(skills);
 
@@ -134,13 +138,28 @@ export const getBestArmor = (
         }
     }
 
-    for (const [skillName, targetLevel] of Object.entries(skills)) {
-        const relevantTalisman = Object.entries(topTalis).filter(([k, v]) => skillName in v[1]);
-        const relevantTalismanLevel = relevantTalisman.length ? relevantTalisman[0][1][skillName] : 0;
-        if ((totalMaxSkillPotential[skillName] || 0) + relevantTalismanLevel < targetLevel) {
-            return null;
-        }
-    }
+    // now do the same for talismans (since they can have multiple skills/slots now)
+    // for (const skillName of Object.keys(skills)) {
+    //     for (const [talismanName, talismanData] of Object.entries(topTalis)) {
+    //         const { pot, totalPot, modMap } = updateSkillPotential(
+    //             maxPossibleSkillPotential, totalMaxSkillPotential,
+    //             modPointMap, "talisman", skillName, talismanName, talismanData,
+    //             bestDecos, skills
+    //         );
+    //         maxPossibleSkillPotential = pot;
+    //         totalMaxSkillPotential = totalPot;
+    //         modPointMap = modMap;
+    //     }
+    // }
+
+    // early check to see if it's even possible to reach the target
+    // for (const [skillName, targetLevel] of Object.entries(skills)) {
+    //     const relevantTalisman = Object.entries(topTalis).filter(([k, v]) => skillName in v[1]);
+    //     const relevantTalismanLevel = relevantTalisman.length ? relevantTalisman[0][1][skillName] : 0;
+    //     if ((totalMaxSkillPotential[skillName] || 0) + relevantTalismanLevel < targetLevel) {
+    //         return null;
+    //     }
+    // }
 
     const bareMinimum = firsts;
     for (const [category, data] of Object.entries(maxPossibleSkillPotential)) {
@@ -278,13 +297,14 @@ export const getBestArmor = (
                 const relevantSkills = Object.fromEntries(
                     Object.entries(aData[1]).filter(([k]) => k in skills)
                 );
-                const relevantSetSkill = setSkills && aData[aData.length - 1] in setSkills ? ` / ${aData[aData.length - 1]}` : "";
-                const relevantGroupSkill = groupSkills && aData[2] in groupSkills ? ` / ${aData[2]}` : "";
+                const relevantSetSkill = setSkills && isInSets(aData, setSkills) ? ` / ${_x.setSkills(aData).join(", ")}` : "";
+                const relevantGroupSkill = groupSkills &&
+                    isInGroups(aData, groupSkills) ? ` / ${_x.groupSkills(aData).join(", ")}` : "";
 
                 const skStr = isEmpty(relevantSkills) ? '' : JSON.stringify(relevantSkills);
                 debugOutput.push(
                     // eslint-disable-next-line max-len
-                    `\t${aName}: (${_x(aData, "type")} - ${_x(aData, "slots")}) ${skStr}${relevantSetSkill}${relevantGroupSkill}`,
+                    `\t${aName}: (${_x.type(aData)} - ${_x.slots(aData)}) ${skStr}${relevantSetSkill}${relevantGroupSkill}`,
                 );
             }
             debugOutput.push("\n"); // Extra space after each category
@@ -320,8 +340,16 @@ export const armorCombo = (head, chest, arms, waist, legs, talisman) => {
         Object.entries(result).sort((a, b) => b[1] - a[1])
     );
 
-    const armorSetNames = [head.data[7], chest.data[7], arms.data[7], waist.data[7], legs.data[7]];
-    const armorGroupNames = [head.data[2], chest.data[2], arms.data[2], waist.data[2], legs.data[2]];
+    const armorSetNames = [
+        ..._x.setSkills(head.data), ..._x.setSkills(chest.data),
+        ..._x.setSkills(arms.data), ..._x.setSkills(waist.data),
+        ..._x.setSkills(legs.data)
+    ];
+    const armorGroupNames = [
+        ..._x.groupSkills(head.data), ..._x.groupSkills(chest.data),
+        ..._x.groupSkills(arms.data), ..._x.groupSkills(waist.data),
+        ..._x.groupSkills(legs.data)
+    ];
     const setSkills = {};
     const groupSkills = {};
 
@@ -594,17 +622,26 @@ const rollCombosDfs = async(
             const addedSetCounts = {};
             const addedGroupCounts = {};
 
-            const mySetSkillName = piece[7];
-            const myGroupSkillName = piece[2];
-            if (mySetSkillName && setSkills[mySetSkillName]) { // if piece has set skill
-                setCounts[mySetSkillName] = (setCounts[mySetSkillName] || 0) + 1;
-                addedSetCounts[mySetSkillName] = (addedSetCounts[mySetSkillName] || 0) + 1;
-            }
-            if (myGroupSkillName && groupSkills[myGroupSkillName]) {
-                groupCounts[myGroupSkillName] = (groupCounts[myGroupSkillName] || 0) + 1;
-                addedGroupCounts[myGroupSkillName] = (addedGroupCounts[myGroupSkillName] || 0) + 1;
+            const mySetSkillNames = _x.setSkills(piece);
+            const myGroupSkillNames = _x.groupSkills(piece);
+
+            if (mySetSkillNames) {
+                for (const mySetSkillName of mySetSkillNames) {
+                    if (mySetSkillName && setSkills[mySetSkillName]) { // if piece has set skill
+                        setCounts[mySetSkillName] = (setCounts[mySetSkillName] || 0) + 1;
+                        addedSetCounts[mySetSkillName] = (addedSetCounts[mySetSkillName] || 0) + 1;
+                    }
+                }
             }
 
+            if (myGroupSkillNames) {
+                for (const myGroupSkillName of myGroupSkillNames) {
+                    if (myGroupSkillName && groupSkills[myGroupSkillName]) {
+                        groupCounts[myGroupSkillName] = (groupCounts[myGroupSkillName] || 0) + 1;
+                        addedGroupCounts[myGroupSkillName] = (addedGroupCounts[myGroupSkillName] || 0) + 1;
+                    }
+                }
+            }
             let shouldContinue = true;
 
             // Prune early based on set/group skill future feasibility
@@ -718,15 +755,18 @@ const rollCombos = async(gear, skills, setSkills, groupSkills, limit, findOne = 
 
             for (const piece of combo.slice(0, -1)) { // Ignore talisman for set/group skills
                 const armorData = piece[1];
-                const setName = armorData[7];
-                const groupName = armorData[2];
+                const setNames = _x.setSkills(armorData);
+                const groupNames = _x.groupSkills(armorData);
 
-                if (setSkillsCheck.has(setName)) {
-                    piecesFromSet[setName] = (piecesFromSet[setName] || 0) + 1;
+                for (const setName of setNames) {
+                    if (setSkillsCheck.has(setName)) {
+                        piecesFromSet[setName] = (piecesFromSet[setName] || 0) + 1;
+                    }
                 }
-
-                if (groupSkillsCheck.has(groupName)) {
-                    piecesFromGroup[groupName] = (piecesFromGroup[groupName] || 0) + 1;
+                for (const groupName of groupNames) {
+                    if (groupSkillsCheck.has(groupName)) {
+                        piecesFromGroup[groupName] = (piecesFromGroup[groupName] || 0) + 1;
+                    }
                 }
             }
 

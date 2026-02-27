@@ -15,14 +15,15 @@ languages translation system, similar to what i have in pokemon sandwich simulat
 make slot filters jump to front when text searching them in the skill picker
 on deco inventory page, make red "you've got less of this deco than normal" highlight dynamic as you
     edit the input fields, not only on blur 
-get python back on parity with js (low priority)
-prepare for TU3 when randomized talismans (PTSD intensifies...) becomes a thing (probably similar to decorations inventory, but talismans)
+implement rng talismans.  it's time
 handle set skills where level 1 of the set skill has a different name than level 2 (eg, soul of the dark knight -> dark arts lv1, the blackest night lv2)
-
+refactor data to allow multiple set/group skills (like gogma armor...)
+finish implementing armorAccessor.js _x function across the app
 
 MAYBE: 
 ------------------------------------------
 add weapon searching
+consider using set/group skills json only instead of storing set/group names in each armor entry
 allow tabbing after text searching skills and then enter to quickly select one
 add "x" button on skill search input to clear search text 
 add an optional "Help" tab with tips on how to use the tool
@@ -30,3 +31,4 @@ re-order saved sets
 ctrl+clicking or etc ANYTHING on selectedResult display takes you to a site like kiranico, etc for details
 add color option to settings for stuff like skill and slot gradients on search page
 persist hide icons and minimize skill box options
+get python back on parity with js (lowEST priority)

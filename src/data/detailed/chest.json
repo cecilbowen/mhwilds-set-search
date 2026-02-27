@@ -5,7 +5,7 @@
         "skills": {
             "Divine Blessing": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -14,7 +14,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Vest": {
         "type": "chest",
@@ -22,7 +22,7 @@
         "skills": {
             "Botanist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -31,7 +31,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Vest": {
         "type": "chest",
@@ -39,7 +39,7 @@
         "skills": {
             "Geologist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 2,
@@ -48,7 +48,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Mail": {
         "type": "chest",
@@ -56,7 +56,7 @@
         "skills": {
             "Marathon Runner": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -65,7 +65,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Mail": {
         "type": "chest",
@@ -73,7 +73,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -82,7 +84,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Mail": {
         "type": "chest",
@@ -90,7 +92,9 @@
         "skills": {
             "Fire Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -99,7 +103,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Mail": {
         "type": "chest",
@@ -107,7 +111,7 @@
         "skills": {
             "Tremor Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 1,
         "rank": "low",
         "defense": 6,
@@ -116,7 +120,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Mail": {
         "type": "chest",
@@ -124,7 +128,9 @@
         "skills": {
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 4,
@@ -133,7 +139,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Mail": {
         "type": "chest",
@@ -141,7 +147,9 @@
         "skills": {
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 1,
         "rank": "low",
         "defense": 8,
@@ -150,7 +158,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Mail": {
         "type": "chest",
@@ -158,7 +166,9 @@
         "skills": {
             "Mushroomancer": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 8,
@@ -167,7 +177,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Mail": {
         "type": "chest",
@@ -175,7 +185,9 @@
         "skills": {
             "Quick Sheathe": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 12,
@@ -184,7 +196,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Doshaguma Mail": {
         "type": "chest",
@@ -192,7 +204,9 @@
         "skills": {
             "Free Meal": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 2,
         "rank": "low",
         "defense": 16,
@@ -201,7 +215,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Ingot Mail": {
         "type": "chest",
@@ -209,7 +225,7 @@
         "skills": {
             "Windproof": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 3,
         "rank": "low",
         "defense": 16,
@@ -218,7 +234,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kranodath Mail": {
         "type": "chest",
@@ -226,7 +242,9 @@
         "skills": {
             "Flinch Free": 2
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 16,
@@ -235,7 +253,7 @@
         "thunderResistance": 0,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Mail": {
         "type": "chest",
@@ -243,7 +261,9 @@
         "skills": {
             "Wide-Range": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 18,
@@ -252,7 +272,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Mail": {
         "type": "chest",
@@ -261,7 +281,9 @@
             "Poison Resistance": 1,
             "Bind Resistance": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 20,
@@ -270,7 +292,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Mail": {
         "type": "chest",
@@ -279,7 +301,9 @@
             "Evade Window": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 22,
@@ -288,7 +312,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Mail": {
         "type": "chest",
@@ -296,7 +320,9 @@
         "skills": {
             "Partbreaker": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 3,
         "rank": "low",
         "defense": 24,
@@ -305,7 +331,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Duna Wildmail": {
         "description": "Uth Duna chest armor. The tightly fitted scales make the wearer feel as if they are one with nature.",
@@ -323,8 +349,12 @@
         "skills": {
             "Peak Performance": 1
         },
-        "groupSkill": "Lord's Favor",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Rey Sandmail": {
@@ -333,7 +363,9 @@
         "skills": {
             "Constitution": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -342,7 +374,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Miremail": {
         "type": "chest",
@@ -351,7 +385,9 @@
             "Resentment": 1,
             "Speed Eating": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -360,7 +396,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "G Doshaguma Mail": {
         "description": "Chest armor made from Guardian Doshaguma spoils. It instills a new vitality and sense of purpose.",
@@ -377,8 +415,12 @@
             "Heroics": 1,
             "Iron Skin": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 4
     },
     "G Rathalos Mail": {
@@ -397,8 +439,12 @@
         "skills": {
             "Intimidator": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 4
     },
     "G Ebony Mail": {
@@ -417,8 +463,12 @@
         "skills": {
             "Bleeding Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 4
     },
     "Xu Wu Mail": {
@@ -429,7 +479,9 @@
         "skills": {
             "Stamina Surge": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 4,
         "rank": "low",
         "defense": 26,
@@ -438,7 +490,7 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Arkveld Mail": {
         "description": "Guardian Arkveld chest armor. It beckons forth a shudder of indescribable power.",
@@ -455,8 +507,12 @@
             "Flayer": 1,
             "Blight Resistance": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 4
     },
     "Hope Mail Alpha": {
@@ -468,7 +524,7 @@
         "skills": {
             "Poison Resistance": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -477,7 +533,7 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Leather Mail Alpha": {
         "type": "chest",
@@ -488,7 +544,7 @@
             "Botanist": 1,
             "Item Prolonger": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -497,7 +553,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chainmail Armor Alpha": {
         "type": "chest",
@@ -508,7 +564,7 @@
             "Ice Resistance": 1,
             "Geologist": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 26,
@@ -517,7 +573,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Bone Mail Alpha": {
         "type": "chest",
@@ -528,7 +584,7 @@
             "Stun Resistance": 1,
             "Marathon Runner": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -537,7 +593,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Alloy Mail Alpha": {
         "type": "chest",
@@ -547,7 +603,7 @@
         "skills": {
             "Flinch Free": 2
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -556,7 +612,7 @@
         "thunderResistance": -2,
         "iceResistance": -2,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Mail Alpha": {
         "type": "chest",
@@ -567,7 +623,9 @@
             "Evade Window": 1,
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -576,7 +634,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Vespoid Mail Beta": {
         "type": "chest",
@@ -588,7 +646,9 @@
         "skills": {
             "Survival Expert": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -597,7 +657,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kranodath Mail Alpha": {
         "type": "chest",
@@ -606,7 +666,9 @@
             "Flinch Free": 2,
             "Partbreaker": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -615,7 +677,7 @@
         "thunderResistance": 0,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kranodath Mail Beta": {
         "type": "chest",
@@ -625,7 +687,9 @@
         "skills": {
             "Flinch Free": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 32,
@@ -634,7 +698,7 @@
         "thunderResistance": 0,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Mail Alpha": {
         "type": "chest",
@@ -645,7 +709,9 @@
             "Agitator": 1,
             "Fire Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -654,7 +720,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kut-Ku Mail Beta": {
         "type": "chest",
@@ -664,7 +730,9 @@
         "skills": {
             "Agitator": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -673,7 +741,7 @@
         "thunderResistance": -2,
         "iceResistance": -4,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Mail Alpha": {
         "type": "chest",
@@ -682,7 +750,9 @@
             "Weakness Exploit": 1,
             "Speed Eating": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -691,7 +761,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Chatacabra Mail Beta": {
         "type": "chest",
@@ -703,7 +773,9 @@
         "skills": {
             "Speed Eating": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -712,7 +784,7 @@
         "thunderResistance": -3,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Mail Alpha": {
         "type": "chest",
@@ -721,7 +793,9 @@
             "Latent Power": 1,
             "Fire Resistance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -730,7 +804,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Quematrice Mail Beta": {
         "type": "chest",
@@ -740,7 +814,9 @@
         "skills": {
             "Latent Power": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -749,7 +825,7 @@
         "thunderResistance": 0,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Mail Alpha": {
         "type": "chest",
@@ -758,7 +834,9 @@
             "Recovery Up": 2,
             "Evade Window": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -767,7 +845,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Barina Mail Beta": {
         "type": "chest",
@@ -778,7 +856,9 @@
             "Evade Window": 1,
             "Recovery Up": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -787,7 +867,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Mail Alpha": {
         "type": "chest",
@@ -796,7 +876,9 @@
             "Intimidator": 2,
             "Burst": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -805,7 +887,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Conga Mail Beta": {
         "type": "chest",
@@ -817,7 +899,9 @@
         "skills": {
             "Intimidator": 2
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -826,7 +910,7 @@
         "thunderResistance": 1,
         "iceResistance": -1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Mail Alpha": {
         "type": "chest",
@@ -837,7 +921,9 @@
             "Poison Resistance": 2,
             "Wide-Range": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -846,7 +932,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rompopolo Mail Beta": {
         "type": "chest",
@@ -856,7 +942,9 @@
         "skills": {
             "Poison Resistance": 2
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -865,7 +953,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Mail Alpha": {
         "type": "chest",
@@ -876,7 +964,9 @@
             "Poison Resistance": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -885,7 +975,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Gypceros Mail Beta": {
         "type": "chest",
@@ -895,7 +985,9 @@
         "skills": {
             "Stamina Surge": 1
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 36,
@@ -904,7 +996,7 @@
         "thunderResistance": 4,
         "iceResistance": -1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Mail Alpha": {
         "type": "chest",
@@ -913,7 +1005,9 @@
             "Weakness Exploit": 1,
             "Ambush": 1
         },
-        "groupSkill": "Neopteron Alert",
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -922,7 +1016,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Nerscylla Mail Beta": {
         "type": "chest",
@@ -934,7 +1028,9 @@
         "skills": {
             "Ambush": 1
         },
-        "groupSkill": "Neopteron Camouflage",
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -943,7 +1039,7 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Mail Alpha": {
         "type": "chest",
@@ -954,7 +1050,9 @@
             "Stamina Surge": 1,
             "Geologist": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -963,7 +1061,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Balahara Mail Beta": {
         "type": "chest",
@@ -975,7 +1073,9 @@
         "skills": {
             "Geologist": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -984,7 +1084,7 @@
         "thunderResistance": -3,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Mail Alpha": {
         "type": "chest",
@@ -995,7 +1095,9 @@
             "Ice Resistance": 2,
             "Evade Window": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1004,7 +1106,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Hirabami Mail Beta": {
         "type": "chest",
@@ -1015,7 +1117,9 @@
             "Evade Window": 1,
             "Ice Resistance": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1024,7 +1128,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Mail Alpha": {
         "type": "chest",
@@ -1032,7 +1136,9 @@
         "skills": {
             "Foray": 2
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1041,7 +1147,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Rathian Mail Beta": {
         "type": "chest",
@@ -1053,7 +1159,9 @@
         "skills": {
             "Foray": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 5,
         "rank": "high",
         "defense": 38,
@@ -1062,7 +1170,7 @@
         "thunderResistance": -2,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ingot Mail Alpha": {
         "type": "chest",
@@ -1074,7 +1182,7 @@
             "Resentment": 1,
             "Windproof": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1083,7 +1191,7 @@
         "thunderResistance": 3,
         "iceResistance": -1,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Fulgur Mail Alpha": {
         "description": "Chest armor made from Guardian Fulgur Anjanath spoils. It instills a new vitality and sense of purpose.",
@@ -1102,8 +1210,12 @@
             "Maximum Might": 1,
             "Coalescence": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "G Fulgur Mail Beta": {
@@ -1124,8 +1236,12 @@
         "skills": {
             "Maximum Might": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
         "rarity": 6
     },
     "Doshaguma Mail Alpha": {
@@ -1137,7 +1253,9 @@
             "Latent Power": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1146,7 +1264,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "Doshaguma Mail Beta": {
         "type": "chest",
@@ -1158,7 +1278,9 @@
         "skills": {
             "Latent Power": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1167,7 +1289,9 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": "Doshaguma's Might"
+        "setSkill": [
+            "Doshaguma's Might"
+        ]
     },
     "G Doshaguma Mail Alpha": {
         "description": "Chest armor made from Guardian Doshaguma spoils. It instills a new vitality and sense of purpose.",
@@ -1187,8 +1311,12 @@
             "Constitution": 2,
             "Iron Skin": 1
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "G Doshaguma Mail Beta": {
@@ -1208,8 +1336,12 @@
         "skills": {
             "Constitution": 2
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Doshaguma's Might",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
         "rarity": 6
     },
     "Ajarakan Mail Alpha": {
@@ -1221,7 +1353,9 @@
             "Resentment": 2,
             "Blast Resistance": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1230,7 +1364,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Ajarakan Mail Beta": {
         "type": "chest",
@@ -1240,7 +1374,9 @@
         "skills": {
             "Resentment": 2
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1249,7 +1385,7 @@
         "thunderResistance": 1,
         "iceResistance": -2,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "G Ebony Mail Alpha": {
         "description": "Chest armor made from Guardian Ebony Odogaron spoils. It instills a new vitality and sense of purpose.",
@@ -1268,8 +1404,12 @@
             "Earplugs": 1,
             "Bleeding Resistance": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "G Ebony Mail Beta": {
@@ -1289,8 +1429,12 @@
         "skills": {
             "Earplugs": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Ebony Odogaron's Power",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
         "rarity": 6
     },
     "Xu Wu Mail Alpha": {
@@ -1300,7 +1444,9 @@
             "Heroics": 3,
             "Ambush": 1
         },
-        "groupSkill": "Flexible Leathercraft",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1309,7 +1455,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Xu Wu Mail Beta": {
         "type": "chest",
@@ -1320,7 +1468,9 @@
         "skills": {
             "Heroics": 3
         },
-        "groupSkill": "Buttery Leathercraft",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1329,7 +1479,9 @@
         "thunderResistance": 1,
         "iceResistance": -3,
         "dragonResistance": 2,
-        "setSkill": "Xu Wu's Vigor"
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ]
     },
     "Rathalos Mail Alpha": {
         "type": "chest",
@@ -1340,7 +1492,9 @@
             "Adrenaline Rush": 2,
             "Constitution": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1349,7 +1503,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "Rathalos Mail Beta": {
         "type": "chest",
@@ -1360,7 +1516,9 @@
         "skills": {
             "Adrenaline Rush": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1369,7 +1527,9 @@
         "thunderResistance": -2,
         "iceResistance": 1,
         "dragonResistance": -3,
-        "setSkill": "Rathalos's Flare"
+        "setSkill": [
+            "Rathalos's Flare"
+        ]
     },
     "G Rathalos Mail Alpha": {
         "description": "Chest armor made from Guardian Rathalos spoils. It instills a new vitality and sense of purpose.",
@@ -1388,8 +1548,12 @@
             "Weakness Exploit": 1,
             "Intimidator": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "G Rathalos Mail Beta": {
@@ -1409,8 +1573,12 @@
             "Weakness Exploit": 1,
             "Intimidator": 1
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Rathalos's Flare",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
         "rarity": 6
     },
     "Gravios Mail Alpha": {
@@ -1423,7 +1591,9 @@
             "Recovery Speed": 2,
             "Peak Performance": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1432,7 +1602,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Gravios Mail Beta": {
         "type": "chest",
@@ -1444,7 +1616,9 @@
             "Peak Performance": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 52,
@@ -1453,7 +1627,9 @@
         "thunderResistance": 1,
         "iceResistance": 0,
         "dragonResistance": -2,
-        "setSkill": "Gravios's Protection"
+        "setSkill": [
+            "Gravios's Protection"
+        ]
     },
     "Blango Mail Alpha": {
         "type": "chest",
@@ -1462,7 +1638,9 @@
             "Agitator": 2,
             "Item Prolonger": 2
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1471,7 +1649,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Blango Mail Beta": {
         "type": "chest",
@@ -1481,7 +1661,9 @@
         "skills": {
             "Agitator": 2
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 48,
@@ -1490,7 +1672,9 @@
         "thunderResistance": 0,
         "iceResistance": 4,
         "dragonResistance": 0,
-        "setSkill": "Blangonga's Spirit"
+        "setSkill": [
+            "Blangonga's Spirit"
+        ]
     },
     "Commission Mail Alpha": {
         "type": "chest",
@@ -1501,7 +1685,7 @@
             "Agitator": 1,
             "Divine Blessing": 2
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1510,7 +1694,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Kunafa Cloak Alpha": {
         "type": "chest",
@@ -1521,7 +1705,9 @@
             "Free Meal": 2,
             "Palico Rally": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1530,7 +1716,7 @@
         "thunderResistance": 4,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Azuz Apron Alpha": {
         "type": "chest",
@@ -1541,7 +1727,9 @@
         "skills": {
             "Heroics": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1550,7 +1738,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 1,
-        "setSkill": ""
+        "setSkill": []
     },
     "Sild Coat Alpha": {
         "type": "chest",
@@ -1560,7 +1748,9 @@
         "skills": {
             "Wide-Range": 4
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1569,7 +1759,7 @@
         "thunderResistance": 1,
         "iceResistance": 1,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Death Stench Muscle Alpha": {
         "type": "chest",
@@ -1580,7 +1770,9 @@
             "Resentment": 1,
             "Ambush": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1589,7 +1781,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Butterfly Thorax Alpha": {
         "type": "chest",
@@ -1601,7 +1793,9 @@
             "Evade Window": 1,
             "Evade Extender": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1610,7 +1804,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "King Beetle Thorax Alpha": {
         "type": "chest",
@@ -1622,7 +1816,9 @@
             "Foray": 1,
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1631,7 +1827,7 @@
         "thunderResistance": 2,
         "iceResistance": 0,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "High Metal Mail Alpha": {
         "type": "chest",
@@ -1642,7 +1838,9 @@
             "Iron Skin": 3,
             "Partbreaker": 1
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1651,7 +1849,7 @@
         "thunderResistance": -2,
         "iceResistance": 3,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Battle Mail Alpha": {
         "type": "chest",
@@ -1662,7 +1860,9 @@
             "Hunger Resistance": 3,
             "Sleep Resistance": 2
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1671,7 +1871,7 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Melahoa Jacket Alpha": {
         "type": "chest",
@@ -1681,7 +1881,9 @@
         "skills": {
             "Tool Specialist": 3
         },
-        "groupSkill": "Imparted Wisdom",
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1690,7 +1892,7 @@
         "thunderResistance": 3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Artian Mail Alpha": {
         "type": "chest",
@@ -1703,7 +1905,9 @@
             "Flayer": 1,
             "Adaptability": 1
         },
-        "groupSkill": "Guardian's Protection",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 6,
         "rank": "high",
         "defense": 44,
@@ -1712,7 +1916,7 @@
         "thunderResistance": -2,
         "iceResistance": 2,
         "dragonResistance": 3,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dober Mail Alpha": {
         "type": "chest",
@@ -1724,7 +1928,7 @@
             "Constitution": 1,
             "Marathon Runner": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1733,7 +1937,7 @@
         "thunderResistance": -1,
         "iceResistance": -1,
         "dragonResistance": 4,
-        "setSkill": ""
+        "setSkill": []
     },
     "Damascus Mail Alpha": {
         "type": "chest",
@@ -1745,7 +1949,7 @@
             "Recovery Up": 2,
             "Wide-Range": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 7,
         "rank": "high",
         "defense": 56,
@@ -1754,7 +1958,7 @@
         "thunderResistance": 0,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": ""
+        "setSkill": []
     },
     "Dahaad Shardmail Alpha": {
         "type": "chest",
@@ -1766,7 +1970,9 @@
             "Bind Resistance": 2,
             "Adaptability": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1775,7 +1981,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Dahaad Shardmail Beta": {
         "type": "chest",
@@ -1787,7 +1995,9 @@
             "Bind Resistance": 1,
             "Adaptability": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1796,7 +2006,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Jin Dahaad's Revolt"
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ]
     },
     "Duna Wildmail Alpha": {
         "type": "chest",
@@ -1807,7 +2019,9 @@
             "Tool Specialist": 2,
             "Aquatic/Oilsilt Mobility": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1816,7 +2030,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Duna Wildmail Beta": {
         "type": "chest",
@@ -1827,7 +2043,9 @@
         "skills": {
             "Tool Specialist": 2
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1836,7 +2054,9 @@
         "thunderResistance": -3,
         "iceResistance": 0,
         "dragonResistance": 0,
-        "setSkill": "Uth Duna's Cover"
+        "setSkill": [
+            "Uth Duna's Cover"
+        ]
     },
     "Rey Sandmail Alpha": {
         "type": "chest",
@@ -1848,7 +2068,9 @@
             "Maximum Might": 2,
             "Stamina Surge": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1857,7 +2079,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Rey Sandmail Beta": {
         "type": "chest",
@@ -1870,7 +2094,9 @@
             "Maximum Might": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1879,7 +2105,9 @@
         "thunderResistance": 4,
         "iceResistance": -3,
         "dragonResistance": 0,
-        "setSkill": "Rey Dau's Voltage"
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ]
     },
     "Udra Miremail Alpha": {
         "type": "chest",
@@ -1891,7 +2119,9 @@
             "Resentment": 1,
             "Burst": 1
         },
-        "groupSkill": "Lord's Favor",
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1900,7 +2130,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Udra Miremail Beta": {
         "type": "chest",
@@ -1912,7 +2144,9 @@
         "skills": {
             "Resentment": 1
         },
-        "groupSkill": "Lord's Fury",
+        "groupSkill": [
+            "Lord's Fury"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1921,7 +2155,9 @@
         "thunderResistance": 0,
         "iceResistance": 1,
         "dragonResistance": 0,
-        "setSkill": "Nu Udra's Mutiny"
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ]
     },
     "Gore Mail Alpha": {
         "type": "chest",
@@ -1932,7 +2168,9 @@
             "Evade Window": 2,
             "Antivirus": 1
         },
-        "groupSkill": "Scaling Prowess",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1941,7 +2179,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Gore Mail Beta": {
         "type": "chest",
@@ -1952,7 +2192,9 @@
         "skills": {
             "Evade Window": 2
         },
-        "groupSkill": "Scale Layering",
+        "groupSkill": [
+            "Scale Layering"
+        ],
         "rarity": 7,
         "rank": "high",
         "defense": 60,
@@ -1961,7 +2203,9 @@
         "thunderResistance": -1,
         "iceResistance": 2,
         "dragonResistance": -1,
-        "setSkill": "Gore Magala's Tyranny"
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ]
     },
     "Arkvulcan Mail Alpha": {
         "type": "chest",
@@ -1972,7 +2216,9 @@
             "Weakness Exploit": 1,
             "Elemental Absorption": 1
         },
-        "groupSkill": "Fortifying Pelt",
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -1981,7 +2227,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "Arkvulcan Mail Beta": {
         "type": "chest",
@@ -1992,7 +2240,9 @@
         "skills": {
             "Weakness Exploit": 1
         },
-        "groupSkill": "Alluring Pelt",
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 66,
@@ -2001,7 +2251,9 @@
         "thunderResistance": -1,
         "iceResistance": 0,
         "dragonResistance": -3,
-        "setSkill": "Arkveld's Hunger"
+        "setSkill": [
+            "Arkveld's Hunger"
+        ]
     },
     "G Arkveld Mail Alpha": {
         "description": "Guardian Arkveld chest armor. It beckons forth a shudder of indescribable power.",
@@ -2018,8 +2270,12 @@
             "Flayer": 2,
             "Blight Resistance": 2
         },
-        "groupSkill": "Guardian's Pulse",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "G Arkveld Mail Beta": {
@@ -2039,8 +2295,12 @@
             "Flayer": 1,
             "Blight Resistance": 2
         },
-        "groupSkill": "Guardian's Protection",
-        "setSkill": "Guardian Arkveld's Vitality",
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
         "rarity": 8
     },
     "Guild Ace Mail Alpha": {
@@ -2053,7 +2313,7 @@
             "Constitution": 1,
             "Foray": 1
         },
-        "groupSkill": "",
+        "groupSkill": [],
         "rarity": 8,
         "rank": "high",
         "defense": 60,
@@ -2062,7 +2322,7 @@
         "thunderResistance": 2,
         "iceResistance": 2,
         "dragonResistance": 2,
-        "setSkill": ""
+        "setSkill": []
     },
     "Guild Cross Suit Alpha": {
         "type": "chest",
@@ -2074,8 +2334,10 @@
             "Earplugs": 1,
             "Tremor Resistance": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 36,
@@ -2095,8 +2357,10 @@
             "Survival Expert": 2,
             "Divine Blessing": 1
         },
-        "setSkill": "",
-        "groupSkill": "Glory's Favor",
+        "setSkill": [],
+        "groupSkill": [
+            "Glory's Favor"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2115,8 +2379,12 @@
             "Burst": 2,
             "Constitution": 1
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Fortifying Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2136,8 +2404,12 @@
             "Burst": 1,
             "Constitution": 1
         },
-        "setSkill": "Mizutsune's Prowess",
-        "groupSkill": "Alluring Pelt",
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 48,
@@ -2156,8 +2428,12 @@
             "Agitator": 2,
             "Counterstrike": 1
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Pulse",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2175,8 +2451,12 @@
         "skills": {
             "Agitator": 2
         },
-        "setSkill": "Zoh Shia's Pulse",
-        "groupSkill": "Guardian's Protection",
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
         "rarity": 8,
         "rank": "high",
         "defense": 68,
@@ -2205,8 +2485,12 @@
             "Stamina Surge": 1,
             "Thunder Resistance": 2
         },
-        "groupSkill": "Flexible Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Lagiacrus Mail Beta": {
@@ -2228,8 +2512,12 @@
             "Weakness Exploit": 1,
             "Stamina Surge": 1
         },
-        "groupSkill": "Buttery Leathercraft",
-        "setSkill": "Leviathan's Fury",
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
         "rarity": 1
     },
     "Regios Mail Alpha": {
@@ -2250,8 +2538,12 @@
             "Agitator": 1,
             "Counterstrike": 1
         },
-        "groupSkill": "Scaling Prowess",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
         "rarity": 1
     },
     "Regios Mail Beta": {
@@ -2272,8 +2564,64 @@
             "Evade Window": 2,
             "Agitator": 1
         },
-        "groupSkill": "Scale Layering",
-        "setSkill": "Seregios's Tenacity",
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Mail Alpha": {
+        "description": "Gogmazios chest armor. Like a chthonian messenger, it spreads its fell burden across the world.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Speed Eating": 2,
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Xu Wu's Vigor"
+        ],
+        "rarity": 1
+    },
+    "Gogmazios Mail Beta": {
+        "description": "Gogmazios chest armor. Like a chthonian messenger, it spreads its fell burden across the world.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": -4,
+        "waterResistance": 3,
+        "thunderResistance": 0,
+        "iceResistance": 3,
+        "dragonResistance": -5,
+        "slots": [
+            3,
+            2
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Speed Eating": 2,
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "groupSkill": [],
+        "setSkill": [
+            "Gogmapocalypse",
+            "Rathalos's Flare"
+        ],
         "rarity": 1
     },
     "Rey Sandmail Gamma": {
@@ -2292,8 +2640,12 @@
         "skills": {
             "Latent Power": 3
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Rey Dau's Voltage",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
         "rarity": 8
     },
     "Duna Wildmail Gamma": {
@@ -2311,8 +2663,12 @@
             "Peak Performance": 3,
             "Earplugs": 2
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Uth Duna's Cover",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
         "rarity": 1
     },
     "Udra Miremail Gamma": {
@@ -2332,8 +2688,37 @@
         "skills": {
             "Counterstrike": 2
         },
-        "groupSkill": "Lord's Soul",
-        "setSkill": "Nu Udra's Mutiny",
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "rarity": 1
+    },
+    "Dahaad Shardmail Gamma": {
+        "description": "Chest armor made from special Jin Dahaad materials. The shining white polyplating evokes the valor of the Arch-tempered.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 68,
+        "fireResistance": -3,
+        "waterResistance": 2,
+        "thunderResistance": -1,
+        "iceResistance": 2,
+        "dragonResistance": -1,
+        "slots": [
+            2,
+            2
+        ],
+        "skills": {
+            "Agitator": 2
+        },
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
         "rarity": 1
     },
     "Sakuratide Robe Alpha": {
@@ -2353,8 +2738,12 @@
             "Foray": 1,
             "Quick Sheathe": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Blossomdance Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Blossomdance Prayer"
+        ],
         "rarity": 1
     },
     "Blossom Vest Alpha": {
@@ -2375,8 +2764,10 @@
         "skills": {
             "Paralysis Resistance": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Afi Top Alpha": {
@@ -2396,8 +2787,12 @@
             "Burst": 1,
             "Heroics": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Flamefete Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Flamefete Prayer"
+        ],
         "rarity": 1
     },
     "Diver's Suit Alpha": {
@@ -2418,8 +2813,10 @@
             "Hunger Resistance": 2,
             "Leap of Faith": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Dreamwalker Mail Alpha": {
@@ -2440,8 +2837,12 @@
             "Wide-Range": 1,
             "Sleep Resistance": 1
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "Dreamspell Prayer",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Dreamspell Prayer"
+        ],
         "rarity": 1
     },
     "Harvest Tronco Alpha": {
@@ -2459,8 +2860,61 @@
             "Resentment": 1,
             "Mushroomancer": 2
         },
-        "groupSkill": "Festival Spirit",
-        "setSkill": "",
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
+        "rarity": 1
+    },
+    "Ceremonial Mail Alpha": {
+        "description": "Lumenhymn Ticket chest armor. Dazzling to behold, and yet warm with the splendor of winter.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 36,
+        "fireResistance": 2,
+        "waterResistance": 2,
+        "thunderResistance": 2,
+        "iceResistance": -3,
+        "dragonResistance": 2,
+        "slots": [
+            1
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Convert Element": 1,
+            "Dragon Resistance": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [
+            "Lumenhymn Prayer"
+        ],
+        "rarity": 1
+    },
+    "Orion Vest Alpha": {
+        "description": "Orion Ticket chest armor that affords warmth, protection, and a feeling of comfort and security.",
+        "rank": "high",
+        "type": "chest",
+        "defense": 66,
+        "fireResistance": 1,
+        "waterResistance": 1,
+        "thunderResistance": 1,
+        "iceResistance": 4,
+        "dragonResistance": 1,
+        "slots": [
+            2,
+            2,
+            2
+        ],
+        "skills": {
+            "Windproof": 2,
+            "Recovery Up": 1
+        },
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Demon Garb Alpha": {
@@ -2480,8 +2934,10 @@
         "skills": {
             "Heroics": 3
         },
-        "groupSkill": "Master of the Fist",
-        "setSkill": "",
+        "groupSkill": [
+            "Master of the Fist"
+        ],
+        "setSkill": [],
         "rarity": 1
     },
     "Bale Cuirass Alpha": {
@@ -2501,8 +2957,10 @@
             "Quick Sheathe": 2,
             "Latent Power": 2
         },
-        "groupSkill": "",
-        "setSkill": "Soul of the Dark Knight",
+        "groupSkill": [],
+        "setSkill": [
+            "Soul of the Dark Knight"
+        ],
         "rarity": 1
     },
     "Omega Suit Alpha": {
@@ -2522,8 +2980,10 @@
         "skills": {
             "Partbreaker": 2
         },
-        "groupSkill": "",
-        "setSkill": "Omega Resonance",
+        "groupSkill": [],
+        "setSkill": [
+            "Omega Resonance"
+        ],
         "rarity": 1
     },
     "Pinion Necklace Alpha": {
@@ -2541,8 +3001,8 @@
             "Heroics": 2,
             "Agitator": 1
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Hawkheart Jacket Alpha": {
@@ -2562,8 +3022,8 @@
             "Constitution": 4,
             "Quick Sheathe": 2
         },
-        "groupSkill": "",
-        "setSkill": "",
+        "groupSkill": [],
+        "setSkill": [],
         "rarity": 1
     },
     "Gelidron Backpack Alpha": {
@@ -2585,8 +3045,10 @@
             "Hunger Resistance": 2,
             "Free Meal": 2
         },
-        "groupSkill": "Flexible Leathercraft",
-        "setSkill": "",
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "setSkill": [],
         "rarity": 1
     }
 }
