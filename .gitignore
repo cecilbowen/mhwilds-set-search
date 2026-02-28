@@ -31,8 +31,11 @@ misc/*
 src/data/format
 src/data/merge
 src/data/merge-compact
+src/data/mhdb
 
 !/misc/stats.py
 !/misc/tests.py
 !/misc/tasks.py
 !/misc/jsoner.py
+!/misc/mhdb.py
+!/misc/set-overwrites.json

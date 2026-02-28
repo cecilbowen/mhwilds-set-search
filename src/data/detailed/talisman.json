@@ -1,1455 +1,1475 @@
 {
-    "Marathon Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Marathon Runner skill.",
-        "skills": {
-            "Marathon Runner": 1
-        },
-        "type": "talisman"
-    },
-    "Marathon Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Marathon Runner skill.",
-        "skills": {
-            "Marathon Runner": 2
-        },
-        "type": "talisman"
-    },
-    "Marathon Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Marathon Runner skill.",
-        "skills": {
-            "Marathon Runner": 3
-        },
-        "type": "talisman"
-    },
-    "Fitness Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Constitution skill.",
-        "skills": {
-            "Constitution": 1
-        },
-        "type": "talisman"
-    },
-    "Fitness Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Constitution skill.",
-        "skills": {
-            "Constitution": 2
-        },
-        "type": "talisman"
-    },
-    "Fitness Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Constitution skill.",
-        "skills": {
-            "Constitution": 3
-        },
-        "type": "talisman"
-    },
-    "Fitness Charm IV": {
-        "rarity": 7,
-        "effect": "A charm that grants the Constitution skill.",
-        "skills": {
-            "Constitution": 4
-        },
-        "type": "talisman"
-    },
-    "Fitness Charm V": {
-        "rarity": 6,
-        "effect": "",
-        "skills": {
-            "Constitution": 5
-        },
-        "type": "talisman"
-    },
-    "Sheathe Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Quick Sheathe skill.",
-        "skills": {
-            "Quick Sheathe": 1
-        },
-        "type": "talisman"
-    },
-    "Sheathe Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Quick Sheathe skill.",
-        "skills": {
-            "Quick Sheathe": 2
-        },
-        "type": "talisman"
-    },
-    "Sheathe Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Quick Sheathe skill.",
-        "skills": {
-            "Quick Sheathe": 3
-        },
-        "type": "talisman"
-    },
-    "Challenger Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Agitator skill.",
-        "skills": {
-            "Agitator": 1
-        },
-        "type": "talisman"
-    },
-    "Challenger Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Agitator skill.",
-        "skills": {
-            "Agitator": 2
-        },
-        "type": "talisman"
-    },
-    "Challenger Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Agitator": 3
-        }
-    },
-    "Unscathed Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Peak Performance skill.",
-        "skills": {
-            "Peak Performance": 1
-        },
-        "type": "talisman"
-    },
-    "Unscathed Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Peak Performance skill.",
-        "skills": {
-            "Peak Performance": 2
-        },
-        "type": "talisman"
-    },
-    "Unscathed Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Peak Performance": 3
-        }
-    },
-    "Fury Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Resentment skill.",
-        "skills": {
-            "Resentment": 1
-        },
-        "type": "talisman"
-    },
-    "Fury Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Resentment skill.",
-        "skills": {
-            "Resentment": 2
-        },
-        "type": "talisman"
-    },
-    "Fury Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Resentment": 3
-        }
-    },
-    "Exploiter Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Weakness Exploit skill.",
-        "skills": {
-            "Weakness Exploit": 1
-        },
-        "type": "talisman"
-    },
-    "Exploiter Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Weakness Exploit skill.",
-        "skills": {
-            "Weakness Exploit": 2
-        },
-        "type": "talisman"
-    },
-    "Power Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Latent Power skill.",
-        "skills": {
-            "Latent Power": 1
-        },
-        "type": "talisman"
-    },
-    "Power Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Latent Power skill.",
-        "skills": {
-            "Latent Power": 2
-        },
-        "type": "talisman"
-    },
-    "Power Charm III": {
-        "rarity": 6,
-        "effect": "",
-        "skills": {
-            "Latent Power": 3
-        },
-        "type": "talisman"
-    },
-    "Mighty Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Maximum Might skill.",
-        "skills": {
-            "Maximum Might": 1
-        },
-        "type": "talisman"
-    },
-    "Mighty Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Maximum Might skill.",
-        "skills": {
-            "Maximum Might": 2
-        },
-        "type": "talisman"
-    },
-    "Mighty Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Maximum Might": 3
-        }
-    },
-    "Surge Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Stamina Surge skill.",
-        "skills": {
-            "Stamina Surge": 1
-        },
-        "type": "talisman"
-    },
-    "Surge Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Stamina Surge skill.",
-        "skills": {
-            "Stamina Surge": 2
-        },
-        "type": "talisman"
-    },
-    "Surge Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Stamina Surge skill.",
-        "skills": {
-            "Stamina Surge": 3
-        },
-        "type": "talisman"
-    },
-    "Defense Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Defense Boost skill.",
-        "skills": {
-            "Defense Boost": 1
-        },
-        "type": "talisman"
-    },
-    "Defense Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Defense Boost skill.",
-        "skills": {
-            "Defense Boost": 2
-        },
-        "type": "talisman"
-    },
-    "Defense Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Defense Boost skill.",
-        "skills": {
-            "Defense Boost": 3
-        },
-        "type": "talisman"
-    },
-    "Defense Charm IV": {
-        "rarity": 6,
-        "effect": "A charm that grants the Defense Boost skill.",
-        "skills": {
-            "Defense Boost": 4
-        },
-        "type": "talisman"
-    },
-    "Defense Charm V": {
-        "rarity": 6,
-        "effect": "",
-        "skills": {
-            "Defense Boost": 5
-        },
-        "type": "talisman"
-    },
-    "Blessing Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Divine Blessing skill.",
-        "skills": {
-            "Divine Blessing": 1
-        },
-        "type": "talisman"
-    },
-    "Blessing Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Divine Blessing skill.",
-        "skills": {
-            "Divine Blessing": 2
-        },
-        "type": "talisman"
-    },
-    "Blessing Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Divine Blessing skill.",
-        "skills": {
-            "Divine Blessing": 3
-        },
-        "type": "talisman"
-    },
-    "Recovery Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Recovery Up skill.",
-        "skills": {
-            "Recovery Up": 1
-        },
-        "type": "talisman"
-    },
-    "Recovery Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Recovery Up skill.",
-        "skills": {
-            "Recovery Up": 2
-        },
-        "type": "talisman"
-    },
-    "Recovery Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Recovery Up skill.",
-        "skills": {
-            "Recovery Up": 3
-        },
-        "type": "talisman"
-    },
-    "Speed Heal Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Recovery Speed skill.",
-        "skills": {
-            "Recovery Speed": 1
-        },
-        "type": "talisman"
-    },
-    "Speed Heal Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Recovery Speed skill.",
-        "skills": {
-            "Recovery Speed": 2
-        },
-        "type": "talisman"
-    },
-    "Speed Heal Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Recovery Speed skill.",
-        "skills": {
-            "Recovery Speed": 3
-        },
-        "type": "talisman"
-    },
-    "Glutton's Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Speed Eating skill.",
-        "skills": {
-            "Speed Eating": 1
-        },
-        "type": "talisman"
-    },
-    "Glutton's Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Speed Eating skill.",
-        "skills": {
-            "Speed Eating": 2
-        },
-        "type": "talisman"
-    },
-    "Glutton's Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Speed Eating skill.",
-        "skills": {
-            "Speed Eating": 3
-        },
-        "type": "talisman"
-    },
-    "Earplugs Charm I": {
-        "rarity": 6,
-        "effect": "A charm that grants the Earplugs skill.",
-        "skills": {
-            "Earplugs": 1
-        },
-        "type": "talisman"
-    },
-    "Earplugs Charm II": {
-        "rarity": 6,
-        "effect": "",
-        "skills": {
-            "Earplugs": 2
-        },
-        "type": "talisman"
-    },
-    "Windproof Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Windproof skill.",
-        "skills": {
-            "Windproof": 1
-        },
-        "type": "talisman"
-    },
-    "Windproof Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Windproof skill.",
-        "skills": {
-            "Windproof": 2
-        },
-        "type": "talisman"
-    },
-    "Windproof Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Windproof skill.",
-        "skills": {
-            "Windproof": 3
-        },
-        "type": "talisman"
-    },
-    "Tremor Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Tremor Resistance skill.",
-        "skills": {
-            "Tremor Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Tremor Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Tremor Resistance skill.",
-        "skills": {
-            "Tremor Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Tremor Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Tremor Resistance skill.",
-        "skills": {
-            "Tremor Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Evasion Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Evade Window skill.",
-        "skills": {
-            "Evade Window": 1
-        },
-        "type": "talisman"
-    },
-    "Evasion Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Evade Window skill.",
-        "skills": {
-            "Evade Window": 2
-        },
-        "type": "talisman"
-    },
-    "Evasion Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Evade Window skill.",
-        "skills": {
-            "Evade Window": 3
-        },
-        "type": "talisman"
-    },
-    "Evasion Charm IV": {
-        "rarity": 6,
-        "effect": "",
-        "skills": {
-            "Evade Window": 4
-        },
-        "type": "talisman"
-    },
-    "Leaping Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Evade Extender skill.",
-        "skills": {
-            "Evade Extender": 1
-        },
-        "type": "talisman"
-    },
-    "Leaping Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Evade Extender skill.",
-        "skills": {
-            "Evade Extender": 2
-        },
-        "type": "talisman"
-    },
-    "Leaping Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Evade Extender skill.",
-        "skills": {
-            "Evade Extender": 3
-        },
-        "type": "talisman"
-    },
-    "Fire Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Fire Resistance skill.",
-        "skills": {
-            "Fire Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Fire Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Fire Resistance skill.",
-        "skills": {
-            "Fire Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Fire Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Fire Resistance skill.",
-        "skills": {
-            "Fire Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Water Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Water Resistance skill.",
-        "skills": {
-            "Water Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Water Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Water Resistance skill.",
-        "skills": {
-            "Water Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Water Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Water Resistance skill.",
-        "skills": {
-            "Water Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Thunder Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Thunder Resistance skill.",
-        "skills": {
-            "Thunder Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Thunder Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Thunder Resistance skill.",
-        "skills": {
-            "Thunder Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Thunder Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Thunder Resistance skill.",
-        "skills": {
-            "Thunder Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Ice Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Ice Resistance skill.",
-        "skills": {
-            "Ice Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Ice Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Ice Resistance skill.",
-        "skills": {
-            "Ice Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Ice Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Ice Resistance skill.",
-        "skills": {
-            "Ice Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Dragon Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Dragon Resistance skill.",
-        "skills": {
-            "Dragon Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Dragon Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Dragon Resistance skill.",
-        "skills": {
-            "Dragon Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Dragon Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Dragon Resistance skill.",
-        "skills": {
-            "Dragon Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Blight Charm I": {
-        "rarity": 6,
-        "effect": "A charm that grants the Blight Resistance skill.",
-        "skills": {
-            "Blight Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Blight Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Blight Resistance skill.",
-        "skills": {
-            "Blight Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Blight Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Blight Resistance": 3
-        }
-    },
-    "Poison Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Poison Resistance skill.",
-        "skills": {
-            "Poison Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Poison Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Poison Resistance skill.",
-        "skills": {
-            "Poison Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Poison Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Poison Resistance skill.",
-        "skills": {
-            "Poison Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Paralysis Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Paralysis Resistance skill.",
-        "skills": {
-            "Paralysis Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Paralysis Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Paralysis Resistance skill.",
-        "skills": {
-            "Paralysis Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Paralysis Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Paralysis Resistance skill.",
-        "skills": {
-            "Paralysis Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Sleep Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Sleep Resistance skill.",
-        "skills": {
-            "Sleep Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Sleep Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Sleep Resistance skill.",
-        "skills": {
-            "Sleep Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Sleep Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Sleep Resistance skill.",
-        "skills": {
-            "Sleep Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Stun Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Stun Resistance skill.",
-        "skills": {
-            "Stun Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Stun Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Stun Resistance skill.",
-        "skills": {
-            "Stun Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Stun Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Stun Resistance skill.",
-        "skills": {
-            "Stun Resistance": 3
-        },
-        "type": "talisman"
-    },
     "Blast Charm I": {
-        "rarity": 3,
         "effect": "A charm that grants the Blast Resistance skill.",
+        "rarity": 3,
         "skills": {
             "Blast Resistance": 1
         },
         "type": "talisman"
     },
     "Blast Charm II": {
-        "rarity": 4,
         "effect": "A charm that grants the Blast Resistance skill.",
+        "rarity": 4,
         "skills": {
             "Blast Resistance": 2
         },
         "type": "talisman"
     },
     "Blast Charm III": {
-        "rarity": 5,
         "effect": "A charm that grants the Blast Resistance skill.",
+        "rarity": 5,
         "skills": {
             "Blast Resistance": 3
         },
         "type": "talisman"
     },
-    "Botany Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Botanist skill.",
-        "skills": {
-            "Botanist": 1
-        },
-        "type": "talisman"
-    },
-    "Botany Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Botanist skill.",
-        "skills": {
-            "Botanist": 2
-        },
-        "type": "talisman"
-    },
-    "Botany Charm III": {
-        "rarity": 4,
-        "effect": "A charm that grants the Botanist skill.",
-        "skills": {
-            "Botanist": 3
-        },
-        "type": "talisman"
-    },
-    "Botany Charm IV": {
-        "rarity": 5,
-        "effect": "A charm that grants the Botanist skill.",
-        "skills": {
-            "Botanist": 4
-        },
-        "type": "talisman"
-    },
-    "Geology Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Geologist skill.",
-        "skills": {
-            "Geologist": 1
-        },
-        "type": "talisman"
-    },
-    "Geology Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Geologist skill.",
-        "skills": {
-            "Geologist": 2
-        },
-        "type": "talisman"
-    },
-    "Geology Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Geologist skill.",
-        "skills": {
-            "Geologist": 3
-        },
-        "type": "talisman"
-    },
-    "Breaker Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Partbreaker skill.",
-        "skills": {
-            "Partbreaker": 1
-        },
-        "type": "talisman"
-    },
-    "Breaker Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Partbreaker skill.",
-        "skills": {
-            "Partbreaker": 2
-        },
-        "type": "talisman"
-    },
-    "Breaker Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Partbreaker": 3
-        }
-    },
-    "Bombardier Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Bombardier skill.",
-        "skills": {
-            "Bombardier": 1
-        },
-        "type": "talisman"
-    },
-    "Bombardier Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Bombardier skill.",
-        "skills": {
-            "Bombardier": 2
-        },
-        "type": "talisman"
-    },
-    "Bombardier Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Bombardier skill.",
-        "skills": {
-            "Bombardier": 3
-        },
-        "type": "talisman"
-    },
-    "Mushroom Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Mushroomancer skill.",
-        "skills": {
-            "Mushroomancer": 1
-        },
-        "type": "talisman"
-    },
-    "Mushroom Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Mushroomancer skill.",
-        "skills": {
-            "Mushroomancer": 2
-        },
-        "type": "talisman"
-    },
-    "Mushroom Charm III": {
-        "rarity": 7,
-        "effect": "A charm that grants the Mushroomancer skill.",
-        "skills": {
-            "Mushroomancer": 3
-        },
-        "type": "talisman"
-    },
-    "Extension Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Item Prolonger skill.",
-        "skills": {
-            "Item Prolonger": 1
-        },
-        "type": "talisman"
-    },
-    "Extension Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Item Prolonger skill.",
-        "skills": {
-            "Item Prolonger": 2
-        },
-        "type": "talisman"
-    },
-    "Extension Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Item Prolonger skill.",
-        "skills": {
-            "Item Prolonger": 3
-        },
-        "type": "talisman"
-    },
-    "Friendship Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Wide- Range skill.",
-        "skills": {
-            "Wide-Range": 1
-        },
-        "type": "talisman"
-    },
-    "Friendship Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Wide- Range skill.",
-        "skills": {
-            "Wide-Range": 2
-        },
-        "type": "talisman"
-    },
-    "Friendship Charm III": {
-        "rarity": 4,
-        "effect": "A charm that grants the Wide- Range skill.",
-        "skills": {
-            "Wide-Range": 3
-        },
-        "type": "talisman"
-    },
-    "Friendship Charm IV": {
-        "rarity": 5,
-        "effect": "A charm that grants the Wide- Range skill.",
-        "skills": {
-            "Wide-Range": 4
-        },
-        "type": "talisman"
-    },
-    "Friendship Charm V": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Wide-Range": 5
-        }
-    },
-    "Light Eater's Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Free Meal skill.",
-        "skills": {
-            "Free Meal": 1
-        },
-        "type": "talisman"
-    },
-    "Light Eater's Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Free Meal skill.",
-        "skills": {
-            "Free Meal": 2
-        },
-        "type": "talisman"
-    },
-    "Light Eater's Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Free Meal skill.",
-        "skills": {
-            "Free Meal": 3
-        },
-        "type": "talisman"
-    },
-    "Grit Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Heroics skill.",
-        "skills": {
-            "Heroics": 1
-        },
-        "type": "talisman"
-    },
-    "Grit Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Heroics skill.",
-        "skills": {
-            "Heroics": 2
-        },
-        "type": "talisman"
-    },
-    "Grit Charm III": {
-        "rarity": 7,
-        "effect": "A charm that grants the Heroics skill.",
-        "skills": {
-            "Heroics": 3
-        },
-        "type": "talisman"
-    },
-    "Grit Charm IV": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Heroics": 4
-        }
-    },
-    "Impact Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Flinch Free skill.",
-        "skills": {
-            "Flinch Free": 1
-        },
-        "type": "talisman"
-    },
-    "Impact Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Flinch Free skill.",
-        "skills": {
-            "Flinch Free": 2
-        },
-        "type": "talisman"
-    },
-    "Impact Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Flinch Free skill.",
-        "skills": {
-            "Flinch Free": 3
-        },
-        "type": "talisman"
-    },
-    "Hungerless Charm I": {
-        "rarity": 2,
-        "effect": "A charm that grants the Hunger Resistance skill.",
-        "skills": {
-            "Hunger Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Hungerless Charm II": {
-        "rarity": 4,
-        "effect": "A charm that grants the Hunger Resistance skill.",
-        "skills": {
-            "Hunger Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Hungerless Charm III": {
-        "rarity": 5,
-        "effect": "A charm that grants the Hunger Resistance skill.",
-        "skills": {
-            "Hunger Resistance": 3
-        },
-        "type": "talisman"
-    },
-    "Counter Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Counterstrike skill.",
-        "skills": {
-            "Counterstrike": 1
-        },
-        "type": "talisman"
-    },
-    "Counter Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Counterstrike skill.",
-        "skills": {
-            "Counterstrike": 2
-        },
-        "type": "talisman"
-    },
-    "Counter Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Counterstrike skill.",
-        "skills": {
-            "Counterstrike": 3
-        },
-        "type": "talisman"
-    },
-    "Foray Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Foray skill.",
-        "skills": {
-            "Foray": 1
-        },
-        "type": "talisman"
-    },
-    "Foray Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Foray skill.",
-        "skills": {
-            "Foray": 2
-        },
-        "type": "talisman"
-    },
-    "Foray Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Foray": 3
-        }
-    },
-    "Phoenix Charm I": {
-        "rarity": 6,
-        "effect": "A charm that grants the Coalescence skill.",
-        "skills": {
-            "Coalescence": 1
-        },
-        "type": "talisman"
-    },
-    "Phoenix Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Coalescence skill.",
-        "skills": {
-            "Coalescence": 2
-        },
-        "type": "talisman"
-    },
-    "Phoenix Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Coalescence": 3
-        }
-    },
-    "Chain Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Burst skill.",
-        "skills": {
-            "Burst": 1
-        },
-        "type": "talisman"
-    },
-    "Chain Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Burst skill.",
-        "skills": {
-            "Burst": 2
-        },
-        "type": "talisman"
-    },
-    "Chain Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Burst": 3
-        }
-    },
-    "Counterattack Charm I": {
-        "rarity": 5,
-        "effect": "A charm that grants the Adrenaline Rush skill.",
-        "skills": {
-            "Adrenaline Rush": 1
-        },
-        "type": "talisman"
-    },
-    "Counterattack Charm II": {
-        "rarity": 7,
-        "effect": "A charm that grants the Adrenaline Rush skill.",
-        "skills": {
-            "Adrenaline Rush": 2
-        },
-        "type": "talisman"
-    },
-    "Counterattack Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Adrenaline Rush": 3
-        }
-    },
-    "Descent Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Ambush skill.",
-        "skills": {
-            "Ambush": 1
-        },
-        "type": "talisman"
-    },
-    "Descent Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Ambush skill.",
-        "skills": {
-            "Ambush": 2
-        },
-        "type": "talisman"
-    },
-    "Descent Charm III": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {
-            "Ambush": 3
-        }
-    },
     "Bleed Charm I": {
-        "rarity": 3,
         "effect": "A charm that grants the Bleeding Resistance skill.",
+        "rarity": 3,
         "skills": {
             "Bleeding Resistance": 1
         },
         "type": "talisman"
     },
     "Bleed Charm II": {
-        "rarity": 5,
         "effect": "A charm that grants the Bleeding Resistance skill.",
+        "rarity": 5,
         "skills": {
             "Bleeding Resistance": 2
         },
         "type": "talisman"
     },
     "Bleed Charm III": {
-        "rarity": 6,
         "effect": "A charm that grants the Bleeding Resistance skill.",
+        "rarity": 6,
         "skills": {
             "Bleeding Resistance": 3
         },
         "type": "talisman"
     },
-    "Guard Charm I": {
+    "Blessing Charm I": {
+        "effect": "A charm that grants the Divine Blessing skill.",
         "rarity": 3,
-        "effect": "A charm that grants the Iron Skin skill.",
         "skills": {
-            "Iron Skin": 1
+            "Divine Blessing": 1
         },
         "type": "talisman"
     },
-    "Guard Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Iron Skin skill.",
-        "skills": {
-            "Iron Skin": 2
-        },
-        "type": "talisman"
-    },
-    "Guard Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Iron Skin skill.",
-        "skills": {
-            "Iron Skin": 3
-        },
-        "type": "talisman"
-    },
-    "Survival Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Survival Expert skill.",
-        "skills": {
-            "Survival Expert": 1
-        },
-        "type": "talisman"
-    },
-    "Survival Charm II": {
-        "rarity": 5,
-        "effect": "A charm that grants the Survival Expert skill.",
-        "skills": {
-            "Survival Expert": 2
-        },
-        "type": "talisman"
-    },
-    "Survival Charm III": {
-        "rarity": 6,
-        "effect": "A charm that grants the Survival Expert skill.",
-        "skills": {
-            "Survival Expert": 3
-        },
-        "type": "talisman"
-    },
-    "Maintenance Charm I": {
+    "Blessing Charm II": {
+        "effect": "A charm that grants the Divine Blessing skill.",
         "rarity": 4,
-        "effect": "A charm that grants the Tool Specialist skill.",
         "skills": {
-            "Tool Specialist": 1
+            "Divine Blessing": 2
         },
         "type": "talisman"
     },
-    "Maintenance Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Tool Specialist skill.",
-        "skills": {
-            "Tool Specialist": 2
-        },
-        "type": "talisman"
-    },
-    "Maintenance Charm III": {
-        "rarity": 7,
-        "effect": "A charm that grants the Tool Specialist skill.",
-        "skills": {
-            "Tool Specialist": 3
-        },
-        "type": "talisman"
-    },
-    "Intimidator Charm I": {
-        "rarity": 3,
-        "effect": "A charm that grants the Intimidator skill.",
-        "skills": {
-            "Intimidator": 1
-        },
-        "type": "talisman"
-    },
-    "Intimidator Charm II": {
+    "Blessing Charm III": {
+        "effect": "A charm that grants the Divine Blessing skill.",
         "rarity": 5,
-        "effect": "A charm that grants the Intimidator skill.",
         "skills": {
-            "Intimidator": 2
+            "Divine Blessing": 3
         },
         "type": "talisman"
     },
-    "Intimidator Charm III": {
+    "Blight Charm I": {
+        "effect": "A charm that grants the Blight Resistance skill.",
         "rarity": 6,
-        "effect": "A charm that grants the Intimidator skill.",
         "skills": {
-            "Intimidator": 3
+            "Blight Resistance": 1
         },
         "type": "talisman"
     },
-    "Escape Charm I": {
-        "rarity": 4,
-        "effect": "A charm that grants the Bind Resistance skill.",
-        "skills": {
-            "Bind Resistance": 1
-        },
-        "type": "talisman"
-    },
-    "Escape Charm II": {
-        "rarity": 6,
-        "effect": "A charm that grants the Bind Resistance skill.",
-        "skills": {
-            "Bind Resistance": 2
-        },
-        "type": "talisman"
-    },
-    "Escape Charm III": {
+    "Blight Charm II": {
+        "effect": "A charm that grants the Blight Resistance skill.",
         "rarity": 7,
-        "effect": "A charm that grants the Bind Resistance skill.",
         "skills": {
-            "Bind Resistance": 3
+            "Blight Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Blight Charm III": {
+        "effect": "A charm that grants the Blight Resistance skill.",
+        "rarity": 8,
+        "skills": {
+            "Blight Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Bombardier Charm I": {
+        "effect": "A charm that grants the Bombardier skill.",
+        "rarity": 4,
+        "skills": {
+            "Bombardier": 1
+        },
+        "type": "talisman"
+    },
+    "Bombardier Charm II": {
+        "effect": "A charm that grants the Bombardier skill.",
+        "rarity": 5,
+        "skills": {
+            "Bombardier": 2
+        },
+        "type": "talisman"
+    },
+    "Bombardier Charm III": {
+        "effect": "A charm that grants the Bombardier skill.",
+        "rarity": 6,
+        "skills": {
+            "Bombardier": 3
+        },
+        "type": "talisman"
+    },
+    "Botany Charm I": {
+        "effect": "A charm that grants the Botanist skill.",
+        "rarity": 2,
+        "skills": {
+            "Botanist": 1
+        },
+        "type": "talisman"
+    },
+    "Botany Charm II": {
+        "effect": "A charm that grants the Botanist skill.",
+        "rarity": 4,
+        "skills": {
+            "Botanist": 2
+        },
+        "type": "talisman"
+    },
+    "Botany Charm III": {
+        "effect": "A charm that grants the Botanist skill.",
+        "rarity": 4,
+        "skills": {
+            "Botanist": 3
+        },
+        "type": "talisman"
+    },
+    "Botany Charm IV": {
+        "effect": "A charm that grants the Botanist skill.",
+        "rarity": 5,
+        "skills": {
+            "Botanist": 4
+        },
+        "type": "talisman"
+    },
+    "Breaker Charm I": {
+        "effect": "A charm that grants the Partbreaker skill.",
+        "rarity": 5,
+        "skills": {
+            "Partbreaker": 1
+        },
+        "type": "talisman"
+    },
+    "Breaker Charm II": {
+        "effect": "A charm that grants the Partbreaker skill.",
+        "rarity": 7,
+        "skills": {
+            "Partbreaker": 2
+        },
+        "type": "talisman"
+    },
+    "Breaker Charm III": {
+        "effect": "A charm that grants the Partbreaker skill.",
+        "rarity": 8,
+        "skills": {
+            "Partbreaker": 3
+        },
+        "type": "talisman"
+    },
+    "Chain Charm I": {
+        "effect": "A charm that grants the Burst skill.",
+        "rarity": 5,
+        "skills": {
+            "Burst": 1
+        },
+        "type": "talisman"
+    },
+    "Chain Charm II": {
+        "effect": "A charm that grants the Burst skill.",
+        "rarity": 7,
+        "skills": {
+            "Burst": 2
+        },
+        "type": "talisman"
+    },
+    "Chain Charm III": {
+        "effect": "A charm that grants the Burst skill.",
+        "rarity": 8,
+        "skills": {
+            "Burst": 3
         },
         "type": "talisman"
     },
     "Chainblade Charm I": {
-        "rarity": 4,
         "effect": "A charm that grants the Flayer skill.",
+        "rarity": 4,
         "skills": {
             "Flayer": 1
         },
         "type": "talisman"
     },
     "Chainblade Charm II": {
-        "rarity": 7,
         "effect": "A charm that grants the Flayer skill.",
+        "rarity": 7,
         "skills": {
             "Flayer": 2
         },
         "type": "talisman"
     },
-    "Imbibe Charm I": {
-        "rarity": 7,
-        "effect": "A charm that grants the Elemental Absorption skill.",
+    "Challenger Charm I": {
+        "effect": "A charm that grants the Agitator skill.",
+        "rarity": 5,
         "skills": {
-            "Elemental Absorption": 1
+            "Agitator": 1
         },
         "type": "talisman"
     },
-    "Imbibe Charm II": {
-        "type": "talisman",
-        "rarity": 1,
+    "Challenger Charm II": {
+        "effect": "A charm that grants the Agitator skill.",
+        "rarity": 7,
         "skills": {
-            "Elemental Absorption": 2
-        }
+            "Agitator": 2
+        },
+        "type": "talisman"
+    },
+    "Challenger Charm III": {
+        "effect": "A charm that grants the Agitator skill.",
+        "rarity": 8,
+        "skills": {
+            "Agitator": 3
+        },
+        "type": "talisman"
     },
     "Convert Charm I": {
-        "rarity": 7,
         "effect": "A charm that grants the Convert Element skill.",
+        "rarity": 7,
         "skills": {
             "Convert Element": 1
         },
         "type": "talisman"
     },
     "Convert Charm II": {
-        "rarity": 6,
-        "effect": "",
+        "effect": "A charm that grants the Convert Element skill.",
+        "rarity": 8,
         "skills": {
             "Convert Element": 2
         },
         "type": "talisman"
     },
-    "Sanity Charm I": {
+    "Counter Charm I": {
+        "effect": "A charm that grants the Counterstrike skill.",
         "rarity": 5,
+        "skills": {
+            "Counterstrike": 1
+        },
+        "type": "talisman"
+    },
+    "Counter Charm II": {
+        "effect": "A charm that grants the Counterstrike skill.",
+        "rarity": 6,
+        "skills": {
+            "Counterstrike": 2
+        },
+        "type": "talisman"
+    },
+    "Counter Charm III": {
+        "effect": "A charm that grants the Counterstrike skill.",
+        "rarity": 7,
+        "skills": {
+            "Counterstrike": 3
+        },
+        "type": "talisman"
+    },
+    "Counterattack Charm I": {
+        "effect": "A charm that grants the Adrenaline Rush skill.",
+        "rarity": 5,
+        "skills": {
+            "Adrenaline Rush": 1
+        },
+        "type": "talisman"
+    },
+    "Counterattack Charm II": {
+        "effect": "A charm that grants the Adrenaline Rush skill.",
+        "rarity": 7,
+        "skills": {
+            "Adrenaline Rush": 2
+        },
+        "type": "talisman"
+    },
+    "Counterattack Charm III": {
+        "effect": "A charm that grants the Adrenaline Rush skill.",
+        "rarity": 8,
+        "skills": {
+            "Adrenaline Rush": 3
+        },
+        "type": "talisman"
+    },
+    "Defense Charm I": {
+        "effect": "A charm that grants the Defense Boost skill.",
+        "rarity": 2,
+        "skills": {
+            "Defense Boost": 1
+        },
+        "type": "talisman"
+    },
+    "Defense Charm II": {
+        "effect": "A charm that grants the Defense Boost skill.",
+        "rarity": 4,
+        "skills": {
+            "Defense Boost": 2
+        },
+        "type": "talisman"
+    },
+    "Defense Charm III": {
+        "effect": "A charm that grants the Defense Boost skill.",
+        "rarity": 5,
+        "skills": {
+            "Defense Boost": 3
+        },
+        "type": "talisman"
+    },
+    "Defense Charm IV": {
+        "effect": "A charm that grants the Defense Boost skill.",
+        "rarity": 6,
+        "skills": {
+            "Defense Boost": 4
+        },
+        "type": "talisman"
+    },
+    "Defense Charm V": {
+        "effect": "A charm that grants the Defense Boost skill.",
+        "rarity": 7,
+        "skills": {
+            "Defense Boost": 5
+        },
+        "type": "talisman"
+    },
+    "Descent Charm I": {
+        "effect": "A charm that grants the Ambush skill.",
+        "rarity": 4,
+        "skills": {
+            "Ambush": 1
+        },
+        "type": "talisman"
+    },
+    "Descent Charm II": {
+        "effect": "A charm that grants the Ambush skill.",
+        "rarity": 6,
+        "skills": {
+            "Ambush": 2
+        },
+        "type": "talisman"
+    },
+    "Descent Charm III": {
+        "effect": "A charm that grants the Ambush skill.",
+        "rarity": 7,
+        "skills": {
+            "Ambush": 3
+        },
+        "type": "talisman"
+    },
+    "Dragon Charm I": {
+        "effect": "A charm that grants the Dragon Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Dragon Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Dragon Charm II": {
+        "effect": "A charm that grants the Dragon Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Dragon Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Dragon Charm III": {
+        "effect": "A charm that grants the Dragon Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Dragon Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Earplugs Charm I": {
+        "effect": "A charm that grants the Earplugs skill.",
+        "rarity": 6,
+        "skills": {
+            "Earplugs": 1
+        },
+        "type": "talisman"
+    },
+    "Earplugs Charm II": {
+        "effect": "A charm that grants the Earplugs skill.",
+        "rarity": 7,
+        "skills": {
+            "Earplugs": 2
+        },
+        "type": "talisman"
+    },
+    "Escape Charm I": {
+        "effect": "A charm that grants the Bind Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Bind Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Escape Charm II": {
+        "effect": "A charm that grants the Bind Resistance skill.",
+        "rarity": 6,
+        "skills": {
+            "Bind Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Escape Charm III": {
+        "effect": "A charm that grants the Bind Resistance skill.",
+        "rarity": 7,
+        "skills": {
+            "Bind Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Evasion Charm I": {
+        "effect": "A charm that grants the Evade Window skill.",
+        "rarity": 4,
+        "skills": {
+            "Evade Window": 1
+        },
+        "type": "talisman"
+    },
+    "Evasion Charm II": {
+        "effect": "A charm that grants the Evade Window skill.",
+        "rarity": 5,
+        "skills": {
+            "Evade Window": 2
+        },
+        "type": "talisman"
+    },
+    "Evasion Charm III": {
+        "effect": "A charm that grants the Evade Window skill.",
+        "rarity": 6,
+        "skills": {
+            "Evade Window": 3
+        },
+        "type": "talisman"
+    },
+    "Evasion Charm IV": {
+        "effect": "A charm that grants the Evade Window skill.",
+        "rarity": 7,
+        "skills": {
+            "Evade Window": 4
+        },
+        "type": "talisman"
+    },
+    "Exploiter Charm I": {
+        "effect": "A charm that grants the Weakness Exploit skill.",
+        "rarity": 5,
+        "skills": {
+            "Weakness Exploit": 1
+        },
+        "type": "talisman"
+    },
+    "Exploiter Charm II": {
+        "effect": "A charm that grants the Weakness Exploit skill.",
+        "rarity": 7,
+        "skills": {
+            "Weakness Exploit": 2
+        },
+        "type": "talisman"
+    },
+    "Extension Charm I": {
+        "effect": "A charm that grants the Item Prolonger skill.",
+        "rarity": 3,
+        "skills": {
+            "Item Prolonger": 1
+        },
+        "type": "talisman"
+    },
+    "Extension Charm II": {
+        "effect": "A charm that grants the Item Prolonger skill.",
+        "rarity": 4,
+        "skills": {
+            "Item Prolonger": 2
+        },
+        "type": "talisman"
+    },
+    "Extension Charm III": {
+        "effect": "A charm that grants the Item Prolonger skill.",
+        "rarity": 5,
+        "skills": {
+            "Item Prolonger": 3
+        },
+        "type": "talisman"
+    },
+    "Fire Charm I": {
+        "effect": "A charm that grants the Fire Resistance skill.",
+        "rarity": 2,
+        "skills": {
+            "Fire Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Fire Charm II": {
+        "effect": "A charm that grants the Fire Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Fire Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Fire Charm III": {
+        "effect": "A charm that grants the Fire Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Fire Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Fitness Charm I": {
+        "effect": "A charm that grants the Constitution skill.",
+        "rarity": 4,
+        "skills": {
+            "Constitution": 1
+        },
+        "type": "talisman"
+    },
+    "Fitness Charm II": {
+        "effect": "A charm that grants the Constitution skill.",
+        "rarity": 5,
+        "skills": {
+            "Constitution": 2
+        },
+        "type": "talisman"
+    },
+    "Fitness Charm III": {
+        "effect": "A charm that grants the Constitution skill.",
+        "rarity": 6,
+        "skills": {
+            "Constitution": 3
+        },
+        "type": "talisman"
+    },
+    "Fitness Charm IV": {
+        "effect": "A charm that grants the Constitution skill.",
+        "rarity": 7,
+        "skills": {
+            "Constitution": 4
+        },
+        "type": "talisman"
+    },
+    "Fitness Charm V": {
+        "effect": "A charm that grants the Constitution skill.",
+        "rarity": 8,
+        "skills": {
+            "Constitution": 5
+        },
+        "type": "talisman"
+    },
+    "Foray Charm I": {
+        "effect": "A charm that grants the Foray skill.",
+        "rarity": 4,
+        "skills": {
+            "Foray": 1
+        },
+        "type": "talisman"
+    },
+    "Foray Charm II": {
+        "effect": "A charm that grants the Foray skill.",
+        "rarity": 6,
+        "skills": {
+            "Foray": 2
+        },
+        "type": "talisman"
+    },
+    "Foray Charm III": {
+        "effect": "A charm that grants the Foray skill.",
+        "rarity": 7,
+        "skills": {
+            "Foray": 3
+        },
+        "type": "talisman"
+    },
+    "Friendship Charm I": {
+        "effect": "A charm that grants the Wide-Range skill.",
+        "rarity": 3,
+        "skills": {
+            "Wide-Range": 1
+        },
+        "type": "talisman"
+    },
+    "Friendship Charm II": {
+        "effect": "A charm that grants the Wide-Range skill.",
+        "rarity": 4,
+        "skills": {
+            "Wide-Range": 2
+        },
+        "type": "talisman"
+    },
+    "Friendship Charm III": {
+        "effect": "A charm that grants the Wide-Range skill.",
+        "rarity": 4,
+        "skills": {
+            "Wide-Range": 3
+        },
+        "type": "talisman"
+    },
+    "Friendship Charm IV": {
+        "effect": "A charm that grants the Wide-Range skill.",
+        "rarity": 5,
+        "skills": {
+            "Wide-Range": 4
+        },
+        "type": "talisman"
+    },
+    "Friendship Charm V": {
+        "effect": "A charm that grants the Wide-Range skill.",
+        "rarity": 6,
+        "skills": {
+            "Wide-Range": 5
+        },
+        "type": "talisman"
+    },
+    "Fury Charm I": {
+        "effect": "A charm that grants the Resentment skill.",
+        "rarity": 5,
+        "skills": {
+            "Resentment": 1
+        },
+        "type": "talisman"
+    },
+    "Fury Charm II": {
+        "effect": "A charm that grants the Resentment skill.",
+        "rarity": 7,
+        "skills": {
+            "Resentment": 2
+        },
+        "type": "talisman"
+    },
+    "Fury Charm III": {
+        "effect": "A charm that grants the Resentment skill.",
+        "rarity": 8,
+        "skills": {
+            "Resentment": 3
+        },
+        "type": "talisman"
+    },
+    "Geology Charm I": {
+        "effect": "A charm that grants the Geologist skill.",
+        "rarity": 2,
+        "skills": {
+            "Geologist": 1
+        },
+        "type": "talisman"
+    },
+    "Geology Charm II": {
+        "effect": "A charm that grants the Geologist skill.",
+        "rarity": 4,
+        "skills": {
+            "Geologist": 2
+        },
+        "type": "talisman"
+    },
+    "Geology Charm III": {
+        "effect": "A charm that grants the Geologist skill.",
+        "rarity": 5,
+        "skills": {
+            "Geologist": 3
+        },
+        "type": "talisman"
+    },
+    "Glutton's Charm I": {
+        "effect": "A charm that grants the Speed Eating skill.",
+        "rarity": 2,
+        "skills": {
+            "Speed Eating": 1
+        },
+        "type": "talisman"
+    },
+    "Glutton's Charm II": {
+        "effect": "A charm that grants the Speed Eating skill.",
+        "rarity": 4,
+        "skills": {
+            "Speed Eating": 2
+        },
+        "type": "talisman"
+    },
+    "Glutton's Charm III": {
+        "effect": "A charm that grants the Speed Eating skill.",
+        "rarity": 5,
+        "skills": {
+            "Speed Eating": 3
+        },
+        "type": "talisman"
+    },
+    "Golden Age Charm": {
+        "effect": "A talisman inscribed with the wisdom of an advanced culture. Offers a glimpse into an era of legends.",
+        "rarity": 8,
+        "skills": {},
+        "type": "talisman"
+    },
+    "Grit Charm I": {
+        "effect": "A charm that grants the Heroics skill.",
+        "rarity": 4,
+        "skills": {
+            "Heroics": 1
+        },
+        "type": "talisman"
+    },
+    "Grit Charm II": {
+        "effect": "A charm that grants the Heroics skill.",
+        "rarity": 6,
+        "skills": {
+            "Heroics": 2
+        },
+        "type": "talisman"
+    },
+    "Grit Charm III": {
+        "effect": "A charm that grants the Heroics skill.",
+        "rarity": 7,
+        "skills": {
+            "Heroics": 3
+        },
+        "type": "talisman"
+    },
+    "Grit Charm IV": {
+        "effect": "A charm that grants the Heroics skill.",
+        "rarity": 8,
+        "skills": {
+            "Heroics": 4
+        },
+        "type": "talisman"
+    },
+    "Guard Charm I": {
+        "effect": "A charm that grants the Iron Skin skill.",
+        "rarity": 3,
+        "skills": {
+            "Iron Skin": 1
+        },
+        "type": "talisman"
+    },
+    "Guard Charm II": {
+        "effect": "A charm that grants the Iron Skin skill.",
+        "rarity": 5,
+        "skills": {
+            "Iron Skin": 2
+        },
+        "type": "talisman"
+    },
+    "Guard Charm III": {
+        "effect": "A charm that grants the Iron Skin skill.",
+        "rarity": 6,
+        "skills": {
+            "Iron Skin": 3
+        },
+        "type": "talisman"
+    },
+    "Historical Charm": {
+        "effect": "An odd talisman that was written about in historical texts. Its glow contains the depths of the past.",
+        "rarity": 6,
+        "skills": {},
+        "type": "talisman"
+    },
+    "Hope Charm": {
+        "effect": "A charm that grants the Self-Improvement and Recovery Up skills.",
+        "rarity": 5,
+        "skills": {
+            "Recovery Up": 1,
+            "Self-Improvement": 1
+        },
+        "type": "talisman"
+    },
+    "Hungerless Charm I": {
+        "effect": "A charm that grants the Hunger Resistance skill.",
+        "rarity": 2,
+        "skills": {
+            "Hunger Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Hungerless Charm II": {
+        "effect": "A charm that grants the Hunger Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Hunger Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Hungerless Charm III": {
+        "effect": "A charm that grants the Hunger Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Hunger Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Ice Charm I": {
+        "effect": "A charm that grants the Ice Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Ice Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Ice Charm II": {
+        "effect": "A charm that grants the Ice Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Ice Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Ice Charm III": {
+        "effect": "A charm that grants the Ice Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Ice Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Imbibe Charm I": {
+        "effect": "A charm that grants the Elemental Absorption skill.",
+        "rarity": 7,
+        "skills": {
+            "Elemental Absorption": 1
+        },
+        "type": "talisman"
+    },
+    "Imbibe Charm II": {
+        "effect": "A charm that grants the Elemental Absorption skill.",
+        "rarity": 8,
+        "skills": {
+            "Elemental Absorption": 2
+        },
+        "type": "talisman"
+    },
+    "Impact Charm I": {
+        "effect": "A charm that grants the Flinch Free skill.",
+        "rarity": 3,
+        "skills": {
+            "Flinch Free": 1
+        },
+        "type": "talisman"
+    },
+    "Impact Charm II": {
+        "effect": "A charm that grants the Flinch Free skill.",
+        "rarity": 4,
+        "skills": {
+            "Flinch Free": 2
+        },
+        "type": "talisman"
+    },
+    "Impact Charm III": {
+        "effect": "A charm that grants the Flinch Free skill.",
+        "rarity": 5,
+        "skills": {
+            "Flinch Free": 3
+        },
+        "type": "talisman"
+    },
+    "Intimidator Charm I": {
+        "effect": "A charm that grants the Intimidator skill.",
+        "rarity": 3,
+        "skills": {
+            "Intimidator": 1
+        },
+        "type": "talisman"
+    },
+    "Intimidator Charm II": {
+        "effect": "A charm that grants the Intimidator skill.",
+        "rarity": 5,
+        "skills": {
+            "Intimidator": 2
+        },
+        "type": "talisman"
+    },
+    "Intimidator Charm III": {
+        "effect": "A charm that grants the Intimidator skill.",
+        "rarity": 6,
+        "skills": {
+            "Intimidator": 3
+        },
+        "type": "talisman"
+    },
+    "Leaping Charm I": {
+        "effect": "A charm that grants the Evade Extender skill.",
+        "rarity": 4,
+        "skills": {
+            "Evade Extender": 1
+        },
+        "type": "talisman"
+    },
+    "Leaping Charm II": {
+        "effect": "A charm that grants the Evade Extender skill.",
+        "rarity": 5,
+        "skills": {
+            "Evade Extender": 2
+        },
+        "type": "talisman"
+    },
+    "Leaping Charm III": {
+        "effect": "A charm that grants the Evade Extender skill.",
+        "rarity": 6,
+        "skills": {
+            "Evade Extender": 3
+        },
+        "type": "talisman"
+    },
+    "Light Eater's Charm I": {
+        "effect": "A charm that grants the Free Meal skill.",
+        "rarity": 4,
+        "skills": {
+            "Free Meal": 1
+        },
+        "type": "talisman"
+    },
+    "Light Eater's Charm II": {
+        "effect": "A charm that grants the Free Meal skill.",
+        "rarity": 5,
+        "skills": {
+            "Free Meal": 2
+        },
+        "type": "talisman"
+    },
+    "Light Eater's Charm III": {
+        "effect": "A charm that grants the Free Meal skill.",
+        "rarity": 6,
+        "skills": {
+            "Free Meal": 3
+        },
+        "type": "talisman"
+    },
+    "Maintenance Charm I": {
+        "effect": "A charm that grants the Tool Specialist skill.",
+        "rarity": 4,
+        "skills": {
+            "Tool Specialist": 1
+        },
+        "type": "talisman"
+    },
+    "Maintenance Charm II": {
+        "effect": "A charm that grants the Tool Specialist skill.",
+        "rarity": 6,
+        "skills": {
+            "Tool Specialist": 2
+        },
+        "type": "talisman"
+    },
+    "Maintenance Charm III": {
+        "effect": "A charm that grants the Tool Specialist skill.",
+        "rarity": 7,
+        "skills": {
+            "Tool Specialist": 3
+        },
+        "type": "talisman"
+    },
+    "Maintenance Charm IV": {
+        "effect": "A charm that grants the Tool Specialist skill.",
+        "rarity": 8,
+        "skills": {
+            "Tool Specialist": 4
+        },
+        "type": "talisman"
+    },
+    "Marathon Charm I": {
+        "effect": "A charm that grants the Marathon Runner skill.",
+        "rarity": 4,
+        "skills": {
+            "Marathon Runner": 1
+        },
+        "type": "talisman"
+    },
+    "Marathon Charm II": {
+        "effect": "A charm that grants the Marathon Runner skill.",
+        "rarity": 5,
+        "skills": {
+            "Marathon Runner": 2
+        },
+        "type": "talisman"
+    },
+    "Marathon Charm III": {
+        "effect": "A charm that grants the Marathon Runner skill.",
+        "rarity": 6,
+        "skills": {
+            "Marathon Runner": 3
+        },
+        "type": "talisman"
+    },
+    "Mighty Charm I": {
+        "effect": "A charm that grants the Maximum Might skill.",
+        "rarity": 5,
+        "skills": {
+            "Maximum Might": 1
+        },
+        "type": "talisman"
+    },
+    "Mighty Charm II": {
+        "effect": "A charm that grants the Maximum Might skill.",
+        "rarity": 7,
+        "skills": {
+            "Maximum Might": 2
+        },
+        "type": "talisman"
+    },
+    "Mighty Charm III": {
+        "effect": "A charm that grants the Maximum Might skill.",
+        "rarity": 8,
+        "skills": {
+            "Maximum Might": 3
+        },
+        "type": "talisman"
+    },
+    "Mushroom Charm I": {
+        "effect": "A charm that grants the Mushroomancer skill.",
+        "rarity": 4,
+        "skills": {
+            "Mushroomancer": 1
+        },
+        "type": "talisman"
+    },
+    "Mushroom Charm II": {
+        "effect": "A charm that grants the Mushroomancer skill.",
+        "rarity": 6,
+        "skills": {
+            "Mushroomancer": 2
+        },
+        "type": "talisman"
+    },
+    "Mushroom Charm III": {
+        "effect": "A charm that grants the Mushroomancer skill.",
+        "rarity": 7,
+        "skills": {
+            "Mushroomancer": 3
+        },
+        "type": "talisman"
+    },
+    "Paralysis Charm I": {
+        "effect": "A charm that grants the Paralysis Resistance skill.",
+        "rarity": 2,
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Paralysis Charm II": {
+        "effect": "A charm that grants the Paralysis Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Paralysis Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Paralysis Charm III": {
+        "effect": "A charm that grants the Paralysis Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Paralysis Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Phoenix Charm I": {
+        "effect": "A charm that grants the Coalescence skill.",
+        "rarity": 6,
+        "skills": {
+            "Coalescence": 1
+        },
+        "type": "talisman"
+    },
+    "Phoenix Charm II": {
+        "effect": "A charm that grants the Coalescence skill.",
+        "rarity": 7,
+        "skills": {
+            "Coalescence": 2
+        },
+        "type": "talisman"
+    },
+    "Phoenix Charm III": {
+        "effect": "A charm that grants the Coalescence skill.",
+        "rarity": 8,
+        "skills": {
+            "Coalescence": 3
+        },
+        "type": "talisman"
+    },
+    "Poison Charm I": {
+        "effect": "A charm that grants the Poison Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Poison Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Poison Charm II": {
+        "effect": "A charm that grants the Poison Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Poison Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Poison Charm III": {
+        "effect": "A charm that grants the Poison Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Poison Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Power Charm I": {
+        "effect": "A charm that grants the Latent Power skill.",
+        "rarity": 5,
+        "skills": {
+            "Latent Power": 1
+        },
+        "type": "talisman"
+    },
+    "Power Charm II": {
+        "effect": "A charm that grants the Latent Power skill.",
+        "rarity": 7,
+        "skills": {
+            "Latent Power": 2
+        },
+        "type": "talisman"
+    },
+    "Power Charm III": {
+        "effect": "A charm that grants the Latent Power skill.",
+        "rarity": 8,
+        "skills": {
+            "Latent Power": 3
+        },
+        "type": "talisman"
+    },
+    "Recovery Charm I": {
+        "effect": "A charm that grants the Recovery Up skill.",
+        "rarity": 3,
+        "skills": {
+            "Recovery Up": 1
+        },
+        "type": "talisman"
+    },
+    "Recovery Charm II": {
+        "effect": "A charm that grants the Recovery Up skill.",
+        "rarity": 4,
+        "skills": {
+            "Recovery Up": 2
+        },
+        "type": "talisman"
+    },
+    "Recovery Charm III": {
+        "effect": "A charm that grants the Recovery Up skill.",
+        "rarity": 5,
+        "skills": {
+            "Recovery Up": 3
+        },
+        "type": "talisman"
+    },
+    "Rice Ball Charm": {
+        "effect": "A charm that grants the Rice Ball skill. (Arena Quests only.)",
+        "rarity": 6,
+        "skills": {
+            "Rice Ball": 1
+        },
+        "type": "talisman"
+    },
+    "Sanity Charm I": {
         "effect": "A charm that grants the Antivirus skill.",
+        "rarity": 5,
         "skills": {
             "Antivirus": 1
         },
         "type": "talisman"
     },
     "Sanity Charm II": {
-        "rarity": 6,
         "effect": "A charm that grants the Antivirus skill.",
+        "rarity": 6,
         "skills": {
             "Antivirus": 2
         },
         "type": "talisman"
     },
     "Sanity Charm III": {
-        "rarity": 7,
         "effect": "A charm that grants the Antivirus skill.",
+        "rarity": 7,
         "skills": {
             "Antivirus": 3
         },
         "type": "talisman"
     },
-    "Hope Charm": {
-        "rarity": 5,
-        "effect": "A charm that grants the Self- Improvement and Recovery Up skills.",
+    "Secret Charm": {
+        "effect": "A talisman containing untold secrets of history. The holder will one day see the world's abyss.",
+        "rarity": 7,
+        "skills": {},
+        "type": "talisman"
+    },
+    "Sheathe Charm I": {
+        "effect": "A charm that grants the Quick Sheathe skill.",
+        "rarity": 4,
         "skills": {
-            "Self-Improvement": 1,
-            "Recovery Up": 1
+            "Quick Sheathe": 1
         },
         "type": "talisman"
     },
-    "Maintenance Charm IV": {
-        "type": "talisman",
-        "rarity": 1,
+    "Sheathe Charm II": {
+        "effect": "A charm that grants the Quick Sheathe skill.",
+        "rarity": 5,
         "skills": {
-            "Tool Specialist": 4
-        }
+            "Quick Sheathe": 2
+        },
+        "type": "talisman"
     },
-    "Rice Ball Charm": {
-        "type": "talisman",
-        "rarity": 1,
+    "Sheathe Charm III": {
+        "effect": "A charm that grants the Quick Sheathe skill.",
+        "rarity": 6,
         "skills": {
-            "Rice Ball": 1
-        }
+            "Quick Sheathe": 3
+        },
+        "type": "talisman"
+    },
+    "Sleep Charm I": {
+        "effect": "A charm that grants the Sleep Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Sleep Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Sleep Charm II": {
+        "effect": "A charm that grants the Sleep Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Sleep Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Sleep Charm III": {
+        "effect": "A charm that grants the Sleep Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Sleep Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Speed Heal Charm I": {
+        "effect": "A charm that grants the Recovery Speed skill.",
+        "rarity": 2,
+        "skills": {
+            "Recovery Speed": 1
+        },
+        "type": "talisman"
+    },
+    "Speed Heal Charm II": {
+        "effect": "A charm that grants the Recovery Speed skill.",
+        "rarity": 4,
+        "skills": {
+            "Recovery Speed": 2
+        },
+        "type": "talisman"
+    },
+    "Speed Heal Charm III": {
+        "effect": "A charm that grants the Recovery Speed skill.",
+        "rarity": 5,
+        "skills": {
+            "Recovery Speed": 3
+        },
+        "type": "talisman"
+    },
+    "Stun Charm I": {
+        "effect": "A charm that grants the Stun Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Stun Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Stun Charm II": {
+        "effect": "A charm that grants the Stun Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Stun Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Stun Charm III": {
+        "effect": "A charm that grants the Stun Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Stun Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Surge Charm I": {
+        "effect": "A charm that grants the Stamina Surge skill.",
+        "rarity": 4,
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "type": "talisman"
+    },
+    "Surge Charm II": {
+        "effect": "A charm that grants the Stamina Surge skill.",
+        "rarity": 5,
+        "skills": {
+            "Stamina Surge": 2
+        },
+        "type": "talisman"
+    },
+    "Surge Charm III": {
+        "effect": "A charm that grants the Stamina Surge skill.",
+        "rarity": 6,
+        "skills": {
+            "Stamina Surge": 3
+        },
+        "type": "talisman"
+    },
+    "Survival Charm I": {
+        "effect": "A charm that grants the Survival Expert skill.",
+        "rarity": 3,
+        "skills": {
+            "Survival Expert": 1
+        },
+        "type": "talisman"
+    },
+    "Survival Charm II": {
+        "effect": "A charm that grants the Survival Expert skill.",
+        "rarity": 5,
+        "skills": {
+            "Survival Expert": 2
+        },
+        "type": "talisman"
+    },
+    "Survival Charm III": {
+        "effect": "A charm that grants the Survival Expert skill.",
+        "rarity": 6,
+        "skills": {
+            "Survival Expert": 3
+        },
+        "type": "talisman"
+    },
+    "Thunder Charm I": {
+        "effect": "A charm that grants the Thunder Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Thunder Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Thunder Charm II": {
+        "effect": "A charm that grants the Thunder Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Thunder Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Thunder Charm III": {
+        "effect": "A charm that grants the Thunder Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Thunder Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Tremor Charm I": {
+        "effect": "A charm that grants the Tremor Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Tremor Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Tremor Charm II": {
+        "effect": "A charm that grants the Tremor Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Tremor Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Tremor Charm III": {
+        "effect": "A charm that grants the Tremor Resistance skill.",
+        "rarity": 6,
+        "skills": {
+            "Tremor Resistance": 3
+        },
+        "type": "talisman"
     },
     "Unknown Charm": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {}
+        "effect": "A talisman of indeterminable age. Said to draw out the holder's hidden strengths.",
+        "rarity": 5,
+        "skills": {},
+        "type": "talisman"
     },
-    "Historical Charm": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {}
+    "Unscathed Charm I": {
+        "effect": "A charm that grants the Peak Performance skill.",
+        "rarity": 5,
+        "skills": {
+            "Peak Performance": 1
+        },
+        "type": "talisman"
     },
-    "Secret Charm": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {}
+    "Unscathed Charm II": {
+        "effect": "A charm that grants the Peak Performance skill.",
+        "rarity": 7,
+        "skills": {
+            "Peak Performance": 2
+        },
+        "type": "talisman"
     },
-    "Golden Age Charm": {
-        "type": "talisman",
-        "rarity": 1,
-        "skills": {}
+    "Unscathed Charm III": {
+        "effect": "A charm that grants the Peak Performance skill.",
+        "rarity": 8,
+        "skills": {
+            "Peak Performance": 3
+        },
+        "type": "talisman"
+    },
+    "Water Charm I": {
+        "effect": "A charm that grants the Water Resistance skill.",
+        "rarity": 2,
+        "skills": {
+            "Water Resistance": 1
+        },
+        "type": "talisman"
+    },
+    "Water Charm II": {
+        "effect": "A charm that grants the Water Resistance skill.",
+        "rarity": 4,
+        "skills": {
+            "Water Resistance": 2
+        },
+        "type": "talisman"
+    },
+    "Water Charm III": {
+        "effect": "A charm that grants the Water Resistance skill.",
+        "rarity": 5,
+        "skills": {
+            "Water Resistance": 3
+        },
+        "type": "talisman"
+    },
+    "Windproof Charm I": {
+        "effect": "A charm that grants the Windproof skill.",
+        "rarity": 4,
+        "skills": {
+            "Windproof": 1
+        },
+        "type": "talisman"
+    },
+    "Windproof Charm II": {
+        "effect": "A charm that grants the Windproof skill.",
+        "rarity": 5,
+        "skills": {
+            "Windproof": 2
+        },
+        "type": "talisman"
+    },
+    "Windproof Charm III": {
+        "effect": "A charm that grants the Windproof skill.",
+        "rarity": 6,
+        "skills": {
+            "Windproof": 3
+        },
+        "type": "talisman"
     }
 }

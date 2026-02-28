@@ -1,3423 +1,3424 @@
 {
-  "Adapt Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Adaptability": 1
-    },
-    "description": "Grants protection against environmental damage, such as from heat or cold."
-  },
-  "Ambush Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Ambush": 1
-    },
-    "description": "Temporarily increases damage to large monsters with a successful Sneak Attack."
-  },
-  "Antiblast Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Blast Resistance": 1
-    },
-    "description": "Grants protection against blastblight."
-  },
-  "Antidote Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Poison Resistance": 1
-    },
-    "description": "Reduces damage while poisoned."
-  },
-  "Antipara Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Paralysis Resistance": 1
-    },
-    "description": "Reduces the duration of paralysis."
-  },
-  "Artillery Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Artillery": 1
-    },
-    "description": "Strengthens explosive attacks like shells, Wyvern's Fire, charge blade phial attacks, and Sticky Ammo."
-  },
-  "Artillery Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Artillery": 2
-    },
-    "description": "Strengthens explosive attacks like shells, Wyvern's Fire, charge blade phial attacks, and Sticky Ammo."
-  },
-  "Artillery Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Artillery": 3
-    },
-    "description": "Strengthens explosive attacks like shells, Wyvern's Fire, charge blade phial attacks, and Sticky Ammo."
-  },
-  "Attack Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Attack Boost": 1
-    },
-    "description": "Increases attack power."
-  },
-  "Attack Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Attack Boost": 2
-    },
-    "description": "Increases attack power."
-  },
-  "Attack Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Attack Boost": 3
-    },
-    "description": "Increases attack power."
-  },
-  "Bandolier Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Tetrad Shot": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Bandolier Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Tetrad Shot": 2
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Bandolier Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Bandolier-Blaze Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Fire Attack": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bandolier-Bolt Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bandolier-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bandolier-Frost Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Ice Attack": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bandolier-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Guard": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Bandolier-Precise Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nExtends the range in which ammo and arrows have maximum power"
-  },
-  "Bandolier-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Tetrad Shot": 3,
-      "Water Attack": 1
-    },
-    "description": "Increases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Blast Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Blast Attack": 1
-    },
-    "description": "Increases the rate of blast buildup. (Blast buildup has a maximum limit.)"
-  },
-  "Blast Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Blast Attack": 2
-    },
-    "description": "Increases the rate of blast buildup. (Blast buildup has a maximum limit.)"
-  },
-  "Blast Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Blast Attack": 3
-    },
-    "description": "Increases the rate of blast buildup. (Blast buildup has a maximum limit.)"
-  },
-  "Blastcoat Jewel 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Blast Functionality": 1
-    },
-    "description": "Allows you to apply blast coatings."
-  },
-  "Blaze Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Fire Attack": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Blaze Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Fire Attack": 2
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Blaze Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Blaze-Bandolier Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Tetrad Shot": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nIncreases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Blaze-Crit Elem Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Critical Element": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nIncreases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Blaze-Enhancer Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Power Prolonger": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nAllows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Blaze-Focus Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Focus": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nIncreases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Blaze-Guardian Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Offensive Guard": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nTemporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Blaze-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Blaze-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Guard": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Blaze-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Slugger": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nMakes it easier to stun monsters."
-  },
-  "Blaze-Opener Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Opening Shot": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nIncreases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Blaze-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Blaze-Quickswitch Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Rapid Morph": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nIncreases switch speed and power for switch axes and charge blades."
-  },
-  "Blaze-Rzr Sharp Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Razor Sharp": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nPrevents your weapon from losing sharpness."
-  },
-  "Blaze-Shield Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Fire Attack": 3,
-      "Guard Up": 1
-    },
-    "description": "Increases fire element attack power. (Elemental attack power has a maximum limit.)\nAllows you to guard against ordinarily unblockable attacks."
-  },
-  "Blunt Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Bludgeoner": 1
-    },
-    "description": "Increases attack power when your weapon sharpness is low."
-  },
-  "Blunt Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Bludgeoner": 2
-    },
-    "description": "Increases attack power when your weapon sharpness is low."
-  },
-  "Blunt Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Bludgeoner": 3
-    },
-    "description": "Increases attack power when your weapon sharpness is low."
-  },
-  "Bolt Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Thunder Attack": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bolt Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Thunder Attack": 2
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bolt Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bolt-Bandolier Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Tetrad Shot": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nIncreases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Bolt-Crit Elem Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Critical Element": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nIncreases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Bolt-Enhancer Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Power Prolonger": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nAllows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Bolt-Focus Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Focus": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bolt-Guardian Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Offensive Guard": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Bolt-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nIncreases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Bolt-Ironwall Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Guard": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Bolt-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Slugger": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nMakes it easier to stun monsters."
-  },
-  "Bolt-Opener Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Opening Shot": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nIncreases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Bolt-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Bolt-Quickswitch Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Rapid Morph": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nIncreases switch speed and power for switch axes and charge blades."
-  },
-  "Bolt-Rzr Sharp Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Razor Sharp": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nPrevents your weapon from losing sharpness."
-  },
-  "Bolt-Shield Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Thunder Attack": 3,
-      "Guard Up": 1
-    },
-    "description": "Increases thunder element attack power. (Elemental attack power has a maximum limit.)\nAllows you to guard against ordinarily unblockable attacks."
-  },
-  "Bomber Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Bombardier": 1
-    },
-    "description": "Increases the damage of explosive items."
-  },
-  "Botany Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Botanist": 1
-    },
-    "description": "Increases the quantity of herbs and other consumable items you gather."
-  },
-  "Brace Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Flinch Free": 1
-    },
-    "description": "Prevents knockbacks and other reactions to small damage."
-  },
-  "Chain Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Burst": 1
-    },
-    "description": "Continuously landing hits gradually increases attack and elemental attack. (Amount increased depends on weapon.)"
-  },
-  "Challenger Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Agitator": 1
-    },
-    "description": "Increases attack power and affinity when large monsters become enraged."
-  },
-  "Charge Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Charge Master": 1
-    },
-    "description": "Increases element power and status buildup for charged attacks."
-  },
-  "Charge Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Charge Master": 2
-    },
-    "description": "Increases element power and status buildup for charged attacks."
-  },
-  "Charge Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Master": 3
-    },
-    "description": "Increases element power and status buildup for charged attacks."
-  },
-  "Charge Up Jewel 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Charge Up": 2
-    },
-    "description": "Increases your power to induce stun when you hit a monster with a hammer's charged attack."
-  },
-  "Charge Up-Attack Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Up": 1,
-      "Attack Boost": 1
-    },
-    "description": "Increases your power to induce stun when you hit a monster with a hammer's charged attack.\nIncreases attack power."
-  },
-  "Charge Up-Draw Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Up": 1,
-      "Critical Draw": 1
-    },
-    "description": "Increases your power to induce stun when you hit a monster with a hammer's charged attack.\nIncreases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Charge Up-Expert Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Up": 1,
-      "Critical Eye": 1
-    },
-    "description": "Increases your power to induce stun when you hit a monster with a hammer's charged attack.\nIncreases affinity."
-  },
-  "Charge Up-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Up": 1,
-      "Handicraft": 1
-    },
-    "description": "Increases your power to induce stun when you hit a monster with a hammer's charged attack.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum"
-  },
-  "Charge Up-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Up": 1,
-      "Slugger": 1
-    },
-    "description": "Increases your power to induce stun when you hit a monster with a hammer's charged attack.\nMakes it easier to stun monsters."
-  },
-  "Charge-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Master": 1,
-      "Handicraft": 1
-    },
-    "description": "Increases element power and status buildup for charged attacks.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Charge-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Charge Master": 1,
-      "Slugger": 1
-    },
-    "description": "Increases element power and status buildup for charged attacks.\nMakes it easier to stun monsters."
-  },
-  "Climber Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Cliffhanger": 1
-    },
-    "description": "Decreases stamina depletion when climbing on vines."
-  },
-  "Counter Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Counterstrike": 1
-    },
-    "description": "Temporarily increases attack power after being knocked back."
-  },
-  "Counterattack Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Adrenaline Rush": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed evade just as a monster attacks."
-  },
-  "Crit Elem Jwl III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Crit Elem-Blaze Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Fire Attack": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Crit Elem-Bolt Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Crit Elem-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Crit Elem-Frost Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Ice Attack": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Crit Elem-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Crit Elem-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Guard": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Crit Elem-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Slugger": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nMakes it easier to stun monsters."
-  },
-  "Crit Elem-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Water Attack": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Crit Element Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Critical Element": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Crit Element Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Critical Element": 2
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Crit Element-Precise Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Critical Element": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Crit Stat Jwl III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Critical Status": 3
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits."
-  },
-  "Crit Stat-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Critical Status": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Crit Stat-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Critical Status": 3,
-      "Guard": 1
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Crit Stat-Precise Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Critical Status": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits.\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Crit Status Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Critical Status": 1
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits."
-  },
-  "Crit Status Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Critical Status": 2
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits."
-  },
-  "Crit Status-KO Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Critical Status": 3,
-      "Slugger": 1
-    },
-    "description": "Increases abnormal status effects (paralysis, poison, sleep, blast) when landing critical hits.\nMakes it easier to stun monsters."
-  },
-  "Critical Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Critical Boost": 1
-    },
-    "description": "Increases the damage of critical hits."
-  },
-  "Critical Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Critical Boost": 2
-    },
-    "description": "Increases the damage of critical hits."
-  },
-  "Critical Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Critical Boost": 3
-    },
-    "description": "Increases the damage of critical hits."
-  },
-  "Def Lock Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Iron Skin": 1
-    },
-    "description": "Grants protection against defense down."
-  },
-  "Defense Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Defense Boost": 1
-    },
-    "description": "Increases defense. Also improves resistances at higher levels."
-  },
-  "Destroyer Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Partbreaker": 1
-    },
-    "description": "Makes it easier to break large monster parts, and increases damage dealt when destroying a wound with a Focus Strike."
-  },
-  "Dive Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Leap of Faith": 1
-    },
-    "description": "Allows you to do a dive-evade when facing towards large monsters and extends the dive-evade distance."
-  },
-  "Dragon Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Dragon Attack": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Dragon Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Dragon Attack": 2
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Dragon Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Dragon Res Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Dragon Resistance": 1
-    },
-    "description": "Increases dragon resistance. Also improves defense at higher levels."
-  },
-  "Dragon-Bandolier Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Tetrad Shot": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nIncreases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots"
-  },
-  "Dragon-Crit Elem Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Critical Element": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nIncreases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Dragon-Enhancer Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Power Prolonger": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nAllows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Dragon-Focus Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Focus": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nIncreases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Dragon-Guardian Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Offensive Guard": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nTemporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Dragon-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Dragon-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Guard": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Dragon-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Slugger": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nMakes it easier to stun monsters."
-  },
-  "Dragon-Opener Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Opening Shot": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nIncreases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Dragon-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Dragon-Quickswitch Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Rapid Morph": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nIncreases switch speed and power for switch axes and charge blades."
-  },
-  "Dragon-Rzr Sharp Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Razor Sharp": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nPrevents your weapon from losing sharpness."
-  },
-  "Dragon-Shield Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Dragon Attack": 3,
-      "Guard Up": 1
-    },
-    "description": "Increases dragon element attack power. (Elemental attack power has a maximum limit.)\nAllows you to guard against ordinarily unblockable attacks."
-  },
-  "Drain Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Stamina Thief": 1
-    },
-    "description": "Increases certain attacks' ability to exhaust monsters."
-  },
-  "Drain Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Stamina Thief": 2
-    },
-    "description": "Increases certain attacks' ability to exhaust monsters."
-  },
-  "Drain Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Stamina Thief": 3
-    },
-    "description": "Increases certain attacks' ability to exhaust monsters."
-  },
-  "Draincoat Jewel 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Exhaust Functionality": 2
-    },
-    "description": "Allows you to apply exhaust coatings."
-  },
-  "Draw Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Critical Draw": 1
-    },
-    "description": "Increases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Draw Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Critical Draw": 2
-    },
-    "description": "Increases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Draw Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Critical Draw": 3
-    },
-    "description": "Increases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Earplugs Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Earplugs": 1
-    },
-    "description": "Grants protection from large monsters' roars."
-  },
-  "Enduring Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Item Prolonger": 1
-    },
-    "description": "Extends the duration of some item effects."
-  },
-  "Enhancer Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Power Prolonger": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Enhancer Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Power Prolonger": 2
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Enhancer Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Enhancer-Blaze Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3,
-      "Fire Attack": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Enhancer-Bolt Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Enhancer-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Enhancer-Frost Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3,
-      "Ice Attack": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Enhancer-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3,
-      "Handicraft": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Enhancer-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Power Prolonger": 3,
-      "Water Attack": 1
-    },
-    "description": "Allows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Escape Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Bind Resistance": 1
-    },
-    "description": "Grants protection against webbed status and frostblight."
-  },
-  "Evasion Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Evade Window": 1
-    },
-    "description": "Extends the invulnerability period when evading."
-  },
-  "Expert Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Critical Eye": 1
-    },
-    "description": "Increases affinity."
-  },
-  "Expert Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Critical Eye": 2
-    },
-    "description": "Increases affinity."
-  },
-  "Expert Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Critical Eye": 3
-    },
-    "description": "Increases affinity."
-  },
-  "Fire Res Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Fire Resistance": 1
-    },
-    "description": "Increases fire resistance. Also improves defense at higher levels."
-  },
-  "Flash Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Blindsider": 1
-    },
-    "description": "Improves the effectiveness of flash attacks and items."
-  },
-  "Flawless Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Peak Performance": 1
-    },
-    "description": "Increases attack when your health is full."
-  },
-  "Flayer Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Flayer": 1
-    },
-    "description": "Makes it easier to inflict wounds. Upon inflicting enough damage, also deals additional non-elemental damage."
-  },
-  "Flight Jewel 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Airborne": 1
-    },
-    "description": "Increases the damage caused by jumping attacks."
-  },
-  "Flight-Attack Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Airborne": 1,
-      "Attack Boost": 1
-    },
-    "description": "Increases the damage caused by jumping attacks.\nIncreases attack power."
-  },
-  "Flight-Draw Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Airborne": 1,
-      "Critical Draw": 1
-    },
-    "description": "Increases the damage caused by jumping attacks.\nIncreases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Flight-Expert Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Airborne": 1,
-      "Critical Eye": 1
-    },
-    "description": "Increases the damage caused by jumping attacks.\nIncreases affinity."
-  },
-  "Flight-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Airborne": 1,
-      "Handicraft": 1
-    },
-    "description": "Increases the damage caused by jumping attacks.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Focus Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Focus": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Focus Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Focus": 2
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Focus Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Focus": 3
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Focus-Blaze Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Fire Attack": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Focus-Bolt Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Focus-Dragon Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Focus-Frost Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Ice Attack": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Focus-Handicraft Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Focus-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Slugger": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nMakes it easier to stun monsters."
-  },
-  "Focus-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Focus-Stream Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Focus": 3,
-      "Water Attack": 1
-    },
-    "description": "Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Footing Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Tremor Resistance": 1
-    },
-    "description": "Grants protection against ground tremors."
-  },
-  "Foray Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Foray": 1
-    },
-    "description": "Increases attack power and affinity against large monsters affected by poison or paralysis."
-  },
-  "Forceshot Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Normal Shots": 1
-    },
-    "description": "Increases the attack power of Normal Ammo, normal arrows, and Flying Swallow Shot."
-  },
-  "Friendship Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Wide-Range": 1
-    },
-    "description": "Allows the effects of certain items to also affect nearby allies."
-  },
-  "Frost Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Ice Attack": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Frost Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Ice Attack": 2
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Frost Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Frost-Bandolier Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Tetrad Shot": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nIncreases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Frost-Crit Elem Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Critical Element": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nIncreases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Frost-Enhancer Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Power Prolonger": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nAllows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Frost-Focus Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Focus": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nIncreases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Frost-Guardian Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Offensive Guard": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nTemporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Frost-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Frost-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Guard": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Frost-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Slugger": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nMakes it easier to stun monsters."
-  },
-  "Frost-Opener Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Opening Shot": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nIncreases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Frost-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Frost-Quickswitch Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Rapid Morph": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nIncreases switch speed and power for switch axes and charge blades."
-  },
-  "Frost-Rzr Sharp Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Razor Sharp": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nPrevents your weapon from losing sharpness."
-  },
-  "Frost-Shield Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Ice Attack": 3,
-      "Guard Up": 1
-    },
-    "description": "Increases ice element attack power. (Elemental attack power has a maximum limit.)\nAllows you to guard against ordinarily unblockable attacks."
-  },
-  "Fungiform Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Mushroomancer": 1
-    },
-    "description": "Lets you digest mushrooms that would otherwise be inedible and gain their advantageous effects."
-  },
-  "Furor Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Resentment": 1
-    },
-    "description": "Increases attack when you have recoverable damage (the red portion of your Health Gauge)."
-  },
-  "Gambit Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Punishing Draw": 1
-    },
-    "description": "Adds a stun effect to draw attacks and slightly increases attack power. (Not effective while riding.)"
-  },
-  "Gambit Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Punishing Draw": 2
-    },
-    "description": "Adds a stun effect to draw attacks and slightly increases attack power. (Not effective while riding.)"
-  },
-  "Gambit Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Punishing Draw": 3
-    },
-    "description": "Adds a stun effect to draw attacks and slightly increases attack power. (Not effective while riding.)"
-  },
-  "Gambit-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Punishing Draw": 3,
-      "Handicraft": 1
-    },
-    "description": "Adds a stun effect to draw attacks and slightly increases attack power. (Not effective while riding.)\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Gambit-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Punishing Draw": 3,
-      "Guard": 1
-    },
-    "description": "Adds a stun effect to draw attacks and slightly increases attack power. (Not effective while riding.)\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Gambit-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Punishing Draw": 3,
-      "Slugger": 1
-    },
-    "description": "Adds a stun effect to draw attacks and slightly increases attack power. (Not effective while riding.)\nMakes it easier to stun monsters."
-  },
-  "Geology Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Geologist": 1
-    },
-    "description": "Increases the number of items you gain at gathering points."
-  },
-  "Gobbler Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Speed Eating": 1
-    },
-    "description": "Increases meat-eating and item-consumption speed."
-  },
-  "Grinder Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Speed Sharpening": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone."
-  },
-  "Grinder Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Speed Sharpening": 2
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone."
-  },
-  "Grinder-Attack Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Speed Sharpening": 2,
-      "Attack Boost": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone.\nIncreases attack power."
-  },
-  "Grinder-Draw Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Speed Sharpening": 2,
-      "Critical Draw": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone.\nIncreases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Grinder-Expert Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Speed Sharpening": 2,
-      "Critical Eye": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone.\nIncreases affinity."
-  },
-  "Grinder-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Speed Sharpening": 2,
-      "Handicraft": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Grinder-Ironwall Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Speed Sharpening": 2,
-      "Guard": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Grinder-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Speed Sharpening": 2,
-      "Slugger": 1
-    },
-    "description": "Speeds up weapon sharpening when using a whetstone.\nMakes it easier to stun monsters."
-  },
-  "Growth Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Self-Improvement": 1
-    },
-    "description": "Attack and defense increase as time passes while on a quest. (The maximum is reached after 30 minutes.)"
-  },
-  "Guardian Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Offensive Guard": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Guardian Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Offensive Guard": 2
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Guardian Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Guardian-Blaze Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Fire Attack": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Guardian-Bolt Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Guardian-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Guardian-Frost Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Ice Attack": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Guardian-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Handicraft": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Guardian-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Guard": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Guardian-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Offensive Guard": 3,
-      "Water Attack": 1
-    },
-    "description": "Temporarily increases attack power after executing a perfectly-timed guard.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Handicraft Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Handicraft": 1
-    },
-    "description": "Extends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Handicraft Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Handicraft": 2
-    },
-    "description": "Extends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Handicraft Jwl III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Handicraft": 3
-    },
-    "description": "Extends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Hungerless Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Hunger Resistance": 1
-    },
-    "description": "Reduces maximum stamina depletion over time."
-  },
-  "Ice Res Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Ice Resistance": 1
-    },
-    "description": "Increases ice resistance. Also improves defense at higher levels."
-  },
-  "Intimidator Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Intimidator": 1
-    },
-    "description": "Reduces the chance small monsters will attack after spotting you. (Has no effect on certain monsters.)"
-  },
-  "Ironwall Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Guard": 1
-    },
-    "description": "Reduces knockbacks and stamina depletion when guarding."
-  },
-  "Ironwall Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Guard": 2
-    },
-    "description": "Reduces knockbacks and stamina depletion when guarding."
-  },
-  "Ironwall Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Guard": 3
-    },
-    "description": "Reduces knockbacks and stamina depletion when guarding."
-  },
-  "Jumping Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Evade Extender": 1
-    },
-    "description": "Increases evade distance."
-  },
-  "KO Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Slugger": 1
-    },
-    "description": "Makes it easier to stun monsters."
-  },
-  "KO Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Slugger": 2
-    },
-    "description": "Makes it easier to stun monsters."
-  },
-  "KO Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Slugger": 3
-    },
-    "description": "Makes it easier to stun monsters."
-  },
-  "Leap Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Jump Master": 1
-    },
-    "description": "Prevents attacks from knocking you back during a jump."
-  },
-  "Magazine Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Load Shells": 1
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity."
-  },
-  "Magazine Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Load Shells": 2
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity."
-  },
-  "Magazine-Attack Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Load Shells": 2,
-      "Attack Boost": 1
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity.\nIncreases attack power."
-  },
-  "Magazine-Draw Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Load Shells": 2,
-      "Critical Draw": 1
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity.\nIncreases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Magazine-Expert Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Load Shells Lv 2Critical Eye": 1
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity.\nIncreases affinity."
-  },
-  "Magazine-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Load Shells": 2,
-      "Handicraft": 1
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Magazine-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Load Shells": 2,
-      "Guard": 1
-    },
-    "description": "Improves reloading, and increases the gunlance's shell capacity and charge blade's phial capacity.\nReduces knockbacks and stamina depletion when guarding"
-  },
-  "Maintenance Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Tool Specialist": 1
-    },
-    "description": "Reduces the recharge time for specialized tools."
-  },
-  "Mastery Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Master's Touch": 1
-    },
-    "description": "Prevents your weapon from losing sharpness during critical hits."
-  },
-  "Medicine Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Recovery Up": 1
-    },
-    "description": "Increases the amount recovered when restoring health."
-  },
-  "Mighty Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Maximum Might": 1
-    },
-    "description": "Increases affinity if stamina is kept full for a period of time."
-  },
-  "Mind's Eye Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Mind's Eye": 1
-    },
-    "description": "Your attacks are deflected less and deal more damage to hard targets."
-  },
-  "Mind's Eye Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Mind's Eye": 2
-    },
-    "description": "Your attacks are deflected less and deal more damage to hard targets."
-  },
-  "Mind's Eye Jwl III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Mind's Eye": 3
-    },
-    "description": "Your attacks are deflected less and deal more damage to hard targets."
-  },
-  "Mirewalker Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Aquatic/Oilsilt Mobility": 1
-    },
-    "description": "Grants resistance against impairments to mobility while in water, oilsilt, or streams."
-  },
-  "Opener Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Opening Shot": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Opener Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Opening Shot": 2
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Opener Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Opener-Blaze Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Fire Attack": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Opener-Bolt Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Opener-Dragon Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Opener-Frost Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Ice Attack": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Opener-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Guard": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Opener-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Opener-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Opening Shot": 3,
-      "Water Attack": 1
-    },
-    "description": "Increases the bowgun's reload speed and increases the power of bullets when fully loaded.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Paracoat Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Para Functionality": 1
-    },
-    "description": "Allows you to apply paralysis coatings."
-  },
-  "Paralyzer Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Paralysis Attack": 1
-    },
-    "description": "Increases the rate of paralysis buildup. (Paralysis buildup has a maximum limit.)"
-  },
-  "Paralyzer Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Paralysis Attack": 2
-    },
-    "description": "Increases the rate of paralysis buildup. (Paralysis buildup has a maximum limit.)"
-  },
-  "Paralyzer Jwl III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Paralysis Attack": 3
-    },
-    "description": "Increases the rate of paralysis buildup. (Paralysis buildup has a maximum limit.)"
-  },
-  "Pep Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Sleep Resistance": 1
-    },
-    "description": "Reduces the duration of sleep."
-  },
-  "Perfume Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Stench Resistance": 1
-    },
-    "description": "Grants protection against stench."
-  },
-  "Phoenix Jewel 2": {
-    "type": "armor",
-    "rarity": 7,
-    "slot": 2,
-    "skills": {
-      "Coalescence": 1
-    },
-    "description": "Temporarily increases elemental attack power and status effects after recovering from blights or abnormal status."
-  },
-  "Physique Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Constitution": 1
-    },
-    "description": "Reduces stamina depletion when evading, blocking, or doing certain other actions."
-  },
-  "Pierce Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Piercing Shots": 1
-    },
-    "description": "Increases the attack of the bowgun's Pierce Ammo, and the bow's Dragon Piercer and Thousand Dragons."
-  },
-  "Poison Jewel 2": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 2,
-    "skills": {
-      "Poison Duration Up": 2
-    },
-    "description": "Extends the duration of your poison's effect on monsters."
-  },
-  "Poison-Attack Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Attack Boost": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nIncreases attack power."
-  },
-  "Poison-Draw Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Critical Draw": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nIncreases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Poison-Expert Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Critical Eye": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nIncreases affinity."
-  },
-  "Poison-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Handicraft": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Poison-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Guard": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Poison-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Slugger": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nMakes it easier to stun monsters."
-  },
-  "Poison-Precise Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Poison Duration Up": 1,
-      "Ballistics": 1
-    },
-    "description": "Extends the duration of your poison's effect on monsters.\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Poisoncoat Jewel 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Poison Functionality": 1
-    },
-    "description": "Allows you to apply poison coatings."
-  },
-  "Potential Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Heroics": 1
-    },
-    "description": "Increases attack power and defense when health drops to 35% or lower."
-  },
-  "Precise Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Ballistics": 1
-    },
-    "description": "Extends the range in which ammo and arrows have maximum power."
-  },
-  "Precise Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Ballistics": 2
-    },
-    "description": "Extends the range in which ammo and arrows have maximum power."
-  },
-  "Precise Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Ballistics": 3
-    },
-    "description": "Extends the range in which ammo and arrows have maximum power."
-  },
-  "Protection Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Divine Blessing": 1
-    },
-    "description": "Has a predetermined chance of reducing the damage you take."
-  },
-  "Quickswitch Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Rapid Morph": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades."
-  },
-  "Quickswitch Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Rapid Morph": 2
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades."
-  },
-  "Quickswitch Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades."
-  },
-  "Quickswitch-Blaze Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Fire Attack": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Quickswitch-Bolt Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Quickswitch-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Quickswitch-Frost Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Ice Attack": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Quickswitch-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Quickswitch-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Guard": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Quickswitch-KO Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Slugger": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nMakes it easier to stun monsters."
-  },
-  "Quickswitch-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Rapid Morph": 3,
-      "Water Attack": 1
-    },
-    "description": "Increases switch speed and power for switch axes and charge blades.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Ranger Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Outdoorsman": 1
-    },
-    "description": "Improves fishing, grilling, and transporting abilities."
-  },
-  "Razor Sharp Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Razor Sharp": 1
-    },
-    "description": "Prevents your weapon from losing sharpness."
-  },
-  "Razor Sharp Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Razor Sharp": 2
-    },
-    "description": "Prevents your weapon from losing sharpness."
-  },
-  "Razor Sharp-KO Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Slugger": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nMakes it easier to stun monsters."
-  },
-  "Recovery Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Recovery Speed": 1
-    },
-    "description": "Speeds healing of recoverable damage (the red portion of the Health Gauge)."
-  },
-  "Refresh Jewel 2": {
-    "type": "armor",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Stamina Surge": 1
-    },
-    "description": "Speeds up stamina recovery."
-  },
-  "Rzr Sharp Jwl III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3
-    },
-    "description": "Prevents your weapon from losing sharpness."
-  },
-  "Rzr Sharp-Blaze Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Fire Attack": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Rzr Sharp-Bolt Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Rzr Sharp-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Rzr Sharp-Frost Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Ice Attack": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Rzr Sharp-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Handicraft": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Rzr Sharp-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Guard": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Rzr Sharp-Stream Jwl 3": {
-    "type": "weapon",
-    "rarity": 7,
-    "slot": 3,
-    "skills": {
-      "Razor Sharp": 3,
-      "Water Attack": 1
-    },
-    "description": "Prevents your weapon from losing sharpness.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Salvo Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Rapid Fire Up": 1
-    },
-    "description": "Improves light bowgun rapid fire."
-  },
-  "Sane Jewel 1": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 1,
-    "skills": {
-      "Antivirus": 1
-    },
-    "description": "Once infected, makes it easier to overcome the Frenzy and increases affinity if cured."
-  },
-  "Satiated Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Free Meal": 1
-    },
-    "description": "Gives you a predetermined chance of consuming a food or drink item for free."
-  },
-  "Sharp Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Protective Polish": 1
-    },
-    "description": "Weapon sharpness does not decrease for a set time after sharpening."
-  },
-  "Sharp Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Protective Polish": 2
-    },
-    "description": "Weapon sharpness does not decrease for a set time after sharpening."
-  },
-  "Sharp Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Protective Polish": 3
-    },
-    "description": "Weapon sharpness does not decrease for a set time after sharpening."
-  },
-  "Sheath Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Quick Sheathe": 1
-    },
-    "description": "Speeds up weapon sheathing."
-  },
-  "Shield Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Guard Up": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks."
-  },
-  "Shield Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Guard Up": 2
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks."
-  },
-  "Shield Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks."
-  },
-  "Shield-Blaze Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Fire Attack": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nIncreases fire element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Shield-Bolt Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Thunder Attack": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nIncreases thunder element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Shield-Dragon Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Dragon Attack": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nIncreases dragon element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Shield-Frost Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Ice Attack": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nIncreases ice element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Shield-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Handicraft": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Shield-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Guard": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Shield-Stream Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Guard Up": 3,
-      "Water Attack": 1
-    },
-    "description": "Allows you to guard against ordinarily unblockable attacks.\nIncreases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Shockproof Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Shock Absorber": 1
-    },
-    "description": "Disables damage reactions when you hit a friend or when a friend hits you."
-  },
-  "Sleep Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Sleep Attack": 1
-    },
-    "description": "Increases the rate of sleep buildup. (Sleep buildup has a maximum limit.)"
-  },
-  "Sleep Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Sleep Attack": 2
-    },
-    "description": "Increases the rate of sleep buildup. (Sleep buildup has a maximum limit.)"
-  },
-  "Sleep Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Sleep Attack": 3
-    },
-    "description": "Increases the rate of sleep buildup. (Sleep buildup has a maximum limit.)"
-  },
-  "Sleepcoat Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Sleep Functionality": 1
-    },
-    "description": "Allows you to apply sleep coatings."
-  },
-  "Sonorous Jewel 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Horn Maestro": 1
-    },
-    "description": "Increases the effect duration of hunting horn melodies. (Effect lost when you change weapons.)"
-  },
-  "Sonorous-Attack Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Horn Maestro": 2,
-      "Attack Boost": 1
-    },
-    "description": "Increases the effect duration of hunting horn melodies. (Effect lost when you change weapons.)\nIncreases attack power."
-  },
-  "Sonorous-Draw Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Horn Maestro": 2,
-      "Critical Draw": 1
-    },
-    "description": "Increases the effect duration of hunting horn melodies. (Effect lost when you change weapons.)\nIncreases affinity when performing draw attacks. (Not effective while riding.)"
-  },
-  "Sonorous-Expert Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Horn Maestro": 2,
-      "Critical Eye": 1
-    },
-    "description": "Increases the effect duration of hunting horn melodies. (Effect lost when you change weapons.)\nIncreases affinity."
-  },
-  "Sonorous-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Horn Maestro": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases the effect duration of hunting horn melodies. (Effect lost when you change weapons.)\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Sonorous-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Horn Maestro": 3,
-      "Slugger": 1
-    },
-    "description": "Increases the effect duration of hunting horn melodies. (Effect lost when you change weapons.)\nMakes it easier to stun monsters."
-  },
-  "Specimen Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Entomologist": 1
-    },
-    "description": "The bodies of small insect monsters won't be destroyed, allowing them to be carved."
-  },
-  "Spread Jewel 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Spread/Power Shots": 1
-    },
-    "description": "Increases the attack of the bowgun's Spread Ammo and the bow's Power Shots and Quick Shots."
-  },
-  "Sprinter Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Marathon Runner": 1
-    },
-    "description": "Slows down stamina depletion for actions that continuously drain stamina (such as dashing)."
-  },
-  "Steadfast Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Stun Resistance": 1
-    },
-    "description": "Reduces the duration of stun."
-  },
-  "Stream Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Water Attack": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Stream Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Water Attack": 2
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Stream Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)"
-  },
-  "Stream-Bandolier Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Tetrad Shot": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nIncreases affinity of bowgun ammo/ coatings from the fourth shot and attack of the fourth and sixth shots."
-  },
-  "Stream-Crit Elem Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Critical Element": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nIncreases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits."
-  },
-  "Stream-Enhancer Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Power Prolonger": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nAllows long swords, dual blades, insect glaives, switch axes, and charge blades to stay powered up longer."
-  },
-  "Stream-Focus Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Focus": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nIncreases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks."
-  },
-  "Stream-Guardian Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Offensive Guard": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nTemporarily increases attack power after executing a perfectly-timed guard."
-  },
-  "Stream-Handicraft Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Handicraft": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nExtends the weapon sharpness gauge. However, it will not increase the gauge past its maximum."
-  },
-  "Stream-Ironwall Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Guard": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nReduces knockbacks and stamina depletion when guarding."
-  },
-  "Stream-KO Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Slugger": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nMakes it easier to stun monsters."
-  },
-  "Stream-Opener Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Opening Shot": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nIncreases the bowgun's reload speed and increases the power of bullets when fully loaded."
-  },
-  "Stream-Precise Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Ballistics": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nExtends the range in which ammo and arrows have maximum power."
-  },
-  "Stream-Quickswitch Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Rapid Morph": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nIncreases switch speed and power for switch axes and charge blades."
-  },
-  "Stream-Rzr Sharp Jwl 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Razor Sharp": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nPrevents your weapon from losing sharpness."
-  },
-  "Stream-Shield Jewel 3": {
-    "type": "weapon",
-    "rarity": 6,
-    "slot": 3,
-    "skills": {
-      "Water Attack": 3,
-      "Guard Up": 1
-    },
-    "description": "Increases water element attack power. (Elemental attack power has a maximum limit.)\nAllows you to guard against ordinarily unblockable attacks."
-  },
-  "Survival Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Survival Expert": 1
-    },
-    "description": "Extra health is recovered from environmental interactables."
-  },
-  "Suture Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Bleeding Resistance": 1
-    },
-    "description": "Grants protection against bleeding."
-  },
-  "Tenderizer Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Weakness Exploit": 1
-    },
-    "description": "Increases the affinity of attacks that exploit a monster's weak points and wounds."
-  },
-  "Throttle Jewel 3": {
-    "type": "armor",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Latent Power": 1
-    },
-    "description": "Temporarily increases affinity and reduces stamina depletion when certain conditions are met."
-  },
-  "Thunder Res Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Thunder Resistance": 1
-    },
-    "description": "Increases thunder resistance. Also improves defense at higher levels."
-  },
-  "Trueshot Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Special Ammo Boost": 1
-    },
-    "description": "Increases the power of the bowgun's special ammo, and the bow's Dragon Piercer, Thousand Dragons, and Tracer."
-  },
-  "Trueshot Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Special Ammo Boost": 2
-    },
-    "description": "Increases the power of the bowgun's special ammo, and the bow's Dragon Piercer, Thousand Dragons, and Tracer."
-  },
-  "Venom Jewel 1": {
-    "type": "weapon",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Poison Attack": 1
-    },
-    "description": "Increases the rate of poison buildup. (Poison buildup has a maximum limit.)"
-  },
-  "Venom Jewel II 2": {
-    "type": "weapon",
-    "rarity": 4,
-    "slot": 2,
-    "skills": {
-      "Poison Attack": 2
-    },
-    "description": "Increases the rate of poison buildup. (Poison buildup has a maximum limit.)"
-  },
-  "Venom Jewel III 3": {
-    "type": "weapon",
-    "rarity": 5,
-    "slot": 3,
-    "skills": {
-      "Poison Attack": 3
-    },
-    "description": "Increases the rate of poison buildup. (Poison buildup has a maximum limit.)"
-  },
-  "Water Res Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Water Resistance": 1
-    },
-    "description": "Increases water resistance. Also improves defense at higher levels."
-  },
-  "Wind Resist Jewel 1": {
-    "type": "armor",
-    "rarity": 3,
-    "slot": 1,
-    "skills": {
-      "Windproof": 1
-    },
-    "description": "Grants protection against wind pressure."
-  }
+    "Adapt Jewel 1": {
+        "description": "A decoration that grants the Adaptability skill.",
+        "rarity": 3,
+        "skills": {
+            "Adaptability": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Ambush Jewel 2": {
+        "description": "A decoration that grants the Ambush skill.",
+        "rarity": 4,
+        "skills": {
+            "Ambush": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Antiblast Jewel 1": {
+        "description": "A decoration that grants the Blast Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Blast Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Antidote Jewel 1": {
+        "description": "A decoration that grants the Poison Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Poison Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Antipara Jewel 1": {
+        "description": "A decoration that grants the Paralysis Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Artillery Jewel 1": {
+        "description": "A decoration that grants the Artillery skill.",
+        "rarity": 3,
+        "skills": {
+            "Artillery": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Artillery Jewel II 2": {
+        "description": "A decoration that grants the Artillery skill.",
+        "rarity": 4,
+        "skills": {
+            "Artillery": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Artillery Jewel III 3": {
+        "description": "A decoration that grants the Artillery skill.",
+        "rarity": 5,
+        "skills": {
+            "Artillery": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Attack Jewel 1": {
+        "description": "A decoration that grants the Attack Boost skill.",
+        "rarity": 3,
+        "skills": {
+            "Attack Boost": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Attack Jewel II 2": {
+        "description": "A decoration that grants the Attack Boost skill.",
+        "rarity": 4,
+        "skills": {
+            "Attack Boost": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Attack Jewel III 3": {
+        "description": "A decoration that grants the Attack Boost skill.",
+        "rarity": 5,
+        "skills": {
+            "Attack Boost": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier Jewel 1": {
+        "description": "A decoration that grants the Tetrad Shot skill.",
+        "rarity": 3,
+        "skills": {
+            "Tetrad Shot": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Bandolier Jewel II 2": {
+        "description": "A decoration that grants the Tetrad Shot skill.",
+        "rarity": 4,
+        "skills": {
+            "Tetrad Shot": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Bandolier Jewel III 3": {
+        "description": "A decoration that grants the Tetrad Shot skill.",
+        "rarity": 5,
+        "skills": {
+            "Tetrad Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Blaze Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Tetrad Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Bolt Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Tetrad Shot": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Dragon Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Tetrad Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Frost Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Ice Attack": 1,
+            "Tetrad Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Guard skills.",
+        "rarity": 7,
+        "skills": {
+            "Guard": 1,
+            "Tetrad Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Precise Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Ballistics skills.",
+        "rarity": 7,
+        "skills": {
+            "Ballistics": 1,
+            "Tetrad Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bandolier-Stream Jwl 3": {
+        "description": "A decoration that grants the Tetrad Shot and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Tetrad Shot": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blast Jewel 1": {
+        "description": "A decoration that grants the Blast Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Blast Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Blast Jewel II 2": {
+        "description": "A decoration that grants the Blast Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Blast Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Blast Jewel III 3": {
+        "description": "A decoration that grants the Blast Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Blast Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blastcoat Jewel 2": {
+        "description": "A decoration that grants the Blast Functionality skill.",
+        "rarity": 4,
+        "skills": {
+            "Blast Functionality": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Blaze Jewel 1": {
+        "description": "A decoration that grants the Fire Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Fire Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Blaze Jewel II 2": {
+        "description": "A decoration that grants the Fire Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Fire Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Blaze Jewel III 3": {
+        "description": "A decoration that grants the Fire Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Fire Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Bandolier Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Tetrad Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Tetrad Shot": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Crit Elem Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Critical Element skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Element": 1,
+            "Fire Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Enhancer Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Power Prolonger skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Power Prolonger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Focus Jewel 3": {
+        "description": "A decoration that grants the Fire Attack and Focus skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Focus": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Guardian Jewel 3": {
+        "description": "A decoration that grants the Fire Attack and Offensive Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Offensive Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-KO Jewel 3": {
+        "description": "A decoration that grants the Fire Attack and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Opener Jewel 3": {
+        "description": "A decoration that grants the Fire Attack and Opening Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Opening Shot": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Precise Jewel 3": {
+        "description": "A decoration that grants the Fire Attack and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Fire Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Quickswitch Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Rapid Morph skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Rapid Morph": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Rzr Sharp Jwl 3": {
+        "description": "A decoration that grants the Fire Attack and Razor Sharp skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Razor Sharp": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blaze-Shield Jewel 3": {
+        "description": "A decoration that grants the Fire Attack and Guard Up skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 3,
+            "Guard Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Blunt Jewel 1": {
+        "description": "A decoration that grants the Bludgeoner skill.",
+        "rarity": 3,
+        "skills": {
+            "Bludgeoner": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Blunt Jewel II 2": {
+        "description": "A decoration that grants the Bludgeoner skill.",
+        "rarity": 4,
+        "skills": {
+            "Bludgeoner": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Blunt Jewel III 3": {
+        "description": "A decoration that grants the Bludgeoner skill.",
+        "rarity": 5,
+        "skills": {
+            "Bludgeoner": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt Jewel 1": {
+        "description": "A decoration that grants the Thunder Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Thunder Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Bolt Jewel II 2": {
+        "description": "A decoration that grants the Thunder Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Thunder Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Bolt Jewel III 3": {
+        "description": "A decoration that grants the Thunder Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Bandolier Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Tetrad Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Tetrad Shot": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Crit Elem Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Critical Element skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Element": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Enhancer Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Power Prolonger skills.",
+        "rarity": 6,
+        "skills": {
+            "Power Prolonger": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Focus Jewel 3": {
+        "description": "A decoration that grants the Thunder Attack and Focus skills.",
+        "rarity": 6,
+        "skills": {
+            "Focus": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Guardian Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Offensive Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Offensive Guard": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Handicraft": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Ironwall Jewel 3": {
+        "description": "A decoration that grants the Thunder Attack and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-KO Jewel 3": {
+        "description": "A decoration that grants the Thunder Attack and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Slugger": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Opener Jewel 3": {
+        "description": "A decoration that grants the Thunder Attack and Opening Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Opening Shot": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Precise Jewel 3": {
+        "description": "A decoration that grants the Thunder Attack and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Quickswitch Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Rapid Morph skills.",
+        "rarity": 6,
+        "skills": {
+            "Rapid Morph": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Rzr Sharp Jwl 3": {
+        "description": "A decoration that grants the Thunder Attack and Razor Sharp skills.",
+        "rarity": 6,
+        "skills": {
+            "Razor Sharp": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bolt-Shield Jewel 3": {
+        "description": "A decoration that grants the Thunder Attack and Guard Up skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 1,
+            "Thunder Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Bomber Jewel 1": {
+        "description": "A decoration that grants the Bombardier skill.",
+        "rarity": 3,
+        "skills": {
+            "Bombardier": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Botany Jewel 1": {
+        "description": "A decoration that grants the Botanist skill.",
+        "rarity": 3,
+        "skills": {
+            "Botanist": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Brace Jewel 1": {
+        "description": "A decoration that grants the Flinch Free skill.",
+        "rarity": 3,
+        "skills": {
+            "Flinch Free": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Chain Jewel 3": {
+        "description": "A decoration that grants the Burst skill.",
+        "rarity": 5,
+        "skills": {
+            "Burst": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Challenger Jewel 3": {
+        "description": "A decoration that grants the Agitator skill.",
+        "rarity": 5,
+        "skills": {
+            "Agitator": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Charge Jewel 1": {
+        "description": "A decoration that grants the Charge Master skill.",
+        "rarity": 3,
+        "skills": {
+            "Charge Master": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Charge Jewel II 2": {
+        "description": "A decoration that grants the Charge Master skill.",
+        "rarity": 4,
+        "skills": {
+            "Charge Master": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Charge Jewel III 3": {
+        "description": "A decoration that grants the Charge Master skill.",
+        "rarity": 5,
+        "skills": {
+            "Charge Master": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge Up Jewel 2": {
+        "description": "A decoration that grants the Charge Up skill.",
+        "rarity": 4,
+        "skills": {
+            "Charge Up": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Charge Up-Attack Jwl 3": {
+        "description": "A decoration that grants the Charge Up and Attack Boost skills.",
+        "rarity": 5,
+        "skills": {
+            "Attack Boost": 1,
+            "Charge Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge Up-Draw Jwl 3": {
+        "description": "A decoration that grants the Charge Up and Critical Draw skills.",
+        "rarity": 5,
+        "skills": {
+            "Charge Up": 1,
+            "Critical Draw": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge Up-Expert Jwl 3": {
+        "description": "A decoration that grants the Charge Up and Critical Eye skills.",
+        "rarity": 5,
+        "skills": {
+            "Charge Up": 1,
+            "Critical Eye": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge Up-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Charge Up and Handicraft skills.",
+        "rarity": 5,
+        "skills": {
+            "Charge Up": 1,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge Up-KO Jewel 3": {
+        "description": "A decoration that grants the Charge Up and Slugger skills.",
+        "rarity": 5,
+        "skills": {
+            "Charge Up": 1,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Charge Master and Handicraft skills.",
+        "rarity": 7,
+        "skills": {
+            "Charge Master": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Charge-KO Jewel 3": {
+        "description": "A decoration that grants the Charge Master and Slugger skills.",
+        "rarity": 7,
+        "skills": {
+            "Charge Master": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Climber Jewel 1": {
+        "description": "A decoration that grants the Cliffhanger skill.",
+        "rarity": 3,
+        "skills": {
+            "Cliffhanger": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Counter Jewel 2": {
+        "description": "A decoration that grants the Counterstrike skill.",
+        "rarity": 4,
+        "skills": {
+            "Counterstrike": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Counterattack Jewel 3": {
+        "description": "A decoration that grants the Adrenaline Rush skill.",
+        "rarity": 5,
+        "skills": {
+            "Adrenaline Rush": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Crit Elem Jwl III 3": {
+        "description": "A decoration that grants the Critical Element skill.",
+        "rarity": 5,
+        "skills": {
+            "Critical Element": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Blaze Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Critical Element": 3,
+            "Fire Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Bolt Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Critical Element": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Dragon Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Critical Element": 3,
+            "Dragon Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Frost Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Critical Element": 3,
+            "Ice Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Handicraft skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Element": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Guard skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Element": 3,
+            "Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-KO Jewel 3": {
+        "description": "A decoration that grants the Critical Element and Slugger skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Element": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Elem-Stream Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Critical Element": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Element Jewel 1": {
+        "description": "A decoration that grants the Critical Element skill.",
+        "rarity": 3,
+        "skills": {
+            "Critical Element": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Crit Element Jewel II 2": {
+        "description": "A decoration that grants the Critical Element skill.",
+        "rarity": 4,
+        "skills": {
+            "Critical Element": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Crit Element-Precise Jwl 3": {
+        "description": "A decoration that grants the Critical Element and Ballistics skills.",
+        "rarity": 5,
+        "skills": {
+            "Ballistics": 1,
+            "Critical Element": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Stat Jwl III 3": {
+        "description": "A decoration that grants the Critical Status skill.",
+        "rarity": 5,
+        "skills": {
+            "Critical Status": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Stat-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Critical Status and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Status": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Stat-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Critical Status and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Status": 3,
+            "Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Stat-Precise Jwl 3": {
+        "description": "A decoration that grants the Critical Status and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Critical Status": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Crit Status Jewel 1": {
+        "description": "A decoration that grants the Critical Status skill.",
+        "rarity": 3,
+        "skills": {
+            "Critical Status": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Crit Status Jewel II 2": {
+        "description": "A decoration that grants the Critical Status skill.",
+        "rarity": 4,
+        "skills": {
+            "Critical Status": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Crit Status-KO Jwl 3": {
+        "description": "A decoration that grants the Critical Status and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Status": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Critical Jewel 1": {
+        "description": "A decoration that grants the Critical Boost skill.",
+        "rarity": 3,
+        "skills": {
+            "Critical Boost": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Critical Jewel II 2": {
+        "description": "A decoration that grants the Critical Boost skill.",
+        "rarity": 4,
+        "skills": {
+            "Critical Boost": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Critical Jewel III 3": {
+        "description": "A decoration that grants the Critical Boost skill.",
+        "rarity": 5,
+        "skills": {
+            "Critical Boost": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Def Lock Jewel 1": {
+        "description": "A decoration that grants the Iron Skin skill.",
+        "rarity": 3,
+        "skills": {
+            "Iron Skin": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Defense Jewel 1": {
+        "description": "A decoration that grants the Defense Boost skill.",
+        "rarity": 3,
+        "skills": {
+            "Defense Boost": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Destroyer Jewel 2": {
+        "description": "A decoration that grants the Partbreaker skill.",
+        "rarity": 4,
+        "skills": {
+            "Partbreaker": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Dive Jewel 1": {
+        "description": "A decoration that grants the Leap of Faith skill.",
+        "rarity": 3,
+        "skills": {
+            "Leap of Faith": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Dragon Jewel 1": {
+        "description": "A decoration that grants the Dragon Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Dragon Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Dragon Jewel II 2": {
+        "description": "A decoration that grants the Dragon Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Dragon Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Dragon Jewel III 3": {
+        "description": "A decoration that grants the Dragon Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Dragon Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon Res Jewel 1": {
+        "description": "A decoration that grants the Dragon Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Dragon Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Dragon-Bandolier Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Tetrad Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Tetrad Shot": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Crit Elem Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Critical Element skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Element": 1,
+            "Dragon Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Enhancer Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Power Prolonger skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Power Prolonger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Focus Jewel 3": {
+        "description": "A decoration that grants the Dragon Attack and Focus skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Focus": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Guardian Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Offensive Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Offensive Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-KO Jewel 3": {
+        "description": "A decoration that grants the Dragon Attack and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Opener Jewel 3": {
+        "description": "A decoration that grants the Dragon Attack and Opening Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Opening Shot": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Precise Jewel 3": {
+        "description": "A decoration that grants the Dragon Attack and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Dragon Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Quickswitch Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Rapid Morph skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Rapid Morph": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Rzr Sharp Jwl 3": {
+        "description": "A decoration that grants the Dragon Attack and Razor Sharp skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Razor Sharp": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Dragon-Shield Jewel 3": {
+        "description": "A decoration that grants the Dragon Attack and Guard Up skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 3,
+            "Guard Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Drain Jewel 1": {
+        "description": "A decoration that grants the Stamina Thief skill.",
+        "rarity": 3,
+        "skills": {
+            "Stamina Thief": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Drain Jewel II 2": {
+        "description": "A decoration that grants the Stamina Thief skill.",
+        "rarity": 4,
+        "skills": {
+            "Stamina Thief": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Drain Jewel III 3": {
+        "description": "A decoration that grants the Stamina Thief skill.",
+        "rarity": 5,
+        "skills": {
+            "Stamina Thief": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Draincoat Jewel 2": {
+        "description": "A decoration that grants the Exhaust Functionality skill.",
+        "rarity": 4,
+        "skills": {
+            "Exhaust Functionality": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Draw Jewel 1": {
+        "description": "A decoration that grants the Critical Draw skill.",
+        "rarity": 3,
+        "skills": {
+            "Critical Draw": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Draw Jewel II 2": {
+        "description": "A decoration that grants the Critical Draw skill.",
+        "rarity": 4,
+        "skills": {
+            "Critical Draw": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Draw Jewel III 3": {
+        "description": "A decoration that grants the Critical Draw skill.",
+        "rarity": 5,
+        "skills": {
+            "Critical Draw": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Earplugs Jewel 2": {
+        "description": "A decoration that grants the Earplugs skill.",
+        "rarity": 4,
+        "skills": {
+            "Earplugs": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Enduring Jewel 1": {
+        "description": "A decoration that grants the Item Prolonger skill.",
+        "rarity": 3,
+        "skills": {
+            "Item Prolonger": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Enhancer Jewel 1": {
+        "description": "A decoration that grants the Power Prolonger skill.",
+        "rarity": 3,
+        "skills": {
+            "Power Prolonger": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Enhancer Jewel II 2": {
+        "description": "A decoration that grants the Power Prolonger skill.",
+        "rarity": 4,
+        "skills": {
+            "Power Prolonger": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Enhancer Jewel III 3": {
+        "description": "A decoration that grants the Power Prolonger skill.",
+        "rarity": 5,
+        "skills": {
+            "Power Prolonger": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Enhancer-Blaze Jewel 3": {
+        "description": "A decoration that grants the Power Prolonger and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Power Prolonger": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Enhancer-Bolt Jewel 3": {
+        "description": "A decoration that grants the Power Prolonger and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Power Prolonger": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Enhancer-Dragon Jwl 3": {
+        "description": "A decoration that grants the Power Prolonger and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Power Prolonger": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Enhancer-Frost Jwl 3": {
+        "description": "A decoration that grants the Power Prolonger and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Ice Attack": 1,
+            "Power Prolonger": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Enhancer-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Power Prolonger and Handicraft skills.",
+        "rarity": 7,
+        "skills": {
+            "Handicraft": 1,
+            "Power Prolonger": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Enhancer-Stream Jwl 3": {
+        "description": "A decoration that grants the Power Prolonger and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Power Prolonger": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Escape Jewel 1": {
+        "description": "A decoration that grants the Bind Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Bind Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Evasion Jewel 2": {
+        "description": "A decoration that grants the Evade Window skill.",
+        "rarity": 4,
+        "skills": {
+            "Evade Window": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Expert Jewel 1": {
+        "description": "A decoration that grants the Critical Eye skill.",
+        "rarity": 3,
+        "skills": {
+            "Critical Eye": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Expert Jewel II 2": {
+        "description": "A decoration that grants the Critical Eye skill.",
+        "rarity": 4,
+        "skills": {
+            "Critical Eye": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Expert Jewel III 3": {
+        "description": "A decoration that grants the Critical Eye skill.",
+        "rarity": 5,
+        "skills": {
+            "Critical Eye": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Fire Res Jewel 1": {
+        "description": "A decoration that grants the Fire Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Fire Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Flash Jewel 1": {
+        "description": "A decoration that grants the Blindsider skill.",
+        "rarity": 3,
+        "skills": {
+            "Blindsider": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Flawless Jewel 2": {
+        "description": "A decoration that grants the Peak Performance skill.",
+        "rarity": 4,
+        "skills": {
+            "Peak Performance": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Flayer Jewel 3": {
+        "description": "A decoration that grants the Flayer skill.",
+        "rarity": 5,
+        "skills": {
+            "Flayer": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Flight Jewel 2": {
+        "description": "A decoration that grants the Airborne skill.",
+        "rarity": 4,
+        "skills": {
+            "Airborne": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Flight-Attack Jwl 3": {
+        "description": "A decoration that grants the Airborne and Attack Boost skills.",
+        "rarity": 5,
+        "skills": {
+            "Airborne": 1,
+            "Attack Boost": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Flight-Draw Jewel 3": {
+        "description": "A decoration that grants the Airborne and Critical Draw skills.",
+        "rarity": 5,
+        "skills": {
+            "Airborne": 1,
+            "Critical Draw": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Flight-Expert Jewel 3": {
+        "description": "A decoration that grants the Airborne and Critical Eye skills.",
+        "rarity": 5,
+        "skills": {
+            "Airborne": 1,
+            "Critical Eye": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Flight-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Airborne and Handicraft skills.",
+        "rarity": 5,
+        "skills": {
+            "Airborne": 1,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus Jewel 1": {
+        "description": "A decoration that grants the Focus skill.",
+        "rarity": 3,
+        "skills": {
+            "Focus": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Focus Jewel II 2": {
+        "description": "A decoration that grants the Focus skill.",
+        "rarity": 4,
+        "skills": {
+            "Focus": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Focus Jewel III 3": {
+        "description": "A decoration that grants the Focus skill.",
+        "rarity": 5,
+        "skills": {
+            "Focus": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Blaze Jewel 3": {
+        "description": "A decoration that grants the Focus and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Focus": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Bolt Jwl 3": {
+        "description": "A decoration that grants the Focus and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Focus": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Dragon Jewel 3": {
+        "description": "A decoration that grants the Focus and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Focus": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Frost Jewel 3": {
+        "description": "A decoration that grants the Focus and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Focus": 3,
+            "Ice Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Handicraft Jewel 3": {
+        "description": "A decoration that grants the Focus and Handicraft skills.",
+        "rarity": 7,
+        "skills": {
+            "Focus": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-KO Jewel 3": {
+        "description": "A decoration that grants the Focus and Slugger skills.",
+        "rarity": 7,
+        "skills": {
+            "Focus": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Precise Jewel 3": {
+        "description": "A decoration that grants the Focus and Ballistics skills.",
+        "rarity": 7,
+        "skills": {
+            "Ballistics": 1,
+            "Focus": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Focus-Stream Jewel 3": {
+        "description": "A decoration that grants the Focus and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Focus": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Footing Jewel 1": {
+        "description": "A decoration that grants the Tremor Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Tremor Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Foray Jewel 3": {
+        "description": "A decoration that grants the Foray skill.",
+        "rarity": 5,
+        "skills": {
+            "Foray": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Forceshot Jewel 3": {
+        "description": "A decoration that grants the Normal Shots skill.",
+        "rarity": 5,
+        "skills": {
+            "Normal Shots": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Friendship Jewel 1": {
+        "description": "A decoration that grants the Wide-Range skill.",
+        "rarity": 3,
+        "skills": {
+            "Wide-Range": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Frost Jewel 1": {
+        "description": "A decoration that grants the Ice Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Ice Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Frost Jewel II 2": {
+        "description": "A decoration that grants the Ice Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Ice Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Frost Jewel III 3": {
+        "description": "A decoration that grants the Ice Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Bandolier Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Tetrad Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Tetrad Shot": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Crit Elem Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Critical Element skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Element": 1,
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Enhancer Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Power Prolonger skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Power Prolonger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Focus Jewel 3": {
+        "description": "A decoration that grants the Ice Attack and Focus skills.",
+        "rarity": 6,
+        "skills": {
+            "Focus": 1,
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Guardian Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Offensive Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Offensive Guard": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Handicraft": 1,
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard": 1,
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-KO Jewel 3": {
+        "description": "A decoration that grants the Ice Attack and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Opener Jewel 3": {
+        "description": "A decoration that grants the Ice Attack and Opening Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Opening Shot": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Precise Jewel 3": {
+        "description": "A decoration that grants the Ice Attack and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Quickswitch Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Rapid Morph skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Rapid Morph": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Rzr Sharp Jwl 3": {
+        "description": "A decoration that grants the Ice Attack and Razor Sharp skills.",
+        "rarity": 6,
+        "skills": {
+            "Ice Attack": 3,
+            "Razor Sharp": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Frost-Shield Jewel 3": {
+        "description": "A decoration that grants the Ice Attack and Guard Up skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 1,
+            "Ice Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Fungiform Jewel 2": {
+        "description": "A decoration that grants the Mushroomancer skill.",
+        "rarity": 4,
+        "skills": {
+            "Mushroomancer": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Furor Jewel 2": {
+        "description": "A decoration that grants the Resentment skill.",
+        "rarity": 4,
+        "skills": {
+            "Resentment": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Gambit Jewel 1": {
+        "description": "A decoration that grants the Punishing Draw skill.",
+        "rarity": 3,
+        "skills": {
+            "Punishing Draw": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Gambit Jewel II 2": {
+        "description": "A decoration that grants the Punishing Draw skill.",
+        "rarity": 4,
+        "skills": {
+            "Punishing Draw": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Gambit Jewel III 3": {
+        "description": "A decoration that grants the Punishing Draw skill.",
+        "rarity": 5,
+        "skills": {
+            "Punishing Draw": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Gambit-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Punishing Draw and Handicraft skills.",
+        "rarity": 7,
+        "skills": {
+            "Handicraft": 1,
+            "Punishing Draw": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Gambit-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Punishing Draw and Guard skills.",
+        "rarity": 7,
+        "skills": {
+            "Guard": 1,
+            "Punishing Draw": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Gambit-KO Jewel 3": {
+        "description": "A decoration that grants the Punishing Draw and Slugger skills.",
+        "rarity": 7,
+        "skills": {
+            "Punishing Draw": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Geology Jewel 1": {
+        "description": "A decoration that grants the Geologist skill.",
+        "rarity": 3,
+        "skills": {
+            "Geologist": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Gobbler Jewel 1": {
+        "description": "A decoration that grants the Speed Eating skill.",
+        "rarity": 3,
+        "skills": {
+            "Speed Eating": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Grinder Jewel 1": {
+        "description": "A decoration that grants the Speed Sharpening skill.",
+        "rarity": 3,
+        "skills": {
+            "Speed Sharpening": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Grinder Jewel II 2": {
+        "description": "A decoration that grants the Speed Sharpening skill.",
+        "rarity": 4,
+        "skills": {
+            "Speed Sharpening": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Grinder-Attack Jewel 3": {
+        "description": "A decoration that grants the Speed Sharpening and Attack Boost skills.",
+        "rarity": 5,
+        "skills": {
+            "Attack Boost": 1,
+            "Speed Sharpening": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Grinder-Draw Jewel 3": {
+        "description": "A decoration that grants the Speed Sharpening and Critical Draw skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Draw": 1,
+            "Speed Sharpening": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Grinder-Expert Jewel 3": {
+        "description": "A decoration that grants the Speed Sharpening and Critical Eye skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Eye": 1,
+            "Speed Sharpening": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Grinder-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Speed Sharpening and Handicraft skills.",
+        "rarity": 5,
+        "skills": {
+            "Handicraft": 1,
+            "Speed Sharpening": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Grinder-Ironwall Jewel 3": {
+        "description": "A decoration that grants the Speed Sharpening and Guard skills.",
+        "rarity": 5,
+        "skills": {
+            "Guard": 1,
+            "Speed Sharpening": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Grinder-KO Jewel 3": {
+        "description": "A decoration that grants the Speed Sharpening and Slugger skills.",
+        "rarity": 5,
+        "skills": {
+            "Slugger": 1,
+            "Speed Sharpening": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Growth Jewel 1": {
+        "description": "A decoration that grants the Self-Improvement skill.",
+        "rarity": 3,
+        "skills": {
+            "Self-Improvement": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Guardian Jewel 1": {
+        "description": "A decoration that grants the Offensive Guard skill.",
+        "rarity": 3,
+        "skills": {
+            "Offensive Guard": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Guardian Jewel II 2": {
+        "description": "A decoration that grants the Offensive Guard skill.",
+        "rarity": 4,
+        "skills": {
+            "Offensive Guard": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Guardian Jewel III 3": {
+        "description": "A decoration that grants the Offensive Guard skill.",
+        "rarity": 5,
+        "skills": {
+            "Offensive Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Blaze Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Offensive Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Bolt Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Offensive Guard": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Dragon Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Offensive Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Frost Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Ice Attack": 1,
+            "Offensive Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Handicraft skills.",
+        "rarity": 7,
+        "skills": {
+            "Handicraft": 1,
+            "Offensive Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Guard skills.",
+        "rarity": 7,
+        "skills": {
+            "Guard": 1,
+            "Offensive Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Guardian-Stream Jwl 3": {
+        "description": "A decoration that grants the Offensive Guard and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Offensive Guard": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Handicraft Jewel 1": {
+        "description": "A decoration that grants the Handicraft skill.",
+        "rarity": 3,
+        "skills": {
+            "Handicraft": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Handicraft Jewel II 2": {
+        "description": "A decoration that grants the Handicraft skill.",
+        "rarity": 4,
+        "skills": {
+            "Handicraft": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Handicraft Jwl III 3": {
+        "description": "A decoration that grants the Handicraft skill.",
+        "rarity": 5,
+        "skills": {
+            "Handicraft": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Hungerless Jewel 1": {
+        "description": "A decoration that grants the Hunger Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Hunger Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Ice Res Jewel 1": {
+        "description": "A decoration that grants the Ice Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Ice Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Intimidator Jewel 1": {
+        "description": "A decoration that grants the Intimidator skill.",
+        "rarity": 3,
+        "skills": {
+            "Intimidator": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Ironwall Jewel 1": {
+        "description": "A decoration that grants the Guard skill.",
+        "rarity": 3,
+        "skills": {
+            "Guard": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Ironwall Jewel II 2": {
+        "description": "A decoration that grants the Guard skill.",
+        "rarity": 4,
+        "skills": {
+            "Guard": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Ironwall Jewel III 3": {
+        "description": "A decoration that grants the Guard skill.",
+        "rarity": 5,
+        "skills": {
+            "Guard": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Jumping Jewel 2": {
+        "description": "A decoration that grants the Evade Extender skill.",
+        "rarity": 4,
+        "skills": {
+            "Evade Extender": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "KO Jewel 1": {
+        "description": "A decoration that grants the Slugger skill.",
+        "rarity": 3,
+        "skills": {
+            "Slugger": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "KO Jewel II 2": {
+        "description": "A decoration that grants the Slugger skill.",
+        "rarity": 4,
+        "skills": {
+            "Slugger": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "KO Jewel III 3": {
+        "description": "A decoration that grants the Slugger skill.",
+        "rarity": 5,
+        "skills": {
+            "Slugger": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Leap Jewel 1": {
+        "description": "A decoration that grants the Jump Master skill.",
+        "rarity": 3,
+        "skills": {
+            "Jump Master": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Magazine Jewel 1": {
+        "description": "A decoration that grants the Load Shells skill.",
+        "rarity": 3,
+        "skills": {
+            "Load Shells": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Magazine Jewel II 2": {
+        "description": "A decoration that grants the Load Shells skill.",
+        "rarity": 4,
+        "skills": {
+            "Load Shells": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Magazine-Attack Jwl 3": {
+        "description": "A decoration that grants the Load Shells and Attack Boost skills.",
+        "rarity": 5,
+        "skills": {
+            "Attack Boost": 1,
+            "Load Shells": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Magazine-Draw Jwl 3": {
+        "description": "A decoration that grants the Load Shells and Critical Draw skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Draw": 1,
+            "Load Shells": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Magazine-Expert Jwl 3": {
+        "description": "A decoration that grants the Load Shells and Critical Eye skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Eye": 1,
+            "Load Shells": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Magazine-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Load Shells and Handicraft skills.",
+        "rarity": 5,
+        "skills": {
+            "Handicraft": 1,
+            "Load Shells": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Magazine-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Load Shells and Guard skills.",
+        "rarity": 5,
+        "skills": {
+            "Guard": 1,
+            "Load Shells": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Maintenance Jewel 2": {
+        "description": "A decoration that grants the Tool Specialist skill.",
+        "rarity": 4,
+        "skills": {
+            "Tool Specialist": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Mastery Jewel 3": {
+        "description": "A decoration that grants the Master's Touch skill.",
+        "rarity": 5,
+        "skills": {
+            "Master's Touch": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Medicine Jewel 1": {
+        "description": "A decoration that grants the Recovery Up skill.",
+        "rarity": 3,
+        "skills": {
+            "Recovery Up": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Mighty Jewel 2": {
+        "description": "A decoration that grants the Maximum Might skill.",
+        "rarity": 4,
+        "skills": {
+            "Maximum Might": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Mind's Eye Jewel 1": {
+        "description": "A decoration that grants the Mind's Eye skill.",
+        "rarity": 3,
+        "skills": {
+            "Mind's Eye": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Mind's Eye Jewel II 2": {
+        "description": "A decoration that grants the Mind's Eye skill.",
+        "rarity": 4,
+        "skills": {
+            "Mind's Eye": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Mind's Eye Jwl III 3": {
+        "description": "A decoration that grants the Mind's Eye skill.",
+        "rarity": 5,
+        "skills": {
+            "Mind's Eye": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Mirewalker Jewel 1": {
+        "description": "A decoration that grants the Aquatic/Oilsilt Mobility skill.",
+        "rarity": 3,
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Opener Jewel 1": {
+        "description": "A decoration that grants the Opening Shot skill.",
+        "rarity": 3,
+        "skills": {
+            "Opening Shot": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Opener Jewel II 2": {
+        "description": "A decoration that grants the Opening Shot skill.",
+        "rarity": 4,
+        "skills": {
+            "Opening Shot": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Opener Jewel III 3": {
+        "description": "A decoration that grants the Opening Shot skill.",
+        "rarity": 5,
+        "skills": {
+            "Opening Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Blaze Jewel 3": {
+        "description": "A decoration that grants the Opening Shot and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Opening Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Bolt Jewel 3": {
+        "description": "A decoration that grants the Opening Shot and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Opening Shot": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Dragon Jewel 3": {
+        "description": "A decoration that grants the Opening Shot and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Opening Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Frost Jewel 3": {
+        "description": "A decoration that grants the Opening Shot and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Ice Attack": 1,
+            "Opening Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Opening Shot and Guard skills.",
+        "rarity": 7,
+        "skills": {
+            "Guard": 1,
+            "Opening Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Precise Jewel 3": {
+        "description": "A decoration that grants the Opening Shot and Ballistics skills.",
+        "rarity": 7,
+        "skills": {
+            "Ballistics": 1,
+            "Opening Shot": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Opener-Stream Jwl 3": {
+        "description": "A decoration that grants the Opening Shot and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Opening Shot": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Paracoat Jewel 3": {
+        "description": "A decoration that grants the Para Functionality skill.",
+        "rarity": 5,
+        "skills": {
+            "Para Functionality": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Paralyzer Jewel 1": {
+        "description": "A decoration that grants the Paralysis Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Paralysis Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Paralyzer Jewel II 2": {
+        "description": "A decoration that grants the Paralysis Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Paralysis Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Paralyzer Jwl III 3": {
+        "description": "A decoration that grants the Paralysis Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Paralysis Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Pep Jewel 1": {
+        "description": "A decoration that grants the Sleep Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Sleep Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Perfume Jewel 1": {
+        "description": "A decoration that grants the Stench Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Stench Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Phoenix Jewel 2": {
+        "description": "A decoration that grants the Coalescence skill.",
+        "rarity": 7,
+        "skills": {
+            "Coalescence": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Physique Jewel 1": {
+        "description": "A decoration that grants the Constitution skill.",
+        "rarity": 3,
+        "skills": {
+            "Constitution": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Pierce Jewel 3": {
+        "description": "A decoration that enhances the Piercing Shots skill.",
+        "rarity": 5,
+        "skills": {
+            "Piercing Shots": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison Jewel 2": {
+        "description": "A decoration that grants the Poison Duration Up skill.",
+        "rarity": 5,
+        "skills": {
+            "Poison Duration Up": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Poison-Attack Jewel 3": {
+        "description": "A decoration that grants the Poison Duration Up and Attack Boost skills.",
+        "rarity": 6,
+        "skills": {
+            "Attack Boost": 1,
+            "Poison Duration Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison-Draw Jewel 3": {
+        "description": "A decoration that grants the Poison Duration Up and Critical Draw skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Draw": 1,
+            "Poison Duration Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison-Expert Jwl 3": {
+        "description": "A decoration that grants the Poison Duration Up and Critical Eye skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Eye": 1,
+            "Poison Duration Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Poison Duration Up and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Handicraft": 1,
+            "Poison Duration Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Poison Duration Up and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard": 1,
+            "Poison Duration Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison-KO Jewel 3": {
+        "description": "A decoration that grants the Poison Duration Up and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Poison Duration Up": 1,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poison-Precise Jwl 3": {
+        "description": "A decoration that grants the Poison Duration Up and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Poison Duration Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Poisoncoat Jewel 2": {
+        "description": "A decoration that grants the Poison Functionality skill.",
+        "rarity": 4,
+        "skills": {
+            "Poison Functionality": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Potential Jewel 2": {
+        "description": "A decoration that grants the Heroics skill.",
+        "rarity": 4,
+        "skills": {
+            "Heroics": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Precise Jewel 1": {
+        "description": "A decoration that grants the Ballistics skill.",
+        "rarity": 3,
+        "skills": {
+            "Ballistics": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Precise Jewel II 2": {
+        "description": "A decoration that grants the Ballistics skill.",
+        "rarity": 4,
+        "skills": {
+            "Ballistics": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Precise Jewel III 3": {
+        "description": "A decoration that grants the Ballistics skill.",
+        "rarity": 5,
+        "skills": {
+            "Ballistics": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Protection Jewel 1": {
+        "description": "A decoration that grants the Divine Blessing skill.",
+        "rarity": 3,
+        "skills": {
+            "Divine Blessing": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Quickswitch Jewel 1": {
+        "description": "A decoration that grants the Rapid Morph skill.",
+        "rarity": 3,
+        "skills": {
+            "Rapid Morph": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Quickswitch Jewel II 2": {
+        "description": "A decoration that grants the Rapid Morph skill.",
+        "rarity": 4,
+        "skills": {
+            "Rapid Morph": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Quickswitch Jewel III 3": {
+        "description": "A decoration that grants the Rapid Morph skill.",
+        "rarity": 5,
+        "skills": {
+            "Rapid Morph": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Blaze Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Rapid Morph": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Bolt Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Rapid Morph": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Dragon Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Rapid Morph": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Frost Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Ice Attack": 1,
+            "Rapid Morph": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Handicraft skills.",
+        "rarity": 7,
+        "skills": {
+            "Handicraft": 1,
+            "Rapid Morph": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Guard skills.",
+        "rarity": 7,
+        "skills": {
+            "Guard": 1,
+            "Rapid Morph": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-KO Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Slugger skills.",
+        "rarity": 7,
+        "skills": {
+            "Rapid Morph": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Quickswitch-Stream Jwl 3": {
+        "description": "A decoration that grants the Rapid Morph and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Rapid Morph": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Ranger Jewel 1": {
+        "description": "A decoration that grants the Outdoorsman skill.",
+        "rarity": 3,
+        "skills": {
+            "Outdoorsman": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Razor Sharp Jewel 1": {
+        "description": "A decoration that grants the Razor Sharp skill.",
+        "rarity": 3,
+        "skills": {
+            "Razor Sharp": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Razor Sharp Jewel II 2": {
+        "description": "A decoration that grants the Razor Sharp skill.",
+        "rarity": 4,
+        "skills": {
+            "Razor Sharp": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Razor Sharp-KO Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Slugger skills.",
+        "rarity": 7,
+        "skills": {
+            "Razor Sharp": 3,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Recovery Jewel 1": {
+        "description": "A decoration that grants the Recovery Speed skill.",
+        "rarity": 3,
+        "skills": {
+            "Recovery Speed": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Refresh Jewel 2": {
+        "description": "A decoration that grants the Stamina Surge skill.",
+        "rarity": 4,
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "slot": 2,
+        "type": "armor"
+    },
+    "Rzr Sharp Jwl III 3": {
+        "description": "A decoration that grants the Razor Sharp skill.",
+        "rarity": 5,
+        "skills": {
+            "Razor Sharp": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Blaze Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Fire Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Fire Attack": 1,
+            "Razor Sharp": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Bolt Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Thunder Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Razor Sharp": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Dragon Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Dragon Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Dragon Attack": 1,
+            "Razor Sharp": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Frost Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Ice Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Ice Attack": 1,
+            "Razor Sharp": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Handicraft Jwl 3": {
+        "description": "A decoration that grants the  Razor Sharp and Handicraft  skills.",
+        "rarity": 7,
+        "skills": {
+            "Handicraft": 1,
+            "Razor Sharp": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Guard skills.",
+        "rarity": 7,
+        "skills": {
+            "Guard": 1,
+            "Razor Sharp": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Rzr Sharp-Stream Jwl 3": {
+        "description": "A decoration that grants the Razor Sharp and Water Attack skills.",
+        "rarity": 7,
+        "skills": {
+            "Razor Sharp": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Salvo Jewel 3": {
+        "description": "A decoration that grants the Rapid Fire Up skill.",
+        "rarity": 5,
+        "skills": {
+            "Rapid Fire Up": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sane Jewel 1": {
+        "description": "A decoration that grants the Antivirus skill.",
+        "rarity": 5,
+        "skills": {
+            "Antivirus": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Satiated Jewel 1": {
+        "description": "A decoration that grants the Free Meal skill.",
+        "rarity": 3,
+        "skills": {
+            "Free Meal": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Sharp Jewel 1": {
+        "description": "A decoration that grants the Protective Polish skill.",
+        "rarity": 3,
+        "skills": {
+            "Protective Polish": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Sharp Jewel II 2": {
+        "description": "A decoration that grants the Protective Polish skill.",
+        "rarity": 4,
+        "skills": {
+            "Protective Polish": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Sharp Jewel III 3": {
+        "description": "A decoration that grants the Protective Polish skill.",
+        "rarity": 5,
+        "skills": {
+            "Protective Polish": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sheath Jewel 1": {
+        "description": "A decoration that grants the Quick Sheathe skill.",
+        "rarity": 3,
+        "skills": {
+            "Quick Sheathe": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Shield Jewel 1": {
+        "description": "A decoration that grants the Guard Up skill.",
+        "rarity": 3,
+        "skills": {
+            "Guard Up": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Shield Jewel II 2": {
+        "description": "A decoration that grants the Guard Up skill.",
+        "rarity": 4,
+        "skills": {
+            "Guard Up": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Shield Jewel III 3": {
+        "description": "A decoration that grants the Guard Up skill.",
+        "rarity": 5,
+        "skills": {
+            "Guard Up": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Blaze Jewel 3": {
+        "description": "A decoration that grants the Guard Up and Fire Attack skills.",
+        "rarity": 6,
+        "skills": {
+            "Fire Attack": 1,
+            "Guard Up": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Bolt Jewel 3": {
+        "description": "A decoration that grants the Guard Up and Thunder Attack skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 3,
+            "Thunder Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Dragon Jwl 3": {
+        "description": "A decoration that grants the Guard Up and Dragon Attack skills.",
+        "rarity": 6,
+        "skills": {
+            "Dragon Attack": 1,
+            "Guard Up": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Frost Jewel 3": {
+        "description": "A decoration that grants the Guard Up and Ice Attack skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 3,
+            "Ice Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Guard Up and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 3,
+            "Handicraft": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Guard Up and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard": 1,
+            "Guard Up": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shield-Stream Jewel 3": {
+        "description": "A decoration that grants the Guard Up and Water Attack skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 3,
+            "Water Attack": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Shockproof Jewel 1": {
+        "description": "A decoration that grants the Shock Absorber skill.",
+        "rarity": 3,
+        "skills": {
+            "Shock Absorber": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Sleep Jewel 1": {
+        "description": "A decoration that grants the Sleep Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Sleep Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Sleep Jewel II 2": {
+        "description": "A decoration that grants the Sleep Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Sleep Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Sleep Jewel III 3": {
+        "description": "A decoration that grants the Sleep Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Sleep Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sleepcoat Jewel 3": {
+        "description": "A decoration that grants the Sleep Functionality skill.",
+        "rarity": 5,
+        "skills": {
+            "Sleep Functionality": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sonorous Jewel 2": {
+        "description": "A decoration that grants the Horn Maestro skill.",
+        "rarity": 4,
+        "skills": {
+            "Horn Maestro": 1
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Sonorous-Attack Jwl 3": {
+        "description": "A decoration that grants the Horn Maestro and Attack Boost skills.",
+        "rarity": 5,
+        "skills": {
+            "Attack Boost": 1,
+            "Horn Maestro": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sonorous-Draw Jwl 3": {
+        "description": "A decoration that grants the Horn Maestro and Critical Draw skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Draw": 1,
+            "Horn Maestro": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sonorous-Expert Jwl 3": {
+        "description": "A decoration that grants the Horn Maestro and Critical Eye skills.",
+        "rarity": 5,
+        "skills": {
+            "Critical Eye": 1,
+            "Horn Maestro": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sonorous-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Horn Maestro and Handicraft skills.",
+        "rarity": 5,
+        "skills": {
+            "Handicraft": 1,
+            "Horn Maestro": 2
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sonorous-KO Jewel 3": {
+        "description": "A decoration that grants the Horn Maestro and Slugger skills.",
+        "rarity": 5,
+        "skills": {
+            "Horn Maestro": 2,
+            "Slugger": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Specimen Jewel 1": {
+        "description": "A decoration that grants the Entomologist skill.",
+        "rarity": 3,
+        "skills": {
+            "Entomologist": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Spread Jewel 3": {
+        "description": "A decoration that grants the Spread/Power Shots skill.",
+        "rarity": 5,
+        "skills": {
+            "Spread/Power Shots": 1
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Sprinter Jewel 1": {
+        "description": "A decoration that grants the Marathon Runner skill.",
+        "rarity": 3,
+        "skills": {
+            "Marathon Runner": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Steadfast Jewel 1": {
+        "description": "A decoration that grants the Stun Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Stun Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Stream Jewel 1": {
+        "description": "A decoration that grants the Water Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Water Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Stream Jewel II 2": {
+        "description": "A decoration that grants the Water Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Water Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Stream Jewel III 3": {
+        "description": "A decoration that grants the Water Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Bandolier Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Tetrad Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Tetrad Shot": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Crit Elem Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Critical Element skills.",
+        "rarity": 6,
+        "skills": {
+            "Critical Element": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Enhancer Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Power Prolonger skills.",
+        "rarity": 6,
+        "skills": {
+            "Power Prolonger": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Focus Jewel 3": {
+        "description": "A decoration that grants the Water Attack and Focus skills.",
+        "rarity": 6,
+        "skills": {
+            "Focus": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Guardian Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Offensive Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Offensive Guard": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Handicraft Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Handicraft skills.",
+        "rarity": 6,
+        "skills": {
+            "Handicraft": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Ironwall Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Guard skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-KO Jewel 3": {
+        "description": "A decoration that grants the Water Attack and Slugger skills.",
+        "rarity": 6,
+        "skills": {
+            "Slugger": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Opener Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Opening Shot skills.",
+        "rarity": 6,
+        "skills": {
+            "Opening Shot": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Precise Jewel 3": {
+        "description": "A decoration that grants the Water Attack and Ballistics skills.",
+        "rarity": 6,
+        "skills": {
+            "Ballistics": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Quickswitch Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Rapid Morph skills.",
+        "rarity": 6,
+        "skills": {
+            "Rapid Morph": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Rzr Sharp Jwl 3": {
+        "description": "A decoration that grants the Water Attack and Razor Sharp skills.",
+        "rarity": 6,
+        "skills": {
+            "Razor Sharp": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Stream-Shield Jewel 3": {
+        "description": "A decoration that grants the Water Attack and Guard Up skills.",
+        "rarity": 6,
+        "skills": {
+            "Guard Up": 1,
+            "Water Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Survival Jewel 1": {
+        "description": "A decoration that grants the Survival Expert skill.",
+        "rarity": 3,
+        "skills": {
+            "Survival Expert": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Suture Jewel 1": {
+        "description": "A decoration that grants the Bleeding Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Bleeding Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Tenderizer Jewel 3": {
+        "description": "A decoration that grants the Weakness Exploit skill.",
+        "rarity": 5,
+        "skills": {
+            "Weakness Exploit": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Throttle Jewel 3": {
+        "description": "A decoration that grants the Latent Power skill.",
+        "rarity": 5,
+        "skills": {
+            "Latent Power": 1
+        },
+        "slot": 3,
+        "type": "armor"
+    },
+    "Thunder Res Jewel 1": {
+        "description": "A decoration that grants the Thunder Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Thunder Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Trueshot Jewel 1": {
+        "description": "A decoration that grants the Special Ammo Boost skill.",
+        "rarity": 3,
+        "skills": {
+            "Special Ammo Boost": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Trueshot Jewel II 2": {
+        "description": "A decoration that grants the Special Ammo Boost skill.",
+        "rarity": 4,
+        "skills": {
+            "Special Ammo Boost": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Venom Jewel 1": {
+        "description": "A decoration that grants the Poison Attack skill.",
+        "rarity": 3,
+        "skills": {
+            "Poison Attack": 1
+        },
+        "slot": 1,
+        "type": "weapon"
+    },
+    "Venom Jewel II 2": {
+        "description": "A decoration that grants the Poison Attack skill.",
+        "rarity": 4,
+        "skills": {
+            "Poison Attack": 2
+        },
+        "slot": 2,
+        "type": "weapon"
+    },
+    "Venom Jewel III 3": {
+        "description": "A decoration that grants the Poison Attack skill.",
+        "rarity": 5,
+        "skills": {
+            "Poison Attack": 3
+        },
+        "slot": 3,
+        "type": "weapon"
+    },
+    "Water Res Jewel 1": {
+        "description": "A decoration that grants the Water Resistance skill.",
+        "rarity": 3,
+        "skills": {
+            "Water Resistance": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    },
+    "Wind Resist Jewel 1": {
+        "description": "A decoration that grants the Windproof skill.",
+        "rarity": 3,
+        "skills": {
+            "Windproof": 1
+        },
+        "slot": 1,
+        "type": "armor"
+    }
 }

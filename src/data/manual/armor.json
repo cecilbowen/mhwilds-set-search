@@ -1,0 +1,103 @@
+{
+  "Sororal Earrings Alpha": {
+    "type": "head",
+    "slots": [3, 1, 1],
+    "skills": {
+        "Burst": 1
+    },
+    "setSkill": ["Gore Magala's Tyranny"],
+    "groupSkill": ["Glory's Favor"]
+  },
+  "Sororal Coat Alpha": {
+    "type": "chest",
+    "slots": [],
+    "skills": {
+        "Stamina Surge": 2,
+        "Partbreaker": 1,
+        "Burst": 1
+    },
+    "setSkill": ["Gore Magala's Tyranny"],
+    "groupSkill": ["Glory's Favor"]
+  },
+  "Sororal Vambraces Alpha": {
+    "type": "arms",
+    "slots": [2],
+    "skills": {
+        "Evade Extender": 1,
+        "Partbreaker": 1,
+        "Burst": 1
+    },
+    "setSkill": ["Gore Magala's Tyranny"],
+    "groupSkill": ["Glory's Favor"]
+  },
+  "Sororal Coil Alpha": {
+    "type": "waist",
+    "slots": [],
+    "skills": {
+        "Evade Extender": 2,
+        "Burst": 2
+    },
+    "setSkill": ["Gore Magala's Tyranny"],
+    "groupSkill": ["Glory's Favor"]
+  },
+  "Sororal Boots Alpha": {
+    "type": "legs",
+    "slots": [3, 2],
+    "skills": {
+        "Stamina Surge": 1,
+        "Partbreaker": 1
+    },
+    "setSkill": ["Gore Magala's Tyranny"],
+    "groupSkill": ["Glory's Favor"]
+  },
+
+  "Arkvulcan Helm Gamma": {
+    "type": "head",
+    "slots": [2, 1],
+    "skills": {
+        "Weakness Exploit": 3
+    },
+    "setSkill": ["Arkveld's Hunger"],
+    "groupSkill": ["Lord's Soul"]
+  },
+  "Arkvulcan Mail Gamma": {
+    "type": "chest",
+    "slots": [3, 2],
+    "skills": {
+        "Convert Element": 3,
+        "Blight Resistance": 1
+    },
+    "setSkill": ["Arkveld's Hunger"],
+    "groupSkill": ["Lord's Soul"]
+  },
+  "Arkvulcan Vambraces Gamma": {
+    "type": "arms",
+    "slots": [1, 1],
+    "skills": {
+        "Weakness Exploit": 2,
+        "Flayer": 2
+    },
+    "setSkill": ["Arkveld's Hunger"],
+    "groupSkill": ["Lord's Soul"]
+  },
+  "Arkvulcan Coil Gamma": {
+    "type": "waist",
+    "slots": [2, 2, 1],
+    "skills": {
+        "Flayer": 1,
+        "Elemental Absorption": 3
+    },
+    "setSkill": ["Arkveld's Hunger"],
+    "groupSkill": ["Lord's Soul"]
+  },
+  "Arkvulcan Greaves Gamma": {
+    "type": "legs",
+    "slots": [3, 3],
+    "skills": {
+        "Flayer": 2,
+        "Blight Resistance": 2
+    },
+    "setSkill": ["Arkveld's Hunger"],
+    "groupSkill": ["Lord's Soul"]
+  }
+}

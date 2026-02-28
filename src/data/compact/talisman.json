@@ -96,7 +96,7 @@
 	"Guard Charm II":["talisman",{"Iron Skin":2}],
 	"Guard Charm III":["talisman",{"Iron Skin":3}],
 	"Historical Charm":["talisman",{}],
-	"Hope Charm":["talisman",{"Self-Improvement":1,"Recovery Up":1}],
+	"Hope Charm":["talisman",{"Recovery Up":1,"Self-Improvement":1}],
 	"Hungerless Charm I":["talisman",{"Hunger Resistance":1}],
 	"Hungerless Charm II":["talisman",{"Hunger Resistance":2}],
 	"Hungerless Charm III":["talisman",{"Hunger Resistance":3}],

@@ -1,3005 +1,3148 @@
 {
-    "Hope Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Stun Resistance": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 2,
-        "fireResistance": 1,
-        "waterResistance": 0,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Leather Belt": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Botanist": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 2,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Chainmail Belt": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Recovery Speed": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 2,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Bone Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Marathon Runner": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 4,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 2,
-        "iceResistance": 0,
+    "Afi Wrap Alpha": {
+        "defense": 36,
+        "description": "Flamefete Ticket waistgear. Its strikingly vibrant colors flutter in the midsummer heat, painting the wind.",
         "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Chatacabra Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Speed Eating": 1
-        },
+        "fireResistance": 2,
         "groupSkill": [
-            "Flexible Leathercraft"
+            "Festival Spirit"
         ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 6,
-        "fireResistance": 1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Quematrice Coil": {
-        "type": "waist",
-        "slots": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [
+            "Flamefete Prayer"
+        ],
         "skills": {
+            "Blast Resistance": 2,
+            "Burst": 1,
             "Fire Resistance": 1
         },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 6,
-        "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Alloy Coil": {
-        "type": "waist",
         "slots": [],
-        "skills": {
-            "Tremor Resistance": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 6,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Vespoid Coil": {
+        "thunderResistance": 2,
         "type": "waist",
-        "slots": [],
-        "skills": {
-            "Paralysis Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 4,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Barina Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Recovery Up": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 8,
-        "fireResistance": -3,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Conga Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Stench Resistance": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 2,
-        "rank": "low",
-        "defense": 8,
-        "fireResistance": -3,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Balahara Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Evade Extender": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 2,
-        "rank": "low",
-        "defense": 12,
-        "fireResistance": -1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Doshaguma Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Item Prolonger": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 2,
-        "rank": "low",
-        "defense": 16,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "setSkill": [
-            "Doshaguma's Might"
-        ]
-    },
-    "Ingot Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Divine Blessing": 1
-        },
-        "groupSkill": [],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 16,
-        "fireResistance": -2,
-        "waterResistance": 0,
-        "thunderResistance": 3,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Rompopolo Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Wide-Range": 1,
-            "Poison Resistance": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 18,
-        "fireResistance": 0,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Nerscylla Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Sleep Resistance": 1,
-            "Bind Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 20,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Hirabami Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Evade Window": 1,
-            "Ice Resistance": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 22,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
+        "waterResistance": -3
     },
     "Ajarakan Coil": {
-        "type": "waist",
-        "slots": [],
+        "defense": 24,
+        "description": "Ajarakan waistgear. It acts as a tether to quell the wearer's exploding rage.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
         "skills": {
             "Blast Resistance": 1,
             "Bombardier": 1
         },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 24,
-        "fireResistance": 3,
-        "waterResistance": -3,
+        "slots": [],
         "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "G Seikret Coil": {
-        "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
-        "rank": "low",
         "type": "waist",
-        "defense": 22,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 4,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Jump Master": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [],
-        "rarity": 4
-    },
-    "Duna Wildcoil": {
-        "description": "Uth Duna waistgear. The fabric is imbued with the breath of the forest, absorbing any impact.",
-        "rank": "low",
-        "type": "waist",
-        "defense": 26,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "slots": [],
-        "skills": {
-            "Tool Specialist": 1,
-            "Aquatic/Oilsilt Mobility": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "setSkill": [
-            "Uth Duna's Cover"
-        ],
-        "rarity": 1
-    },
-    "Rey Sandcoil": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Constitution": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ]
-    },
-    "Udra Mirecoil": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Resentment": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ]
-    },
-    "G Doshaguma Coil": {
-        "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
-        "rank": "low",
-        "type": "waist",
-        "defense": 26,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -2,
-        "dragonResistance": 2,
-        "slots": [],
-        "skills": {
-            "Heroics": 1,
-            "Marathon Runner": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 4
-    },
-    "G Rathalos Coil": {
-        "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
-        "rank": "low",
-        "type": "waist",
-        "defense": 26,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -5,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Intimidator": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Rathalos's Flare"
-        ],
-        "rarity": 4
-    },
-    "G Ebony Coil": {
-        "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
-        "rank": "low",
-        "type": "waist",
-        "defense": 26,
-        "fireResistance": -2,
-        "waterResistance": -3,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 4,
-        "slots": [],
-        "skills": {
-            "Burst": 1,
-            "Bleeding Resistance": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 4
-    },
-    "Xu Wu Coil": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Maximum Might": 1,
-            "Stamina Surge": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -3,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "G Arkveld Coil": {
-        "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
-        "rank": "low",
-        "type": "waist",
-        "defense": 30,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -4,
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Blight Resistance": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 4
-    },
-    "Hope Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Divine Blessing": 1,
-            "Stun Resistance": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 26,
-        "fireResistance": 1,
-        "waterResistance": 0,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Leather Belt Alpha": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Hunger Resistance": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 26,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Chainmail Belt Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Ice Resistance": 1,
-            "Recovery Speed": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 26,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Bone Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Marathon Runner": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Alloy Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Quick Sheathe": 1,
-            "Tremor Resistance": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Vespoid Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Evade Window": 1,
-            "Paralysis Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Vespoid Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1,
-            1
-        ],
-        "skills": {
-            "Paralysis Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Camouflage"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Kut-Ku Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Recovery Up": 2,
-            "Agitator": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 3,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": -4,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Kut-Ku Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Agitator": 1,
-            "Recovery Up": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 3,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": -4,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Chatacabra Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Speed Eating": 1,
-            "Item Prolonger": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Chatacabra Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Speed Eating": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Quematrice Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Latent Power": 1,
-            "Fire Resistance": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Quematrice Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Fire Resistance": 2
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Barina Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Paralysis Resistance": 2
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Barina Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Paralysis Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Camouflage"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Conga Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Mushroomancer": 1,
-            "Free Meal": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Conga Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Mushroomancer": 1
-        },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Rompopolo Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Foray": 1,
-            "Wide-Range": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Rompopolo Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Foray": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Gypceros Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Resentment": 1,
-            "Stamina Surge": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Gypceros Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Stamina Surge": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Nerscylla Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Sleep Resistance": 2,
-            "Bind Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Nerscylla Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Bind Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Camouflage"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Balahara Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Evade Window": 1,
-            "Evade Extender": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Balahara Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Evade Window": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Hirabami Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Evade Window": 2
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Hirabami Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Evade Window": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Rathian Coil Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Foray": 1,
-            "Tool Specialist": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": []
-    },
-    "Rathian Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Foray": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": []
-    },
-    "Ingot Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1,
-            1,
-            1
-        ],
-        "skills": {
-            "Resentment": 1,
-            "Divine Blessing": 1
-        },
-        "groupSkill": [],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": -2,
-        "waterResistance": 0,
-        "thunderResistance": 3,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "G Seikret Coil Alpha": {
-        "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 44,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 4,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Jump Master": 1,
-            "Earplugs": 2
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [],
-        "rarity": 6
-    },
-    "G Seikret Coil Beta": {
-        "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 44,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 4,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Jump Master": 1,
-            "Earplugs": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [],
-        "rarity": 6
-    },
-    "G Fulgur Coil Alpha": {
-        "description": "Waistgear made from Guardian Fulgur Anjanath spoils. The white areas self-repair when damaged.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": -3,
-        "dragonResistance": -2,
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Stamina Surge": 1,
-            "Maximum Might": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Fulgur Anjanath's Will"
-        ],
-        "rarity": 6
-    },
-    "G Fulgur Coil Beta": {
-        "description": "Waistgear made from Guardian Fulgur Anjanath spoils. The white areas self-repair when damaged.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": -3,
-        "dragonResistance": -2,
-        "slots": [
-            2,
-            2
-        ],
-        "skills": {
-            "Stamina Surge": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Fulgur Anjanath's Will"
-        ],
-        "rarity": 6
-    },
-    "Doshaguma Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Latent Power": 2
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "setSkill": [
-            "Doshaguma's Might"
-        ]
-    },
-    "Doshaguma Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2,
-            2
-        ],
-        "skills": {
-            "Latent Power": 1
-        },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "setSkill": [
-            "Doshaguma's Might"
-        ]
-    },
-    "G Doshaguma Coil Alpha": {
-        "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -2,
-        "dragonResistance": 2,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Heroics": 2,
-            "Hunger Resistance": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 6
-    },
-    "G Doshaguma Coil Beta": {
-        "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -2,
-        "dragonResistance": 2,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Heroics": 2
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 6
+        "waterResistance": -3
     },
     "Ajarakan Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
+        "defense": 48,
+        "description": "Ajarakan waistgear. It acts as a tether to quell the wearer's exploding rage.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Fortifying Pelt"
         ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
         "skills": {
             "Blast Resistance": 2,
             "Partbreaker": 2
         },
-        "groupSkill": [
-            "Fortifying Pelt"
+        "slots": [
+            1
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": -3,
         "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "setSkill": []
+        "type": "waist",
+        "waterResistance": -3
     },
     "Ajarakan Coil Beta": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Partbreaker": 2,
-            "Blast Resistance": 1
-        },
+        "defense": 48,
+        "description": "Ajarakan waistgear. It acts as a tether to quell the wearer's exploding rage.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
         "groupSkill": [
             "Alluring Pelt"
         ],
+        "iceResistance": -2,
+        "rank": "high",
         "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "G Ebony Coil Alpha": {
-        "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": -2,
-        "waterResistance": -3,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 4,
+        "setSkill": [],
+        "skills": {
+            "Blast Resistance": 1,
+            "Partbreaker": 2
+        },
         "slots": [
             2
         ],
-        "skills": {
-            "Burst": 1,
-            "Bleeding Resistance": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 6
-    },
-    "G Ebony Coil Beta": {
-        "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
-        "rank": "high",
+        "thunderResistance": 1,
         "type": "waist",
-        "defense": 48,
+        "waterResistance": -3
+    },
+    "Alloy Coil": {
+        "defense": 6,
+        "description": "Waistgear crafted from quality ore. The complexly shaded patina and sleek design are quite stunning.",
+        "dragonResistance": 1,
         "fireResistance": -2,
-        "waterResistance": -3,
-        "thunderResistance": -2,
+        "groupSkill": [],
         "iceResistance": -2,
-        "dragonResistance": 4,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Tremor Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Alloy Coil Alpha": {
+        "defense": 32,
+        "description": "Waistgear crafted from quality ore. The complexly shaded patina and sleek design are quite stunning.",
+        "dragonResistance": 1,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Quick Sheathe": 1,
+            "Tremor Resistance": 1
+        },
         "slots": [
-            2,
             1
         ],
-        "skills": {
-            "Burst": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 6
-    },
-    "Xu Wu Coil Alpha": {
+        "thunderResistance": -2,
         "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Heroics": 2,
-            "Earplugs": 1
-        },
+        "waterResistance": 1
+    },
+    "Arkvulcan Coil Alpha": {
+        "defense": 66,
+        "description": "Waistgear made from Arkveld spoils. Until the kingdom was restored, the knight bowed before no hardship.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
         "groupSkill": [
-            "Flexible Leathercraft"
+            "Fortifying Pelt"
         ],
-        "rarity": 6,
+        "iceResistance": 0,
         "rank": "high",
-        "defense": 48,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -3,
-        "dragonResistance": 2,
+        "rarity": 8,
         "setSkill": [
-            "Xu Wu's Vigor"
-        ]
-    },
-    "Xu Wu Coil Beta": {
-        "type": "waist",
+            "Arkveld's Hunger"
+        ],
+        "skills": {
+            "Recovery Speed": 2,
+            "Weakness Exploit": 2
+        },
         "slots": [
-            2,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Arkvulcan Coil Beta": {
+        "defense": 66,
+        "description": "Waistgear made from Arkveld spoils. Until the kingdom was restored, the knight bowed before no hardship.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Arkveld's Hunger"
+        ],
+        "skills": {
+            "Recovery Speed": 1,
+            "Weakness Exploit": 2
+        },
+        "slots": [
             1,
             1
         ],
-        "skills": {
-            "Heroics": 1,
-            "Earplugs": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -3,
-        "dragonResistance": 2,
-        "setSkill": [
-            "Xu Wu's Vigor"
-        ]
-    },
-    "Rathalos Coil Alpha": {
+        "thunderResistance": -1,
         "type": "waist",
-        "slots": [],
+        "waterResistance": 0
+    },
+    "Arkvulcan Coil Gamma": {
+        "defense": 0,
+        "description": "[no gear description in database]",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 1,
+        "setSkill": [
+            "Arkveld's Hunger"
+        ],
         "skills": {
-            "Adrenaline Rush": 2,
+            "Elemental Absorption": 3,
+            "Flayer": 1
+        },
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Artian Coil Alpha": {
+        "defense": 44,
+        "description": "Waistgear made from eldritch scraps. Its original purpose remains a mystery.",
+        "dragonResistance": 3,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Flayer": 1,
+            "Windproof": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": -2
+    },
+    "Balahara Coil": {
+        "defense": 12,
+        "description": "Balahara waistgear. The fabric is colored a shade of red that stirs a competitive spirit.",
+        "dragonResistance": 1,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 2,
+        "setSkill": [],
+        "skills": {
+            "Evade Extender": 1
+        },
+        "slots": [],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Balahara Coil Alpha": {
+        "defense": 38,
+        "description": "Balahara waistgear. The fabric is colored a shade of red that stirs a competitive spirit.",
+        "dragonResistance": 1,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Extender": 1,
             "Evade Window": 1
         },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Rathalos's Flare"
-        ]
-    },
-    "Rathalos Coil Beta": {
+        "slots": [],
+        "thunderResistance": -3,
         "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Adrenaline Rush": 2
-        },
+        "waterResistance": 2
+    },
+    "Balahara Coil Beta": {
+        "defense": 38,
+        "description": "Balahara waistgear. The fabric is colored a shade of red that stirs a competitive spirit.",
+        "dragonResistance": 1,
+        "fireResistance": -1,
         "groupSkill": [
             "Scale Layering"
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
         "iceResistance": 1,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Rathalos's Flare"
-        ]
-    },
-    "G Rathalos Coil Alpha": {
-        "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
         "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -5,
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1
+        },
         "slots": [
             1,
             1
         ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Windproof": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Rathalos's Flare"
-        ],
-        "rarity": 6
-    },
-    "G Rathalos Coil Beta": {
-        "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
-        "rank": "high",
+        "thunderResistance": -3,
         "type": "waist",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -5,
+        "waterResistance": 2
+    },
+    "Bale Flanchard Alpha": {
+        "defense": 68,
+        "description": "Waistgear worn by a dark knight. Shadowy proof of those who resort to anything to realize their ideals.",
+        "dragonResistance": 3,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Soul of the Dark Knight"
+        ],
+        "skills": {
+            "Constitution": 2,
+            "Resentment": 1
+        },
         "slots": [
-            2,
+            3,
             2,
             1
         ],
-        "skills": {
-            "Windproof": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Rathalos's Flare"
-        ],
-        "rarity": 6
-    },
-    "Gravios Coil Alpha": {
+        "thunderResistance": -2,
         "type": "waist",
+        "waterResistance": 0
+    },
+    "Barina Coil": {
+        "defense": 8,
+        "description": "Lala Barina waistgear that nobility would gladly don just to make an impression.",
+        "dragonResistance": 3,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Recovery Up": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Barina Coil Alpha": {
+        "defense": 36,
+        "description": "Lala Barina waistgear that nobility would gladly don just to make an impression.",
+        "dragonResistance": 3,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Paralysis Resistance": 2
+        },
         "slots": [
             2
         ],
-        "skills": {
-            "Flinch Free": 2,
-            "Peak Performance": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 52,
-        "fireResistance": 4,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": -2,
-        "setSkill": [
-            "Gravios's Protection"
-        ]
-    },
-    "Gravios Coil Beta": {
+        "thunderResistance": 0,
         "type": "waist",
+        "waterResistance": 3
+    },
+    "Barina Coil Beta": {
+        "defense": 36,
+        "description": "Lala Barina waistgear that nobility would gladly don just to make an impression.",
+        "dragonResistance": 3,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
         "slots": [
             2,
             1
         ],
-        "skills": {
-            "Peak Performance": 1,
-            "Flinch Free": 1
-        },
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Battle Coil Alpha": {
+        "defense": 44,
+        "description": "Waistgear designed for seasoned hunters. The striking design offers a light, functional build.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
         "groupSkill": [
-            "Scale Layering"
+            "Imparted Wisdom"
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 52,
-        "fireResistance": 4,
-        "waterResistance": -3,
-        "thunderResistance": 1,
         "iceResistance": 0,
-        "dragonResistance": -2,
-        "setSkill": [
-            "Gravios's Protection"
-        ]
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Bind Resistance": 2,
+            "Item Prolonger": 3
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": -1
     },
     "Blango Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
+        "defense": 48,
+        "description": "Waistgear made of Blangonga parts with technology from the \"Eastern Land of the Gods.\"",
+        "dragonResistance": 0,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Blangonga's Spirit"
         ],
         "skills": {
             "Agitator": 2,
             "Wide-Range": 1
         },
-        "groupSkill": [
-            "Fortifying Pelt"
+        "slots": [
+            1
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -4,
-        "waterResistance": 1,
         "thunderResistance": 0,
-        "iceResistance": 4,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Blangonga's Spirit"
-        ]
+        "type": "waist",
+        "waterResistance": 1
     },
     "Blango Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
+        "defense": 48,
+        "description": "Waistgear made of Blangonga parts with technology from the \"Eastern Land of the Gods.\"",
+        "dragonResistance": 0,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Blangonga's Spirit"
         ],
         "skills": {
             "Agitator": 2
         },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -4,
-        "waterResistance": 1,
-        "thunderResistance": 0,
-        "iceResistance": 4,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Blangonga's Spirit"
-        ]
-    },
-    "Commission Coil Alpha": {
-        "type": "waist",
         "slots": [
-            1
-        ],
-        "skills": {
-            "Agitator": 1,
-            "Tool Specialist": 1
-        },
-        "groupSkill": [],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Kunafa Sash Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Speed Eating": 2,
-            "Palico Rally": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 4,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Suja Sash Alpha": {
-        "type": "waist",
-        "slots": [
-            2,
             1,
             1
         ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Blessed Waistchain Alpha": {
+        "defense": 66,
+        "description": "Waist protection said to bring hunters safety and prosperity, each link woven a blessing.",
+        "dragonResistance": 3,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
         "skills": {
+            "Constitution": 4,
             "Divine Blessing": 3
         },
-        "groupSkill": [
-            "Imparted Wisdom"
+        "slots": [
+            3
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 4,
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Blossom Coat Alpha": {
+        "defense": 36,
+        "description": "Blossom Ticket waistgear. Sure to make you as graceful as a spring butterfly floating among the flowers.",
         "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Death Stench Bowels Alpha": {
-        "type": "waist",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Intimidator": 2,
-            "Resentment": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Butterfly Elytra Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Constitution": 1,
-            "Evade Window": 1,
-            "Evade Extender": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "King Beetle Elytra Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Heroics": 1,
-            "Flayer": 1,
-            "Paralysis Resistance": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "High Metal Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Bombardier": 3,
-            "Aquatic/Oilsilt Mobility": 2
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 0,
-        "waterResistance": -1,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Battle Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Item Prolonger": 3,
-            "Bind Resistance": 2
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 2,
-        "waterResistance": -1,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Melahoa Folia Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Recovery Up": 3,
-            "Bleeding Resistance": 2
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 0,
-        "waterResistance": 1,
-        "thunderResistance": 3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Artian Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Windproof": 2,
-            "Flayer": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
         "fireResistance": 1,
-        "waterResistance": -2,
-        "thunderResistance": -2,
-        "iceResistance": 2,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Dober Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Marathon Runner": 2,
-            "Constitution": 1
-        },
-        "groupSkill": [],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 56,
-        "fireResistance": -2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Damascus Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            3,
-            2
-        ],
-        "skills": {
-            "Wide-Range": 1,
-            "Recovery Up": 1
-        },
-        "groupSkill": [],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 56,
-        "fireResistance": 4,
-        "waterResistance": -2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Dahaad Shardcoil Alpha": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Tremor Resistance": 2,
-            "Weakness Exploit": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Jin Dahaad's Revolt"
-        ]
-    },
-    "Dahaad Shardcoil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1,
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Tremor Resistance": 1
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Jin Dahaad's Revolt"
-        ]
-    },
-    "Duna Wildcoil Alpha": {
-        "type": "waist",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Peak Performance": 2,
-            "Aquatic/Oilsilt Mobility": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Uth Duna's Cover"
-        ]
-    },
-    "Duna Wildcoil Beta": {
-        "type": "waist",
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Peak Performance": 2
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Uth Duna's Cover"
-        ]
-    },
-    "Rey Sandcoil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Stun Resistance": 2,
-            "Stamina Surge": 2
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ]
-    },
-    "Rey Sandcoil Beta": {
-        "type": "waist",
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Stun Resistance": 2,
-            "Stamina Surge": 1
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ]
-    },
-    "Udra Mirecoil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Resentment": 2,
-            "Speed Eating": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ]
-    },
-    "Udra Mirecoil Beta": {
-        "type": "waist",
-        "slots": [
-            3
-        ],
-        "skills": {
-            "Resentment": 2
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ]
-    },
-    "Gore Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Constitution": 2,
-            "Antivirus": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -2,
-        "waterResistance": 3,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Gore Magala's Tyranny"
-        ]
-    },
-    "Gore Coil Beta": {
-        "type": "waist",
-        "slots": [
-            3,
-            2
-        ],
-        "skills": {
-            "Constitution": 2
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -2,
-        "waterResistance": 3,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Gore Magala's Tyranny"
-        ]
-    },
-    "Arkvulcan Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 2,
-            "Recovery Speed": 2
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Arkveld's Hunger"
-        ]
-    },
-    "Arkvulcan Coil Beta": {
-        "type": "waist",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 2,
-            "Recovery Speed": 1
-        },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Arkveld's Hunger"
-        ]
-    },
-    "G Arkveld Coil Alpha": {
-        "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -4,
-        "slots": [],
-        "skills": {
-            "Flayer": 2,
-            "Elemental Absorption": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 8
-    },
-    "G Arkveld Coil Beta": {
-        "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -4,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Flayer": 2
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 8
-    },
-    "Guild Ace Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            3
-        ],
-        "skills": {
-            "Peak Performance": 1,
-            "Constitution": 1,
-            "Foray": 1
-        },
-        "groupSkill": [],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Guild Cross Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Windproof": 2,
-            "Earplugs": 1
-        },
-        "setSkill": [],
-        "groupSkill": [
-            "Glory's Favor"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0
-    },
-    "Clerk Belt Alpha": {
-        "type": "waist",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Tool Specialist": 2,
-            "Recovery Up": 2
-        },
-        "setSkill": [],
-        "groupSkill": [
-            "Glory's Favor"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2
-    },
-    "Mizutsune Coil Alpha": {
-        "type": "waist",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Constitution": 2,
-            "Burst": 1
-        },
-        "setSkill": [
-            "Mizutsune's Prowess"
-        ],
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": -1
-    },
-    "Mizutsune Coil Beta": {
-        "type": "waist",
-        "slots": [
-            3,
-            2,
-            1
-        ],
-        "skills": {
-            "Constitution": 2
-        },
-        "setSkill": [
-            "Mizutsune's Prowess"
-        ],
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": -1
-    },
-    "Numinous Overlay Alpha": {
-        "type": "waist",
-        "slots": [],
-        "skills": {
-            "Agitator": 2,
-            "Coalescence": 2
-        },
-        "setSkill": [
-            "Zoh Shia's Pulse"
-        ],
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 68,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": -4
-    },
-    "Numinous Overlay Beta": {
-        "type": "waist",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Agitator": 2,
-            "Coalescence": 1
-        },
-        "setSkill": [
-            "Zoh Shia's Pulse"
-        ],
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 68,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": -4
-    },
-    "Lagiacrus Coil Alpha": {
-        "description": "Waistgear made from Lagiacrus parts. Its heavy plating boasts exceptional resistance and is a true emblem of honor.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 64,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": -2,
-        "slots": [
-            2,
-            1,
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Maximum Might": 1,
-            "Aquatic/Oilsilt Mobility": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "setSkill": [
-            "Leviathan's Fury"
-        ],
-        "rarity": 1
-    },
-    "Lagiacrus Coil Beta": {
-        "description": "Waistgear made from Lagiacrus parts. Its heavy plating boasts exceptional resistance and is a true emblem of honor.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 64,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": -2,
-        "slots": [
-            2,
-            2,
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Maximum Might": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "setSkill": [
-            "Leviathan's Fury"
-        ],
-        "rarity": 1
-    },
-    "Regios Coil Alpha": {
-        "description": "Seregios waistgear. A shining army claims victory in a thousand wars and brings their conquest to the ends of the earth.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 64,
-        "fireResistance": 4,
-        "waterResistance": 0,
-        "thunderResistance": -3,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Evade Window": 2,
-            "Agitator": 1,
-            "Bleeding Resistance": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "setSkill": [
-            "Seregios's Tenacity"
-        ],
-        "rarity": 1
-    },
-    "Regios Coil Beta": {
-        "description": "Seregios waistgear. A shining army claims victory in a thousand wars and brings their conquest to the ends of the earth.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 64,
-        "fireResistance": 4,
-        "waterResistance": 0,
-        "thunderResistance": -3,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "slots": [
-            3,
-            1,
-            1
-        ],
-        "skills": {
-            "Evade Window": 1,
-            "Agitator": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "setSkill": [
-            "Seregios's Tenacity"
-        ],
-        "rarity": 1
-    },
-    "Gogmazios Coil Alpha": {
-        "description": "Gogmazios waistgear. Its tendrils creep grotesquely across the night, seizing control of prey.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 68,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": -5,
-        "slots": [
-            2,
-            1,
-            1
-        ],
-        "skills": {
-            "Burst": 2,
-            "Peak Performance": 1
-        },
-        "groupSkill": [],
-        "setSkill": [
-            "Gogmapocalypse",
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 1
-    },
-    "Gogmazios Coil Beta": {
-        "description": "Gogmazios waistgear. Its tendrils creep grotesquely across the night, seizing control of prey.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 68,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": -5,
-        "slots": [
-            2,
-            1,
-            1
-        ],
-        "skills": {
-            "Burst": 2,
-            "Peak Performance": 1
-        },
-        "groupSkill": [],
-        "setSkill": [
-            "Gogmapocalypse",
-            "Mizutsune's Prowess"
-        ],
-        "rarity": 1
-    },
-    "Rey Sandcoil Gamma": {
-        "description": "Waist armor made from special Rey Dau materials. The azure design evokes the fortitude of the Arch-tempered.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 68,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "slots": [],
-        "skills": {
-            "Latent Power": 2,
-            "Maximum Might": 2
-        },
-        "groupSkill": [
-            "Lord's Soul"
-        ],
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ],
-        "rarity": 8
-    },
-    "Duna Wildcoil Gamma": {
-        "description": "Waist armor made from special Uth Duna materials. The vibrant fabric evokes the fortitude of the Arch-tempered.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 68,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "slots": [
-            3,
-            3
-        ],
-        "skills": {
-            "Tool Specialist": 2
-        },
-        "groupSkill": [
-            "Lord's Soul"
-        ],
-        "setSkill": [
-            "Uth Duna's Cover"
-        ],
-        "rarity": 1
-    },
-    "Udra Mirecoil Gamma": {
-        "description": "Waist armor made from special Nu Udra materials. The undulating crimson ornamentation evokes the fortitude of the Arch-tempered.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 68,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Burst": 2,
-            "Ambush": 1
-        },
-        "groupSkill": [
-            "Lord's Soul"
-        ],
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ],
-        "rarity": 1
-    },
-    "Dahaad Shardcoil Gamma": {
-        "description": "Waist armor made from special Jin Dahaad materials. The shining white ornamentation evokes the fortitude of the Arch-tempered.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 68,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Agitator": 3,
-            "Bind Resistance": 2
-        },
-        "groupSkill": [
-            "Lord's Soul"
-        ],
-        "setSkill": [
-            "Jin Dahaad's Revolt"
-        ],
-        "rarity": 1
-    },
-    "Sakuratide Obi Alpha": {
-        "description": "Blossomdance Ticket waistgear. It embodies the determination of resplendent warriors from spring sunrises past.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Quick Sheathe": 2,
-            "Adaptability": 1
-        },
         "groupSkill": [
             "Festival Spirit"
         ],
-        "setSkill": [
-            "Blossomdance Prayer"
-        ],
-        "rarity": 1
-    },
-    "Blossom Coat Alpha": {
-        "description": "Blossom Ticket waistgear. Sure to make you as graceful as a spring butterfly floating among the flowers.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 4,
         "iceResistance": 1,
-        "dragonResistance": 1,
-        "slots": [
-            2,
-            2
-        ],
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
         "skills": {
             "Entomologist": 1,
             "Recovery Speed": 1
         },
-        "groupSkill": [
-            "Festival Spirit"
+        "slots": [
+            2,
+            2
         ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Afi Wrap Alpha": {
-        "description": "Flamefete Ticket waistgear. Its strikingly vibrant colors flutter in the midsummer heat, painting the wind.",
-        "rank": "high",
+        "thunderResistance": 4,
         "type": "waist",
-        "defense": 36,
+        "waterResistance": 1
+    },
+    "Bone Coil": {
+        "defense": 4,
+        "description": "Traditional waistgear bound with monster bones. Looks crude, but it does the job.",
+        "dragonResistance": 2,
         "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [],
-        "skills": {
-            "Burst": 1,
-            "Blast Resistance": 2,
-            "Fire Resistance": 1
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Flamefete Prayer"
-        ],
-        "rarity": 1
-    },
-    "Diver's Belt Alpha": {
-        "description": "Diving Ticket waistgear. As versatile as it is stylish, no underwater adventure is complete without this utility belt.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 4,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "slots": [
-            1,
-            1,
-            1
-        ],
-        "skills": {
-            "Aquatic/Oilsilt Mobility": 1,
-            "Hunger Resistance": 1
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
         "setSkill": [],
-        "rarity": 1
-    },
-    "Dreamwalker Coil Alpha": {
-        "description": "Dreamspell Ticket waistgear. The scent of roses evokes hazy memories of lingering shadows in the crisp autumn air.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [],
         "skills": {
-            "Flayer": 1,
-            "Ambush": 2
+            "Marathon Runner": 1
         },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Dreamspell Prayer"
-        ],
-        "rarity": 1
-    },
-    "Harvest Hoja Alpha": {
-        "description": "Harvest Ticket waistgear. The pumpkins on the sides grin back when you meet their hollow eyes.",
-        "rank": "high",
+        "slots": [],
+        "thunderResistance": 2,
         "type": "waist",
-        "defense": 36,
-        "fireResistance": 4,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 1,
+        "waterResistance": 0
+    },
+    "Bone Coil Alpha": {
+        "defense": 32,
+        "description": "Traditional waistgear bound with monster bones. Looks crude, but it does the job.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Marathon Runner": 1
+        },
         "slots": [
             1,
             1
         ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Butterfly Elytra Alpha": {
+        "defense": 44,
+        "description": "Dazzling armor made from insect parts. It radiates style akin to that of nobility.",
+        "dragonResistance": 2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
         "skills": {
             "Constitution": 1,
-            "Free Meal": 1,
-            "Botanist": 1
+            "Evade Extender": 1,
+            "Evade Window": 1
         },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": -1
+    },
+    "Ceremonial Coil Alpha": {
+        "defense": 36,
+        "description": "Lumenhymn Ticket waistgear. A comforting presence, like the sun in the splendor of winter.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
         "groupSkill": [
             "Festival Spirit"
         ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Ceremonial Coil Alpha": {
-        "description": "Lumenhymn Ticket waistgear. A comforting presence, like the sun in the splendor of winter.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
         "iceResistance": -3,
-        "dragonResistance": 2,
-        "slots": [
-            1,
-            1
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [
+            "Lumenhymn Prayer"
         ],
         "skills": {
             "Convert Element": 1,
             "Divine Blessing": 1,
             "Dragon Resistance": 1
         },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Lumenhymn Prayer"
-        ],
-        "rarity": 1
-    },
-    "Orion Coat Alpha": {
-        "description": "Orion Ticket waistgear adorned with festive, sparkly snowflakes that warm the heart.",
-        "rank": "high",
-        "type": "waist",
-        "defense": 66,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 4,
-        "dragonResistance": 1,
         "slots": [
-            2,
-            2,
-            2
-        ],
-        "skills": {
-            "Earplugs": 1,
-            "Cliffhanger": 1
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Demon Belt Alpha": {
-        "description": "The belt worn by a demon of combat who lives for brutal duels to the death. (Full Armor Set)",
-        "rank": "high",
-        "type": "waist",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": -2,
-        "thunderResistance": 0,
-        "iceResistance": -2,
-        "dragonResistance": 3,
-        "slots": [
-            3,
+            1,
             1
         ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Chainmail Belt": {
+        "defense": 2,
+        "description": "Waistgear made of woven chain links. A smart combination of materials keeps it extra light.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
         "skills": {
-            "Evade Window": 2
+            "Recovery Speed": 1
         },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Chainmail Belt Alpha": {
+        "defense": 26,
+        "description": "Waistgear made of woven chain links. A smart combination of materials keeps it extra light.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Ice Resistance": 1,
+            "Recovery Speed": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Chatacabra Coil": {
+        "defense": 6,
+        "description": "Chatacabra waistgear. The charming, heart-shaped pouch is made from its ample tongue.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Speed Eating": 1
+        },
+        "slots": [],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Chatacabra Coil Alpha": {
+        "defense": 36,
+        "description": "Chatacabra waistgear. The charming, heart-shaped pouch is made from its ample tongue.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Item Prolonger": 1,
+            "Speed Eating": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Chatacabra Coil Beta": {
+        "defense": 36,
+        "description": "Chatacabra waistgear. The charming, heart-shaped pouch is made from its ample tongue.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Speed Eating": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Clerk Belt Alpha": {
+        "defense": 48,
+        "description": "Grand Hub handler waistgear. A fine piece of equipment that's unparalleled in both form and function.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Recovery Up": 2,
+            "Tool Specialist": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Commission Coil Alpha": {
+        "defense": 44,
+        "description": "Waistgear worn by hunters on an expedition to the New World. Sturdily made.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Agitator": 1,
+            "Tool Specialist": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Conga Coil": {
+        "defense": 8,
+        "description": "Waistgear made from Congalala materials, complete with an array of handy pockets!",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 2,
+        "setSkill": [],
+        "skills": {
+            "Stench Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Conga Coil Alpha": {
+        "defense": 36,
+        "description": "Waistgear made from Congalala materials, complete with an array of handy pockets!",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Free Meal": 1,
+            "Mushroomancer": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Conga Coil Beta": {
+        "defense": 36,
+        "description": "Waistgear made from Congalala materials, complete with an array of handy pockets!",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Mushroomancer": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Dahaad Shardcoil Alpha": {
+        "defense": 60,
+        "description": "Jin Dahaad waistgear. The ornate design recalls the majesty of a lost dynasty.",
+        "dragonResistance": -1,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
+        "skills": {
+            "Tremor Resistance": 2,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Dahaad Shardcoil Beta": {
+        "defense": 60,
+        "description": "Jin Dahaad waistgear. The ornate design recalls the majesty of a lost dynasty.",
+        "dragonResistance": -1,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
+        "skills": {
+            "Tremor Resistance": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Dahaad Shardcoil Gamma": {
+        "defense": 68,
+        "description": "Waist armor made from special Jin Dahaad materials. The shining white ornamentation evokes the fortitude of the Arch-tempered.",
+        "dragonResistance": -1,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
+        "skills": {
+            "Agitator": 3,
+            "Bind Resistance": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Damascus Coil Alpha": {
+        "defense": 56,
+        "description": "Steel waistgear said to lead its wearer to glory. Rarely glimpsed in a lifetime.",
+        "dragonResistance": 0,
+        "fireResistance": 4,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Recovery Up": 1,
+            "Wide-Range": 1
+        },
+        "slots": [
+            3,
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -2
+    },
+    "Death Stench Bowels Alpha": {
+        "defense": 44,
+        "description": "This gear gives off a stench of decay, as though death's aroma permeates the air around you...",
+        "dragonResistance": 4,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Intimidator": 2,
+            "Resentment": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Demon Belt Alpha": {
+        "defense": 48,
+        "description": "The belt worn by a demon of combat who lives for brutal duels to the death. (Full Armor Set)",
+        "dragonResistance": 3,
+        "fireResistance": 3,
         "groupSkill": [
             "Master of the Fist"
         ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Bale Flanchard Alpha": {
-        "description": "Waistgear worn by a dark knight. Shadowy proof of those who resort to anything to realize their ideals.",
+        "iceResistance": -2,
         "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": 0,
         "type": "waist",
-        "defense": 68,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -2,
+        "waterResistance": -2
+    },
+    "Diver's Belt Alpha": {
+        "defense": 36,
+        "description": "Diving Ticket waistgear. As versatile as it is stylish, no underwater adventure is complete without this utility belt.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1,
+            "Hunger Resistance": 1
+        },
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 4
+    },
+    "Dober Coil Alpha": {
+        "defense": 56,
+        "description": "Waistgear made of unknown black bones, perhaps from an ancient dragon king.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 1,
+            "Marathon Runner": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Doshaguma Coil": {
+        "defense": 16,
+        "description": "Waistgear made from Doshaguma parts. Nothing can muss the thick pile of this sturdy sash.",
+        "dragonResistance": 4,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 2,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Item Prolonger": 1
+        },
+        "slots": [],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Doshaguma Coil Alpha": {
+        "defense": 48,
+        "description": "Waistgear made from Doshaguma parts. Nothing can muss the thick pile of this sturdy sash.",
+        "dragonResistance": 4,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Latent Power": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Doshaguma Coil Beta": {
+        "defense": 48,
+        "description": "Waistgear made from Doshaguma parts. Nothing can muss the thick pile of this sturdy sash.",
+        "dragonResistance": 4,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Latent Power": 1
+        },
+        "slots": [
+            2,
+            2
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Dreamwalker Coil Alpha": {
+        "defense": 36,
+        "description": "Dreamspell Ticket waistgear. The scent of roses evokes hazy memories of lingering shadows in the crisp autumn air.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [
+            "Dreamspell Prayer"
+        ],
+        "skills": {
+            "Ambush": 2,
+            "Flayer": 1
+        },
+        "slots": [],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Duna Wildcoil": {
+        "defense": 26,
+        "description": "Uth Duna waistgear. The fabric is imbued with the breath of the forest, absorbing any impact.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
         "iceResistance": 0,
-        "dragonResistance": 3,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1,
+            "Tool Specialist": 1
+        },
+        "slots": [],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 4
+    },
+    "Duna Wildcoil Alpha": {
+        "defense": 60,
+        "description": "Uth Duna waistgear. The fabric is imbued with the breath of the forest, absorbing any impact.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1,
+            "Peak Performance": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 4
+    },
+    "Duna Wildcoil Beta": {
+        "defense": 60,
+        "description": "Uth Duna waistgear. The fabric is imbued with the breath of the forest, absorbing any impact.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
+        "skills": {
+            "Peak Performance": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 4
+    },
+    "Duna Wildcoil Gamma": {
+        "defense": 68,
+        "description": "Waist armor made from special Uth Duna materials. The vibrant fabric evokes the fortitude of the Arch-tempered.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
+        "skills": {
+            "Tool Specialist": 2
+        },
+        "slots": [
+            3,
+            3
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 4
+    },
+    "G Arkveld Coil": {
+        "defense": 30,
+        "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
+        "dragonResistance": -4,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
+        "skills": {
+            "Blight Resistance": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "G Arkveld Coil Alpha": {
+        "defense": 66,
+        "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
+        "dragonResistance": -4,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
+        "skills": {
+            "Elemental Absorption": 1,
+            "Flayer": 2
+        },
+        "slots": [],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "G Arkveld Coil Beta": {
+        "defense": 66,
+        "description": "Guardian Arkveld waistgear. The chains writhe subtly, eager to ensnare prey.",
+        "dragonResistance": -4,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
+        "skills": {
+            "Flayer": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "G Doshaguma Coil": {
+        "defense": 26,
+        "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Heroics": 1,
+            "Marathon Runner": 1
+        },
+        "slots": [],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "G Doshaguma Coil Alpha": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Heroics": 2,
+            "Hunger Resistance": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "G Doshaguma Coil Beta": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Doshaguma spoils. The white areas self-repair when damaged.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Heroics": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "G Ebony Coil": {
+        "defense": 26,
+        "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
+        "skills": {
+            "Bleeding Resistance": 1,
+            "Burst": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "G Ebony Coil Alpha": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
+        "skills": {
+            "Bleeding Resistance": 1,
+            "Burst": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "G Ebony Coil Beta": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Ebony Odogaron spoils. The white areas self-repair when damaged.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
+        "skills": {
+            "Burst": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "G Fulgur Coil Alpha": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Fulgur Anjanath spoils. The white areas self-repair when damaged.",
+        "dragonResistance": -2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
+        "skills": {
+            "Maximum Might": 1,
+            "Stamina Surge": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": -1
+    },
+    "G Fulgur Coil Beta": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Fulgur Anjanath spoils. The white areas self-repair when damaged.",
+        "dragonResistance": -2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "slots": [
+            2,
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": -1
+    },
+    "G Rathalos Coil": {
+        "defense": 26,
+        "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
+        "dragonResistance": -5,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Intimidator": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "G Rathalos Coil Alpha": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
+        "dragonResistance": -5,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Weakness Exploit": 1,
+            "Windproof": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "G Rathalos Coil Beta": {
+        "defense": 48,
+        "description": "Waistgear made from Guardian Rathalos spoils. The white areas self-repair when damaged.",
+        "dragonResistance": -5,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Windproof": 1
+        },
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "G Seikret Coil": {
+        "defense": 22,
+        "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
+        "dragonResistance": -3,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [],
+        "skills": {
+            "Jump Master": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "G Seikret Coil Alpha": {
+        "defense": 44,
+        "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
+        "dragonResistance": -3,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Earplugs": 2,
+            "Jump Master": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "G Seikret Coil Beta": {
+        "defense": 44,
+        "description": "Guardian Seikret waistgear. The long, white feathers produce a faint, exquisite glow.",
+        "dragonResistance": -3,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Earplugs": 1,
+            "Jump Master": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Gogmazios Coil Alpha": {
+        "defense": 68,
+        "description": "Gogmazios waistgear. Its tendrils creep grotesquely across the night, seizing control of prey.",
+        "dragonResistance": -5,
+        "fireResistance": -4,
+        "groupSkill": [],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Ebony Odogaron's Power",
+            "Gogmapocalypse"
+        ],
+        "skills": {
+            "Burst": 2,
+            "Peak Performance": 1
+        },
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Gogmazios Coil Beta": {
+        "defense": 68,
+        "description": "Gogmazios waistgear. Its tendrils creep grotesquely across the night, seizing control of prey.",
+        "dragonResistance": -5,
+        "fireResistance": -4,
+        "groupSkill": [],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Mizutsune's Prowess",
+            "Guardian Arkveld's Vitality"
+        ],
+        "skills": {
+            "Burst": 2,
+            "Peak Performance": 1
+        },
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Gore Coil Alpha": {
+        "defense": 60,
+        "description": "Waistgear made from Gore Magala materials. Darkens the world and seduces prey toward certain demise.",
+        "dragonResistance": -1,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ],
+        "skills": {
+            "Antivirus": 1,
+            "Constitution": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Gore Coil Beta": {
+        "defense": 60,
+        "description": "Waistgear made from Gore Magala materials. Darkens the world and seduces prey toward certain demise.",
+        "dragonResistance": -1,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ],
+        "skills": {
+            "Constitution": 2
+        },
+        "slots": [
+            3,
+            2
+        ],
+        "thunderResistance": -1,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Gravios Coil Alpha": {
+        "defense": 52,
+        "description": "Waist armor made with Gravios parts. Its thickness and weight are indicative of its defensive power.",
+        "dragonResistance": -2,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Gravios's Protection"
+        ],
+        "skills": {
+            "Flinch Free": 2,
+            "Peak Performance": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Gravios Coil Beta": {
+        "defense": 52,
+        "description": "Waist armor made with Gravios parts. Its thickness and weight are indicative of its defensive power.",
+        "dragonResistance": -2,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Gravios's Protection"
+        ],
+        "skills": {
+            "Flinch Free": 1,
+            "Peak Performance": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Guild Ace Coil Alpha": {
+        "defense": 60,
+        "description": "Waistgear worn by an Astrum Unit hunter. Ensures you can get what you need when you need it.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 1,
+            "Foray": 1,
+            "Peak Performance": 1
+        },
+        "slots": [
+            3
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Guild Cross Coil Alpha": {
+        "defense": 36,
+        "description": "Armor for Arena champions. Finely made. Proves the wearer is a true champion.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Earplugs": 1,
+            "Windproof": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Gypceros Coil Alpha": {
+        "defense": 36,
+        "description": "Waistgear made from Gypceros materials. The thick, meaty skin provides ample protection.",
+        "dragonResistance": 1,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Resentment": 1,
+            "Stamina Surge": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Gypceros Coil Beta": {
+        "defense": 36,
+        "description": "Waistgear made from Gypceros materials. The thick, meaty skin provides ample protection.",
+        "dragonResistance": 1,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 3
+    },
+    "Harvest Hoja Alpha": {
+        "defense": 36,
+        "description": "Harvest Ticket waistgear. The pumpkins on the sides grin back when you meet their hollow eyes.",
+        "dragonResistance": 1,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Botanist": 1,
+            "Constitution": 1,
+            "Free Meal": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "High Metal Coil Alpha": {
+        "defense": 44,
+        "description": "Armor made from a generous portion of ore. Has multiple layers for extra protection.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 2,
+            "Bombardier": 3
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": -1
+    },
+    "Hirabami Coil": {
+        "defense": 22,
+        "description": "Waistgear made from Hirabami spoils. The elegant sash harnesses the wind to mitigate impacts.",
+        "dragonResistance": 0,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 3,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1,
+            "Ice Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Hirabami Coil Alpha": {
+        "defense": 38,
+        "description": "Waistgear made from Hirabami spoils. The elegant sash harnesses the wind to mitigate impacts.",
+        "dragonResistance": 0,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 2
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Hirabami Coil Beta": {
+        "defense": 38,
+        "description": "Waistgear made from Hirabami spoils. The elegant sash harnesses the wind to mitigate impacts.",
+        "dragonResistance": 0,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Hope Coil": {
+        "defense": 2,
+        "description": "Armor crafted specifically for members of the expedition. It is optimized for quick access.",
+        "dragonResistance": 0,
+        "fireResistance": 1,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Stun Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Hope Coil Alpha": {
+        "defense": 26,
+        "description": "Armor crafted specifically for members of the expedition. It is optimized for quick access.",
+        "dragonResistance": 0,
+        "fireResistance": 1,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 1,
+            "Stun Resistance": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Ingot Coil": {
+        "defense": 16,
+        "description": "Waistgear fashioned from lustrous, golden ore. It joins haute design with the very latest in armor craft.",
+        "dragonResistance": 0,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 1
+        },
+        "slots": [],
+        "thunderResistance": 3,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Ingot Coil Alpha": {
+        "defense": 44,
+        "description": "Waistgear fashioned from lustrous, golden ore. It joins haute design with the very latest in armor craft.",
+        "dragonResistance": 0,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 1,
+            "Resentment": 1
+        },
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "thunderResistance": 3,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "King Beetle Elytra Alpha": {
+        "defense": 44,
+        "description": "Waistgear made from insect materials. Wearers resemble a black bullet when running.",
+        "dragonResistance": 2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Flayer": 1,
+            "Heroics": 1,
+            "Paralysis Resistance": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": -1
+    },
+    "Kunafa Sash Alpha": {
+        "defense": 44,
+        "description": "Waistgear worn in the Windsong Village. The sash's patterns represent their hopes and prayers.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Palico Rally": 1,
+            "Speed Eating": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Kut-Ku Coil Alpha": {
+        "defense": 36,
+        "description": "Waistgear crafted from Yian Kut-Ku parts. Beware of its sharp, spine-covered exterior!",
+        "dragonResistance": 2,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -4,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Agitator": 1,
+            "Recovery Up": 2
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Kut-Ku Coil Beta": {
+        "defense": 36,
+        "description": "Waistgear crafted from Yian Kut-Ku parts. Beware of its sharp, spine-covered exterior!",
+        "dragonResistance": 2,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": -4,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Agitator": 1,
+            "Recovery Up": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Lagiacrus Coil Alpha": {
+        "defense": 64,
+        "description": "Waistgear made from Lagiacrus parts. Its heavy plating boasts exceptional resistance and is a true emblem of honor.",
+        "dragonResistance": -2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
+        "skills": {
+            "Aquatic/Oilsilt Mobility": 1,
+            "Maximum Might": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Lagiacrus Coil Beta": {
+        "defense": 64,
+        "description": "Waistgear made from Lagiacrus parts. Its heavy plating boasts exceptional resistance and is a true emblem of honor.",
+        "dragonResistance": -2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
+        "skills": {
+            "Maximum Might": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Leather Belt": {
+        "defense": 2,
+        "description": "Waistgear reinforced with monster hide. Hunters swear by its no-nonsense functionality.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Botanist": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Leather Belt Alpha": {
+        "defense": 26,
+        "description": "Waistgear reinforced with monster hide. Hunters swear by its no-nonsense functionality.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Hunger Resistance": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Melahoa Folia Alpha": {
+        "defense": 44,
+        "description": "Fragrant waistgear that is silky to the touch. Its sweet scent reminds hunters of times gone by.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Bleeding Resistance": 2,
+            "Recovery Up": 3
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 3,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Mizutsune Coil Alpha": {
+        "defense": 48,
+        "description": "Mizutsune waistgear. Wedding attire so stunning, people wouldn't notice if you grew a second head.",
+        "dragonResistance": -1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "skills": {
+            "Burst": 1,
+            "Constitution": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Mizutsune Coil Beta": {
+        "defense": 48,
+        "description": "Mizutsune waistgear. Wedding attire so stunning, people wouldn't notice if you grew a second head.",
+        "dragonResistance": -1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Mizutsune's Prowess"
+        ],
+        "skills": {
+            "Constitution": 2
+        },
         "slots": [
             3,
             2,
             1
         ],
-        "skills": {
-            "Resentment": 1,
-            "Constitution": 2
-        },
-        "groupSkill": [],
-        "setSkill": [
-            "Soul of the Dark Knight"
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Nerscylla Coil": {
+        "defense": 20,
+        "description": "Waistgear made from Nerscylla spoils. A work of art that exhibits a deep dedication to armor craft.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
         ],
-        "rarity": 1
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Bind Resistance": 1,
+            "Sleep Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Nerscylla Coil Alpha": {
+        "defense": 38,
+        "description": "Waistgear made from Nerscylla spoils. A work of art that exhibits a deep dedication to armor craft.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Bind Resistance": 1,
+            "Sleep Resistance": 2
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Nerscylla Coil Beta": {
+        "defense": 38,
+        "description": "Waistgear made from Nerscylla spoils. A work of art that exhibits a deep dedication to armor craft.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Bind Resistance": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Numinous Overlay Alpha": {
+        "defense": 68,
+        "description": "Waistgear imbued with Zoh Shia's soul, which resists the instinct to obliterate all living things.",
+        "dragonResistance": -4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "skills": {
+            "Agitator": 2,
+            "Coalescence": 2
+        },
+        "slots": [],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Numinous Overlay Beta": {
+        "defense": 68,
+        "description": "Waistgear imbued with Zoh Shia's soul, which resists the instinct to obliterate all living things.",
+        "dragonResistance": -4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Zoh Shia's Pulse"
+        ],
+        "skills": {
+            "Agitator": 2,
+            "Coalescence": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "waist",
+        "waterResistance": 2
     },
     "Omega Accessory Alpha": {
-        "description": "Waistgear fashioned after the apex of autonomous weaponry. Initiate experimentation on target subjects.",
-        "rank": "high",
-        "type": "waist",
         "defense": 68,
-        "fireResistance": 3,
-        "waterResistance": 0,
-        "thunderResistance": -3,
-        "iceResistance": 2,
+        "description": "Waistgear fashioned after the apex of autonomous weaponry. Initiate experimentation on target subjects.",
         "dragonResistance": -2,
-        "slots": [
-            3,
-            2
+        "fireResistance": 3,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Omega Resonance"
         ],
         "skills": {
             "Burst": 1,
             "Divine Blessing": 1
         },
-        "groupSkill": [],
-        "setSkill": [
-            "Omega Resonance"
+        "slots": [
+            3,
+            2
         ],
-        "rarity": 1
-    },
-    "Blessed Waistchain Alpha": {
-        "description": "Waist protection said to bring hunters safety and prosperity, each link woven a blessing.",
-        "rank": "high",
+        "thunderResistance": -3,
         "type": "waist",
+        "waterResistance": 0
+    },
+    "Orion Coat Alpha": {
         "defense": 66,
+        "description": "Orion Ticket waistgear adorned with festive, sparkly snowflakes that warm the heart.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Cliffhanger": 1,
+            "Earplugs": 1
+        },
+        "slots": [
+            2,
+            2,
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Quematrice Coil": {
+        "defense": 6,
+        "description": "Flaunt-worthy Quematrice waistgear. Nothing shouts haute couture like flowing tassets.",
+        "dragonResistance": 0,
         "fireResistance": 2,
-        "waterResistance": 2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Fire Resistance": 1
+        },
+        "slots": [],
         "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Quematrice Coil Alpha": {
+        "defense": 36,
+        "description": "Flaunt-worthy Quematrice waistgear. Nothing shouts haute couture like flowing tassets.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Fire Resistance": 1,
+            "Latent Power": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Quematrice Coil Beta": {
+        "defense": 36,
+        "description": "Flaunt-worthy Quematrice waistgear. Nothing shouts haute couture like flowing tassets.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Fire Resistance": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Rathalos Coil Alpha": {
+        "defense": 48,
+        "description": "Crafted from Rathalos parts, this waistgear has the wearer appear as if they were a wyvern themself.",
+        "dragonResistance": -3,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Evade Window": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Rathalos Coil Beta": {
+        "defense": 48,
+        "description": "Crafted from Rathalos parts, this waistgear has the wearer appear as if they were a wyvern themself.",
+        "dragonResistance": -3,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Adrenaline Rush": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Rathian Coil Alpha": {
+        "defense": 38,
+        "description": "Resplendent with judicious light, this Rathian waistgear strikes fear into even the most vicious monsters.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1,
+            "Tool Specialist": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Rathian Coil Beta": {
+        "defense": 38,
+        "description": "Resplendent with judicious light, this Rathian waistgear strikes fear into even the most vicious monsters.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Regios Coil Alpha": {
+        "defense": 64,
+        "description": "Seregios waistgear. A shining army claims victory in a thousand wars and brings their conquest to the ends of the earth.",
+        "dragonResistance": 0,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
         "iceResistance": -2,
-        "dragonResistance": 3,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Bleeding Resistance": 1,
+            "Evade Window": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Regios Coil Beta": {
+        "defense": 64,
+        "description": "Seregios waistgear. A shining army claims victory in a thousand wars and brings their conquest to the ends of the earth.",
+        "dragonResistance": 0,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Seregios's Tenacity"
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Evade Window": 1
+        },
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Rey Sandcoil": {
+        "defense": 26,
+        "description": "Rey Dau waistgear. The faintly glowing buckle inspires awe and respect.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": -3,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
+        "skills": {
+            "Constitution": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": -2
+    },
+    "Rey Sandcoil Alpha": {
+        "defense": 60,
+        "description": "Rey Dau waistgear. The faintly glowing buckle inspires awe and respect.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
+        "skills": {
+            "Stamina Surge": 2,
+            "Stun Resistance": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": -2
+    },
+    "Rey Sandcoil Beta": {
+        "defense": 60,
+        "description": "Rey Dau waistgear. The faintly glowing buckle inspires awe and respect.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
+        "skills": {
+            "Stamina Surge": 1,
+            "Stun Resistance": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": -2
+    },
+    "Rey Sandcoil Gamma": {
+        "defense": 68,
+        "description": "Waist armor made from special Rey Dau materials. The azure design evokes the fortitude of the Arch-tempered.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
+        "skills": {
+            "Latent Power": 2,
+            "Maximum Might": 2
+        },
+        "slots": [],
+        "thunderResistance": 4,
+        "type": "waist",
+        "waterResistance": -2
+    },
+    "Rompopolo Coil": {
+        "defense": 18,
+        "description": "Rompopolo waistgear fully equipped with instruments needed to handle poison.",
+        "dragonResistance": 1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Poison Resistance": 1,
+            "Wide-Range": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Rompopolo Coil Alpha": {
+        "defense": 36,
+        "description": "Rompopolo waistgear fully equipped with instruments needed to handle poison.",
+        "dragonResistance": 1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1,
+            "Wide-Range": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Rompopolo Coil Beta": {
+        "defense": 36,
+        "description": "Rompopolo waistgear fully equipped with instruments needed to handle poison.",
+        "dragonResistance": 1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -3
+    },
+    "Sakuratide Obi Alpha": {
+        "defense": 36,
+        "description": "Blossomdance Ticket waistgear. It embodies the determination of resplendent warriors from spring sunrises past.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [
+            "Blossomdance Prayer"
+        ],
+        "skills": {
+            "Adaptability": 1,
+            "Quick Sheathe": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "waist",
+        "waterResistance": 2
+    },
+    "Sororal Coil Alpha": {
+        "defense": 0,
+        "description": "[no gear description in database]",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 1,
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ],
+        "skills": {
+            "Burst": 2,
+            "Evade Extender": 2
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": 0
+    },
+    "Suja Sash Alpha": {
+        "defense": 44,
+        "description": "Waistgear worn in the Peaks of Accord. A ritual blade hangs at the sash as blessed protection.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 3
+        },
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Udra Mirecoil": {
+        "defense": 26,
+        "description": "Nu Udra waistgear. The gnash of spikes and fangs are bound by a personalized curse.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "skills": {
+            "Resentment": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -4
+    },
+    "Udra Mirecoil Alpha": {
+        "defense": 60,
+        "description": "Nu Udra waistgear. The gnash of spikes and fangs are bound by a personalized curse.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "skills": {
+            "Resentment": 2,
+            "Speed Eating": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -4
+    },
+    "Udra Mirecoil Beta": {
+        "defense": 60,
+        "description": "Nu Udra waistgear. The gnash of spikes and fangs are bound by a personalized curse.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "skills": {
+            "Resentment": 2
+        },
         "slots": [
             3
         ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -4
+    },
+    "Udra Mirecoil Gamma": {
+        "defense": 68,
+        "description": "Waist armor made from special Nu Udra materials. The undulating crimson ornamentation evokes the fortitude of the Arch-tempered.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
         "skills": {
-            "Constitution": 4,
-            "Divine Blessing": 3
+            "Ambush": 1,
+            "Burst": 2
         },
-        "groupSkill": [],
+        "slots": [
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "waist",
+        "waterResistance": -4
+    },
+    "Vespoid Coil": {
+        "defense": 4,
+        "description": "Vespoid waistgear. The design arose from the study of highly defensive exoskeletons.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 1,
         "setSkill": [],
-        "rarity": 1
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Vespoid Coil Alpha": {
+        "defense": 32,
+        "description": "Vespoid waistgear. The design arose from the study of highly defensive exoskeletons.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1,
+            "Paralysis Resistance": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Vespoid Coil Beta": {
+        "defense": 32,
+        "description": "Vespoid waistgear. The design arose from the study of highly defensive exoskeletons.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Xu Wu Coil": {
+        "defense": 26,
+        "description": "Slinky Xu Wu waistgear. The uniquely textured leather moves silent as a whisper.",
+        "dragonResistance": 2,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -3,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [],
+        "skills": {
+            "Maximum Might": 1,
+            "Stamina Surge": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Xu Wu Coil Alpha": {
+        "defense": 48,
+        "description": "Slinky Xu Wu waistgear. The uniquely textured leather moves silent as a whisper.",
+        "dragonResistance": 2,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Heroics": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
+    },
+    "Xu Wu Coil Beta": {
+        "defense": 48,
+        "description": "Slinky Xu Wu waistgear. The uniquely textured leather moves silent as a whisper.",
+        "dragonResistance": 2,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Heroics": 1
+        },
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "waist",
+        "waterResistance": 1
     }
 }

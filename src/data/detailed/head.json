@@ -1,3535 +1,3694 @@
 {
-    "Hope Mask": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Stun Resistance": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 2,
-        "fireResistance": 1,
-        "waterResistance": 0,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Leather Headgear": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Botanist": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 2,
+    "Afi Crown Alpha": {
+        "defense": 36,
+        "description": "Flamefete Ticket headgear. Its flames dance in the midsummer heat, flames rising ever higher.",
+        "dragonResistance": 2,
         "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Chainmail Headgear": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Geologist": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 2,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Bone Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Marathon Runner": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 4,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Bulaqchi Specs": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Entomologist": 1
-        },
         "groupSkill": [
-            "Neopteron Alert"
+            "Festival Spirit"
         ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 4,
-        "fireResistance": -4,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Chatacabra Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Speed Eating": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 6,
-        "fireResistance": 1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Quematrice Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Flinch Free": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 6,
-        "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Alloy Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Quick Sheathe": 1
-        },
-        "groupSkill": [],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 6,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Vespoid Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Survival Expert": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 4,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Barina Headgear": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Paralysis Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 1,
-        "rank": "low",
-        "defense": 8,
-        "fireResistance": -3,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Conga Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Mushroomancer": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 2,
-        "rank": "low",
-        "defense": 8,
-        "fireResistance": -3,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Balahara Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Hunger Resistance": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 2,
-        "rank": "low",
-        "defense": 12,
-        "fireResistance": -1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Doshaguma Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Free Meal": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 2,
-        "rank": "low",
-        "defense": 16,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
         "setSkill": [
-            "Doshaguma's Might"
-        ]
-    },
-    "Ingot Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Divine Blessing": 1
-        },
-        "groupSkill": [],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 16,
-        "fireResistance": -2,
-        "waterResistance": 0,
-        "thunderResistance": 3,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Comaqchi Accessory": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Sleep Resistance": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 16,
-        "fireResistance": -5,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Rompopolo Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Wide-Range": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 18,
-        "fireResistance": 0,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Nerscylla Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Ambush": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 20,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Hirabami Headdress": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Evade Window": 1,
-            "Recovery Speed": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 22,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Ajarakan Helm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Partbreaker": 1,
-            "Bombardier": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 3,
-        "rank": "low",
-        "defense": 24,
-        "fireResistance": 3,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Duna Wildhelm": {
-        "description": "Uth Duna head armor. The plumage crafted from its fins convey the forest's will to the wearer.",
-        "rank": "low",
-        "type": "head",
-        "defense": 26,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "slots": [],
-        "skills": {
-            "Peak Performance": 1,
-            "Tool Specialist": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "setSkill": [
-            "Uth Duna's Cover"
-        ],
-        "rarity": 1
-    },
-    "Rey Sandhelm": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Latent Power": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ]
-    },
-    "Udra Mirehelm": {
-        "type": "head",
-        "slots": [
-            1
+            "Flamefete Prayer"
         ],
         "skills": {
-            "Resentment": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ]
-    },
-    "G Doshaguma Helm": {
-        "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "low",
-        "type": "head",
-        "defense": 26,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -2,
-        "dragonResistance": 2,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Heroics": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 4
-    },
-    "G Rathalos Helm": {
-        "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "low",
-        "type": "head",
-        "defense": 26,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -5,
-        "slots": [],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Intimidator": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Rathalos's Flare"
-        ],
-        "rarity": 4
-    },
-    "G Ebony Helm": {
-        "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "low",
-        "type": "head",
-        "defense": 26,
-        "fireResistance": -2,
-        "waterResistance": -3,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 4,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Burst": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 4
-    },
-    "Xu Wu Helm": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Maximum Might": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 4,
-        "rank": "low",
-        "defense": 26,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -3,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "G Arkveld Helm": {
-        "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
-        "rank": "low",
-        "type": "head",
-        "defense": 30,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -4,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Flayer": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 4
-    },
-    "Hope Mask Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Divine Blessing": 2
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 26,
-        "fireResistance": 1,
-        "waterResistance": 0,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Leather Headgear Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Botanist": 2
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 26,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Chainmail Headgear Alpha": {
-        "type": "head",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Geologist": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 26,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Bone Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Stun Resistance": 1,
-            "Speed Eating": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Alloy Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Quick Sheathe": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Bulaqchi Specs Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Entomologist": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -4,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Bulaqchi Specs Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Entomologist": 1
-        },
-        "groupSkill": [
-            "Neopteron Camouflage"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -4,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Vespoid Helm Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Survival Expert": 1,
-            "Ambush": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Vespoid Helm Beta": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Survival Expert": 1
-        },
-        "groupSkill": [
-            "Neopteron Camouflage"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -2,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Comaqchi Accessory Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Sleep Resistance": 2,
-            "Foray": 1
-        },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -5,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Comaqchi Accessory Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Sleep Resistance": 2
-        },
-        "groupSkill": [
-            "Neopteron Camouflage"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 32,
-        "fireResistance": -5,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Kut-Ku Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Constitution": 2,
+            "Bombardier": 2,
             "Fire Resistance": 2
         },
-        "groupSkill": [
-            "Scaling Prowess"
+        "slots": [
+            2
         ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 3,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": -4,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Kut-Ku Helm Beta": {
+        "thunderResistance": 2,
         "type": "head",
+        "waterResistance": -3
+    },
+    "Ajarakan Helm": {
+        "defense": 24,
+        "description": "Imposing Ajarakan head armor. Donning it will draw the fires from within to burst forth.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Bombardier": 1,
+            "Partbreaker": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Ajarakan Helm Alpha": {
+        "defense": 48,
+        "description": "Imposing Ajarakan head armor. Donning it will draw the fires from within to burst forth.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Bombardier": 1,
+            "Resentment": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Ajarakan Helm Beta": {
+        "defense": 48,
+        "description": "Imposing Ajarakan head armor. Donning it will draw the fires from within to burst forth.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Bombardier": 1,
+            "Resentment": 1
+        },
         "slots": [
             2,
             1
         ],
-        "skills": {
-            "Constitution": 2
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 3,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": -4,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Chatacabra Helm Alpha": {
+        "thunderResistance": 1,
         "type": "head",
+        "waterResistance": -3
+    },
+    "Alloy Helm": {
+        "defense": 6,
+        "description": "A helmet crafted from quality ore. While it doesn't look like much, this is highly functional armor.",
+        "dragonResistance": 1,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Quick Sheathe": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Alloy Helm Alpha": {
+        "defense": 32,
+        "description": "A helmet crafted from quality ore. While it doesn't look like much, this is highly functional armor.",
+        "dragonResistance": 1,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Quick Sheathe": 1
+        },
         "slots": [
+            1,
             1
         ],
-        "skills": {
-            "Wide-Range": 1,
-            "Speed Eating": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Chatacabra Helm Beta": {
+        "thunderResistance": -2,
         "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Speed Eating": 1
-        },
+        "waterResistance": 1
+    },
+    "Amstrigian Alpha": {
+        "defense": 36,
+        "description": "A stuffed Amstrigian. Its original design could blow bubbles, but the feature was removed after proving unpopular.",
+        "dragonResistance": 3,
+        "fireResistance": -2,
         "groupSkill": [
             "Buttery Leathercraft"
         ],
-        "rarity": 5,
+        "iceResistance": -2,
         "rank": "high",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Quematrice Helm Alpha": {
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Extender": 1,
+            "Wide-Range": 2
+        },
+        "slots": [],
+        "thunderResistance": 1,
         "type": "head",
+        "waterResistance": 2
+    },
+    "Analytic E.Y.E. Alpha": {
+        "defense": 66,
+        "description": "Cyberesque specs that display a host of info right on the lenses. This is the Future of Hunting.",
+        "dragonResistance": 0,
+        "fireResistance": 4,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Weakness Exploit": 2
+        },
         "slots": [
-            1
+            2,
+            2
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Arkvulcan Helm Alpha": {
+        "defense": 66,
+        "description": "A helmet made from Arkveld spoils. The design was worn by a knight errant who reshaped the world.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Arkveld's Hunger"
         ],
         "skills": {
-            "Latent Power": 1,
-            "Flinch Free": 1
+            "Convert Element": 1,
+            "Elemental Absorption": 2
         },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 0,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Quematrice Helm Beta": {
+        "slots": [],
+        "thunderResistance": -1,
         "type": "head",
+        "waterResistance": 0
+    },
+    "Arkvulcan Helm Beta": {
+        "defense": 66,
+        "description": "A helmet made from Arkveld spoils. The design was worn by a knight errant who reshaped the world.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Arkveld's Hunger"
+        ],
+        "skills": {
+            "Convert Element": 1
+        },
+        "slots": [
+            3,
+            2,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Arkvulcan Helm Gamma": {
+        "defense": 0,
+        "description": "[no gear description in database]",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 1,
+        "setSkill": [
+            "Arkveld's Hunger"
+        ],
+        "skills": {
+            "Weakness Exploit": 3
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Artian Helm Alpha": {
+        "defense": 44,
+        "description": "Head armor made of eldritch scraps. Artisans debated its design for seven nights.",
+        "dragonResistance": 3,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Earplugs": 1,
+            "Flayer": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": -2
+    },
+    "Aviator Shades Alpha": {
+        "defense": 66,
+        "description": "Rugged and stylish sunglasses that will have you looking the part of a hard-boiled but dependable veteran hunter.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Tool Specialist": 2,
+            "Windproof": 3
+        },
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Azuz Headdress Alpha": {
+        "defense": 44,
+        "description": "Headwear worn in the village of the Everforge. The hairpin's fine details speak to the Bonefolk's artistry.",
+        "dragonResistance": 1,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Maximum Might": 2
+        },
         "slots": [
             2
         ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Balahara Helm": {
+        "defense": 12,
+        "description": "A Balahara helmet covered in roughly polished protrusions to strongly evoke its namesake.",
+        "dragonResistance": 1,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 2,
+        "setSkill": [],
         "skills": {
-            "Latent Power": 1
+            "Hunger Resistance": 1
         },
+        "slots": [],
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Balahara Helm Alpha": {
+        "defense": 38,
+        "description": "A Balahara helmet covered in roughly polished protrusions to strongly evoke its namesake.",
+        "dragonResistance": 1,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1,
+            "Geologist": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Balahara Helm Beta": {
+        "defense": 38,
+        "description": "A Balahara helmet covered in roughly polished protrusions to strongly evoke its namesake.",
+        "dragonResistance": 1,
+        "fireResistance": -1,
         "groupSkill": [
             "Scale Layering"
         ],
-        "rarity": 5,
+        "iceResistance": 1,
         "rank": "high",
-        "defense": 36,
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Bale Burgeonet Alpha": {
+        "defense": 68,
+        "description": "Head armor worn by a dark knight. Shadowy proof of those who have tamed the darkness within.",
+        "dragonResistance": 3,
         "fireResistance": 2,
-        "waterResistance": -3,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Soul of the Dark Knight"
+        ],
+        "skills": {
+            "Maximum Might": 2,
+            "Resentment": 2
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Barina Headgear": {
+        "defense": 8,
+        "description": "Lala Barina head armor. The rose embellishments were fashioned from its carapace.",
+        "dragonResistance": 3,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Paralysis Resistance": 1
+        },
+        "slots": [],
         "thunderResistance": 0,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
+        "type": "head",
+        "waterResistance": 3
     },
     "Barina Headgear Alpha": {
-        "type": "head",
-        "slots": [],
+        "defense": 36,
+        "description": "Lala Barina head armor. The rose embellishments were fashioned from its carapace.",
+        "dragonResistance": 3,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
         "skills": {
             "Foray": 1,
             "Paralysis Resistance": 1
         },
-        "groupSkill": [
-            "Neopteron Alert"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 3,
+        "slots": [],
         "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 3,
-        "setSkill": []
+        "type": "head",
+        "waterResistance": 3
     },
     "Barina Headgear Beta": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Foray": 1
-        },
+        "defense": 36,
+        "description": "Lala Barina head armor. The rose embellishments were fashioned from its carapace.",
+        "dragonResistance": 3,
+        "fireResistance": -3,
         "groupSkill": [
             "Neopteron Camouflage"
         ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 3,
-        "thunderResistance": 0,
         "iceResistance": 0,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Conga Helm Alpha": {
-        "type": "head",
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1
+        },
         "slots": [
             1
         ],
-        "skills": {
-            "Intimidator": 1,
-            "Free Meal": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Conga Helm Beta": {
+        "thunderResistance": 0,
         "type": "head",
+        "waterResistance": 3
+    },
+    "Battle Helm Alpha": {
+        "defense": 44,
+        "description": "Head armor designed for seasoned hunters. They say it must be earned, so novices dare not wear it.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Stamina Surge": 2
+        },
         "slots": [
             2
         ],
-        "skills": {
-            "Intimidator": 1
-        },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Rompopolo Helm Alpha": {
+        "thunderResistance": -1,
         "type": "head",
+        "waterResistance": -1
+    },
+    "Blango Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor made from Blangonga materials. Overflowing with the honor of a foreign god.",
+        "dragonResistance": 0,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Blangonga's Spirit"
+        ],
+        "skills": {
+            "Counterstrike": 1,
+            "Wide-Range": 2
+        },
         "slots": [
             1,
             1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Blango Helm Beta": {
+        "defense": 48,
+        "description": "Head armor made from Blangonga materials. Overflowing with the honor of a foreign god.",
+        "dragonResistance": 0,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Blangonga's Spirit"
         ],
         "skills": {
             "Wide-Range": 2
         },
-        "groupSkill": [
-            "Flexible Leathercraft"
+        "slots": [
+            2,
+            1,
+            1
         ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": -3,
         "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Rompopolo Helm Beta": {
         "type": "head",
+        "waterResistance": 1
+    },
+    "Blossom Headgear Alpha": {
+        "defense": 36,
+        "description": "Blossom Ticket head armor. This eye-catching accessory is sure to brighten up the season.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Paralysis Resistance": 2
+        },
         "slots": [
             2,
             1
         ],
-        "skills": {
-            "Wide-Range": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": -3,
-        "thunderResistance": 0,
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Bone Helm": {
+        "defense": 4,
+        "description": "Traditional head armor crafted from monster bones. Believe it or not, it offers pretty good insulation.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
         "iceResistance": 0,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Gypceros Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
         "skills": {
-            "Stamina Surge": 1,
-            "Blindsider": 1
+            "Marathon Runner": 1
         },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Gypceros Helm Beta": {
-        "type": "head",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Stamina Surge": 1
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Nerscylla Helm Alpha": {
-        "type": "head",
         "slots": [],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Bone Helm Alpha": {
+        "defense": 32,
+        "description": "Traditional head armor crafted from monster bones. Believe it or not, it offers pretty good insulation.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
         "skills": {
-            "Poison Resistance": 2,
-            "Bind Resistance": 1
+            "Speed Eating": 1,
+            "Stun Resistance": 1
         },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Bulaqchi Specs": {
+        "defense": 4,
+        "description": "Spectacles made from Bulaqchi parts. The hottest new design for the stylish hunter.",
+        "dragonResistance": 4,
+        "fireResistance": -4,
         "groupSkill": [
             "Neopteron Alert"
         ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Nerscylla Helm Beta": {
-        "type": "head",
-        "slots": [
-            2
-        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
         "skills": {
-            "Bind Resistance": 1
+            "Entomologist": 1
         },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Bulaqchi Specs Alpha": {
+        "defense": 32,
+        "description": "Spectacles made from Bulaqchi parts. The hottest new design for the stylish hunter.",
+        "dragonResistance": 4,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Entomologist": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Bulaqchi Specs Beta": {
+        "defense": 32,
+        "description": "Spectacles made from Bulaqchi parts. The hottest new design for the stylish hunter.",
+        "dragonResistance": 4,
+        "fireResistance": -4,
         "groupSkill": [
             "Neopteron Camouflage"
         ],
-        "rarity": 5,
+        "iceResistance": -2,
         "rank": "high",
-        "defense": 38,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Balahara Helm Alpha": {
-        "type": "head",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Entomologist": 1
+        },
         "slots": [
+            2,
             1
         ],
-        "skills": {
-            "Evade Window": 1,
-            "Geologist": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Balahara Helm Beta": {
+        "thunderResistance": 1,
         "type": "head",
+        "waterResistance": 1
+    },
+    "Butterfly Vertex Alpha": {
+        "defense": 44,
+        "description": "Dazzling armor made from insect parts. Its light weight and color are proof of one's class.",
+        "dragonResistance": 2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 1,
+            "Evade Extender": 1,
+            "Evade Window": 1
+        },
         "slots": [
             2
         ],
-        "skills": {
-            "Evade Window": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -1,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Hirabami Headdress Alpha": {
+        "thunderResistance": 2,
         "type": "head",
-        "slots": [],
-        "skills": {
-            "Evade Window": 1,
-            "Evade Extender": 1
-        },
+        "waterResistance": -1
+    },
+    "Ceremonial Helm Alpha": {
+        "defense": 36,
+        "description": "Lumenhymn Ticket headgear. Luxurious and regal, it glows with the splendor of winter.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
         "groupSkill": [
-            "Scaling Prowess"
+            "Festival Spirit"
         ],
-        "rarity": 5,
+        "iceResistance": -3,
         "rank": "high",
-        "defense": 38,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
+        "rarity": 5,
+        "setSkill": [
+            "Lumenhymn Prayer"
+        ],
+        "skills": {
+            "Divine Blessing": 1,
+            "Latent Power": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Chainmail Headgear": {
+        "defense": 2,
+        "description": "Head armor made of woven chain links. Its familiar design inspires trust in hunters who wear it.",
         "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Hirabami Headdress Beta": {
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Geologist": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
         "type": "head",
+        "waterResistance": 2
+    },
+    "Chainmail Headgear Alpha": {
+        "defense": 26,
+        "description": "Head armor made of woven chain links. Its familiar design inspires trust in hunters who wear it.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Geologist": 1
+        },
         "slots": [
             1,
             1
         ],
-        "skills": {
-            "Evade Window": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Rathian Helm Alpha": {
+        "thunderResistance": 0,
         "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Divine Blessing": 1,
-            "Recovery Speed": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": []
+        "waterResistance": 2
     },
-    "Rathian Helm Beta": {
+    "Chatacabra Helm": {
+        "defense": 6,
+        "description": "Chatacabra head armor. The design is specially tailored for desert hunting.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Speed Eating": 1
+        },
+        "slots": [],
+        "thunderResistance": -3,
         "type": "head",
+        "waterResistance": 2
+    },
+    "Chatacabra Helm Alpha": {
+        "defense": 36,
+        "description": "Chatacabra head armor. The design is specially tailored for desert hunting.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Speed Eating": 1,
+            "Wide-Range": 1
+        },
         "slots": [
-            2,
             1
         ],
-        "skills": {
-            "Divine Blessing": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 38,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": []
-    },
-    "Ingot Helm Alpha": {
+        "thunderResistance": -3,
         "type": "head",
+        "waterResistance": 2
+    },
+    "Chatacabra Helm Beta": {
+        "defense": 36,
+        "description": "Chatacabra head armor. The design is specially tailored for desert hunting.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Speed Eating": 1
+        },
         "slots": [
             2
         ],
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Clerk Visor Alpha": {
+        "defense": 48,
+        "description": "Grand Hub handler head armor. Woven in a unique way to provide more protection than its appearance suggests.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
         "skills": {
             "Divine Blessing": 2,
-            "Resentment": 1
+            "Palico Rally": 2,
+            "Recovery Up": 1
         },
-        "groupSkill": [],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": -2,
-        "waterResistance": 0,
-        "thunderResistance": 3,
-        "iceResistance": -1,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "G Fulgur Helm Alpha": {
-        "description": "Head armor made from Guardian Fulgur Anjanath spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": -3,
-        "dragonResistance": -2,
-        "slots": [],
-        "skills": {
-            "Agitator": 2,
-            "Coalescence": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Fulgur Anjanath's Will"
-        ],
-        "rarity": 6
-    },
-    "G Fulgur Helm Beta": {
-        "description": "Head armor made from Guardian Fulgur Anjanath spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": -3,
-        "dragonResistance": -2,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Agitator": 2
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Fulgur Anjanath's Will"
-        ],
-        "rarity": 6
-    },
-    "Doshaguma Helm Alpha": {
-        "type": "head",
         "slots": [
             2,
             1
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Comaqchi Accessory": {
+        "defense": 16,
+        "description": "A Comaqchi head accessory. The thin, sleek plating emanates an eldritch gleam.",
+        "dragonResistance": 3,
+        "fireResistance": -5,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 3,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Sleep Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Comaqchi Accessory Alpha": {
+        "defense": 32,
+        "description": "A Comaqchi head accessory. The thin, sleek plating emanates an eldritch gleam.",
+        "dragonResistance": 3,
+        "fireResistance": -5,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1,
+            "Sleep Resistance": 2
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Comaqchi Accessory Beta": {
+        "defense": 32,
+        "description": "A Comaqchi head accessory. The thin, sleek plating emanates an eldritch gleam.",
+        "dragonResistance": 3,
+        "fireResistance": -5,
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Sleep Resistance": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Commission Helm Alpha": {
+        "defense": 44,
+        "description": "Head armor worn by hunters on an expedition to the New World. Sturdily made.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Agitator": 1,
+            "Maximum Might": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Conga Helm": {
+        "defense": 8,
+        "description": "Head armor made from Congalala materials. Remember: it's \"feral,\" not \"unkempt.\"",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 2,
+        "setSkill": [],
+        "skills": {
+            "Mushroomancer": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Conga Helm Alpha": {
+        "defense": 36,
+        "description": "Head armor made from Congalala materials. Remember: it's \"feral,\" not \"unkempt.\"",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Free Meal": 1,
+            "Intimidator": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Conga Helm Beta": {
+        "defense": 36,
+        "description": "Head armor made from Congalala materials. Remember: it's \"feral,\" not \"unkempt.\"",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Intimidator": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Dahaad Shardhelm Alpha": {
+        "defense": 60,
+        "description": "Jin Dahaad head armor modelled after the helm of a member of a lost kingdom's royalty. It evokes the royal's icy gaze.",
+        "dragonResistance": -1,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
+        "skills": {
+            "Agitator": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Dahaad Shardhelm Beta": {
+        "defense": 60,
+        "description": "Jin Dahaad head armor modelled after the helm of a member of a lost kingdom's royalty. It evokes the royal's icy gaze.",
+        "dragonResistance": -1,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
+        "skills": {
+            "Agitator": 1
+        },
+        "slots": [
+            2,
+            2
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Dahaad Shardhelm Gamma": {
+        "defense": 68,
+        "description": "Head armor made from special Jin Dahaad materials. The shining white helm evokes the dignity of the Arch-tempered.",
+        "dragonResistance": -1,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Jin Dahaad's Revolt"
+        ],
+        "skills": {
+            "Foray": 2
+        },
+        "slots": [
+            3,
+            3
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Damascus Helm Alpha": {
+        "defense": 56,
+        "description": "A steel helmet of precious origin and rare manufacture that is said to lead the wearer to glory.",
+        "dragonResistance": 0,
+        "fireResistance": 4,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 2,
+            "Wide-Range": 1
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -2
+    },
+    "Death Stench Brain Alpha": {
+        "defense": 44,
+        "description": "Accursed armor, said to bring death. The wearer hears echoes of their victim's death throes.",
+        "dragonResistance": 4,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Ambush": 1,
+            "Resentment": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Demon Prayer Beads Alpha": {
+        "defense": 48,
+        "description": "Prayer beads worn by a demon of combat who burns to become the ultimate master of the fist. (Full Armor Set)",
+        "dragonResistance": 3,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Master of the Fist"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Partbreaker": 1
+        },
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -2
+    },
+    "Diver's Mask Alpha": {
+        "defense": 36,
+        "description": "Diving Ticket headgear. This underwater equipment will have you ready to dive in head first!",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Ambush": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 4
+    },
+    "Dober Helm Alpha": {
+        "defense": 56,
+        "description": "Head armor fashioned from obsidian bone of unknown provenance. It resembles an all-powerful monster.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 1,
+            "Stamina Surge": 1
+        },
+        "slots": [
+            3
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Doshaguma Helm": {
+        "defense": 16,
+        "description": "Head armor made from Doshaguma parts. Pity any enemy who dares scoff at its imposing crest.",
+        "dragonResistance": 4,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 2,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Free Meal": 1
+        },
+        "slots": [],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Doshaguma Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor made from Doshaguma parts. Pity any enemy who dares scoff at its imposing crest.",
+        "dragonResistance": 4,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
         ],
         "skills": {
             "Free Meal": 2,
             "Stun Resistance": 1
         },
-        "groupSkill": [
-            "Fortifying Pelt"
+        "slots": [
+            2,
+            1
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
         "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "setSkill": [
-            "Doshaguma's Might"
-        ]
+        "type": "head",
+        "waterResistance": 2
     },
     "Doshaguma Helm Beta": {
-        "type": "head",
+        "defense": 48,
+        "description": "Head armor made from Doshaguma parts. Pity any enemy who dares scoff at its imposing crest.",
+        "dragonResistance": 4,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Free Meal": 1,
+            "Stun Resistance": 1
+        },
         "slots": [
             2,
             1,
             1
         ],
-        "skills": {
-            "Stun Resistance": 1,
-            "Free Meal": 1
-        },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
         "thunderResistance": -1,
-        "iceResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Doshagumask Alpha": {
+        "defense": 48,
+        "description": "An uncanny replica Doshaguma head. The mask might be fake, but the intimidating aura it exudes is as real as it gets.",
         "dragonResistance": 4,
-        "setSkill": [
-            "Doshaguma's Might"
-        ]
-    },
-    "G Doshaguma Helm Alpha": {
-        "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
         "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -2,
-        "dragonResistance": 2,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Heroics": 1,
-            "Hunger Resistance": 2
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 6
-    },
-    "G Doshaguma Helm Beta": {
-        "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -2,
-        "dragonResistance": 2,
-        "slots": [
-            2,
-            2,
-            1
-        ],
-        "skills": {
-            "Heroics": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 6
-    },
-    "Ajarakan Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Resentment": 2,
-            "Bombardier": 1
-        },
         "groupSkill": [
             "Fortifying Pelt"
         ],
-        "rarity": 6,
+        "iceResistance": -1,
         "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Ajarakan Helm Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            1
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
         ],
         "skills": {
-            "Resentment": 1,
-            "Bombardier": 1
+            "Latent Power": 2,
+            "Recovery Up": 1,
+            "Stamina Surge": 1
         },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "G Ebony Helm Alpha": {
-        "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": -2,
-        "waterResistance": -3,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 4,
         "slots": [],
-        "skills": {
-            "Burst": 2,
-            "Earplugs": 1
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 6
-    },
-    "G Ebony Helm Beta": {
-        "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
+        "thunderResistance": -1,
         "type": "head",
-        "defense": 48,
-        "fireResistance": -2,
-        "waterResistance": -3,
-        "thunderResistance": -2,
-        "iceResistance": -2,
-        "dragonResistance": 4,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Burst": 2
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Ebony Odogaron's Power"
-        ],
-        "rarity": 6
+        "waterResistance": 2
     },
-    "Xu Wu Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Adrenaline Rush": 2,
-            "Ambush": 1
-        },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "rarity": 6,
+    "Dragonking Eyepatch Alpha": {
+        "defense": 60,
+        "description": "An accessory that instantly makes you look dashing and imposing. Bring out your budding dark side.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 0,
         "rank": "high",
-        "defense": 48,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -3,
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Counterstrike": 3
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Dreamwalker Helm Alpha": {
+        "defense": 36,
+        "description": "Dreamspell Ticket headgear. Its crown-like silhouette is illuminated by the autumn moon\u2014and wreathed in fear.",
         "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
         "setSkill": [
-            "Xu Wu's Vigor"
-        ]
-    },
-    "Xu Wu Helm Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            1
+            "Dreamspell Prayer"
         ],
         "skills": {
-            "Adrenaline Rush": 2
+            "Ambush": 1,
+            "Flayer": 1,
+            "Wide-Range": 2
         },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": -3,
-        "dragonResistance": 2,
-        "setSkill": [
-            "Xu Wu's Vigor"
-        ]
-    },
-    "Rathalos Helm Alpha": {
+        "slots": [],
+        "thunderResistance": 2,
         "type": "head",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Evade Window": 2,
-            "Constitution": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Rathalos's Flare"
-        ]
+        "waterResistance": 2
     },
-    "Rathalos Helm Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            2
-        ],
-        "skills": {
-            "Constitution": 1,
-            "Evade Window": 1
-        },
+    "Duna Wildhelm": {
+        "defense": 26,
+        "description": "Uth Duna head armor. The plumage crafted from its fins convey the forest's will to the wearer.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
         "groupSkill": [
-            "Scale Layering"
+            "Lord's Favor"
         ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -3,
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 4,
         "setSkill": [
-            "Rathalos's Flare"
-        ]
-    },
-    "G Rathalos Helm Alpha": {
-        "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -5,
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Survival Expert": 2
-        },
-        "groupSkill": [
-            "Guardian's Pulse"
-        ],
-        "setSkill": [
-            "Rathalos's Flare"
-        ],
-        "rarity": 6
-    },
-    "G Rathalos Helm Beta": {
-        "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": 1,
-        "thunderResistance": -2,
-        "iceResistance": 1,
-        "dragonResistance": -5,
-        "slots": [
-            2,
-            2
-        ],
-        "skills": {
-            "Weakness Exploit": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Rathalos's Flare"
-        ],
-        "rarity": 6
-    },
-    "Gravios Helm Alpha": {
-        "type": "head",
-        "slots": [
-            2,
-            1
+            "Uth Duna's Cover"
         ],
         "skills": {
             "Peak Performance": 1,
-            "Tremor Resistance": 1
+            "Tool Specialist": 1
         },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 52,
-        "fireResistance": 4,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": -2,
-        "setSkill": [
-            "Gravios's Protection"
-        ]
-    },
-    "Gravios Helm Beta": {
+        "slots": [],
+        "thunderResistance": -3,
         "type": "head",
-        "slots": [
-            2,
-            2
-        ],
-        "skills": {
-            "Peak Performance": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 52,
-        "fireResistance": 4,
-        "waterResistance": -3,
-        "thunderResistance": 1,
-        "iceResistance": 0,
-        "dragonResistance": -2,
-        "setSkill": [
-            "Gravios's Protection"
-        ]
-    },
-    "Blango Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Wide-Range": 2,
-            "Counterstrike": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -4,
-        "waterResistance": 1,
-        "thunderResistance": 0,
-        "iceResistance": 4,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Blangonga's Spirit"
-        ]
-    },
-    "Blango Helm Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            1,
-            1
-        ],
-        "skills": {
-            "Wide-Range": 2
-        },
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": -4,
-        "waterResistance": 1,
-        "thunderResistance": 0,
-        "iceResistance": 4,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Blangonga's Spirit"
-        ]
-    },
-    "Commission Helm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Agitator": 1,
-            "Maximum Might": 1
-        },
-        "groupSkill": [],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Kunafa Headgear Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Wide-Range": 2,
-            "Palico Rally": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 4,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Azuz Headdress Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Maximum Might": 2
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 4,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Sild Hood Alpha": {
-        "type": "head",
-        "slots": [
-            2,
-            1,
-            1
-        ],
-        "skills": {
-            "Botanist": 3
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Death Stench Brain Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Resentment": 1,
-            "Ambush": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Butterfly Vertex Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Constitution": 1,
-            "Evade Window": 1,
-            "Evade Extender": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "King Beetle Vertex Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Heroics": 1,
-            "Foray": 1,
-            "Sleep Resistance": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": -1,
-        "waterResistance": -1,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "High Metal Helm Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Stun Resistance": 3,
-            "Partbreaker": 1
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 0,
-        "waterResistance": -1,
-        "thunderResistance": -2,
-        "iceResistance": 3,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Battle Helm Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Stamina Surge": 2
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 2,
-        "waterResistance": -1,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Melahoa Hat Alpha": {
-        "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Survival Expert": 3,
-            "Poison Resistance": 2
-        },
-        "groupSkill": [
-            "Imparted Wisdom"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 0,
-        "waterResistance": 1,
-        "thunderResistance": 3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Artian Helm Alpha": {
-        "type": "head",
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Flayer": 1,
-            "Earplugs": 1
-        },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 44,
-        "fireResistance": 1,
-        "waterResistance": -2,
-        "thunderResistance": -2,
-        "iceResistance": 2,
-        "dragonResistance": 3,
-        "setSkill": []
-    },
-    "Dober Helm Alpha": {
-        "type": "head",
-        "slots": [
-            3
-        ],
-        "skills": {
-            "Constitution": 1,
-            "Stamina Surge": 1
-        },
-        "groupSkill": [],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 56,
-        "fireResistance": -2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "setSkill": []
-    },
-    "Damascus Helm Alpha": {
-        "type": "head",
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Divine Blessing": 2,
-            "Wide-Range": 1
-        },
-        "groupSkill": [],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 56,
-        "fireResistance": 4,
-        "waterResistance": -2,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Dahaad Shardhelm Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Agitator": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Jin Dahaad's Revolt"
-        ]
-    },
-    "Dahaad Shardhelm Beta": {
-        "type": "head",
-        "slots": [
-            2,
-            2
-        ],
-        "skills": {
-            "Agitator": 1
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Jin Dahaad's Revolt"
-        ]
+        "waterResistance": 4
     },
     "Duna Wildhelm Alpha": {
-        "type": "head",
+        "defense": 60,
+        "description": "Uth Duna head armor. The plumage crafted from its fins convey the forest's will to the wearer.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Tool Specialist": 2
+        },
         "slots": [
             2,
             1
         ],
-        "skills": {
-            "Tool Specialist": 2,
-            "Earplugs": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -1,
-        "waterResistance": 4,
         "thunderResistance": -3,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Uth Duna's Cover"
-        ]
+        "type": "head",
+        "waterResistance": 4
     },
     "Duna Wildhelm Beta": {
-        "type": "head",
+        "defense": 60,
+        "description": "Uth Duna head armor. The plumage crafted from its fins convey the forest's will to the wearer.",
+        "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Uth Duna's Cover"
+        ],
+        "skills": {
+            "Earplugs": 1,
+            "Tool Specialist": 1
+        },
         "slots": [
             3,
             2
         ],
-        "skills": {
-            "Tool Specialist": 1,
-            "Earplugs": 1
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -1,
-        "waterResistance": 4,
         "thunderResistance": -3,
-        "iceResistance": 0,
+        "type": "head",
+        "waterResistance": 4
+    },
+    "Duna Wildhelm Gamma": {
+        "defense": 68,
+        "description": "Head armor made from special Uth Duna materials. The vibrant plumage evokes the dignity of the Arch-tempered.",
         "dragonResistance": 0,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Lord's Soul"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
         "setSkill": [
             "Uth Duna's Cover"
-        ]
-    },
-    "Rey Sandhelm Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Latent Power": 2,
-            "Evade Extender": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ]
-    },
-    "Rey Sandhelm Beta": {
-        "type": "head",
-        "slots": [
-            3
         ],
         "skills": {
-            "Latent Power": 1,
-            "Evade Extender": 1
+            "Earplugs": 1,
+            "Peak Performance": 2
         },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Rey Dau's Voltage"
-        ]
-    },
-    "Udra Mirehelm Alpha": {
-        "type": "head",
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Resentment": 2,
-            "Counterstrike": 1
-        },
-        "groupSkill": [
-            "Lord's Favor"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ]
-    },
-    "Udra Mirehelm Beta": {
-        "type": "head",
         "slots": [
             2,
             2
         ],
-        "skills": {
-            "Resentment": 1,
-            "Counterstrike": 1
-        },
-        "groupSkill": [
-            "Lord's Fury"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ]
-    },
-    "Gore Helm Alpha": {
+        "thunderResistance": -3,
         "type": "head",
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Evade Window": 2,
-            "Coalescence": 1
-        },
-        "groupSkill": [
-            "Scaling Prowess"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -2,
-        "waterResistance": 3,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Gore Magala's Tyranny"
-        ]
+        "waterResistance": 4
     },
-    "Gore Helm Beta": {
-        "type": "head",
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Evade Window": 1,
-            "Coalescence": 1
-        },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "rarity": 7,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": -2,
-        "waterResistance": 3,
-        "thunderResistance": -1,
-        "iceResistance": 2,
-        "dragonResistance": -1,
-        "setSkill": [
-            "Gore Magala's Tyranny"
-        ]
-    },
-    "Arkvulcan Helm Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Elemental Absorption": 2,
-            "Convert Element": 1
-        },
+    "Eager Wudwud Alpha": {
+        "defense": 66,
+        "description": "Lured by the likey-like you had, a curious Wudwud has clambered along for a ride, pointing the way it wants to go.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
         "groupSkill": [
             "Fortifying Pelt"
         ],
-        "rarity": 8,
+        "iceResistance": 2,
         "rank": "high",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Arkveld's Hunger"
-        ]
-    },
-    "Arkvulcan Helm Beta": {
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Earplugs": 2,
+            "Mushroomancer": 3,
+            "Survival Expert": 2
+        },
+        "slots": [],
+        "thunderResistance": 2,
         "type": "head",
+        "waterResistance": 2
+    },
+    "Earrings of Dedication Alpha": {
+        "defense": 48,
+        "description": "Dignified earrings awarded to Arena combatants. Symbolizes those who support their comrades through countless challenges.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Wide-Range": 4
+        },
         "slots": [
-            3,
-            2,
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Expedition Headgear Alpha": {
+        "defense": 40,
+        "description": "Headgear based on the expedition's emblem. A leaf representing the ideals of harmony and order glitters magnificently for all to see.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Blight Resistance": 1,
+            "Coalescence": 1
+        },
+        "slots": [
             1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Faux Felyne Alpha": {
+        "defense": 36,
+        "description": "A Felyne mask. The fur is specially crafted to look just like the real thing.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Palico Rally": 5
+        },
+        "slots": [],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "G Arkveld Helm": {
+        "defense": 30,
+        "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
+        "dragonResistance": -4,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
         ],
         "skills": {
-            "Convert Element": 1
+            "Flayer": 1
         },
-        "groupSkill": [
-            "Alluring Pelt"
+        "slots": [
+            1
         ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
         "thunderResistance": -1,
-        "iceResistance": 0,
-        "dragonResistance": -3,
-        "setSkill": [
-            "Arkveld's Hunger"
-        ]
+        "type": "head",
+        "waterResistance": 0
     },
     "G Arkveld Helm Alpha": {
-        "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
-        "rank": "high",
-        "type": "head",
         "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
+        "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
         "dragonResistance": -4,
-        "slots": [
-            1,
-            1
+        "fireResistance": 2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
         ],
         "skills": {
             "Flayer": 1,
             "Partbreaker": 2
         },
-        "groupSkill": [
-            "Guardian's Pulse"
+        "slots": [
+            1,
+            1
         ],
-        "setSkill": [
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 8
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 0
     },
     "G Arkveld Helm Beta": {
-        "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
-        "rank": "high",
-        "type": "head",
         "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -1,
-        "iceResistance": 0,
+        "description": "Guardian Arkveld head armor. A host of heightened senses make up for the narrow view.",
         "dragonResistance": -4,
-        "slots": [
-            3,
-            1
+        "fireResistance": 2,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
         ],
         "skills": {
             "Flayer": 1,
             "Partbreaker": 1
         },
-        "groupSkill": [
-            "Guardian's Protection"
-        ],
-        "setSkill": [
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 8
-    },
-    "Guild Ace Earrings Alpha": {
-        "type": "head",
         "slots": [
-            3
+            3,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "G Doshaguma Helm": {
+        "defense": 26,
+        "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Doshaguma's Might"
         ],
         "skills": {
-            "Peak Performance": 1,
-            "Constitution": 1,
-            "Foray": 1
+            "Heroics": 1
         },
-        "groupSkill": [],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Dragonking Eyepatch Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Counterstrike": 3
-        },
-        "groupSkill": [],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 60,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0,
-        "setSkill": []
-    },
-    "Guild Cross Circlet Alpha": {
-        "type": "head",
         "slots": [
             1
         ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "G Doshaguma Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Heroics": 1,
+            "Hunger Resistance": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "G Doshaguma Helm Beta": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Doshaguma spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Doshaguma's Might"
+        ],
+        "skills": {
+            "Heroics": 1
+        },
+        "slots": [
+            2,
+            2,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "G Ebony Helm": {
+        "defense": 26,
+        "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
+        "skills": {
+            "Burst": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "G Ebony Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
+        "skills": {
+            "Burst": 2,
+            "Earplugs": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "G Ebony Helm Beta": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Ebony Odogaron spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": 4,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Ebony Odogaron's Power"
+        ],
+        "skills": {
+            "Burst": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "G Fulgur Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Fulgur Anjanath spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": -2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
+        "skills": {
+            "Agitator": 2,
+            "Coalescence": 1
+        },
+        "slots": [],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": -1
+    },
+    "G Fulgur Helm Beta": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Fulgur Anjanath spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": -2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Fulgur Anjanath's Will"
+        ],
+        "skills": {
+            "Agitator": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": -1
+    },
+    "G Rathalos Helm": {
+        "defense": 26,
+        "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": -5,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Intimidator": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "G Rathalos Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": -5,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Guardian's Pulse"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Survival Expert": 2,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "G Rathalos Helm Beta": {
+        "defense": 48,
+        "description": "Head armor made from Guardian Rathalos spoils. To don it is to be seized by unspeakable cravings.",
+        "dragonResistance": -5,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Guardian's Protection"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            2,
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Gelidron Mask Alpha": {
+        "defense": 66,
+        "description": "A stunning replica of a Gelidron head. If it looks like there isn't a single thought behind those eyes, it's because it's true.",
+        "dragonResistance": 0,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Free Meal": 1,
+            "Hunger Resistance": 1,
+            "Speed Eating": 2
+        },
+        "slots": [
+            3,
+            1,
+            1
+        ],
+        "thunderResistance": -4,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Gogmazios Helm Alpha": {
+        "defense": 68,
+        "description": "Gogmazios head armor. The eyes, having seen the world's darkness, burn with bleak despair.",
+        "dragonResistance": -5,
+        "fireResistance": -4,
+        "groupSkill": [],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Gogmapocalypse"
+        ],
+        "skills": {
+            "Elemental Absorption": 2,
+            "Peak Performance": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 3
+    },
+    "Gogmazios Helm Beta": {
+        "defense": 68,
+        "description": "Gogmazios head armor. The eyes, having seen the world's darkness, burn with bleak despair.",
+        "dragonResistance": -5,
+        "fireResistance": -4,
+        "groupSkill": [],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Guardian Arkveld's Vitality"
+        ],
+        "skills": {
+            "Elemental Absorption": 2,
+            "Peak Performance": 2
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 3
+    },
+    "Gore Helm Alpha": {
+        "defense": 60,
+        "description": "A helmet made from Gore Magala spoils. The nether-black surface thrums with its late master's power.",
+        "dragonResistance": -1,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ],
+        "skills": {
+            "Coalescence": 1,
+            "Evade Window": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 3
+    },
+    "Gore Helm Beta": {
+        "defense": 60,
+        "description": "A helmet made from Gore Magala spoils. The nether-black surface thrums with its late master's power.",
+        "dragonResistance": -1,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Gore Magala's Tyranny"
+        ],
+        "skills": {
+            "Coalescence": 1,
+            "Evade Window": 1
+        },
+        "slots": [
+            3,
+            1
+        ],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": 3
+    },
+    "Gourmand's Earring Alpha": {
+        "defense": 36,
+        "description": "Dignified earrings awarded to Arena combatants. Symbolizes the spirit of the gourmet, who loves food as much as the hunt.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Free Meal": 2,
+            "Speed Eating": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Gravios Helm Alpha": {
+        "defense": 52,
+        "description": "A helm cast from Gravios materials. This rock-like armor deflects attacks.",
+        "dragonResistance": -2,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Gravios's Protection"
+        ],
+        "skills": {
+            "Peak Performance": 1,
+            "Tremor Resistance": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Gravios Helm Beta": {
+        "defense": 52,
+        "description": "A helm cast from Gravios materials. This rock-like armor deflects attacks.",
+        "dragonResistance": -2,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Gravios's Protection"
+        ],
+        "skills": {
+            "Peak Performance": 1
+        },
+        "slots": [
+            2,
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Guild Ace Earrings Alpha": {
+        "defense": 60,
+        "description": "Head protection worn by an Astrum Unit hunter. Crafted with special protections exclusive to veterans.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 1,
+            "Foray": 1,
+            "Peak Performance": 1
+        },
+        "slots": [
+            3
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Guild Cross Circlet Alpha": {
+        "defense": 36,
+        "description": "Golden armor for Arena champions. It shines with the wisdom of heroes.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
         "skills": {
             "Bind Resistance": 2,
             "Earplugs": 1,
             "Flinch Free": 1
         },
-        "setSkill": [],
-        "groupSkill": [
-            "Glory's Favor"
+        "slots": [
+            1
         ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": 0,
         "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0
-    },
-    "Clerk Visor Alpha": {
         "type": "head",
+        "waterResistance": 0
+    },
+    "Gypceros Helm Alpha": {
+        "defense": 36,
+        "description": "Head armor made from Gypceros spoils. Its elasticity makes physical attacks bounce right off!",
+        "dragonResistance": 1,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Blindsider": 1,
+            "Stamina Surge": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 3
+    },
+    "Gypceros Helm Beta": {
+        "defense": 36,
+        "description": "Head armor made from Gypceros spoils. Its elasticity makes physical attacks bounce right off!",
+        "dragonResistance": 1,
+        "fireResistance": -4,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Stamina Surge": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 3
+    },
+    "Half Rim Glasses Alpha": {
+        "defense": 48,
+        "description": "Refreshingly stylish glasses with frames that don't obscure your field of vision. Now you can look sophisticated on and off the hunt.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Wide-Range": 5
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Harvest Flor Alpha": {
+        "defense": 36,
+        "description": "Harvest Ticket headgear. Inspired by the spirit of plenty, it is sure to surprise any and all who lay eyes on it.",
+        "dragonResistance": 1,
+        "fireResistance": 4,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Botanist": 1,
+            "Resentment": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "High Metal Helm Alpha": {
+        "defense": 44,
+        "description": "Armor made from a generous portion of ore. Don't worry, it breathes surprisingly well.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Partbreaker": 1,
+            "Stun Resistance": 3
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": -1
+    },
+    "Hirabami Headdress": {
+        "defense": 22,
+        "description": "Head armor made from Hirabami spoils. It keeps the wearer attuned and bound to the wind at all times.",
+        "dragonResistance": 0,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 3,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1,
+            "Recovery Speed": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Hirabami Headdress Alpha": {
+        "defense": 38,
+        "description": "Head armor made from Hirabami spoils. It keeps the wearer attuned and bound to the wind at all times.",
+        "dragonResistance": 0,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Extender": 1,
+            "Evade Window": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Hirabami Headdress Beta": {
+        "defense": 38,
+        "description": "Head armor made from Hirabami spoils. It keeps the wearer attuned and bound to the wind at all times.",
+        "dragonResistance": 0,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 3,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 1
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Hope Mask": {
+        "defense": 2,
+        "description": "Armor crafted specifically for members of the expedition. The mask keeps the sand out.",
+        "dragonResistance": 0,
+        "fireResistance": 1,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Stun Resistance": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Hope Mask Alpha": {
+        "defense": 26,
+        "description": "Armor crafted specifically for members of the expedition. The mask keeps the sand out.",
+        "dragonResistance": 0,
+        "fireResistance": 1,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Ingot Helm": {
+        "defense": 16,
+        "description": "Head armor fashioned from lustrous, golden ore. Regal protection with a crown to complete the look.",
+        "dragonResistance": 0,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 1
+        },
+        "slots": [],
+        "thunderResistance": 3,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Ingot Helm Alpha": {
+        "defense": 44,
+        "description": "Head armor fashioned from lustrous, golden ore. Regal protection with a crown to complete the look.",
+        "dragonResistance": 0,
+        "fireResistance": -2,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 2,
+            "Resentment": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 3,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "King Beetle Vertex Alpha": {
+        "defense": 44,
+        "description": "Armor to fulfill the ambitions of those who dreamed of wielding the power to rule over bugdom.",
+        "dragonResistance": 2,
+        "fireResistance": -1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Foray": 1,
+            "Heroics": 1,
+            "Sleep Resistance": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": -1
+    },
+    "Kitten Frames Alpha": {
+        "defense": 66,
+        "description": "Give yourself a new, mysterious look with these chic frames. Purrfect for when you want to go incognito.",
+        "dragonResistance": 4,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Ambush": 3,
+            "Evade Extender": 2,
+            "Jump Master": 1
+        },
+        "slots": [],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Kunafa Headgear Alpha": {
+        "defense": 44,
+        "description": "Head armor with large horns traditionally worn by the leader of the Vanguard in the Windsong Village.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Palico Rally": 1,
+            "Wide-Range": 2
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Kut-Ku Helm Alpha": {
+        "defense": 36,
+        "description": "Head armor made from superior Yian Kut-Ku parts. Its expert crafting brings to mind the bird-like beast.",
+        "dragonResistance": 2,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -4,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 2,
+            "Fire Resistance": 2
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Kut-Ku Helm Beta": {
+        "defense": 36,
+        "description": "Head armor made from superior Yian Kut-Ku parts. Its expert crafting brings to mind the bird-like beast.",
+        "dragonResistance": 2,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": -4,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Constitution": 2
+        },
         "slots": [
             2,
             1
         ],
-        "skills": {
-            "Palico Rally": 2,
-            "Divine Blessing": 2,
-            "Recovery Up": 1
-        },
-        "setSkill": [],
-        "groupSkill": [
-            "Glory's Favor"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2
-    },
-    "Gourmand's Earring Alpha": {
+        "thunderResistance": -2,
         "type": "head",
+        "waterResistance": 0
+    },
+    "Lagiacrus Helm Alpha": {
+        "defense": 64,
+        "description": "A helmet made from Lagiacrus parts. Its deep azure reflects the glory of besting the Lord of the Seas.",
+        "dragonResistance": -2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
+        "skills": {
+            "Latent Power": 1,
+            "Maximum Might": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Lagiacrus Helm Beta": {
+        "defense": 64,
+        "description": "A helmet made from Lagiacrus parts. Its deep azure reflects the glory of besting the Lord of the Seas.",
+        "dragonResistance": -2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Leviathan's Fury"
+        ],
+        "skills": {
+            "Maximum Might": 2
+        },
+        "slots": [
+            3,
+            2,
+            1
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Leather Headgear": {
+        "defense": 2,
+        "description": "Head armor made of treated monster hide. A safe choice, designed for multi-purpose use.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Botanist": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Leather Headgear Alpha": {
+        "defense": 26,
+        "description": "Head armor made of treated monster hide. A safe choice, designed for multi-purpose use.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Botanist": 2
+        },
         "slots": [
             1
         ],
-        "skills": {
-            "Speed Eating": 2,
-            "Free Meal": 2
-        },
-        "setSkill": [],
-        "groupSkill": [
-            "Glory's Favor"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": 0,
-        "waterResistance": 0,
         "thunderResistance": 0,
-        "iceResistance": 0,
-        "dragonResistance": 0
-    },
-    "Earrings of Dedication Alpha": {
         "type": "head",
-        "slots": [],
-        "skills": {
-            "Wide-Range": 4
-        },
-        "setSkill": [],
-        "groupSkill": [
-            "Glory's Favor"
-        ],
-        "rarity": 8,
-        "rank": "high",
+        "waterResistance": 0
+    },
+    "Lovely Shades Alpha": {
         "defense": 48,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 0,
+        "description": "Glasses with stylish yet adorable frames that are hard not to love. Now you can show everyone your undying passion for hunting.",
+        "dragonResistance": 2,
+        "fireResistance": 4,
+        "groupSkill": [],
         "iceResistance": 0,
-        "dragonResistance": 0
-    },
-    "Mizutsune Helm Alpha": {
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Mushroomancer": 3
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 4,
         "type": "head",
+        "waterResistance": 0
+    },
+    "Melahoa Hat Alpha": {
+        "defense": 44,
+        "description": "Fragrant head protection that instills a deep longing to return to the old days.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Poison Resistance": 2,
+            "Survival Expert": 3
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 3,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Mimiphyta Alpha": {
+        "defense": 36,
+        "description": "A Mimiphyta plushie so closely reminiscent of the real flower that it attracts all sorts of Scarlet Forest insects.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Ambush": 1,
+            "Entomologist": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Mirror Visor Alpha": {
+        "defense": 66,
+        "description": "A visor with a special coating that makes you the new pinnacle of cool. Hunt Smart, Everywhere.",
+        "dragonResistance": 4,
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Evade Window": 4
+        },
         "slots": [
             3
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Mizutsune Helm Alpha": {
+        "defense": 48,
+        "description": "Mizutsune head armor. A wedding headdress for only the most elegant and refined wedding ceremonies.",
+        "dragonResistance": -1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Fortifying Pelt"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Mizutsune's Prowess"
         ],
         "skills": {
             "Aquatic/Oilsilt Mobility": 2,
             "Evade Extender": 1
         },
-        "setSkill": [
-            "Mizutsune's Prowess"
+        "slots": [
+            3
         ],
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 0,
-        "waterResistance": 2,
         "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": -1
+        "type": "head",
+        "waterResistance": 2
     },
     "Mizutsune Helm Beta": {
-        "type": "head",
-        "slots": [
-            3,
-            2
+        "defense": 48,
+        "description": "Mizutsune head armor. A wedding headdress for only the most elegant and refined wedding ceremonies.",
+        "dragonResistance": -1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Alluring Pelt"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Mizutsune's Prowess"
         ],
         "skills": {
             "Aquatic/Oilsilt Mobility": 2
         },
-        "setSkill": [
-            "Mizutsune's Prowess"
-        ],
-        "groupSkill": [
-            "Alluring Pelt"
-        ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 0,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 1,
-        "dragonResistance": -1
-    },
-    "Numinous Crown Alpha": {
-        "type": "head",
         "slots": [
             3,
             2
         ],
-        "skills": {
-            "Recovery Speed": 2,
-            "Agitator": 1
-        },
-        "setSkill": [
-            "Zoh Shia's Pulse"
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Nerscylla Helm": {
+        "defense": 20,
+        "description": "A helmet made from Nerscylla spoils. Protection this durable requires masterful precision and execution.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
         ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Ambush": 1
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Nerscylla Helm Alpha": {
+        "defense": 38,
+        "description": "A helmet made from Nerscylla spoils. Protection this durable requires masterful precision and execution.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Bind Resistance": 1,
+            "Poison Resistance": 2
+        },
+        "slots": [],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Nerscylla Helm Beta": {
+        "defense": 38,
+        "description": "A helmet made from Nerscylla spoils. Protection this durable requires masterful precision and execution.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Bind Resistance": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Numinous Crown Alpha": {
+        "defense": 68,
+        "description": "Head armor imbued with Zoh Shia's soul. Fights the urge to eradicate all.",
+        "dragonResistance": -4,
+        "fireResistance": -2,
         "groupSkill": [
             "Guardian's Pulse"
         ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 68,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
         "iceResistance": 0,
-        "dragonResistance": -4
-    },
-    "Numinous Crown Beta": {
-        "type": "head",
-        "slots": [
-            3,
-            2,
-            1
-        ],
-        "skills": {
-            "Recovery Speed": 1,
-            "Agitator": 1
-        },
+        "rank": "high",
+        "rarity": 8,
         "setSkill": [
             "Zoh Shia's Pulse"
         ],
+        "skills": {
+            "Agitator": 1,
+            "Recovery Speed": 2
+        },
+        "slots": [
+            3,
+            2
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Numinous Crown Beta": {
+        "defense": 68,
+        "description": "Head armor imbued with Zoh Shia's soul. Fights the urge to eradicate all.",
+        "dragonResistance": -4,
+        "fireResistance": -2,
         "groupSkill": [
             "Guardian's Protection"
         ],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 68,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
         "iceResistance": 0,
-        "dragonResistance": -4
-    },
-    "Lagiacrus Helm Alpha": {
-        "description": "A helmet made from Lagiacrus parts. Its deep azure reflects the glory of besting the Lord of the Seas.",
         "rank": "high",
-        "type": "head",
-        "defense": 64,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": -2,
-        "slots": [
-            2,
-            1
+        "rarity": 8,
+        "setSkill": [
+            "Zoh Shia's Pulse"
         ],
         "skills": {
-            "Maximum Might": 2,
-            "Latent Power": 1
+            "Agitator": 1,
+            "Recovery Speed": 1
         },
-        "groupSkill": [
-            "Flexible Leathercraft"
-        ],
-        "setSkill": [
-            "Leviathan's Fury"
-        ],
-        "rarity": 1
-    },
-    "Lagiacrus Helm Beta": {
-        "description": "A helmet made from Lagiacrus parts. Its deep azure reflects the glory of besting the Lord of the Seas.",
-        "rank": "high",
-        "type": "head",
-        "defense": 64,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": 4,
-        "iceResistance": -1,
-        "dragonResistance": -2,
         "slots": [
             3,
             2,
             1
         ],
-        "skills": {
-            "Maximum Might": 2
-        },
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Omega Ear Cuffs Alpha": {
+        "defense": 68,
+        "description": "Head armor fashioned after the apex of autonomous weaponry. Observation begets evolution.",
+        "dragonResistance": -2,
+        "fireResistance": 3,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 8,
         "setSkill": [
-            "Leviathan's Fury"
+            "Omega Resonance"
         ],
-        "rarity": 1
+        "skills": {
+            "Divine Blessing": 1,
+            "Weakness Exploit": 1
+        },
+        "slots": [
+            3,
+            2
+        ],
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Orion Cap Alpha": {
+        "defense": 66,
+        "description": "Orion Ticket headgear, imbued with a saint's wish to deliver joy and presents to all the world.",
+        "dragonResistance": 1,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
+        "iceResistance": 4,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Flinch Free": 2
+        },
+        "slots": [
+            3,
+            3,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Quematrice Helm": {
+        "defense": 6,
+        "description": "Head armor made from Quematrice spoils. The shock of feathers ties the whole look together.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -1,
+        "rank": "low",
+        "rarity": 1,
+        "setSkill": [],
+        "skills": {
+            "Flinch Free": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Quematrice Helm Alpha": {
+        "defense": 36,
+        "description": "Head armor made from Quematrice spoils. The shock of feathers ties the whole look together.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Flinch Free": 1,
+            "Latent Power": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Quematrice Helm Beta": {
+        "defense": 36,
+        "description": "Head armor made from Quematrice spoils. The shock of feathers ties the whole look together.",
+        "dragonResistance": 0,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Latent Power": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Rathalos Helm Alpha": {
+        "defense": 48,
+        "description": "Head armor crafted from Rathalos parts. Equivalent to a king's crown with unparalleled defense.",
+        "dragonResistance": -3,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Evade Window": 2
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Rathalos Helm Beta": {
+        "defense": 48,
+        "description": "Head armor crafted from Rathalos parts. Equivalent to a king's crown with unparalleled defense.",
+        "dragonResistance": -3,
+        "fireResistance": 3,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Rathalos's Flare"
+        ],
+        "skills": {
+            "Constitution": 1,
+            "Evade Window": 1
+        },
+        "slots": [
+            2,
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Rathian Helm Alpha": {
+        "defense": 38,
+        "description": "Replete with queenly refinement, grace, and might, this sleek Rathian head armor has it all.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 1,
+            "Recovery Speed": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Rathian Helm Beta": {
+        "defense": 38,
+        "description": "Replete with queenly refinement, grace, and might, this sleek Rathian head armor has it all.",
+        "dragonResistance": -3,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Divine Blessing": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": -2,
+        "type": "head",
+        "waterResistance": 0
     },
     "Regios Helm Alpha": {
-        "description": "Seregios head armor. A shining army adorned with a thousand merits returns home, resplendent in the morning sun.",
-        "rank": "high",
-        "type": "head",
         "defense": 64,
-        "fireResistance": 4,
-        "waterResistance": 0,
-        "thunderResistance": -3,
-        "iceResistance": -2,
+        "description": "Seregios head armor. A shining army adorned with a thousand merits returns home, resplendent in the morning sun.",
         "dragonResistance": 0,
-        "slots": [
-            3
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scaling Prowess"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Seregios's Tenacity"
         ],
         "skills": {
             "Adrenaline Rush": 1,
             "Bleeding Resistance": 1,
             "Counterstrike": 1
         },
-        "groupSkill": [
-            "Scaling Prowess"
+        "slots": [
+            3
         ],
-        "setSkill": [
-            "Seregios's Tenacity"
-        ],
-        "rarity": 1
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 0
     },
     "Regios Helm Beta": {
-        "description": "Seregios head armor. A shining army adorned with a thousand merits returns home, resplendent in the morning sun.",
-        "rank": "high",
-        "type": "head",
         "defense": 64,
-        "fireResistance": 4,
-        "waterResistance": 0,
-        "thunderResistance": -3,
-        "iceResistance": -2,
+        "description": "Seregios head armor. A shining army adorned with a thousand merits returns home, resplendent in the morning sun.",
         "dragonResistance": 0,
-        "slots": [
-            3,
-            1,
-            1
+        "fireResistance": 4,
+        "groupSkill": [
+            "Scale Layering"
+        ],
+        "iceResistance": -2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Seregios's Tenacity"
         ],
         "skills": {
             "Adrenaline Rush": 1,
             "Bleeding Resistance": 1
         },
-        "groupSkill": [
-            "Scale Layering"
-        ],
-        "setSkill": [
-            "Seregios's Tenacity"
-        ],
-        "rarity": 1
-    },
-    "Gogmazios Helm Alpha": {
-        "description": "Gogmazios head armor. The eyes, having seen the world's darkness, burn with bleak despair.",
-        "rank": "high",
-        "type": "head",
-        "defense": 68,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": -5,
         "slots": [
             3,
+            1,
             1
         ],
-        "skills": {
-            "Peak Performance": 2,
-            "Elemental Absorption": 2
-        },
-        "groupSkill": [],
-        "setSkill": [
-            "Gogmapocalypse",
-            "Zoh Shia's Pulse"
-        ],
-        "rarity": 1
-    },
-    "Gogmazios Helm Beta": {
-        "description": "Gogmazios head armor. The eyes, having seen the world's darkness, burn with bleak despair.",
-        "rank": "high",
+        "thunderResistance": -3,
         "type": "head",
-        "defense": 68,
-        "fireResistance": -4,
-        "waterResistance": 3,
-        "thunderResistance": 0,
-        "iceResistance": 3,
-        "dragonResistance": -5,
-        "slots": [
-            3,
-            1
-        ],
-        "skills": {
-            "Peak Performance": 2,
-            "Elemental Absorption": 2
-        },
-        "groupSkill": [],
-        "setSkill": [
-            "Gogmapocalypse",
-            "Guardian Arkveld's Vitality"
-        ],
-        "rarity": 1
+        "waterResistance": 0
     },
-    "Rey Sandhelm Gamma": {
-        "description": "Head armor made from special Rey Dau materials. The azure horns evoke the dignity of the Arch-tempered.",
-        "rank": "high",
-        "type": "head",
-        "defense": 68,
-        "fireResistance": 0,
-        "waterResistance": -2,
-        "thunderResistance": 4,
-        "iceResistance": -3,
+    "Rey Sandhelm": {
+        "defense": 26,
+        "description": "Rey Dau head armor. Its crest reaches the heavens\u2014proof that this creature bows to no one.",
         "dragonResistance": 0,
-        "slots": [
-            3
-        ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Maximum Might": 1,
-            "Stamina Surge": 1
-        },
+        "fireResistance": 0,
         "groupSkill": [
-            "Lord's Soul"
+            "Lord's Favor"
         ],
+        "iceResistance": -3,
+        "rank": "low",
+        "rarity": 4,
         "setSkill": [
             "Rey Dau's Voltage"
         ],
-        "rarity": 8
-    },
-    "Duna Wildhelm Gamma": {
-        "description": "Head armor made from special Uth Duna materials. The vibrant plumage evokes the dignity of the Arch-tempered.",
-        "rank": "high",
+        "skills": {
+            "Latent Power": 1
+        },
+        "slots": [],
+        "thunderResistance": 4,
         "type": "head",
-        "defense": 68,
-        "fireResistance": -1,
-        "waterResistance": 4,
-        "thunderResistance": -3,
-        "iceResistance": 0,
+        "waterResistance": -2
+    },
+    "Rey Sandhelm Alpha": {
+        "defense": 60,
+        "description": "Rey Dau head armor. Its crest reaches the heavens\u2014proof that this creature bows to no one.",
         "dragonResistance": 0,
-        "slots": [
-            2,
-            2
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Favor"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Rey Dau's Voltage"
         ],
         "skills": {
-            "Peak Performance": 2,
-            "Earplugs": 1
+            "Evade Extender": 1,
+            "Latent Power": 2
         },
+        "slots": [],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": -2
+    },
+    "Rey Sandhelm Beta": {
+        "defense": 60,
+        "description": "Rey Dau head armor. Its crest reaches the heavens\u2014proof that this creature bows to no one.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
+        "skills": {
+            "Evade Extender": 1,
+            "Latent Power": 1
+        },
+        "slots": [
+            3
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": -2
+    },
+    "Rey Sandhelm Gamma": {
+        "defense": 68,
+        "description": "Head armor made from special Rey Dau materials. The azure horns evoke the dignity of the Arch-tempered.",
+        "dragonResistance": 0,
+        "fireResistance": 0,
         "groupSkill": [
             "Lord's Soul"
         ],
-        "setSkill": [
-            "Uth Duna's Cover"
-        ],
-        "rarity": 1
-    },
-    "Udra Mirehelm Gamma": {
-        "description": "Head armor made from special Nu Udra materials. The undulating crimson mask evokes the dignity of the Arch-tempered.",
+        "iceResistance": -3,
         "rank": "high",
-        "type": "head",
-        "defense": 68,
-        "fireResistance": 5,
-        "waterResistance": -4,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 0,
+        "rarity": 8,
+        "setSkill": [
+            "Rey Dau's Voltage"
+        ],
+        "skills": {
+            "Maximum Might": 1,
+            "Stamina Surge": 1,
+            "Weakness Exploit": 1
+        },
         "slots": [
-            1,
+            3
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": -2
+    },
+    "Rompopolo Helm": {
+        "defense": 18,
+        "description": "Rompopolo head armor. The mask is needed to ward off the material's residual toxins.",
+        "dragonResistance": 1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": 0,
+        "rank": "low",
+        "rarity": 3,
+        "setSkill": [],
+        "skills": {
+            "Wide-Range": 1
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Rompopolo Helm Alpha": {
+        "defense": 36,
+        "description": "Rompopolo head armor. The mask is needed to ward off the material's residual toxins.",
+        "dragonResistance": 1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Wide-Range": 2
+        },
+        "slots": [
             1,
             1
         ],
-        "skills": {
-            "Burst": 3
-        },
-        "groupSkill": [
-            "Lord's Soul"
-        ],
-        "setSkill": [
-            "Nu Udra's Mutiny"
-        ],
-        "rarity": 1
-    },
-    "Dahaad Shardhelm Gamma": {
-        "description": "Head armor made from special Jin Dahaad materials. The shining white helm evokes the dignity of the Arch-tempered.",
-        "rank": "high",
+        "thunderResistance": 0,
         "type": "head",
-        "defense": 68,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
+        "waterResistance": -3
+    },
+    "Rompopolo Helm Beta": {
+        "defense": 36,
+        "description": "Rompopolo head armor. The mask is needed to ward off the material's residual toxins.",
+        "dragonResistance": 1,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Wide-Range": 1
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -3
+    },
+    "Round Glasses Alpha": {
+        "defense": 60,
+        "description": "A fashionable pair of glasses. The tinted lenses are sure to add a chic flair to your hunts.",
+        "dragonResistance": 4,
+        "fireResistance": 0,
+        "groupSkill": [],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Blight Resistance": 3
+        },
+        "slots": [
+            1,
+            1
+        ],
+        "thunderResistance": 2,
+        "type": "head",
+        "waterResistance": 4
+    },
+    "Sakuratide Headgear Alpha": {
+        "defense": 36,
+        "description": "Blossomdance Ticket headgear. It embodies the vigor of resplendent warriors from spring sunrises past.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [
+            "Festival Spirit"
+        ],
         "iceResistance": 2,
-        "dragonResistance": -1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [
+            "Blossomdance Prayer"
+        ],
+        "skills": {
+            "Adaptability": 1,
+            "Foray": 2
+        },
+        "slots": [],
+        "thunderResistance": -3,
+        "type": "head",
+        "waterResistance": 2
+    },
+    "Sealed Dragon Cloth Alpha": {
+        "defense": 48,
+        "description": "A cloth used to wrap the remains of an elder dragon. It has been sealed to prevent another calamity.",
+        "dragonResistance": 5,
+        "fireResistance": -3,
+        "groupSkill": [],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Dragon Resistance": 3,
+            "Resentment": 2
+        },
+        "slots": [],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Sealed Eyepatch Alpha": {
+        "defense": 60,
+        "description": "A special order-made eyepatch. The cloth gives off a black glow, one that is difficult to comprehend.",
+        "dragonResistance": 0,
+        "fireResistance": 3,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Fire Resistance": 2
+        },
         "slots": [
             3,
             3
         ],
-        "skills": {
-            "Foray": 2
-        },
-        "groupSkill": [
-            "Lord's Soul"
-        ],
-        "setSkill": [
-            "Jin Dahaad's Revolt"
-        ],
-        "rarity": 1
-    },
-    "Sakuratide Headgear Alpha": {
-        "description": "Blossomdance Ticket headgear. It embodies the vigor of resplendent warriors from spring sunrises past.",
-        "rank": "high",
+        "thunderResistance": 0,
         "type": "head",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": -3,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [],
-        "skills": {
-            "Foray": 2,
-            "Adaptability": 1
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Blossomdance Prayer"
-        ],
-        "rarity": 1
+        "waterResistance": 2
     },
-    "Blossom Headgear Alpha": {
-        "description": "Blossom Ticket head armor. This eye-catching accessory is sure to brighten up the season.",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 4,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Paralysis Resistance": 2
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Afi Crown Alpha": {
-        "description": "Flamefete Ticket headgear. Its flames dance in the midsummer heat, flames rising ever higher.",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": -3,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Bombardier": 2,
-            "Fire Resistance": 2
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Flamefete Prayer"
-        ],
-        "rarity": 1
-    },
-    "Diver's Mask Alpha": {
-        "description": "Diving Ticket headgear. This underwater equipment will have you ready to dive in head first!",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
-        "fireResistance": 1,
-        "waterResistance": 4,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "slots": [
-            2
-        ],
-        "skills": {
-            "Ambush": 2
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Dreamwalker Helm Alpha": {
-        "description": "Dreamspell Ticket headgear. Its crown-like silhouette is illuminated by the autumn moon\u2014and wreathed in fear.",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [],
-        "skills": {
-            "Flayer": 1,
-            "Ambush": 1,
-            "Wide-Range": 2
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Dreamspell Prayer"
-        ],
-        "rarity": 1
-    },
-    "Harvest Flor Alpha": {
-        "description": "Harvest Ticket headgear. Inspired by the spirit of plenty, it is sure to surprise any and all who lay eyes on it.",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
+    "Shadow Shades Alpha": {
+        "defense": 60,
+        "description": "A sensible pair of shades. You'll always look cool in these, no matter the situation!",
+        "dragonResistance": 0,
         "fireResistance": 4,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Resentment": 1,
-            "Botanist": 1
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Ceremonial Helm Alpha": {
-        "description": "Lumenhymn Ticket headgear. Luxurious and regal, it glows with the splendor of winter.",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": -3,
-        "dragonResistance": 2,
-        "slots": [
-            2,
-            1
-        ],
-        "skills": {
-            "Latent Power": 1,
-            "Divine Blessing": 1
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [
-            "Lumenhymn Prayer"
-        ],
-        "rarity": 1
-    },
-    "Orion Cap Alpha": {
-        "description": "Orion Ticket headgear, imbued with a saint's wish to deliver joy and presents to all the world.",
-        "rank": "high",
-        "type": "head",
-        "defense": 66,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 4,
-        "dragonResistance": 1,
-        "slots": [
-            3,
-            3,
-            1
-        ],
-        "skills": {
-            "Flinch Free": 2
-        },
-        "groupSkill": [
-            "Festival Spirit"
-        ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Demon Prayer Beads Alpha": {
-        "description": "Prayer beads worn by a demon of combat who burns to become the ultimate master of the fist. (Full Armor Set)",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": 3,
-        "waterResistance": -2,
-        "thunderResistance": 0,
-        "iceResistance": -2,
-        "dragonResistance": 3,
-        "slots": [
-            2,
-            2,
-            1
-        ],
-        "skills": {
-            "Partbreaker": 1
-        },
-        "groupSkill": [
-            "Master of the Fist"
-        ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Bale Burgeonet Alpha": {
-        "description": "Head armor worn by a dark knight. Shadowy proof of those who have tamed the darkness within.",
-        "rank": "high",
-        "type": "head",
-        "defense": 68,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": -2,
-        "iceResistance": 0,
-        "dragonResistance": 3,
-        "slots": [
-            1,
-            1
-        ],
-        "skills": {
-            "Resentment": 2,
-            "Maximum Might": 2
-        },
         "groupSkill": [],
-        "setSkill": [
-            "Soul of the Dark Knight"
-        ],
-        "rarity": 1
-    },
-    "Omega Ear Cuffs Alpha": {
-        "description": "Head armor fashioned after the apex of autonomous weaponry. Observation begets evolution.",
-        "rank": "high",
-        "type": "head",
-        "defense": 68,
-        "fireResistance": 3,
-        "waterResistance": 0,
-        "thunderResistance": -3,
         "iceResistance": 2,
-        "dragonResistance": -2,
+        "rank": "high",
+        "rarity": 7,
+        "setSkill": [],
+        "skills": {
+            "Blindsider": 1,
+            "Stun Resistance": 3
+        },
         "slots": [
-            3,
+            3
+        ],
+        "thunderResistance": 4,
+        "type": "head",
+        "waterResistance": 0
+    },
+    "Sild Hood Alpha": {
+        "defense": 44,
+        "description": "A hood worn in the Keepers' Vigil. The cocoon-like fibers afford solid protection, and breathe well too.",
+        "dragonResistance": 4,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Imparted Wisdom"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Botanist": 3
+        },
+        "slots": [
+            2,
+            1,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Skull Mask Alpha": {
+        "defense": 66,
+        "description": "A mask for impersonating the dead. They say it enhances the senses, allowing the wearer to hear the cries of lost souls.",
+        "dragonResistance": 2,
+        "fireResistance": -3,
+        "groupSkill": [],
+        "iceResistance": -1,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [],
+        "skills": {
+            "Earplugs": 3,
+            "Intimidator": 3
+        },
+        "slots": [
             2
         ],
-        "skills": {
-            "Weakness Exploit": 1,
-            "Divine Blessing": 1
-        },
-        "groupSkill": [],
+        "thunderResistance": -1,
+        "type": "head",
+        "waterResistance": -1
+    },
+    "Sororal Earrings Alpha": {
+        "defense": 0,
+        "description": "[no gear description in database]",
+        "dragonResistance": 0,
+        "fireResistance": 0,
+        "groupSkill": [
+            "Glory's Favor"
+        ],
+        "iceResistance": 0,
+        "rank": "high",
+        "rarity": 1,
         "setSkill": [
-            "Omega Resonance"
+            "Gore Magala's Tyranny"
         ],
-        "rarity": 1
-    },
-    "Mimiphyta Alpha": {
-        "type": "head",
+        "skills": {
+            "Burst": 1
+        },
         "slots": [
-            1
-        ],
-        "skills": {
-            "Entomologist": 1,
-            "Ambush": 1
-        },
-        "groupSkill": [
-            "Fortifying Pelt"
-        ],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "setSkill": []
-    },
-    "Expedition Headgear Alpha": {
-        "type": "head",
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Blight Resistance": 1,
-            "Coalescence": 1
-        },
-        "groupSkill": [],
-        "rarity": 5,
-        "rank": "high",
-        "defense": 40,
-        "fireResistance": 1,
-        "waterResistance": 1,
-        "thunderResistance": 1,
-        "iceResistance": 1,
-        "dragonResistance": 1,
-        "setSkill": []
-    },
-    "Amstrigian Alpha": {
-        "type": "head",
-        "slots": [],
-        "skills": {
-            "Wide-Range": 2,
-            "Evade Extender": 1
-        },
-        "setSkill": [],
-        "groupSkill": [
-            "Buttery Leathercraft"
-        ],
-        "rarity": 6,
-        "rank": "high",
-        "defense": 36,
-        "fireResistance": -2,
-        "waterResistance": 2,
-        "thunderResistance": 1,
-        "iceResistance": -2,
-        "dragonResistance": 3
-    },
-    "Sealed Dragon Cloth Alpha": {
-        "description": "A cloth used to wrap the remains of an elder dragon. It has been sealed to prevent another calamity.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 0,
-        "thunderResistance": 0,
-        "iceResistance": 1,
-        "dragonResistance": 5,
-        "slots": [],
-        "skills": {
-            "Resentment": 2,
-            "Dragon Resistance": 3
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Strategist Spectacles Alpha": {
-        "type": "head",
-        "slots": [
-            2,
+            3,
             1,
             1
         ],
-        "skills": {
-            "Geologist": 3
-        },
-        "setSkill": [],
-        "groupSkill": [],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": 0
     },
     "Square Glasses Alpha": {
-        "type": "head",
-        "slots": [
-            1,
-            1
-        ],
+        "defense": 48,
+        "description": "A sophisticated pair of glasses. A versatile look that's perfect for the hunt or the home.",
+        "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
         "skills": {
             "Botanist": 4,
             "Outdoorsman": 1
         },
-        "setSkill": [],
-        "groupSkill": [],
-        "rarity": 8,
-        "rank": "high",
-        "defense": 48,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2
-    },
-    "Sealed Eyepatch Alpha": {
-        "description": "A special order-made eyepatch. The cloth gives off a black glow, one that is difficult to comprehend.",
-        "rank": "high",
-        "type": "head",
-        "defense": 60,
-        "fireResistance": 3,
-        "waterResistance": 2,
-        "thunderResistance": 0,
-        "iceResistance": 2,
-        "dragonResistance": 0,
-        "slots": [
-            3,
-            3
-        ],
-        "skills": {
-            "Fire Resistance": 2
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Shadow Shades Alpha": {
-        "description": "A sensible pair of shades. You'll always look cool in these, no matter the situation!",
-        "rank": "high",
-        "type": "head",
-        "defense": 60,
-        "fireResistance": 4,
-        "waterResistance": 0,
-        "thunderResistance": 4,
-        "iceResistance": 2,
-        "dragonResistance": 0,
-        "slots": [
-            3
-        ],
-        "skills": {
-            "Stun Resistance": 3,
-            "Blindsider": 1
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Round Glasses Alpha": {
-        "description": "A fashionable pair of glasses. The tinted lenses are sure to add a chic flair to your hunts.",
-        "rank": "high",
-        "type": "head",
-        "defense": 60,
-        "fireResistance": 0,
-        "waterResistance": 4,
-        "thunderResistance": 2,
-        "iceResistance": 0,
-        "dragonResistance": 4,
         "slots": [
             1,
             1
         ],
-        "skills": {
-            "Blight Resistance": 3
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Faux Felyne Alpha": {
-        "description": "A Felyne mask. The fur is specially crafted to look just like the real thing.",
-        "rank": "high",
-        "type": "head",
-        "defense": 36,
-        "fireResistance": 2,
-        "waterResistance": 2,
         "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [],
-        "skills": {
-            "Palico Rally": 5
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Half Rim Glasses Alpha": {
-        "description": "Refreshingly stylish glasses with frames that don't obscure your field of vision. Now you can look sophisticated on and off the hunt.",
-        "rank": "high",
         "type": "head",
+        "waterResistance": 2
+    },
+    "Strategist Spectacles Alpha": {
         "defense": 48,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
+        "description": "Spectacles co-designed by Gemma and the Stonefolk, destined to achieve legendary fame.",
         "dragonResistance": 2,
+        "fireResistance": 2,
+        "groupSkill": [],
+        "iceResistance": 2,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [],
+        "skills": {
+            "Geologist": 3
+        },
         "slots": [
+            2,
+            1,
             1
         ],
-        "skills": {
-            "Wide-Range": 5
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Lovely Shades Alpha": {
-        "description": "Glasses with stylish yet adorable frames that are hard not to love. Now you can show everyone your undying passion for hunting.",
-        "rank": "high",
+        "thunderResistance": 2,
         "type": "head",
-        "defense": 48,
-        "fireResistance": 4,
-        "waterResistance": 0,
-        "thunderResistance": 4,
-        "iceResistance": 0,
-        "dragonResistance": 2,
-        "slots": [
-            1
-        ],
-        "skills": {
-            "Mushroomancer": 3
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
+        "waterResistance": 2
     },
-    "Doshagumask Alpha": {
-        "description": "An uncanny replica Doshaguma head. The mask might be fake, but the intimidating aura it exudes is as real as it gets.",
-        "rank": "high",
-        "type": "head",
-        "defense": 48,
-        "fireResistance": -3,
-        "waterResistance": 2,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 4,
-        "slots": [],
-        "skills": {
-            "Latent Power": 2,
-            "Stamina Surge": 1,
-            "Recovery Up": 1
-        },
+    "Udra Mirehelm": {
+        "defense": 26,
+        "description": "Nu Udra head armor. The world through this mask is swathed in vengeance and ebony fire.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
         "groupSkill": [
-            "Fortifying Pelt"
+            "Lord's Favor"
         ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 4,
         "setSkill": [
-            "Doshaguma's Might"
-        ],
-        "rarity": 1
-    },
-    "Gelidron Mask Alpha": {
-        "description": "A stunning replica of a Gelidron head. If it looks like there isn't a single thought behind those eyes, it's because it's true.",
-        "rank": "high",
-        "type": "head",
-        "defense": 66,
-        "fireResistance": 4,
-        "waterResistance": 2,
-        "thunderResistance": -4,
-        "iceResistance": -2,
-        "dragonResistance": 0,
-        "slots": [
-            3,
-            1,
-            1
+            "Nu Udra's Mutiny"
         ],
         "skills": {
-            "Speed Eating": 2,
-            "Hunger Resistance": 1,
-            "Free Meal": 1
+            "Resentment": 1
         },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -4
+    },
+    "Udra Mirehelm Alpha": {
+        "defense": 60,
+        "description": "Nu Udra head armor. The world through this mask is swathed in vengeance and ebony fire.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
         "groupSkill": [
-            "Flexible Leathercraft"
+            "Lord's Favor"
         ],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Aviator Shades Alpha": {
-        "description": "Rugged and stylish sunglasses that will have you looking the part of a hard-boiled but dependable veteran hunter.",
+        "iceResistance": 1,
         "rank": "high",
-        "type": "head",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
+        "rarity": 7,
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "skills": {
+            "Counterstrike": 1,
+            "Resentment": 2
+        },
         "slots": [
-            1,
             1,
             1
         ],
-        "skills": {
-            "Windproof": 3,
-            "Tool Specialist": 2
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Kitten Frames Alpha": {
-        "description": "Give yourself a new, mysterious look with these chic frames. Purrfect for when you want to go incognito.",
-        "rank": "high",
+        "thunderResistance": 0,
         "type": "head",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 0,
-        "thunderResistance": 4,
-        "iceResistance": 0,
-        "dragonResistance": 4,
-        "slots": [],
-        "skills": {
-            "Ambush": 3,
-            "Evade Extender": 2,
-            "Jump Master": 1
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
+        "waterResistance": -4
     },
-    "Skull Mask Alpha": {
-        "description": "A mask for impersonating the dead. They say it enhances the senses, allowing the wearer to hear the cries of lost souls.",
+    "Udra Mirehelm Beta": {
+        "defense": 60,
+        "description": "Nu Udra head armor. The world through this mask is swathed in vengeance and ebony fire.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
+        "groupSkill": [
+            "Lord's Fury"
+        ],
+        "iceResistance": 1,
         "rank": "high",
-        "type": "head",
-        "defense": 66,
-        "fireResistance": -3,
-        "waterResistance": -1,
-        "thunderResistance": -1,
-        "iceResistance": -1,
-        "dragonResistance": 2,
-        "slots": [
-            2
+        "rarity": 7,
+        "setSkill": [
+            "Nu Udra's Mutiny"
         ],
         "skills": {
-            "Intimidator": 3,
-            "Earplugs": 3
+            "Counterstrike": 1,
+            "Resentment": 1
         },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Analytic E.Y.E. Alpha": {
-        "description": "Cyberesque specs that display a host of info right on the lenses. This is the Future of Hunting.",
-        "rank": "high",
-        "type": "head",
-        "defense": 66,
-        "fireResistance": 4,
-        "waterResistance": 2,
-        "thunderResistance": 4,
-        "iceResistance": 0,
-        "dragonResistance": 0,
         "slots": [
             2,
             2
         ],
-        "skills": {
-            "Weakness Exploit": 2
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
-    },
-    "Mirror Visor Alpha": {
-        "description": "A visor with a special coating that makes you the new pinnacle of cool. Hunt Smart, Everywhere.",
-        "rank": "high",
+        "thunderResistance": 0,
         "type": "head",
-        "defense": 66,
-        "fireResistance": 0,
-        "waterResistance": 0,
-        "thunderResistance": 2,
-        "iceResistance": 4,
-        "dragonResistance": 4,
-        "slots": [
-            3
-        ],
-        "skills": {
-            "Evade Window": 4
-        },
-        "groupSkill": [],
-        "setSkill": [],
-        "rarity": 1
+        "waterResistance": -4
     },
-    "Eager Wudwud Alpha": {
-        "description": "Lured by the likey-like you had, a curious Wudwud has clambered along for a ride, pointing the way it wants to go.",
-        "rank": "high",
-        "type": "head",
-        "defense": 66,
-        "fireResistance": 2,
-        "waterResistance": 2,
-        "thunderResistance": 2,
-        "iceResistance": 2,
-        "dragonResistance": 2,
-        "slots": [],
-        "skills": {
-            "Mushroomancer": 3,
-            "Earplugs": 2,
-            "Survival Expert": 2
-        },
+    "Udra Mirehelm Gamma": {
+        "defense": 68,
+        "description": "Head armor made from special Nu Udra materials. The undulating crimson mask evokes the dignity of the Arch-tempered.",
+        "dragonResistance": 0,
+        "fireResistance": 5,
         "groupSkill": [
-            "Fortifying Pelt"
+            "Lord's Soul"
         ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 8,
+        "setSkill": [
+            "Nu Udra's Mutiny"
+        ],
+        "skills": {
+            "Burst": 3
+        },
+        "slots": [
+            1,
+            1,
+            1
+        ],
+        "thunderResistance": 0,
+        "type": "head",
+        "waterResistance": -4
+    },
+    "Vespoid Helm": {
+        "defense": 4,
+        "description": "A Vespoid helmet. The carapace material is susceptible to fire but offers sturdy coverage.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 1,
+        "rank": "low",
+        "rarity": 1,
         "setSkill": [],
-        "rarity": 1
+        "skills": {
+            "Survival Expert": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Vespoid Helm Alpha": {
+        "defense": 32,
+        "description": "A Vespoid helmet. The carapace material is susceptible to fire but offers sturdy coverage.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Alert"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Ambush": 1,
+            "Survival Expert": 1
+        },
+        "slots": [],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Vespoid Helm Beta": {
+        "defense": 32,
+        "description": "A Vespoid helmet. The carapace material is susceptible to fire but offers sturdy coverage.",
+        "dragonResistance": 2,
+        "fireResistance": -2,
+        "groupSkill": [
+            "Neopteron Camouflage"
+        ],
+        "iceResistance": 1,
+        "rank": "high",
+        "rarity": 5,
+        "setSkill": [],
+        "skills": {
+            "Survival Expert": 1
+        },
+        "slots": [
+            2
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Xu Wu Helm": {
+        "defense": 26,
+        "description": "Concealing Xu Wu head armor. Fitting attire for hunters who dwell in darkness.",
+        "dragonResistance": 2,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -3,
+        "rank": "low",
+        "rarity": 4,
+        "setSkill": [],
+        "skills": {
+            "Maximum Might": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Xu Wu Helm Alpha": {
+        "defense": 48,
+        "description": "Concealing Xu Wu head armor. Fitting attire for hunters who dwell in darkness.",
+        "dragonResistance": 2,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Flexible Leathercraft"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ],
+        "skills": {
+            "Adrenaline Rush": 2,
+            "Ambush": 1
+        },
+        "slots": [
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
+    },
+    "Xu Wu Helm Beta": {
+        "defense": 48,
+        "description": "Concealing Xu Wu head armor. Fitting attire for hunters who dwell in darkness.",
+        "dragonResistance": 2,
+        "fireResistance": 1,
+        "groupSkill": [
+            "Buttery Leathercraft"
+        ],
+        "iceResistance": -3,
+        "rank": "high",
+        "rarity": 6,
+        "setSkill": [
+            "Xu Wu's Vigor"
+        ],
+        "skills": {
+            "Adrenaline Rush": 2
+        },
+        "slots": [
+            2,
+            1
+        ],
+        "thunderResistance": 1,
+        "type": "head",
+        "waterResistance": 1
     }
 }
